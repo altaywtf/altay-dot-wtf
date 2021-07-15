@@ -1,14 +1,14 @@
 ---
-date: '2021-07-12'
+date: '2021-07-15'
 ---
 
-I like computers, coffee, typefaces, and working on things that are solving problems I empathize with.
+I like computers, coffee, typefaces, and building things that are solving the problems I empathize with.
 
-I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects and little experiments on the side:
+I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects on the side:
 
-- Building my eternal love [putio](https://put.io)'s user-facing apps.
-- Taking notes from the [books](/books) I read.
-- Playing games, mostly on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
+- My eternal love [putio](https://put.io)'s user-facing apps.
+- Notes from the [books](/books) I read.
+- Gaming on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
 
 &nbsp;
 
@@ -16,7 +16,7 @@ I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a sof
 
 Those people contributed tremendously to my life.
 
-- **Big three**: Naval Ravikant, Derek Sivers, Mark Manson
+- **The big three**: Naval Ravikant, Derek Sivers, Mark Manson
 - **Creative three**: Austin Kleon, Brian Lovin, Matt D. Smith
 - **Hacker three**: Guillermo Rauch, Dan Abramov, Scott Wlatschin
 - **Productive three**: Seth Godin, Cal Newport, James Clear
@@ -24,16 +24,16 @@ Those people contributed tremendously to my life.
 
 &nbsp;
 
-### What I did
+### Timeline
 
 - **2021, Apr:** moved into a [more-permanent flat](https://twitter.com/altaywtf/status/1387446623303778307) after living in a furnished agency apartment for 2.5 years.
 - **2021, Jan:** wanted to work closer to the product after [an engineering-heavy year.](/blog/2020) Switched to _Consumer Deals_ team in Klarna.
 - **2020, Oct:** built this website. Inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), [julie.design](https://julie.design), and [andymatuschak.org](https://notes.andymatuschak.org)
-- **2020, Jan:** joined to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
-- **2019, May:** got a promising offer from the Swedish fintech decacorn [**Klarna**](https://klarna.com/) and joined to _Marketing Touchpoint Infrastructure_ team. Worked on analytics and CRM integrations.
-- **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io), a blockchain startup. Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](../blog/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
+- **2020, Jan:** switched to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
+- **2019, May:** got a promising offer from [**Klarna**](https://klarna.com/) and joined _Marketing Touchpoint Infrastructure_ team. Worked on CRM integrations and a bunch of MVPs for the Consumer Growth and Loyalty domain.
+- **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io). Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](../blog/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
 - **2018, June:** had a month-long London trip with colleagues, my first time abroad. Turkey had another non-promising general election that gave a hint of what will keep happening in the country.
-- **2017:** joined [**putio**](https://put.io/), a cloud-storage service that downloads publicly available files at high speeds. Took over the web app and built clients for iOS, tvOS, Roku, and Smart TVs.
+- **2017:** joined [**putio**](https://put.io/), the company changed my life. Took over the web app and built more apps for iOS, tvOS, Roku, and Smart TVs.
 
 ---
 
@@ -48,7 +48,7 @@ Those people contributed tremendously to my life.
 - **2010 to 2013**: ran a music blog and internet radio called **[bagimsiz alternatif](https://8tracks.com/bagimsizalternatif)** with tasteful friends. Our peak was around 30 listeners per show, so it radically shaped the culture.
 - **2010 to 2012**: played around with Ableton and [built some random stuff](https://soundcloud.com/altaywtf).
 - **2008 to 2009:** published a fanzine called **Uzak**, with friends who were also poetically suffering from puberty.
-- **2007 to 2012**: played drums in punk and alternative rock bands till the end of high school. [Recorded a demo](https://soundcloud.com/manevraonline/sets/palyaco) with the most memorable one, [**manevra**.](https://vimeo.com/26003192)
+- **2007 to 2012**: played drums in punk and alternative rock bands. [Recorded a demo](https://soundcloud.com/manevraonline/sets/palyaco) with the most memorable one, [**manevra**.](https://vimeo.com/26003192)
 - **2007**: built an unofficial website for my middle school. Took it down after one week because teachers read the comments written by students in the forum and threatened to sue me.
 - **1994 to today**: wanted to become a footballer or do computer stuff. I'm still fairly good at FIFA.
 - **2000**: moved to Antalya, Turkey
