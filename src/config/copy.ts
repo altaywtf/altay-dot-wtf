@@ -14,7 +14,7 @@ export const homeCopy = {
   ],
   posts: {
     href: '/blog',
-    title: 'Recent writing',
+    title: 'Recent notes',
     viewAll: 'See all notes',
   },
   books: {
@@ -30,9 +30,9 @@ export const aboutCopy = {
 }
 
 export const blogCopy = {
-  icon: '🤔',
-  title: 'Blog',
-  description: 'Learnings worth sharing.',
+  icon: '📝',
+  title: `Notes`,
+  description: `Random thoughts and references.`,
 } as const
 
 export const bookmarksCopy = {
@@ -50,12 +50,6 @@ export const booksCopy = {
 export const contactCopy = {
   title: 'Contact',
   description: 'Me on the internets.',
-}
-
-export const notesCopy = {
-  icon: '📝',
-  title: `Notes`,
-  description: `Random thoughts and references.`,
 }
 
 export const nowCopy = {

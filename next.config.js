@@ -8,17 +8,27 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: '/articles',
-        destination: '/blog',
+        destination: '/notes',
         permanent: true,
       },
       {
         source: '/articles/:path*',
-        destination: '/blog/:path*',
+        destination: '/notes/:path*',
+        permanent: true,
+      },
+      {
+        source: '/blog',
+        destination: '/notes',
+        permanent: true,
+      },
+      {
+        source: '/blog/:path*',
+        destination: '/notes/:path*',
         permanent: true,
       },
       {
         source: '/posts/:path*',
-        destination: '/blog/:path*',
+        destination: '/notes/:path*',
         permanent: true,
       },
     ]

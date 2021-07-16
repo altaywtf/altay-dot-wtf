@@ -1,4 +1,4 @@
-import { bookmarksCopy, notesCopy, contactCopy, vocabCopy } from './copy'
+import { bookmarksCopy, contactCopy, vocabCopy } from './copy'
 
 export const HEADER = [
   {
@@ -28,11 +28,6 @@ export const FOOTER = [
     title: bookmarksCopy.description,
     label: bookmarksCopy.title,
     href: '/bookmarks',
-  },
-  {
-    title: notesCopy.description,
-    label: notesCopy.title,
-    href: '/notes',
   },
   {
     title: vocabCopy.description,

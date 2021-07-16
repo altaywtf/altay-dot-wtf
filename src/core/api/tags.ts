@@ -51,8 +51,6 @@ const getTargetContentLinkRegex = (content: TaggedItem) => {
       return `/blog/${content.slug}`
     case 'book':
       return `/books/${content.slug}`
-    case 'note':
-      return `/notes/${content.slug}`
     default:
       return '__'
   }

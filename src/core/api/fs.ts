@@ -8,8 +8,6 @@ const getContentDirectoryForType = (type: ContentType) => {
       return 'blog'
     case 'book':
       return 'books'
-    case 'note':
-      return 'notes'
     default:
       return type
   }
