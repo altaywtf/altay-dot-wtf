@@ -1,6 +1,7 @@
 export const homeCopy = {
   title: "Hi, I'm Altay",
-  description: 'Thanks for visiting my website.',
+  description:
+    "I like computers, coffee, typefaces, and building things that are solving the problems I empathize with.\n\n I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some projects on the side.",
   links: [
     {
       label: 'More about me',
@@ -13,13 +14,13 @@ export const homeCopy = {
   ],
   posts: {
     href: '/blog',
-    title: 'Recent blog posts',
-    viewAll: 'View all blog posts',
+    title: 'Recent writing',
+    viewAll: 'See all notes',
   },
   books: {
     href: '/books',
     title: 'Recent book notes',
-    viewAll: 'View all book notes',
+    viewAll: 'See all book notes',
   },
 } as const
 

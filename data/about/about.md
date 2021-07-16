@@ -2,16 +2,6 @@
 date: '2021-07-15'
 ---
 
-I like computers, coffee, typefaces, and building things that are solving the problems I empathize with.
-
-I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects on the side:
-
-- My eternal love [putio](https://put.io)'s user-facing apps.
-- Notes from the [books](/books) I read.
-- Gaming on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
-
-&nbsp;
-
 ### Who I admire
 
 Those people contributed tremendously to my life.
