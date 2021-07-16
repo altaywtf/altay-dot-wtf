@@ -292,4 +292,6 @@ We engage in the practice to improve ourselves, not to fix others.
 
 Nobody enjoys the self-indulging stories. We enjoy while telling them, but do we also enjoy while listening?
 
-Put into practice what you preach. [People remember what you did when they forgot what you said.](../notes/people-remember-what-you-did)
+Put into practice what you preach.
+
+People remember what you did when they forgot what you said.

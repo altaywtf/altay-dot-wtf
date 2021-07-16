@@ -1,4 +1,4 @@
-import type { Post, Book } from 'types'
+import type { Note, Book } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useCallback } from 'react'
 import { homeCopy } from 'config/copy'
@@ -6,14 +6,14 @@ import { getContentList } from 'core/api/content'
 import { Box, Heading } from 'rebass'
 import PageHeader from 'components/PageHeader'
 import HomeLink from 'components/Home/HomeLink'
-import PostList from 'components/Post/PostList'
+import NoteList from 'components/Notes/NoteList'
 import BookList from 'components/Book/BookList'
 
 type Sections = [
   {
     title: string
-    type: 'posts'
-    data: Post[]
+    type: 'notes'
+    data: Note[]
   },
   {
     title: string
@@ -25,9 +25,9 @@ type Sections = [
 export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () => {
   const sections: Sections = [
     {
-      title: homeCopy.posts.title,
-      type: 'posts',
-      data: (await getContentList<Post>('post')).filter((post) => !post.meta.draft).slice(0, 5),
+      title: homeCopy.notes.title,
+      type: 'notes',
+      data: (await getContentList<Note>('note')).filter((note) => !note.meta.draft).slice(0, 5),
     },
     {
       title: homeCopy.books.title,
@@ -42,11 +42,11 @@ export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () =
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sections }) => {
   const renderSection = useCallback((section: Sections[number]) => {
     switch (section.type) {
-      case 'posts':
+      case 'notes':
         return (
           <>
-            <PostList data={section.data} />
-            <HomeLink label={homeCopy.posts.viewAll} href={homeCopy.posts.href} />
+            <NoteList data={section.data} />
+            <HomeLink label={homeCopy.notes.viewAll} href={homeCopy.notes.href} />
           </>
         )
 

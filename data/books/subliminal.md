@@ -22,7 +22,7 @@ Our actions are hard to explain by pure intention and logic. Over the history, w
 
 Most of the primitive creatures act "programmatically" to fulfill their basic instincts of survival and reproduction.
 
-Humans (and mammals) have developed a part of brain that gives us the ability to make conscious decisions. Yet the [pure logical conscious brain is a myth](../notes/consciousness-car).
+Humans (and mammals) have developed a part of brain that gives us the ability to make conscious decisions. Yet the pure logical conscious brain is a myth](../notes/consciousness-car).
 
 Our experiences shape the unconscious mind to direct our thinking towards certain ends. Mlodinow's mother for example, lost her mother at 16 to cancer, and her father, sister, and she were taken by the Nazis in Poland. She lost her sister and father, eventually escaped to the US to start a middle-low class life. Yet her traumatic early experiences made her think disastrously in such situations like Leonard skipping a routine phone call when he was studying away from home. His mom thought Leonard has died and his roommate didn't answer her calls to hide his death. In fact, Leonard was out for a date.
 

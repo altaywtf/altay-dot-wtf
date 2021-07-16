@@ -11,7 +11,7 @@ type TaggedItemProps = {
 const getTitle = (item: TaggedItem) => {
   switch (item.type) {
     case 'book':
-    case 'post':
+    case 'note':
       return item.meta.title
 
     default:
@@ -23,8 +23,8 @@ const getType = (item: TaggedItem) => item.type.split('-').join(' ')
 
 const getURLForContent = (content: TaggedItem, tag: string) => {
   switch (content.type) {
-    case 'post':
-      return `/blog/${content.slug}?source=${tag}`
+    case 'note':
+      return `/notes/${content.slug}?source=${tag}`
 
     case 'book':
       return `/books/${content.slug}?source=${tag}`

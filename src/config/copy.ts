@@ -12,8 +12,8 @@ export const homeCopy = {
       href: '/now',
     },
   ],
-  posts: {
-    href: '/blog',
+  notes: {
+    href: '/notes',
     title: 'Recent notes',
     viewAll: 'See all notes',
   },
@@ -29,7 +29,7 @@ export const aboutCopy = {
   title: "Hi, I'm Altay",
 }
 
-export const blogCopy = {
+export const notesCopy = {
   icon: '📝',
   title: `Notes`,
   description: `Random thoughts and references.`,

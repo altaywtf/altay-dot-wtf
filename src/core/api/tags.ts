@@ -47,8 +47,8 @@ export const getTaggedItemsByTag = async (tag: string) => {
 
 const getTargetContentLinkRegex = (content: TaggedItem) => {
   switch (content.type) {
-    case 'post':
-      return `/blog/${content.slug}`
+    case 'note':
+      return `/notes/${content.slug}`
     case 'book':
       return `/books/${content.slug}`
     default:
@@ -73,9 +73,6 @@ export const getLinksToContent = async (content: TaggedItem) => {
       switch (b.type) {
         case 'book':
           return 1
-
-        case 'post':
-          return 0
 
         case 'note':
           return -1

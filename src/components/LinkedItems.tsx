@@ -11,7 +11,7 @@ type LinkedItemProps = {
 const getTitle = (item: Content) => {
   switch (item.type) {
     case 'book':
-    case 'post':
+    case 'note':
       return item.meta.title
 
     default:
@@ -23,8 +23,8 @@ const getType = (item: Content) => item.type.split('-').join(' ')
 
 const getURLForContent = (content: Content, slug: string) => {
   switch (content.type) {
-    case 'post':
-      return `/blog/${content.slug}?source=${slug}`
+    case 'note':
+      return `/notes/${content.slug}?source=${slug}`
 
     case 'book':
       return `/books/${content.slug}?source=${slug}`

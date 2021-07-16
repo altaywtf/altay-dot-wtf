@@ -37,15 +37,7 @@ export type Note = BaseMDContent & {
   type: 'note'
   meta: BaseMDMeta & {
     title: string
-  }
-}
-
-export type Post = BaseMDContent & {
-  type: 'post'
-  meta: BaseMDMeta & {
-    title: string
     oneliner: string
-    metaImage: MetaImage & { blurhash: string }
     readingTime: string
   }
 }
@@ -86,12 +78,12 @@ export type Playlist = {
   }
 }
 
-export type Content = Now | Note | Post | Book | About | Vocabulary
+export type Content = Now | Note | Book | About | Vocabulary
 export type ContentType = Content['type']
 
-export type TaggedItem = Note | Post | Book
+export type TaggedItem = Note | Book
 export type TaggedItemType = TaggedItem['type']
-export const TAGGED_ITEM_TYPES: TaggedItem['type'][] = ['post', 'book', 'note']
+export const TAGGED_ITEM_TYPES: TaggedItem['type'][] = ['note', 'book']
 
 export const isTaggedItem = (taggedItem: Content): taggedItem is TaggedItem => {
   return (TAGGED_ITEM_TYPES as string[]).includes(taggedItem.type)

@@ -88,7 +88,7 @@ If you are using outcomes that are out of your control as fuel of your work, it'
 Your work has two audiences.
 
 - Only you. It's not professional work, there's no one to serve.
-- Shipping for someone. Requires to develop empathy through [generosity](../notes/generosity).
+- Shipping for someone. Requires to develop empathy through generosity.
 
 Pursuing either is fine, both is a recipe for unhappiness because you're insisting other people to see what you see.
 

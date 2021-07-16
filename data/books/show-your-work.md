@@ -12,7 +12,7 @@ tags:
 
 ### Find a Scenius
 
-[Scenius](/notes/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
+[Scenius](../notes/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
 
 Start asking what you can do for the others instead of the opposing one-way question.
 
