@@ -1,7 +1,7 @@
 import { Content } from 'types'
 import { Box, Text, Flex, SxStyleProp, Heading, Link } from 'rebass'
 import NextLink from 'next/link'
-import { formatDistanceToNow } from 'date-fns'
+import { formatDate } from 'utils/date'
 
 type LinkedItemProps = {
   slug: string
@@ -34,10 +34,6 @@ const getURLForContent = (content: Content, slug: string) => {
   }
 }
 
-const getSubtitle = (item: Content) => {
-  return `updated ${formatDistanceToNow(new Date(item.meta.date), { addSuffix: true })}`
-}
-
 const itemStyle: SxStyleProp = {
   borderRadius: 4,
   cursor: 'pointer',
@@ -64,7 +60,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
           </Text>
 
           <Text color="textTertiary" display="inline" fontSize={0}>
-            {getSubtitle(data)}
+            {formatDate(data.meta.date)}
           </Text>
         </Box>
       </Box>

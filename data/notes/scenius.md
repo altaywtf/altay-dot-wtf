@@ -1,5 +1,6 @@
 ---
 title: Definition of Scenius
+oneliner: Great minds think alike.
 date: '2020-10-31'
 tags:
   - scenius
@@ -17,4 +18,5 @@ A scenius is nurtured by several factors[^1]
 - Local tolerance for the novelties
 
 ### References
+
 [^1]: https://kk.org/thetechnium/scenius-or-comm/

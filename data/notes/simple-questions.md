@@ -1,5 +1,6 @@
 ---
 title: Simple questions
+oneliner: ':thinking-face:'
 date: '2020-11-10T20:02:22Z'
 ---
 

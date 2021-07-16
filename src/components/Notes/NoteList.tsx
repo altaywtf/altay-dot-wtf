@@ -1,7 +1,7 @@
 import type { Note } from 'types'
 import NextLink from 'next/link'
-import { formatDistanceToNow } from 'date-fns'
 import { Box, Text, Link, Heading } from 'rebass'
+import { formatDate } from 'utils/date'
 
 type Props = {
   data: Note[]
@@ -28,8 +28,8 @@ const NoteList: React.FC<Props> = ({ data }) => (
         <Box m={1} />
 
         <Text fontSize={0} color="textTertiary">
-          {'Updated '}
-          {formatDistanceToNow(new Date(b.meta.date), { addSuffix: true })}
+          {formatDate(b.meta.date)}
+
           <Box display="inline" mx={1}>
             ·
           </Box>

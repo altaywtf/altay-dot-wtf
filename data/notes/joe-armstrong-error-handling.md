@@ -1,5 +1,6 @@
 ---
 title: Joe Armstrong on error handling
+oneliner: For your next engineering couch.
 date: '2020-11-03'
 tags:
   - software

@@ -1,5 +1,6 @@
 ---
 title: 'The Trap: What Happened to Our Dreams of Freedom'
+oneliner: Notes from by Adam Curtis's amazing documentary.
 date: '2020-08-07'
 ---
 

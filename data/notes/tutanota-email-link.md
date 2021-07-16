@@ -1,5 +1,6 @@
 ---
 title: Tutanota's non-intuitive email link
+oneliner: Time to read Laws of UX.
 date: '2020-11-05T19:50:22Z'
 ---
 

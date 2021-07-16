@@ -1,5 +1,6 @@
 ---
-title: Self-control is an illusion
+title: Self-control
+oneliner: is an illusion...
 date: '2020-12-05T09:53:32Z'
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: The Vampire Test
+title: The vampire test
+oneliner: Well, that was easy.
 date: '2020-10-31'
 ---
 

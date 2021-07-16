@@ -1,5 +1,6 @@
 ---
 title: Our consciousness car
+oneliner: 'is driven by a hedonistic child.'
 date: '2020-12-05T09:57:23Z'
 ---
 
@@ -16,7 +17,7 @@ That leads to the simplest and most obvious answer to the timeless question, why
 
 **Because we don't feel like it.**
 
-Self-control is an [emotional problem](./law-of-emotions.md).
+Self-control is an emotional problem.
 
 Even worse news is emotional problems can only have emotional solutions.
 

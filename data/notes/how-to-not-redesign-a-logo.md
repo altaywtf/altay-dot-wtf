@@ -1,5 +1,6 @@
 ---
-title: How to not redesign your app icons — GSuite example
+title: How to not redesign your app icons
+oneliner: Notorious GSuite example
 date: '2020-11-09T21:12:40Z'
 tags:
   - design

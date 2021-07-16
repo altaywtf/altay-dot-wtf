@@ -1,7 +1,7 @@
 import { TaggedItem } from 'types'
 import { Box, Text, Link, SxStyleProp } from 'rebass'
 import NextLink from 'next/link'
-import { formatDistanceToNow } from 'date-fns'
+import { formatDate } from 'utils/date'
 
 type TaggedItemProps = {
   tag: string
@@ -47,9 +47,6 @@ const TaggedItemHeading: React.FC<TaggedItemProps> = ({ tag, data }) => {
   )
 }
 
-const getSubtitle = (item: TaggedItem) =>
-  `updated ${formatDistanceToNow(new Date(item.meta.date), { addSuffix: true })}`
-
 const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
   <Box my={3}>
     <TaggedItemHeading tag={tag} data={data} />
@@ -63,7 +60,7 @@ const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
     </Text>
 
     <Text color="textTertiary" display="inline" fontSize={0}>
-      {getSubtitle(data)}
+      {formatDate(data.meta.date)}
     </Text>
   </Box>
 )

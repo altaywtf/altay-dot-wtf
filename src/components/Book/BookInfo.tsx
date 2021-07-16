@@ -1,8 +1,8 @@
 import type { Book } from 'types'
 import { Box, Text, Link } from 'rebass'
-import { format, formatDistanceToNow } from 'date-fns'
 import { CgArrowTopRight } from 'react-icons/cg'
 import StarRatingComponent from 'react-star-rating-component'
+import { format } from 'date-fns'
 
 type Props = {
   bookMeta: Book['meta']
@@ -16,12 +16,8 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
     {
       key: 'date',
       component: (
-        <Text
-          title={format(new Date(bookMeta.date), 'PPP')}
-          color="textTertiary"
-          fontSize={fontSize}
-        >
-          Read {formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true })}
+        <Text color="textTertiary" fontSize={fontSize}>
+          Read in {format(new Date(bookMeta.date), 'MMMM yyyy')}
         </Text>
       ),
     },

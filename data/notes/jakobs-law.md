@@ -1,5 +1,6 @@
 ---
 title: Jakob's Law
+oneliner: Don't make people think. Please.
 date: '2020-11-05T19:50:22Z'
 tags:
   - design
@@ -12,4 +13,5 @@ Users spend most of their time on other sites, and they prefer your site to work
 - When introducing re-designs, prefer gradual transitions between the versions. Allow people to keep using the old version so they can try and adapt without completely leaving the product.
 
 ### References
+
 - [Laws of UX](../books/laws-of-ux.md)

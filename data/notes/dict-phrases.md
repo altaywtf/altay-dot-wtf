@@ -1,5 +1,6 @@
 ---
-title: Phrases
+title: 'Dictionary – phrases'
+oneliner: Interesting phrases I came across while consuming.
 date: '2020-12-03T19:12:12Z'
 ---
 

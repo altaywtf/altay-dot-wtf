@@ -1,5 +1,6 @@
 ---
 title: How to design a checkout experience
+oneliner: Just do whatever Shopify does.
 date: '2020-11-11T20:33:52Z'
 tags:
   - design

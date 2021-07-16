@@ -1,11 +1,11 @@
 import type { InferGetStaticPropsType } from 'next'
 import type { About } from 'types'
 import { Box, Text, SxStyleProp } from 'rebass'
-import { format } from 'date-fns'
 import { getContentDetails } from 'core/api/content'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
 import { homeCopy, aboutCopy } from 'config/copy'
+import { formatDate } from 'utils/date'
 
 export const getStaticProps = async () => ({
   props: await getContentDetails<About>('about', 'about'),
@@ -41,7 +41,7 @@ const AboutPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Box m={4} />
 
     <Text fontSize={0} color="textTertiary">
-      Last updated at {format(new Date(meta.date), 'PPP')}
+      Last updated at {formatDate(meta.date)}
     </Text>
   </>
 )

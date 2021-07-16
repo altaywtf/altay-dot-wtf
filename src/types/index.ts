@@ -26,13 +26,6 @@ export type Now = BaseMDContent & {
   type: 'now'
 }
 
-export type Vocabulary = BaseMDContent & {
-  type: 'vocabulary'
-  meta: BaseMDMeta & {
-    title: string
-  }
-}
-
 export type Note = BaseMDContent & {
   type: 'note'
   meta: BaseMDMeta & {
@@ -78,7 +71,7 @@ export type Playlist = {
   }
 }
 
-export type Content = Now | Note | Book | About | Vocabulary
+export type Content = Now | Note | Book | About
 export type ContentType = Content['type']
 
 export type TaggedItem = Note | Book

@@ -1,5 +1,6 @@
 ---
 title: Blur-up image loading with next/image
+oneliner: aka the magic thing Medium does with the images.
 date: '2020-11-13T22:41:11Z'
 tags:
   - next-js

@@ -1,5 +1,6 @@
 ---
 title: A perfect coffee bean package
+oneliner: It tastes great too.
 date: '2020-11-09T18:30:21Z'
 tags:
   - design

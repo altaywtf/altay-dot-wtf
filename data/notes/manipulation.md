@@ -1,11 +1,12 @@
 ---
 title: Manipulation
+oneliner: A definition of manipulation from Seth Godin.
 date: '2020-11-15T19:56:29Z'
 tags:
   - marketing
 ---
 
-The definition of manipulation, according to Seth Godin. (which I totally agree with.)
+A definition of manipulation from Seth Godin.
 
 If people know what you already know &mdash;about your product, your service, and your methods&mdash; would they still be eager to buy from you? (or vote for you 🙂)
 

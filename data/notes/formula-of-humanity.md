@@ -1,5 +1,6 @@
 ---
 title: The Formula of Humanity
+oneliner: Brought to you by Immanuel Kant
 date: '2020-12-06T16:35:53Z'
 ---
 
