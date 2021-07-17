@@ -60,17 +60,6 @@ export type Bookmark = {
   description: string
 }
 
-export type Playlist = {
-  type: 'playlist'
-  id: string
-  name: string
-  description: string
-  url: string
-  image: {
-    url: string
-  }
-}
-
 export type Content = Now | Note | Book | About
 export type ContentType = Content['type']
 

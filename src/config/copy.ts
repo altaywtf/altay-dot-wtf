@@ -69,15 +69,3 @@ export const tagsCopy = {
   icon: '#️⃣',
   title: 'Tags',
 }
-
-export const vocabCopy = {
-  icon: '📖',
-  title: 'Vocabulary',
-  description: 'Some interesting elements I came across while reading.',
-}
-
-export const playlistsCopy = {
-  icon: '🎧',
-  title: 'Playlists',
-  description: 'My Spotify playlists.',
-}
