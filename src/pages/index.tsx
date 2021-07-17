@@ -21,7 +21,7 @@ export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () =
     {
       title: homeCopy.notes.title,
       type: 'notes',
-      data: (await getContentList<Note>('note')).filter((note) => !note.meta.draft).slice(0, 5),
+      data: (await getContentList<Note>('note')).slice(0, 5),
     },
   ]
 

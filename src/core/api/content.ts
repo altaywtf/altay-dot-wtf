@@ -31,13 +31,9 @@ export const getContentList = async <T extends Content>(
 ) => {
   const fileNames = getMarkdownFileNames(contentType)
 
-  let contentList = (await Promise.all(
+  const contentList = (await Promise.all(
     fileNames.map((slug) => getContentDetails<T>(contentType, slug)),
   )) as T[]
-
-  if (process.env.NODE_ENV === 'production') {
-    contentList = contentList.filter((c) => !c.meta.draft)
-  }
 
   if (withDetails) {
     return contentList
