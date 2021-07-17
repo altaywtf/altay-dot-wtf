@@ -1,0 +1,22 @@
+[
+  {
+    "details": "Taking notes from the books I read.",
+    "name": "Book notes",
+    "url": "/books"
+  },
+  {
+    "details": "Keeping a list of cool things all over the internet.",
+    "name": "Bookmarks",
+    "url": "/bookmarks"
+  },
+  {
+    "details": "Building the user-facing parts since 2017.",
+    "name": "Put.io",
+    "url": "https://put.io"
+  },
+  {
+    "details": "Maintaining an open-source payment gateway for NANO.",
+    "name": "Accept Nano",
+    "url": "https://github.com/accept-nano/accept-nano-client"
+  }
+]

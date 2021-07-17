@@ -2,9 +2,9 @@
 date: '2021-07-15'
 ---
 
-### Who I admire
+### People I admire
 
-Those people contributed tremendously to my life.
+_Those who contributed tremendously to my life during the past few years._
 
 - **The big three**: Naval Ravikant, Derek Sivers, Mark Manson
 - **Creative three**: Austin Kleon, Brian Lovin, Matt D. Smith
@@ -15,6 +15,8 @@ Those people contributed tremendously to my life.
 &nbsp;
 
 ### Timeline
+
+_My journey so far._
 
 - **2021, Apr:** moved into a [more-permanent flat](https://twitter.com/altaywtf/status/1387446623303778307) after living in a furnished agency apartment for 2.5 years.
 - **2021, Jan:** wanted to work closer to the product after [an engineering-heavy year.](../notes/2020) Switched to _Consumer Deals_ team in Klarna.

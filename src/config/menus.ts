@@ -16,7 +16,7 @@ export const HEADER = [
     href: '/notes',
   },
   {
-    label: 'Books',
-    href: '/books',
+    label: 'Projects',
+    href: '/projects',
   },
 ] as const
