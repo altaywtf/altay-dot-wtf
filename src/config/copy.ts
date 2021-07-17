@@ -1,7 +1,7 @@
 export const homeCopy = {
   title: "Hi, I'm Altay",
   description:
-    "I like computers, coffee, typefaces, and building things to solve problems I empathize with.\n\n I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some [projects](/projects) on the side.",
+    "I like computers, coffee, typefaces, and building things to solve problems I empathize with.\n\n I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some [passion projects](/projects) on the side.",
   links: [
     {
       label: 'More about me',
@@ -29,7 +29,7 @@ export const aboutCopy = {
   title: "Hi, I'm Altay",
   description:
     homeCopy.description +
-    '\n\n Before [Klarna](https://klarna.com), I worked on the [mobile app](https://github.com/LiskHQ/lisk-mobile) of [Lisk](https://lisk.io).' +
+    '\n\n Before [Klarna](https://klarna.com), I worked on the [mobile application](https://github.com/LiskHQ/lisk-mobile) of [Lisk](https://lisk.io).' +
     "\n\n Before moving to Berlin, I lived in Istanbul and built web, iOS, tvOS, Roku, Chromecast, and Smart TV apps of [Put.io](https://put.io), which I'm still a part of." +
     '\n\n You can [find me on Twitter](https://twitter.com/altaywtf), where I mostly complain and post photos of my workspace, or [drop me an email](mailto:altay@aydemir.io).' +
     '\n\n Thanks for visiting my website!',
