@@ -6,7 +6,6 @@ import type { Book } from 'types'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
-import Tags from 'components/Tag/Tags'
 import LinkedItems from 'components/LinkedItems'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 
@@ -43,7 +42,6 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
           </Heading>
           <Box my={2} />
           <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={0} />
-          <Tags tags={data.meta.tags} />
         </Box>
       </Flex>
 

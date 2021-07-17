@@ -71,7 +71,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
 const LinkedItems: React.FC<{ slug: string; data: Content[] }> = ({ slug, data }) =>
   data.length ? (
     <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
-      <Heading fontSize={2}>mentioned in </Heading>
+      <Heading fontSize={2}>Mentioned in</Heading>
 
       <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
         {data.map((item, index) => (

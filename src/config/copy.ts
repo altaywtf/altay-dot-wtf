@@ -71,13 +71,8 @@ export const nowHistoryCopy = {
   description: `What I've been doing`,
 }
 
-export const tagsCopy = {
-  icon: '#️⃣',
-  title: 'Tags',
-}
-
 export const projectsCopy = {
   icon: '👨‍💻',
   title: 'Projects',
-  description: 'I keep myself busy with those things while not working.',
+  description: 'I mostly spend my time on those things while not working.',
 }

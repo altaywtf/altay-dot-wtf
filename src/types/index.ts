@@ -5,8 +5,6 @@ export type MetaImage = {
 }
 
 export type BaseMeta = {
-  tags: string[] | undefined
-  draft: boolean
   date: string
 }
 
@@ -62,11 +60,3 @@ export type Bookmark = {
 
 export type Content = Now | Note | Book | About
 export type ContentType = Content['type']
-
-export type TaggedItem = Note | Book
-export type TaggedItemType = TaggedItem['type']
-export const TAGGED_ITEM_TYPES: TaggedItem['type'][] = ['note', 'book']
-
-export const isTaggedItem = (taggedItem: Content): taggedItem is TaggedItem => {
-  return (TAGGED_ITEM_TYPES as string[]).includes(taggedItem.type)
-}

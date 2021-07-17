@@ -3,7 +3,6 @@ import type { Note } from 'types'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
@@ -41,8 +40,6 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       <Heading>{data.meta.title}</Heading>
 
       <Box my={2} />
-
-      <Tags tags={data.meta.tags} />
 
       <Text fontSize={0} color="textTertiary">
         {formatDate(data.meta.date)}
