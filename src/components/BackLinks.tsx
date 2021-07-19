@@ -3,7 +3,7 @@ import { Box, Text, Flex, SxStyleProp, Heading, Link } from 'rebass'
 import NextLink from 'next/link'
 import { formatDate } from 'utils/date'
 
-type LinkedItemProps = {
+type BackLinkProps = {
   slug: string
   data: Content
 }
@@ -19,7 +19,7 @@ const getTitle = (item: Content) => {
   }
 }
 
-const getType = (item: Content) => item.type.split('-').join(' ')
+const humanizeType = (type: Content['type']) => type.split('-').join(' ')
 
 const getURLForContent = (content: Content, slug: string) => {
   switch (content.type) {
@@ -42,7 +42,7 @@ const itemStyle: SxStyleProp = {
   },
 }
 
-const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
+const BackLink: React.FC<BackLinkProps> = ({ data, slug }) => (
   <NextLink href={getURLForContent(data, slug)} passHref>
     <Link href={getURLForContent(data, slug)}>
       <Box sx={itemStyle} p={2}>
@@ -51,15 +51,15 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
         </Text>
 
         <Box mt={-1}>
-          <Text color="textSecondary" display="inline" fontSize={0}>
-            {getType(data)}
+          <Text color="textSecondary" display="inline" fontSize={14}>
+            {humanizeType(data.type)}
           </Text>
 
-          <Text color="textSecondary" display="inline-block" fontSize={0} mx={1}>
+          <Text color="textSecondary" display="inline-block" fontSize={14} mx={1}>
             ·
           </Text>
 
-          <Text color="textTertiary" display="inline" fontSize={0}>
+          <Text color="textTertiary" display="inline" fontSize={14}>
             {formatDate(data.meta.date)}
           </Text>
         </Box>
@@ -68,19 +68,22 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
   </NextLink>
 )
 
-const LinkedItems: React.FC<{ slug: string; data: Content[] }> = ({ slug, data }) =>
-  data.length ? (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
-      <Heading fontSize={2}>Mentioned in</Heading>
+const BackLinks: React.FC<{ slug: string; type: Content['type']; data: Content[] }> = ({
+  slug,
+  type,
+  data,
+}) => (
+  <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
+    <Heading fontSize={1}>Links to this {humanizeType(type)}</Heading>
 
-      <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
-        {data.map((item, index) => (
-          <Box width={[1, 1, 1 / 2]} key={index} mt={1} px={2}>
-            <Item data={item} slug={slug} />
-          </Box>
-        ))}
-      </Flex>
-    </Box>
-  ) : null
+    <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
+      {data.map((item, index) => (
+        <Box width={[1, 1, 1 / 2]} key={index} mt={1} px={2}>
+          <BackLink data={item} slug={slug} />
+        </Box>
+      ))}
+    </Flex>
+  </Box>
+)
 
-export default LinkedItems
+export default BackLinks

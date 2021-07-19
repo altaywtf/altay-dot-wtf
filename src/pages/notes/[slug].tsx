@@ -5,7 +5,7 @@ import { Heading, Text, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import Markdown from 'components/Markdown'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
-import LinkedItems from 'components/LinkedItems'
+import BackLinks from 'components/BackLinks'
 import { formatDate } from 'utils/date'
 
 export const getStaticPaths = getStaticPathsForContent('note')
@@ -43,7 +43,6 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Text fontSize={0} color="textTertiary">
         {formatDate(data.meta.date)}
-
         <Box display="inline" mx={1}>
           ·
         </Box>
@@ -56,7 +55,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box m={4} />
 
-      <LinkedItems data={links} slug={data.slug} />
+      {links.length > 0 ? <BackLinks slug={data.slug} type={data.type} data={links} /> : null}
     </>
   )
 }

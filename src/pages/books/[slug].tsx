@@ -6,7 +6,7 @@ import type { Book } from 'types'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
-import LinkedItems from 'components/LinkedItems'
+import BackLinks from 'components/BackLinks'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 
 export const getStaticPaths = getStaticPathsForContent('book')
@@ -51,7 +51,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box m={6} />
 
-      <LinkedItems data={links} slug={data.slug} />
+      {links.length > 0 ? <BackLinks type={data.type} data={links} slug={data.slug} /> : null}
     </>
   )
 }

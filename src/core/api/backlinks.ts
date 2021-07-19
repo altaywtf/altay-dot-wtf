@@ -1,6 +1,5 @@
 import { Content, ContentType } from 'types'
 import { getContentList } from './content'
-import { sortContent } from './utils'
 
 const BACKLINKED_CONTENT_TYPES: ContentType[] = ['book', 'note']
 
@@ -9,9 +8,7 @@ const getBacklinkedItems = async () => {
     getContentList(type, { withDetails: true }),
   )
 
-  const markdownContents = (await Promise.all(fetcher)).flat() as Content[]
-
-  return sortContent(markdownContents)
+  return (await Promise.all(fetcher)).flat() as Content[]
 }
 
 const getTargetContentLinkRegex = (content: Content) => {
@@ -38,7 +35,7 @@ export const getLinksToContent = async (content: Content) => {
     .filter((c) => getLinks(c, content))
     .sort((a, b) => {
       if (a.type === b.type) {
-        return a.slug > b.slug ? 1 : -1
+        return Date.parse(a.meta.date) > Date.parse(b.meta.date) ? -1 : 1
       }
 
       switch (b.type) {
