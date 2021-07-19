@@ -20,6 +20,12 @@ const sx: SxStyleProp = {
   '& > ul:nth-of-type(1) > li': {
     marginY: 1,
   },
+  '& > ul:nth-of-type(1) > li > a': {
+    color: 'textTertiary',
+  },
+  '& > ul:nth-of-type(1) > li > a:hover': {
+    color: 'linkPrimary',
+  },
 }
 
 const AboutPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
