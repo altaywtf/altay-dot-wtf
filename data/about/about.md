@@ -7,9 +7,9 @@ date: '2021-07-15'
 _Those who contributed tremendously to my life during the past few years._
 
 - **The big three**: [Naval Ravikant](https://nav.al), [Derek Sivers](https://sivers.org), [Mark Manson](https://markmanson.net)
-- **Creative three**: [Austin Kleon](https://austinkleon.com), [Brian Lovin](https://brianlovin.com), [Matt D. Smith](http://mds.is/)
-- **Hacker three**: [Guillermo Rauch](https://rauchg.com), [Dan Abramov](https://overreacted.io), [Scott Wlaschin](https://fsharpforfunandprofit.com)
-- **Productive three**: [Seth Godin](https://seths.blog), [Cal Newport](https://www.calnewport.com), [James Clear](https://jamesclear.com)
+- **Designer three**: [Mike Monteiro](https://monteiro.medium.com), [Brian Lovin](https://brianlovin.com), [Matt D. Smith](http://mds.is/)
+- **Hacker three**: [Guillermo Rauch](https://rauchg.com), [Scott Wlaschin](https://fsharpforfunandprofit.com), [Dan Abramov](https://overreacted.io)
+- **Productivity three**: [Seth Godin](https://seths.blog), [Austin Kleon](https://austinkleon.com), [James Clear](https://jamesclear.com)
 - **Close-circle three**: [Hasan Yalcinkaya](https://twitter.com/hafifuyku), [Kemal Akkoyun](https://kakkoyun.me), [Berk Capar](https://berk.studio)
 
 &nbsp;
