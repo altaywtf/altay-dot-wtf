@@ -2,8 +2,6 @@
 title: Manipulation
 oneliner: A definition of manipulation from Seth Godin.
 date: '2020-11-15T19:56:29Z'
-tags:
-  - marketing
 ---
 
 A definition of manipulation from Seth Godin.

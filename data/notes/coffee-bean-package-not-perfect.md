@@ -1,9 +1,6 @@
 ---
 title: An imperfect coffee bean package
 date: '2020-11-09T20:09:28Z'
-tags:
-  - design
-  - coffee
 ---
 
 This is from [Bonanza.](https://www.instagram.com/bonanzacoffee/)

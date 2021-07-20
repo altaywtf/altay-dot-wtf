@@ -3,8 +3,6 @@ isbn: '0140135375'
 date: '2019-01-26'
 rating: '3/5'
 oneliner: 'An ontological secure person has his sense of the world, his identity and other beings in the world as an autonomous individual.'
-tags:
-  - psychology
 ---
 
 ## The Existential-Phenomenological Foundations for A Science of Persons

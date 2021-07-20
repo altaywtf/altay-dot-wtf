@@ -1,9 +1,7 @@
 ---
 title: Definition of Scenius
-oneliner: Great minds think alike.
+oneliner: Great minds grow together.
 date: '2020-10-31'
-tags:
-  - scenius
 ---
 
 It's a term _invented_ by Brian Eno.

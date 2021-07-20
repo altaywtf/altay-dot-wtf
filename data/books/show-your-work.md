@@ -3,9 +3,6 @@ isbn: '076117897X'
 date: '2020-10-04'
 rating: '5/5'
 oneliner: Unless you are a real ninja, rockstar, or guru, stay away from those words.
-tags:
-  - austin-kleon
-  - creativity
 ---
 
 ## 1. You Don't Have to Be a Genius
@@ -132,16 +129,15 @@ Do your thing and talk about the stuff you love, and you'll eventually attract p
 
 ### The Vampire Test
 
-A [Derek Sivers](/tags/derek-sivers) quote:
+A Derek Sivers quote:
 
 > Whatever excites you, do it.\
 > Whatever drains you, stop doing it.
 
 After doing something, take a moment and think about how it felt.
-
 Did you get energized and motivated or exhausted and drained?
 
-That is [the vampire test](/tags/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
+That is [the vampire test](../notes/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
 
 ### Find Your fellow <X>'ers
 
@@ -162,7 +158,7 @@ They were too harsh while reviewing each other's work to see if any of them are 
 
 Put out a lot of work, get punched a lot.
 
-[The more criticism you take, the more you realize it is harmless.](/tags/criticism)
+The more criticism you take, the more you realize it is harmless.
 
 Nobody died from a bad review. Take a deep breath and accept whatever comes.
 
@@ -190,7 +186,7 @@ Ask for money when you are confident and at a fair price.
 
 ### Your Audience
 
-[Keep a mailing list](/tags/audience).
+Keep a mailing list.
 People who sign-up for your mailing list are giving consent to be "disturbed" by you.
 Don't push your chance; don't turn into human spam.
 
@@ -204,7 +200,7 @@ Say "no" to less of the things you want to do, even if they have a more signific
 
 ## 10. Stick Around
 
-[**Don't quit your show.** The people who get what they are often the ones who just stick around long enough.](/tags/persistence)
+**Don't quit your show.** The people who get what they are often the ones who just stick around long enough.
 
 Whether you've just won big or lost big, you still have to face the next question: _what's next?_
 

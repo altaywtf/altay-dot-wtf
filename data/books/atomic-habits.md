@@ -3,9 +3,6 @@ isbn: '0735211299'
 date: '2019-01-16'
 rating: '5/5'
 oneliner: "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done."
-tags:
-  - productivity
-  - self-help
 ---
 
 **Introduction: Story of James**
@@ -45,7 +42,7 @@ When you finally break through the Plateau of Latent Potential, people will call
 - You have a new goal and a new plan, but you haven’t changed who you are.
 - The ultimate form of intrinsic motivation is when a habit becomes part of your identity.
 
-**[Two step process of changing your identity](/tags/who-you-want)**
+Two step process of changing your identity:
 
 1. Decide the type of person you want to be.
 2. Prove it to yourself with small wins.

@@ -3,10 +3,6 @@ isbn: '006285268X'
 date: '2019-08-25'
 rating: '4/5'
 oneliner: 'In chemical reactions, there are rate-determining steps which affects the time required to complete the reaction. Your weakest point is the rate-determining step.'
-tags:
-  - productivity
-  - learning
-  - self-help
 ---
 
 ## Principle 1: Metalearning

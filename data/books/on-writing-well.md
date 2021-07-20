@@ -3,8 +3,6 @@ isbn: '9780060891541'
 date: '2020-11-22'
 rating: '5/5'
 oneliner: 'An occasional short sentence can carry a tremendous punch.'
-tags:
-  - writing
 ---
 
 I got the recommendation from [this list of DHH](https://signalvnoise.com/posts/3375-the-five-programming-books-that-meant-most-to-me). As a non-native English speaker trying to express himself, I think it's an enlightening guide. I'm not familiar with American literature. Yet it's evident that Zinsser is one of the best authors of non-fiction writing. He's also a wise teacher and an admirable New Yorker.

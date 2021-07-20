@@ -3,9 +3,6 @@ isbn: '0307472256'
 date: '2020-12-20'
 rating: '4/5'
 oneliner: "If your mind's natural view of the world is skewed, it's skewed for a reason."
-tags:
-  - neuroscience
-  - psychology
 ---
 
 (Not a marketing book)

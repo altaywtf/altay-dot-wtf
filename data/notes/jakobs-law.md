@@ -2,8 +2,6 @@
 title: Jakob's Law
 oneliner: Don't make people think. Please.
 date: '2020-11-05T19:50:22Z'
-tags:
-  - design
 ---
 
 Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know.

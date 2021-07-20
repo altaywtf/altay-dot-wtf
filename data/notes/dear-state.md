@@ -2,9 +2,6 @@
 title: Dear state, please stop lying
 oneliner: A brief revisit of how we represent states while building user-interfaces.
 date: '2020-02-22'
-tags:
-  - software
-  - typescript
 ---
 
 Is managing the UI state is hard, or we make it hard for ourselves by not paying attention?

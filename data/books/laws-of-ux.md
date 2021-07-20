@@ -3,10 +3,6 @@ isbn: '149205531X'
 date: '2020-08-29'
 rating: '4/5'
 oneliner: 'Use more meaningful metrics like "helping people to achieve their goals" rather than "daily active users" or "time spent on site".'
-tags:
-  - jon-yablonski
-  - design
-  - psychology
 ---
 
 This book is a great reference for the complex psychological concepts behind the fundamentals of designing intuitive products and experiences.
@@ -15,7 +11,7 @@ This book is a great reference for the complex psychological concepts behind the
 
 ## Jakob's Law
 
-[_Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know._](/tags/jakobs-law)
+[_Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know._](../notes/jakobs-law)
 
 **Key Takeaways**
 

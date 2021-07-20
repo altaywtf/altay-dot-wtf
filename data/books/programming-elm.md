@@ -3,8 +3,6 @@ isbn: '1680502859'
 date: '2020-09-08'
 rating: '3/5'
 oneliner: 'Elm functions are curried, which is the fancy way of saying they take one argument at a time.'
-tags:
-  - software
 ---
 
 There is [a Github repository](https://github.com/altaywtf/programming-elm) for the stuff I built while following this book.

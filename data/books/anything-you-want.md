@@ -3,9 +3,6 @@ isbn: '0241209048'
 date: '2020-10-07'
 rating: '5/5'
 oneliner: 'If you want to be useful, you can start now. Just put one percent of your vision, and you are in the game.'
-tags:
-  - derek-sivers
-  - business
 ---
 
 ## Your Company is Your Utopia
@@ -13,7 +10,7 @@ tags:
 Business is not about money. It's about making dreams come true for others and yourself.
 
 Starting a company is a great way to improve something and learn while doing.
-[Your company is your little utopia; run it as you're in charge of your ideal world.](/tags/your-utopia)
+[Your company is your little utopia; run it as you're in charge of your ideal world.](../notes/my-utopia)
 
 A business is a reflection of the creator. Pay attention to what excites you or what drains you.
 Make your company and role **anything you want**.
@@ -32,7 +29,7 @@ CD Baby just followed the idea of charging 4\$ per copy for albums, which was th
 
 ## Hell Yeah Or No
 
-[Persistence is undoubtedly essential, but don't persistently do the wrong thing.](/tags/persistence) Success comes from persistently improving and innovating.
+[Persistence is undoubtedly essential, but don't persistently do the wrong thing.](../notes/why) Success comes from persistently improving and innovating.
 
 We are all busy. Saying **"hell yeah, or no"** helps choose what to do with enjoyment.
 
@@ -93,7 +90,7 @@ Be ready to handle at least double the size of customers when it comes to operat
 
 ### But, for real...
 
-In the end, it's not about what you want to be. It is about what you have. Taking time to learn doing stuff by yourself is actually becoming someone who knows that. [When you sign-up to run a marathon, you don't want a taxi to take you to the finish line.](/tags/get-rich-quick)
+In the end, it's not about what you want to be. It is about what you have. Taking time to learn doing stuff by yourself is actually becoming someone who knows that. **When you sign-up to run a marathon, you don't want a taxi to take you to the finish line.**
 
 ### Promises
 

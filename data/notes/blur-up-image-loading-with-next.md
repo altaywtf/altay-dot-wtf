@@ -2,8 +2,6 @@
 title: Blur-up image loading with next/image
 oneliner: aka the magic thing Medium does with the images.
 date: '2020-11-13T22:41:11Z'
-tags:
-  - next-js
 ---
 
 I wanted to implement Medium's [progressive image loading technique](https://github.com/evenchange4/react-progressive-bg-image) with Next.js's new `next/image` component. It doesn't pass the image dimensions, not as intuitive as gatsby.

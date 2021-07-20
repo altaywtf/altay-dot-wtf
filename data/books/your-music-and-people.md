@@ -3,10 +3,6 @@ isbn: '9781988575018'
 date: '2020-10-18'
 rating: '5/5'
 oneliner: Assume nobody is going to help you. If someone does, then it gets even better.
-tags:
-  - derek-sivers
-  - business
-  - marketing
 ---
 
 Byte-size stories from Derek Sivers' experience in the music industry.
@@ -19,7 +15,7 @@ It's a great guide for finding a niche, building an audience, being resourceful,
 How you communicate, make it available and all the stories you tell are as much as valuable as creating it.
 The way you present your art and what people know about it completely changes how they perceive it.
 
-[Restrictions will set you free.](/tags/restrictions)
+Restrictions will set you free.
 In case you feel uninspired or unmotivated, try to set some restrictions for your creation.
 
 Story of [Captain T's](https://sive.rs/capt), UFO music, and _confidential_ demo: One musician friend of Derek.
@@ -80,23 +76,23 @@ Establishing a friendly relationship is more helpful than being terrified of who
 If you sense you are becoming an expert, figure out what you love more.
 You can do anything, but you can't do everything.
 
-[Rejection therapy](/tags/rejection) is an excellent way to overcome the fear of rejection by getting rejected every day.
+Rejection therapy is an excellent way to overcome the fear of rejection by getting rejected every day.
 
 ## Resourceful
 
 **Impress people with how little you spend.**
-[Saying you need a certain expensive tool is a form of avoiding work](/tags/fancy-tools).
+Saying you need a certain expensive tool is a form of avoiding work.
 Being resourceful shows you can survive.
 
 **You can't act on a vague goal.** Be specific on what you want.
-When you don't know the next step, you feel lost and [procrastinate](/tags/procrastination).
+When you don't know the next step, you feel lost and procrastinate.
 
 - Write down everything you know. Include every detail and your philosophy.
 - Break details into specific ingredients.
 - Research what you don't know.
 - Turn your findings into actions.
 
-[A good plan wins no matter what happens.](/tags/without-getting-lucky)
+A good plan wins no matter what happens.
 
 Assume nobody is going to help you. No investors, no heritage, no lottery. It's all up to you. You can't wait because there is nobody to wait. When someone does help you, that would make it better.
 
@@ -108,7 +104,7 @@ Second one makes use of the industry to build a good team, pursue deals and find
 
 Prepare for either path, you will win any case.
 
-**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](/tags/why-are-you-doing)
+**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](../notes/why)
 
 Every depressing situation may arise an opportunity. Hungry guy from music industry comes to Derek's university for a seminar. Derek orders a pizza to the classroom. They became friends after.
 
@@ -120,7 +116,7 @@ Every depressing situation may arise an opportunity. Hungry guy from music indus
 - Use tricks and phrases that worked on you.
 - ["Hillbilly Flamenco"](https://sive.rs/hillbf)
 
-[**Proudly exclude most people.** Blockbuster hits are dead, aim for the niche.](/tags/audience) Make bold statemens like "if you like Katty Perry, don't listen to this!". They will wonder, and listen.
+**Proudly exclude most people.** Blockbuster hits are dead, aim for the niche. Make bold statemens like "if you like Katty Perry, don't listen to this!". They will wonder, and listen.
 
 ## Target
 
@@ -145,14 +141,14 @@ Find out what they are doing. Be unselfish and caring. Help them away, show appr
 
 **Every breakthrough comes from someone you know.** Meet new people, stay in touch.
 
-[**Include everyone in your success**](/tags/success).
+**Include everyone in your success**.
 Return the favors.
 You are not pulled to success by destiny.
 You are lifted by the people around you.
 
 ## Money
 
-[Pour your personality and philosophy into the way you do business.](/tags/your-utopia)
+[Pour your personality and philosophy into the way you do business.](../notes/my-utopia)
 
 Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
 

@@ -2,9 +2,6 @@
 title: Enhancing book notes with metadata
 oneliner: You can read, you can code. So why not?
 date: '2020-11-09T15:29:40Z'
-tags:
-  - software
-  - note-taking
 ---
 
 If you like to take notes from the books you read and know a little bit of JavaScript, this may help you.

@@ -2,8 +2,6 @@
 title: Joe Armstrong on error handling
 oneliner: For your next engineering couch.
 date: '2020-11-03'
-tags:
-  - software
 ---
 
 Notes from his [GOTO 2018 talk.](https://www.youtube.com/watch?v=TTM_b7EJg5E)

@@ -3,9 +3,6 @@ isbn: '0593079582'
 date: '2020-09-19'
 rating: '4/5'
 oneliner: 'Change comes from resetting defaults, installing barriers and designing how you spend your time.'
-tags:
-  - productivity
-  - self-help
 ---
 
 (You can click-and-enlarge images, kudos to [image-zoom 🔍](https://github.com/rpearce/image-zoom))

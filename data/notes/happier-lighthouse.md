@@ -2,10 +2,6 @@
 title: Leveraging dynamic imports to make Lighthouse happier
 oneliner: Using a 450KB library to render text was not my brightest decision.
 date: '2020-11-01'
-tags:
-  - software
-  - performance
-  - next-js
 ---
 
 I'm building this website with [Next.js](https://nextjs.org) and charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).

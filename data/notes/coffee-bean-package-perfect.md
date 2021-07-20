@@ -2,9 +2,6 @@
 title: A perfect coffee bean package
 oneliner: It tastes great too.
 date: '2020-11-09T18:30:21Z'
-tags:
-  - design
-  - coffee
 ---
 
 This is _Ethiopia Koromii_ from [Oslo Kaffebar](https://www.instagram.com/oslokaffebar/). It has a peachy flavor and my favorite in all aspects.

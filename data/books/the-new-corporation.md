@@ -3,9 +3,6 @@ isbn: '9781984899729'
 date: '2020-12-11'
 rating: '4/5'
 oneliner: "Corporation's freedom detracts from our freedom, and it's a zero-sum game."
-tags:
-  - economy
-  - politics
 ---
 
 Today, half of the Americans can't pay an unexpected 400$ bill without going into debt or selling their possessions.

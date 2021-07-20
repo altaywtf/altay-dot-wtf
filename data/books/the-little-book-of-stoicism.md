@@ -3,9 +3,6 @@ isbn: '3952506907'
 date: '2020-12-22'
 rating: '4/5'
 oneliner: It's impossible to learn which you believe you already know.
-tags:
-  - philosophy
-  - self-help
 ---
 
 "Warrior-philosopher", is a person who practices the art of living in his or her actions. Stoicism seeks for answers on "how to live" and expects us to reflect our values to our actions.

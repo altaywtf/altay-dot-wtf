@@ -3,8 +3,6 @@ isbn: '9780133890334'
 date: '2020-10-19'
 rating: '4/5'
 oneliner: Our love for the digital interface is out of control, and our obsession is ruining the future of innovation.
-tags:
-  - design
 ---
 
 I am fond of the doze and accuracy of sarcasm in Krishna's tone, and I'm glad that he joined Google to work on the pain-points he addressed in this book.
@@ -61,7 +59,7 @@ Several studies show that the amount of blue-light exposure could have side-effe
 
 ## Principle 1: Embrace Typical Processes Instead of Screens
 
-Instead of forcing people to run/open/tap their screens, design smart systems that are intuitive and work without any learning curve. Preferably automagical.
+Instead of forcing people to run/open/tap their screens, design smart systems that are intuitive and work without any learning curve. Preferably auto-magical.
 
 > 60 percent of people who stole something during the self-checkout in the UK did that because the scanner didn't work. They just gave up trying.
 
@@ -93,7 +91,7 @@ Today, we have much more powerful machines in front of us, but what do they say?
 
 Instead of computers serving us, we try our best to satisfy the weird constraints that are non-intuitive. Okay, I want my account to be secure and safe, but can't you help me a little bit?
 
-Machines would understand each other better than any input a human being could produce. Let them communicate and resolve our issues automagically via signals and sensors:
+Machines would understand each other better than any input a human being could produce. Let them communicate and resolve our issues auto-magically via signals and sensors:
 
 - OAuth over complicated login flows with cognitive overload.
 - Easy-to-understand washing machine modes instead of airplane cockpits.
@@ -106,7 +104,7 @@ We should strive for smart systems that learn from your behaviors and adapt them
 
 ### Privacy
 
-The information access should be limited, ephemeral, preferably within a time interval. Should be forgotten after utilisation
+The information access should be limited, ephemeral, preferably within a time interval. Should be forgotten after utilization.
 
 > Be transparent on what you find from there ⬆️ and present options ⬇️ to forget or turn it off.
 
