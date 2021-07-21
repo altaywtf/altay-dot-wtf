@@ -2,7 +2,7 @@
 isbn: '9789063695781'
 date: '2021-07-16'
 rating: '4/5'
-oneliner: Perfectionism is the voice of the oppressor, the enemy of people. It will keep you cramped and insane your whole life.
+oneliner: We are all bored and everything is boring. Occupied 24/7, doing nothing at all.
 ---
 
 I like the path of evolution of this book. It was born as a newsletter then grew into a fully-fledged resource on dealing with one of the biggest problems we're facing as humanity: how to get away from fucking screens. Jesse speaks the cruel truths, criticizes the numb and careless marketing approach that blasts every inbox, and reminds us that life is an offline platform.
