@@ -17,11 +17,6 @@ export const homeCopy = {
     title: 'Recent notes',
     viewAll: 'See all notes',
   },
-  books: {
-    href: '/books',
-    title: 'Recent book notes',
-    viewAll: 'See all book notes',
-  },
 } as const
 
 export const aboutCopy = {
@@ -51,11 +46,6 @@ export const booksCopy = {
   icon: '📚',
   title: 'Books',
   description: `Notes from the books I read.`,
-}
-
-export const contactCopy = {
-  title: 'Contact',
-  description: 'Me on the internets.',
 }
 
 export const nowCopy = {

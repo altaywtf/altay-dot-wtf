@@ -130,5 +130,3 @@ Do you remember what those _heroic_ people I bowed at the beginning had in commo
 Good, now it's our turn. The most effective internalization happens when we craft tangible things with what we learn. We have to make use of them. There's no other way than taking action.
 
 A great book would make us want to do something, and there are many out there.
-
-Thanks for reading.

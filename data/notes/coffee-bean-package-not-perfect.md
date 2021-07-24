@@ -5,7 +5,7 @@ date: '2020-11-09T20:09:28Z'
 
 This is from [Bonanza.](https://www.instagram.com/bonanzacoffee/)
 
-It looks modern and sterile, but not as convenient as [Oslo's](/notes/coffee-bean-package-perfect).
+It looks modern and sterile, but not as convenient as [Oslo's](./coffee-bean-package-perfect).
 
 Getting a perfectly filled spoon is hard when it's running low.
 It occupies more space due to having a larger volume.

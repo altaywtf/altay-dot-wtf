@@ -267,7 +267,7 @@ switch (this.state.type) {
 
 > 🤖: 01001110011010010110001101100101
 
-### Resources
+### References
 
 - ["Effective TypeScript"](https://www.oreilly.com/library/view/effective-typescript/9781492053736/) by [Dan Vanderkam](https://github.com/danvk)
 - ["Making Impossible States Impossible"](https://www.youtube.com/watch?v=IcgmSRJHu_8) by [Richard Feldman](https://github.com/rtfeldman)

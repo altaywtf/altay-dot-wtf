@@ -14,6 +14,7 @@ Being financially open is another way:
 
 - [small-tech, sustainability](https://small-tech.org/fund-us/)
 - [buttondown, running costs](https://www.notion.so/Running-Costs-f29729ded5494272947f656440967cbf)
+- [mailbrew.com/open](https://mailbrew.com/open)
 
 Doing both is awesome:
 

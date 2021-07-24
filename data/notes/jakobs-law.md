@@ -12,4 +12,4 @@ Users spend most of their time on other sites, and they prefer your site to work
 
 ### References
 
-- [Laws of UX](../books/laws-of-ux.md)
+- [Laws of UX](../books/laws-of-ux)
