@@ -5,9 +5,13 @@ rating: '4/5'
 oneliner: We are all bored and everything is boring. Occupied 24/7, doing nothing at all.
 ---
 
-I like the path of evolution of this book. It was born as a newsletter then grew into a fully-fledged resource on dealing with one of the biggest problems we're facing as humanity: how to get away from fucking screens. Jesse speaks the cruel truths, criticizes the numb and careless marketing approach that blasts every inbox, and reminds us that life is an offline platform.
+I like the path of evolution of this book. It was born as a newsletter then grew into a fully-fledged resource that questions one of the biggest problems we're facing as humanity: why are blissfully ignoring the non-screen part of our lives?
 
-The mixture of serif and monospaced fonts with a "this would look good on the print version" layout was also appealing. It's not published as an e-book anyways.
+As a creative person from the field, Jess speaks the cruel truths, criticizes the numb and careless marketing approach blasting inboxes, and reminds us that life is eventually an offline platform. I admire the bold and confident tone. Sometimes we need to burn bridges to stop ourselves from crossing again.
+
+The mixture of serif and monospaced fonts with a "yeah, this would look good on paper" layout was also appealing. It's not published as an e-book anyways.
+
+After this book is published, Jess started a new project: https://nofun.tips
 
 ---
 
