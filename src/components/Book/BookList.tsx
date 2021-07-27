@@ -11,7 +11,7 @@ type Props = {
 const BookList: React.FC<Props> = ({ data }) => (
   <Box>
     {data.map((book) => (
-      <Box key={book.slug} mb={4}>
+      <Box key={book.slug}>
         <Flex>
           <Box minWidth={[100, 120]}>
             <NextLink href={`/books/${book.slug}`} passHref>
@@ -26,7 +26,7 @@ const BookList: React.FC<Props> = ({ data }) => (
           <Box>
             <NextLink href={`/books/${book.slug}`} passHref>
               <Link title={book.meta.title}>
-                <Heading as="h3" fontSize={[1, 2]}>
+                <Heading as="h3" fontSize={[0, 1]}>
                   {book.meta.title}
                 </Heading>
               </Link>
@@ -43,6 +43,8 @@ const BookList: React.FC<Props> = ({ data }) => (
             </Text>
           </Box>
         </Flex>
+
+        <Box m={5} />
       </Box>
     ))}
   </Box>

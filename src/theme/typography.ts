@@ -38,4 +38,10 @@ export const createTypographyCSS = (theme: Theme) => `
     letter-spacing: 0.015em;
     word-spacing: 0.001em;
   }
+
+  @media only screen and (max-width: ${(theme.breakpoints as string[])[0]}){
+    body {
+      font-size: ${(theme.fontSizes as string[])[0]}px;
+    }
+  }
 `

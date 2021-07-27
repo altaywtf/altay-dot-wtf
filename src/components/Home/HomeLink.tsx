@@ -11,7 +11,7 @@ const HomeLink: React.FC<Props> = ({ href, label }) => (
   <Box key={href}>
     <NextLink href={href} passHref>
       <Link>
-        <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
+        <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1, fontSize: [0, 1] }}>
           <Text mr={1}>{label}</Text>
           <CgArrowRight />
         </Box>

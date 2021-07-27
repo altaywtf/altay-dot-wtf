@@ -42,7 +42,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box m={2} />
 
         <Box>
-          <Heading as="h1" fontSize={3}>
+          <Heading as="h1" fontSize={[1, 3]}>
             {data.meta.title}
           </Heading>
 

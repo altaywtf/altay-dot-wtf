@@ -40,7 +40,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box m={[3, 4]} />
 
-      <Heading>{data.meta.title}</Heading>
+      <Heading fontSize={[3, 4]}>{data.meta.title}</Heading>
 
       <Box m={2} />
 
