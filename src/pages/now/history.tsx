@@ -19,12 +19,14 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
         <Box key={d.slug}>
           <NextLink href={`/now/${d.slug}`}>
             <Link>
-              <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
+              <Box display="inline-flex" sx={{ alignItems: 'center' }}>
                 <Text mr={1}>{format(new Date(d.slug), 'MMMM yyyy')}</Text>
                 <CgArrowRight />
               </Box>
             </Link>
           </NextLink>
+
+          <Box m={2} />
         </Box>
       ))}
     </>

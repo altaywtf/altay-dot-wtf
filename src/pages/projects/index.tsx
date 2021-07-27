@@ -27,7 +27,7 @@ const ProjectsPage: React.FC = () => (
           </Link>
         </NextLink>
 
-        <Box my={1} />
+        <Box m={1} />
 
         <Text fontSize={0}>{p.details}</Text>
       </Box>

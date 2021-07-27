@@ -24,9 +24,13 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
       {...nowCopy}
       metaDescription={`What am I doing as of ${formatDate(data.meta.date)}`}
     />
+
     <Box m={4} />
+
     <Markdown>{data.markdown}</Markdown>
+
     <Box m={4} />
+
     <Text fontSize={0} color="textTertiary">
       Last updated at {formatDate(data.meta.date)}
     </Text>

@@ -2,8 +2,8 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import type { Bookmark } from 'types'
 import { bookmarksCopy } from 'config/copy'
 import { fetchBookmarks } from 'core/api/bookmarks'
-import PageHeader from 'components/PageHeader'
 import { Box, Text, Link, Heading } from 'rebass'
+import PageHeader from 'components/PageHeader'
 
 export const getStaticProps: GetStaticProps<{ data: Bookmark[] }> = async () => ({
   props: { data: await fetchBookmarks() },
@@ -18,22 +18,26 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
 
     <>
       {data.map((bookmark) => (
-        <Box key={bookmark.url} mb={5}>
+        <Box key={bookmark.url}>
           <Link href={bookmark.url} target="new" rel="noopener noreferrer">
             <Heading as="h3" fontSize={1}>
               {bookmark.title}
             </Heading>
           </Link>
 
-          <Box my={1}>
-            <Text as="blockquote" fontSize={1} color="textSecondary">
-              {bookmark.description}
-            </Text>
-          </Box>
+          <Box m={1} />
+
+          <Text as="blockquote" fontSize={0} color="textSecondary">
+            {bookmark.description}
+          </Text>
+
+          <Box m={1} />
 
           <Text fontSize={0} color="textTertiary">
             {bookmark.host}
           </Text>
+
+          <Box m={4} />
         </Box>
       ))}
     </>

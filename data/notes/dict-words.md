@@ -12,6 +12,8 @@ _Think of prototyping as the reconnaissance and intelligence gathering that take
 
 [The Pragmatic Programmer](../books/the-pragmatic-programmer)
 
+---
+
 ### chagrin
 
 feel dismissed or humiliated
@@ -19,6 +21,8 @@ feel dismissed or humiliated
 _The book is in plain text, much to the chagrin of the publisher who wanted us to use a word processor._
 
 [The Pragmatic Programmer](../books/the-pragmatic-programmer)
+
+---
 
 ### semaphore
 
@@ -28,6 +32,8 @@ _Shared resource locking example for opening the pie case by holding an object._
 
 [The Pragmatic Programmer](../books/the-pragmatic-programmer)
 
+---
+
 ### ephemeral
 
 lasting for a very short time - temporary.
@@ -36,17 +42,23 @@ _Version control allows builds machines to be ephemeral._
 
 [The Pragmatic Programmer](../books/the-pragmatic-programmer)
 
+---
+
 ### shirk
 
 avoid or neglect (a duty or responsibility).
 
 _[Pragmatic programmer](../books/the-pragmatic-programmer)s don't shirk from responsibility._
 
+---
+
 ### rejoice
 
 feel or show great joy or delight.
 
 _Instead, we rejoice in accepting challenges._
+
+---
 
 ### accrue
 
@@ -56,6 +68,8 @@ _Extraordinary benefits accrue to the tiny minority of people who are able to pu
 
 [The Dip](../books/the-dip)
 
+---
+
 ### adversity
 
 a difficult or unpleasant situation.
@@ -63,6 +77,8 @@ a difficult or unpleasant situation.
 _You shouldn't quit in the face of adversity._
 
 [The Dip](../books/the-dip)
+
+---
 
 ### obnoxious
 
@@ -72,6 +88,8 @@ _Obnoxious customer._
 
 [The Dip](../books/the-dip)
 
+---
+
 ### vilify
 
 speak or write about in an abusively disparaging manner.
@@ -79,6 +97,8 @@ speak or write about in an abusively disparaging manner.
 _The next time you're tempted to vilify a particularly obnoxious customer, realize that this failed interaction is the best thing happened to you today._
 
 [The Dip](../books/the-dip)
+
+---
 
 ### steep
 
@@ -88,6 +108,8 @@ _If you want to be a superstar, then you need to find a field with a steep Dip._
 
 [The Dip](../books/the-dip)
 
+---
+
 ### blithely
 
 in a happy or carefree manner.
@@ -95,6 +117,8 @@ in a happy or carefree manner.
 _Optimistic entrepreneurs and employees who blithely wander into a serious business..._
 
 [The Dip](../books/the-dip)
+
+---
 
 ### afflict
 
@@ -104,6 +128,8 @@ _This malady doesn't afflict just entrepreneurs._
 
 [The Dip](../books/the-dip)
 
+---
+
 ### malady
 
 a serious problem, disease or ailment.
@@ -111,6 +137,8 @@ a serious problem, disease or ailment.
 _This malady doesn't afflict just entrepreneurs._
 
 [The Dip](../books/the-dip)
+
+---
 
 ### vividly
 
@@ -120,6 +148,8 @@ _People recall negative experiences more vividly than positive ones_
 
 [Laws of UX](../books/laws-of-ux)
 
+---
+
 ### inherent
 
 existing in something as an essential, permanent or characteristic attribute.
@@ -127,6 +157,8 @@ existing in something as an essential, permanent or characteristic attribute.
 _My product has an inherent complexity that cannot be reduced._
 
 [Laws of UX](../books/laws-of-ux)
+
+---
 
 ### instill
 
@@ -136,6 +168,8 @@ _Instill a sense of trust._
 
 [Laws of UX](../books/laws-of-ux)
 
+---
+
 ### glimpse
 
 a momentary or partial view.
@@ -143,6 +177,8 @@ a momentary or partial view.
 _There are studies that provide a glimpse into fundamentals of behavior shaping._
 
 [Laws of UX](../books/laws-of-ux)
+
+---
 
 ### truism
 
@@ -152,6 +188,8 @@ _Good design principles are not truisms._
 
 [Laws of UX](../books/laws-of-ux)
 
+---
+
 ### heretical
 
 comes from **heresy:** belief or opinion contrary to orthodox religious (especially Christian) doctrine.
@@ -159,6 +197,8 @@ comes from **heresy:** belief or opinion contrary to orthodox religious (especia
 _Yes, I know it's heretical, but I'm advocating quitting._
 
 [The Dip](../books/the-dip)
+
+---
 
 ### frantically
 
@@ -168,6 +208,8 @@ _If you aren't frantically underlining, highlighting or taking notes as you read
 
 [Start Small Stay Small](../books/start-small-stay-small)
 
+---
+
 ### chasm
 
 a profound difference between people, viewpoints, feelings, etc.
@@ -175,6 +217,8 @@ a profound difference between people, viewpoints, feelings, etc.
 _The chasm between developer and entrepreneur._
 
 [Start Small Stay Small](../books/start-small-stay-small)
+
+---
 
 ### behemoth
 
@@ -184,15 +228,21 @@ _Behemoth if-else expression._
 
 [Programming Elm](../books/programming-elm)
 
+---
+
 ### obscure
 
 not discovered or known.
+
+---
 
 ### inscrutable
 
 impossible to understand or interpret.
 
 _Inscrutable cable-box..._
+
+---
 
 ### disdain
 
@@ -202,6 +252,8 @@ _Maybe because of quick success, Dreyfuss viewed his work with a mix of pride an
 
 [User Friendly](../books/user-friendly)
 
+---
+
 ### foible
 
 a minor weakness or eccentricity in someone's character.
@@ -209,6 +261,8 @@ a minor weakness or eccentricity in someone's character.
 _Peoples foibles and limitations_
 
 [User Friendly](../books/user-friendly)
+
+---
 
 ### conundrum
 
@@ -218,6 +272,8 @@ _Shed some light on this conundrum._
 
 [Utopia for Realists](/book/utopia-for-realists)
 
+---
+
 ### debilitating
 
 tending to weaken
@@ -225,6 +281,8 @@ tending to weaken
 _debilitating impact_
 
 [Utopia for Realists](/book/utopia-for-realists)
+
+---
 
 ### bemuse
 
@@ -234,6 +292,8 @@ _Norman's books adopt an abiding tone of bemusement._
 
 [User Friendly](../books/user-friendly)
 
+---
+
 ### meticulous
 
 showing great attention to detail.
@@ -242,11 +302,15 @@ _Barbaric was always a meticulous planner._
 
 [User Friendly](../books/user-friendly)
 
+---
+
 ### chore
 
 a routine task. household, etc.
 
 _You might find checking your email to be a chore, while social media feel like a leisure._
+
+---
 
 ### hapless
 
@@ -254,11 +318,15 @@ unfortunate person, thing, someone.
 
 _An hapless employee sent a nuclear missile warning._
 
+---
+
 ### voracious
 
 having a very eager approach to an activity.
 
 _Voracious social media users._
+
+---
 
 ### resemble
 
@@ -266,9 +334,13 @@ look like.
 
 _Some people resemble their dogs._
 
+---
+
 ### abhor
 
 regard with disgust, hatred
+
+---
 
 ### ostentation
 
@@ -278,9 +350,13 @@ _She abhorred ostentation._
 
 [User Friendly](../books/user-friendly)
 
+---
+
 ### aversion
 
 a strong dislike.
+
+---
 
 ### divulge
 
@@ -290,6 +366,8 @@ _But while apps may need this information to run their services effectively, the
 
 [The Markup: How Private is My Pay App](https://themarkup.org/ask-the-markup/2020/11/12/how-private-is-my-pay-app)
 
+---
+
 ### impromptu
 
 without being planned, organized, or rehearsed.
@@ -297,6 +375,8 @@ without being planned, organized, or rehearsed.
 _Email is an impromptu medium, not conductive to slowing down or looking back._
 
 [On Writing Well](../books/on-writing-well.md)
+
+---
 
 ### cajole
 
@@ -306,6 +386,8 @@ _It must cajole them with freshness._
 
 [On Writing Well](../books/on-writing-well.md)
 
+---
+
 ### bleak
 
 not hopeful or encouraging.
@@ -313,6 +395,8 @@ not hopeful or encouraging.
 _I struggled to find meaning in their bleak existence._
 
 [Bird by Bird](../books/bird-by-bird.md)
+
+---
 
 ### ectoplasm
 
@@ -322,17 +406,23 @@ _What holds the ectoplasm together –what are your routines and beliefs?_
 
 [Bird by Bird](../books/bird-by-bird.md)
 
+---
+
 ### excruciating
 
 intensely painful (physical pain).
 
 mentally agonizing, embarrassing, awkward or tedious (abstract).
 
+---
+
 ### poignant
 
 evoking a keen sense of sadness or regret.
 
 _A poignant reminder of the passing of time._
+
+---
 
 ### voyeur(ism)
 
@@ -342,6 +432,8 @@ _And we have all the voyeurism because the characters (whom we're making talk in
 
 [Bird by Bird](../books/bird-by-bird.md)
 
+---
+
 ### proliferation
 
 rapid increase in the amount of something.
@@ -350,11 +442,15 @@ _Given the proliferation of quatrefoil, he may been onto something._
 
 [The 99% Invisible City](../books/the-99-percent-invisible-city.md)
 
+---
+
 ### ubiquitous
 
 present, appearing, or found everywhere.
 
 [The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+
+---
 
 ### coveted
 
@@ -364,6 +460,8 @@ _Whatever the reasons, the simplified quatrefoil has indeed become ubiquitous an
 
 [The 99% Invisible City](../books/the-99-percent-invisible-city.md)
 
+---
+
 ### eschew
 
 deliberately avoid using.
@@ -372,6 +470,8 @@ _Over the last two decades, all major companies have publicly eschewed narrow se
 
 [The New Corporation](../books/the-new-corporation.md)
 
+---
+
 ### promulgated
 
 promote or make widely known (an idea or a cause)
@@ -379,6 +479,8 @@ promote or make widely known (an idea or a cause)
 _The importance of protecting workers and promulgated legions of rules – like no coffee cups without lids._
 
 [The New Corporation](../books/the-new-corporation.md)
+
+---
 
 ### reassurance
 
