@@ -32,6 +32,16 @@ module.exports = withBundleAnalyzer({
         permanent: true,
       },
       {
+        source: '/images/articles/:path*',
+        destination: '/images/notes/:path*',
+        permanent: true,
+      },
+      {
+        source: '/images/blog/:path*',
+        destination: '/images/notes/:path*',
+        permanent: true,
+      },
+      {
         source: '/analytics',
         destination: '/analytics.html',
         permanent: true,

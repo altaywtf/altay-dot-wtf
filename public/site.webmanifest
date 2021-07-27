@@ -1,19 +1,19 @@
 {
-  "name": "altay aydemir",
-  "short_name": "altay-dot-wtf",
+  "background_color": "#000000",
+  "display": "standalone",
   "icons": [
     {
-      "src": "/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
+      "src": "/favicon/android-chrome-192x192.png",
       "type": "image/png"
     },
     {
-      "src": "/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
+      "src": "/favicon/android-chrome-512x512.png",
       "type": "image/png"
     }
   ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone"
+  "name": "altay aydemir",
+  "short_name": "altay-dot-wtf",
+  "theme_color": "#000000"
 }
