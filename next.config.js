@@ -31,6 +31,11 @@ module.exports = withBundleAnalyzer({
         destination: '/notes/:path*',
         permanent: true,
       },
+      {
+        source: '/analytics',
+        destination: '/analytics.html',
+        permanent: true,
+      },
     ]
   },
 })
