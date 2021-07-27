@@ -39,5 +39,3 @@ Boredom is inherently a good thing. Yet, society doesn't value it. So, instead, 
 ### Getting conscious on work time
 
 ![](/images/books/offline-matters/getting-conscious-on-work-time.jpg)
-
-_I already sent those questions to 5+ friends and they're all questioning their lives._
