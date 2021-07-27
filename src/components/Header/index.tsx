@@ -2,8 +2,10 @@ import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Flex, Box, Text, SxStyleProp } from 'rebass'
+import { Flex, Box, Button, SxStyleProp } from 'rebass'
+import useDarkMode from 'use-dark-mode'
 import { MOBILE_BREAKPOINT } from 'theme'
+import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
 
 const headerStyle: SxStyleProp = {
@@ -25,6 +27,7 @@ const headerStyle: SxStyleProp = {
 
 const Header: React.FC = () => {
   const { pathname } = useRouter()
+  const darkMode = useDarkMode()
 
   return (
     <Flex as="header" sx={headerStyle} justifyContent="center">
@@ -36,7 +39,7 @@ const Header: React.FC = () => {
       >
         <Link href="/">
           <Box
-            title="That's my head, also a link to home page."
+            title="That's my head, also a link to home page. Please press gently."
             sx={{
               position: 'relative',
               overflow: 'hidden',
@@ -55,10 +58,38 @@ const Header: React.FC = () => {
 
         <Flex alignItems="center">
           {HEADER.map(({ label, href }) => (
-            <Box key={href} marginX={1}>
+            <Box key={href} mx={1}>
               <NavLink href={href} label={label} active={pathname.startsWith(href)} />
             </Box>
           ))}
+
+          <Box ml={1} />
+
+          <Box>
+            <Button
+              title="That's a button to switch between dark and light themes."
+              onClick={darkMode.toggle}
+              sx={{
+                backgroundColor: 'background',
+                color: 'textSecondary',
+                fontSize: 0,
+                borderRadius: 4,
+                padding: 0,
+                width: 40,
+                height: 32,
+                lineHeight: 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                '&:hover': {
+                  backgroundColor: 'backgroundSecondary',
+                  color: 'text',
+                },
+              }}
+            >
+              {darkMode.value ? <CgSun /> : <CgMoon />}
+            </Button>
+          </Box>
         </Flex>
       </Flex>
     </Flex>

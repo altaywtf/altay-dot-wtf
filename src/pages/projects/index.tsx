@@ -29,7 +29,7 @@ const ProjectsPage: React.FC = () => (
 
         <Box my={1} />
 
-        <Text fontSize={[0, 1]}>{p.details}</Text>
+        <Text fontSize={0}>{p.details}</Text>
       </Box>
     ))}
   </>
