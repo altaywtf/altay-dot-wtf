@@ -1,4 +1,3 @@
-import { useCallback } from 'react'
 import type { AppProps } from 'next/app'
 import { SEO } from 'config'
 import Head from 'next/head'
@@ -11,13 +10,10 @@ import Layout from 'components/Layout'
 const Providers: React.FC = ({ children }) => {
   const mounted = useMounted()
 
-  const renderBody = useCallback(
-    () => (
-      <AnalyticsProvider>
-        <ThemeProvider>{children}</ThemeProvider>
-      </AnalyticsProvider>
-    ),
-    [],
+  const renderBody = () => (
+    <AnalyticsProvider>
+      <ThemeProvider>{children}</ThemeProvider>
+    </AnalyticsProvider>
   )
 
   return mounted ? renderBody() : <div style={{ visibility: 'hidden' }}>{renderBody()}</div>
