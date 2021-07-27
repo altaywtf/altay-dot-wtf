@@ -56,6 +56,8 @@ export const createGlobalStyles = (theme: Theme) => `
 
   .border-radius {
     border-radius: 4px;
+    position: relative;
+    overflow: hidden;
   }
 
   .image-markdown {

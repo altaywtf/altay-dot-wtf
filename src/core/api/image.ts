@@ -3,7 +3,7 @@ import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
 import fs from 'fs'
 import sharp from 'sharp'
 import { createCanvas, loadImage } from 'canvas'
-import { getBlurhash } from 'next-blurhash'
+import { getPlaiceholder } from 'plaiceholder'
 import { PUBLIC_FOLDER_PATH } from './constants'
 
 type ImageData = {
@@ -22,8 +22,8 @@ export const getImageData = async (url: string): Promise<ImageData> => {
     throw new Error('Could not get image data')
   }
 
-  const blurhash = await getBlurhash(url)
-  return { buffer, ratio: width / height, width, height, blurhash }
+  const { base64 } = await getPlaiceholder(url)
+  return { buffer, ratio: width / height, width, height, blurhash: base64 }
 }
 
 const META_IMAGE_BG_FILL_COLOR = '#111111'

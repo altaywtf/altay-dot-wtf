@@ -7,6 +7,7 @@ import useDarkMode from 'use-dark-mode'
 import { MOBILE_BREAKPOINT } from 'theme'
 import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
+import avatar from '../../../public/images/avatar.png'
 
 const headerStyle: SxStyleProp = {
   position: 'fixed',
@@ -52,7 +53,7 @@ const Header: React.FC = () => {
               },
             }}
           >
-            <Image src="/images/avatar.png" width={32} height={32} layout="responsive" />
+            <Image src={avatar} />
           </Box>
         </Link>
 

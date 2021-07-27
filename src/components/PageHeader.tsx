@@ -2,6 +2,7 @@ import { Heading, Box, Text } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Markdown from './Markdown'
+import avatar from '../../public/images/avatar.png'
 
 type Props = {
   title: string
@@ -38,7 +39,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, metaTitle, description, meta
             backgroundColor: 'black',
           }}
         >
-          <Image src="/images/avatar.png" width={64} height={64} layout="responsive" />
+          <Image src={avatar} />
         </Box>
       )}
 
