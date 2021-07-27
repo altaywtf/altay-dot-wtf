@@ -1,6 +1,6 @@
 ---
-title: Self-control
-oneliner: is an illusion...
+title: Self-control is an illusion
+oneliner: Phew, now I can eat that donut.
 date: '2020-12-05T09:53:32Z'
 ---
 
@@ -8,7 +8,7 @@ Over the years, we developed a classical assumption to interpret human behavior.
 
 The fact is that we require more than will-power to achieve self-control. Our emotions are instrumental in our decision making and actions. We just don't always realize it.
 
-Everything happens in [our consciousness car](./consciousness-car.md).
+Everything happens in [our consciousness car](./consciousness-car).
 
 ### References
 

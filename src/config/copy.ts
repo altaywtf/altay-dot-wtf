@@ -1,7 +1,7 @@
 export const homeCopy = {
   title: "Hi, I'm Altay",
   description:
-    "I like computers, coffee, typefaces, and building things to solve problems I empathize with.\n\n I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some [passion projects](/projects) on the side.",
+    "I like computers, books, coffee, and building things that are solving problems I understand.\n\n I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some [passion projects](/projects) on the side.",
   links: [
     {
       label: 'More about me',
@@ -33,7 +33,8 @@ export const aboutCopy = {
 export const notesCopy = {
   icon: '📝',
   title: `Notes`,
-  description: `Random thoughts and references.`,
+  description:
+    "I'm trying to structure this section as a [digital garden](https://github.com/MaggieAppleton/digital-gardeners) to practice learning, thinking, and building in public.",
 } as const
 
 export const bookmarksCopy = {
@@ -45,7 +46,7 @@ export const bookmarksCopy = {
 export const booksCopy = {
   icon: '📚',
   title: 'Books',
-  description: `Notes from the books I read.`,
+  description: `Some thoughts and notes from the books I read.`,
 }
 
 export const nowCopy = {
