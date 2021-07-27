@@ -53,11 +53,13 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
 
       {sections.map((section) => (
         <Box key={section.title} my={6}>
-          <Heading as="h2" fontSize={[1, 2]}>
+          <Heading as="h2" fontSize={1}>
             {section.title}
           </Heading>
 
-          <Box my={3}>{renderSection(section)}</Box>
+          <Box m={3} />
+
+          <Box>{renderSection(section)}</Box>
         </Box>
       ))}
     </>

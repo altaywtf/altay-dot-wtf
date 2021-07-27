@@ -46,10 +46,14 @@ const Header: React.FC = () => {
               overflow: 'hidden',
               width: 32,
               height: 32,
+              borderWidth: '2px',
+              borderStyle: 'solid',
               borderRadius: '50%',
+              borderColor: 'backgroundHeader',
               backgroundColor: 'black',
               '&:hover': {
                 cursor: 'pointer',
+                borderColor: 'linkPrimary',
               },
             }}
           >

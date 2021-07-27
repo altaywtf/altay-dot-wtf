@@ -17,8 +17,12 @@ const sx: SxStyleProp = {
   '& > ul > li': {
     marginY: 3,
   },
+  '& > ul:nth-of-type(1)': {
+    listStyleType: 'none',
+    marginX: 0,
+  },
   '& > ul:nth-of-type(1) > li': {
-    marginY: 1,
+    marginY: 2,
   },
   '& > ul:nth-of-type(1) > li > a': {
     color: 'textTertiary',

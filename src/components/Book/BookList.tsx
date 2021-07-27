@@ -36,8 +36,6 @@ const BookList: React.FC<Props> = ({ data }) => (
               <BookInfo short bookMeta={book.meta} fontSize={0} spacing={1} />
             </Box>
 
-            <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />
-
             <Text fontSize={0} fontStyle="italic" color="textTertiary">
               &quot;{book.meta.oneliner}&quot;
             </Text>

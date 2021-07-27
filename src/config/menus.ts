@@ -1,5 +1,9 @@
 export const HEADER = [
   {
+    label: 'About',
+    href: '/about',
+  },
+  {
     label: 'Notes',
     href: '/notes',
   },

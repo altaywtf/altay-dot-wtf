@@ -21,8 +21,8 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
         sx={{
           width: '100%',
           textAlign: 'center',
-          fontSize: 0,
-          paddingX: [2, 3],
+          fontSize: [14, 0],
+          paddingX: 3,
           paddingY: 2,
           fontWeight: 'bold',
           borderRadius: 4,

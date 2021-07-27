@@ -13,7 +13,7 @@ const NoteList: React.FC<Props> = ({ data }) => (
       <Box key={b.slug} mb={4}>
         <NextLink href={`/notes/${b.slug}`} passHref>
           <Link>
-            <Heading as="h3" fontSize={[1, 2]}>
+            <Heading as="h3" fontSize={[0, 1]}>
               {b.meta.title}
             </Heading>
           </Link>

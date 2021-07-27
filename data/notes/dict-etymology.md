@@ -1,6 +1,6 @@
 ---
 title: 'Dictionary – etymology'
-oneliner: Roots of some words I came across while consuming.
+oneliner: Roots of some words I came across while reading.
 date: '2020-12-03T19:12:12Z'
 ---
 
