@@ -1,14 +1,13 @@
 import NextLink from 'next/link'
-import { Link, Text, SxStyleProp } from 'rebass'
+import { Link, Text } from 'rebass'
 
 type Props = {
   href: string
   label: string
-  style: SxStyleProp
   active: boolean
 }
 
-const NavLink: React.FC<Props> = ({ href, label, active, style }) => (
+const NavLink: React.FC<Props> = ({ href, label, active }) => (
   <NextLink href={href} passHref>
     <Link
       color="text"
@@ -20,7 +19,11 @@ const NavLink: React.FC<Props> = ({ href, label, active, style }) => (
     >
       <Text
         sx={{
-          ...style,
+          width: '100%',
+          textAlign: 'center',
+          fontSize: 0,
+          paddingX: [2, 3],
+          paddingY: 2,
           fontWeight: 'bold',
           borderRadius: 4,
           color: active ? 'linkPrimary' : 'text',

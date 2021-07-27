@@ -3,11 +3,12 @@ import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import type { Book } from 'types'
+import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
 import BackLinks from 'components/BackLinks'
-import { useScrollToSource } from 'core/hooks/useScrollToSource'
+import ArtificialBackButton from 'components/ArtificialBackButton'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
@@ -28,6 +29,10 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
           images: [{ alt: data.meta.title, ...data.meta.metaImage }],
         }}
       />
+
+      <ArtificialBackButton href="/books" label="Books" />
+
+      <Box m={[3, 4]} />
 
       <Flex>
         <Box minWidth={[120, 140]}>

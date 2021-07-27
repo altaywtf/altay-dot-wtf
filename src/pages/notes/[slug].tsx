@@ -3,9 +3,10 @@ import type { Note } from 'types'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import Markdown from 'components/Markdown'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
+import Markdown from 'components/Markdown'
 import BackLinks from 'components/BackLinks'
+import ArtificialBackButton from 'components/ArtificialBackButton'
 import { formatDate } from 'utils/date'
 
 export const getStaticPaths = getStaticPathsForContent('note')
@@ -35,11 +36,13 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         }}
       />
 
-      <Box mb={4} />
+      <ArtificialBackButton href="/notes" label="Notes" />
+
+      <Box m={[3, 4]} />
 
       <Heading>{data.meta.title}</Heading>
 
-      <Box my={2} />
+      <Box m={2} />
 
       <Text fontSize={0} color="textTertiary">
         {formatDate(data.meta.date)}
