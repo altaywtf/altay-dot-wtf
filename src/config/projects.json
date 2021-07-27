@@ -5,11 +5,6 @@
     "url": "/books"
   },
   {
-    "details": "Keeping a list of cool things all over the internet.",
-    "name": "Bookmarks",
-    "url": "/bookmarks"
-  },
-  {
     "details": "Building the user-facing parts since 2017.",
     "name": "Put.io",
     "url": "https://put.io"

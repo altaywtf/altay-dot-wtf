@@ -10,6 +10,7 @@ import {
 
 export const SEO: NextSeoProps = {
   title: SITE_TITLE,
+  titleTemplate: `${SITE_TITLE} | %s`,
   description: SITE_DESCRIPTION,
   twitter: {
     handle: '@altaywtf',
