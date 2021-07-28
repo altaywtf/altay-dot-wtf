@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { SITE_URL } from 'config'
+import { runMiddleware, cors } from 'core/middlewares'
 import { getContentList } from 'core/api/content'
 import { convertMarkdownToHTML } from 'core/api/md'
 import { Book } from 'types'
@@ -23,6 +24,7 @@ const mapBookToBookJSON = (book: Book) => ({
 })
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  await runMiddleware(req, res, cors)
   const data = (await getContentList('book')) as Book[]
   res.status(200).json({ data: data.map(mapBookToBookJSON) })
 }

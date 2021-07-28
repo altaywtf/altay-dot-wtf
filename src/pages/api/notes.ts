@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { runMiddleware, cors } from 'core/middlewares'
 import { getContentList } from 'core/api/content'
 import { convertMarkdownToHTML } from 'core/api/md'
 import { Note } from 'types'
@@ -16,6 +17,7 @@ const mapNoteToNoteJSON = (note: Note) => ({
 })
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  await runMiddleware(req, res, cors)
   const data = (await getContentList('note')) as Note[]
   res.status(200).json({ data: data.map(mapNoteToNoteJSON) })
 }
