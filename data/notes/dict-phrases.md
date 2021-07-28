@@ -54,7 +54,7 @@ _🇹🇷 kesenin agzini acmak_
 
 _I am more interested in the intangibles that produce good writing_
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -62,7 +62,7 @@ _I am more interested in the intangibles that produce good writing_
 
 _Every profession has its growing arsenal of jargon._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -70,7 +70,7 @@ _Every profession has its growing arsenal of jargon._
 
 _Every profession has its growing arsenal of jargon to throw dust in the eyes of the populace._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -78,7 +78,7 @@ _Every profession has its growing arsenal of jargon to throw dust in the eyes of
 
 _A short sentence can carry a tremendous punch._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -86,7 +86,7 @@ _A short sentence can carry a tremendous punch._
 
 _Unity is the anchor of good writing._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -94,7 +94,7 @@ _Unity is the anchor of good writing._
 
 _Our daily landscape is thick with absurd messages._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -106,7 +106,7 @@ _Our daily landscape is thick with absurd messages._
 
 _What holds the ectoplasm together –what are your routines and beliefs?_
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -116,7 +116,7 @@ hazard: danger or risk.
 
 _Jealousy is one of the occupational hazards of being a writer._
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -124,7 +124,7 @@ _Jealousy is one of the occupational hazards of being a writer._
 
 _Kant reinvented moral philosophy from top the bottom._
 
-[Everything is Fucked: A Book About Hope](../books/everything-is-fucked.md)
+[Everything is Fucked: A Book About Hope](../books/everything-is-fucked)
 
 ---
 
@@ -132,7 +132,7 @@ _Kant reinvented moral philosophy from top the bottom._
 
 _You don't always chop with the sword of truth._
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -142,7 +142,7 @@ futile: incapable of producing useful result.
 
 _Finally realizing the futility of resistance, officials caved and left the traffic lights upside down._
 
-[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+[The 99% Invisible City](../books/the-99-percent-invisible-city)
 
 ---
 
@@ -152,7 +152,7 @@ paragon: a person or a thing regarded as a perfect example
 
 _At the time the video of the defeat device released, Volkswagen was thought as a paragon of corporate virtue._
 
-[The New Corporation](../books/the-new-corporation.md)
+[The New Corporation](../books/the-new-corporation)
 
 ---
 
@@ -160,7 +160,7 @@ _At the time the video of the defeat device released, Volkswagen was thought as 
 
 _Working on a corporation putting self-interest over all values, Lord Browne was not guided by his own lights._
 
-[The New Corporation](../books/the-new-corporation.md)
+[The New Corporation](../books/the-new-corporation)
 
 ---
 
@@ -168,4 +168,4 @@ _Working on a corporation putting self-interest over all values, Lord Browne was
 
 Your unconscious can't work when you are breathing down its neck.
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)

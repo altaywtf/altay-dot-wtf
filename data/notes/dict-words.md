@@ -374,7 +374,7 @@ without being planned, organized, or rehearsed.
 
 _Email is an impromptu medium, not conductive to slowing down or looking back._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -384,7 +384,7 @@ to persuade.
 
 _It must cajole them with freshness._
 
-[On Writing Well](../books/on-writing-well.md)
+[On Writing Well](../books/on-writing-well)
 
 ---
 
@@ -394,7 +394,7 @@ not hopeful or encouraging.
 
 _I struggled to find meaning in their bleak existence._
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -404,7 +404,7 @@ viscous, clear outer layer of the cytoplasm in amoeboid cells.
 
 _What holds the ectoplasm together –what are your routines and beliefs?_
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -430,7 +430,7 @@ a person who enjoys seeing the pain or distress of the others.
 
 _And we have all the voyeurism because the characters (whom we're making talk in our fictions) don't know we're listening._
 
-[Bird by Bird](../books/bird-by-bird.md)
+[Bird by Bird](../books/bird-by-bird)
 
 ---
 
@@ -440,7 +440,7 @@ rapid increase in the amount of something.
 
 _Given the proliferation of quatrefoil, he may been onto something._
 
-[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+[The 99% Invisible City](../books/the-99-percent-invisible-city)
 
 ---
 
@@ -448,7 +448,7 @@ _Given the proliferation of quatrefoil, he may been onto something._
 
 present, appearing, or found everywhere.
 
-[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+[The 99% Invisible City](../books/the-99-percent-invisible-city)
 
 ---
 
@@ -458,7 +458,7 @@ greatly desired or envied.
 
 _Whatever the reasons, the simplified quatrefoil has indeed become ubiquitous and coveted, a persisted symbol of luxury and high style._
 
-[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+[The 99% Invisible City](../books/the-99-percent-invisible-city)
 
 ---
 
@@ -468,7 +468,7 @@ deliberately avoid using.
 
 _Over the last two decades, all major companies have publicly eschewed narrow self-interest and embraced social purpose._
 
-[The New Corporation](../books/the-new-corporation.md)
+[The New Corporation](../books/the-new-corporation)
 
 ---
 
@@ -478,7 +478,7 @@ promote or make widely known (an idea or a cause)
 
 _The importance of protecting workers and promulgated legions of rules – like no coffee cups without lids._
 
-[The New Corporation](../books/the-new-corporation.md)
+[The New Corporation](../books/the-new-corporation)
 
 ---
 

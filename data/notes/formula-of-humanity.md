@@ -4,7 +4,7 @@ oneliner: Brought to you by Immanuel Kant
 date: '2020-12-06T16:35:53Z'
 ---
 
-Directly influenced by [Immanuel Kant's moral philosophy](https://www.youtube.com/watch?v=nsgAsw4XGvU), in [Everything is Fucked](../books-everything-is-fucked.md) Mark Manson discusses:
+Directly influenced by [Immanuel Kant's moral philosophy](https://www.youtube.com/watch?v=nsgAsw4XGvU), in [Everything is Fucked](../books-everything-is-fucked) Mark Manson discusses:
 
 Consciousness is what distinguishes humans from other living creatures.
 

@@ -72,7 +72,7 @@ Writing is all about learning to pay attention and to communicate what's going o
 
 Your writings should carry a piece of essence of your values. If you don't believe in what you're saying, then there's no point in saying it.
 
-Listen to your inner brocoli. As Seth Godin also says in [The Practice](./the-practice.md), the traditional way to deal with sceptic thoughts is to shut them down. It leads to a lack of self-esteem on us, and we lose our voice. We, however, should listen to our inner brocoli instead of oppressing the mind.
+Listen to your inner brocoli. As Seth Godin also says in [The Practice](./the-practice), the traditional way to deal with sceptic thoughts is to shut them down. It leads to a lack of self-esteem on us, and we lose our voice. We, however, should listen to our inner brocoli instead of oppressing the mind.
 
 Writing is about hypnotizing yourself into believing in yourself, getting some work done, then dehypnotizing yourself and going over the material coldly.
 
@@ -112,7 +112,7 @@ Borrowing some till you find your own is OK. But remember that your truths are t
 
 ### Giving
 
-Resonates with "generosity" in [The Practice](./the-practice.md).
+Resonates with "generosity" in [The Practice](./the-practice).
 
 > There is no cosmic importance to getting something published, but there is in learning to be a giver. Giving is going to be it's own reward.
 

@@ -4,7 +4,7 @@ oneliner: How to build your own hedonic treadmill.
 date: '2020-12-21T20:41:04Z'
 ---
 
-In his latest book [_The New Corporation_](../books/the-new-corporation.md), Joel Balkan mentions a concept called _economization_ (of individuals). Today's capital driven system is leaving its' footprint on our personal lives. We're turning into living creatures operating as mini-corporations. Many of our actions carry a purpose to invest in ourselves and attract investors.
+In his latest book [_The New Corporation_](../books/the-new-corporation), Joel Balkan mentions a concept called _economization_ (of individuals). Today's capital driven system is leaving its' footprint on our personal lives. We're turning into living creatures operating as mini-corporations. Many of our actions carry a purpose to invest in ourselves and attract investors.
 
 It's undeniable that the road to mastery is appealing in human's search for meaning. Yet, most of the fields we choose to pursue are serving economic imperatives. Even worse, our hobbies are transitioning into side hustles. We feel miserably trapped in the 9/6; every effort that produces a tangible outcome resembles an easy way out. As Austin Kleon also points out, our best compliment is telling somebody they're so good at what they love to do, they could make money at it. "Wow, you could open a bakery!"
 
@@ -16,7 +16,7 @@ How can we define success in our terms and minimize unrealistic expectations? I'
 
 ### How many useful things you create?
 
-Derek Sivers is one of the most interesting people I get to know over the last couple of years. He's been a musician, circus performer, entrepreneur, TED speaker, and book publisher. When he was an aspiring musician, he started _CD Baby_ to sell his records online. Then things went crazy, and he ended up running a company that worths millions of dollars. After selling _CD Baby_ –and donating a vast amount of his exit money to music education–, Derek published three books. They contain his thoughts and takeaways along his journey of life. In [_Anything You Want_](../books/anything-you-want.md), he wrote a piece titled "How do you grade yourself?"
+Derek Sivers is one of the most interesting people I get to know over the last couple of years. He's been a musician, circus performer, entrepreneur, TED speaker, and book publisher. When he was an aspiring musician, he started _CD Baby_ to sell his records online. Then things went crazy, and he ended up running a company that worths millions of dollars. After selling _CD Baby_ –and donating a vast amount of his exit money to music education–, Derek published three books. They contain his thoughts and takeaways along his journey of life. In [_Anything You Want_](../books/anything-you-want), he wrote a piece titled "How do you grade yourself?"
 
 Here's an excerpt from it:
 
@@ -41,7 +41,7 @@ I'm sure you have plenty of ideas to solve problems many of us experienced first
 
 Austin Kleon is an inspiring creative who wrote three best-selling books, also known as _Steal Like an Artist_ trilogy. If you haven't heard of him, give the first book a try. They are succinct and compelling. I bet you'll read the whole trilogy in a short period.
 
-According to Austin, success is ["closing the gap between what your days look like and what you want your days to look like."](../books/keep-going.md) To leverage this idea, you need to know what your days look like. Writing things on paper has a surprising effect of surfacing the ridiculousness of inherent actions. It's a great start to find out what drives you away. There's no obligation to quit your day job to make time. Limitations such as scarcity feed creativity.
+According to Austin, success is ["closing the gap between what your days look like and what you want your days to look like."](../books/keep-going) To leverage this idea, you need to know what your days look like. Writing things on paper has a surprising effect of surfacing the ridiculousness of inherent actions. It's a great start to find out what drives you away. There's no obligation to quit your day job to make time. Limitations such as scarcity feed creativity.
 
 > When you don't have much time, a routine helps you make the little time you have count. When you have all the time in the world, a routine makes sure you don't waste it.
 >

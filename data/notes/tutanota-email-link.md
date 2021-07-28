@@ -22,4 +22,4 @@ A direct click to that link would open `Mail.app`, which was not my aim.
 
 It turns out that's a `button`, not an `anchor` tag!
 
-Their consideration is thoughtful, but [that's not how the links work.](./jakobs-law.md) 😐
+Their consideration is thoughtful, but [that's not how the links work.](./jakobs-law) 😐

@@ -8,7 +8,7 @@ I enjoy using things that are solving my problems.
 
 Some of them solving those problems so good that I want to take notes. The primary aim is to express my gratitude, and a nice-to-have one is to keep them in mind while building things.
 
-I drink coffee everyday, and developed an interest in how beans are packaged. Here's [a perfect one](./coffee-bean-package-perfect.md), and
-[an imperfect one.](./coffee-bean-package-not-perfect.md)
+I drink coffee everyday, and developed an interest in how beans are packaged. Here's [a perfect one](./coffee-bean-package-perfect), and
+[an imperfect one.](./coffee-bean-package-not-perfect)
 
 I buy things online, and astonished by [Shopify's checkout experience](./how-to-design-a-checkout-experience).
