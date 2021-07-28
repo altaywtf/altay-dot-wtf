@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "altay-dot-wtf",
+    "title": "altay.wtf - book notes",
     "home_page_url": "https://altay.wtf/books",
     "feed_url": "https://altay.wtf/rss/books/feed.json",
     "description": "Some thoughts and notes from the books I read.",

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://altay.wtf/books</id>
-    <title>altay-dot-wtf</title>
-    <updated>2021-07-28T16:42:56.635Z</updated>
+    <title>altay.wtf - book notes</title>
+    <updated>2021-07-28T18:10:32.871Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://altay.wtf/books"/>
     <link rel="self" href="https://altay.wtf/rss/books/atom.xml"/>

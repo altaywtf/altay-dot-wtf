@@ -34,15 +34,14 @@ const generateFeedFiles = (name: string, feed: Feed) => {
 const generateRssForContent = async ({
   path,
   items,
-  options = {},
+  options,
 }: {
   path: string
   items: Item[]
-  options?: Omit<FeedOptions, 'id' | 'title' | 'copyright'>
+  options: Omit<FeedOptions, 'id' | 'copyright'>
 }) => {
   const feed = new Feed({
     id: `${SITE_URL}/${path}`,
-    title: SITE_TITLE,
     copyright: SITE_URL,
     link: `${SITE_URL}/${path}`,
     language: 'en',
@@ -66,6 +65,7 @@ const generateRSS = async () => {
     path: 'notes',
     items: notes.map(mapNoteToRssFeedItem),
     options: {
+      title: SITE_TITLE,
       description: SITE_DESCRIPTION,
     },
   })
@@ -75,6 +75,7 @@ const generateRSS = async () => {
     path: 'books',
     items: books.map(mapBookToRssFeedItem),
     options: {
+      title: `${SITE_TITLE} - book notes`,
       description: booksCopy.description,
     },
   })

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>altay-dot-wtf</title>
+        <title>altay.wtf - book notes</title>
         <link>https://altay.wtf/books</link>
         <description>Some thoughts and notes from the books I read.</description>
-        <lastBuildDate>Wed, 28 Jul 2021 16:42:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jul 2021 18:10:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>

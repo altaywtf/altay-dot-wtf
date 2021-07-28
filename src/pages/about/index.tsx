@@ -28,7 +28,7 @@ const sx: SxStyleProp = {
     color: 'textTertiary',
   },
   '& > ul:nth-of-type(1) > li > a:hover': {
-    color: 'linkPrimary',
+    color: 'background',
   },
 }
 
