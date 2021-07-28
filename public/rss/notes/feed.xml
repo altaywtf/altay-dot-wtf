@@ -4,9 +4,9 @@
         <title>altay-dot-wtf</title>
         <link>https://altay.wtf/notes</link>
         <description>hi, my name is altay and this is my website.</description>
-        <lastBuildDate>Wed, 28 Jul 2021 16:21:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jul 2021 16:42:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>Next.js using Feed for Node.js</generator>
+        <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>https://altay.wtf</copyright>
         <item>

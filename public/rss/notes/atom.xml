@@ -2,9 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://altay.wtf/notes</id>
     <title>altay-dot-wtf</title>
-    <updated>2021-07-28T16:21:28.590Z</updated>
-    <generator>Next.js using Feed for Node.js</generator>
+    <updated>2021-07-28T16:42:55.957Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://altay.wtf/notes"/>
+    <link rel="self" href="https://altay.wtf/rss/notes/atom.xml"/>
     <subtitle>hi, my name is altay and this is my website.</subtitle>
     <rights>https://altay.wtf</rights>
     <entry>

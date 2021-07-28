@@ -2,6 +2,7 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "altay-dot-wtf",
     "home_page_url": "https://altay.wtf/notes",
+    "feed_url": "https://altay.wtf/rss/notes/feed.json",
     "description": "hi, my name is altay and this is my website.",
     "items": [
         {

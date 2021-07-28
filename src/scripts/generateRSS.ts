@@ -1,9 +1,10 @@
+import type { Book, Note } from 'types'
+import fs from 'fs'
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
 import { getContentList } from 'core/api/content'
 import { convertMarkdownToHTML } from 'core/api/md'
-import { Book, Note } from 'types'
-import fs from 'fs'
-import { Feed, Item, Author } from 'feed'
+import { booksCopy } from 'config/copy'
+import { Feed, Item, Author, FeedOptions } from 'feed'
 
 const author: Author = {
   name: 'Altay',
@@ -20,38 +21,63 @@ const mapContentToRssFeedItem = (content: Book | Note): Item => ({
   link: `${SITE_URL}/${content.type}s/${content.slug}`,
   date: new Date(content.meta.date),
 })
-
-const getNotes = async () => (await getContentList('note')) as Note[]
 const mapNoteToRssFeedItem = (note: Note): Item => mapContentToRssFeedItem(note)
-
-const getBooks = async () => (await getContentList('book')) as Book[]
 const mapBookToRssFeedItem = (book: Book): Item => mapContentToRssFeedItem(book)
 
-const generateRssForNotes = async () => {
+const generateFeedFiles = (name: string, feed: Feed) => {
+  fs.mkdirSync(`./public/rss/${name}`, { recursive: true })
+  fs.writeFileSync(`./public/rss/${name}/feed.xml`, feed.rss2())
+  fs.writeFileSync(`./public/rss/${name}/feed.json`, feed.json1())
+  fs.writeFileSync(`./public/rss/${name}/atom.xml`, feed.atom1())
+}
+
+const generateRssForContent = async ({
+  path,
+  items,
+  options = {},
+}: {
+  path: string
+  items: Item[]
+  options?: Omit<FeedOptions, 'id' | 'title' | 'copyright'>
+}) => {
   const feed = new Feed({
-    id: `${SITE_URL}/notes`,
+    id: `${SITE_URL}/${path}`,
     title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
     copyright: SITE_URL,
-    link: `${SITE_URL}/notes`,
+    link: `${SITE_URL}/${path}`,
     language: 'en',
-    generator: 'Next.js using Feed for Node.js',
     feedLinks: {
-      rss2: `${SITE_URL}/rss/notes/feed.xml`,
-      json: `${SITE_URL}/rss/notes/feed.json`,
-      atom: `${SITE_URL}/rss/notes/atom.xml`,
+      rss2: `${SITE_URL}/rss/${path}/feed.xml`,
+      json: `${SITE_URL}/rss/${path}/feed.json`,
+      atom: `${SITE_URL}/rss/${path}/atom.xml`,
+    },
+    ...options,
+  })
+
+  items.forEach(feed.addItem)
+  generateFeedFiles(path, feed)
+}
+
+const generateRSS = async () => {
+  fs.mkdirSync('./public/rss', { recursive: true })
+
+  const notes = (await getContentList('note')) as Note[]
+  await generateRssForContent({
+    path: 'notes',
+    items: notes.map(mapNoteToRssFeedItem),
+    options: {
+      description: SITE_DESCRIPTION,
     },
   })
 
-  const notes = await getNotes()
-  const feedItems = notes.map(mapNoteToRssFeedItem)
-  feedItems.forEach(feed.addItem)
-
-  fs.mkdirSync('./public/rss', { recursive: true })
-  fs.mkdirSync('./public/rss/notes', { recursive: true })
-  fs.writeFileSync('./public/rss/notes/feed.xml', feed.rss2())
-  fs.writeFileSync('./public/rss/notes/feed.json', feed.json1())
-  fs.writeFileSync('./public/rss/notes/atom.xml', feed.atom1())
+  const books = (await getContentList('book')) as Book[]
+  await generateRssForContent({
+    path: 'books',
+    items: books.map(mapBookToRssFeedItem),
+    options: {
+      description: booksCopy.description,
+    },
+  })
 }
 
-generateRssForNotes()
+generateRSS()
