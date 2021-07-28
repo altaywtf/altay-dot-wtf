@@ -1,14 +1,28 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { SITE_URL } from 'config'
 import { getContentList } from 'core/api/content'
-import { transformSelfAbsoluteMarkdownLinks } from 'core/api/md'
+import { convertMarkdownToHTML } from 'core/api/md'
+import { Book } from 'types'
+
+const mapBookToBookJSON = (book: Book) => ({
+  type: book.type,
+  title: book.meta.title,
+  description: book.meta.oneliner,
+  published_at: book.meta.date,
+  image: book.meta.metaImage,
+  html: convertMarkdownToHTML(book.markdown),
+  meta: {
+    authors: book.meta.authors,
+    isbn: book.meta.isbn,
+    coverImage: {
+      ...book.meta.coverImage,
+      url: SITE_URL + book.meta.coverImage.url,
+    },
+    rating: book.meta.rating,
+  },
+})
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const data = await getContentList('book')
-
-  res.status(200).json({
-    data: data.map((item) => ({
-      ...item,
-      markdown: transformSelfAbsoluteMarkdownLinks(item.markdown),
-    })),
-  })
+  const data = (await getContentList('book')) as Book[]
+  res.status(200).json({ data: data.map(mapBookToBookJSON) })
 }

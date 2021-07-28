@@ -1,4 +1,5 @@
 import { SITE_URL } from 'config'
+import marked from 'marked'
 import type { ContentType } from 'types'
 import { getContentDirectoryForType } from './fs'
 
@@ -39,28 +40,12 @@ export const transformRelativeMarkdownLinks = (contentType: ContentType, markdow
   return markdown
 }
 
-const getSelfAbsoluteMarkdownLinks = (mdLinks: string[]) =>
-  mdLinks.filter((mdLink) => {
-    const url = mdLink.match(REGEX_MD_LINK_URL)
-    return url?.length && url[0].startsWith('(/')
+export const convertMarkdownToHTML = (markdown: string) => {
+  const html = marked(markdown, {
+    baseUrl: SITE_URL,
+    gfm: true,
+    breaks: true,
   })
 
-export const transformSelfAbsoluteMarkdownLinks = (markdown: string) => {
-  const mdLinks = markdown.match(REGEX_MD_LINKS)
-
-  if (mdLinks?.length) {
-    const selfAbsoluteMdLinks = getSelfAbsoluteMarkdownLinks(mdLinks)
-
-    selfAbsoluteMdLinks.forEach((mdLink) => {
-      const [matchedURL] = mdLink.match(REGEX_MD_LINK_URL) as [string]
-      let url = matchedURL.split('(')[1].split(')')[0]
-
-      url = url.replace('/', `${SITE_URL}/`)
-      const newMdLink = mdLink.replace(matchedURL, `(${url})`)
-
-      markdown = markdown.replace(mdLink, newMdLink)
-    })
-  }
-
-  return markdown
+  return html
 }
