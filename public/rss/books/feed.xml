@@ -4,7 +4,7 @@
         <title>altay.wtf - book notes</title>
         <link>https://altay.wtf/books</link>
         <description>Some thoughts and notes from the books I read.</description>
-        <lastBuildDate>Wed, 28 Jul 2021 18:10:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jul 2021 20:39:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -37,6 +37,7 @@
 <p><img src="https://altay.wtf/images/books/offline-matters/getting-conscious-on-work-time.jpg" alt=""></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/offline-matters/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[You Are Not So Smart by David McRaney]]></title>
@@ -97,6 +98,7 @@
 <p>🥸 <em>MORE IN NOTEBOOK. TRANSITION ONGOING</em> 🥸</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/you-are-not-so-smart/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Little Book of Stoicism by Jonas Salzgeber]]></title>
@@ -324,6 +326,7 @@
 <p>People remember what you did when they forgot what you said.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-little-book-of-stoicism/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Subliminal by Leonard Mlodinow]]></title>
@@ -561,6 +564,7 @@
 </blockquote>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/subliminal/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Keep Going by Austin Kleon]]></title>
@@ -649,6 +653,7 @@
 </blockquote>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/keep-going/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The New Corporation by Joel Bakan]]></title>
@@ -696,6 +701,7 @@
 <p>🥸 <em>MORE IN NOTEBOOK. TRANSITION ONGOING</em> 🥸</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-new-corporation/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Bird by Bird by Anne Lamott]]></title>
@@ -794,6 +800,7 @@
 </blockquote>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/bird-by-bird/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Practice by Seth Godin]]></title>
@@ -871,6 +878,7 @@
 <p>🥸 <em>MORE IN NOTEBOOK. TRANSITION ONGOING</em> 🥸</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-practice/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Everything Is F*cked by Mark Manson]]></title>
@@ -1057,6 +1065,7 @@
 <p>🥸 <em>MORE IN NOTEBOOK. TRANSITION ONGOING</em> 🥸</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/everything-is-fucked/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Animal Farm by George Orwell]]></title>
@@ -1088,6 +1097,7 @@
 <p>Napoleon calls out neighbor farms to have dinner. Other farmers are fascinated by how animals are working more despite the fact they are eating less. Animal Farm is named Manner Farm again. He sits, walks, drinks, wears, talks, looks, and acts like one of them now. It&#39;s hard to tell the difference between pigs and humans.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/animal-farm/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Conscious Creative by Kelly Small]]></title>
@@ -1102,6 +1112,7 @@
 <p>It&#39;s realistic as well: <strong><em>&quot;Making a shift in our overall impact doesn&#39;t have to involve a radical lifestyle overhaul. Start small.&quot;</em></strong></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-conscious-creative/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[On Writing Well, 30th Anniversary Edition by William Zinsser]]></title>
@@ -1212,6 +1223,7 @@
 <p>Always use &quot;that&quot; unless it makes your meaning ambiguous. If your sentence needs a comma to achieve its precise meaning, it probably needs &quot;which.&quot;</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/on-writing-well/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[This Is Marketing by Seth Godin]]></title>
@@ -1222,6 +1234,7 @@
             <content:encoded><![CDATA[<p><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-2.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-3.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-4.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-5.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-6.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-7.jpg" alt=""><br><img src="https://altay.wtf/images/books/this-is-marketing/this-is-marketing-8.jpg" alt=""></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/this-is-marketing/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Best Interface is No Interface by Golden Krishna]]></title>
@@ -1313,6 +1326,7 @@
 </blockquote>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-best-interface-is-no-interface/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Your Music and People by Derek Sivers]]></title>
@@ -1398,6 +1412,7 @@
 <p><strong>Move to the big city.</strong> Possibilities on the internet are great, but living in New York and Los Angeles helped Derek. <strong>It shows you are in the game.</strong></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/your-music-and-people/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Utopia for Realists by Rutger Bregman]]></title>
@@ -1465,6 +1480,7 @@
 <p>🥸 <em>MORE IN NOTEBOOK. TRANSITION ONGOING</em> 🥸</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/utopia-for-realists/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Anything You Want by Derek Sivers]]></title>
@@ -1537,6 +1553,7 @@
 <p>A sentimental ending for a great story.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/anything-you-want/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Show Your Work! by Austin Kleon]]></title>
@@ -1653,6 +1670,7 @@
 <p>Whenever you feel like whatever there is more to learn about what you&#39;re doing, it&#39;s time to change course to learn something new to move forward.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/show-your-work/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Make Time by Jake Knapp, John Zeratsky]]></title>
@@ -1664,6 +1682,7 @@
 <p><img src="https://altay.wtf/images/books/make-time/make-time-02.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-03.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-04.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-05.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-06.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-07.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-08.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-09.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-10.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-11.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-12.jpg" alt=""></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/make-time/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Programming Elm by Jeremy Fairbank]]></title>
@@ -1887,6 +1906,7 @@ type alias Model =
 <p>Router boilerplate. How to match parameters, re-use components for multiple pages etc.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/programming-elm/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Start Small, Stay Small by Rob Walling]]></title>
@@ -1979,6 +1999,7 @@ type alias Model =
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/start-small-stay-small/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Laws of UX by Jon Yablonski]]></title>
@@ -2267,6 +2288,7 @@ type alias Model =
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/laws-of-ux/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Dip by Seth Godin]]></title>
@@ -2366,6 +2388,7 @@ type alias Model =
 <p>And then, stick with it.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-dip/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Pragmatic Programmer by David Hurst Thomas, Andrew Hunt]]></title>
@@ -3001,6 +3024,7 @@ if slice {
 <p>Envision the future we <em>could</em> have, and have the courage to create it.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-pragmatic-programmer/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Arcade Game Typography by Toshi Omigari]]></title>
@@ -3059,6 +3083,7 @@ if slice {
 <p><img src="https://altay.wtf/images/books/arcade-game-typography/arcade-game-typography-12.jpg" alt=""></p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/arcade-game-typography/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Ultralearning by Scott Young]]></title>
@@ -3193,6 +3218,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/ultralearning/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Reinvent Yourself by James Altucher]]></title>
@@ -3219,6 +3245,7 @@ if slice {
 </blockquote>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/reinvent-yourself/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Divided Self by Ronald David Laing]]></title>
@@ -3247,6 +3274,7 @@ if slice {
 <p>A person may have come to anticipate that any possible relationship with another will have the latter consequences. Any other is then a threat to his ‘self’ (his capacity to act autonomously) not by reason of anything he or she may do or not do specifically, but by reason of his or her very existence.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/the-divided-self/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Company of One by Paul Jarvis]]></title>
@@ -3329,6 +3357,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/company-of-one/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Atomic Habits by James Clear]]></title>
@@ -3457,6 +3486,7 @@ if slice {
 <p>When you can do it “good enough” on autopilot, you stop thinking about how to do it better. The upside of habits is that we can do things without thinking. The downside of habits is that you get used to doing things a certain way and stop paying attention to little errors. You assume you’re getting better because you’re gaining experience. In reality, you are merely reinforcing your current habits—not improving them. In fact, some research has shown that once a skill has been mastered there is usually a slight decline in performance over time.</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/atomic-habits/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Skin in the Game by Nassim Nicholas Taleb]]></title>
@@ -3521,6 +3551,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/skin-in-the-game/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[How to Teach Physics to Your Dog by Chad Orzel]]></title>
@@ -3609,6 +3640,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/quantodog/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Hooked by Nir Eyal, Ryan Hoover]]></title>
@@ -3686,6 +3718,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/hooked/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Six Easy Pieces by Richard P. Feynman]]></title>
@@ -3741,6 +3774,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/six-easy-pieces/cover.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Choose Yourself! by James Altucher]]></title>
@@ -3840,6 +3874,7 @@ if slice {
 </ul>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
+            <enclosure url="https://altay.wtf/images/books/choose-yourself/cover.png" length="0" type="image/png"/>
         </item>
     </channel>
 </rss>

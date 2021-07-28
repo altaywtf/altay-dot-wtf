@@ -2,33 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://altay.wtf/notes</id>
     <title>altay.wtf</title>
-    <updated>2021-07-28T18:10:32.224Z</updated>
+    <updated>2021-07-28T20:39:52.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://altay.wtf/notes"/>
     <link rel="self" href="https://altay.wtf/rss/notes/atom.xml"/>
     <subtitle>hi, my name is altay and this is my website.</subtitle>
     <rights>https://altay.wtf</rights>
-    <entry>
-        <title type="html"><![CDATA[Everything is a note]]></title>
-        <id>https://altay.wtf/notes/everything-is-a-note</id>
-        <link href="https://altay.wtf/notes/everything-is-a-note"/>
-        <updated>2021-07-17T16:52:54.000Z</updated>
-        <summary type="html"><![CDATA[Blogs are dead, long live digital gardens.]]></summary>
-        <content type="html"><![CDATA[<p>I haven&#39;t been updating here for a while. Aside from the self-indulgent reasons (lots of gaming and slacking off), I had to fix some unpleasant things in life (work, apartment, etc.) to get back on track.</p>
-<p>Now that I can feel my brain again, I wanted to restructure the content I have here as well. So I combined the <a href="https://github.com/MaggieAppleton/digital-gardeners">digital garden notes</a> with the articles because eventually, everything I put here is a note. Sometimes just an excerpt from something I read, sometimes my thoughts.</p>
-<p>The mental overhead of writing an article is too high. Maybe it should be. However, I just want to keep the things I find interesting for the sake of helping myself or, who knows, maybe you too.</p>
-]]></content>
-        <author>
-            <name>Altay</name>
-            <email>altay@aydemir.io</email>
-            <uri>https://twitter.com/altaywtf</uri>
-        </author>
-        <contributor>
-            <name>Altay</name>
-            <email>altay@aydemir.io</email>
-            <uri>https://twitter.com/altaywtf</uri>
-        </contributor>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Three definitions of success]]></title>
         <id>https://altay.wtf/notes/success</id>

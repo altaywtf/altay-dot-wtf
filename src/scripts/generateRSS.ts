@@ -21,8 +21,13 @@ const mapContentToRssFeedItem = (content: Book | Note): Item => ({
   link: `${SITE_URL}/${content.type}s/${content.slug}`,
   date: new Date(content.meta.date),
 })
+
 const mapNoteToRssFeedItem = (note: Note): Item => mapContentToRssFeedItem(note)
-const mapBookToRssFeedItem = (book: Book): Item => mapContentToRssFeedItem(book)
+
+const mapBookToRssFeedItem = (book: Book): Item => ({
+  ...mapContentToRssFeedItem(book),
+  image: `${SITE_URL}${book.meta.coverImage.url}`,
+})
 
 const generateFeedFiles = (name: string, feed: Feed) => {
   fs.mkdirSync(`./public/rss/${name}`, { recursive: true })
