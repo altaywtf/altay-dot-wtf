@@ -2,7 +2,6 @@ import type { MetaImage } from 'types'
 import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
 import fs from 'fs'
 import sharp from 'sharp'
-import { createCanvas, loadImage } from 'canvas'
 import { getPlaiceholder } from 'plaiceholder'
 import { PUBLIC_FOLDER_PATH } from './constants'
 
@@ -40,6 +39,8 @@ export const generateMetaImage = async ({
   const absolutePath = `${PUBLIC_FOLDER_PATH}/${publicPath}`
 
   if (!fs.existsSync(absolutePath)) {
+    const { createCanvas, loadImage } = require('canvas') // eslint-disable-line
+
     const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
     const context = canvas.getContext('2d')
     context.fillStyle = META_IMAGE_BG_FILL_COLOR
