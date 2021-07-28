@@ -27,17 +27,17 @@ const minifyContentListItem = <T extends Content>(data: T) => ({ ...data, markdo
 
 export const getContentList = async <T extends Content>(
   contentType: ContentType,
-  { withDetails = false } = {},
+  { minify = false } = {},
 ) => {
   const fileNames = getMarkdownFileNames(contentType)
 
-  const contentList = (await Promise.all(
+  let contentList = (await Promise.all(
     fileNames.map((slug) => getContentDetails<T>(contentType, slug)),
   )) as T[]
 
-  if (withDetails) {
-    return contentList
+  if (minify) {
+    contentList = contentList.map(minifyContentListItem)
   }
 
-  return sortContent(contentList.map(minifyContentListItem))
+  return sortContent(contentList)
 }

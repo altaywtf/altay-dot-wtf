@@ -7,7 +7,7 @@ import { getLinksToContent } from './backlinks'
 export const getStaticPathsForContent =
   (contentType: ContentType): GetStaticPaths =>
   async () => {
-    const data = await getContentList(contentType)
+    const data = await getContentList(contentType, { minify: true })
 
     return {
       paths: data.map(({ slug }) => ({ params: { slug } })),
@@ -47,7 +47,7 @@ type ContentListProps<T> = { data: T[] }
 export const getStaticPropsForContentList =
   <T extends Content>(contentType: ContentType): GetStaticProps<ContentListProps<T>> =>
   async () => {
-    const data = await getContentList<T>(contentType)
+    const data = await getContentList<T>(contentType, { minify: true })
 
     return {
       props: {

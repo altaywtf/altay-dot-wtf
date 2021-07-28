@@ -4,10 +4,7 @@ import { getContentList } from './content'
 const BACKLINKED_CONTENT_TYPES: ContentType[] = ['book', 'note']
 
 const getBacklinkedItems = async () => {
-  const fetcher = BACKLINKED_CONTENT_TYPES.map((type) =>
-    getContentList(type, { withDetails: true }),
-  )
-
+  const fetcher = BACKLINKED_CONTENT_TYPES.map((type) => getContentList(type))
   return (await Promise.all(fetcher)).flat() as Content[]
 }
 

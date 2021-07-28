@@ -1,8 +1,9 @@
 import type { ContentType } from 'types'
 import { join } from 'path'
 import fs from 'fs'
+import { transformRelativeMarkdownLinks } from './md'
 
-const getContentDirectoryForType = (type: ContentType) => {
+export const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
     case 'note':
       return 'notes'
@@ -28,39 +29,6 @@ export const getMarkdownFileNames = (contentType: ContentType) => {
   } catch (e) {
     return []
   }
-}
-
-const transformRelativeMarkdownLinks = (contentType: ContentType, markdown: string) => {
-  const regexMdLinks = /\[([^[]+)\](\(.[^)]*\))/gm
-  const regexMDLinkURL = /(\(.*\))/gm
-  const mdLinks = markdown.match(regexMdLinks)
-
-  if (mdLinks?.length) {
-    const relativeMdLinks = mdLinks.filter((mdLink) => {
-      const url = mdLink.match(regexMDLinkURL)
-      return url?.length && url[0].startsWith('(.')
-    })
-
-    relativeMdLinks.forEach((mdLink) => {
-      const [matchedURL] = mdLink.match(regexMDLinkURL) as [string]
-      let url = matchedURL.split('(')[1].split(')')[0]
-
-      if (url.startsWith('..')) {
-        url = url
-          .split('..')
-          .filter((i) => i !== '..')
-          .join('')
-      } else if (url.startsWith('.')) {
-        url = url.replace('.', `/${getContentDirectoryForType(contentType)}`)
-      }
-
-      url = url.replace('.md', '')
-      const newMdLink = mdLink.replace(matchedURL, `(${url})`)
-      markdown = markdown.replace(mdLink, newMdLink)
-    })
-  }
-
-  return markdown
 }
 
 export const readMarkdownFile = (contentType: ContentType, fileName: string) => {
