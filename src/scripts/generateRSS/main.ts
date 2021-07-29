@@ -6,12 +6,13 @@ import { getContentList } from 'core/api/content'
 import { booksCopy } from 'config/copy'
 import { Feed, Item, FeedOptions } from 'feed'
 import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './mappers'
+import { PUBLIC_FOLDER_PATH } from 'utils/fs'
 
 const generateFeedFiles = (name: string, feed: Feed) => {
-  fs.mkdirSync(`./public/rss/${name}`, { recursive: true })
-  fs.writeFileSync(`./public/rss/${name}/feed.xml`, feed.rss2())
-  fs.writeFileSync(`./public/rss/${name}/feed.json`, feed.json1())
-  fs.writeFileSync(`./public/rss/${name}/atom.xml`, feed.atom1())
+  fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/rss/${name}`, { recursive: true })
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.xml`, feed.rss2())
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.json`, feed.json1())
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/atom.xml`, feed.atom1())
 }
 
 const generateRssForContent = async ({
@@ -41,8 +42,6 @@ const generateRssForContent = async ({
 }
 
 const main = async () => {
-  fs.mkdirSync('./public/rss', { recursive: true })
-
   const notes = (await getContentList('note')) as Note[]
   await generateRssForContent({
     path: 'notes',

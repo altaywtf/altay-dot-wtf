@@ -1,5 +1,6 @@
 import '../env'
 import fs from 'fs'
+import { DATA_FOLDER_PATH } from 'utils/fs'
 import type { NowJSON, NowJSONBook, NowJSONMusic } from './types'
 import { fetchBooks } from './books'
 import { fetchMusic } from './music'
@@ -32,7 +33,7 @@ const createNowJSON = ({
 })
 
 const main = async () => {
-  fs.writeFileSync('./data/now.json', JSON.stringify({}, null, 2))
+  fs.writeFileSync(`${DATA_FOLDER_PATH}/now.json`, JSON.stringify({}, null, 2))
 
   const books = await fetchBooks({
     userToken: process.env.OKU_USER_TOKEN as string,
@@ -45,7 +46,7 @@ const main = async () => {
 
   const nowJSON = createNowJSON({ books, music })
 
-  fs.writeFileSync('./data/now.json', JSON.stringify(nowJSON, null, 2))
+  fs.writeFileSync(`${DATA_FOLDER_PATH}/now.json`, JSON.stringify(nowJSON, null, 2))
 }
 
 main()

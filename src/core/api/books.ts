@@ -1,8 +1,8 @@
 import fs from 'fs'
 import { join } from 'path'
-import fetch from 'node-fetch'
-import { PUBLIC_FOLDER_PATH } from './constants'
+import axios from 'axios'
 import sharp from 'sharp'
+import { PUBLIC_FOLDER_PATH } from 'utils/fs'
 
 const BOOK_JSON_FOLDER = join(process.cwd(), 'data', 'books', 'json')
 
@@ -47,9 +47,8 @@ export const fetchBookData = async (isbn: string) => {
   }
 
   const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}&key=${process.env.GOOGLE_BOOKS_API_KEY}`
-  const response = await fetch(url)
-  const json = await response.json()
-  const bookData = decodeGoogleBooksResponse(isbn, json)
+  const response = await axios.get(url)
+  const bookData = decodeGoogleBooksResponse(isbn, response.data)
 
   fs.writeFileSync(cachedJSONPath, JSON.stringify(bookData, null, ' '))
 
@@ -64,9 +63,9 @@ export const fetchBookImage = async (slug: string, url: string) => {
     return coverImagePath
   }
 
-  const response = await fetch(url)
-  const buffer = await response.buffer()
-  const resizedImage = await sharp(buffer).resize({ width: 180 }).toBuffer()
+  const response = await axios.get(url, { responseType: 'arraybuffer' })
+  const buffer = Buffer.from(response.data, 'base64')
+  const resizedImage = await sharp(buffer).resize({ width: 200 }).toBuffer()
 
   if (!fs.existsSync(`${PUBLIC_FOLDER_PATH}/${bookFolderPath}`)) {
     fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/${bookFolderPath}`)

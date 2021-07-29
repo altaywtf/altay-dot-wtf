@@ -1,7 +1,7 @@
 import fs from 'fs'
 import sharp from 'sharp'
 import { getPlaiceholder } from 'plaiceholder'
-import { PUBLIC_FOLDER_PATH } from './constants'
+import { PUBLIC_FOLDER_PATH } from 'utils/fs'
 
 type ImageData = {
   buffer: Buffer
