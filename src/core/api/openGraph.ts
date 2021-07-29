@@ -28,7 +28,7 @@ export const getOpenGraphImage = (params: OpenGraphImageQueryParams): OpenGraphI
     return acc
   }, new URLSearchParams())
 
-  const url = new URL(OG_IMAGE_SERVICE_BASE_URL) + `?${searchParams}`
+  const url = new URL(OG_IMAGE_SERVICE_BASE_URL) + `?${searchParams.toString()}`
 
   return {
     alt: params?.title || '',

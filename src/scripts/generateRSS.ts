@@ -6,6 +6,7 @@ import { convertMarkdownToHTML } from 'core/api/md'
 import { booksCopy } from 'config/copy'
 import { Feed, Item, Author, FeedOptions } from 'feed'
 import { getOpenGraphImage } from 'core/api/openGraph'
+import { sanitizeHtml } from 'utils/sanitize'
 
 const author: Author = {
   name: 'Altay',
@@ -25,22 +26,26 @@ const mapContentToRssFeedItem = (content: Book | Note): Item => ({
 
 const mapNoteToRssFeedItem = (note: Note): Item => ({
   ...mapContentToRssFeedItem(note),
-  image: getOpenGraphImage({
-    type: 'note',
-    title: note.meta.title,
-    oneliner: note.meta.oneliner,
-  }).url,
+  image: sanitizeHtml(
+    getOpenGraphImage({
+      type: 'note',
+      title: note.meta.title,
+      oneliner: note.meta.oneliner,
+    }).url,
+  ),
 })
 
 const mapBookToRssFeedItem = (book: Book): Item => ({
   ...mapContentToRssFeedItem(book),
   title: `${book.meta.title} by ${book.meta.author}`,
-  image: getOpenGraphImage({
-    type: 'book',
-    title: book.meta.title,
-    author: book.meta.author,
-    coverImageURL: book.meta.coverImage.remoteURL,
-  }).url,
+  image: sanitizeHtml(
+    getOpenGraphImage({
+      type: 'book',
+      title: book.meta.title,
+      author: book.meta.author,
+      coverImageURL: book.meta.coverImage.remoteURL,
+    }).url,
+  ),
 })
 
 const generateFeedFiles = (name: string, feed: Feed) => {

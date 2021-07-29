@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://altay.wtf/books</id>
     <title>altay.wtf - book notes</title>
-    <updated>2021-07-29T10:22:12.316Z</updated>
+    <updated>2021-07-29T10:58:32.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://altay.wtf/books"/>
     <link rel="self" href="https://altay.wtf/rss/books/atom.xml"/>
@@ -1821,8 +1821,7 @@
         <link href="https://altay.wtf/books/make-time"/>
         <updated>2020-09-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Change comes from resetting defaults, installing barriers and designing how you spend your time.]]></summary>
-        <content type="html"><![CDATA[<p>(You can click-and-enlarge images, kudos to <a href="https://github.com/rpearce/image-zoom">image-zoom 🔍</a>)</p>
-<p><img src="https://altay.wtf/images/books/make-time/make-time-02.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-03.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-04.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-05.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-06.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-07.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-08.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-09.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-10.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-11.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-12.jpg" alt=""></p>
+        <content type="html"><![CDATA[<p><img src="https://altay.wtf/images/books/make-time/make-time-02.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-03.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-04.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-05.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-06.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-07.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-08.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-09.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-10.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-11.jpg" alt=""><br><img src="https://altay.wtf/images/books/make-time/make-time-12.jpg" alt=""></p>
 ]]></content>
         <author>
             <name>Altay</name>
