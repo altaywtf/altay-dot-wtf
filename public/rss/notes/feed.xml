@@ -4,7 +4,7 @@
         <title>altay.wtf</title>
         <link>https://altay.wtf/notes</link>
         <description>hi, my name is altay and this is my website.</description>
-        <lastBuildDate>Thu, 29 Jul 2021 09:55:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Jul 2021 10:22:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -1179,7 +1179,7 @@ const generateMetaImageForBook = (book: BookData) =&gt; {
             <enclosure url="https://og-image.altay.wtf/api?type=note&title=Joe+Armstrong+on+error+handling&oneliner=For+your+next+engineering+couch." length="0" type="image//api"/>
         </item>
         <item>
-            <title><![CDATA[Leveraging dynamic imports to make Lighthouse happier]]></title>
+            <title><![CDATA[Happier Lighthouse with dynamic imports]]></title>
             <link>https://altay.wtf/notes/happier-lighthouse</link>
             <guid>https://altay.wtf/notes/happier-lighthouse</guid>
             <pubDate>Sun, 01 Nov 2020 00:00:00 GMT</pubDate>
@@ -1276,7 +1276,7 @@ export default Markdown
 <p>Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨</p>
 ]]></content:encoded>
             <author>altay@aydemir.io (Altay)</author>
-            <enclosure url="https://og-image.altay.wtf/api?type=note&title=Leveraging+dynamic+imports+to+make+Lighthouse+happier&oneliner=Using+a+450KB+library+to+render+text+was+not+my+brightest+decision." length="0" type="image//api"/>
+            <enclosure url="https://og-image.altay.wtf/api?type=note&title=Happier+Lighthouse+with+dynamic+imports&oneliner=Using+a+450KB+library+to+render+text+was+not+my+brightest+decision." length="0" type="image//api"/>
         </item>
         <item>
             <title><![CDATA[Definition of Scenius]]></title>

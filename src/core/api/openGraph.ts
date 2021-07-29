@@ -18,7 +18,6 @@ type Book = {
 type Page = {
   type: 'page'
   title: string
-  oneliner: string
 }
 
 type OpenGraphImageQueryParams = Note | Book | Page

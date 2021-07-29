@@ -1,5 +1,5 @@
 ---
-title: Leveraging dynamic imports to make Lighthouse happier
+title: Happier Lighthouse with dynamic imports
 oneliner: Using a 450KB library to render text was not my brightest decision.
 date: '2020-11-01'
 ---

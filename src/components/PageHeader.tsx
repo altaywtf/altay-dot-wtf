@@ -22,7 +22,6 @@ const PageHeader: React.FC<Props> = ({ icon, title, description }) => {
             getOpenGraphImage({
               type: 'page',
               title: title,
-              oneliner: '',
             }),
           ],
         }}
