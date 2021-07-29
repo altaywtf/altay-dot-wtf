@@ -15,7 +15,6 @@
     "@emotion/styled": "^10.0.27",
     "@next/bundle-analyzer": "^10.0.0",
     "@rebass/preset": "^4.0.5",
-    "canvas": "2.6.1",
     "date-fns": "^2.21.3",
     "emotion-theming": "^10.0.27",
     "feed": "^4.2.2",

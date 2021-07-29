@@ -5,8 +5,6 @@ rating: '4/5'
 oneliner: 'Change comes from resetting defaults, installing barriers and designing how you spend your time.'
 ---
 
-(You can click-and-enlarge images, kudos to [image-zoom 🔍](https://github.com/rpearce/image-zoom))
-
 ![](/images/books/make-time/make-time-02.jpg)
 ![](/images/books/make-time/make-time-03.jpg)
 ![](/images/books/make-time/make-time-04.jpg)
