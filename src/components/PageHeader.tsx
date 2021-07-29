@@ -1,6 +1,7 @@
 import { Heading, Box, Text } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import { createOpenGraphImage } from 'core/api/openGraph'
 import Markdown from './Markdown'
 import avatar from '../../public/images/avatar.png'
 
@@ -8,20 +9,23 @@ type Props = {
   title: string
   icon?: string
   description?: string
-  metaTitle?: string
-  metaDescription?: string
 }
 
-const PageHeader: React.FC<Props> = ({ icon, title, metaTitle, description, metaDescription }) => {
-  const seoTitle = metaTitle || title
-  const seoDescription = metaDescription || description
-
+const PageHeader: React.FC<Props> = ({ icon, title, description }) => {
   return (
     <>
       <NextSeo
-        title={seoTitle}
-        description={seoDescription}
-        openGraph={{ title: seoTitle, description: seoDescription }}
+        title={title}
+        openGraph={{
+          title: title,
+          images: [
+            createOpenGraphImage({
+              type: 'page',
+              title: title,
+              oneliner: '',
+            }),
+          ],
+        }}
       />
 
       {icon ? (

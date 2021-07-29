@@ -3,6 +3,7 @@ import type { Note } from 'types'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
+import { createOpenGraphImage } from 'core/api/openGraph'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import Markdown from 'components/Markdown'
 import BackLinks from 'components/BackLinks'
@@ -14,8 +15,6 @@ export const getStaticProps = getStaticPropsForContentDetails<Note>('note')
 
 const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
   useScrollToSource()
-
-  if (!data || !links) return null
 
   const title = data.meta.title
   const description = data.meta.oneliner
@@ -33,6 +32,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
             authors: ['Altay Aydemir'],
             modifiedTime: data.meta.date,
           },
+          images: [createOpenGraphImage({ type: 'note', title, oneliner: description })],
         }}
       />
 

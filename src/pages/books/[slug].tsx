@@ -1,8 +1,9 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import type { Book } from 'types'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import type { Book } from 'types'
+import { createOpenGraphImage } from 'core/api/openGraph'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
@@ -16,8 +17,6 @@ export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
 const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
   useScrollToSource()
 
-  if (!data || !links) return null
-
   return (
     <>
       <NextSeo
@@ -26,7 +25,14 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         openGraph={{
           title: data.meta.title,
           description: data.meta.oneliner,
-          images: [{ alt: data.meta.title, ...data.meta.metaImage }],
+          images: [
+            createOpenGraphImage({
+              type: 'book',
+              title: data.meta.title,
+              author: data.meta.author,
+              coverImageURL: data.meta.coverImage.remoteURL,
+            }),
+          ],
         }}
       />
 
@@ -43,7 +49,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
         <Box>
           <Heading as="h1" fontSize={[1, 3]}>
-            {data.meta.title}
+            {data.meta.title} by {data.meta.author}
           </Heading>
 
           <Box m={2} />

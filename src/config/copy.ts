@@ -41,12 +41,12 @@ export const bookmarksCopy = {
 export const booksCopy = {
   icon: '📚',
   title: 'Books',
-  description: `Some thoughts and notes from the books I read.`,
+  description: `Notes from the books I read.`,
 }
 
 export const nowCopy = {
   icon: '⏱',
-  title: "What I'm doing now",
+  title: "What I'm doing now.",
   description:
     "This is a [monthly updated](/now/history) now page, and it's inspired by [Derek Sivers.](https://nownownow.com)",
 }
@@ -54,7 +54,7 @@ export const nowCopy = {
 export const nowHistoryCopy = {
   icon: '🗓',
   title: 'History',
-  description: `What I've been doing`,
+  description: `What I've been doing.`,
 }
 
 export const projectsCopy = {

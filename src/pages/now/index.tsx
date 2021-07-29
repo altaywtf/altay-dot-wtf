@@ -20,10 +20,7 @@ export const getStaticProps = async () => {
 
 const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader
-      {...nowCopy}
-      metaDescription={`What am I doing as of ${formatDate(data.meta.date)}`}
-    />
+    <PageHeader {...nowCopy} />
 
     <Box m={4} />
 

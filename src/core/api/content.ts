@@ -10,7 +10,7 @@ const getMarkdownContentDetails = async <T extends Content>(
 ) => {
   const md = readMarkdownFile(contentType, fileName)
   const { content, data } = matter(md)
-  const meta = await getMeta<T>(contentType, fileName, data, content)
+  const meta = await getMeta<T>({ type: contentType, slug: fileName, meta: data, content })
 
   return {
     type: contentType,

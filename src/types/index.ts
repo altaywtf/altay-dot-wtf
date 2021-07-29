@@ -1,50 +1,42 @@
-export type MetaImage = {
-  url: string
-  width: number
-  height: number
-}
-
-export type BaseMeta = {
+export type Meta = {
   date: string
 }
 
-export type BaseMDMeta = BaseMeta
-
-export type BaseMDContent = {
+export type MDContent = {
   slug: string
   markdown: string
-  meta: BaseMDMeta
+  meta: Meta
 }
 
-export type About = BaseMDContent & {
+export type About = MDContent & {
   type: 'about'
 }
 
-export type Now = BaseMDContent & {
+export type Now = MDContent & {
   type: 'now'
 }
 
-export type Note = BaseMDContent & {
+export type Note = MDContent & {
   type: 'note'
-  meta: BaseMDMeta & {
+  meta: Meta & {
     title: string
     oneliner: string
     readingTime: string
   }
 }
 
-export type Book = BaseMDContent & {
+export type Book = MDContent & {
   type: 'book'
-  meta: BaseMDMeta & {
+  meta: Meta & {
     title: string
     oneliner: string
-    authors: string[]
+    author: string
     coverImage: {
+      remoteURL: string
       url: string
       aspectRatio: number
       blurhash: string
     }
-    metaImage: MetaImage
     isbn: string
     rating: string
   }
@@ -58,5 +50,5 @@ export type Bookmark = {
   description: string
 }
 
-export type Content = Now | Note | Book | About
+export type Content = About | Now | Note | Book
 export type ContentType = Content['type']

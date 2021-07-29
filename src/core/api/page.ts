@@ -15,7 +15,7 @@ export const getStaticPathsForContent =
     }
   }
 
-type ContentDetailsProps<T> = { data: T; links: Content[] } | { data: undefined; links: undefined }
+type ContentDetailsProps<T> = { data: T; links: Content[] }
 
 export const getStaticPropsForContentDetails =
   <T extends Content>(contentType: ContentType): GetStaticProps<ContentDetailsProps<T>> =>
@@ -23,12 +23,7 @@ export const getStaticPropsForContentDetails =
     const slug = getMarkdownFileNames(contentType).find((s) => s === params?.slug)
 
     if (!slug) {
-      return {
-        props: {
-          data: undefined,
-          links: undefined,
-        },
-      }
+      throw new Error(`${contentType} - ${slug} does not exist.`)
     }
 
     const data = await getContentDetails<T>(contentType, slug)

@@ -1,50 +1,72 @@
 import type { Note, Book, Content, ContentType } from 'types'
 import readingTime from 'reading-time'
 import { fetchBookData, fetchBookImage } from './books'
-import { getImageData, generateMetaImage } from './image'
+import { getImageData } from './image'
 
-const getNoteMeta = async (slug: string, meta: Note['meta'], content: Note['markdown']) => {
-  const readingTimeStats = readingTime(content)
-  return { ...meta, readingTime: readingTimeStats.text }
-}
-
-const getBookMeta = async (slug: string, meta: Book['meta']) => {
-  const { coverImageURL: remoteCoverImageURL, title, authors } = await fetchBookData(meta.isbn)
-  const coverImageURL = await fetchBookImage(slug, remoteCoverImageURL)
-  const coverImageData = await getImageData(coverImageURL)
-  const metaImage = await generateMetaImage({
-    publicPath: `/images/books/${slug}/cover-meta.png`,
-    data: coverImageData,
-    scale: 1.5,
-  })
+const getNoteMeta = async ({
+  meta,
+  content,
+}: {
+  meta: Note['meta']
+  content: Note['markdown']
+}): Promise<Note['meta']> => {
+  const imageParams = new URLSearchParams()
+  imageParams.append('type', 'note')
+  imageParams.append('title', meta.title)
+  imageParams.append('oneliner', meta.oneliner)
 
   return {
     ...meta,
-    title: `${title} by ${authors.join(', ')}`,
-    authors,
-    coverImage: {
-      blurhash: coverImageData.blurhash,
-      url: coverImageURL,
-      aspectRatio: coverImageData.ratio,
-    },
-    metaImage,
+    readingTime: readingTime(content).text,
   }
 }
 
-export const getMeta = async <T extends Content>(
-  contentType: ContentType,
-  slug: string,
-  rawMeta: Record<string, unknown>,
-  rawContent = '',
-) => {
-  switch (contentType) {
-    case 'book':
-      return getBookMeta(slug, rawMeta as Book['meta'])
+const getBookMeta = async ({
+  slug,
+  meta,
+}: {
+  slug: string
+  meta: Book['meta']
+}): Promise<Book['meta']> => {
+  const { coverImageURL: remoteCoverImageURL, title, authors } = await fetchBookData(meta.isbn)
+  const author = authors.join(', ')
+
+  const coverImageURL = await fetchBookImage(slug, remoteCoverImageURL)
+  const coverImageData = await getImageData(coverImageURL)
+
+  return {
+    ...meta,
+    title,
+    author,
+    coverImage: {
+      remoteURL: remoteCoverImageURL,
+      url: coverImageURL,
+      blurhash: coverImageData.blurhash,
+      aspectRatio: coverImageData.ratio,
+    },
+  }
+}
+
+export const getMeta = async <T extends Content>({
+  type,
+  slug,
+  meta,
+  content,
+}: {
+  type: ContentType
+  slug: string
+  meta: Record<string, unknown>
+  content: string
+}): Promise<T['meta']> => {
+  switch (type) {
+    case 'book': {
+      return getBookMeta({ slug, meta: meta as Book['meta'] })
+    }
 
     case 'note':
-      return getNoteMeta(slug, rawMeta as Note['meta'], rawContent)
+      return getNoteMeta({ content, meta: meta as Note['meta'] })
 
     default:
-      return rawMeta as T['meta']
+      return meta as T['meta']
   }
 }

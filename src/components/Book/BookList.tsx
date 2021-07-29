@@ -27,7 +27,7 @@ const BookList: React.FC<Props> = ({ data }) => (
             <NextLink href={`/books/${book.slug}`} passHref>
               <Link title={book.meta.title}>
                 <Heading as="h3" fontSize={[0, 1]}>
-                  {book.meta.title}
+                  {book.meta.title} by {book.meta.author}
                 </Heading>
               </Link>
             </NextLink>
