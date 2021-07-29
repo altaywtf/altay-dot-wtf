@@ -10,6 +10,7 @@
             "url": "https://altay.wtf/notes/success",
             "title": "Three definitions of success",
             "summary": "How to build your own hedonic treadmill.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Three+definitions+of+success&oneliner=How+to+build+your+own+hedonic+treadmill.",
             "date_modified": "2020-12-21T20:41:04.000Z",
             "author": {
                 "name": "Altay",
@@ -21,6 +22,7 @@
             "url": "https://altay.wtf/notes/2020",
             "title": "2020 in review",
             "summary": "Exploring my boundaries of self-destruction.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=2020+in+review&oneliner=Exploring+my+boundaries+of+self-destruction.",
             "date_modified": "2020-12-16T09:21:52.000Z",
             "author": {
                 "name": "Altay",
@@ -32,6 +34,7 @@
             "url": "https://altay.wtf/notes/mentors",
             "title": "Release your mentors",
             "summary": "Don't be a daydreaming fucktard.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Release+your+mentors&oneliner=Don%27t+be+a+daydreaming+fucktard.",
             "date_modified": "2020-12-11T18:42:27.000Z",
             "author": {
                 "name": "Altay",
@@ -43,6 +46,7 @@
             "url": "https://altay.wtf/notes/formula-of-humanity",
             "title": "The Formula of Humanity",
             "summary": "Brought to you by Immanuel Kant",
+            "image": "https://og-image.altay.wtf/api?type=note&title=The+Formula+of+Humanity&oneliner=Brought+to+you+by+Immanuel+Kant",
             "date_modified": "2020-12-06T16:35:53.000Z",
             "author": {
                 "name": "Altay",
@@ -54,6 +58,7 @@
             "url": "https://altay.wtf/notes/email",
             "title": "A private email setup with noise reduction",
             "summary": "My justification for paying 3.29 EUR per month for something free.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=A+private+email+setup+with+noise+reduction&oneliner=My+justification+for+paying+3.29+EUR+per+month+for+something+free.",
             "date_modified": "2020-12-05T20:24:38.000Z",
             "author": {
                 "name": "Altay",
@@ -65,6 +70,7 @@
             "url": "https://altay.wtf/notes/consciousness-car",
             "title": "Our consciousness car",
             "summary": "Beep beep.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Our+consciousness+car&oneliner=Beep+beep.",
             "date_modified": "2020-12-05T09:57:23.000Z",
             "author": {
                 "name": "Altay",
@@ -76,6 +82,7 @@
             "url": "https://altay.wtf/notes/self-control",
             "title": "Self-control is an illusion",
             "summary": "Phew, now I can eat that donut.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Self-control+is+an+illusion&oneliner=Phew%2C+now+I+can+eat+that+donut.",
             "date_modified": "2020-12-05T09:53:32.000Z",
             "author": {
                 "name": "Altay",
@@ -87,6 +94,7 @@
             "url": "https://altay.wtf/notes/dict-etymology",
             "title": "Dictionary – etymology",
             "summary": "Roots of some words I came across while reading.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Dictionary+%E2%80%93+etymology&oneliner=Roots+of+some+words+I+came+across+while+reading.",
             "date_modified": "2020-12-03T19:12:12.000Z",
             "author": {
                 "name": "Altay",
@@ -98,6 +106,7 @@
             "url": "https://altay.wtf/notes/dict-phrases",
             "title": "Dictionary – phrases",
             "summary": "Interesting phrases I came across while reading.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Dictionary+%E2%80%93+phrases&oneliner=Interesting+phrases+I+came+across+while+reading.",
             "date_modified": "2020-12-03T19:12:12.000Z",
             "author": {
                 "name": "Altay",
@@ -109,6 +118,7 @@
             "url": "https://altay.wtf/notes/dict-words",
             "title": "Dictionary – words",
             "summary": "I didn't know the meaning of those words, but now I can remember.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Dictionary+%E2%80%93+words&oneliner=I+didn%27t+know+the+meaning+of+those+words%2C+but+now+I+can+remember.",
             "date_modified": "2020-12-03T19:12:12.000Z",
             "author": {
                 "name": "Altay",
@@ -120,6 +130,7 @@
             "url": "https://altay.wtf/notes/using-things",
             "title": "Using things that are solving my problems",
             "summary": "buyprimebenefits buyprimebenefits",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Using+things+that+are+solving+my+problems&oneliner=buyprimebenefits+buyprimebenefits",
             "date_modified": "2020-11-16T19:32:42.000Z",
             "author": {
                 "name": "Altay",
@@ -131,6 +142,7 @@
             "url": "https://altay.wtf/notes/manipulation",
             "title": "Manipulation",
             "summary": "A definition of manipulation from Seth Godin.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Manipulation&oneliner=A+definition+of+manipulation+from+Seth+Godin.",
             "date_modified": "2020-11-15T19:56:29.000Z",
             "author": {
                 "name": "Altay",
@@ -142,6 +154,7 @@
             "url": "https://altay.wtf/notes/blur-up-image-loading-with-next",
             "title": "Blur-up image loading with next/image",
             "summary": "aka the magic thing Medium does with the images.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Blur-up+image+loading+with+next%2Fimage&oneliner=aka+the+magic+thing+Medium+does+with+the+images.",
             "date_modified": "2020-11-13T22:41:11.000Z",
             "author": {
                 "name": "Altay",
@@ -153,6 +166,7 @@
             "url": "https://altay.wtf/notes/how-to-design-a-checkout-experience",
             "title": "How to design a checkout experience",
             "summary": "Just do whatever Shopify does.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=How+to+design+a+checkout+experience&oneliner=Just+do+whatever+Shopify+does.",
             "date_modified": "2020-11-11T20:33:52.000Z",
             "author": {
                 "name": "Altay",
@@ -164,6 +178,7 @@
             "url": "https://altay.wtf/notes/simple-questions",
             "title": "Simple questions",
             "summary": ":thinking-face:",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Simple+questions&oneliner=%3Athinking-face%3A",
             "date_modified": "2020-11-10T20:02:22.000Z",
             "author": {
                 "name": "Altay",
@@ -175,6 +190,7 @@
             "url": "https://altay.wtf/notes/how-to-not-redesign-a-logo",
             "title": "How to not redesign your app icons",
             "summary": "Notorious GSuite example",
+            "image": "https://og-image.altay.wtf/api?type=note&title=How+to+not+redesign+your+app+icons&oneliner=Notorious+GSuite+example",
             "date_modified": "2020-11-09T21:12:40.000Z",
             "author": {
                 "name": "Altay",
@@ -185,6 +201,7 @@
             "content_html": "<p>This is from <a href=\"https://www.instagram.com/bonanzacoffee/\">Bonanza.</a></p>\n<p>It looks modern and sterile, but not as convenient as <a href=\"https://altay.wtf/notes/coffee-bean-package-perfect\">Oslo&#39;s</a>.</p>\n<p>Getting a perfectly filled spoon is hard when it&#39;s running low.<br>It occupies more space due to having a larger volume.</p>\n<p><img src=\"https://altay.wtf/images/notes/coffee-bonanza.jpeg\" alt=\"\"></p>\n<p>Bonanza also sells <a href=\"https://shop.bonanzacoffee.de/collections/coffee/products/sasaba-jar\">a glass jar</a>, maybe they want people to buy that. It looks like it belongs to my high-school&#39;s chemistry lab. One day we had an accident in there. A student broke a bottle and spilled ammonia to the ground. The whole floor smelt awful for the rest of the week. I remember that ammonia smell whenever I see this brown glass. I also hate pickles and they come in a jar too.</p>\n<p>The initial opening of this package can be troublesome.<br>Need to be cautious and patient.</p>\n<p><img src=\"https://altay.wtf/images/notes/coffee-bonanza-nooo.jpeg\" alt=\"\"></p>\n<p>Not my inherent traits if I haven&#39;t had a coffee yet.</p>\n",
             "url": "https://altay.wtf/notes/coffee-bean-package-not-perfect",
             "title": "An imperfect coffee bean package",
+            "image": "https://og-image.altay.wtf/api?type=note&title=An+imperfect+coffee+bean+package&oneliner=undefined",
             "date_modified": "2020-11-09T20:09:28.000Z",
             "author": {
                 "name": "Altay",
@@ -196,6 +213,7 @@
             "url": "https://altay.wtf/notes/coffee-bean-package-perfect",
             "title": "A perfect coffee bean package",
             "summary": "It tastes great too.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=A+perfect+coffee+bean+package&oneliner=It+tastes+great+too.",
             "date_modified": "2020-11-09T18:30:21.000Z",
             "author": {
                 "name": "Altay",
@@ -207,6 +225,7 @@
             "url": "https://altay.wtf/notes/enhancing-book-notes",
             "title": "Enhancing book notes with metadata",
             "summary": "You can read, you can code. So why not?",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Enhancing+book+notes+with+metadata&oneliner=You+can+read%2C+you+can+code.+So+why+not%3F",
             "date_modified": "2020-11-09T15:29:40.000Z",
             "author": {
                 "name": "Altay",
@@ -218,6 +237,7 @@
             "url": "https://altay.wtf/notes/my-utopia",
             "title": "Transparent business",
             "summary": "I want my own utopia.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Transparent+business&oneliner=I+want+my+own+utopia.",
             "date_modified": "2020-11-08T15:37:20.000Z",
             "author": {
                 "name": "Altay",
@@ -229,6 +249,7 @@
             "url": "https://altay.wtf/notes/how-do-I-read",
             "title": "How do I read a book",
             "summary": "It's more pleasant than playing 300 games of League of Legends during the lockdown.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=How+do+I+read+a+book&oneliner=It%27s+more+pleasant+than+playing+300+games+of+League+of+Legends+during+the+lockdown.",
             "date_modified": "2020-11-05T22:37:23.000Z",
             "author": {
                 "name": "Altay",
@@ -240,6 +261,7 @@
             "url": "https://altay.wtf/notes/jakobs-law",
             "title": "Jakob's Law",
             "summary": "Don't make people think. Please.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Jakob%27s+Law&oneliner=Don%27t+make+people+think.+Please.",
             "date_modified": "2020-11-05T19:50:22.000Z",
             "author": {
                 "name": "Altay",
@@ -251,6 +273,7 @@
             "url": "https://altay.wtf/notes/tutanota-email-link",
             "title": "Tutanota's non-intuitive email link",
             "summary": "Time to read Laws of UX.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Tutanota%27s+non-intuitive+email+link&oneliner=Time+to+read+Laws+of+UX.",
             "date_modified": "2020-11-05T19:50:22.000Z",
             "author": {
                 "name": "Altay",
@@ -262,6 +285,7 @@
             "url": "https://altay.wtf/notes/why",
             "title": "Why we are doing what we are doing",
             "summary": "Now I got you.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Why+we+are+doing+what+we+are+doing&oneliner=Now+I+got+you.",
             "date_modified": "2020-11-05T14:24:56.000Z",
             "author": {
                 "name": "Altay",
@@ -273,6 +297,7 @@
             "url": "https://altay.wtf/notes/joe-armstrong-error-handling",
             "title": "Joe Armstrong on error handling",
             "summary": "For your next engineering couch.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Joe+Armstrong+on+error+handling&oneliner=For+your+next+engineering+couch.",
             "date_modified": "2020-11-03T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -284,6 +309,7 @@
             "url": "https://altay.wtf/notes/happier-lighthouse",
             "title": "Leveraging dynamic imports to make Lighthouse happier",
             "summary": "Using a 450KB library to render text was not my brightest decision.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Leveraging+dynamic+imports+to+make+Lighthouse+happier&oneliner=Using+a+450KB+library+to+render+text+was+not+my+brightest+decision.",
             "date_modified": "2020-11-01T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -295,6 +321,7 @@
             "url": "https://altay.wtf/notes/scenius",
             "title": "Definition of Scenius",
             "summary": "Great minds grow together.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Definition+of+Scenius&oneliner=Great+minds+grow+together.",
             "date_modified": "2020-10-31T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -306,6 +333,7 @@
             "url": "https://altay.wtf/notes/the-vampire-test",
             "title": "The vampire test",
             "summary": "Well, that was easy.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=The+vampire+test&oneliner=Well%2C+that+was+easy.",
             "date_modified": "2020-10-31T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -317,6 +345,7 @@
             "url": "https://altay.wtf/notes/the-trap",
             "title": "The Trap: What Happened to Our Dreams of Freedom",
             "summary": "Notes from by Adam Curtis's amazing documentary.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=The+Trap%3A+What+Happened+to+Our+Dreams+of+Freedom&oneliner=Notes+from+by+Adam+Curtis%27s+amazing+documentary.",
             "date_modified": "2020-08-07T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -328,6 +357,7 @@
             "url": "https://altay.wtf/notes/dear-state",
             "title": "Dear state, please stop lying",
             "summary": "A brief revisit of how we represent states while building user-interfaces.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=Dear+state%2C+please+stop+lying&oneliner=A+brief+revisit+of+how+we+represent+states+while+building+user-interfaces.",
             "date_modified": "2020-02-22T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -339,6 +369,7 @@
             "url": "https://altay.wtf/notes/react-native-imessage",
             "title": "We built an iMessage Extension for our React Native app",
             "summary": "Now you can too.",
+            "image": "https://og-image.altay.wtf/api?type=note&title=We+built+an+iMessage+Extension+for+our+React+Native+app&oneliner=Now+you+can+too.",
             "date_modified": "2019-04-14T00:00:00.000Z",
             "author": {
                 "name": "Altay",

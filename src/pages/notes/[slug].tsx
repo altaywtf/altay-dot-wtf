@@ -3,7 +3,7 @@ import type { Note } from 'types'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import { createOpenGraphImage } from 'core/api/openGraph'
+import { getOpenGraphImage } from 'core/api/openGraph'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import Markdown from 'components/Markdown'
 import BackLinks from 'components/BackLinks'
@@ -32,7 +32,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
             authors: ['Altay Aydemir'],
             modifiedTime: data.meta.date,
           },
-          images: [createOpenGraphImage({ type: 'note', title, oneliner: description })],
+          images: [getOpenGraphImage({ type: 'note', title, oneliner: description })],
         }}
       />
 

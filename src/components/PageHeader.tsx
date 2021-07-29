@@ -1,7 +1,7 @@
 import { Heading, Box, Text } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-import { createOpenGraphImage } from 'core/api/openGraph'
+import { getOpenGraphImage } from 'core/api/openGraph'
 import Markdown from './Markdown'
 import avatar from '../../public/images/avatar.png'
 
@@ -19,7 +19,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description }) => {
         openGraph={{
           title: title,
           images: [
-            createOpenGraphImage({
+            getOpenGraphImage({
               type: 'page',
               title: title,
               oneliner: '',

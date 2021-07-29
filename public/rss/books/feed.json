@@ -3,14 +3,14 @@
     "title": "altay.wtf - book notes",
     "home_page_url": "https://altay.wtf/books",
     "feed_url": "https://altay.wtf/rss/books/feed.json",
-    "description": "Some thoughts and notes from the books I read.",
+    "description": "Notes from the books I read.",
     "items": [
         {
             "content_html": "<p>I like the path of evolution of this book. It was born as a newsletter then grew into a fully-fledged resource that questions one of the biggest problems we&#39;re facing as humanity: why are blissfully ignoring the non-screen part of our lives?</p>\n<p>As a creative person from the field, Jess speaks the cruel truths, criticizes the numb and careless marketing approach blasting inboxes, and reminds us that life is eventually an offline platform. I admire the bold and confident tone. Sometimes we need to burn bridges to stop ourselves from crossing again.</p>\n<p>The mixture of serif and monospaced fonts with a &quot;yeah, this would look good on paper&quot; layout was also appealing. It&#39;s not published as an e-book anyways.</p>\n<p>After this book is published, Jess started a new project: <a href=\"https://nofun.tips\">https://nofun.tips</a></p>\n<hr>\n<p>Here are some takeaways:</p>\n<p>The money spent on voracious advertising is not worth it. P&amp;G cut 200$M of their budget, and it had no correlatable impact on sales.</p>\n<p>The web became an eyeball monetizing platform instead of serving its purpose: giving voice to the voiceless, free information, and education. It kinda reminds me of this quote from some guy: &quot;We wanted flying cars; instead, we got 140 characters.&quot;</p>\n<hr>\n<p>When it comes to marketing strategy, everyone is doing what someone else is doing. There&#39;s no solid reasoning behind most of the campaigns and ads we&#39;re being exposed to while browsing online.</p>\n<p>The less aggressive (like native/content marketing) are more relevant and valuable than traditional ones. However, they kill the creative freedom of the content creator because they need to focus on what creates the monetary value instead of what they want to make.</p>\n<p>Boredom is inherently a good thing. Yet, society doesn&#39;t value it. So, instead, we fake being busy. When we are not busy creating, we are busy consuming. Extremely annoying.</p>\n<hr>\n<h3 id=\"why-are-you-doing-this-just-because\">Why are you doing this? Just because!</h3>\n<ul>\n<li>It permits to create at the most explosive level.</li>\n<li>It feels right, it would be fun, it would be weird.</li>\n</ul>\n<h3 id=\"getting-conscious-on-work-time\">Getting conscious on work time</h3>\n<p><img src=\"https://altay.wtf/images/books/offline-matters/getting-conscious-on-work-time.jpg\" alt=\"\"></p>\n",
             "url": "https://altay.wtf/books/offline-matters",
             "title": "Offline Matters by Jess Henderson",
             "summary": "We are all bored and everything is boring. Occupied 24/7, doing nothing at all.",
-            "image": "https://altay.wtf/images/books/offline-matters/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Offline+Matters&author=Jess+Henderson&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Dy0CHzQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2021-07-16T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -22,7 +22,7 @@
             "url": "https://altay.wtf/books/you-are-not-so-smart",
             "title": "You Are Not So Smart by David McRaney",
             "summary": "In science, we move closer to the truth by seeking evidence to the contrary. Perhaps the same method should inform our opinions as well.",
-            "image": "https://altay.wtf/images/books/you-are-not-so-smart/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=You+Are+Not+So+Smart&author=David+McRaney&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Dlqgev9c3clwC%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26edge%3Dcurl%26source%3Dgbs_api",
             "date_modified": "2021-01-24T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -34,7 +34,7 @@
             "url": "https://altay.wtf/books/the-little-book-of-stoicism",
             "title": "The Little Book of Stoicism by Jonas Salzgeber",
             "summary": "It's impossible to learn which you believe you already know.",
-            "image": "https://altay.wtf/images/books/the-little-book-of-stoicism/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Little+Book+of+Stoicism&author=Jonas+Salzgeber&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DypBbwQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-22T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -46,7 +46,7 @@
             "url": "https://altay.wtf/books/subliminal",
             "title": "Subliminal by Leonard Mlodinow",
             "summary": "If your mind's natural view of the world is skewed, it's skewed for a reason.",
-            "image": "https://altay.wtf/images/books/subliminal/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Subliminal&author=Leonard+Mlodinow&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DV7wt3Sqj_X8C%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-20T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -58,7 +58,7 @@
             "url": "https://altay.wtf/books/keep-going",
             "title": "Keep Going by Austin Kleon",
             "summary": "Walking is a way to find possibility in your life when there doesn't seem to be any left.",
-            "image": "https://altay.wtf/images/books/keep-going/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Keep+Going&author=Austin+Kleon&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DPNh7DwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-13T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -70,7 +70,7 @@
             "url": "https://altay.wtf/books/the-new-corporation",
             "title": "The New Corporation by Joel Bakan",
             "summary": "Corporation's freedom detracts from our freedom, and it's a zero-sum game.",
-            "image": "https://altay.wtf/images/books/the-new-corporation/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+New+Corporation&author=Joel+Bakan&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DixtfzQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-11T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -82,7 +82,7 @@
             "url": "https://altay.wtf/books/bird-by-bird",
             "title": "Bird by Bird by Anne Lamott",
             "summary": "Perfectionism is the voice of the oppressor, the enemy of people. It will keep you cramped and insane your whole life.",
-            "image": "https://altay.wtf/images/books/bird-by-bird/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Bird+by+Bird&author=Anne+Lamott&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Drz-PxqmdFkAC%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-06T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -94,7 +94,7 @@
             "url": "https://altay.wtf/books/the-practice",
             "title": "The Practice by Seth Godin",
             "summary": "The practice requires you to seek out experience of uncertainty to place yourself in a room where you will create discomfort.",
-            "image": "https://altay.wtf/images/books/the-practice/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Practice&author=Seth+Godin&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3D_XsBEAAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-12-03T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -106,7 +106,7 @@
             "url": "https://altay.wtf/books/everything-is-fucked",
             "title": "Everything Is F*cked by Mark Manson",
             "summary": "Living well does not mean avoiding suffering; it means suffering for the right reasons.",
-            "image": "https://altay.wtf/images/books/everything-is-fucked/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Everything+Is+F*cked&author=Mark+Manson&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DXYdgDwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26edge%3Dcurl%26source%3Dgbs_api",
             "date_modified": "2020-11-30T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -118,7 +118,7 @@
             "url": "https://altay.wtf/books/animal-farm",
             "title": "Animal Farm by George Orwell",
             "summary": "Beasts of England beasts of Ireland, Beasts of every land and clime, Hearken to my joyful tidings, Of the golden future time.",
-            "image": "https://altay.wtf/images/books/animal-farm/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Animal+Farm&author=George+Orwell&coverImageURL=https%3A%2F%2Funleashed.bancroftschool.org%2Fwp-content%2Fuploads%2F2017%2F12%2Fanimal-farm.jpg",
             "date_modified": "2020-11-29T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -130,7 +130,7 @@
             "url": "https://altay.wtf/books/the-conscious-creative",
             "title": "The Conscious Creative by Kelly Small",
             "summary": "I am committed to acting as ethically as I can while accepting my compulsory participation in a problematic capitalist paradigm.",
-            "image": "https://altay.wtf/images/books/the-conscious-creative/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Conscious+Creative&author=Kelly+Small&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DCoOiywEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-11-23T20:23:46.000Z",
             "author": {
                 "name": "Altay",
@@ -142,7 +142,7 @@
             "url": "https://altay.wtf/books/on-writing-well",
             "title": "On Writing Well, 30th Anniversary Edition by William Zinsser",
             "summary": "An occasional short sentence can carry a tremendous punch.",
-            "image": "https://altay.wtf/images/books/on-writing-well/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=On+Writing+Well%2C+30th+Anniversary+Edition&author=William+Zinsser&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DtPkZ3WU1BM8C%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-11-22T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -154,7 +154,7 @@
             "url": "https://altay.wtf/books/this-is-marketing",
             "title": "This Is Marketing by Seth Godin",
             "summary": "What people say about you is more important than what you say.",
-            "image": "https://altay.wtf/images/books/this-is-marketing/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=This+Is+Marketing&author=Seth+Godin&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DB8JyDwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-11-08T13:19:30.000Z",
             "author": {
                 "name": "Altay",
@@ -166,7 +166,7 @@
             "url": "https://altay.wtf/books/the-best-interface-is-no-interface",
             "title": "The Best Interface is No Interface by Golden Krishna",
             "summary": "Our love for the digital interface is out of control, and our obsession is ruining the future of innovation.",
-            "image": "https://altay.wtf/images/books/the-best-interface-is-no-interface/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Best+Interface+is+No+Interface&author=Golden+Krishna&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3D0zIFCAAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-10-19T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -178,7 +178,7 @@
             "url": "https://altay.wtf/books/your-music-and-people",
             "title": "Your Music and People by Derek Sivers",
             "summary": "Assume nobody is going to help you. If someone does, then it gets even better.",
-            "image": "https://altay.wtf/images/books/your-music-and-people/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Your+Music+and+People&author=Derek+Sivers&coverImageURL=https%3A%2F%2Fsive.rs%2Fimages%2FDerekSivers-cover-YourMusicAndPeople-400x492.png",
             "date_modified": "2020-10-18T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -190,7 +190,7 @@
             "url": "https://altay.wtf/books/utopia-for-realists",
             "title": "Utopia for Realists by Rutger Bregman",
             "summary": "As long as we continue to be obsessed with work, work, and more work, the number of superfluous jobs will only continue to grow.",
-            "image": "https://altay.wtf/images/books/utopia-for-realists/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Utopia+for+Realists&author=Rutger+Bregman&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3D3l3PswEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-10-17T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -202,7 +202,7 @@
             "url": "https://altay.wtf/books/anything-you-want",
             "title": "Anything You Want by Derek Sivers",
             "summary": "If you want to be useful, you can start now. Just put one percent of your vision, and you are in the game.",
-            "image": "https://altay.wtf/images/books/anything-you-want/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Anything+You+Want&author=Derek+Sivers&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DMZsyrgEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-10-07T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -214,7 +214,7 @@
             "url": "https://altay.wtf/books/show-your-work",
             "title": "Show Your Work! by Austin Kleon",
             "summary": "Unless you are a real ninja, rockstar, or guru, stay away from those words.",
-            "image": "https://altay.wtf/images/books/show-your-work/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Show+Your+Work%21&author=Austin+Kleon&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DNFOLAgAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-10-04T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -226,7 +226,7 @@
             "url": "https://altay.wtf/books/make-time",
             "title": "Make Time by Jake Knapp, John Zeratsky",
             "summary": "Change comes from resetting defaults, installing barriers and designing how you spend your time.",
-            "image": "https://altay.wtf/images/books/make-time/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Make+Time&author=Jake+Knapp%2C+John+Zeratsky&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DiBB9swEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-09-19T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -238,7 +238,7 @@
             "url": "https://altay.wtf/books/programming-elm",
             "title": "Programming Elm by Jeremy Fairbank",
             "summary": "Elm functions are curried, which is the fancy way of saying they take one argument at a time.",
-            "image": "https://altay.wtf/images/books/programming-elm/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Programming+Elm&author=Jeremy+Fairbank&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3D4iaqswEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-09-08T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -250,7 +250,7 @@
             "url": "https://altay.wtf/books/start-small-stay-small",
             "title": "Start Small, Stay Small by Rob Walling",
             "summary": "Market comes first, marketing second, aesthetic third, and functionality a distant fourth.",
-            "image": "https://altay.wtf/images/books/start-small-stay-small/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Start+Small%2C+Stay+Small&author=Rob+Walling&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DXYBhUjyi-WYC%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26edge%3Dcurl%26source%3Dgbs_api",
             "date_modified": "2020-09-05T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -262,7 +262,7 @@
             "url": "https://altay.wtf/books/laws-of-ux",
             "title": "Laws of UX by Jon Yablonski",
             "summary": "Use more meaningful metrics like \"helping people to achieve their goals\" rather than \"daily active users\" or \"time spent on site\".",
-            "image": "https://altay.wtf/images/books/laws-of-ux/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Laws+of+UX&author=Jon+Yablonski&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Dfve3yQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-08-29T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -274,7 +274,7 @@
             "url": "https://altay.wtf/books/the-dip",
             "title": "The Dip by Seth Godin",
             "summary": "'Quitters never win and winners never quit' is a bad advice. Winners quit all the time. They just quit the right stuff at the right time.",
-            "image": "https://altay.wtf/images/books/the-dip/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Dip&author=Seth+Godin&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DG2wZGQAACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-08-29T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -286,7 +286,7 @@
             "url": "https://altay.wtf/books/the-pragmatic-programmer",
             "title": "The Pragmatic Programmer by David Hurst Thomas, Andrew Hunt",
             "summary": "A dead program normally does a lot less damage than a crippled one.",
-            "image": "https://altay.wtf/images/books/the-pragmatic-programmer/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Pragmatic+Programmer&author=David+Hurst+Thomas%2C+Andrew+Hunt&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DsNeFxAEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-08-27T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -298,7 +298,7 @@
             "url": "https://altay.wtf/books/arcade-game-typography",
             "title": "Arcade Game Typography by Toshi Omigari",
             "summary": "A typeface is an abstract idea, a design that does not take any physical form, while a font is the physical manifestation of a typeface.",
-            "image": "https://altay.wtf/images/books/arcade-game-typography/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Arcade+Game+Typography&author=Toshi+Omigari&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DZKi9wQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2020-08-22T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -310,7 +310,7 @@
             "url": "https://altay.wtf/books/ultralearning",
             "title": "Ultralearning by Scott Young",
             "summary": "In chemical reactions, there are rate-determining steps which affects the time required to complete the reaction. Your weakest point is the rate-determining step.",
-            "image": "https://altay.wtf/images/books/ultralearning/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Ultralearning&author=Scott+Young&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Dd0IdvgEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2019-08-25T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -322,7 +322,7 @@
             "url": "https://altay.wtf/books/reinvent-yourself",
             "title": "Reinvent Yourself by James Altucher",
             "summary": "Supposedly it takes 10.000 hours to master something. Unfortunately, most people spend 10.000 hours trying to be jerks to others.",
-            "image": "https://altay.wtf/images/books/reinvent-yourself/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Reinvent+Yourself&author=James+Altucher&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DSz8wMQAACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2019-07-23T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -334,7 +334,7 @@
             "url": "https://altay.wtf/books/the-divided-self",
             "title": "The Divided Self by Ronald David Laing",
             "summary": "An ontological secure person has his sense of the world, his identity and other beings in the world as an autonomous individual.",
-            "image": "https://altay.wtf/images/books/the-divided-self/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=The+Divided+Self&author=Ronald+David+Laing&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DaKh3vwEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2019-01-26T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -346,7 +346,7 @@
             "url": "https://altay.wtf/books/company-of-one",
             "title": "Company of One by Paul Jarvis",
             "summary": "All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.",
-            "image": "https://altay.wtf/images/books/company-of-one/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Company+of+One&author=Paul+Jarvis&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DkICADwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26edge%3Dcurl%26source%3Dgbs_api",
             "date_modified": "2019-01-20T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -358,7 +358,7 @@
             "url": "https://altay.wtf/books/atomic-habits",
             "title": "Atomic Habits by James Clear",
             "summary": "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done.",
-            "image": "https://altay.wtf/images/books/atomic-habits/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Atomic+Habits&author=James+Clear&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DXfFvDwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2019-01-16T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -370,7 +370,7 @@
             "url": "https://altay.wtf/books/skin-in-the-game",
             "title": "Skin in the Game by Nassim Nicholas Taleb",
             "summary": "You will never fully convince someone that he is wrong; only reality can.",
-            "image": "https://altay.wtf/images/books/skin-in-the-game/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Skin+in+the+Game&author=Nassim+Nicholas+Taleb&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DvqZJDwAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2019-01-15T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -382,7 +382,7 @@
             "url": "https://altay.wtf/books/quantodog",
             "title": "How to Teach Physics to Your Dog by Chad Orzel",
             "summary": "The physical reality does not exist until a measurement is made, which poses its own philosophical problems: Scrodinger's Cat and Wigner's Friend",
-            "image": "https://altay.wtf/images/books/quantodog/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=How+to+Teach+Physics+to+Your+Dog&author=Chad+Orzel&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3Dm_9zAgAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26edge%3Dcurl%26source%3Dgbs_api",
             "date_modified": "2019-01-06T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -394,7 +394,7 @@
             "url": "https://altay.wtf/books/hooked",
             "title": "Hooked by Nir Eyal, Ryan Hoover",
             "summary": "Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning.",
-            "image": "https://altay.wtf/images/books/hooked/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Hooked&author=Nir+Eyal%2C+Ryan+Hoover&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DYNZZoAEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2018-12-23T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -406,7 +406,7 @@
             "url": "https://altay.wtf/books/six-easy-pieces",
             "title": "Six Easy Pieces by Richard P. Feynman",
             "summary": "Observation, reason, and experiment make up what we call the scientific method.",
-            "image": "https://altay.wtf/images/books/six-easy-pieces/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Six+Easy+Pieces&author=Richard+P.+Feynman&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DUpbuAAAAMAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2018-12-22T00:00:00.000Z",
             "author": {
                 "name": "Altay",
@@ -418,7 +418,7 @@
             "url": "https://altay.wtf/books/choose-yourself",
             "title": "Choose Yourself! by James Altucher",
             "summary": "You and I have the same twenty-four hours each day. Is that how you will spend yours?",
-            "image": "https://altay.wtf/images/books/choose-yourself/cover.png",
+            "image": "https://og-image.altay.wtf/api?type=book&title=Choose+Yourself%21&author=James+Altucher&coverImageURL=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3DAgzBnQEACAAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D1%26source%3Dgbs_api",
             "date_modified": "2018-11-05T00:00:00.000Z",
             "author": {
                 "name": "Altay",

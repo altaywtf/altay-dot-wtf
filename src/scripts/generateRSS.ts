@@ -5,6 +5,7 @@ import { getContentList } from 'core/api/content'
 import { convertMarkdownToHTML } from 'core/api/md'
 import { booksCopy } from 'config/copy'
 import { Feed, Item, Author, FeedOptions } from 'feed'
+import { getOpenGraphImage } from 'core/api/openGraph'
 
 const author: Author = {
   name: 'Altay',
@@ -22,11 +23,24 @@ const mapContentToRssFeedItem = (content: Book | Note): Item => ({
   date: new Date(content.meta.date),
 })
 
-const mapNoteToRssFeedItem = (note: Note): Item => mapContentToRssFeedItem(note)
+const mapNoteToRssFeedItem = (note: Note): Item => ({
+  ...mapContentToRssFeedItem(note),
+  image: getOpenGraphImage({
+    type: 'note',
+    title: note.meta.title,
+    oneliner: note.meta.oneliner,
+  }).url,
+})
 
 const mapBookToRssFeedItem = (book: Book): Item => ({
   ...mapContentToRssFeedItem(book),
-  image: `${SITE_URL}${book.meta.coverImage.url}`,
+  title: `${book.meta.title} by ${book.meta.author}`,
+  image: getOpenGraphImage({
+    type: 'book',
+    title: book.meta.title,
+    author: book.meta.author,
+    coverImageURL: book.meta.coverImage.remoteURL,
+  }).url,
 })
 
 const generateFeedFiles = (name: string, feed: Feed) => {

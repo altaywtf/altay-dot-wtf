@@ -1,7 +1,7 @@
 import { META_IMAGE_HEIGHT, META_IMAGE_WIDTH } from 'config'
 import { OpenGraphImages } from 'next-seo/lib/types'
 
-const OG_IMAGE_SERVICE_BASE_URL = `https://og-image-dot-altay-dot-wtf.vercel.app/api`
+const OG_IMAGE_SERVICE_BASE_URL = `https://og-image.altay.wtf/api`
 
 type Note = {
   type: 'note'
@@ -24,7 +24,7 @@ type Page = {
 
 type OpenGraphImageQueryParams = Note | Book | Page
 
-export const createOpenGraphImage = (params: OpenGraphImageQueryParams): OpenGraphImages => {
+export const getOpenGraphImage = (params: OpenGraphImageQueryParams): OpenGraphImages => {
   const searchParams = new URLSearchParams()
 
   Object.entries(params).forEach(([key, value]) => {
@@ -32,8 +32,6 @@ export const createOpenGraphImage = (params: OpenGraphImageQueryParams): OpenGra
   })
 
   const url = new URL(OG_IMAGE_SERVICE_BASE_URL) + `?${searchParams}`
-
-  console.log(url)
 
   return {
     alt: params?.title || '',

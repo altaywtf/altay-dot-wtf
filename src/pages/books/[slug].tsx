@@ -3,7 +3,7 @@ import type { Book } from 'types'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import { createOpenGraphImage } from 'core/api/openGraph'
+import { getOpenGraphImage } from 'core/api/openGraph'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
@@ -26,7 +26,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
           title: data.meta.title,
           description: data.meta.oneliner,
           images: [
-            createOpenGraphImage({
+            getOpenGraphImage({
               type: 'book',
               title: data.meta.title,
               author: data.meta.author,
