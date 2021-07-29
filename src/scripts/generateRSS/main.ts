@@ -1,52 +1,11 @@
+import '../env'
 import type { Book, Note } from 'types'
 import fs from 'fs'
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
 import { getContentList } from 'core/api/content'
-import { convertMarkdownToHTML } from 'core/api/md'
 import { booksCopy } from 'config/copy'
-import { Feed, Item, Author, FeedOptions } from 'feed'
-import { getOpenGraphImage } from 'core/api/openGraph'
-import { sanitizeHtml } from 'utils/sanitize'
-
-const author: Author = {
-  name: 'Altay',
-  email: 'altay@aydemir.io',
-  link: 'https://twitter.com/altaywtf',
-}
-
-const mapContentToRssFeedItem = (content: Book | Note): Item => ({
-  title: content.meta.title,
-  description: content.meta.oneliner,
-  author: [author],
-  contributor: [author],
-  content: convertMarkdownToHTML(content.markdown),
-  link: `${SITE_URL}/${content.type}s/${content.slug}`,
-  date: new Date(content.meta.date),
-})
-
-const mapNoteToRssFeedItem = (note: Note): Item => ({
-  ...mapContentToRssFeedItem(note),
-  image: sanitizeHtml(
-    getOpenGraphImage({
-      type: 'note',
-      title: note.meta.title,
-      oneliner: note.meta.oneliner,
-    }).url,
-  ),
-})
-
-const mapBookToRssFeedItem = (book: Book): Item => ({
-  ...mapContentToRssFeedItem(book),
-  title: `${book.meta.title} by ${book.meta.author}`,
-  image: sanitizeHtml(
-    getOpenGraphImage({
-      type: 'book',
-      title: book.meta.title,
-      author: book.meta.author,
-      coverImageURL: book.meta.coverImage.remoteURL,
-    }).url,
-  ),
-})
+import { Feed, Item, FeedOptions } from 'feed'
+import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './mappers'
 
 const generateFeedFiles = (name: string, feed: Feed) => {
   fs.mkdirSync(`./public/rss/${name}`, { recursive: true })
@@ -81,7 +40,7 @@ const generateRssForContent = async ({
   generateFeedFiles(path, feed)
 }
 
-const generateRSS = async () => {
+const main = async () => {
   fs.mkdirSync('./public/rss', { recursive: true })
 
   const notes = (await getContentList('note')) as Note[]
@@ -105,4 +64,4 @@ const generateRSS = async () => {
   })
 }
 
-generateRSS()
+main()

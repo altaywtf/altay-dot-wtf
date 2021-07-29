@@ -42,7 +42,3 @@ export const readMarkdownFile = (contentType: ContentType, fileName: string) => 
     return ''
   }
 }
-export const readJSONFile = (fileName: string) => {
-  const directory = join(process.cwd(), 'data', fileName)
-  return JSON.parse(fs.readFileSync(directory, 'utf-8'))
-}

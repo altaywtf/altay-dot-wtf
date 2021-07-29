@@ -1,11 +1,5 @@
 import axios from 'axios'
-
-export type NowJSONMusic = {
-  title: string
-  creator: string
-  url: string
-  coverImageURL: string
-}
+import type { NowJSONMusic } from './types'
 
 type AppleMusicResource = {
   type: 'albums' | 'playlists' | 'stations'

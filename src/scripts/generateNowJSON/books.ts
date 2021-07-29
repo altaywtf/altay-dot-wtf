@@ -1,11 +1,5 @@
 import axios from 'axios'
-
-export type NowJSONBook = {
-  title: string
-  creator: string
-  url: string
-  coverImageURL: string
-}
+import type { NowJSONBook } from './types'
 
 type OkuCollectionResponse = {
   books: {

@@ -1,70 +1,70 @@
 {
+  "updatedAt": "2021-07-29T21:14:59.068Z",
   "sections": [
     {
       "_id": "life",
-      "data": "This is my final month in [Klarna](https://www.klarna.com/) and I'll be joining [Amie](https://amie.so) in August.",
-      "title": "⏳ Life updates"
+      "title": "⏳ Life updates",
+      "data": "This is my final month in [Klarna](https://www.klarna.com/) and I'll be joining [Amie](https://amie.so) in August."
     },
     {
       "_id": "books",
+      "title": "📚 Reading",
       "data": [
         {
-          "coverImageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-          "creator": "Namrata Bandekar, Darryl Bayliss, Fuad Kamal",
+          "url": "https://oku.club/book/android-apprentice-by-namrata-bandekar-hncHq",
           "title": "Android Apprentice (Fourth Edition)",
-          "url": "https://oku.club/book/android-apprentice-by-namrata-bandekar-hncHq"
+          "creator": "Namrata Bandekar, Darryl Bayliss, Fuad Kamal",
+          "coverImageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "coverImageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-          "creator": "Ijeoma Oluo",
+          "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM",
           "title": "So You Want to Talk About Race",
-          "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM"
+          "creator": "Ijeoma Oluo",
+          "coverImageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "coverImageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg",
-          "creator": "Cliff Kuang, Robert Fabricant",
+          "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo",
           "title": "User Friendly",
-          "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo"
+          "creator": "Cliff Kuang, Robert Fabricant",
+          "coverImageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg"
         }
-      ],
-      "title": "📚 Reading"
+      ]
     },
     {
       "_id": "music",
+      "title": "🎧 Listening",
       "data": [
         {
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/3000x3000bb.jpeg",
-          "creator": "Fewjar",
-          "title": "Gamma",
-          "url": "https://music.apple.com/de/album/gamma/1372843558"
-        },
-        {
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/6e/b1/05/6eb10581-74ed-f2b3-6b2f-84baf2f453fd/cover_4064832545142.jpg/3000x3000bb.jpeg",
-          "creator": "Fewjar",
-          "title": "All Over (Us) - EP",
-          "url": "https://music.apple.com/de/album/all-over-us-ep/1570024251"
-        },
-        {
-          "coverImageURL": "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/27/5f/7d/275f7d13-7810-c63e-e570-180c9330ae18/source/1080x1080SC.DN01.jpeg?l=de-DE",
-          "creator": "Apple Music Einschlafen",
           "title": "Bedtime Beats",
-          "url": "https://music.apple.com/de/playlist/bedtime-beats/pl.082e7836ea7a4244bf3f9c319560718f"
+          "creator": "Apple Music Einschlafen",
+          "url": "https://music.apple.com/de/playlist/bedtime-beats/pl.082e7836ea7a4244bf3f9c319560718f",
+          "coverImageURL": "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/27/5f/7d/275f7d13-7810-c63e-e570-180c9330ae18/source/1080x1080SC.DN01.jpeg?l=de-DE"
         },
         {
-          "coverImageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/f5/f5/8b/f5f58b8c-4579-6ec7-d1cd-b1247249f2de/source/1080x1080SC.DN01.jpeg?l=de-DE",
-          "creator": "Apple Music Chillen",
+          "title": "Gamma",
+          "creator": "Fewjar",
+          "url": "https://music.apple.com/de/album/gamma/1372843558",
+          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/3000x3000bb.jpeg"
+        },
+        {
+          "title": "All Over (Us) - EP",
+          "creator": "Fewjar",
+          "url": "https://music.apple.com/de/album/all-over-us-ep/1570024251",
+          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/6e/b1/05/6eb10581-74ed-f2b3-6b2f-84baf2f453fd/cover_4064832545142.jpg/3000x3000bb.jpeg"
+        },
+        {
           "title": "BEATstrumentals",
-          "url": "https://music.apple.com/de/playlist/beatstrumentals/pl.f54198ad42404535be13eabf3835fb22"
+          "creator": "Apple Music Chillen",
+          "url": "https://music.apple.com/de/playlist/beatstrumentals/pl.f54198ad42404535be13eabf3835fb22",
+          "coverImageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/f5/f5/8b/f5f58b8c-4579-6ec7-d1cd-b1247249f2de/source/1080x1080SC.DN01.jpeg?l=de-DE"
         },
         {
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/10/e2/df/10e2df8f-7bba-1cbd-86aa-2f4a269c399d/191400035478.png/4000x4000bb.jpeg",
-          "creator": "Erika de Casier",
           "title": "Sensational",
-          "url": "https://music.apple.com/de/album/sensational/1560653786"
+          "creator": "Erika de Casier",
+          "url": "https://music.apple.com/de/album/sensational/1560653786",
+          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/10/e2/df/10e2df8f-7bba-1cbd-86aa-2f4a269c399d/191400035478.png/4000x4000bb.jpeg"
         }
-      ],
-      "title": "🎧 Listening"
+      ]
     }
-  ],
-  "updatedAt": "2021-07-29T16:58:17.432Z"
+  ]
 }
