@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
 import { Box, Link, Heading, Text } from 'rebass'
 import { CgArrowRight, CgArrowTopRight } from 'react-icons/cg'
-import projects from 'config/projects.json'
+import projects from '../../../data/projects.json'
 
 const ProjectsPage: React.FC = () => (
   <>

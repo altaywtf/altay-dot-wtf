@@ -1,3 +1,5 @@
+export type { NowJSON } from '../scripts/generateNowJSON'
+
 export type Meta = {
   date: string
 }
@@ -10,10 +12,6 @@ export type MDContent = {
 
 export type About = MDContent & {
   type: 'about'
-}
-
-export type Now = MDContent & {
-  type: 'now'
 }
 
 export type Note = MDContent & {
@@ -50,5 +48,5 @@ export type Bookmark = {
   description: string
 }
 
-export type Content = About | Now | Note | Book
+export type Content = About | Note | Book
 export type ContentType = Content['type']

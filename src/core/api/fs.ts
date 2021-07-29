@@ -14,7 +14,7 @@ export const getContentDirectoryForType = (type: ContentType) => {
   }
 }
 
-export const getContentDirectoryPath = (contentType: ContentType) =>
+const getContentDirectoryPath = (contentType: ContentType) =>
   join(process.cwd(), 'data', getContentDirectoryForType(contentType))
 
 export const getMarkdownFileNames = (contentType: ContentType) => {
@@ -42,7 +42,6 @@ export const readMarkdownFile = (contentType: ContentType, fileName: string) => 
     return ''
   }
 }
-
 export const readJSONFile = (fileName: string) => {
   const directory = join(process.cwd(), 'data', fileName)
   return JSON.parse(fs.readFileSync(directory, 'utf-8'))

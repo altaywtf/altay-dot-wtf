@@ -47,14 +47,7 @@ export const booksCopy = {
 export const nowCopy = {
   icon: '⏱',
   title: "What I'm doing now.",
-  description:
-    "This is a [monthly updated](/now/history) now page, and it's inspired by [Derek Sivers.](https://nownownow.com)",
-}
-
-export const nowHistoryCopy = {
-  icon: '🗓',
-  title: 'History',
-  description: `What I've been doing.`,
+  description: 'This is a now page inspired by [Derek Sivers.](https://nownownow.com)',
 }
 
 export const projectsCopy = {
