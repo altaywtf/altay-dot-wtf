@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Link, Text } from 'rebass'
+import { Link } from 'rebass'
 
 type Props = {
   href: string
@@ -10,31 +10,25 @@ type Props = {
 const NavLink: React.FC<Props> = ({ href, label, active }) => (
   <NextLink href={href} passHref>
     <Link
-      color="text"
+      href={href}
+      variant="nav"
       sx={{
+        textDecoration: 'none',
+        textAlign: 'center',
+        fontSize: [14, 0],
+        paddingX: 3,
+        paddingY: 2,
+        fontWeight: 'bold',
+        borderRadius: 4,
+        color: active ? 'linkPrimary' : 'text',
+        backgroundColor: active ? 'linkBackground' : 'transparent',
         '&:hover': {
-          cursor: active ? 'default' : 'pointer',
+          backgroundColor: active ? 'linkBackground' : 'linkHoverBackground',
+          cursor: active ? 's-resize' : 'pointer',
         },
       }}
     >
-      <Text
-        sx={{
-          width: '100%',
-          textAlign: 'center',
-          fontSize: [14, 0],
-          paddingX: 3,
-          paddingY: 2,
-          fontWeight: 'bold',
-          borderRadius: 4,
-          color: active ? 'linkPrimary' : 'text',
-          backgroundColor: active ? 'linkBackground' : 'transparent',
-          '&:hover': {
-            backgroundColor: active ? 'linkBackground' : 'linkHoverBackground',
-          },
-        }}
-      >
-        {label}
-      </Text>
+      {label}
     </Link>
   </NextLink>
 )

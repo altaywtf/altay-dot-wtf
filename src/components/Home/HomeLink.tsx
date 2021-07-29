@@ -8,10 +8,10 @@ type Props = {
 }
 
 const HomeLink: React.FC<Props> = ({ href, label }) => (
-  <Box key={href}>
+  <Box key={href} marginBottom={1}>
     <NextLink href={href} passHref>
       <Link>
-        <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1, fontSize: [0, 1] }}>
+        <Box display="inline-flex" sx={{ alignItems: 'center', fontSize: [0, 1] }}>
           <Text mr={1}>{label}</Text>
           <CgArrowRight />
         </Box>

@@ -29,20 +29,6 @@ export const createGlobalStyles = (theme: Theme) => `
     opacity: 0.2;
   }
 
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    color: ${theme.colors.linkPrimary};
-
-    &:hover {
-      color: ${theme.colors.linkHover};
-    }
-  }
-
-  button {
-    cursor: pointer;
-  }
-
   ul, ol {
     padding: 0;
     margin: 4px 0 4px 24px;

@@ -62,11 +62,13 @@ const Header: React.FC = () => {
         </Link>
 
         <Flex alignItems="center">
-          {HEADER.map(({ label, href }) => (
-            <Box key={href} mx={1}>
-              <NavLink href={href} label={label} active={pathname.startsWith(href)} />
-            </Box>
-          ))}
+          <Flex>
+            {HEADER.map(({ label, href }) => (
+              <Box key={href} mx={1}>
+                <NavLink href={href} label={label} active={pathname.startsWith(href)} />
+              </Box>
+            ))}
+          </Flex>
 
           <Box ml={1} />
 
@@ -75,6 +77,7 @@ const Header: React.FC = () => {
               title="That's a button to switch between dark and light themes."
               onClick={darkMode.toggle}
               sx={{
+                cursor: 'pointer',
                 backgroundColor: 'background',
                 color: 'textSecondary',
                 fontSize: 0,

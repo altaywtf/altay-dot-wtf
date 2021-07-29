@@ -44,7 +44,7 @@ const itemStyle: SxStyleProp = {
 
 const BackLink: React.FC<BackLinkProps> = ({ data, slug }) => (
   <NextLink href={getURLForContent(data, slug)} passHref>
-    <Link href={getURLForContent(data, slug)}>
+    <Link href={getURLForContent(data, slug)} variant="backlink" sx={{ textDecoration: 'none' }}>
       <Box sx={itemStyle} p={2}>
         <Text color="linkPrimary" fontSize={0} fontWeight="bold">
           {getTitle(data)}

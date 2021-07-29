@@ -3,7 +3,7 @@ import { CgArrowLeft } from 'react-icons/cg'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => (
   <Box>
-    <Link href={href} sx={{ color: 'textTertiary', fontSize: 0 }}>
+    <Link href={href} variant="linkSilent">
       <Flex alignItems="center">
         <CgArrowLeft />
         <Box mx={1} />
