@@ -12,11 +12,6 @@ export const homeCopy = {
       href: '/now',
     },
   ],
-  notes: {
-    href: '/notes',
-    title: 'Recent notes',
-    viewAll: 'See all notes',
-  },
 } as const
 
 export const aboutCopy = {
@@ -34,7 +29,7 @@ export const notesCopy = {
   icon: '📝',
   title: `Notes`,
   description:
-    "I'm trying to structure this section as a [digital garden](https://github.com/MaggieAppleton/digital-gardeners) to practice learning, thinking, and building in public.",
+    'This is a [digital garden](https://github.com/MaggieAppleton/digital-gardeners) to practice learning, thinking, and building in public.',
 } as const
 
 export const bookmarksCopy = {
