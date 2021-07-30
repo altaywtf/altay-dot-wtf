@@ -25,10 +25,17 @@ const runSearchAndChooseStep = async (query: string) => {
     {
       type: 'list',
       name: 'bookIndex',
-      choices: data.map((item, index) => ({
-        name: `${item.title} by ${item.authors.join(', ')}`,
-        value: index,
-      })),
+      choices: data
+        .map((item, index) => [
+          {
+            value: index,
+            name: `${index}. ${item.title} by ${item.authors.join(', ')} \n [${
+              item.remoteCoverImage.url
+            }]`,
+          },
+          new inquirer.Separator(),
+        ])
+        .flat(),
     },
   ])
 
@@ -36,11 +43,23 @@ const runSearchAndChooseStep = async (query: string) => {
 }
 
 const runGetBaseBookMetaStep = async (baseBook: BaseBook): Promise<BaseBookWithMeta> => {
-  const { slug, rating, quote, dateRead } = await inquirer.prompt<BaseBookWithMeta>([
+  const { title, slug, rating, quote, dateRead, remoteCoverImageURL } = await inquirer.prompt<
+    BaseBookWithMeta & { remoteCoverImageURL: string }
+  >([
+    {
+      type: 'input',
+      name: 'title',
+      default: baseBook.title,
+    },
     {
       type: 'input',
       name: 'slug',
       default: slugify(baseBook.title, { lower: true }),
+    },
+    {
+      type: 'input',
+      name: 'remoteCoverImageURL',
+      default: baseBook.remoteCoverImage.url,
     },
     {
       type: 'number',
@@ -58,7 +77,9 @@ const runGetBaseBookMetaStep = async (baseBook: BaseBook): Promise<BaseBookWithM
 
   return {
     ...baseBook,
+    title,
     slug,
+    remoteCoverImage: { url: remoteCoverImageURL },
     rating,
     quote,
     dateRead,

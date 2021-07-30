@@ -13,7 +13,7 @@ const BookList: React.FC<Props> = ({ data }) => (
     {data.map((book) => (
       <Box key={book.slug}>
         <Flex>
-          <Box minWidth={[100, 120]}>
+          <Box minWidth={[100, 130]}>
             <NextLink href={book.notes.url} passHref>
               <a title={book.title}>
                 <BookCover book={book} />
@@ -26,15 +26,17 @@ const BookList: React.FC<Props> = ({ data }) => (
           <Box>
             <NextLink href={book.notes.url} passHref>
               <Link title={book.title}>
-                <Heading as="h3" fontSize={[0, 1]}>
+                <Heading as="h3" fontSize={[1, 2]}>
                   {book.title} by {book.authors.join(', ')}
                 </Heading>
               </Link>
             </NextLink>
 
-            <Box my={1}>
-              <BookInfo short book={book} fontSize={0} spacing={1} />
-            </Box>
+            <Box m={1} />
+
+            <BookInfo short book={book} fontSize={0} spacing={1} />
+
+            <Box m={1} />
 
             <Text fontSize={0} fontStyle="italic" color="textTertiary">
               &quot;{book.quote}&quot;
@@ -42,7 +44,7 @@ const BookList: React.FC<Props> = ({ data }) => (
           </Box>
         </Flex>
 
-        <Box m={5} />
+        <Box m={4} />
       </Box>
     ))}
   </Box>

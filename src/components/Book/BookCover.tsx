@@ -4,17 +4,16 @@ import { Box } from 'rebass'
 
 type Props = {
   book: Book
+  width?: number
 }
 
-const MAX_WIDTH = 144
-
-const BookCover: React.FC<Props> = ({ book }) => (
+const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
   <Box className="border-radius">
     <Image
       alt={book.title}
       src={book.coverImage.url}
-      width={MAX_WIDTH}
-      height={MAX_WIDTH / book.coverImage.aspectRatio}
+      width={width}
+      height={width / book.coverImage.aspectRatio}
       layout="responsive"
       placeholder="blur"
       blurDataURL={book.coverImage.blurhash}

@@ -9,7 +9,7 @@ export const readBooksJSON = () => {
   return JSON.parse(file.toString()) as BooksJSON
 }
 
-const writeBooksJSON = (booksJSON: BooksJSON) => {
+export const writeBooksJSON = (booksJSON: BooksJSON) => {
   const contents = JSON.stringify(booksJSON, null, 2)
   fs.writeFileSync(BOOKS_JSON_PATH, contents)
 }

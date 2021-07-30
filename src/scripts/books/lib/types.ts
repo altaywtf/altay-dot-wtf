@@ -1,7 +1,9 @@
+import type { GoogleBooksIndustryIdentifier } from './fetchBooks'
+
 export type BaseBook = {
   title: string
   authors: string[]
-  identifier: { type: 'ISBN_10' | 'ISBN_13'; value: string }
+  identifiers: GoogleBooksIndustryIdentifier[]
   remoteCoverImage: { url: string }
 }
 

@@ -10,7 +10,8 @@
     "tsc": "tsc --noEmit",
     "create:book": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/create.ts",
     "create:now": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/now/create.ts",
-    "create:rss": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/rss/create.ts"
+    "create:rss": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/rss/create.ts",
+    "update:book-images": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/update-images.ts"
   },
   "dependencies": {
     "@emotion/core": "^10.1.0",
@@ -30,6 +31,7 @@
     "next-seo": "^4.24.0",
     "plaiceholder": "^2.0.1",
     "polished": "^4.0.4",
+    "query-string": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.1.0",

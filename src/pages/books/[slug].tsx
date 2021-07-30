@@ -1,7 +1,8 @@
 import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
 import type { Book } from 'types'
+import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
-import { Flex, Box, Heading } from 'rebass'
+import { Flex, Box, Heading, Text } from 'rebass'
 import { getOpenGraphImage } from 'core/api/openGraph'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import BookCover from 'components/Book/BookCover'
@@ -26,7 +27,7 @@ export const getStaticProps: GetStaticProps<{ data: Book; markdown: string }> = 
   return {
     props: {
       data: book,
-      markdown: readMarkdownFile('book', book.slug),
+      markdown: readMarkdownFile('books', book.slug),
     },
   }
 }
@@ -34,20 +35,22 @@ export const getStaticProps: GetStaticProps<{ data: Book; markdown: string }> = 
 const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, markdown }) => {
   useScrollToSource()
 
+  const title = `${data.title} by ${data.authors.join(', ')}`
+
   return (
     <>
       <NextSeo
-        title={data.title}
+        title={title}
         description={data.quote}
         openGraph={{
-          title: data.title,
+          title: title,
           description: data.quote,
           images: [
             getOpenGraphImage({
               type: 'book',
               title: data.title,
               author: data.authors.join(', '),
-              coverImageURL: data.remoteCoverImage.url,
+              coverImageURL: SITE_URL + data.coverImage.url,
             }),
           ],
         }}
@@ -65,17 +68,23 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box m={2} />
 
         <Box>
-          <Heading as="h1" fontSize={[1, 3]}>
-            {data.title} by {data.authors.join(', ')}
+          <Heading as="h1" fontSize={[2, 3]}>
+            {title}
           </Heading>
 
           <Box m={2} />
 
-          <BookInfo book={data} spacing={[0, 1, 1]} fontSize={0} />
+          <BookInfo book={data} spacing={1} fontSize={0} />
+
+          <Box m={1} />
+
+          <Text fontSize={0} fontStyle="italic" color="textTertiary">
+            &quot;{data.quote}&quot;
+          </Text>
         </Box>
       </Flex>
 
-      <Box m={3} />
+      <Box m={4} />
 
       <Markdown>{markdown}</Markdown>
 

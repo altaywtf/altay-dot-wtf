@@ -35,23 +35,23 @@ const BookInfo: React.FC<Props> = ({ book, spacing, fontSize, short }) => {
         </Box>
       ),
     },
-    {
-      key: 'isbn',
-      component: (
-        <Link
-          title="Open Open Library Page"
-          href={`https://openlibrary.org/isbn/${book.identifier.value}`}
-          target="_blank"
-          rel="noopener"
-          color="textTertiary"
-          fontSize={fontSize}
-          sx={{ display: 'inline-flex', alignItems: 'center' }}
-        >
-          <code>ISBN:{book.identifier.value}</code>
-          <CgArrowTopRight />
-        </Link>
-      ),
-    },
+    // {
+    //   key: 'isbn',
+    //   component: (
+    //     <Link
+    //       title="Open Open Library Page"
+    //       href={`https://openlibrary.org/isbn/${book.identifier.value}`}
+    //       target="_blank"
+    //       rel="noopener"
+    //       color="textTertiary"
+    //       fontSize={fontSize}
+    //       sx={{ display: 'inline-flex', alignItems: 'center' }}
+    //     >
+    //       <code>ISBN:{book.identifier.value}</code>
+    //       <CgArrowTopRight />
+    //     </Link>
+    //   ),
+    // },
   ]
 
   return (
