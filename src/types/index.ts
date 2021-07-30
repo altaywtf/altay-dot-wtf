@@ -1,4 +1,4 @@
-export type { NowJSON } from '../scripts/generateNowJSON/types'
+export type { NowJSON } from '../scripts/now/lib/types'
 
 export type Meta = {
   date: string

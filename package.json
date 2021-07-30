@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && yarn generate:rss",
+    "build": "next build && yarn create:rss",
     "start": "next start",
     "start:dev": "next dev",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "tsc": "tsc --noEmit",
-    "generate:rss": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/generateRSS/main.ts",
-    "generate:now": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/generateNowJSON/main.ts"
+    "create:rss": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/rss/create.ts",
+    "create:now": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/now/create.ts"
   },
   "dependencies": {
     "@emotion/core": "^10.1.0",

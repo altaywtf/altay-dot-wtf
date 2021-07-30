@@ -1,21 +1,14 @@
 import '../env'
 import type { Book, Note } from 'types'
 import fs from 'fs'
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
-import { getContentList } from 'core/api/content'
-import { booksCopy } from 'config/copy'
 import { Feed, Item, FeedOptions } from 'feed'
-import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './mappers'
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
+import { booksCopy } from 'config/copy'
+import { getContentList } from 'core/api/content'
 import { PUBLIC_FOLDER_PATH } from 'utils/fs'
+import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './lib/mappers'
 
-const generateFeedFiles = (name: string, feed: Feed) => {
-  fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/rss/${name}`, { recursive: true })
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.xml`, feed.rss2())
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.json`, feed.json1())
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/atom.xml`, feed.atom1())
-}
-
-const generateRssForContent = async ({
+const generateRSS = async ({
   path,
   items,
   options,
@@ -38,12 +31,20 @@ const generateRssForContent = async ({
   })
 
   items.forEach(feed.addItem)
-  generateFeedFiles(path, feed)
+
+  return feed
+}
+
+const createFiles = (name: string, feed: Feed) => {
+  fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/rss/${name}`, { recursive: true })
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.xml`, feed.rss2())
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.json`, feed.json1())
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/atom.xml`, feed.atom1())
 }
 
 const main = async () => {
   const notes = (await getContentList('note')) as Note[]
-  await generateRssForContent({
+  const notesRSS = await generateRSS({
     path: 'notes',
     items: notes.map(mapNoteToRssFeedItem),
     options: {
@@ -51,9 +52,10 @@ const main = async () => {
       description: SITE_DESCRIPTION,
     },
   })
+  createFiles('notes', notesRSS)
 
   const books = (await getContentList('book')) as Book[]
-  await generateRssForContent({
+  const booksRSS = await generateRSS({
     path: 'books',
     items: books.map(mapBookToRssFeedItem),
     options: {
@@ -61,6 +63,7 @@ const main = async () => {
       description: booksCopy.description,
     },
   })
+  createFiles('books', booksRSS)
 }
 
 main()
