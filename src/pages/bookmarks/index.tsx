@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import type { Bookmark } from 'types'
 import { bookmarksCopy } from 'config/copy'
-import { fetchBookmarks } from 'core/api/bookmarks'
+import { fetchBookmarks } from 'api/bookmarks'
 import { Box, Text, Link, Heading } from 'rebass'
 import PageHeader from 'components/PageHeader'
 

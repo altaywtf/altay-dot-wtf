@@ -1,7 +1,7 @@
 import { Heading, Box, Text } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-import { getOpenGraphImage } from 'core/api/openGraph'
+import { getOpenGraphImage } from 'utils/openGraph'
 import Markdown from './Markdown'
 import avatar from '../../public/images/avatar.png'
 

@@ -2,7 +2,7 @@ import type { Book, Note } from 'types'
 import { SITE_URL } from 'config'
 import { convertMarkdownToHTML } from 'core/api/md'
 import { Item } from 'feed'
-import { getOpenGraphImage } from 'core/api/openGraph'
+import { getOpenGraphImage } from 'utils/openGraph'
 import { sanitizeHtml } from 'utils/sanitize'
 import { author } from './constants'
 
@@ -34,7 +34,7 @@ export const mapBookToRssFeedItem = (book: Book): Item => ({
       type: 'book',
       title: book.title,
       author: book.authors.join(', '),
-      coverImageURL: book.remoteCoverImage.url,
+      coverImageURL: SITE_URL + book.coverImage.url,
     }).url,
   ),
 })

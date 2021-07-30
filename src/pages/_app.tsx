@@ -2,9 +2,9 @@ import type { AppProps } from 'next/app'
 import { SEO } from 'config'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import { AnalyticsProvider } from 'core/contexts/Analytics'
-import { ThemeProvider } from 'core/contexts/Theme'
-import { useMounted } from 'core/hooks/useMounted'
+import { AnalyticsProvider } from 'contexts/Analytics'
+import { ThemeProvider } from 'contexts/Theme'
+import { useMounted } from 'hooks/useMounted'
 import Layout from 'components/Layout'
 
 const Providers: React.FC = ({ children }) => {
