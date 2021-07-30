@@ -1,4 +1,5 @@
 export type { NowJSON } from '../scripts/now/lib/types'
+export type { Book, BooksJSON } from '../scripts/books/lib/types'
 
 export type Meta = {
   date: string
@@ -23,23 +24,6 @@ export type Note = MDContent & {
   }
 }
 
-export type Book = MDContent & {
-  type: 'book'
-  meta: Meta & {
-    title: string
-    oneliner: string
-    author: string
-    coverImage: {
-      remoteURL: string
-      url: string
-      aspectRatio: number
-      blurhash: string
-    }
-    isbn: string
-    rating: string
-  }
-}
-
 export type Bookmark = {
   type: 'bookmark'
   url: string
@@ -48,5 +32,5 @@ export type Bookmark = {
   description: string
 }
 
-export type Content = About | Note | Book
+export type Content = About | Note
 export type ContentType = Content['type']

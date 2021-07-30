@@ -7,8 +7,6 @@ export const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
     case 'note':
       return 'notes'
-    case 'book':
-      return 'books'
     default:
       return type
   }
@@ -31,7 +29,7 @@ export const getMarkdownFileNames = (contentType: ContentType) => {
   }
 }
 
-export const readMarkdownFile = (contentType: ContentType, fileName: string) => {
+export const readMarkdownFile = (contentType: any, fileName: string) => {
   const directory = getContentDirectoryPath(contentType)
   const filePath = `${directory}/${fileName}.md`
 

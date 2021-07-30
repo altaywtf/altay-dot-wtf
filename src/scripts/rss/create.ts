@@ -1,5 +1,5 @@
 import '../env'
-import type { Book, Note } from 'types'
+import type { Note } from 'types'
 import fs from 'fs'
 import { Feed, Item, FeedOptions } from 'feed'
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
@@ -7,6 +7,7 @@ import { booksCopy } from 'config/copy'
 import { getContentList } from 'core/api/content'
 import { PUBLIC_FOLDER_PATH } from 'utils/fs'
 import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './lib/mappers'
+import { readBooksJSON } from 'scripts/books/lib/booksJSON'
 
 const generateRSS = async ({
   path,
@@ -54,7 +55,7 @@ const main = async () => {
   })
   createFiles('notes', notesRSS)
 
-  const books = (await getContentList('book')) as Book[]
+  const { books } = readBooksJSON()
   const booksRSS = await generateRSS({
     path: 'books',
     items: books.map(mapBookToRssFeedItem),

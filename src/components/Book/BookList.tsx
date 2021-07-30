@@ -1,4 +1,4 @@
-import type { Book } from 'types'
+import type { Book } from 'scripts/books/lib/types'
 import NextLink from 'next/link'
 import { Heading, Box, Flex, Text, Link } from 'rebass'
 import BookCover from './BookCover'
@@ -14,9 +14,9 @@ const BookList: React.FC<Props> = ({ data }) => (
       <Box key={book.slug}>
         <Flex>
           <Box minWidth={[100, 120]}>
-            <NextLink href={`/books/${book.slug}`} passHref>
-              <a title={book.meta.title}>
-                <BookCover bookMeta={book.meta} />
+            <NextLink href={book.notes.url} passHref>
+              <a title={book.title}>
+                <BookCover book={book} />
               </a>
             </NextLink>
           </Box>
@@ -24,20 +24,20 @@ const BookList: React.FC<Props> = ({ data }) => (
           <Box m={2} />
 
           <Box>
-            <NextLink href={`/books/${book.slug}`} passHref>
-              <Link title={book.meta.title}>
+            <NextLink href={book.notes.url} passHref>
+              <Link title={book.title}>
                 <Heading as="h3" fontSize={[0, 1]}>
-                  {book.meta.title} by {book.meta.author}
+                  {book.title} by {book.authors.join(', ')}
                 </Heading>
               </Link>
             </NextLink>
 
             <Box my={1}>
-              <BookInfo short bookMeta={book.meta} fontSize={0} spacing={1} />
+              <BookInfo short book={book} fontSize={0} spacing={1} />
             </Box>
 
             <Text fontSize={0} fontStyle="italic" color="textTertiary">
-              &quot;{book.meta.oneliner}&quot;
+              &quot;{book.quote}&quot;
             </Text>
           </Box>
         </Flex>

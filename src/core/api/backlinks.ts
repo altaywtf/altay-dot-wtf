@@ -1,7 +1,7 @@
 import { Content, ContentType } from 'types'
 import { getContentList } from './content'
 
-const BACKLINKED_CONTENT_TYPES: ContentType[] = ['book', 'note']
+const BACKLINKED_CONTENT_TYPES: ContentType[] = ['note']
 
 const getBacklinkedItems = async () => {
   const fetcher = BACKLINKED_CONTENT_TYPES.map((type) => getContentList(type))
@@ -12,8 +12,8 @@ const getTargetContentLinkRegex = (content: Content) => {
   switch (content.type) {
     case 'note':
       return `/notes/${content.slug}`
-    case 'book':
-      return `/books/${content.slug}`
+    // case 'book':
+    //   return `/books/${content.slug}`
     default:
       return '__'
   }
@@ -36,8 +36,8 @@ export const getLinksToContent = async (content: Content) => {
       }
 
       switch (b.type) {
-        case 'book':
-          return 1
+        // case 'book':
+        //   return 1
 
         case 'note':
         default:

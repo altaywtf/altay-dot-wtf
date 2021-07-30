@@ -1,23 +1,23 @@
-import type { Book } from 'types'
+import type { Book } from 'scripts/books/lib/types'
 import { Box, Text, Link } from 'rebass'
 import { CgArrowTopRight } from 'react-icons/cg'
 import StarRatingComponent from 'react-star-rating-component'
 import { format } from 'date-fns'
 
 type Props = {
-  bookMeta: Book['meta']
+  book: Book
   short?: boolean
   spacing?: number | number[]
   fontSize?: number | number[]
 }
 
-const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
+const BookInfo: React.FC<Props> = ({ book, spacing, fontSize, short }) => {
   const info = [
     {
       key: 'date',
       component: (
         <Text color="textTertiary" fontSize={fontSize}>
-          Read in {format(new Date(bookMeta.date), 'MMMM yyyy')}
+          Read in {format(new Date(book.dateRead), 'MMMM yyyy')}
         </Text>
       ),
     },
@@ -27,7 +27,7 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
         <Box marginBottom={typeof spacing === 'number' ? -spacing : spacing?.map((s) => -s)}>
           <StarRatingComponent
             name="rating"
-            value={parseInt(bookMeta.rating.split('/')[0], 10)}
+            value={book.rating}
             starCount={5}
             editing={false}
             starColor="#F7C744"
@@ -40,14 +40,14 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
       component: (
         <Link
           title="Open Open Library Page"
-          href={`https://openlibrary.org/isbn/${bookMeta.isbn}`}
+          href={`https://openlibrary.org/isbn/${book.identifier.value}`}
           target="_blank"
           rel="noopener"
           color="textTertiary"
           fontSize={fontSize}
           sx={{ display: 'inline-flex', alignItems: 'center' }}
         >
-          <code>ISBN:{bookMeta.isbn}</code>
+          <code>ISBN:{book.identifier.value}</code>
           <CgArrowTopRight />
         </Link>
       ),

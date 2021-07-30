@@ -6,18 +6,13 @@ import { getOpenGraphImage } from 'core/api/openGraph'
 import { sanitizeHtml } from 'utils/sanitize'
 import { author } from './constants'
 
-const mapContentToRssFeedItem = (content: Book | Note): Item => ({
-  title: content.meta.title,
-  description: content.meta.oneliner,
-  author: [author],
-  contributor: [author],
-  content: convertMarkdownToHTML(content.markdown),
-  link: `${SITE_URL}/${content.type}s/${content.slug}`,
-  date: new Date(content.meta.date),
-})
-
 export const mapNoteToRssFeedItem = (note: Note): Item => ({
-  ...mapContentToRssFeedItem(note),
+  date: new Date(note.meta.date),
+  title: note.meta.title,
+  description: note.meta.oneliner,
+  author: [author],
+  link: `${SITE_URL}/notes/${note.slug}`,
+  content: convertMarkdownToHTML(note.markdown),
   image: sanitizeHtml(
     getOpenGraphImage({
       type: 'note',
@@ -28,14 +23,18 @@ export const mapNoteToRssFeedItem = (note: Note): Item => ({
 })
 
 export const mapBookToRssFeedItem = (book: Book): Item => ({
-  ...mapContentToRssFeedItem(book),
-  title: `${book.meta.title} by ${book.meta.author}`,
+  date: new Date(book.dateRead),
+  title: `${book.title} by ${book.authors.join(',')}`,
+  description: book.quote,
+  author: [author],
+  link: SITE_URL + book.notes.url,
+  // content: convertMarkdownToHTML(book.markdown), // @TODO: FIXME
   image: sanitizeHtml(
     getOpenGraphImage({
       type: 'book',
-      title: book.meta.title,
-      author: book.meta.author,
-      coverImageURL: book.meta.coverImage.remoteURL,
+      title: book.title,
+      author: book.authors.join(', '),
+      coverImageURL: book.remoteCoverImage.url,
     }).url,
   ),
 })

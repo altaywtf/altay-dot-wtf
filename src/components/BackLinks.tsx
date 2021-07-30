@@ -10,7 +10,6 @@ type BackLinkProps = {
 
 const getTitle = (item: Content) => {
   switch (item.type) {
-    case 'book':
     case 'note':
       return item.meta.title
 
@@ -26,8 +25,8 @@ const getURLForContent = (content: Content, slug: string) => {
     case 'note':
       return `/notes/${content.slug}?source=${slug}`
 
-    case 'book':
-      return `/books/${content.slug}?source=${slug}`
+    // case 'book':
+    //   return `/books/${content.slug}?source=${slug}`
 
     default:
       return '__NEVER__'
