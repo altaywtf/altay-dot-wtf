@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-07-30T07:46:23.144Z",
+  "updatedAt": "2021-07-31T09:35:01.626Z",
   "sections": [
     {
       "_id": "life",
@@ -35,10 +35,22 @@
       "title": "🎧 Listening",
       "data": [
         {
+          "title": "X&Y",
+          "creator": "Coldplay",
+          "url": "https://music.apple.com/de/album/x-y/1123076757",
+          "coverImageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/1425x1425bb.jpeg"
+        },
+        {
           "title": "Bedtime Beats",
           "creator": "Apple Music Einschlafen",
           "url": "https://music.apple.com/de/playlist/bedtime-beats/pl.082e7836ea7a4244bf3f9c319560718f",
           "coverImageURL": "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/27/5f/7d/275f7d13-7810-c63e-e570-180c9330ae18/source/1080x1080SC.DN01.jpeg?l=de-DE"
+        },
+        {
+          "title": "Lifeforms",
+          "creator": "Angels & Airwaves",
+          "url": "https://music.apple.com/de/album/lifeforms/1570547185",
+          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/3733x3733bb.jpeg"
         },
         {
           "title": "Gamma",
@@ -57,12 +69,6 @@
           "creator": "Apple Music Chillen",
           "url": "https://music.apple.com/de/playlist/beatstrumentals/pl.f54198ad42404535be13eabf3835fb22",
           "coverImageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/f5/f5/8b/f5f58b8c-4579-6ec7-d1cd-b1247249f2de/source/1080x1080SC.DN01.jpeg?l=de-DE"
-        },
-        {
-          "title": "Sensational",
-          "creator": "Erika de Casier",
-          "url": "https://music.apple.com/de/album/sensational/1560653786",
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/10/e2/df/10e2df8f-7bba-1cbd-86aa-2f4a269c399d/191400035478.png/4000x4000bb.jpeg"
         }
       ]
     }

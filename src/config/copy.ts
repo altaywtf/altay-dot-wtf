@@ -46,7 +46,7 @@ export const booksCopy = {
 
 export const nowCopy = {
   icon: '⏱',
-  title: "What I'm doing now.",
+  title: "What I'm doing now",
   description: 'This is a now page inspired by [Derek Sivers.](https://nownownow.com)',
 }
 

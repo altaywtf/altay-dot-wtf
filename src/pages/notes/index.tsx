@@ -7,13 +7,17 @@ import PageHeader from 'components/PageHeader'
 import { formatDate } from 'utils/date'
 
 export const getStaticProps: GetStaticProps<{ notes: Note[] }> = () => ({
-  props: { notes: getNotes() },
+  props: {
+    notes: getNotes(),
+  },
 })
 
 const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ notes }) => (
   <>
     <PageHeader {...notesCopy} />
+
     <Box m={4} />
+
     <Box>
       {notes.map((note) => (
         <Box key={note.slug} mb={4}>

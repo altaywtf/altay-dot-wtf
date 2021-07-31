@@ -5,7 +5,9 @@ import { Box, Text, Link, Heading } from 'rebass'
 import PageHeader from 'components/PageHeader'
 
 export const getStaticProps: GetStaticProps<{ data: Bookmark[] }> = async () => ({
-  props: { data: await fetchBookmarks() },
+  props: {
+    data: await fetchBookmarks(),
+  },
   revalidate: 60 * 60,
 })
 

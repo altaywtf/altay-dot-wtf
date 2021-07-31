@@ -8,13 +8,17 @@ import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 
 export const getStaticProps: GetStaticProps<{ books: Book[] }> = () => ({
-  props: { books: getBooks() },
+  props: {
+    books: getBooks(),
+  },
 })
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
   <>
     <PageHeader {...booksCopy} />
+
     <Box m={4} />
+
     <Box>
       {books.map((book) => (
         <Box key={book.slug}>
