@@ -1,13 +1,11 @@
 import '../env'
-import type { Note } from 'types'
-import fs from 'fs'
 import { Feed, Item, FeedOptions } from 'feed'
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
 import { booksCopy } from 'config/copy'
-import { getContentList } from 'core/api/content'
-import { PUBLIC_FOLDER_PATH } from 'utils/fs'
+import { getNotes, getNote } from 'api/notes'
+import { getBooks, getBook } from 'api/books'
 import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './lib/mappers'
-import { readBooksJSON } from 'scripts/books/lib/booksJSON'
+import { createFeedFiles } from './lib/fs'
 
 const generateRSS = async ({
   path,
@@ -36,35 +34,28 @@ const generateRSS = async ({
   return feed
 }
 
-const createFiles = (name: string, feed: Feed) => {
-  fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/rss/${name}`, { recursive: true })
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.xml`, feed.rss2())
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/feed.json`, feed.json1())
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/rss/${name}/atom.xml`, feed.atom1())
-}
-
 const main = async () => {
-  const notes = (await getContentList('note')) as Note[]
   const notesRSS = await generateRSS({
     path: 'notes',
-    items: notes.map(mapNoteToRssFeedItem),
+    items: getNotes().map((note) => mapNoteToRssFeedItem(note, getNote(note.slug).markdown)),
     options: {
       title: SITE_TITLE,
       description: SITE_DESCRIPTION,
     },
   })
-  createFiles('notes', notesRSS)
 
-  const { books } = readBooksJSON()
+  createFeedFiles('notes', notesRSS)
+
   const booksRSS = await generateRSS({
     path: 'books',
-    items: books.map(mapBookToRssFeedItem),
+    items: getBooks().map((book) => mapBookToRssFeedItem(book, getBook(book.slug).markdown)),
     options: {
       title: `${SITE_TITLE} - book notes`,
       description: booksCopy.description,
     },
   })
-  createFiles('books', booksRSS)
+
+  createFeedFiles('books', booksRSS)
 }
 
 main()

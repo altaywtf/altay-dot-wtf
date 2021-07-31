@@ -1,38 +1,45 @@
-import type { InferGetStaticPropsType } from 'next'
-import type { Note } from 'types'
+import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
-import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
+import { getNote, getNotes, Note } from 'api/notes'
 import { getOpenGraphImage } from 'utils/openGraph'
+import { formatDate } from 'utils/date'
 import { useScrollToSource } from 'hooks/useScrollToSource'
 import Markdown from 'components/Markdown'
-import BackLinks from 'components/BackLinks'
 import ArtificialBackButton from 'components/ArtificialBackButton'
-import { formatDate } from 'utils/date'
 
-export const getStaticPaths = getStaticPathsForContent('note')
-export const getStaticProps = getStaticPropsForContentDetails<Note>('note')
+export const getStaticPaths: GetStaticPaths = () => ({
+  paths: getNotes().map((note) => ({ params: { slug: note.slug } })),
+  fallback: false,
+})
 
-const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+export const getStaticProps: GetStaticProps<{ note: Note; markdown: string }> = ({ params }) => ({
+  props: getNote(params?.slug as string),
+})
+
+const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ note, markdown }) => {
   useScrollToSource()
-
-  const title = data.meta.title
-  const description = data.meta.oneliner
 
   return (
     <>
       <NextSeo
-        title={title}
-        description={description}
+        title={note.title}
+        description={note.oneliner}
         openGraph={{
-          title,
-          description,
+          title: note.title,
+          description: note.oneliner,
           type: 'article',
           article: {
             authors: ['Altay Aydemir'],
-            modifiedTime: data.meta.date,
+            modifiedTime: note.date,
           },
-          images: [getOpenGraphImage({ type: 'note', title, oneliner: description })],
+          images: [
+            getOpenGraphImage({
+              type: 'note',
+              title: note.title,
+              oneliner: note.oneliner,
+            }),
+          ],
         }}
       />
 
@@ -40,25 +47,23 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box m={[3, 4]} />
 
-      <Heading fontSize={[3, 4]}>{data.meta.title}</Heading>
+      <Heading fontSize={[3, 4]}>{note.title}</Heading>
 
       <Box m={2} />
 
       <Text fontSize={0} color="textTertiary">
-        {formatDate(data.meta.date)}
+        {formatDate(note.date)}
         <Box display="inline" mx={1}>
           ·
         </Box>
-        {data.meta.readingTime}
+        {note.readingTime}
       </Text>
 
       <Box m={3} />
 
-      <Markdown>{data.markdown}</Markdown>
+      <Markdown>{markdown}</Markdown>
 
       <Box m={4} />
-
-      {links.length > 0 ? <BackLinks slug={data.slug} type={data.type} data={links} /> : null}
     </>
   )
 }

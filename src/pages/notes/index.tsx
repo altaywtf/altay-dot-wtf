@@ -1,18 +1,49 @@
-import type { InferGetStaticPropsType } from 'next'
-import type { Note } from 'types'
+import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+import { getNotes, Note } from 'api/notes'
 import { notesCopy } from 'config/copy'
-import { getStaticPropsForContentList } from 'core/api/page'
-import { Box } from 'rebass'
+import NextLink from 'next/link'
+import { Box, Text, Link, Heading } from 'rebass'
 import PageHeader from 'components/PageHeader'
-import NoteList from 'components/Notes/NoteList'
+import { formatDate } from 'utils/date'
 
-export const getStaticProps = getStaticPropsForContentList<Note>('note')
+export const getStaticProps: GetStaticProps<{ notes: Note[] }> = () => ({
+  props: { notes: getNotes() },
+})
 
-const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
+const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ notes }) => (
   <>
     <PageHeader {...notesCopy} />
     <Box m={4} />
-    <NoteList data={data} />
+    <Box>
+      {notes.map((note) => (
+        <Box key={note.slug} mb={4}>
+          <NextLink href={note.url} passHref>
+            <Link>
+              <Heading as="h3" fontSize={[1, 2]}>
+                {note.title}
+              </Heading>
+            </Link>
+          </NextLink>
+
+          <Box m={1} />
+
+          <Text fontSize={0} color="textSecondary">
+            {note.oneliner}
+          </Text>
+
+          <Box m={1} />
+
+          <Text fontSize={0} color="textTertiary">
+            {formatDate(note.date)}
+
+            <Box display="inline" mx={1}>
+              ·
+            </Box>
+            {note.readingTime}
+          </Text>
+        </Box>
+      ))}
+    </Box>
   </>
 )
 
