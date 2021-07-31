@@ -1,9 +1,10 @@
 {
-  "updatedAt": "2021-07-31T14:48:30.157Z",
+  "updatedAt": "2021-07-31T16:17:01.848Z",
   "sections": [
     {
       "_id": "life",
-      "title": "⏳ Life updates",
+      "title": "⏳ Life Updates",
+      "source": null,
       "data": "This is my final month in [Klarna](https://www.klarna.com/) and I'll be joining [Amie](https://amie.so) in August."
     },
     {
@@ -28,7 +29,11 @@
           "creator": "Cliff Kuang, Robert Fabricant",
           "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg"
         }
-      ]
+      ],
+      "source": {
+        "label": "Oku",
+        "url": "https://oku.club/user/altaywtf"
+      }
     },
     {
       "_id": "music",
@@ -59,12 +64,31 @@
           "creator": "cleopatrick",
           "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/50/77/18507788-10c3-cda5-6635-1647ae11cb5d/195497011735.jpg/1200x1968bb.jpeg"
         }
-      ]
+      ],
+      "source": {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/profile/altaywtf"
+      }
     },
     {
-      "_id": "series",
+      "_id": "shows",
       "title": "📺 Watching",
-      "data": []
+      "source": {
+        "label": "ShowRSS",
+        "url": "https://showRSS.info"
+      },
+      "data": [
+        {
+          "title": "DAVE",
+          "url": "https://www.tvmaze.com/shows/45563/dave",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
+        },
+        {
+          "title": "Rick and Morty",
+          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
+        }
+      ]
     }
   ]
 }

@@ -3,7 +3,7 @@ import { createNowJSON } from './lib/types'
 import { fetchBooks } from './lib/books'
 import { fetchMusic } from './lib/music'
 import { writeNowJSON } from './lib/nowJSON'
-import { fetchSeries } from './lib/series'
+import { fetchShows } from './lib/shows'
 
 const main = async () => {
   const books = await fetchBooks({
@@ -15,9 +15,9 @@ const main = async () => {
     userToken: process.env.APPLE_MUSIC_USER_TOKEN as string,
   })
 
-  const series = await fetchSeries()
+  const shows = await fetchShows()
 
-  writeNowJSON(createNowJSON({ books, music, series }))
+  writeNowJSON(createNowJSON({ books, music, shows }))
 }
 
 main()

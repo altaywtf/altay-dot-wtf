@@ -1,11 +1,12 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { useCallback } from 'react'
-import { Box, Heading, Link, Text } from 'rebass'
+import { Flex, Box, Heading, Link, Text } from 'rebass'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import Markdown from 'components/Markdown'
 import { formatDate } from 'utils/date'
+import { CgArrowTopRight } from 'react-icons/cg'
 
 export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
   props: { now: getNow() },
@@ -21,12 +22,25 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
       case 'music':
         return (
           <ul>
-            {section.data.map((book) => (
-              <li key={book.title}>
-                <Link href={book.url} target="_blank">
-                  {book.title}
+            {section.data.map((item) => (
+              <li key={item.title}>
+                <Link href={item.url} target="_blank">
+                  {item.title}
                 </Link>{' '}
-                by {book.creator}
+                by {item.creator}
+              </li>
+            ))}
+          </ul>
+        )
+
+      case 'shows':
+        return (
+          <ul>
+            {section.data.map((show) => (
+              <li key={show.title}>
+                <Link href={show.url} target="_blank">
+                  {show.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -43,12 +57,31 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
       {now.sections
         .filter((section) => section.data && section.data.length > 0)
         .map((section) => (
-          <Box key={section._id} my={5}>
-            <Heading as="h3" fontSize={[2]}>
-              {section.title}
-            </Heading>
-            <Box my={3} />
+          <Box key={section._id}>
+            <Flex alignItems="flex-start">
+              <Heading as="h3" fontSize={2}>
+                {section.title}
+              </Heading>
+
+              {section.source ? (
+                <Box fontSize="12px" marginLeft="2px" marginTop="-4px">
+                  <Link
+                    href={section.source.url}
+                    title={`Source: ${section.source.label}`}
+                    variant="linkSilent"
+                    target="_new"
+                  >
+                    <CgArrowTopRight />
+                  </Link>
+                </Box>
+              ) : null}
+            </Flex>
+
+            <Box m={2} />
+
             <Box>{renderSectionContent(section)}</Box>
+
+            <Box m={5} />
           </Box>
         ))}
 

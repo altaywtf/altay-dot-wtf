@@ -12,10 +12,15 @@ export type NowJSONBook = {
   imageURL: string
 }
 
-export type NowJSONSerie = {
+export type NowJSONShow = {
   title: string
   url: string
   imageURL: string
+}
+
+type NowJSONSectionSource = {
+  url: string
+  label: string
 }
 
 export type NowJSON = {
@@ -25,21 +30,25 @@ export type NowJSON = {
       _id: 'life'
       data: string
       title: string
+      source: null
     },
     {
       _id: 'books'
       data: NowJSONBook[]
       title: string
+      source: NowJSONSectionSource
     },
     {
       _id: 'music'
       data: NowJSONMusic[]
       title: string
+      source: NowJSONSectionSource
     },
     {
-      _id: 'series'
-      data: NowJSONSerie[]
+      _id: 'shows'
+      data: NowJSONShow[]
       title: string
+      source: NowJSONSectionSource
     },
   ]
 }
@@ -47,33 +56,46 @@ export type NowJSON = {
 export const createNowJSON = ({
   books,
   music,
-  series,
+  shows,
 }: {
   books: NowJSONBook[]
   music: NowJSONMusic[]
-  series: NowJSONSerie[]
+  shows: NowJSONShow[]
 }): NowJSON => ({
   updatedAt: new Date().toISOString(),
   sections: [
     {
       _id: 'life', // @TODO: get this from a markdown
-      title: '⏳ Life updates',
+      title: '⏳ Life Updates',
+      source: null,
       data: "This is my final month in [Klarna](https://www.klarna.com/) and I'll be joining [Amie](https://amie.so) in August.",
     },
     {
       _id: 'books',
       title: '📚 Reading',
       data: books,
+      source: {
+        label: 'Oku',
+        url: 'https://oku.club/user/altaywtf',
+      },
     },
     {
       _id: 'music',
       title: '🎧 Listening',
       data: music,
+      source: {
+        label: 'Apple Music',
+        url: 'https://music.apple.com/profile/altaywtf',
+      },
     },
     {
-      _id: 'series',
+      _id: 'shows',
       title: '📺 Watching',
-      data: series,
+      source: {
+        label: 'ShowRSS',
+        url: 'https://showRSS.info',
+      },
+      data: shows,
     },
   ],
 })
