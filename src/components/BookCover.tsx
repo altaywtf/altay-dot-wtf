@@ -1,4 +1,4 @@
-import type { Book } from 'scripts/books/lib/types'
+import type { Book } from 'api/books'
 import Image from 'next/image'
 import { Box } from 'rebass'
 

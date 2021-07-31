@@ -39,13 +39,3 @@ export const transformRelativeMarkdownLinks = (contentType: ContentType, markdow
 
   return markdown
 }
-
-export const convertMarkdownToHTML = (markdown: string) => {
-  const html = marked(markdown, {
-    baseUrl: SITE_URL,
-    gfm: true,
-    breaks: true,
-  })
-
-  return html
-}

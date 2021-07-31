@@ -1,4 +1,4 @@
-import type { Book } from 'scripts/books/lib/types'
+import type { Book } from 'api/books'
 import { Box, Text, Link } from 'rebass'
 import { CgArrowTopRight } from 'react-icons/cg'
 import StarRatingComponent from 'react-star-rating-component'

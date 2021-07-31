@@ -1,15 +1,17 @@
-import type { NowJSON } from 'types'
+import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+import { useCallback } from 'react'
 import { Box, Heading, Link, Text } from 'rebass'
+import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import Markdown from 'components/Markdown'
-import { useCallback } from 'react'
 import { formatDate } from 'utils/date'
-import nowJSON from '../../../data/now.json'
 
-const NowPage: React.FC = () => {
-  const data = nowJSON as NowJSON
+export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
+  props: { now: getNow() },
+})
 
+const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now }) => {
   const renderSectionContent = useCallback((section: NowJSON['sections'][number]) => {
     switch (section._id) {
       case 'life':
@@ -38,7 +40,7 @@ const NowPage: React.FC = () => {
 
       <Box m={5} />
 
-      {data.sections
+      {now.sections
         .filter((section) => section.data && section.data.length > 0)
         .map((section) => (
           <Box key={section._id} my={5}>
@@ -53,7 +55,7 @@ const NowPage: React.FC = () => {
       <Box m={5} />
 
       <Text fontSize={0} color="textTertiary">
-        Updated on {formatDate(data.updatedAt)}
+        Updated on {formatDate(now.updatedAt)}
       </Text>
     </>
   )

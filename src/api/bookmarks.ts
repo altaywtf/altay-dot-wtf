@@ -1,6 +1,5 @@
-import type { Bookmark } from 'types'
-import { SITE_URL } from 'config'
 import axios from 'axios'
+import { SITE_URL } from 'config'
 
 type RaindropBookmark = {
   title: string
@@ -13,8 +12,14 @@ type RaindropResponse = {
   items: RaindropBookmark[]
 }
 
+export type Bookmark = {
+  url: string
+  host: string
+  title: string
+  description: string
+}
+
 const mapRaindropBookmarkToBookmark = (raindropBookmark: RaindropBookmark): Bookmark => ({
-  type: 'bookmark',
   title: raindropBookmark.title,
   description: raindropBookmark.excerpt,
   host: raindropBookmark.domain,
