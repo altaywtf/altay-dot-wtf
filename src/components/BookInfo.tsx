@@ -5,16 +5,14 @@ import { format } from 'date-fns'
 
 type Props = {
   book: Book
-  spacing?: number | number[]
-  fontSize?: number | number[]
 }
 
-const BookInfo: React.FC<Props> = ({ book, spacing, fontSize }) => {
+const BookInfo: React.FC<Props> = ({ book }) => {
   const info = [
     {
       key: 'date',
       component: (
-        <Text color="textTertiary" fontSize={fontSize}>
+        <Text color="textTertiary" fontSize={0}>
           Read in {format(new Date(book.dateRead), 'MMMM yyyy')}
         </Text>
       ),
@@ -22,7 +20,7 @@ const BookInfo: React.FC<Props> = ({ book, spacing, fontSize }) => {
     {
       key: 'rating',
       component: (
-        <Box marginBottom={typeof spacing === 'number' ? -spacing : spacing?.map((s) => -s)}>
+        <Box marginBottom={-1}>
           <StarRatingComponent
             name="rating"
             value={book.rating}
@@ -38,7 +36,7 @@ const BookInfo: React.FC<Props> = ({ book, spacing, fontSize }) => {
   return (
     <Box>
       {info.map((i) => (
-        <Box key={i.key} sx={{ marginY: spacing }}>
+        <Box key={i.key} sx={{ marginY: 1 }}>
           {i.component}
         </Box>
       ))}

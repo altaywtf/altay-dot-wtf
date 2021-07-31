@@ -43,7 +43,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
               </NextLink>
 
               <Box m={1} />
-              <BookInfo short book={book} fontSize={0} spacing={1} />
+              <BookInfo book={book} />
               <Box m={1} />
 
               <Text fontSize={0} fontStyle="italic" color="textTertiary">
