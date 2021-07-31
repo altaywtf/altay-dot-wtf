@@ -44,6 +44,6 @@ export const fetchMusic = async ({
       url: resource.attributes.url,
       imageURL: resource.attributes.artwork.url
         .replace('{w}', (resource.attributes.artwork.width || 600).toString())
-        .replace('{h}', (resource.attributes.artwork.height | 800).toString()),
+        .replace('{h}', (resource.attributes.artwork.height || 600).toString()),
     }))
 }
