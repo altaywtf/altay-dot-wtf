@@ -14,13 +14,17 @@ export const mapNoteToRssFeedItem = (note: Note, markdown: string): Item => ({
   author: [author],
   link: `${SITE_URL}/notes/${note.slug}`,
   content: convertMarkdownToHTML(markdown),
-  image: sanitizeHtml(
-    getOpenGraphImage({
-      type: 'note',
-      title: note.title,
-      oneliner: note.oneliner,
-    }).url,
-  ),
+  image: {
+    // length: 0, @TODO: this is required
+    title: note.title,
+    url: sanitizeHtml(
+      getOpenGraphImage({
+        type: 'note',
+        title: note.title,
+        oneliner: note.oneliner,
+      }).url,
+    ),
+  },
 })
 
 export const mapBookToRssFeedItem = (book: Book, markdown: string): Item => ({
@@ -30,12 +34,16 @@ export const mapBookToRssFeedItem = (book: Book, markdown: string): Item => ({
   author: [author],
   link: SITE_URL + book.notes.url,
   content: convertMarkdownToHTML(markdown),
-  image: sanitizeHtml(
-    getOpenGraphImage({
-      type: 'book',
-      title: book.title,
-      author: book.authors.join(', '),
-      coverImageURL: SITE_URL + book.coverImage.url,
-    }).url,
-  ),
+  image: {
+    // length: 0, @TODO: this is required
+    title: book.title,
+    url: sanitizeHtml(
+      getOpenGraphImage({
+        type: 'book',
+        title: book.title,
+        author: book.authors.join(', '),
+        coverImageURL: SITE_URL + book.coverImage.url,
+      }).url,
+    ),
+  },
 })

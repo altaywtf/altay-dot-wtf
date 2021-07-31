@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-07-31T09:35:01.626Z",
+  "updatedAt": "2021-07-31T14:48:30.157Z",
   "sections": [
     {
       "_id": "life",
@@ -14,19 +14,19 @@
           "url": "https://oku.club/book/android-apprentice-by-namrata-bandekar-hncHq",
           "title": "Android Apprentice (Fourth Edition)",
           "creator": "Namrata Bandekar, Darryl Bayliss, Fuad Kamal",
-          "coverImageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "imageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
           "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM",
           "title": "So You Want to Talk About Race",
           "creator": "Ijeoma Oluo",
-          "coverImageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "imageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
           "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo",
           "title": "User Friendly",
           "creator": "Cliff Kuang, Robert Fabricant",
-          "coverImageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg"
+          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg"
         }
       ]
     },
@@ -35,42 +35,36 @@
       "title": "🎧 Listening",
       "data": [
         {
-          "title": "X&Y",
-          "creator": "Coldplay",
-          "url": "https://music.apple.com/de/album/x-y/1123076757",
-          "coverImageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/1425x1425bb.jpeg"
+          "title": "Sun Transmission",
+          "creator": "Inner Wave",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1968bb.jpeg"
         },
         {
-          "title": "Bedtime Beats",
-          "creator": "Apple Music Einschlafen",
-          "url": "https://music.apple.com/de/playlist/bedtime-beats/pl.082e7836ea7a4244bf3f9c319560718f",
-          "coverImageURL": "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/27/5f/7d/275f7d13-7810-c63e-e570-180c9330ae18/source/1080x1080SC.DN01.jpeg?l=de-DE"
+          "title": "Loving In Stereo",
+          "creator": "Jungle",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1968bb.jpeg"
         },
         {
-          "title": "Lifeforms",
-          "creator": "Angels & Airwaves",
-          "url": "https://music.apple.com/de/album/lifeforms/1570547185",
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/3733x3733bb.jpeg"
+          "title": "Juno",
+          "creator": "Parra for Cuva",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1968bb.jpeg"
         },
         {
-          "title": "Gamma",
-          "creator": "Fewjar",
-          "url": "https://music.apple.com/de/album/gamma/1372843558",
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/3000x3000bb.jpeg"
+          "title": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+          "creator": "Billie Eilish",
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/1200x1968bb.jpeg"
         },
         {
-          "title": "All Over (Us) - EP",
-          "creator": "Fewjar",
-          "url": "https://music.apple.com/de/album/all-over-us-ep/1570024251",
-          "coverImageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/6e/b1/05/6eb10581-74ed-f2b3-6b2f-84baf2f453fd/cover_4064832545142.jpg/3000x3000bb.jpeg"
-        },
-        {
-          "title": "BEATstrumentals",
-          "creator": "Apple Music Chillen",
-          "url": "https://music.apple.com/de/playlist/beatstrumentals/pl.f54198ad42404535be13eabf3835fb22",
-          "coverImageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/f5/f5/8b/f5f58b8c-4579-6ec7-d1cd-b1247249f2de/source/1080x1080SC.DN01.jpeg?l=de-DE"
+          "title": "hometown - Single",
+          "creator": "cleopatrick",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/50/77/18507788-10c3-cda5-6635-1647ae11cb5d/195497011735.jpg/1200x1968bb.jpeg"
         }
       ]
+    },
+    {
+      "_id": "series",
+      "title": "📺 Watching",
+      "data": []
     }
   ]
 }

@@ -2,16 +2,14 @@ import axios from 'axios'
 import type { NowJSONMusic } from './types'
 
 type AppleMusicResource = {
-  type: 'albums' | 'playlists' | 'stations'
+  type: string
   attributes: {
     artwork: {
       width: number
       height: number
       url: string
     }
-    artistName?: string
-    curatorName?: string
-    playlistType?: 'user-shared' | 'editorial'
+    artistName: string
     name: string
     url: string
   }
@@ -28,7 +26,7 @@ export const fetchMusic = async ({
   devToken: string
   userToken: string
 }): Promise<NowJSONMusic[]> => {
-  const URL = 'https://api.music.apple.com/v1/me/recent/played'
+  const URL = 'https://api.music.apple.com/v1/me/library/recently-added'
 
   const response = await axios.get<AppleMusicRecentlyPlayedResourcesResponse>(URL, {
     headers: {
@@ -38,14 +36,14 @@ export const fetchMusic = async ({
   })
 
   return response.data.data
-    .filter((resource) => resource.type !== 'stations')
-    .filter((resource) => resource.attributes?.playlistType !== 'user-shared')
+    .filter((resource) => resource.type == 'library-albums')
+    .filter((resource) => !!resource.attributes?.artwork?.url)
     .map((resource) => ({
       title: resource.attributes.name,
-      creator: resource.attributes.artistName || resource.attributes.curatorName || '',
+      creator: resource.attributes.artistName,
       url: resource.attributes.url,
-      coverImageURL: resource.attributes.artwork.url
-        .replace('{w}', resource.attributes.artwork.width.toString())
-        .replace('{h}', resource.attributes.artwork.height.toString()),
+      imageURL: resource.attributes.artwork.url
+        .replace('{w}', (resource.attributes.artwork.width || 600).toString())
+        .replace('{h}', (resource.attributes.artwork.height | 800).toString()),
     }))
 }

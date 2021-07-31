@@ -24,6 +24,6 @@ export const fetchBooks = async ({ userToken }: { userToken: string }): Promise<
     url: `https://oku.club/book/${okuBook.slug}`,
     title: okuBook.title,
     creator: okuBook.authors.map((author) => author.name).join(', '),
-    coverImageURL: okuBook.thumbnail,
+    imageURL: okuBook.thumbnail,
   }))
 }
