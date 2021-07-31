@@ -1,18 +1,25 @@
+import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
 import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
 import { Box, Link, Heading, Text } from 'rebass'
 import { CgArrowRight, CgArrowTopRight } from 'react-icons/cg'
-import projects from '../../../data/projects.json'
 
-const ProjectsPage: React.FC = () => (
+export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
+  props: {
+    projects: getProjects(),
+  },
+})
+
+const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ projects }) => (
   <>
     <PageHeader {...projectsCopy} />
 
     <Box m={4} />
 
     {projects.map((p) => (
-      <Box key={p.name} mb={4}>
+      <Box key={p.title}>
         <NextLink href={p.url} passHref>
           <Link {...(p.url.startsWith('/') ? {} : { target: '_blank' })}>
             <Heading
@@ -20,7 +27,7 @@ const ProjectsPage: React.FC = () => (
               fontSize={[1, 2]}
               sx={{ display: 'inline-flex', alignItems: 'center' }}
             >
-              {p.name}
+              {p.title}
               <Box ml={1} />
               {p.url.startsWith('/') ? <CgArrowRight /> : <CgArrowTopRight />}
             </Heading>
@@ -29,7 +36,9 @@ const ProjectsPage: React.FC = () => (
 
         <Box m={1} />
 
-        <Text fontSize={0}>{p.details}</Text>
+        <Text fontSize={0}>{p.description}</Text>
+
+        <Box m={4} />
       </Box>
     ))}
   </>

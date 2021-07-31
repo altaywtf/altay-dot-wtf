@@ -24,7 +24,6 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
         backgroundColor: active ? 'linkBackground' : 'transparent',
         '&:hover': {
           backgroundColor: active ? 'linkBackground' : 'linkHoverBackground',
-          cursor: active ? 's-resize' : 'pointer',
         },
       }}
     >

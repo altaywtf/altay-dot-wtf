@@ -1,36 +1,43 @@
-import type { InferGetStaticPropsType } from 'next'
-import type { Book } from 'types'
+import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
+import { Book, getBooks, getBook } from 'api/books'
+import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
-import { Flex, Box, Heading } from 'rebass'
-import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import { getOpenGraphImage } from 'core/api/openGraph'
-import { useScrollToSource } from 'core/hooks/useScrollToSource'
-import BookCover from 'components/Book/BookCover'
-import BookInfo from 'components/Book/BookInfo'
+import { Flex, Box, Heading, Text } from 'rebass'
+import { getOpenGraphImage } from 'utils/openGraph'
+import { useScrollToSource } from 'hooks/useScrollToSource'
+import BookCover from 'components/BookCover'
+import BookInfo from 'components/BookInfo'
 import Markdown from 'components/Markdown'
-import BackLinks from 'components/BackLinks'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 
-export const getStaticPaths = getStaticPathsForContent('book')
-export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
+export const getStaticPaths: GetStaticPaths = () => ({
+  paths: getBooks().map((book) => ({ params: { slug: book.slug } })),
+  fallback: false,
+})
 
-const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+export const getStaticProps: GetStaticProps<{ book: Book; markdown: string }> = ({ params }) => ({
+  props: getBook(params?.slug as string),
+})
+
+const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ book, markdown }) => {
   useScrollToSource()
+
+  const title = `${book.title} by ${book.authors.join(', ')}`
 
   return (
     <>
       <NextSeo
-        title={data.meta.title}
-        description={data.meta.oneliner}
+        title={title}
+        description={book.quote}
         openGraph={{
-          title: data.meta.title,
-          description: data.meta.oneliner,
+          title: title,
+          description: book.quote,
           images: [
             getOpenGraphImage({
               type: 'book',
-              title: data.meta.title,
-              author: data.meta.author,
-              coverImageURL: data.meta.coverImage.remoteURL,
+              title: book.title,
+              author: book.authors.join(', '),
+              coverImageURL: SITE_URL + book.coverImage.url,
             }),
           ],
         }}
@@ -42,29 +49,29 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Flex>
         <Box minWidth={[120, 140]}>
-          <BookCover bookMeta={data.meta} />
+          <BookCover book={book} />
         </Box>
 
         <Box m={2} />
 
         <Box>
-          <Heading as="h1" fontSize={[1, 3]}>
-            {data.meta.title} by {data.meta.author}
+          <Heading as="h1" fontSize={[2, 3]}>
+            {title}
           </Heading>
 
           <Box m={2} />
+          <BookInfo book={book} />
+          <Box m={1} />
 
-          <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={0} />
+          <Text fontSize={0} fontStyle="italic" color="textTertiary">
+            &quot;{book.quote}&quot;
+          </Text>
         </Box>
       </Flex>
 
-      <Box m={3} />
-
-      <Markdown>{data.markdown}</Markdown>
-
+      <Box m={4} />
+      <Markdown>{markdown}</Markdown>
       <Box m={6} />
-
-      {links.length > 0 ? <BackLinks type={data.type} data={links} slug={data.slug} /> : null}
     </>
   )
 }

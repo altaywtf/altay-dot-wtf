@@ -1,10 +1,3 @@
----
-isbn: '1523506644'
-date: '2020-12-13'
-rating: '5/5'
-oneliner: Walking is a way to find possibility in your life when there doesn't seem to be any left.
----
-
 ## 1. Every day is a Groundhog Day
 
 In the Groundhog Day movie, the lead character wakes up on the same day every day. He repeatedly wakes up on the 2nd of February.

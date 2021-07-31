@@ -1,19 +1,10 @@
----
-isbn: '1490313370'
-date: '2018-11-05'
-rating: '3/5'
-oneliner: 'You and I have the same twenty-four hours each day. Is that how you will spend yours?'
----
-
-> You and I have the same twenty-four hours each day. Is that how you will spend yours?
-
 ## Economic History of the Choose Yourself Era
 
 Old corporate area is in the past and you need to reconstruct your current standards with a more individualistic shape (not selfish)
 
 Human beings are born pioneers, the rise of corporatism forced people to into cubicles.
 
-> Have you wondered why the stock market didn’t just keep going down (after 2008 crysis). Because I moved to Wall Street in early March 2009.
+> Have you wondered why the stock market didn’t just keep going down (after 2008 crisis). Because I moved to Wall Street in early March 2009.
 
 > ...So I did the only thing I could do: I woke up early one morning in early March and bought a bag of chocolates. Small Hershey’s chocolates, like you hand out on Halloween. At around 8 a.m., I stood outside the entrance of the New York Stock Exchange and started handing out chocolates to everyone walking inside. People would be staring at their feet like zombies as they walked in, but 100 percent of the time, they would stop, look up, take the chocolate, and they would smile.
 

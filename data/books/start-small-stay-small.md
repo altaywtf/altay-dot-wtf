@@ -1,10 +1,3 @@
----
-isbn: '0615373968'
-date: '2020-09-05'
-rating: '3/5'
-oneliner: 'Market comes first, marketing second, aesthetic third, and functionality a distant fourth.'
----
-
 ## The Chasm Between Developer and Entrepreneur
 
 The book is not anti-venture capital but it's against the dogma of every startup needs VC to proceed or succeed. It tries to narrow down the scope to the two types of entrepreneurs:

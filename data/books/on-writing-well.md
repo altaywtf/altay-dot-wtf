@@ -1,10 +1,3 @@
----
-isbn: '9780060891541'
-date: '2020-11-22'
-rating: '5/5'
-oneliner: 'An occasional short sentence can carry a tremendous punch.'
----
-
 I got the recommendation from [this list of DHH](https://signalvnoise.com/posts/3375-the-five-programming-books-that-meant-most-to-me). As a non-native English speaker trying to express himself, I think it's an enlightening guide. I'm not familiar with American literature. Yet it's evident that Zinsser is one of the best authors of non-fiction writing. He's also a wise teacher and an admirable New Yorker.
 
 _On Writing Well_ has four main sections: _Principles, Methods, Forms,_ and _Attitudes_. The first two focuses more on the fundamentals of non-fiction writing. They help to build checklists and take action. The latter two are about shaping identity as a non-fiction writer. They contain many examples, analyses, and advice around the mindset. _**"I am more interested in the intangibles that produce good writing—confidence, enjoyment, intention, integrity"**_ as he says.

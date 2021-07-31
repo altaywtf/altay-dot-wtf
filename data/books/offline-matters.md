@@ -1,10 +1,3 @@
----
-isbn: '9789063695781'
-date: '2021-07-16'
-rating: '4/5'
-oneliner: We are all bored and everything is boring. Occupied 24/7, doing nothing at all.
----
-
 I like the path of evolution of this book. It was born as a newsletter then grew into a fully-fledged resource that questions one of the biggest problems we're facing as humanity: why are blissfully ignoring the non-screen part of our lives?
 
 As a creative person from the field, Jess speaks the cruel truths, criticizes the numb and careless marketing approach blasting inboxes, and reminds us that life is eventually an offline platform. I admire the bold and confident tone. Sometimes we need to burn bridges to stop ourselves from crossing again.

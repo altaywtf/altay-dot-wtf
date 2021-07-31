@@ -1,10 +1,3 @@
----
-isbn: '0500021740'
-date: '2020-08-22'
-rating: '4/5'
-oneliner: 'A typeface is an abstract idea, a design that does not take any physical form, while a font is the physical manifestation of a typeface.'
----
-
 Many of the arcade fonts were designed for 8x8, 16x16 or 24x24 due to limitations of resources. This book is restricted to 8x8 variations since they were the pioneers.
 
 ### Difference between Typeface and Font

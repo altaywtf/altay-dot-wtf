@@ -1,10 +1,3 @@
----
-isbn: '0735211299'
-date: '2019-01-16'
-rating: '5/5'
-oneliner: "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done."
----
-
 **Introduction: Story of James**
 
 Tells about baseball bat accident that happened to him in high school and had to taken to a hospital with a helicopter and stayed in coma for a few days and serious injuries including one of his eyeball popping up because of the stuffed nose thing. However, he bounced back from this and made great success at university.

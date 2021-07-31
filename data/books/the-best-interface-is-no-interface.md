@@ -1,10 +1,3 @@
----
-isbn: '9780133890334'
-date: '2020-10-19'
-rating: '4/5'
-oneliner: Our love for the digital interface is out of control, and our obsession is ruining the future of innovation.
----
-
 I am fond of the doze and accuracy of sarcasm in Krishna's tone, and I'm glad that he joined Google to work on the pain-points he addressed in this book.
 
 It's not a surprise many companies are already implementing some of the things he proposed, and hopefully more to come.

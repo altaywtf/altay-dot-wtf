@@ -1,17 +1,17 @@
 [
   {
-    "details": "Building the user-facing parts since 2017.",
-    "name": "Put.io",
+    "description": "Building the user-facing parts since 2017.",
+    "title": "Put.io",
     "url": "https://put.io"
   },
   {
-    "details": "Maintaining an open-source payment gateway for NANO cryptocurrency.",
-    "name": "Accept Nano",
+    "description": "Maintaining an open-source payment gateway for NANO cryptocurrency.",
+    "title": "Accept Nano",
     "url": "https://github.com/accept-nano/accept-nano-client"
   },
   {
-    "details": "Source code of this website; powered with NextJS, markdown, and a few APIs.",
-    "name": "altay-dot-wtf",
+    "description": "Source code of this website; powered with NextJS, markdown, and a few APIs.",
+    "title": "altay-dot-wtf",
     "url": "https://github.com/altaywtf/altay-dot-wtf"
   }
 ]

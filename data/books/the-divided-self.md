@@ -1,10 +1,3 @@
----
-isbn: '0140135375'
-date: '2019-01-26'
-rating: '3/5'
-oneliner: 'An ontological secure person has his sense of the world, his identity and other beings in the world as an autonomous individual.'
----
-
 ## The Existential-Phenomenological Foundations for A Science of Persons
 
 The term schizoid refers to an individual the totality of whose experience is split in two main ways: in the first place, there is a rent in his relation with his world and, in the second, there is a disruption of his relation with himself.

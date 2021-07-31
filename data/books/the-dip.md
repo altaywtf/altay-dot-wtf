@@ -1,10 +1,3 @@
----
-isbn: '0749928301'
-date: '2020-08-29'
-rating: '4/5'
-oneliner: "'Quitters never win and winners never quit' is a bad advice. Winners quit all the time. They just quit the right stuff at the right time."
----
-
 ## Being the Best in the World is Seriously Underrated
 
 "Quitters never win and winners never quit" is a bad advice. Winners quit all the time. They just quit the right stuff at the right time.

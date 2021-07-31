@@ -1,10 +1,3 @@
----
-isbn: '1408893215'
-date: '2020-10-17'
-rating: '4/5'
-oneliner: 'As long as we continue to be obsessed with work, work, and more work, the number of superfluous jobs will only continue to grow.'
----
-
 ## The Return of the Utopia
 
 For roughly 99% of the history, 99% of the humanity was poor, hungry, dirty, afraid, stupid and sick. In the last 200 years, that has been changed.

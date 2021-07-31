@@ -1,12 +1,3 @@
----
-isbn: '0241184835'
-date: '2018-12-23'
-rating: '3/5'
-oneliner: 'Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning.'
----
-
-Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning. 🤡
-
 Cognitive psychologists define habits as _automatic behaviors triggered by situational cues_, things we do with little or no conscious thought.
 
 ## The Habit Zone

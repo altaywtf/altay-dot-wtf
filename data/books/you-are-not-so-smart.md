@@ -1,10 +1,3 @@
----
-isbn: '9781101545355'
-date: '2021-01-24'
-rating: '4/5'
-oneliner: 'In science, we move closer to the truth by seeking evidence to the contrary. Perhaps the same method should inform our opinions as well.'
----
-
 ## Priming
 
 External factors, certain behavior, and prior experience effects our unconscious thinking while making decisions.

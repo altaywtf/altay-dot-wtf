@@ -1,10 +1,3 @@
----
-isbn: '0593328973'
-date: '2020-12-03'
-rating: '4/5'
-oneliner: The practice requires you to seek out experience of uncertainty to place yourself in a room where you will create discomfort.
----
-
 Post-industrialist teachings of Seth are here to awaken us one more time.
 
 ## Part 1: Trust Yourself

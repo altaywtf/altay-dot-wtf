@@ -1,10 +1,3 @@
----
-isbn: '9780062888433'
-date: '2020-11-30'
-rating: '5/5'
-oneliner: 'Living well does not mean avoiding suffering; it means suffering for the right reasons.'
----
-
 It's one of the books you would read in a couple of days but needs a lifetime to absorb. I've read the first book –The Subtle Art of Not Giving a Fuck– of the series last year, but it didn't make the same impact as this one. I presume it's because of my lack of internalization. This one has been on my to-read list since it came out, but the actual trigger was a random retweet. First, it led me to Mark's blog. I think it was the first time I've spent two hours on a website that contains no-bullshit material. Then I skimmed my highlights on the first book, and they made much more sense. There's also [a great post](https://markmanson.net/not-giving-a-fuck) that summarizes the point of it. This book, however, is a next-level guidance to tame your existential crisis. It brings up many uncomfortable truths that we try to avoid in our daily lives and offers guidance on dealing with them. As Mark says, "Pain is the universal constant of life." We can either choose to suffer from it or grow by experiencing and eliminating it.
 
 ## Part 1: Hope

@@ -1,10 +1,3 @@
----
-isbn: '9781988575018'
-date: '2020-10-18'
-rating: '5/5'
-oneliner: Assume nobody is going to help you. If someone does, then it gets even better.
----
-
 Byte-size stories from Derek Sivers' experience in the music industry.
 
 It's a great guide for finding a niche, building an audience, being resourceful, and expanding the network by developing valuable relationships with people.

@@ -1,10 +1,3 @@
----
-isbn: '3952506907'
-date: '2020-12-22'
-rating: '4/5'
-oneliner: It's impossible to learn which you believe you already know.
----
-
 "Warrior-philosopher", is a person who practices the art of living in his or her actions. Stoicism seeks for answers on "how to live" and expects us to reflect our values to our actions.
 
 > If you didn't learn these things in order to demonstrate them in practice, what did you learn them for?

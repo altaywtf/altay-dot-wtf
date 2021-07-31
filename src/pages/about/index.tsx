@@ -1,13 +1,14 @@
 import type { InferGetStaticPropsType } from 'next'
-import type { About } from 'types'
 import { Box, SxStyleProp } from 'rebass'
-import { getContentDetails } from 'core/api/content'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
 import { aboutCopy } from 'config/copy'
+import { readMarkdownFile } from 'utils/md'
 
 export const getStaticProps = async () => ({
-  props: await getContentDetails<About>('about', 'about'),
+  props: {
+    markdown: readMarkdownFile('about.md'),
+  },
 })
 
 const sx: SxStyleProp = {

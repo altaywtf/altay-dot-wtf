@@ -1,10 +1,3 @@
----
-isbn: '9781541137134'
-date: '2019-07-23'
-rating: '3/5'
-oneliner: 'Supposedly it takes 10.000 hours to master something. Unfortunately, most people spend 10.000 hours trying to be jerks to others.'
----
-
 The reinvention is:
 
 - ​Defining freedom in different ways (reducing expectations, increasing sources of income so no one source controls you).

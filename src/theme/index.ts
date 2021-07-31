@@ -33,6 +33,7 @@ export const createTheme = (options: ThemeOptions) => ({
       },
     } as SxStyleProp,
     linkSilent: {
+      cursor: 'pointer',
       color: 'textTertiary',
       fontSize: 0,
       textDecoration: 'none',

@@ -1,10 +1,3 @@
----
-isbn: '1416572295'
-date: '2019-01-06'
-rating: '4/5'
-oneliner: "The physical reality does not exist until a measurement is made, which poses its own philosophical problems: Scrodinger's Cat and Wigner's Friend"
----
-
 ## The Copenhagen Interpretation
 
 Essential randomness of quantum measurement and philosophical problems raised by that.

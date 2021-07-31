@@ -1,89 +1,90 @@
-import { Content } from 'types'
-import { Box, Text, Flex, SxStyleProp, Heading, Link } from 'rebass'
-import NextLink from 'next/link'
-import { formatDate } from 'utils/date'
+export const foo = 'bar'
 
-type BackLinkProps = {
-  slug: string
-  data: Content
-}
+// import { Content } from 'types'
+// import { Box, Text, Flex, SxStyleProp, Heading, Link } from 'rebass'
+// import NextLink from 'next/link'
+// import { formatDate } from 'utils/date'
 
-const getTitle = (item: Content) => {
-  switch (item.type) {
-    case 'book':
-    case 'note':
-      return item.meta.title
+// type BackLinkProps = {
+//   slug: string
+//   data: Content
+// }
 
-    default:
-      return '__NEVER__'
-  }
-}
+// const getTitle = (item: Content) => {
+//   switch (item.type) {
+//     case 'note':
+//       return item.meta.title
 
-const humanizeType = (type: Content['type']) => type.split('-').join(' ')
+//     default:
+//       return '__NEVER__'
+//   }
+// }
 
-const getURLForContent = (content: Content, slug: string) => {
-  switch (content.type) {
-    case 'note':
-      return `/notes/${content.slug}?source=${slug}`
+// const humanizeType = (type: Content['type']) => type.split('-').join(' ')
 
-    case 'book':
-      return `/books/${content.slug}?source=${slug}`
+// const getURLForContent = (content: Content, slug: string) => {
+//   switch (content.type) {
+//     case 'note':
+//       return `/notes/${content.slug}?source=${slug}`
 
-    default:
-      return '__NEVER__'
-  }
-}
+//     // case 'book':
+//     //   return `/books/${content.slug}?source=${slug}`
 
-const itemStyle: SxStyleProp = {
-  borderRadius: 4,
-  cursor: 'pointer',
-  '&:hover': {
-    backgroundColor: 'backgroundHeader',
-  },
-}
+//     default:
+//       return '__NEVER__'
+//   }
+// }
 
-const BackLink: React.FC<BackLinkProps> = ({ data, slug }) => (
-  <NextLink href={getURLForContent(data, slug)} passHref>
-    <Link href={getURLForContent(data, slug)} variant="backlink" sx={{ textDecoration: 'none' }}>
-      <Box sx={itemStyle} p={2}>
-        <Text color="linkPrimary" fontSize={0} fontWeight="bold">
-          {getTitle(data)}
-        </Text>
+// const itemStyle: SxStyleProp = {
+//   borderRadius: 4,
+//   cursor: 'pointer',
+//   '&:hover': {
+//     backgroundColor: 'backgroundHeader',
+//   },
+// }
 
-        <Box mt={-1}>
-          <Text color="textSecondary" display="inline" fontSize={14}>
-            {humanizeType(data.type)}
-          </Text>
+// const BackLink: React.FC<BackLinkProps> = ({ data, slug }) => (
+//   <NextLink href={getURLForContent(data, slug)} passHref>
+//     <Link href={getURLForContent(data, slug)} variant="backlink" sx={{ textDecoration: 'none' }}>
+//       <Box sx={itemStyle} p={2}>
+//         <Text color="linkPrimary" fontSize={0} fontWeight="bold">
+//           {getTitle(data)}
+//         </Text>
 
-          <Text color="textSecondary" display="inline-block" fontSize={14} mx={1}>
-            ·
-          </Text>
+//         <Box mt={-1}>
+//           <Text color="textSecondary" display="inline" fontSize={14}>
+//             {humanizeType(data.type)}
+//           </Text>
 
-          <Text color="textTertiary" display="inline" fontSize={14}>
-            {formatDate(data.meta.date)}
-          </Text>
-        </Box>
-      </Box>
-    </Link>
-  </NextLink>
-)
+//           <Text color="textSecondary" display="inline-block" fontSize={14} mx={1}>
+//             ·
+//           </Text>
 
-const BackLinks: React.FC<{ slug: string; type: Content['type']; data: Content[] }> = ({
-  slug,
-  type,
-  data,
-}) => (
-  <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
-    <Heading fontSize={1}>Links to this {humanizeType(type)}</Heading>
+//           <Text color="textTertiary" display="inline" fontSize={14}>
+//             {formatDate(data.meta.date)}
+//           </Text>
+//         </Box>
+//       </Box>
+//     </Link>
+//   </NextLink>
+// )
 
-    <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
-      {data.map((item, index) => (
-        <Box width={[1, 1, 1 / 2]} key={index} mt={1} px={2}>
-          <BackLink data={item} slug={slug} />
-        </Box>
-      ))}
-    </Flex>
-  </Box>
-)
+// const BackLinks: React.FC<{ slug: string; type: Content['type']; data: Content[] }> = ({
+//   slug,
+//   type,
+//   data,
+// }) => (
+//   <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
+//     <Heading fontSize={1}>Links to this {humanizeType(type)}</Heading>
 
-export default BackLinks
+//     <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
+//       {data.map((item, index) => (
+//         <Box width={[1, 1, 1 / 2]} key={index} mt={1} px={2}>
+//           <BackLink data={item} slug={slug} />
+//         </Box>
+//       ))}
+//     </Flex>
+//   </Box>
+// )
+
+// export default BackLinks

@@ -1,10 +1,3 @@
----
-isbn: '1328972356'
-date: '2019-01-20'
-rating: '4/5'
-oneliner: 'All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.'
----
-
 The book starts with Paul's moving story from Vancouver to Tofino, a small town:
 
 Yet we soon learned that living in the woods on an island does something funny—it forces you to go deep within your own thoughts. There’s not a whole lot else you can do, especially if you don’t have a television or even Netflix. And at first, exploring your own thoughts is one of the scariest things in the world. (A study at the University of Virginia by Timothy Wilson found that people would rather get electric shocks than simply be alone with their thoughts.) But then again, if you sit with your thoughts for a while, they can reveal some mind-set-changing ideas.

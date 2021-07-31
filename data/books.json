@@ -1,0 +1,1084 @@
+{
+  "updatedAt": "2021-07-30T14:25:46.132Z",
+  "books": [
+    {
+      "authors": [
+        "Jess Henderson"
+      ],
+      "coverImage": {
+        "url": "/images/books/offline-matters/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABAwQDAAAAAAAAAAAAAAADAAECBAUGEQdTY//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8As3jjpg1rDjlmVO0Qi1urH1x80RFB/9k=",
+        "aspectRatio": 0.8067226890756303
+      },
+      "dateRead": "2021-07-16",
+      "identifiers": [
+        {
+          "identifier": "9063695780",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9789063695781",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/offline-matters"
+      },
+      "quote": "We are all bored and everything is boring. Occupied 24/7, doing nothing at all.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://cdn.webshopapp.com/shops/71491/files/331301478/jess-henderson-offline-matters.jpg"
+      },
+      "slug": "offline-matters",
+      "title": "Offline Matters"
+    },
+    {
+      "authors": [
+        "David McRaney"
+      ],
+      "coverImage": {
+        "url": "/images/books/you-are-not-so-smart/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABBAMAAwAAAAAAAAAAAAABAAIEEQMFEgYHIf/EABQBAQAAAAAAAAAAAAAAAAAAAAb/xAAbEQACAQUAAAAAAAAAAAAAAAABAgADESExQf/aAAwDAQACEQMRAD8Av+uJeLYeFauVM12ufIyMcXvbHGPo9uF8toWas0PpsoiIHUYhznsYF2vuf//Z",
+        "aspectRatio": 0.6666666666666666
+      },
+      "dateRead": "2021-01-24",
+      "identifiers": [
+        {
+          "identifier": "9781101545355",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1101545356",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/you-are-not-so-smart"
+      },
+      "quote": "In science, we move closer to the truth by seeking evidence to the contrary. Perhaps the same method should inform our opinions as well.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/817n53mM+2L.jpg"
+      },
+      "slug": "you-are-not-so-smart",
+      "title": "You Are Not So Smart"
+    },
+    {
+      "authors": [
+        "Jonas Salzgeber"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-little-book-of-stoicism/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAACAgICAwAAAAAAAAAAAAABAwACERIFQQQTMv/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwC0catPHePdFU0eC5rt3k2sPYy19c5+RtgDoADqIiSntf/Z",
+        "aspectRatio": 0.625
+      },
+      "dateRead": "2020-12-22",
+      "identifiers": [
+        {
+          "identifier": "9783952506912",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "3952506915",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-little-book-of-stoicism"
+      },
+      "quote": "It's impossible to learn which you believe you already know.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/publisher/content/images/frontcover/X8SaDwAAQBAJ?fife=w600"
+      },
+      "slug": "the-little-book-of-stoicism",
+      "title": "The Little Book of Stoicism"
+    },
+    {
+      "authors": [
+        "Leonard Mlodinow"
+      ],
+      "coverImage": {
+        "url": "/images/books/subliminal/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAAABQIHAAAAAAAAAAAAAAAAAQIDBDFBBQYHERMyUf/EABUBAQEAAAAAAAAAAAAAAAAAAAUH/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwCAZ1ImxkcLGA5bQ22ZpSlMDa9e1bmfoAAMULI//9k=",
+        "aspectRatio": 0.6512890094979648
+      },
+      "dateRead": "2020-12-20",
+      "identifiers": [
+        {
+          "identifier": "0241960541",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9780241960547",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/subliminal"
+      },
+      "quote": "If your mind's natural view of the world is skewed, it's skewed for a reason.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://cdn2.penguin.com.au/covers/original/9780241960547.jpg"
+      },
+      "slug": "subliminal",
+      "title": "Subliminal"
+    },
+    {
+      "authors": [
+        "Austin Kleon"
+      ],
+      "coverImage": {
+        "url": "/images/books/keep-going/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABR0AAAUdAG5O1bwAAAAP0lEQVQI1wE0AMv/AABmsVay/wBRgz92VQAAc79jvv9btPIGZnMAAGqyc8r/tP//AESXAAAvcQA4eAA9fAAGRz9+FGr2R+6sAAAAAElFTkSuQmCC",
+        "aspectRatio": 1
+      },
+      "dateRead": "2020-12-13",
+      "identifiers": [
+        {
+          "identifier": "9781523507863",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1523507861",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/keep-going"
+      },
+      "quote": "Walking is a way to find possibility in your life when there doesn't seem to be any left.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=3udrDwAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=4"
+      },
+      "slug": "keep-going",
+      "title": "Keep Going"
+    },
+    {
+      "authors": [
+        "Joel Bakan"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-new-corporation/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAeEAACAgICAwAAAAAAAAAAAAABAwACBQYEEhEhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAHBEAAQQDAQAAAAAAAAAAAAAAAQADEZECBCIy/9oADAMBAAIRAxEAPwCTP6LrKcs9bMTTkXr1Ba57bXt8j2T3HkxEQ+XnJ9G1Q8dRiBwKC//Z",
+        "aspectRatio": 0.6477732793522267
+      },
+      "dateRead": "2020-12-11",
+      "identifiers": [
+        {
+          "identifier": "9780735238855",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0735238855",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-new-corporation"
+      },
+      "quote": "Corporation's freedom detracts from our freedom, and it's a zero-sum game.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://media2.hugendubel.de/shop/coverscans/388/38849663_9781984899736_xl.jpg"
+      },
+      "slug": "the-new-corporation",
+      "title": "The New Corporation"
+    },
+    {
+      "authors": [
+        "Anne Lamott"
+      ],
+      "coverImage": {
+        "url": "/images/books/bird-by-bird/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAcEAACAgMBAQAAAAAAAAAAAAABAgMEABEhBRX/xAAVAQEBAAAAAAAAAAAAAAAAAAADBf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKfyvLtM9mzRZ5pnaVyt2zGNsSTpVlCqO8AAAHBjGMnlf//Z",
+        "aspectRatio": 0.6486486486486487
+      },
+      "dateRead": "2020-12-06",
+      "identifiers": [
+        {
+          "identifier": "9780385480017",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0385480016",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/bird-by-bird"
+      },
+      "quote": "Perfectionism is the voice of the oppressor, the enemy of people. It will keep you cramped and insane your whole life.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://assets.thalia.media/img/artikel/028fbbab27d1ee941bf947b216223ea1de341606-00_BF2000-2000.jpeg"
+      },
+      "slug": "bird-by-bird",
+      "title": "Bird by Bird"
+    },
+    {
+      "authors": [
+        "Seth Godin"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-practice/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAViAAAFYgGsYVycAAAAM0lEQVQI1wEoANf/AABzsgANNwCHzAA4uvUAodEdqukAbeX/lP//WtP/AABWkwAmUwBcmUyWESwgXSPqAAAAAElFTkSuQmCC",
+        "aspectRatio": 0.7069219440353461
+      },
+      "dateRead": "2020-12-03",
+      "identifiers": [
+        {
+          "identifier": "9780593328989",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0593328981",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-practice"
+      },
+      "quote": "The practice requires you to seek out experience of uncertainty to place yourself in a room where you will create discomfort.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=HAflDwAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "the-practice",
+      "title": "The Practice"
+    },
+    {
+      "authors": [
+        "Mark Manson"
+      ],
+      "coverImage": {
+        "url": "/images/books/everything-is-fucked/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAACAgIDAQAAAAAAAAAAAAABAgAEAwUREiEx/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AKxqNDT1FBKNE51r4mfqHys7esWPLNyT6T9MREfpaqut/9k=",
+        "aspectRatio": 0.6584362139917695
+      },
+      "dateRead": "2020-11-30",
+      "identifiers": [
+        {
+          "identifier": "9780062888471",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0062888471",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/everything-is-fucked"
+      },
+      "quote": "Living well does not mean avoiding suffering; it means suffering for the right reasons.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=XYdgDwAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "everything-is-fucked",
+      "title": "Everything Is F*cked"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "coverImage": {
+        "url": "/images/books/animal-farm/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAIDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAACAgAHAAAAAAAAAAAAAAAAAQMEAgUGERYz0//EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAIRElH/2gAMAwEAAhEDEQA/AKiK7qRxYHy7OFuk+qp4AALgp6Lh/9k=",
+        "aspectRatio": 0.6130268199233716
+      },
+      "dateRead": "2020-11-29",
+      "identifiers": [
+        {
+          "identifier": "9780241483053",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0241483050",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/animal-farm"
+      },
+      "quote": "Beasts of England beasts of Ireland, Beasts of every land and clime, Hearken to my joyful tidings, Of the golden future time.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://www.penguin.co.uk/content/dam/prh/books/564/56486/9780141036137.jpg.transform/PRHDesktopWide_small/image.jpg"
+      },
+      "slug": "animal-farm",
+      "title": "Animal Farm"
+    },
+    {
+      "authors": [
+        "Kelly Small"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-conscious-creative/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAfEAABBAAHAAAAAAAAAAAAAAADAAECBAUGBxESFDH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABsRAAICAwEAAAAAAAAAAAAAAAEDAJEREzJS/9oADAMBAAIRAxEAPwCv0wtghkunEGH1gCY1lojHMvGLdgnm80RFJ3M9G4kpXnkVP//Z",
+        "aspectRatio": 0.7142857142857143
+      },
+      "dateRead": "2020-11-23",
+      "identifiers": [
+        {
+          "identifier": "1487008023",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9781487008024",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-conscious-creative"
+      },
+      "quote": "I am committed to acting as ethically as I can while accepting my compulsory participation in a problematic capitalist paradigm.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/716NyUVKupL.jpg"
+      },
+      "slug": "the-conscious-creative",
+      "title": "The Conscious Creative"
+    },
+    {
+      "authors": [
+        "William Zinsser"
+      ],
+      "coverImage": {
+        "url": "/images/books/on-writing-well/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAABCcAAAQnAEmzTo0AAAAJUlEQVQI12PwyC1rmreU4cSxPf//vmVonjpl2aplDAz8MgxqxgDH5wxKt89e8gAAAABJRU5ErkJggg==",
+        "aspectRatio": 0.6620689655172414
+      },
+      "dateRead": "2020-11-22",
+      "identifiers": [
+        {
+          "identifier": "9780060891541",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0060891548",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/on-writing-well"
+      },
+      "quote": "An occasional short sentence can carry a tremendous punch.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=tPkZ3WU1BM8C&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "on-writing-well",
+      "title": "On Writing Well"
+    },
+    {
+      "authors": [
+        "Seth Godin"
+      ],
+      "coverImage": {
+        "url": "/images/books/this-is-marketing/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAfEAABBAEFAQAAAAAAAAAAAAABAAIEBQMGByEjMYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAG/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACETH/2gAMAwEAAhEDEQA/AICw3S1HR2ljW15r2Ro8zO1gMPGSe1xJPHpJJ+oiIyUqnI0Q2f/Z",
+        "aspectRatio": 0.7058823529411765
+      },
+      "dateRead": "2020-11-08",
+      "identifiers": [
+        {
+          "identifier": "9780525540847",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0525540849",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/this-is-marketing"
+      },
+      "quote": "What people say about you is more important than what you say.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=lzBeDwAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "this-is-marketing",
+      "title": "This Is Marketing"
+    },
+    {
+      "authors": [
+        "Golden Krishna"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-best-interface-is-no-interface/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAIElEQVQI12P4//9/eXk5kGTYuXOnDRgwlIMBgsXAwAAAqIoRO4MKa5EAAAAASUVORK5CYII=",
+        "aspectRatio": 0.6666666666666666
+      },
+      "dateRead": "2020-10-19",
+      "identifiers": [
+        {
+          "identifier": "9780133890426",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0133890422",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-best-interface-is-no-interface"
+      },
+      "quote": "Our love for the digital interface is out of control, and our obsession is ruining the future of innovation",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=CgR1BgAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "the-best-interface-is-no-interface",
+      "title": "The Best Interface Is No Interface"
+    },
+    {
+      "authors": [
+        "Rutger Bregman"
+      ],
+      "coverImage": {
+        "url": "/images/books/utopia-for-realists/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAcEAACAwADAQAAAAAAAAAAAAACAwABBAUREoH/xAAVAQEBAAAAAAAAAAAAAAAAAAAFBv/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAORUv/aAAwDAQACEQMRAD8AjM46ORSGvRsKmtr0VLzoAfg0vqoiIEKa+RkuGtcMQGOz/9k=",
+        "aspectRatio": 0.6512890094979648
+      },
+      "dateRead": "2020-10-17",
+      "identifiers": [
+        {
+          "identifier": "9781408890257",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1408890259",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/utopia-for-realists"
+      },
+      "quote": "As long as we continue to be obsessed with work, work, and more work, the number of superfluous jobs will only continue to grow.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=L0-jDQAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "utopia-for-realists",
+      "title": "Utopia for Realists"
+    },
+    {
+      "authors": [
+        "Derek Sivers"
+      ],
+      "coverImage": {
+        "url": "/images/books/anything-you-want/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAgEAACAQQBBQAAAAAAAAAAAAABAgADBAURBgchMVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQISMVH/2gAMAwEAAhEDEQA/AJWC6ocix2OFrbvbiklWqVAVkA3UY60rADz6+7PeIiVwngldNbP/2Q==",
+        "aspectRatio": 0.7069219440353461
+      },
+      "dateRead": "2020-10-07",
+      "identifiers": [
+        {
+          "identifier": "9780698409026",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0698409027",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/anything-you-want"
+      },
+      "quote": "If you want to be useful, you can start now. Just put one percent of your vision, and you are in the game.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "http://books.google.com/books/content?id=COVJBgAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "anything-you-want",
+      "title": "Anything You Want"
+    },
+    {
+      "authors": [
+        "Derek Sivers"
+      ],
+      "coverImage": {
+        "url": "/images/books/your-music-and-people/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALklEQVQI12O4P+/D/5f/99VdYPATTopVLPTij2dQZjBTYDAEkgzJamXF5m1AMQBdqA21SUiEUQAAAABJRU5ErkJggg==",
+        "aspectRatio": 0.8135593220338984
+      },
+      "dateRead": "2020-10-18",
+      "identifiers": [
+        {
+          "identifier": "9781988575018",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/your-music-and-people"
+      },
+      "quote": "Assume nobody is going to help you. If someone does, then it gets even better.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://sive.rs/images/DerekSivers-cover-YourMusicAndPeople-400x492.png"
+      },
+      "slug": "your-music-and-people",
+      "title": "Your Music and People"
+    },
+    {
+      "authors": [
+        "Austin Kleon"
+      ],
+      "coverImage": {
+        "url": "/images/books/show-your-work/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAcEAACAgMBAQAAAAAAAAAAAAACAwEFAAQRBqH/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EABsRAAEEAwAAAAAAAAAAAAAAAAEAAgMRElGR/9oADAMBAAIRAxEAPwCj1flNXbZYbDrG9FjdthlCLV6AiZnvIFZiPzGMZI3Tyg0HHqQYjS//2Q==",
+        "aspectRatio": 1
+      },
+      "dateRead": "2020-10-04",
+      "identifiers": [
+        {
+          "identifier": "9780761181361",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0761181369",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/show-your-work"
+      },
+      "quote": "Unless you are a real ninja, rockstar, or guru, stay away from those words.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=fM0kAgAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=4"
+      },
+      "slug": "show-your-work",
+      "title": "Show Your Work!"
+    },
+    {
+      "authors": [
+        "Jake Knapp",
+        "John Zeratsky"
+      ],
+      "coverImage": {
+        "url": "/images/books/make-time/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAABBAIDAQAAAAAAAAAAAAABAAIDBAUREzNBgf/EABUBAQEAAAAAAAAAAAAAAAAAAAUH/8QAGxEAAgEFAAAAAAAAAAAAAAAAAQIAAxETIUH/2gAMAwEAAhEDEQA/AKvGw450VhzcRUZu1YJDJJgN8z9ns9Oz9REUxrscjb6YooFhP//Z",
+        "aspectRatio": 0.6539509536784741
+      },
+      "dateRead": "2020-09-19",
+      "identifiers": [
+        {
+          "identifier": "0593079582",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9780593079584",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/make-time"
+      },
+      "quote": "Change comes from resetting defaults, installing barriers and designing how you spend your time.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/8127OzsAQVL.jpg"
+      },
+      "slug": "make-time",
+      "title": "Make Time"
+    },
+    {
+      "authors": [
+        "Jeremy Fairbank"
+      ],
+      "coverImage": {
+        "url": "/images/books/programming-elm/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAcEAABBAMBAAAAAAAAAAAAAAABAAIDBAUGESH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAwDAQACEQMRAD8AgG3bLcz2zZLJ2oq8U1iZznRwMLI288AaOng4AiIiIbKOX//Z",
+        "aspectRatio": 0.8333333333333334
+      },
+      "dateRead": "2020-09-08",
+      "identifiers": [
+        {
+          "identifier": "9781680507171",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1680507176",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/programming-elm"
+      },
+      "quote": "Elm functions are curried, which is the fancy way of saying they take one argument at a time.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://pragprog.com/titles/jfelm/programming-elm/jfelm.jpg"
+      },
+      "slug": "programming-elm",
+      "title": "Programming Elm"
+    },
+    {
+      "authors": [
+        "Rob Walling"
+      ],
+      "coverImage": {
+        "url": "/images/books/start-small-stay-small/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAA51AAAOdQG5Y1EyAAAAG0lEQVQI12MQBAOGS5cu/f//nwHIFBcXZ4AAAG1CBlJEAytHAAAAAElFTkSuQmCC",
+        "aspectRatio": 0.6694560669456067
+      },
+      "dateRead": "2020-09-05",
+      "identifiers": [
+        {
+          "identifier": "9780615373966",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0615373968",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/start-small-stay-small"
+      },
+      "quote": "Market comes first, marketing second, aesthetic third, and functionality a distant fourth.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=XYBhUjyi-WYC&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "start-small-stay-small",
+      "title": "Start Small, Stay Small"
+    },
+    {
+      "authors": [
+        "Jon Yablonski"
+      ],
+      "coverImage": {
+        "url": "/images/books/laws-of-ux/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAdEAABBAIDAAAAAAAAAAAAAAAAAQIDBgVhBBET/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABoRAQADAAMAAAAAAAAAAAAAAAEAAgMSMVH/2gAMAwEAAhEDEQA/AJuu2yzxYXisjsuWa1Gr0nvtdAABxPIDTS5dBe5//9k=",
+        "aspectRatio": 0.6666666666666666
+      },
+      "dateRead": "2020-08-29",
+      "identifiers": [
+        {
+          "identifier": "149205531X",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9781492055310",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/laws-of-ux"
+      },
+      "quote": "Use more meaningful metrics like \"helping people to achieve their goals\" rather than \"daily active users\" or \"time spent on site\".",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/publisher/content/images/frontcover/AOneDwAAQBAJ?fife=w600-h800"
+      },
+      "slug": "laws-of-ux",
+      "title": "Laws of UX"
+    },
+    {
+      "authors": [
+        "Seth Godin"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-dip/cover.png",
+        "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQI12M4fOhQTW3tms3bGJ69fvP//3fDxukMDOpBrDXTGMSdGBjEHRkEbYAkAJ8JD7S2poZWAAAAAElFTkSuQmCC",
+        "aspectRatio": 0.75
+      },
+      "dateRead": "2020-08-29",
+      "identifiers": [
+        {
+          "identifier": "9781101216347",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1101216344",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-dip"
+      },
+      "quote": "\"Quitters never win and winners never quit\" is a bad advice. Winners quit all the time. They just quit the right stuff at the right time.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=HFsc9EtC85MC&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "the-dip",
+      "title": "The Dip"
+    },
+    {
+      "authors": [
+        "David Hurst Thomas",
+        "Andrew Hunt"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-pragmatic-programmer/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAgEAACAQQBBQAAAAAAAAAAAAABAwACBQYRBBIUIUFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AIxl+e3PkX1ju0tqixKKjQpHTTspo2QN+z5+mIiUhOt//9k=",
+        "aspectRatio": 0.7643312101910829
+      },
+      "dateRead": "2020-08-27",
+      "identifiers": [
+        {
+          "identifier": "0135957052",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9780135957059",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-pragmatic-programmer"
+      },
+      "quote": "A dead program normally does a lot less damage than a crippled one.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/tpp20.jpg"
+      },
+      "slug": "the-pragmatic-programmer",
+      "title": "The Pragmatic Programmer"
+    },
+    {
+      "authors": [
+        "Toshi Omigari"
+      ],
+      "coverImage": {
+        "url": "/images/books/arcade-game-typography/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAACAgIDAQAAAAAAAAAAAAABAgAEAwUHEUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQIRITH/2gAMAwEAAhEDEQA/AIjf5P3tm02R8OtUgKgCVQB0qhR78EREFE44XS0f/9k=",
+        "aspectRatio": 0.730593607305936
+      },
+      "dateRead": "2020-08-22",
+      "identifiers": [
+        {
+          "identifier": "0500021740",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9780500021743",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/arcade-game-typography"
+      },
+      "quote": "A typeface is an abstract idea, a design that does not take any physical form, while a font is the physical manifestation of a typeface.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71R39Lc9BYL.jpg"
+      },
+      "slug": "arcade-game-typography",
+      "title": "Arcade Game Typography"
+    },
+    {
+      "authors": [
+        "Scott H. Young"
+      ],
+      "coverImage": {
+        "url": "/images/books/ultralearning/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAfEAABAwQDAQAAAAAAAAAAAAABAAIhAwQFERIxQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAjH/2gAMAwEAAhEDEQA/AIHcZ6q6oN2GKHFrWDVlTEAAfO4k+mUREytPmMpy/9k=",
+        "aspectRatio": 0.6629834254143646
+      },
+      "dateRead": "2019-08-25",
+      "identifiers": [
+        {
+          "identifier": "0008305706",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9780008305703",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/ultralearning"
+      },
+      "quote": "In chemical reactions, there are rate-determining steps which affects the time required to complete the reaction. Your weakest point is the rate-determining step.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://images-eu.ssl-images-amazon.com/images/I/51PfH156fIL._SX342_SY445_QL70_ML2_.jpg"
+      },
+      "slug": "ultralearning",
+      "title": "Ultralearning"
+    },
+    {
+      "authors": [
+        "James Altucher"
+      ],
+      "coverImage": {
+        "url": "/images/books/reinvent-yourself/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAgEAABAwIHAAAAAAAAAAAAAAADAAECBAYFESElQVJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKsMvm4ogLuDPnUnlrTi5LN+vqIiZP/Z",
+        "aspectRatio": 0.665742024965326
+      },
+      "dateRead": "2019-07-23",
+      "identifiers": [
+        {
+          "identifier": "1541137132",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9781541137134",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/reinvent-yourself"
+      },
+      "quote": "Supposedly it takes 10.000 hours to master something. Unfortunately, most people spend 10.000 hours trying to be jerks to others.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/51goz7Jqp7L.jpg"
+      },
+      "slug": "reinvent-yourself",
+      "title": "Reinvent Yourself"
+    },
+    {
+      "authors": [
+        "R. Laing"
+      ],
+      "coverImage": {
+        "url": "/images/books/the-divided-self/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAABBQADAQAAAAAAAAAAAAABAAIDBREEByEx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgb/xAAbEQABBAMAAAAAAAAAAAAAAAABAAMEkRNSU//aAAwDAQACEQMRAD8AqlR1hUDiPyxvRs8zsbYPaNMrj8HiIilxMkdDZRwNail//9k=",
+        "aspectRatio": 0.7511737089201878
+      },
+      "dateRead": "2019-01-26",
+      "identifiers": [
+        {
+          "identifier": "9780141962085",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0141962089",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/the-divided-self"
+      },
+      "quote": "An ontological secure person has his sense of the world, his identity and other beings in the world as an autonomous individual.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=4JT-12rMtJsC&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "the-divided-self",
+      "title": "The Divided Self"
+    },
+    {
+      "authors": [
+        "Paul Jarvis"
+      ],
+      "coverImage": {
+        "url": "/images/books/company-of-one/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgADBAUGBxESEyIxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAIF/8QAHxEAAQMDBQAAAAAAAAAAAAAAAQIDBAAFMUFCUWFx/9oADAMBAAIRAxEAPwCNym/OsMRfPZU1xdwtMKe5WtvNiyhjz0sB7PwRESBJt0MPLAaTk7Rz5RjurLSSVHA16r//2Q==",
+        "aspectRatio": 0.6539509536784741
+      },
+      "dateRead": "2019-01-20",
+      "identifiers": [
+        {
+          "identifier": "9781328972354",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1328972356",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/company-of-one"
+      },
+      "quote": "All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81Jl8W3G6XL.jpg"
+      },
+      "slug": "company-of-one",
+      "title": "Company of One"
+    },
+    {
+      "authors": [
+        "James Clear"
+      ],
+      "coverImage": {
+        "url": "/images/books/atomic-habits/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAgEAACAAYCAwAAAAAAAAAAAAABAgADBAUGERIhBxMU/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AJzJvLuSY9lN9s9s+WXR0NxqqeXv28mCznHNtP2zEFmPWySYQhE5XZIX/9k=",
+        "aspectRatio": 0.6620689655172414
+      },
+      "dateRead": "2019-01-16",
+      "identifiers": [
+        {
+          "identifier": "9781473537804",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "1473537800",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/atomic-habits"
+      },
+      "quote": "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done.",
+      "rating": 5,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/713mzPe9SwS.jpg"
+      },
+      "slug": "atomic-habits",
+      "title": "Atomic Habits"
+    },
+    {
+      "authors": [
+        "Nassim Nicholas Taleb"
+      ],
+      "coverImage": {
+        "url": "/images/books/skin-in-the-game/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAABBAMAAwAAAAAAAAAAAAABAgMEEQAFBiEiQf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQACAwAAAAAAAAAAAAAAAAAAARESUf/aAAwDAQACEQMRAD8Ahna9PumOonRm9lKS1GUmM2EuFPo2kITdUCaSLP02T5OMYwhDZ6f/2Q==",
+        "aspectRatio": 0.6486486486486487
+      },
+      "dateRead": "2019-01-15",
+      "identifiers": [
+        {
+          "identifier": "9780241247488",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0241247489",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/skin-in-the-game"
+      },
+      "quote": "You will never fully convince someone that he is wrong; only reality can.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://books.google.com/books/content?id=oK42DwAAQBAJ&img=1&printsec=frontcover&source=gbs_api&zoom=3"
+      },
+      "slug": "skin-in-the-game",
+      "title": "Skin in the Game"
+    },
+    {
+      "authors": [
+        "Chad Orzel"
+      ],
+      "coverImage": {
+        "url": "/images/books/quantodog/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAdEAACAgMAAwAAAAAAAAAAAAABAgMEAAUGERIh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAbEQACAQUAAAAAAAAAAAAAAAABAgADERIhQf/aAAwDAQACEQMRAD8AgRdBW2ge7sua521cnd3lnmpl3dvY/SS3knGMYXFmMpTY4DfJ/9k=",
+        "aspectRatio": 0.6469002695417789
+      },
+      "dateRead": "2019-01-06",
+      "identifiers": [
+        {
+          "identifier": "9781416579014",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "141657901X",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/quantodog"
+      },
+      "quote": "The physical reality does not exist until a measurement is made, which poses its own philosophical problems: Scrodinger's Cat and Wigner's Friend.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71UzFdom9JL.jpg"
+      },
+      "slug": "quantodog",
+      "title": "How to Teach Quantum Physics to Your Dog"
+    },
+    {
+      "authors": [
+        "Nir Eyal"
+      ],
+      "coverImage": {
+        "url": "/images/books/hooked/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAfEAACAQQCAwAAAAAAAAAAAAABAgQAAwUhBhESE0H/xAAVAQEBAAAAAAAAAAAAAAAAAAADB//EABoRAQABBQAAAAAAAAAAAAAAAAEAAgMRIVH/2gAMAwEAAhEDEQA/ALxuFWMmL8tMxmoKvIvAR40hfWgFxl15qzfO9k7NKUqfW3NAvI67n//Z",
+        "aspectRatio": 0.6469002695417789
+      },
+      "dateRead": "2018-12-23",
+      "identifiers": [
+        {
+          "identifier": "9780698190665",
+          "type": "ISBN_13"
+        },
+        {
+          "identifier": "0698190661",
+          "type": "ISBN_10"
+        }
+      ],
+      "notes": {
+        "url": "/books/hooked"
+      },
+      "quote": "Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning.",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81L8JOVXJtL.jpg"
+      },
+      "slug": "hooked",
+      "title": "Hooked"
+    },
+    {
+      "authors": [
+        "Richard P. Feynman"
+      ],
+      "coverImage": {
+        "url": "/images/books/six-easy-pieces/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAeEAACAgICAwAAAAAAAAAAAAABAgMEABEFMRIhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ao7g+Kip0GirzWFQ2J5CC/l9PK7MdkHtmJ10OhoesYxhH/9k=",
+        "aspectRatio": 0.665742024965326
+      },
+      "dateRead": "2018-12-22",
+      "identifiers": [
+        {
+          "identifier": "UOM:39015034522352",
+          "type": "OTHER"
+        }
+      ],
+      "notes": {
+        "url": "/books/six-easy-pieces"
+      },
+      "quote": "Observation, reason, and experiment make up what we call the scientific method.",
+      "rating": 4,
+      "remoteCoverImage": {
+        "url": "https://m.media-amazon.com/images/I/51E53HCUKVL.jpg"
+      },
+      "slug": "six-easy-pieces",
+      "title": "Six Easy Pieces"
+    },
+    {
+      "authors": [
+        "James Altucher"
+      ],
+      "coverImage": {
+        "url": "/images/books/choose-yourself/cover.png",
+        "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAAABgMBAAAAAAAAAAAAAAAAAQMEBRECBhJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgX/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAIhA//aAAwDAQACEQMRAD8AsqGht41MmjGe2VJsnfGBSWZ82d1Z2foAAn26WLOxoOs//9k=",
+        "aspectRatio": 0.665742024965326
+      },
+      "dateRead": "2018-11-05",
+      "identifiers": [
+        {
+          "identifier": "1490313370",
+          "type": "ISBN_10"
+        },
+        {
+          "identifier": "9781490313375",
+          "type": "ISBN_13"
+        }
+      ],
+      "notes": {
+        "url": "/books/choose-yourself"
+      },
+      "quote": "You and I have the same twenty-four hours each day. Is that how you will spend yours?",
+      "rating": 3,
+      "remoteCoverImage": {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/41NQV1frrTL.jpg"
+      },
+      "slug": "choose-yourself",
+      "title": "Choose Yourself!"
+    }
+  ]
+}

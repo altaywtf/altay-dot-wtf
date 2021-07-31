@@ -1,10 +1,3 @@
----
-isbn: '0201409550'
-date: '2018-12-22'
-rating: '4/5'
-oneliner: 'Observation, reason, and experiment make up what we call the scientific method.'
----
-
 Everything we know is only some kind of approximation, because we know that we do not know all the laws as yet. Therefore, things must be learned only to be unlearned again or, more likely, to be corrected.
 
 ## Atoms in Motion
