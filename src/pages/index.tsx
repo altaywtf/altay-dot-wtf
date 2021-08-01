@@ -53,7 +53,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Box m={4} />
 
     <Box>
-      <Heading as="h3" fontSize={0} fontWeight="normal" color="textTertiary">
+      <Heading as="h3" fontSize={14} fontWeight="normal" color="textTertiary">
         Me on the internets
       </Heading>
 

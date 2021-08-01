@@ -54,7 +54,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                       <Box m={1} />
 
-                      <Text fontSize="14px" color="textTertiary">
+                      <Text fontSize={14} color="textTertiary">
                         by {item.author}
                       </Text>
                     </Box>
@@ -85,7 +85,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                     <Box m={1} />
 
-                    <Box width={1} fontSize="14px" lineHeight={1.2}>
+                    <Box width={1} fontSize={14} lineHeight={1.2}>
                       <Text color="textSecondary">{item.title}</Text>
                       <Text color="textTertiary">{item.creator}</Text>
                     </Box>

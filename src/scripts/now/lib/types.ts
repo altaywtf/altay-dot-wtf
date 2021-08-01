@@ -46,10 +46,12 @@ export type NowJSON = {
 }
 
 export const createNowJSON = ({
+  life,
   books,
   music,
   shows,
 }: {
+  life: string
   books: NowJSONBook[]
   music: NowJSONMusic[]
   shows: NowJSONShow[]
@@ -57,9 +59,9 @@ export const createNowJSON = ({
   updatedAt: new Date().toISOString(),
   sections: [
     {
-      _id: 'life', // @TODO: get this from a markdown
+      _id: 'life',
       title: '⏳ Life Updates',
-      data: "This is my final month in [Klarna](https://www.klarna.com/) and I'll be joining [Amie](https://amie.so) in August.",
+      data: life,
     },
     {
       _id: 'books',
