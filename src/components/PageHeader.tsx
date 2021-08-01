@@ -1,4 +1,4 @@
-import { Heading, Box, Text } from 'rebass'
+import { Heading, Box, Text, SxStyleProp } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -9,9 +9,10 @@ type Props = {
   title: string
   icon?: string
   description?: string
+  descriptionStyle?: SxStyleProp
 }
 
-const PageHeader: React.FC<Props> = ({ icon, title, description }) => (
+const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyle = {} }) => (
   <>
     <NextSeo
       title={title}
@@ -52,7 +53,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description }) => (
     </Heading>
 
     {description ? (
-      <Text fontSize={1} sx={{ div: { color: 'textTertiary' } }}>
+      <Text fontSize={1} sx={{ div: { color: 'textTertiary', ...descriptionStyle } }}>
         <Markdown>{description}</Markdown>
       </Text>
     ) : null}

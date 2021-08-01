@@ -1,30 +1,84 @@
+import type { InferGetStaticPropsType } from 'next'
 import { homeCopy } from 'config/copy'
-import { Box, Text, Link } from 'rebass'
-import NextLink from 'next/link'
-import { CgArrowRight } from 'react-icons/cg'
 import PageHeader from 'components/PageHeader'
+import { readMarkdownFile } from 'utils/md'
+import { getContactLinks, ContactLink } from 'api/contact'
+import { Box, Heading, Flex, Text, Link } from 'rebass'
+import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
 
-const Home: React.FC = () => (
+export const getStaticProps = async () => ({
+  props: {
+    description: readMarkdownFile('home.md'),
+    contactLinks: getContactLinks(),
+  },
+})
+
+const getContactLinkIcon = (title: ContactLink['title']) => {
+  switch (title) {
+    case 'Email':
+      return <VscMail />
+
+    case 'Twitter':
+      return <VscTwitter />
+
+    case 'Github':
+      return <VscGithubInverted />
+  }
+}
+
+const getContactLinkColor = (title: ContactLink['title']): string => {
+  switch (title) {
+    case 'Email':
+      return 'linkPrimary'
+
+    case 'Twitter':
+      return '#1DA1F2'
+
+    case 'Github':
+      return 'text'
+  }
+}
+
+const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  description,
+  contactLinks,
+}) => (
   <>
-    <PageHeader title={homeCopy.title} description={homeCopy.description} />
+    <PageHeader
+      title={homeCopy.title}
+      description={description}
+      descriptionStyle={{ color: 'textSecondary' }}
+    />
 
-    <Box m={2} />
+    <Box m={4} />
 
     <Box>
-      {homeCopy.links.map((link) => (
-        <Box key={link.href}>
-          <NextLink href={link.href} passHref>
-            <Link>
-              <Box display="inline-flex" sx={{ alignItems: 'center', fontSize: [0, 1] }}>
-                <Text mr={1}>{link.label}</Text>
-                <CgArrowRight />
-              </Box>
-            </Link>
-          </NextLink>
+      <Heading as="h3" fontSize={0} fontWeight="normal" color="textTertiary">
+        Me on the internets
+      </Heading>
 
-          <Box m={1} />
-        </Box>
-      ))}
+      <Flex mx={-1}>
+        {contactLinks.map(({ title, url }) => (
+          <Box key={title} my={2} mx={1}>
+            <Link
+              href={url}
+              target="_blank"
+              variant="linkButton"
+              color={getContactLinkColor(title)}
+            >
+              <Flex alignItems="center">
+                <Text fontSize={1} display="inline-flex">
+                  {getContactLinkIcon(title)}
+                </Text>
+
+                <Box m={1} />
+
+                <Text fontSize={0}>{title}</Text>
+              </Flex>
+            </Link>
+          </Box>
+        ))}
+      </Flex>
     </Box>
   </>
 )

@@ -3,8 +3,7 @@ import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
 import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
-import { Box, Link, Heading, Text } from 'rebass'
-import { CgArrowRight, CgArrowTopRight } from 'react-icons/cg'
+import { Box, Link, Text } from 'rebass'
 
 export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
   props: {
@@ -21,16 +20,8 @@ const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
     {projects.map((p) => (
       <Box key={p.title}>
         <NextLink href={p.url} passHref>
-          <Link {...(p.url.startsWith('/') ? {} : { target: '_blank' })}>
-            <Heading
-              as="h3"
-              fontSize={[1, 2]}
-              sx={{ display: 'inline-flex', alignItems: 'center' }}
-            >
-              {p.title}
-              <Box ml={1} />
-              {p.url.startsWith('/') ? <CgArrowRight /> : <CgArrowTopRight />}
-            </Heading>
+          <Link variant="linkTitle" {...(p.url.startsWith('/') ? {} : { target: '_blank' })}>
+            {p.title}
           </Link>
         </NextLink>
 

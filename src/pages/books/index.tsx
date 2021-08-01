@@ -35,10 +35,8 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
 
             <Box>
               <NextLink href={book.notes.url} passHref>
-                <Link title={book.title}>
-                  <Heading as="h3" fontSize={[1, 2]}>
-                    {book.title} by {book.authors.join(', ')}
-                  </Heading>
+                <Link variant="linkTitle" title={book.title}>
+                  {book.title} by {book.authors.join(', ')}
                 </Link>
               </NextLink>
 

@@ -2,7 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getNotes, Note } from 'api/notes'
 import { notesCopy } from 'config/copy'
 import NextLink from 'next/link'
-import { Box, Text, Link, Heading } from 'rebass'
+import { Box, Text, Link } from 'rebass'
 import PageHeader from 'components/PageHeader'
 import { formatDate } from 'utils/date'
 
@@ -22,10 +22,8 @@ const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ n
       {notes.map((note) => (
         <Box key={note.slug} mb={4}>
           <NextLink href={note.url} passHref>
-            <Link>
-              <Heading as="h3" fontSize={[1, 2]}>
-                {note.title}
-              </Heading>
+            <Link variant="linkTitle" title={note.title}>
+              {note.title}
             </Link>
           </NextLink>
 

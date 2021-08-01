@@ -21,11 +21,22 @@ export const createTheme = (options: ThemeOptions) => ({
   ...options,
   variants: {
     link: {
+      color: 'inherit',
+      textDecoration: 'underline',
+      textDecorationThickness: '1px',
+      textUnderlineOffset: '2px',
+      '&:hover': {
+        color: 'linkPrimary',
+      },
+    } as SxStyleProp,
+    linkTitle: {
       display: 'inline-block',
       textDecoration: 'none',
       color: 'linkPrimary',
       paddingX: '0.15rem',
       marginX: '-0.15rem',
+      fontSize: [1, 2],
+      fontWeight: 'bold',
       borderRadius: 4,
       '&:hover': {
         backgroundColor: ['transparent', 'linkPrimary'],
@@ -47,15 +58,16 @@ export const createTheme = (options: ThemeOptions) => ({
       display: 'inline-block',
       paddingY: 2,
       paddingX: 3,
-      backgroundColor: 'backgroundSecondary',
+      backgroundColor: 'buttonBackground',
       color: 'text',
       fontSize: 0,
+      fontWeight: 'bold',
       lineHeight: 1,
       border: '2px solid',
       borderColor: 'transparent',
       borderRadius: 4,
       '&:hover': {
-        borderColor: 'backgroundSecondary',
+        borderColor: 'buttonBorderHover',
       },
     } as SxStyleProp,
     linkScale: {
@@ -64,7 +76,7 @@ export const createTheme = (options: ThemeOptions) => ({
       textDecoration: 'none',
       transition: 'transform .2s',
       '&:hover': {
-        transform: 'scale(1.02)',
+        transform: 'scale(1.05)',
       },
     } as SxStyleProp,
     linkHighlight: {
@@ -78,7 +90,7 @@ export const createTheme = (options: ThemeOptions) => ({
       '&:hover': {
         backgroundColor: 'linkHoverBackground',
         borderColor: 'backgroundSecondary',
-        transform: 'scale(1.02)',
+        transform: 'scale(1.025)',
       },
     } as SxStyleProp,
   },
