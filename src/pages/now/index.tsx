@@ -37,26 +37,19 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     <Box m={[2, 3]} />
 
                     <Box width={1} p={2}>
-                      <Text fontSize={[0, 1]} color="text">
+                      <Text fontWeight="bold" color="text">
                         {item.title}
                       </Text>
 
                       <Box m={1} />
 
-                      <Text
-                        fontSize={0}
-                        display={['none', 'initial']}
-                        color="textTertiary"
-                        fontStyle="italic"
-                      >
+                      <Text display={['none', 'initial']} color="textTertiary" fontStyle="italic">
                         {item.subtitle}
                       </Text>
 
                       <Box m={1} />
 
-                      <Text fontSize={14} color="textTertiary">
-                        by {item.author}
-                      </Text>
+                      <Text color="textTertiary">by {item.author}</Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -85,7 +78,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                     <Box m={1} />
 
-                    <Box width={1} fontSize={14} lineHeight={1.2}>
+                    <Box width={1} fontSize={0} lineHeight={1.4}>
                       <Text color="textSecondary">{item.title}</Text>
                       <Text color="textTertiary">{item.creator}</Text>
                     </Box>
@@ -107,9 +100,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       <Image src={item.imageURL} height={[160, 240]} className="border-radius" />
                     </Box>
 
-                    <Text fontSize={0} color="textSecondary">
-                      {item.title}
-                    </Text>
+                    <Text color="textSecondary">{item.title}</Text>
                   </Flex>
                 </Link>
 
@@ -145,9 +136,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       <Box m={6} />
 
-      <Text fontSize={0} color="textTertiary">
-        Last updated on {formatDate(now.updatedAt)}
-      </Text>
+      <Text color="textTertiary">Last updated on {formatDate(now.updatedAt)}</Text>
     </>
   )
 }

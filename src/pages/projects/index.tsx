@@ -27,7 +27,7 @@ const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
 
         <Box m={1} />
 
-        <Text fontSize={0}>{p.description}</Text>
+        <Text>{p.description}</Text>
 
         <Box m={4} />
       </Box>

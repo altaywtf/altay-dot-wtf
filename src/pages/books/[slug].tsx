@@ -63,7 +63,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ bo
           <BookInfo book={book} />
           <Box m={1} />
 
-          <Text fontSize={0} fontStyle="italic" color="textTertiary">
+          <Text fontStyle="italic" color="textTertiary">
             &quot;{book.quote}&quot;
           </Text>
         </Box>

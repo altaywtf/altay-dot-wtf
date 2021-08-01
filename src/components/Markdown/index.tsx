@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import { Box } from 'rebass'
 import footnotes from 'remark-footnotes'
 // eslint-disable-next-line
 // @ts-ignore
@@ -19,23 +20,25 @@ const MDFootnoteReference = dynamic(() => import('./MDFootnoteReference'))
 type Props = { children: string }
 
 const Markdown: React.FC<Props> = ({ children }) => (
-  <ReactMarkdown
-    plugins={[slug, gfm, footnotes]}
-    escapeHtml={true}
-    renderers={{
-      paragraph: MDParagraph,
-      heading: MDHeading,
-      link: MDLink,
-      image: MDMedia,
-      blockquote: MDQuote,
-      inlineCode: MDInlineCode,
-      code: MDCodeBlock,
-      footnoteReference: MDFootnoteReference,
-      footnoteDefinition: MDFootnoteDefinition,
-    }}
-  >
-    {children}
-  </ReactMarkdown>
+  <Box fontSize={[1, 2]}>
+    <ReactMarkdown
+      plugins={[slug, gfm, footnotes]}
+      escapeHtml={true}
+      renderers={{
+        paragraph: MDParagraph,
+        heading: MDHeading,
+        link: MDLink,
+        image: MDMedia,
+        blockquote: MDQuote,
+        inlineCode: MDInlineCode,
+        code: MDCodeBlock,
+        footnoteReference: MDFootnoteReference,
+        footnoteDefinition: MDFootnoteDefinition,
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+  </Box>
 )
 
 export default Markdown

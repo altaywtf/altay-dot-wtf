@@ -22,11 +22,13 @@ export const createTheme = (options: ThemeOptions) => ({
   variants: {
     link: {
       color: 'inherit',
-      textDecoration: 'underline',
-      textDecorationThickness: '1px',
-      textUnderlineOffset: '2px',
+      textDecoration: 'none',
+      borderBottomWidth: 1,
+      borderBottomStyle: 'solid',
+      borderBottomColor: 'textTertiary',
       '&:hover': {
         color: 'linkPrimary',
+        borderBottomColor: 'linkPrimary',
       },
     } as SxStyleProp,
     linkTitle: {
@@ -46,7 +48,6 @@ export const createTheme = (options: ThemeOptions) => ({
     linkSilent: {
       cursor: 'pointer',
       color: 'textTertiary',
-      fontSize: 0,
       textDecoration: 'none',
       '&:hover': {
         color: 'linkHover',
@@ -60,7 +61,6 @@ export const createTheme = (options: ThemeOptions) => ({
       paddingX: 3,
       backgroundColor: 'buttonBackground',
       color: 'text',
-      fontSize: 0,
       fontWeight: 'bold',
       lineHeight: 1,
       border: '2px solid',
@@ -95,7 +95,7 @@ export const createTheme = (options: ThemeOptions) => ({
     } as SxStyleProp,
   },
   space: [0, 4, 8, 16, 32, 48, 64, 80, 128, 256, 512],
-  fontSizes: [16, 18, 20, 24, 32],
+  fontSizes: [14, 16, 18, 24, 32],
   breakpoints: ['480px', '640px', '960px'],
   colors: options.dark ? COLORS_DARK : COLORS_LIGHT,
 })

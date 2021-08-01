@@ -8,6 +8,7 @@ type NoteFrontMatter = {
   title: string
   oneliner: string
   date: string
+  featured: boolean
 }
 
 export type Note = NoteFrontMatter & {
@@ -19,9 +20,11 @@ export type Note = NoteFrontMatter & {
 export const getNote = (slug: string) => {
   const file = readMarkdownFile(`/notes/${slug}.md`)
   const { content: markdown, data } = matter(file)
+  const frontMatter = data as NoteFrontMatter
 
   const note = {
-    ...(data as NoteFrontMatter),
+    ...frontMatter,
+    featured: frontMatter.featured || false,
     slug,
     url: `/notes/${slug}`,
     readingTime: readingTime(markdown).text,
@@ -43,4 +46,9 @@ export const getNotes = () => {
     .map(getNote)
     .map((n) => n.note)
     .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1))
+}
+
+export const getFeaturedNotes = () => {
+  const notes = getNotes()
+  return notes.filter((note) => note.featured)
 }

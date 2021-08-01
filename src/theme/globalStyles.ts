@@ -2,7 +2,7 @@ import type { Theme } from '.'
 import { createTypographyCSS } from './typography'
 
 export const createGlobalStyles = (theme: Theme) => `
-  ${createTypographyCSS(theme)}
+  ${createTypographyCSS()}
 
   * {
     box-sizing: border-box;

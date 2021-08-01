@@ -51,7 +51,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ no
 
       <Box m={2} />
 
-      <Text fontSize={0} color="textTertiary">
+      <Text color="textTertiary">
         {formatDate(note.date)}
         <Box display="inline" mx={1}>
           ·

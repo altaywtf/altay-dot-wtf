@@ -3,12 +3,15 @@ import { homeCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
-import { Box, Heading, Flex, Text, Link } from 'rebass'
+import NextLink from 'next/link'
+import { Box, Flex, Text, Link } from 'rebass'
 import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
+import { getFeaturedNotes } from 'api/notes'
 
 export const getStaticProps = async () => ({
   props: {
     description: readMarkdownFile('home.md'),
+    notes: getFeaturedNotes(),
     contactLinks: getContactLinks(),
   },
 })
@@ -41,6 +44,7 @@ const getContactLinkColor = (title: ContactLink['title']): string => {
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   description,
+  notes,
   contactLinks,
 }) => (
   <>
@@ -53,13 +57,31 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Box m={4} />
 
     <Box>
-      <Heading as="h3" fontSize={14} fontWeight="normal" color="textTertiary">
-        Me on the internets
-      </Heading>
+      <Text color="textTertiary">Featured writing</Text>
+
+      <Box m={2} />
+
+      <Box>
+        {notes.map((note) => (
+          <Box key={note.slug} my={1}>
+            <NextLink href={note.url} passHref>
+              <Link>{note.title}</Link>
+            </NextLink>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+
+    <Box m={4} />
+
+    <Box>
+      <Text color="textTertiary">Me on the internets</Text>
+
+      <Box m={2} />
 
       <Flex mx={-1}>
         {contactLinks.map(({ title, url }) => (
-          <Box key={title} my={2} mx={1}>
+          <Box key={title} mx={1}>
             <Link
               href={url}
               target="_blank"
@@ -67,13 +89,13 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
               color={getContactLinkColor(title)}
             >
               <Flex alignItems="center">
-                <Text fontSize={1} display="inline-flex">
+                <Text fontSize={2} display="inline-flex">
                   {getContactLinkIcon(title)}
                 </Text>
 
                 <Box m={1} />
 
-                <Text fontSize={0}>{title}</Text>
+                <Text>{title}</Text>
               </Flex>
             </Link>
           </Box>

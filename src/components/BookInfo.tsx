@@ -12,9 +12,7 @@ const BookInfo: React.FC<Props> = ({ book }) => {
     {
       key: 'date',
       component: (
-        <Text color="textTertiary" fontSize={0}>
-          Read in {format(new Date(book.dateRead), 'MMMM yyyy')}
-        </Text>
+        <Text color="textTertiary">Read in {format(new Date(book.dateRead), 'MMMM yyyy')}</Text>
       ),
     },
     {

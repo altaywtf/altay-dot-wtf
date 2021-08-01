@@ -53,7 +53,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
     </Heading>
 
     {description ? (
-      <Text fontSize={1} sx={{ div: { color: 'textTertiary', ...descriptionStyle } }}>
+      <Text sx={{ div: { color: 'textTertiary', ...descriptionStyle } }}>
         <Markdown>{description}</Markdown>
       </Text>
     ) : null}

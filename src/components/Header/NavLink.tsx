@@ -15,7 +15,7 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
       sx={{
         textDecoration: 'none',
         textAlign: 'center',
-        fontSize: [14, 0],
+        fontSize: [0, 1],
         paddingY: [1, 2],
         paddingX: [2, 3],
         lineHeight: 1,

@@ -1,5 +1,3 @@
-import type { Theme } from '.'
-
 const loadFont = (family: string, fileName: string, weight: number) => `
   @font-face {
     font-family: '${family}';
@@ -23,25 +21,18 @@ const loadFont = (family: string, fileName: string, weight: number) => `
 const TYPEFACE = `please-dont-download-these-fonts-buy-a-license-instead`
 const FOLDER = `${TYPEFACE}/${TYPEFACE}`
 
-export const createTypographyCSS = (theme: Theme) => `
+export const createTypographyCSS = () => `
   ${loadFont(TYPEFACE, `${FOLDER}-Regular`, 400)}
   ${loadFont(TYPEFACE, `${FOLDER}-Bold`, 600)}
 
   body {
     font-family: ${TYPEFACE}, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: none;
-
-    font-size: ${(theme.fontSizes as string[])[1]}px;
     letter-spacing: 0.015em;
     word-spacing: 0.001em;
-  }
-
-  @media only screen and (max-width: ${(theme.breakpoints as string[])[0]}){
-    body {
-      font-size: ${(theme.fontSizes as string[])[0]}px;
-    }
   }
 `

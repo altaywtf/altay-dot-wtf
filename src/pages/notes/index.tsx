@@ -29,13 +29,11 @@ const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ n
 
           <Box m={1} />
 
-          <Text fontSize={0} color="textSecondary">
-            {note.oneliner}
-          </Text>
+          <Text color="textSecondary">{note.oneliner}</Text>
 
           <Box m={1} />
 
-          <Text fontSize={0} color="textTertiary">
+          <Text color="textTertiary">
             {formatDate(note.date)}
 
             <Box display="inline" mx={1}>
