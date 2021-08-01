@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-08-01T00:29:52.743Z",
+  "updatedAt": "2021-08-01T00:35:44.482Z",
   "sections": [
     {
       "_id": "life",
@@ -41,31 +41,31 @@
           "title": "Nautiqua",
           "creator": "Wun Two & Boora",
           "url": "https://music.apple.com/de/album/nautiqua/1563043167",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/50/78/82/50788263-63fd-6997-a72b-110cb7033a5e/4018939459505_3000.jpg/1200x1968bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/50/78/82/50788263-63fd-6997-a72b-110cb7033a5e/4018939459505_3000.jpg/1200x1200bb.jpeg"
         },
         {
           "title": "Sun Transmission",
           "creator": "Inner Wave",
           "url": "https://music.apple.com/de/album/sun-transmission/1441533537",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1968bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1200bb.jpeg"
         },
         {
           "title": "Loving In Stereo",
           "creator": "Jungle",
           "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1968bb.jpeg"
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg"
         },
         {
           "title": "Juno",
           "creator": "Parra for Cuva",
           "url": "https://music.apple.com/de/album/juno/1554130750",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1968bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1200bb.jpeg"
         },
         {
           "title": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
           "creator": "Billie Eilish",
           "url": "https://music.apple.com/de/album/when-we-all-fall-asleep-where-do-we-go/1450695723",
-          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/1200x1968bb.jpeg"
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/1200x1200bb.jpeg"
         }
       ]
     },
@@ -77,6 +77,11 @@
           "title": "DAVE",
           "url": "https://www.tvmaze.com/shows/45563/dave",
           "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
+        },
+        {
+          "title": "Ted Lasso",
+          "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
         },
         {
           "title": "Rick and Morty",
