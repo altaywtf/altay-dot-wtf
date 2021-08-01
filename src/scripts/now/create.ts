@@ -6,17 +6,9 @@ import { writeNowJSON } from './lib/nowJSON'
 import { fetchShows } from './lib/shows'
 
 const main = async () => {
-  const books = await fetchBooks({
-    userToken: process.env.OKU_USER_TOKEN as string,
-  })
-
-  const music = await fetchMusic({
-    devToken: process.env.APPLE_MUSIC_DEV_TOKEN as string,
-    userToken: process.env.APPLE_MUSIC_USER_TOKEN as string,
-  })
-
+  const books = await fetchBooks()
+  const music = await fetchMusic()
   const shows = await fetchShows()
-
   writeNowJSON(createNowJSON({ books, music, shows }))
 }
 

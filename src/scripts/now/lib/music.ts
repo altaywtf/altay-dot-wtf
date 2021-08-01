@@ -1,7 +1,27 @@
 import axios from 'axios'
 import type { NowJSONMusic } from './types'
 
+type AppleMusicCatalogAlbum = {
+  attributes: {
+    url: string
+  }
+}
+
+const fetchCatalogAlbum = async (albumId: string) => {
+  const URL = `https://api.music.apple.com/v1/me/library/albums/${albumId}/catalog`
+
+  const response = await axios.get<{ data: AppleMusicCatalogAlbum[] }>(URL, {
+    headers: {
+      Authorization: process.env.APPLE_MUSIC_DEV_TOKEN as string,
+      'Music-User-Token': process.env.APPLE_MUSIC_USER_TOKEN as string,
+    },
+  })
+
+  return response.data.data[0]
+}
+
 type AppleMusicResource = {
+  id: string
   type: string
   attributes: {
     artwork: {
@@ -19,31 +39,28 @@ type AppleMusicRecentlyPlayedResourcesResponse = {
   data: AppleMusicResource[]
 }
 
-export const fetchMusic = async ({
-  devToken,
-  userToken,
-}: {
-  devToken: string
-  userToken: string
-}): Promise<NowJSONMusic[]> => {
+export const fetchMusic = async (): Promise<NowJSONMusic[]> => {
   const URL = 'https://api.music.apple.com/v1/me/library/recently-added'
 
   const response = await axios.get<AppleMusicRecentlyPlayedResourcesResponse>(URL, {
     headers: {
-      Authorization: devToken,
-      'Music-User-Token': userToken,
+      Authorization: process.env.APPLE_MUSIC_DEV_TOKEN as string,
+      'Music-User-Token': process.env.APPLE_MUSIC_USER_TOKEN as string,
     },
   })
 
-  return response.data.data
+  const albums = response.data.data
     .filter((resource) => resource.type == 'library-albums')
     .filter((resource) => !!resource.attributes?.artwork?.url)
-    .map((resource) => ({
-      title: resource.attributes.name,
-      creator: resource.attributes.artistName,
-      url: resource.attributes.url,
-      imageURL: resource.attributes.artwork.url
-        .replace('{w}', (resource.attributes.artwork.width || 600).toString())
-        .replace('{h}', (resource.attributes.artwork.height || 600).toString()),
-    }))
+
+  return await Promise.all(
+    albums.map(async (album) => ({
+      title: album.attributes.name,
+      creator: album.attributes.artistName,
+      url: (await fetchCatalogAlbum(album.id)).attributes.url,
+      imageURL: album.attributes.artwork.url
+        .replace('{w}', (album.attributes.artwork.width || 600).toString())
+        .replace('{h}', (album.attributes.artwork.height || 600).toString()),
+    })),
+  )
 }
