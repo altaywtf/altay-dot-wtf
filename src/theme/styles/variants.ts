@@ -3,12 +3,11 @@ import { SxStyleProp } from 'rebass'
 export const link: SxStyleProp = {
   color: 'inherit',
   textDecoration: 'none',
-  borderBottomWidth: 1,
+  borderBottomWidth: 2,
   borderBottomStyle: 'solid',
-  borderBottomColor: 'textTertiary',
+  borderBottomColor: 'buttonBorderHover',
   '&:hover': {
-    color: 'linkPrimary',
-    borderBottomColor: 'linkPrimary',
+    borderBottomColor: 'textTertiary',
   },
 }
 

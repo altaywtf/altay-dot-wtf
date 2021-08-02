@@ -1,5 +1,12 @@
 import { lighten, darken } from 'polished'
 
+const BRAND_COLORS = {
+  putio: '#F7C744',
+  amie: 'rgb(244,177,175)',
+  klarna: 'rgb(255, 179, 199)',
+  lisk: '#4070F4',
+}
+
 export const COLORS_LIGHT = {
   background: '#fbfbfb',
   backgroundSecondary: '#f6f6f9',
@@ -22,6 +29,7 @@ export const COLORS_LIGHT = {
   yellow: '#F7C744',
   red: '#ff3b30',
   green: '#78B756',
+  ...BRAND_COLORS,
 }
 
 export type Colors = typeof COLORS_LIGHT
@@ -48,4 +56,5 @@ export const COLORS_DARK: Colors = {
   yellow: '#F7C744',
   red: '#ff3b30',
   green: '#78B756',
+  ...BRAND_COLORS,
 }

@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import { Box } from 'rebass'
-import footnotes from 'remark-footnotes'
 // eslint-disable-next-line
 // @ts-ignore
 import slug from 'remark-slug'
@@ -14,15 +13,13 @@ const MDMedia = dynamic(() => import('./MDMedia'))
 const MDQuote = dynamic(() => import('./MDQuote'))
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
 const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
-const MDFootnoteDefinition = dynamic(() => import('./MDFootnoteDefinition'))
-const MDFootnoteReference = dynamic(() => import('./MDFootnoteReference'))
 
 type Props = { children: string }
 
 const Markdown: React.FC<Props> = ({ children }) => (
   <Box fontSize={[1, 2]}>
     <ReactMarkdown
-      plugins={[slug, gfm, footnotes]}
+      plugins={[slug, gfm]}
       escapeHtml={true}
       renderers={{
         paragraph: MDParagraph,
@@ -32,8 +29,6 @@ const Markdown: React.FC<Props> = ({ children }) => (
         blockquote: MDQuote,
         inlineCode: MDInlineCode,
         code: MDCodeBlock,
-        footnoteReference: MDFootnoteReference,
-        footnoteDefinition: MDFootnoteDefinition,
       }}
     >
       {children}

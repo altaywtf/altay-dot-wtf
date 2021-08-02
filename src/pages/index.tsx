@@ -59,9 +59,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Box>
       <Text color="textTertiary">Featured writing</Text>
 
-      <Box m={2} />
+      <Box m={1} />
 
-      <Box>
+      <>
         {notes.map((note) => (
           <Box key={note.slug} my={1}>
             <NextLink href={note.url} passHref>
@@ -69,7 +69,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             </NextLink>
           </Box>
         ))}
-      </Box>
+      </>
     </Box>
 
     <Box m={4} />
@@ -77,7 +77,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Box>
       <Text color="textTertiary">Me on the internets</Text>
 
-      <Box m={2} />
+      <Box m={1} />
 
       <Flex mx={-1}>
         {contactLinks.map(({ title, url }) => (
