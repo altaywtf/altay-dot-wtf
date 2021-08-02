@@ -41,7 +41,7 @@ And when someone does help you, it will make the situation even better.
 
 Now it's time to put yourself into the shoes of the people you see as mentors. Imagine living a life where you already have a lot on your plate. Every day, you wake up with an inner voice that tells you _"come on, buddy, today is the day. Today we show that middle finger to the system and people that stress us. Then we move into a beach house."_ You unwillingly get up and go to work. Then the fucktard you hired to lighten your load arrives, asking for directions. Directions of the path that you barely convinced your inner voice to stand a couple of more years. You generously teach everything you know, hoping that someone will see your efforts and give you something in return. Then one day, the fucktard wants to leave. You try your best to persuade, yet fail miserably. After all, you start negotiating with your inner voice to stand some more years. How does that feel?
 
-&nbsp;
+---
 
 I don't know how much of a social being you are, but I have a very limited number of people around me. And all those poor souls are dealing with many problems. I don't want to give them this burden of responsibility by declaring them as mentors. I don't want anyone to think of me as a "mentor" as well; I'm a gazillion galaxies far from that. Nobody deserves this obligatory model-citizen role. Unless they voluntarily shout it. If they do, then it's my duty to encourage them to scale.
 

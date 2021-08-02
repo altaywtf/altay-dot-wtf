@@ -1,5 +1,5 @@
-import type { Theme } from '.'
-import { createTypographyCSS } from './typography'
+import type { Theme } from '..'
+import { createTypographyCSS } from '../typography'
 
 export const createGlobalStyles = (theme: Theme) => `
   ${createTypographyCSS()}

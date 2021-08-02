@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Flex, Box, Button, SxStyleProp } from 'rebass'
 import useDarkMode from 'use-dark-mode'
-import { MOBILE_BREAKPOINT } from 'theme'
+import { LAYOUT_WIDTH } from 'theme'
 import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
 import avatar from '../../../public/images/avatar.png'
@@ -32,12 +32,7 @@ const Header: React.FC = () => {
 
   return (
     <Flex as="header" sx={headerStyle} justifyContent="center">
-      <Flex
-        flex={1}
-        maxWidth={MOBILE_BREAKPOINT}
-        alignItems="center"
-        justifyContent="space-between"
-      >
+      <Flex flex={1} maxWidth={LAYOUT_WIDTH} alignItems="center" justifyContent="space-between">
         <Link href="/">
           <Box
             title="That's my head, also a link to home page. Please press gently."
