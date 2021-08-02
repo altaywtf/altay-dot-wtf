@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-08-01T12:40:27.504Z",
+  "updatedAt": "2021-08-02T00:02:53.356Z",
   "sections": [
     {
       "_id": "life",
@@ -37,6 +37,12 @@
       "_id": "music",
       "title": "🎧 Listening",
       "data": [
+        {
+          "title": "Gamma",
+          "creator": "Fewjar",
+          "url": "https://music.apple.com/de/album/gamma/1372843558",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/1200x1200bb.jpeg"
+        },
         {
           "title": "Nautiqua",
           "creator": "Wun Two & Boora",
