@@ -4,6 +4,6 @@ I'm currently living in Berlin, working at [Amie](https://amie.so) as a product 
 
 During the past few years, I worked at several teams in [Klarna](https://klarna.com)'s consumer app ecosystem and a blockchain startup called [Lisk](https://lisk.io).
 
-Before moving to Berlin, I lived in Istanbul and built web, iOS, tvOS, Roku, Chromecast, and Smart TV apps for [put.io](https://put.io), which I'm still a part of.
+Before moving to Berlin, I lived in Istanbul and built multi-platform media streaming apps for [put.io](https://put.io), which I'm still a part of.
 
 Thanks for visiting my website!
