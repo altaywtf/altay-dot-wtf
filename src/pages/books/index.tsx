@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getBooks, Book } from 'api/books'
 import { booksCopy } from 'config/copy'
-import { Heading, Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link } from 'rebass'
 import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
 import BookCover from 'components/BookCover'

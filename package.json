@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && yarn create:rss",
+    "prebuild": "yarn test",
+    "build": "next build",
+    "postbuild": "yarn create:rss",
     "start": "next start",
     "start:dev": "next dev -p 1994",
     "test": "jest",
