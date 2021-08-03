@@ -4,33 +4,49 @@ import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading, Text } from 'rebass'
 import { getOpenGraphImage } from 'utils/openGraph'
-import { useScrollToSource } from 'hooks/useScrollToSource'
 import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 import Markdown from 'components/Markdown'
 import ArtificialBackButton from 'components/ArtificialBackButton'
+import { Backlink, getBacklinks } from 'api/backlinks'
+import Backlinks from 'components/Backlinks'
 
 export const getStaticPaths: GetStaticPaths = () => ({
   paths: getBooks().map((book) => ({ params: { slug: book.slug } })),
   fallback: false,
 })
 
-export const getStaticProps: GetStaticProps<{ book: Book; markdown: string }> = ({ params }) => ({
-  props: getBook(params?.slug as string),
-})
+export const getStaticProps: GetStaticProps<{
+  book: Book
+  markdown: string
+  backlinks: Backlink[]
+}> = ({ params }) => {
+  const { book, markdown } = getBook(params?.slug as string)
+  const backlinks = getBacklinks(book.notes.url)
 
-const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ book, markdown }) => {
-  useScrollToSource()
+  return {
+    props: {
+      book,
+      markdown,
+      backlinks,
+    },
+  }
+}
 
-  const title = `${book.title} by ${book.authors.join(', ')}`
+const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  book,
+  markdown,
+  backlinks,
+}) => {
+  const pageTitle = `${book.title} by ${book.authors.join(', ')}`
 
   return (
     <>
       <NextSeo
-        title={title}
+        title={pageTitle}
         description={book.quote}
         openGraph={{
-          title: title,
+          title: pageTitle,
           description: book.quote,
           images: [
             getOpenGraphImage({
@@ -56,7 +72,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ bo
 
         <Box>
           <Heading as="h1" fontSize={[2, 3]}>
-            {title}
+            {pageTitle}
           </Heading>
 
           <Box m={2} />
@@ -70,8 +86,12 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ bo
       </Flex>
 
       <Box m={4} />
+
       <Markdown>{markdown}</Markdown>
+
       <Box m={6} />
+
+      <Backlinks sourceType="book" sourceURL={book.notes.url} backlinks={backlinks} />
     </>
   )
 }

@@ -52,3 +52,5 @@ export const getFeaturedNotes = () => {
   const notes = getNotes()
   return notes.filter((note) => note.featured)
 }
+
+export const getNotesWithMarkdown = () => getNotes().map((note) => getNote(note.slug))

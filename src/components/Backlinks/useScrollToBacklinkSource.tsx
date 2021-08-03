@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 
-export const useScrollToSource = () => {
+export const useScrollToBacklinkSource = () => {
   const router = useRouter()
-  const {
-    query: { source },
-  } = router
+  const { query } = router
+  const source = query[BACKLINK_SOURCE_QUERY_PARAM]
 
   useEffect(() => {
     if (source && typeof source === 'string') {

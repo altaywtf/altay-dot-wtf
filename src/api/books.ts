@@ -17,3 +17,5 @@ export const getBook = (slug: string) => {
     markdown: readMarkdownFile(`${book.notes.url}.md`),
   }
 }
+
+export const getBooksWithMarkdown = () => getBooks().map((book) => getBook(book.slug))

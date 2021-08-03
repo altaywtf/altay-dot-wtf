@@ -43,9 +43,11 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                       <Box m={1} />
 
-                      <Text display={['none', 'initial']} color="textTertiary" fontStyle="italic">
-                        {item.subtitle}
-                      </Text>
+                      <Box lineHeight={1.2}>
+                        <Text display={['none', 'initial']} color="textTertiary" fontStyle="italic">
+                          {item.subtitle}
+                        </Text>
+                      </Box>
 
                       <Box m={1} />
 
