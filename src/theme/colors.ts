@@ -2,7 +2,6 @@ import { lighten, darken } from 'polished'
 
 const BRAND_COLORS = {
   putio: '#F7C744',
-  amie: 'rgb(244,177,175)',
   klarna: 'rgb(255, 179, 199)',
   lisk: '#4070F4',
 }
