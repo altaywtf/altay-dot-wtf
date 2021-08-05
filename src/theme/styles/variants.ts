@@ -3,7 +3,7 @@ import { SxStyleProp } from 'rebass'
 export const link: SxStyleProp = {
   color: 'inherit',
   textDecoration: 'none',
-  borderBottomWidth: 2,
+  borderBottomWidth: 1,
   borderBottomStyle: 'solid',
   borderBottomColor: 'buttonBorderHover',
   '&:hover': {
@@ -12,17 +12,13 @@ export const link: SxStyleProp = {
 }
 
 export const linkTitle: SxStyleProp = {
-  display: 'inline-block',
-  textDecoration: 'none',
+  ...link,
   color: 'linkPrimary',
-  paddingX: '0.15rem',
-  marginX: '-0.15rem',
   fontSize: [1, 2],
   fontWeight: 'bold',
-  borderRadius: 4,
+  borderBottomColor: 'transparent',
   '&:hover': {
-    backgroundColor: ['transparent', 'linkPrimary'],
-    color: ['linkHover', 'background'],
+    borderBottomColor: 'linkPrimary',
   },
 }
 

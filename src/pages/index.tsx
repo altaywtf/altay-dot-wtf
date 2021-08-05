@@ -4,7 +4,7 @@ import PageHeader from 'components/PageHeader'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
 import NextLink from 'next/link'
-import { Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link, SxStyleProp } from 'rebass'
 import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
 import { getFeaturedNotes } from 'api/notes'
 
@@ -42,12 +42,28 @@ const getContactLinkColor = (title: ContactLink['title']): string => {
   }
 }
 
+const getBrandLinkStyle = (brand: 'putio' | 'amie' | 'klarna' | 'lisk'): SxStyleProp => ({
+  fontWeight: 'bold',
+  borderColor: 'transparent',
+  color: brand,
+  '&:hover': {
+    borderColor: brand,
+  },
+})
+
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   description,
   notes,
   contactLinks,
 }) => (
-  <>
+  <Box
+    sx={{
+      'a[href="https://put.io"]': getBrandLinkStyle('putio'),
+      'a[href="https://amie.so"]': getBrandLinkStyle('amie'),
+      'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
+      'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),
+    }}
+  >
     <PageHeader
       title={homeCopy.title}
       description={description}
@@ -58,9 +74,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box>
       <Text color="textTertiary">Featured writing</Text>
-
       <Box m={1} />
-
       <>
         {notes.map((note) => (
           <Box key={note.slug} my={1}>
@@ -76,9 +90,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box>
       <Text color="textTertiary">Me on the internets</Text>
-
       <Box m={1} />
-
       <Flex mx={-1}>
         {contactLinks.map(({ title, url }) => (
           <Box key={title} mx={1}>
@@ -92,9 +104,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                 <Text fontSize={2} display="inline-flex">
                   {getContactLinkIcon(title)}
                 </Text>
-
                 <Box m={1} />
-
                 <Text>{title}</Text>
               </Flex>
             </Link>
@@ -102,7 +112,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         ))}
       </Flex>
     </Box>
-  </>
+  </Box>
 )
 
 export default Home

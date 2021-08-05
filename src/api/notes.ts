@@ -21,13 +21,15 @@ export const getNote = (slug: string) => {
   const file = readMarkdownFile(`/notes/${slug}.md`)
   const { content: markdown, data } = matter(file)
   const frontMatter = data as NoteFrontMatter
+  const readingTimeInMins = readingTime(markdown).minutes
 
   const note = {
     ...frontMatter,
     featured: frontMatter.featured || false,
     slug,
     url: `/notes/${slug}`,
-    readingTime: readingTime(markdown).text,
+    readingTime:
+      readingTimeInMins <= 1 ? '1 min read' : `${Math.floor(readingTimeInMins)} mins read`,
   } as Note
 
   return { note, markdown }

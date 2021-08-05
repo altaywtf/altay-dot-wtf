@@ -49,40 +49,4 @@ export const createGlobalStyles = (theme: Theme) => `
   .image-markdown {
     background-color: ${theme.colors.background};
   }
-
-  a[href="https://put.io"] {
-    font-weight: bold;
-    border-color: transparent;
-    color: ${theme.colors.putio};
-    &:hover {
-      border-color: ${theme.colors.putio};
-    }
-  }
-
-  a[href="https://amie.so"] {
-    font-weight: bold;
-    border-color: transparent;
-    color: ${theme.colors.amie};
-    &:hover {
-      border-color: ${theme.colors.amie};
-    };
-  }
-
-  a[href="https://klarna.com"] {
-    font-weight: bold;
-    border-color: transparent;
-    color: ${theme.colors.klarna};
-    &:hover {
-      border-color: ${theme.colors.klarna};
-    }
-  }
-
-  a[href="https://lisk.io"] {
-    font-weight: bold;
-    border-color: transparent;
-    color: ${theme.colors.lisk};
-    &:hover {
-      border-color: ${theme.colors.lisk};
-    }
-  }
 `

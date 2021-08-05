@@ -37,17 +37,17 @@ const Header: React.FC = () => {
           <Box
             title="That's my head, also a link to home page. Please press gently."
             sx={{
+              cursor: 'pointer',
               position: 'relative',
               overflow: 'hidden',
               width: 32,
               height: 32,
-              borderWidth: '2px',
+              borderWidth: 2,
               borderStyle: 'solid',
               borderRadius: '50%',
               borderColor: 'backgroundSecondary',
               backgroundColor: 'black',
               '&:hover': {
-                cursor: 'pointer',
                 borderColor: 'linkPrimary',
               },
             }}
@@ -78,8 +78,8 @@ const Header: React.FC = () => {
                 fontSize: 0,
                 borderRadius: 4,
                 padding: 0,
-                width: 40,
-                height: 32,
+                width: 36,
+                height: 28,
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',

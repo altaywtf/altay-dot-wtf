@@ -10,14 +10,12 @@ type Props = {
 const NavLink: React.FC<Props> = ({ href, label, active }) => (
   <NextLink href={href} passHref>
     <Link
-      href={href}
       variant="nav"
       sx={{
         textDecoration: 'none',
-        textAlign: 'center',
-        fontSize: [0, 1],
-        paddingY: [1, 2],
-        paddingX: [2, 3],
+        fontSize: 0,
+        paddingY: 1,
+        paddingX: 2,
         lineHeight: 1,
         fontWeight: 'bold',
         borderRadius: 4,

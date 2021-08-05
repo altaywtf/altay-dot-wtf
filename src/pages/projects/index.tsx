@@ -1,7 +1,6 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
-import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
 import { Box, Link, Text } from 'rebass'
 
@@ -19,11 +18,9 @@ const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
 
     {projects.map((p) => (
       <Box key={p.title}>
-        <NextLink href={p.url} passHref>
-          <Link variant="linkTitle" {...(p.url.startsWith('/') ? {} : { target: '_blank' })}>
-            {p.title}
-          </Link>
-        </NextLink>
+        <Link href={p.url} variant="linkTitle" target="_blank">
+          {p.title}
+        </Link>
 
         <Box m={1} />
 

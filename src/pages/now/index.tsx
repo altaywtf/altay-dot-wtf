@@ -22,7 +22,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Box>
             {section.data.map((item) => (
               <Box key={item.title}>
-                <Link variant="linkHighlight" href={item.url} target="_new">
+                <Link variant="linkHighlight" href={item.url} target="_blank">
                   <Flex flexDirection="row" className="border-radius" alignItems="center">
                     <Box backgroundColor="borderPrimary" width={[0.5, 0.3]} p={3}>
                       <Image
@@ -67,7 +67,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex flexWrap="wrap" m={-2}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} width={[1 / 2, 1 / 3]}>
-                <Link href={item.url} variant="linkScale" target="_new">
+                <Link href={item.url} variant="linkScale" target="_blank">
                   <Flex alignItems="center" flexDirection="column">
                     <Box width={1}>
                       <Image
@@ -96,7 +96,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex flexWrap="wrap" m={-2}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} width={'auto'}>
-                <Link href={item.url} variant="linkScale" target="_new">
+                <Link href={item.url} variant="linkScale" target="_blank">
                   <Flex flexDirection="column">
                     <Box width={1}>
                       <Image src={item.imageURL} height={[160, 240]} className="border-radius" />
