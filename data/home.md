@@ -1,4 +1,4 @@
-I like computers, books, coffee, and building things that are solving problems I empathize with.
+I like computers, books, coffee, video games, and building things that are solving problems I empathize with.
 
 I'm currently living in Berlin, working at [Amie](https://amie.so) as a product engineer, and spending time on some [passion projects](/projects) on the side.
 
