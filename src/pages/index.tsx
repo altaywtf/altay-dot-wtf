@@ -59,6 +59,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   <Box
     sx={{
       'a[href="https://put.io"]': getBrandLinkStyle('putio'),
+      'a[href="https://amie.so"]': getBrandLinkStyle('amie'),
       'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
       'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),
     }}
