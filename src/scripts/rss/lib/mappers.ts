@@ -1,11 +1,16 @@
-import type { Item } from 'feed'
+import type { Author, Item } from 'feed'
 import type { Book } from 'api/books'
 import type { Note } from 'api/notes'
 import { SITE_URL } from 'config'
 import { convertMarkdownToHTML } from 'utils/md'
 import { getOpenGraphImage } from 'utils/openGraph'
 import { sanitizeHtml } from 'utils/sanitize'
-import { author } from './constants'
+
+const author: Author = {
+  name: 'Altay',
+  email: 'altay@aydemir.io',
+  link: 'https://twitter.com/altaywtf',
+}
 
 export const mapNoteToRssFeedItem = (note: Note, markdown: string): Item => ({
   date: new Date(note.date),

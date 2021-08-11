@@ -17,5 +17,12 @@ export const getImageData = async (buffer: Buffer): Promise<ImageData> => {
   }
 
   const { base64 } = await getPlaiceholder(buffer)
-  return { buffer, ratio: width / height, width, height, blurhash: base64 }
+
+  return {
+    buffer,
+    ratio: width / height,
+    width,
+    height,
+    blurhash: base64,
+  }
 }
