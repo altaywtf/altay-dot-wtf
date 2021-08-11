@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-08-05T11:34:45.227Z",
+  "updatedAt": "2021-08-11T22:37:03.563Z",
   "sections": [
     {
       "_id": "life",
@@ -38,6 +38,12 @@
       "title": "🎧 Listening",
       "data": [
         {
+          "title": "Loving In Stereo",
+          "creator": "Jungle",
+          "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg"
+        },
+        {
           "title": "Gamma",
           "creator": "Fewjar",
           "url": "https://music.apple.com/de/album/gamma/1372843558",
@@ -54,12 +60,6 @@
           "creator": "Inner Wave",
           "url": "https://music.apple.com/de/album/sun-transmission/1441533537",
           "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1200bb.jpeg"
-        },
-        {
-          "title": "Loving In Stereo",
-          "creator": "Jungle",
-          "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg"
         },
         {
           "title": "Juno",
@@ -80,9 +80,9 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "DAVE",
-          "url": "https://www.tvmaze.com/shows/45563/dave",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
+          "title": "Rick and Morty",
+          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
         },
         {
           "title": "Ted Lasso",
@@ -90,9 +90,9 @@
           "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
         },
         {
-          "title": "Rick and Morty",
-          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
+          "title": "DAVE",
+          "url": "https://www.tvmaze.com/shows/45563/dave",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
         }
       ]
     }

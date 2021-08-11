@@ -1,5 +1,10 @@
 [
   {
+    "description": "Taking somewhat detailed notes from the books I read.",
+    "title": "Book notes",
+    "url": "/books"
+  },
+  {
     "description": "Building the user-facing parts since 2017.",
     "title": "Put.io",
     "url": "https://put.io"
