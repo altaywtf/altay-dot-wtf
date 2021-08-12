@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-08-11T22:37:03.563Z",
+  "updatedAt": "2021-08-12T11:28:54.087Z",
   "sections": [
     {
       "_id": "life",
@@ -80,6 +80,11 @@
       "title": "📺 Watching",
       "data": [
         {
+          "title": "DAVE",
+          "url": "https://www.tvmaze.com/shows/45563/dave",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
+        },
+        {
           "title": "Rick and Morty",
           "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
           "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
@@ -88,11 +93,6 @@
           "title": "Ted Lasso",
           "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
           "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
-        },
-        {
-          "title": "DAVE",
-          "url": "https://www.tvmaze.com/shows/45563/dave",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
         }
       ]
     }
