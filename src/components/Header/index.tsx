@@ -2,16 +2,14 @@ import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Flex, Box, Button } from 'theme-ui'
-import useDarkMode from 'use-dark-mode'
+import { Flex, Box } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
-import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
+import ColorModeButton from './ColorModeButton'
 import avatar from '../../../public/images/avatar.png'
 
 const Header: React.FC = () => {
   const { pathname } = useRouter()
-  const darkMode = useDarkMode()
 
   return (
     <Flex
@@ -77,30 +75,7 @@ const Header: React.FC = () => {
           <Box ml={1} />
 
           <Box>
-            <Button
-              title="That's a button to switch between dark and light themes."
-              onClick={darkMode.toggle}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: 'background',
-                color: 'textSecondary',
-                fontSize: 0,
-                borderRadius: 'default',
-                padding: 0,
-                width: 36,
-                height: 28,
-                lineHeight: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                '&:hover': {
-                  backgroundColor: 'backgroundSecondary',
-                  color: 'text',
-                },
-              }}
-            >
-              {darkMode.value ? <CgSun /> : <CgMoon />}
-            </Button>
+            <ColorModeButton />
           </Box>
         </Flex>
       </Flex>
