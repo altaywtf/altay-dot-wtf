@@ -1,12 +1,12 @@
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 
 type Props = {
   src: string
 }
 
 const MDVideo: React.FC<Props> = ({ src }) => (
-  <Box my={3}>
-    <video src={src} width="100%" controls style={{ borderRadius: 4 }} />
+  <Box my={3} sx={{ borderRadius: 'default' }}>
+    <video src={src} width="100%" controls />
   </Box>
 )
 

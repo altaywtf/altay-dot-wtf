@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { useCallback } from 'react'
-import { Flex, Box, Heading, Link, Text, Image } from 'rebass'
+import { Flex, Box, Heading, Link, Text, Image } from 'theme-ui'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
@@ -22,36 +22,67 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Box>
             {section.data.map((item) => (
               <Box key={item.title}>
-                <Link variant="linkHighlight" href={item.url} target="_blank">
-                  <Flex flexDirection="row" className="border-radius" alignItems="center">
-                    <Box backgroundColor="borderPrimary" width={[0.5, 0.3]} p={3}>
+                <Link
+                  href={item.url}
+                  target="_blank"
+                  sx={{
+                    cursor: 'pointer',
+                    display: 'block',
+                    textDecoration: 'none',
+                    border: '2px solid',
+                    borderColor: 'borderPrimary',
+                    borderRadius: 4,
+                    transition: 'transform .2s',
+                    '&:hover': {
+                      backgroundColor: 'linkHoverBackground',
+                      borderColor: 'backgroundSecondary',
+                      transform: 'scale(1.025)',
+                    },
+                  }}
+                >
+                  <Flex
+                    sx={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      borderRadius: 'default',
+                    }}
+                  >
+                    <Box sx={{ backgroundColor: 'borderPrimary', width: ['50%', '33%'] }} p={3}>
                       <Image
+                        alt={`Cover of book ${item.title}`}
                         src={item.imageURL}
-                        display="block"
-                        height={[96, 128]}
-                        className="border-radius"
-                        margin="auto"
+                        sx={{
+                          borderRadius: 'default',
+                          height: [96, 128],
+                          display: 'block',
+                          margin: 'auto',
+                          width: 'auto',
+                        }}
                       />
                     </Box>
 
                     <Box m={[2, 3]} />
 
-                    <Box width={1} p={2}>
-                      <Text fontWeight="bold" color="text">
-                        {item.title}
-                      </Text>
+                    <Box p={2} sx={{ width: '100%' }}>
+                      <Text sx={{ fontWeight: 'bold', color: 'text' }}>{item.title}</Text>
 
-                      <Box m={1} />
+                      <Box m={2} />
 
-                      <Box lineHeight={1.2}>
-                        <Text display={['none', 'initial']} color="textTertiary" fontStyle="italic">
+                      <Box sx={{ lineHeight: 1.2 }}>
+                        <Text
+                          sx={{
+                            display: ['none', 'initial'],
+                            color: 'textTertiary',
+                            fontStyle: 'italic',
+                          }}
+                        >
                           {item.subtitle}
                         </Text>
                       </Box>
 
-                      <Box m={1} />
+                      <Box m={2} />
 
-                      <Text color="textTertiary">by {item.author}</Text>
+                      <Text sx={{ color: 'textTertiary' }}>by {item.author}</Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -64,25 +95,29 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       case 'music':
         return (
-          <Flex flexWrap="wrap" m={-2}>
+          <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} width={[1 / 2, 1 / 3]}>
-                <Link href={item.url} variant="linkScale" target="_blank">
-                  <Flex alignItems="center" flexDirection="column">
-                    <Box width={1}>
+              <Box key={item.title} p={2} sx={{ width: ['50%', '33%'] }}>
+                <Link href={item.url} variant="links.scale" target="_blank">
+                  <Flex sx={{ flexDirection: 'column' }}>
+                    <Box sx={{ width: '100%' }}>
                       <Image
+                        alt={`Cover of music album ${item.title}`}
                         src={item.imageURL}
-                        display="block"
-                        margin="auto"
-                        className="border-radius"
+                        sx={{ display: 'block', margin: 'auto', borderRadius: 'default' }}
                       />
                     </Box>
 
                     <Box m={1} />
 
-                    <Box width={1} fontSize={0} lineHeight={1.4}>
-                      <Text color="textSecondary">{item.title}</Text>
-                      <Text color="textTertiary">{item.creator}</Text>
+                    <Box sx={{ fontSize: 0, lineHeight: 1.4 }}>
+                      <Text as="p" color="textSecondary">
+                        {item.title}
+                      </Text>
+
+                      <Text as="p" color="textTertiary">
+                        {item.creator}
+                      </Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -93,14 +128,16 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       case 'shows':
         return (
-          <Flex flexWrap="wrap" m={-2}>
+          <Flex sx={{ flexWrap: 'wrap' }} m={-2}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} width={'auto'}>
-                <Link href={item.url} variant="linkScale" target="_blank">
-                  <Flex flexDirection="column">
-                    <Box width={1}>
-                      <Image src={item.imageURL} height={[160, 240]} className="border-radius" />
-                    </Box>
+              <Box key={item.title} p={2} sx={{ width: 'auto' }}>
+                <Link href={item.url} variant="links.scale" target="_blank">
+                  <Flex sx={{ flexDirection: 'column' }}>
+                    <Image
+                      alt={`Poster of TV show ${item.title}`}
+                      src={item.imageURL}
+                      sx={{ height: [160, 240], borderRadius: 'default' }}
+                    />
 
                     <Text color="textSecondary">{item.title}</Text>
                   </Flex>
@@ -124,7 +161,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
         .filter((section) => section.data && section.data.length > 0)
         .map((section) => (
           <Box key={section._id}>
-            <Heading as="h3" fontSize={2}>
+            <Heading as="h3" sx={{ fontSize: 2 }}>
               {section.title}
             </Heading>
 

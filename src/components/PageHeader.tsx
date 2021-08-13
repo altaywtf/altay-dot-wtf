@@ -1,4 +1,4 @@
-import { Heading, Box, Text, SxStyleProp } from 'rebass'
+import { Heading, Box, Text, ThemeUIStyleObject } from 'theme-ui'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -9,7 +9,7 @@ type Props = {
   title: string
   icon?: string
   description?: string
-  descriptionStyle?: SxStyleProp
+  descriptionStyle?: ThemeUIStyleObject
 }
 
 const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyle = {} }) => (
@@ -28,8 +28,8 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
     />
 
     {icon ? (
-      <Box width={64} height={64}>
-        <Text fontSize={48}>{icon}</Text>
+      <Box sx={{ width: 64, height: 64 }}>
+        <Text sx={{ fontSize: 48 }}>{icon}</Text>
       </Box>
     ) : (
       <Box
@@ -38,7 +38,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
           overflow: 'hidden',
           width: 64,
           height: 64,
-          borderRadius: '50%',
+          borderRadius: 'circle',
           backgroundColor: 'black',
         }}
       >
@@ -48,7 +48,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
 
     <Box m={4} />
 
-    <Heading as="h1" fontSize={3}>
+    <Heading as="h1" sx={{ fontSize: 3 }}>
       {title}
     </Heading>
 

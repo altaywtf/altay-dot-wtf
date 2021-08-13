@@ -1,40 +1,47 @@
 import { HEADER } from 'config'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Image from 'next/image'
-import { Flex, Box, Button, SxStyleProp } from 'rebass'
-import useDarkMode from 'use-dark-mode'
+import { Flex, Box, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
-import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
+import ColorModeButton from './ColorModeButton'
 import avatar from '../../../public/images/avatar.png'
-
-const headerStyle: SxStyleProp = {
-  position: 'fixed',
-  zIndex: 1,
-  width: '100%',
-  left: 0,
-  top: 0,
-  paddingX: 2,
-  paddingY: 2,
-  borderBottom: '1px solid',
-  borderColor: 'borderMenu',
-  backgroundColor: 'backgroundHeader',
-  backdropFilter: 'saturate(200%) blur(20px)',
-  '& > *': {
-    lineHeight: 1,
-  },
-}
 
 const Header: React.FC = () => {
   const { pathname } = useRouter()
-  const darkMode = useDarkMode()
 
   return (
-    <Flex as="header" sx={headerStyle} justifyContent="center">
-      <Flex flex={1} maxWidth={LAYOUT_WIDTH} alignItems="center" justifyContent="space-between">
-        <Link href="/">
-          <Box
+    <Flex
+      as="header"
+      sx={{
+        justifyContent: 'center',
+        position: 'fixed',
+        zIndex: 1,
+        width: '100%',
+        left: 0,
+        top: 0,
+        paddingX: [3, 2, 2],
+        paddingY: 2,
+        borderBottom: '1px solid',
+        borderColor: 'borderMenu',
+        backgroundColor: 'backgroundHeader',
+        backdropFilter: 'saturate(200%) blur(20px)',
+        '& > *': {
+          lineHeight: 1,
+        },
+      }}
+    >
+      <Flex
+        sx={{
+          flex: 1,
+          maxWidth: LAYOUT_WIDTH,
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <NextLink href="/" passHref>
+          <Link
             title="That's my head, also a link to home page. Please press gently."
             sx={{
               cursor: 'pointer',
@@ -44,7 +51,7 @@ const Header: React.FC = () => {
               height: 32,
               borderWidth: 2,
               borderStyle: 'solid',
-              borderRadius: '50%',
+              borderRadius: 'circle',
               borderColor: 'backgroundSecondary',
               backgroundColor: 'black',
               '&:hover': {
@@ -52,11 +59,11 @@ const Header: React.FC = () => {
               },
             }}
           >
-            <Image src={avatar} />
-          </Box>
-        </Link>
+            <Image src={avatar} alt="That's head" />
+          </Link>
+        </NextLink>
 
-        <Flex alignItems="center">
+        <Flex sx={{ alignItems: 'center' }}>
           <Flex>
             {HEADER.map(({ label, href }) => (
               <Box key={href} mx={1}>
@@ -68,30 +75,7 @@ const Header: React.FC = () => {
           <Box ml={1} />
 
           <Box>
-            <Button
-              title="That's a button to switch between dark and light themes."
-              onClick={darkMode.toggle}
-              sx={{
-                cursor: 'pointer',
-                backgroundColor: 'background',
-                color: 'textSecondary',
-                fontSize: 0,
-                borderRadius: 4,
-                padding: 0,
-                width: 36,
-                height: 28,
-                lineHeight: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                '&:hover': {
-                  backgroundColor: 'backgroundSecondary',
-                  color: 'text',
-                },
-              }}
-            >
-              {darkMode.value ? <CgSun /> : <CgMoon />}
-            </Button>
+            <ColorModeButton />
           </Box>
         </Flex>
       </Flex>

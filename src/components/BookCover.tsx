@@ -1,6 +1,6 @@
 import type { Book } from 'api/books'
 import Image from 'next/image'
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 
 type Props = {
   book: Book
@@ -8,7 +8,7 @@ type Props = {
 }
 
 const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
-  <Box className="border-radius">
+  <Box sx={{ borderRadius: 'default' }}>
     <Image
       alt={book.title}
       src={book.coverImage.url}

@@ -32,7 +32,7 @@ export const COLORS_LIGHT = {
   ...BRAND_COLORS,
 }
 
-export type Colors = typeof COLORS_LIGHT
+type Colors = typeof COLORS_LIGHT
 
 export const COLORS_DARK: Colors = {
   background: 'rgba(17, 17, 17, 1)',

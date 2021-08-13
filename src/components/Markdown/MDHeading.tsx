@@ -1,5 +1,4 @@
-import { createElement } from 'react'
-import { Box, SxStyleProp } from 'rebass'
+import { Box, Heading, ThemeUIStyleObject } from 'theme-ui'
 
 type Props = {
   level: number
@@ -12,7 +11,7 @@ type Props = {
   }
 }
 
-const MDHeadingStyle: SxStyleProp = {
+const MDHeadingStyle: ThemeUIStyleObject = {
   '& > h1, h2': {
     marginTop: 5,
   },
@@ -25,8 +24,13 @@ const MDHeadingStyle: SxStyleProp = {
 }
 
 const MDHeading: React.FC<Props> = (props) => {
-  const content = createElement('h' + props.level, { id: props.node.data.id }, props.children)
-  return <Box sx={MDHeadingStyle}>{content}</Box>
+  return (
+    <Box sx={MDHeadingStyle}>
+      <Heading as={`h${props.level}` as any} id={props.node.data.id}>
+        {props.children}
+      </Heading>
+    </Box>
+  )
 }
 
 export default MDHeading

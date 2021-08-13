@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Link } from 'rebass'
+import { Link } from 'theme-ui'
 
 type Props = {
   href: string
@@ -18,7 +18,7 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
         paddingX: 2,
         lineHeight: 1,
         fontWeight: 'bold',
-        borderRadius: 4,
+        borderRadius: 'default',
         color: active ? 'linkPrimary' : 'text',
         backgroundColor: active ? 'linkBackground' : 'transparent',
         '&:hover': {

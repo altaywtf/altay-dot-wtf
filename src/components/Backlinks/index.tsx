@@ -1,5 +1,5 @@
 import type { Backlink } from 'api/backlinks'
-import { Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
@@ -25,16 +25,14 @@ const Backlinks: React.FC<{
   }
 
   return (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
-      <Text fontSize={1} fontWeight="bold">
-        Links to this {sourceType}
-      </Text>
+    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 'default' }}>
+      <Text sx={{ fontSize: 1, fontWeight: 'bold' }}>Links to this {sourceType}</Text>
 
       <Box m={2} />
 
-      <Flex alignItems="flex-start" flexWrap="wrap">
+      <Flex sx={{ alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {backlinks.map((backlink) => (
-          <Box width={[1, 1, 1 / 2]} key={backlink.url} my={1}>
+          <Box key={backlink.url} my={1} sx={{ width: [1, 1, 1 / 2] }}>
             <BacklinkItem sourceURL={sourceURL} backlink={backlink} />
           </Box>
         ))}

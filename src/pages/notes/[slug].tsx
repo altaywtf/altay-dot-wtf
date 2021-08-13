@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
-import { Heading, Text, Box } from 'rebass'
+import { Heading, Text, Box } from 'theme-ui'
 import { getNote, getNotes, Note } from 'api/notes'
 import { Backlink, getBacklinks } from 'api/backlinks'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -62,13 +62,13 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box m={[3, 4]} />
 
-    <Heading fontSize={[3, 4]}>{note.title}</Heading>
+    <Heading sx={{ fontSize: [3, 4] }}>{note.title}</Heading>
 
     <Box m={2} />
 
     <Text color="textTertiary">
       {formatDate(note.date)}
-      <Box display="inline" mx={1}>
+      <Box sx={{ display: 'inline' }} mx={1}>
         ·
       </Box>
       {note.readingTime}

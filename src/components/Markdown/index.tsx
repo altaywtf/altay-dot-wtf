@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 // eslint-disable-next-line
 // @ts-ignore
 import slug from 'remark-slug'
@@ -17,7 +17,7 @@ const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 type Props = { children: string }
 
 const Markdown: React.FC<Props> = ({ children }) => (
-  <Box fontSize={[1, 2]}>
+  <Box sx={{ fontSize: [1, 2] }}>
     <ReactMarkdown
       plugins={[slug, gfm]}
       escapeHtml={true}
