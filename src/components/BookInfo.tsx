@@ -1,5 +1,5 @@
 import type { Book } from 'api/books'
-import { Box, Text } from 'rebass'
+import { Box, Text } from 'theme-ui'
 import StarRatingComponent from 'react-star-rating-component'
 import { format } from 'date-fns'
 

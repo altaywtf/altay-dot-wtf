@@ -2,7 +2,7 @@ import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'ne
 import { Book, getBooks, getBook } from 'api/books'
 import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Flex, Box, Heading, Text } from 'theme-ui'
 import { getOpenGraphImage } from 'utils/openGraph'
 import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
@@ -64,14 +64,14 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Box m={[3, 4]} />
 
       <Flex>
-        <Box minWidth={[120, 140]}>
+        <Box sx={{ minWidth: [120, 140] }}>
           <BookCover book={book} />
         </Box>
 
         <Box m={2} />
 
         <Box>
-          <Heading as="h1" fontSize={[2, 3]}>
+          <Heading as="h1" sx={{ fontSize: [2, 3] }}>
             {pageTitle}
           </Heading>
 
@@ -79,9 +79,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <BookInfo book={book} />
           <Box m={1} />
 
-          <Text fontStyle="italic" color="textTertiary">
-            &quot;{book.quote}&quot;
-          </Text>
+          <Text sx={{ fontStyle: 'italic', color: 'textTertiary' }}>&quot;{book.quote}&quot;</Text>
         </Box>
       </Flex>
 

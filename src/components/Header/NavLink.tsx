@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Link } from 'rebass'
+import { Link } from 'theme-ui'
 
 type Props = {
   href: string

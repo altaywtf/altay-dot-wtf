@@ -1,14 +1,14 @@
 import NextLink from 'next/link'
-import { Link } from 'rebass'
+import { Link } from 'theme-ui'
 
 type Props = { href: string }
 
 const MDInternalLink: React.FC<Props> = ({ href, children }) => (
   <NextLink href={href} passHref>
     <Link
-      display="inline"
       href={href}
       sx={{
+        display: 'inline',
         '&.scrolled-source-link': {
           backgroundColor: 'linkPrimary',
           color: 'background',
@@ -26,7 +26,7 @@ const MDInternalLink: React.FC<Props> = ({ href, children }) => (
 )
 
 const MDExternalLink: React.FC<Props> = ({ href, children }) => (
-  <Link display="inline" href={href} target="_blank" rel="noreferrer noopener">
+  <Link href={href} target="_blank" rel="noreferrer noopener" sx={{ display: 'inline' }}>
     {children}
   </Link>
 )

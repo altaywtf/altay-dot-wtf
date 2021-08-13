@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Box, Text, Link, Flex } from 'rebass'
+import { Box, Text, Link, Flex } from 'theme-ui'
 import { CgArrowLeft } from 'react-icons/cg'
 import { usePathHistory } from 'hooks/usePathHistory'
 import { useRouter } from 'next/router'
@@ -8,7 +8,7 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
   const router = useRouter()
   const prevPath = usePathHistory()
   const content = (
-    <Flex alignItems="center">
+    <Flex sx={{ alignItems: 'center' }}>
       <CgArrowLeft />
       <Box mx={1} />
       <Text>{label}</Text>

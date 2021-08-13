@@ -1,6 +1,6 @@
-import { SxStyleProp } from 'rebass'
+import { ThemeUIStyleObject } from 'theme-ui'
 
-export const link: SxStyleProp = {
+export const link: ThemeUIStyleObject = {
   color: 'inherit',
   textDecoration: 'none',
   borderBottomWidth: 1,
@@ -11,7 +11,7 @@ export const link: SxStyleProp = {
   },
 }
 
-export const linkTitle: SxStyleProp = {
+export const linkTitle: ThemeUIStyleObject = {
   ...link,
   color: 'linkPrimary',
   fontSize: [1, 2],
@@ -22,7 +22,7 @@ export const linkTitle: SxStyleProp = {
   },
 }
 
-export const linkSilent: SxStyleProp = {
+export const linkSilent: ThemeUIStyleObject = {
   cursor: 'pointer',
   color: 'textTertiary',
   textDecoration: 'none',
@@ -31,7 +31,7 @@ export const linkSilent: SxStyleProp = {
   },
 }
 
-export const linkButton: SxStyleProp = {
+export const linkButton: ThemeUIStyleObject = {
   cursor: 'pointer',
   textDecoration: 'none',
   display: 'inline-block',
@@ -48,7 +48,7 @@ export const linkButton: SxStyleProp = {
     borderColor: 'buttonBorderHover',
   },
 }
-export const linkScale: SxStyleProp = {
+export const linkScale: ThemeUIStyleObject = {
   display: 'block',
   cursor: 'pointer',
   textDecoration: 'none',
@@ -58,7 +58,7 @@ export const linkScale: SxStyleProp = {
   },
 }
 
-export const linkHighlight: SxStyleProp = {
+export const linkHighlight: ThemeUIStyleObject = {
   cursor: 'pointer',
   display: 'block',
   textDecoration: 'none',

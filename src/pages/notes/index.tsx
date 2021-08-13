@@ -2,7 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getNotes, Note } from 'api/notes'
 import { notesCopy } from 'config/copy'
 import NextLink from 'next/link'
-import { Box, Text, Link } from 'rebass'
+import { Box, Text, Link } from 'theme-ui'
 import PageHeader from 'components/PageHeader'
 import { formatDate } from 'utils/date'
 
@@ -36,7 +36,7 @@ const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ n
           <Text color="textTertiary">
             {formatDate(note.date)}
 
-            <Box display="inline" mx={1}>
+            <Box sx={{ display: 'inline' }} mx={1}>
               ·
             </Box>
             {note.readingTime}

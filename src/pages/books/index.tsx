@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getBooks, Book } from 'api/books'
 import { booksCopy } from 'config/copy'
-import { Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import PageHeader from 'components/PageHeader'
 import BookCover from 'components/BookCover'
@@ -23,7 +23,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
       {books.map((book) => (
         <Box key={book.slug}>
           <Flex>
-            <Box minWidth={[100, 130]}>
+            <Box sx={{ minWidth: [100, 130] }}>
               <NextLink href={book.notes.url} passHref>
                 <a title={book.title}>
                   <BookCover book={book} />
@@ -44,7 +44,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
               <BookInfo book={book} />
               <Box m={1} />
 
-              <Text fontStyle="italic" color="textTertiary">
+              <Text sx={{ fontStyle: 'italic', color: 'textTertiary' }}>
                 &quot;{book.quote}&quot;
               </Text>
             </Box>

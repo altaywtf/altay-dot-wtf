@@ -2,7 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
-import { Flex, Box, Link, Text } from 'rebass'
+import { Flex, Box, Link, Text } from 'theme-ui'
 import NextLink from 'next/link'
 import { GoLinkExternal } from 'react-icons/go'
 
@@ -22,14 +22,14 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   }
 
   return (
-    <Flex alignItems="flex-end">
+    <Flex sx={{ alignItems: 'flex-end' }}>
       <Link href={project.url} variant="linkTitle" target="_blank">
         {project.title}
       </Link>
 
       <Box mr={1} />
 
-      <Text color="linkPrimary" fontSize={0}>
+      <Text sx={{ fontSize: 0 }} color="linkPrimary">
         <GoLinkExternal />
       </Text>
     </Flex>

@@ -1,4 +1,4 @@
-import { Text } from 'rebass'
+import { Text } from 'theme-ui'
 
 const Paragraph: React.FC = ({ children }) => (
   <Text marginY={3} marginX={0} color="textSecondary">

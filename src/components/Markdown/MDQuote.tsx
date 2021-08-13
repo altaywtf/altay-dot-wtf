@@ -1,4 +1,4 @@
-import { Box, Text } from 'rebass'
+import { Box, Text } from 'theme-ui'
 
 const MDQuote: React.FC = ({ children }) => (
   <Box

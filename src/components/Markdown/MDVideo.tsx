@@ -1,4 +1,4 @@
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 
 type Props = {
   src: string

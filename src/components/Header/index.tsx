@@ -2,37 +2,46 @@ import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Flex, Box, Button, SxStyleProp } from 'rebass'
+import { Flex, Box, Button } from 'theme-ui'
 import useDarkMode from 'use-dark-mode'
 import { LAYOUT_WIDTH } from 'theme'
 import { CgSun, CgMoon } from 'react-icons/cg'
 import NavLink from './NavLink'
 import avatar from '../../../public/images/avatar.png'
 
-const headerStyle: SxStyleProp = {
-  position: 'fixed',
-  zIndex: 1,
-  width: '100%',
-  left: 0,
-  top: 0,
-  paddingX: 2,
-  paddingY: 2,
-  borderBottom: '1px solid',
-  borderColor: 'borderMenu',
-  backgroundColor: 'backgroundHeader',
-  backdropFilter: 'saturate(200%) blur(20px)',
-  '& > *': {
-    lineHeight: 1,
-  },
-}
-
 const Header: React.FC = () => {
   const { pathname } = useRouter()
   const darkMode = useDarkMode()
 
   return (
-    <Flex as="header" sx={headerStyle} justifyContent="center">
-      <Flex flex={1} maxWidth={LAYOUT_WIDTH} alignItems="center" justifyContent="space-between">
+    <Flex
+      as="header"
+      sx={{
+        justifyContent: 'center',
+        position: 'fixed',
+        zIndex: 1,
+        width: '100%',
+        left: 0,
+        top: 0,
+        paddingX: 2,
+        paddingY: 2,
+        borderBottom: '1px solid',
+        borderColor: 'borderMenu',
+        backgroundColor: 'backgroundHeader',
+        backdropFilter: 'saturate(200%) blur(20px)',
+        '& > *': {
+          lineHeight: 1,
+        },
+      }}
+    >
+      <Flex
+        sx={{
+          flex: 1,
+          maxWidth: LAYOUT_WIDTH,
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
         <Link href="/">
           <Box
             title="That's my head, also a link to home page. Please press gently."
@@ -56,7 +65,7 @@ const Header: React.FC = () => {
           </Box>
         </Link>
 
-        <Flex alignItems="center">
+        <Flex sx={{ alignItems: 'center' }}>
           <Flex>
             {HEADER.map(({ label, href }) => (
               <Box key={href} mx={1}>

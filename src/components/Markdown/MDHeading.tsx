@@ -1,5 +1,5 @@
 import { createElement } from 'react'
-import { Box, SxStyleProp } from 'rebass'
+import { Box, ThemeUIStyleObject } from 'theme-ui'
 
 type Props = {
   level: number
@@ -12,7 +12,7 @@ type Props = {
   }
 }
 
-const MDHeadingStyle: SxStyleProp = {
+const MDHeadingStyle: ThemeUIStyleObject = {
   '& > h1, h2': {
     marginTop: 5,
   },

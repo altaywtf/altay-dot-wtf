@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { useCallback } from 'react'
-import { Flex, Box, Heading, Link, Text, Image } from 'rebass'
+import { Flex, Box, Heading, Link, Text, Image } from 'theme-ui'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
@@ -23,35 +23,47 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
             {section.data.map((item) => (
               <Box key={item.title}>
                 <Link variant="linkHighlight" href={item.url} target="_blank">
-                  <Flex flexDirection="row" alignItems="center" sx={{ borderRadius: 'default' }}>
-                    <Box backgroundColor="borderPrimary" width={[0.5, 0.3]} p={3}>
+                  <Flex
+                    sx={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      borderRadius: 'default',
+                    }}
+                  >
+                    <Box sx={{ backgroundColor: 'borderPrimary', width: [0.5, 0.3] }} p={3}>
                       <Image
                         src={item.imageURL}
-                        display="block"
-                        height={[96, 128]}
-                        margin="auto"
-                        sx={{ borderRadius: 'default' }}
+                        sx={{
+                          borderRadius: 'default',
+                          height: [96, 128],
+                          display: 'block',
+                          margin: 'auto',
+                        }}
                       />
                     </Box>
 
                     <Box m={[2, 3]} />
 
-                    <Box width={1} p={2}>
-                      <Text fontWeight="bold" color="text">
-                        {item.title}
-                      </Text>
+                    <Box p={2} sx={{ width: 1 }}>
+                      <Text sx={{ fontWeight: 'bold', color: 'text' }}>{item.title}</Text>
 
                       <Box m={1} />
 
-                      <Box lineHeight={1.2}>
-                        <Text display={['none', 'initial']} color="textTertiary" fontStyle="italic">
+                      <Box sx={{ lineHeight: 1.2 }}>
+                        <Text
+                          sx={{
+                            display: ['none', 'initial'],
+                            color: 'textTertiary',
+                            fontStyle: 'italic',
+                          }}
+                        >
                           {item.subtitle}
                         </Text>
                       </Box>
 
                       <Box m={1} />
 
-                      <Text color="textTertiary">by {item.author}</Text>
+                      <Text sx={{ color: 'textTertiary' }}>by {item.author}</Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -64,23 +76,21 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       case 'music':
         return (
-          <Flex flexWrap="wrap" m={-2}>
+          <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} width={[1 / 2, 1 / 3]}>
+              <Box key={item.title} p={2} sx={{ width: [1 / 2, 1 / 3] }}>
                 <Link href={item.url} variant="linkScale" target="_blank">
-                  <Flex alignItems="center" flexDirection="column">
-                    <Box width={1}>
+                  <Flex sx={{ alignItems: 'center', flexDirection: 'column' }}>
+                    <Box sx={{ width: 1 }}>
                       <Image
                         src={item.imageURL}
-                        display="block"
-                        margin="auto"
-                        sx={{ borderRadius: 'default' }}
+                        sx={{ display: 'block', margin: 'auto', borderRadius: 'default' }}
                       />
                     </Box>
 
                     <Box m={1} />
 
-                    <Box width={1} fontSize={0} lineHeight={1.4}>
+                    <Box sx={{ width: 1, fontSize: 0, lineHeight: 1.4 }}>
                       <Text color="textSecondary">{item.title}</Text>
                       <Text color="textTertiary">{item.creator}</Text>
                     </Box>
@@ -93,16 +103,15 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       case 'shows':
         return (
-          <Flex flexWrap="wrap" m={-2}>
+          <Flex sx={{ flexWrap: 'wrap' }} m={-2}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} width={'auto'}>
+              <Box key={item.title} p={2} sx={{ width: 'auto' }}>
                 <Link href={item.url} variant="linkScale" target="_blank">
-                  <Flex flexDirection="column">
-                    <Box width={1}>
+                  <Flex sx={{ flexDirection: 'column' }}>
+                    <Box sx={{ width: 1 }}>
                       <Image
                         src={item.imageURL}
-                        height={[160, 240]}
-                        sx={{ borderRadius: 'default' }}
+                        sx={{ height: [160, 240], borderRadius: 'default' }}
                       />
                     </Box>
 
@@ -128,7 +137,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
         .filter((section) => section.data && section.data.length > 0)
         .map((section) => (
           <Box key={section._id}>
-            <Heading as="h3" fontSize={2}>
+            <Heading as="h3" sx={{ fontSize: 2 }}>
               {section.title}
             </Heading>
 

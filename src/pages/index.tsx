@@ -4,7 +4,7 @@ import PageHeader from 'components/PageHeader'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
 import NextLink from 'next/link'
-import { Box, Flex, Text, Link, SxStyleProp } from 'rebass'
+import { Box, Flex, Text, Link, ThemeUIStyleObject } from 'theme-ui'
 import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
 import { getFeaturedNotes } from 'api/notes'
 
@@ -42,7 +42,7 @@ const getContactLinkColor = (title: ContactLink['title']): string => {
   }
 }
 
-const getBrandLinkStyle = (brand: 'putio' | 'amie' | 'klarna' | 'lisk'): SxStyleProp => ({
+const getBrandLinkStyle = (brand: 'putio' | 'amie' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
   fontWeight: 'bold',
   borderColor: 'transparent',
   color: brand,
@@ -100,8 +100,8 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
               variant="linkButton"
               color={getContactLinkColor(title)}
             >
-              <Flex alignItems="center">
-                <Text fontSize={2} display="inline-flex">
+              <Flex sx={{ alignItems: 'center' }}>
+                <Text sx={{ display: 'inline-flex', fontSize: 2 }}>
                   {getContactLinkIcon(title)}
                 </Text>
                 <Box m={1} />

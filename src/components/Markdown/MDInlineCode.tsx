@@ -1,7 +1,7 @@
-import { Text } from 'rebass'
+import { Text } from 'theme-ui'
 
 const MDInlineCode: React.FC = ({ children }) => (
-  <Text display="inline" fontFamily="monospace" color="textInlineCode">
+  <Text sx={{ display: 'inline', fontFamily: 'monospace', color: 'textInlineCode' }}>
     {children}
   </Text>
 )

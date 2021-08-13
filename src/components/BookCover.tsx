@@ -1,6 +1,6 @@
 import type { Book } from 'api/books'
 import Image from 'next/image'
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 
 type Props = {
   book: Book
