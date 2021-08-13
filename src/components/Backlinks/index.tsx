@@ -25,7 +25,7 @@ const Backlinks: React.FC<{
   }
 
   return (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
+    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 'default' }}>
       <Text fontSize={1} fontWeight="bold">
         Links to this {sourceType}
       </Text>

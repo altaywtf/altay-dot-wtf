@@ -44,7 +44,7 @@ const Header: React.FC = () => {
               height: 32,
               borderWidth: 2,
               borderStyle: 'solid',
-              borderRadius: '50%',
+              borderRadius: 'circle',
               borderColor: 'backgroundSecondary',
               backgroundColor: 'black',
               '&:hover': {
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 backgroundColor: 'background',
                 color: 'textSecondary',
                 fontSize: 0,
-                borderRadius: 4,
+                borderRadius: 'default',
                 padding: 0,
                 width: 36,
                 height: 28,

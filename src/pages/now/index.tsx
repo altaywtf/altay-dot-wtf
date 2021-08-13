@@ -23,14 +23,14 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
             {section.data.map((item) => (
               <Box key={item.title}>
                 <Link variant="linkHighlight" href={item.url} target="_blank">
-                  <Flex flexDirection="row" className="border-radius" alignItems="center">
+                  <Flex flexDirection="row" alignItems="center" sx={{ borderRadius: 'default' }}>
                     <Box backgroundColor="borderPrimary" width={[0.5, 0.3]} p={3}>
                       <Image
                         src={item.imageURL}
                         display="block"
                         height={[96, 128]}
-                        className="border-radius"
                         margin="auto"
+                        sx={{ borderRadius: 'default' }}
                       />
                     </Box>
 
@@ -74,7 +74,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                         src={item.imageURL}
                         display="block"
                         margin="auto"
-                        className="border-radius"
+                        sx={{ borderRadius: 'default' }}
                       />
                     </Box>
 
@@ -99,7 +99,11 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                 <Link href={item.url} variant="linkScale" target="_blank">
                   <Flex flexDirection="column">
                     <Box width={1}>
-                      <Image src={item.imageURL} height={[160, 240]} className="border-radius" />
+                      <Image
+                        src={item.imageURL}
+                        height={[160, 240]}
+                        sx={{ borderRadius: 'default' }}
+                      />
                     </Box>
 
                     <Text color="textSecondary">{item.title}</Text>

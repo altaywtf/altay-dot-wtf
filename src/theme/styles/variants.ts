@@ -43,7 +43,7 @@ export const linkButton: SxStyleProp = {
   lineHeight: 1,
   border: '2px solid',
   borderColor: 'transparent',
-  borderRadius: 4,
+  borderRadius: 'default',
   '&:hover': {
     borderColor: 'buttonBorderHover',
   },
@@ -64,7 +64,7 @@ export const linkHighlight: SxStyleProp = {
   textDecoration: 'none',
   border: '2px solid',
   borderColor: 'borderPrimary',
-  borderRadius: 4,
+  borderRadius: 'default',
   transition: 'transform .2s',
   '&:hover': {
     backgroundColor: 'linkHoverBackground',

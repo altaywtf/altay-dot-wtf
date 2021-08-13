@@ -39,14 +39,4 @@ export const createGlobalStyles = (theme: Theme) => `
     line-height: 1.4;
     margin: 4px 0;
   }
-
-  .border-radius {
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .image-markdown {
-    background-color: ${theme.colors.background};
-  }
 `

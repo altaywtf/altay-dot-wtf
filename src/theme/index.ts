@@ -24,4 +24,8 @@ export const createTheme = (options: ThemeOptions) => ({
   fontSizes: [14, 16, 18, 24, 32],
   breakpoints: ['480px', '640px', '960px'],
   colors: options.dark ? COLORS_DARK : COLORS_LIGHT,
+  radii: {
+    default: 4,
+    circle: '50%',
+  },
 })

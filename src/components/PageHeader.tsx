@@ -38,7 +38,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
           overflow: 'hidden',
           width: 64,
           height: 64,
-          borderRadius: '50%',
+          borderRadius: 'circle',
           backgroundColor: 'black',
         }}
       >

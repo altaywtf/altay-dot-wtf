@@ -8,7 +8,7 @@ type Props = {
 }
 
 const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
-  <Box className="border-radius">
+  <Box sx={{ borderRadius: 'default' }}>
     <Image
       alt={book.title}
       src={book.coverImage.url}
