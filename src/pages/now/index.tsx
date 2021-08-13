@@ -49,6 +49,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   >
                     <Box sx={{ backgroundColor: 'borderPrimary', width: ['50%', '33%'] }} p={3}>
                       <Image
+                        alt={`Cover of book ${item.title}`}
                         src={item.imageURL}
                         sx={{
                           borderRadius: 'default',
@@ -101,6 +102,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   <Flex sx={{ flexDirection: 'column' }}>
                     <Box sx={{ width: '100%' }}>
                       <Image
+                        alt={`Cover of music album ${item.title}`}
                         src={item.imageURL}
                         sx={{ display: 'block', margin: 'auto', borderRadius: 'default' }}
                       />
@@ -132,6 +134,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                 <Link href={item.url} variant="links.scale" target="_blank">
                   <Flex sx={{ flexDirection: 'column' }}>
                     <Image
+                      alt={`Poster of TV show ${item.title}`}
                       src={item.imageURL}
                       sx={{ height: [160, 240], borderRadius: 'default' }}
                     />

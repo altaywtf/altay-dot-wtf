@@ -1,8 +1,8 @@
 import { HEADER } from 'config'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Image from 'next/image'
-import { Flex, Box } from 'theme-ui'
+import { Flex, Box, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
 import ColorModeButton from './ColorModeButton'
@@ -40,8 +40,8 @@ const Header: React.FC = () => {
           justifyContent: 'space-between',
         }}
       >
-        <Link href="/">
-          <Box
+        <NextLink href="/" passHref>
+          <Link
             title="That's my head, also a link to home page. Please press gently."
             sx={{
               cursor: 'pointer',
@@ -59,9 +59,9 @@ const Header: React.FC = () => {
               },
             }}
           >
-            <Image src={avatar} />
-          </Box>
-        </Link>
+            <Image src={avatar} alt="That's head" />
+          </Link>
+        </NextLink>
 
         <Flex sx={{ alignItems: 'center' }}>
           <Flex>
