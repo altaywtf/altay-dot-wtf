@@ -3,7 +3,7 @@ import { useColorMode } from 'theme-ui'
 import { CgSun, CgMoon } from 'react-icons/cg'
 import { Button } from 'theme-ui'
 
-const ColorModeButton = () => {
+const ColorModeButton: React.FC = () => {
   const [colorMode, setColorMode] = useColorMode()
   const handleClick = useCallback(() => {
     setColorMode(colorMode === 'light' ? 'dark' : 'light')

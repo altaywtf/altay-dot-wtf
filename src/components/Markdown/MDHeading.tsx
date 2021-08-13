@@ -23,14 +23,12 @@ const MDHeadingStyle: ThemeUIStyleObject = {
   },
 }
 
-const MDHeading: React.FC<Props> = (props) => {
-  return (
-    <Box sx={MDHeadingStyle}>
-      <Heading as={`h${props.level}` as any} id={props.node.data.id}>
-        {props.children}
-      </Heading>
-    </Box>
-  )
-}
+const MDHeading: React.FC<Props> = ({ node, level, children }) => (
+  <Box sx={MDHeadingStyle}>
+    <Heading id={node.data.id} as={`h${level}` as React.ElementType}>
+      {children}
+    </Heading>
+  </Box>
+)
 
 export default MDHeading

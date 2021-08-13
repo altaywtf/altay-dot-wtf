@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { homeCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import { readMarkdownFile } from 'utils/md'
@@ -6,9 +6,13 @@ import { getContactLinks, ContactLink } from 'api/contact'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link, ThemeUIStyleObject } from 'theme-ui'
 import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
-import { getFeaturedNotes } from 'api/notes'
+import { getFeaturedNotes, Note } from 'api/notes'
 
-export const getStaticProps = async () => ({
+export const getStaticProps: GetStaticProps<{
+  description: string
+  notes: Note[]
+  contactLinks: ContactLink[]
+}> = async () => ({
   props: {
     description: readMarkdownFile('home.md'),
     notes: getFeaturedNotes(),

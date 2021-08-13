@@ -42,7 +42,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, description, descriptionStyl
           backgroundColor: 'black',
         }}
       >
-        <Image src={avatar} />
+        <Image src={avatar} alt="Avatar" />
       </Box>
     )}
 

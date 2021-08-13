@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 
-export const useScrollToBacklinkSource = () => {
+export const useScrollToBacklinkSource: VoidFunction = () => {
   const router = useRouter()
   const { query } = router
   const source = query[BACKLINK_SOURCE_QUERY_PARAM]

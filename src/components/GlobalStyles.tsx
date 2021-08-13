@@ -1,7 +1,7 @@
 import { Global } from '@emotion/react'
 import { createTypographyCSS } from 'theme/typography'
 
-const GlobalStyles = () => (
+const GlobalStyles: React.FC = () => (
   <Global
     styles={() => `
       ${createTypographyCSS()}
