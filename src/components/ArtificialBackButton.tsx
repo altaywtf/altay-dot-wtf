@@ -18,12 +18,12 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
   return (
     <Box>
       {prevPath === href ? (
-        <Link variant="linkSilent" onClick={() => router.back()}>
+        <Link variant="links.silent" onClick={() => router.back()}>
           {content}
         </Link>
       ) : (
         <NextLink href={href} passHref>
-          <Link variant="linkSilent">{content}</Link>
+          <Link variant="links.silent">{content}</Link>
         </NextLink>
       )}
     </Box>

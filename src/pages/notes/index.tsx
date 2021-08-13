@@ -22,7 +22,7 @@ const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ n
       {notes.map((note) => (
         <Box key={note.slug} mb={4}>
           <NextLink href={note.url} passHref>
-            <Link variant="linkTitle" title={note.title}>
+            <Link variant="links.title" title={note.title}>
               {note.title}
             </Link>
           </NextLink>

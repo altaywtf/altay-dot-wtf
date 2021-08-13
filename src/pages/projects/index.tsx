@@ -16,14 +16,14 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   if (project.url.startsWith('/')) {
     return (
       <NextLink href={project.url} passHref>
-        <Link variant="linkTitle">{project.title}</Link>
+        <Link variant="links.title">{project.title}</Link>
       </NextLink>
     )
   }
 
   return (
     <Flex sx={{ alignItems: 'flex-end' }}>
-      <Link href={project.url} variant="linkTitle" target="_blank">
+      <Link href={project.url} variant="links.title" target="_blank">
         {project.title}
       </Link>
 

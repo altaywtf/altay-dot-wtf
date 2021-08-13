@@ -1,4 +1,4 @@
-const TYPEFACE = `please-dont-download-these-fonts-buy-a-license-instead`
+export const TYPEFACE = `please-dont-download-these-fonts-buy-a-license-instead`
 const FOLDER = `${TYPEFACE}/${TYPEFACE}`
 
 const loadFont = (family: string, fileName: string, weight: number) => `
@@ -24,15 +24,4 @@ const loadFont = (family: string, fileName: string, weight: number) => `
 export const createTypographyCSS = () => `
   ${loadFont(TYPEFACE, `${FOLDER}-Regular`, 400)}
   ${loadFont(TYPEFACE, `${FOLDER}-Bold`, 600)}
-
-  body {
-    font-family: ${TYPEFACE}, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-    letter-spacing: 0.015em;
-    word-spacing: 0.001em;
-  }
 `

@@ -22,9 +22,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Box>
             {section.data.map((item) => (
               <Box key={item.title}>
-                <Link variant="linkHighlight" href={item.url} target="_blank">
+                <Link href={item.url} target="_blank">
                   <Flex
                     sx={{
+                      flex: 1,
                       flexDirection: 'row',
                       alignItems: 'center',
                       borderRadius: 'default',
@@ -79,7 +80,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} sx={{ width: [1 / 2, 1 / 3] }}>
-                <Link href={item.url} variant="linkScale" target="_blank">
+                <Link href={item.url} variant="links.scale" target="_blank">
                   <Flex sx={{ alignItems: 'center', flexDirection: 'column' }}>
                     <Box sx={{ width: 1 }}>
                       <Image
@@ -106,7 +107,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex sx={{ flexWrap: 'wrap' }} m={-2}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} sx={{ width: 'auto' }}>
-                <Link href={item.url} variant="linkScale" target="_blank">
+                <Link href={item.url} variant="links.scale" target="_blank">
                   <Flex sx={{ flexDirection: 'column' }}>
                     <Box sx={{ width: 1 }}>
                       <Image

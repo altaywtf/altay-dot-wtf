@@ -97,7 +97,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <Link
               href={url}
               target="_blank"
-              variant="linkButton"
+              variant="links.button"
               color={getContactLinkColor(title)}
             >
               <Flex sx={{ alignItems: 'center' }}>
