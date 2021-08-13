@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         width: '100%',
         left: 0,
         top: 0,
-        paddingX: 2,
+        paddingX: [3, 2, 2],
         paddingY: 2,
         borderBottom: '1px solid',
         borderColor: 'borderMenu',

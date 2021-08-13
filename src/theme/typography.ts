@@ -1,4 +1,4 @@
-export const TYPEFACE = `please-dont-download-these-fonts-buy-a-license-instead`
+const TYPEFACE = `please-dont-download-these-fonts-buy-a-license-instead`
 const FOLDER = `${TYPEFACE}/${TYPEFACE}`
 
 const loadFont = (family: string, fileName: string, weight: number) => `
@@ -20,6 +20,8 @@ const loadFont = (family: string, fileName: string, weight: number) => `
     font-style: italic;
   }
 `
+
+export const fontFamily = `${TYPEFACE}, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`
 
 export const createTypographyCSS = () => `
   ${loadFont(TYPEFACE, `${FOLDER}-Regular`, 400)}

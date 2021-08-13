@@ -22,16 +22,32 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Box>
             {section.data.map((item) => (
               <Box key={item.title}>
-                <Link href={item.url} target="_blank">
+                <Link
+                  href={item.url}
+                  target="_blank"
+                  sx={{
+                    cursor: 'pointer',
+                    display: 'block',
+                    textDecoration: 'none',
+                    border: '2px solid',
+                    borderColor: 'borderPrimary',
+                    borderRadius: 4,
+                    transition: 'transform .2s',
+                    '&:hover': {
+                      backgroundColor: 'linkHoverBackground',
+                      borderColor: 'backgroundSecondary',
+                      transform: 'scale(1.025)',
+                    },
+                  }}
+                >
                   <Flex
                     sx={{
-                      flex: 1,
                       flexDirection: 'row',
                       alignItems: 'center',
                       borderRadius: 'default',
                     }}
                   >
-                    <Box sx={{ backgroundColor: 'borderPrimary', width: [0.5, 0.3] }} p={3}>
+                    <Box sx={{ backgroundColor: 'borderPrimary', width: ['50%', '33%'] }} p={3}>
                       <Image
                         src={item.imageURL}
                         sx={{
@@ -39,16 +55,17 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                           height: [96, 128],
                           display: 'block',
                           margin: 'auto',
+                          width: 'auto',
                         }}
                       />
                     </Box>
 
                     <Box m={[2, 3]} />
 
-                    <Box p={2} sx={{ width: 1 }}>
+                    <Box p={2} sx={{ width: '100%' }}>
                       <Text sx={{ fontWeight: 'bold', color: 'text' }}>{item.title}</Text>
 
-                      <Box m={1} />
+                      <Box m={2} />
 
                       <Box sx={{ lineHeight: 1.2 }}>
                         <Text
@@ -62,7 +79,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                         </Text>
                       </Box>
 
-                      <Box m={1} />
+                      <Box m={2} />
 
                       <Text sx={{ color: 'textTertiary' }}>by {item.author}</Text>
                     </Box>
@@ -79,10 +96,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
         return (
           <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} sx={{ width: [1 / 2, 1 / 3] }}>
+              <Box key={item.title} p={2} sx={{ width: ['50%', '33%'] }}>
                 <Link href={item.url} variant="links.scale" target="_blank">
-                  <Flex sx={{ alignItems: 'center', flexDirection: 'column' }}>
-                    <Box sx={{ width: 1 }}>
+                  <Flex sx={{ flexDirection: 'column' }}>
+                    <Box sx={{ width: '100%' }}>
                       <Image
                         src={item.imageURL}
                         sx={{ display: 'block', margin: 'auto', borderRadius: 'default' }}
@@ -91,9 +108,14 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                     <Box m={1} />
 
-                    <Box sx={{ width: 1, fontSize: 0, lineHeight: 1.4 }}>
-                      <Text color="textSecondary">{item.title}</Text>
-                      <Text color="textTertiary">{item.creator}</Text>
+                    <Box sx={{ fontSize: 0, lineHeight: 1.4 }}>
+                      <Text as="p" color="textSecondary">
+                        {item.title}
+                      </Text>
+
+                      <Text as="p" color="textTertiary">
+                        {item.creator}
+                      </Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -109,12 +131,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
               <Box key={item.title} p={2} sx={{ width: 'auto' }}>
                 <Link href={item.url} variant="links.scale" target="_blank">
                   <Flex sx={{ flexDirection: 'column' }}>
-                    <Box sx={{ width: 1 }}>
-                      <Image
-                        src={item.imageURL}
-                        sx={{ height: [160, 240], borderRadius: 'default' }}
-                      />
-                    </Box>
+                    <Image
+                      src={item.imageURL}
+                      sx={{ height: [160, 240], borderRadius: 'default' }}
+                    />
 
                     <Text color="textSecondary">{item.title}</Text>
                   </Flex>
