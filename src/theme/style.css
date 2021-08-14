@@ -1,0 +1,50 @@
+@font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Regular.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Regular-Italic.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Bold.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Bold-Italic.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 600;
+  font-style: italic;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 4px 0 4px 24px;
+}
+
+li {
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+hr {
+  opacity: 0.2;
+}

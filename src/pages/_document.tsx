@@ -1,24 +1,41 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { createTypographyCSS } from 'theme/typography'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <style global jsx>{`
-            ${createTypographyCSS()}
+          <link
+            rel="preload"
+            href="/fonts/please-dont-download-these-fonts-buy-a-license-instead-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
 
-            ul, ol {
-              padding: 0;
-              margin: 4px 0 4px 24px;
-            }
+          <link
+            rel="preload"
+            href="/fonts/please-dont-download-these-fonts-buy-a-license-instead-Regular-Italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
 
-            li {
-              line-height: 1.4;
-              margin: 4px 0;
-            }
-          `}</style>
+          <link
+            rel="preload"
+            href="/fonts/please-dont-download-these-fonts-buy-a-license-instead-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            rel="preload"
+            href="/fonts/please-dont-download-these-fonts-buy-a-license-instead-Bold-Italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
         </Head>
 
         <body>

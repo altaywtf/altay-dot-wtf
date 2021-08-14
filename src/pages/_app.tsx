@@ -1,3 +1,4 @@
+import '../theme/style.css'
 import type { AppProps } from 'next/app'
 import { SEO, HOSTNAME } from 'config'
 import Head from 'next/head'

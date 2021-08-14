@@ -1,9 +1,8 @@
 import { Theme } from 'theme-ui'
 import { COLORS_DARK, COLORS_LIGHT } from './colors'
-import { fontFamily } from './typography'
 
 export const LAYOUT_WIDTH = 640
-
+const fontFamily = `please-dont-download-these-fonts-buy-a-license-instead, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
 const makeTheme = <T extends Theme>(t: T) => t
 
 export const theme = makeTheme({
@@ -129,10 +128,6 @@ export const theme = makeTheme({
     },
     h6: {
       variant: 'text.heading',
-    },
-    hr: {
-      borderColor: 'borderHR',
-      opacity: 0.2,
     },
   },
 })
