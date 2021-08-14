@@ -25,6 +25,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                 <Link
                   href={item.url}
                   target="_blank"
+                  rel="noreferrer noopener"
                   sx={{
                     cursor: 'pointer',
                     display: 'block',
@@ -98,7 +99,12 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} sx={{ width: ['50%', '33%'] }}>
-                <Link href={item.url} variant="links.scale" target="_blank">
+                <Link
+                  href={item.url}
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  variant="links.scale"
+                >
                   <Flex sx={{ flexDirection: 'column' }}>
                     <Box sx={{ width: '100%' }}>
                       <Image
@@ -131,7 +137,12 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           <Flex sx={{ flexWrap: 'wrap' }} m={-2}>
             {section.data.map((item) => (
               <Box key={item.title} p={2} sx={{ width: 'auto' }}>
-                <Link href={item.url} variant="links.scale" target="_blank">
+                <Link
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  variant="links.scale"
+                >
                   <Flex sx={{ flexDirection: 'column' }}>
                     <Image
                       alt={`Poster of TV show ${item.title}`}

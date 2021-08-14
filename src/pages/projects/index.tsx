@@ -4,7 +4,7 @@ import { projectsCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import { Flex, Box, Link, Text } from 'theme-ui'
 import NextLink from 'next/link'
-import { GoLinkExternal } from '@react-icons/all-files/go/GoLinkExternal'
+import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
 
 export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
   props: {
@@ -22,15 +22,15 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   }
 
   return (
-    <Flex sx={{ alignItems: 'flex-end' }}>
-      <Link href={project.url} variant="links.title" target="_blank">
-        {project.title}
-      </Link>
+    <Flex sx={{ alignItems: 'center' }}>
+      <Box>
+        <Link href={project.url} variant="links.title" target="_blank" rel="noreferrer noopener">
+          {project.title}
+        </Link>
+      </Box>
 
-      <Box mr={1} />
-
-      <Text sx={{ fontSize: 0 }} color="linkPrimary">
-        <GoLinkExternal />
+      <Text sx={{ fontSize: [1, 2], height: [18, 20] }} color="linkPrimary">
+        <CgArrowTopRight />
       </Text>
     </Flex>
   )

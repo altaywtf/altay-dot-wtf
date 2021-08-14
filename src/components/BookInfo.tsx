@@ -20,7 +20,7 @@ const BookInfo: React.FC<Props> = ({ book }) => {
       component: (
         <Box marginBottom={-1}>
           <StarRatingComponent
-            name="rating"
+            name={`rating-${book.slug}`}
             value={book.rating}
             starCount={5}
             editing={false}
