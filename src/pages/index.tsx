@@ -103,6 +103,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <Box key={title} mx={1}>
             <Link
               href={url}
+              rel="noreferrer noopener"
               target="_blank"
               variant="links.button"
               color={getContactLinkColor(title)}
