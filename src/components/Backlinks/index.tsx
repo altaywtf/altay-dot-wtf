@@ -9,7 +9,7 @@ const BacklinkItem: React.FC<{ sourceURL: string; backlink: Backlink }> = ({
   backlink,
 }) => (
   <NextLink href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`} passHref>
-    <Link variant="linkSilent">{backlink.title}</Link>
+    <Link sx={{ color: 'textSecondary' }}>{backlink.title}</Link>
   </NextLink>
 )
 
@@ -32,7 +32,7 @@ const Backlinks: React.FC<{
 
       <Flex sx={{ alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {backlinks.map((backlink) => (
-          <Box key={backlink.url} my={1} sx={{ width: [1, 1, 1 / 2] }}>
+          <Box key={backlink.url} my={1} sx={{ width: ['100%', '100%', '50%'] }}>
             <BacklinkItem sourceURL={sourceURL} backlink={backlink} />
           </Box>
         ))}
