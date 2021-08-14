@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { typographyCSS } from 'theme/typography'
+import { createTypographyCSS } from 'theme/typography'
 
 class MyDocument extends Document {
   render() {
@@ -7,7 +7,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <style global jsx>{`
-            ${typographyCSS}
+            ${createTypographyCSS()}
 
             ul, ol {
               padding: 0;

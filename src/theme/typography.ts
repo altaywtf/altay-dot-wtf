@@ -20,7 +20,7 @@ const loadFont = (family: string, fileName: string, weight: number) => `
   }
 `
 
-export const typographyCSS = `
+export const createTypographyCSS = (): string => `
   ${loadFont(TYPEFACE, `${FOLDER}-Regular`, 400)}
   ${loadFont(TYPEFACE, `${FOLDER}-Bold`, 600)}
 `
