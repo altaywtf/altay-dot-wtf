@@ -4,7 +4,7 @@ import { projectsCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import { Flex, Box, Link, Text } from 'theme-ui'
 import NextLink from 'next/link'
-import { GoLinkExternal } from 'react-icons/go'
+import { GoLinkExternal } from '@react-icons/all-files/go/GoLinkExternal'
 
 export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
   props: {

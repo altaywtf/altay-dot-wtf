@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import { Box, Text, Link, Flex } from 'theme-ui'
-import { CgArrowLeft } from 'react-icons/cg'
+import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
 import { usePathHistory } from 'hooks/usePathHistory'
 import { useRouter } from 'next/router'
 

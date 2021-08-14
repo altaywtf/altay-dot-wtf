@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 import { useColorMode } from 'theme-ui'
-import { CgSun, CgMoon } from 'react-icons/cg'
+import { CgSun } from '@react-icons/all-files/cg/CgSun'
+import { CgMoon } from '@react-icons/all-files/cg/CgMoon'
 import { Button } from 'theme-ui'
 
 const ColorModeButton: React.FC = () => {

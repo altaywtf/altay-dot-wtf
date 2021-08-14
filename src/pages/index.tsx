@@ -5,7 +5,10 @@ import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link, ThemeUIStyleObject } from 'theme-ui'
-import { VscMail, VscTwitter, VscGithubInverted } from 'react-icons/vsc'
+import { VscMail } from '@react-icons/all-files/vsc/VscMail'
+import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
+import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
+
 import { getFeaturedNotes, Note } from 'api/notes'
 
 export const getStaticProps: GetStaticProps<{
