@@ -4,8 +4,8 @@ export const HEADER = [
     href: '/now',
   },
   {
-    label: 'Notes',
-    href: '/notes',
+    label: 'Writing',
+    href: '/posts',
   },
   {
     label: 'Projects',

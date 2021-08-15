@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'theme-ui'
-import { getNote, getNotes, Note } from 'api/notes'
+import { getPost, getPosts, Post } from 'api/posts'
 import { Backlink, getBacklinks } from 'api/backlinks'
 import { getOpenGraphImage } from 'utils/openGraph'
 import { formatDate } from 'utils/date'
@@ -10,68 +10,68 @@ import Markdown from 'components/Markdown'
 import Backlinks from 'components/Backlinks'
 
 export const getStaticPaths: GetStaticPaths = () => ({
-  paths: getNotes().map((note) => ({ params: { slug: note.slug } })),
+  paths: getPosts().map((post) => ({ params: { slug: post.slug } })),
   fallback: false,
 })
 
 export const getStaticProps: GetStaticProps<{
-  note: Note
+  post: Post
   markdown: string
   backlinks: Backlink[]
 }> = ({ params }) => {
-  const { note, markdown } = getNote(params?.slug as string)
-  const backlinks = getBacklinks(note.url)
+  const { post, markdown } = getPost(params?.slug as string)
+  const backlinks = getBacklinks(post.url)
 
   return {
     props: {
-      note,
+      post,
       markdown,
       backlinks,
     },
   }
 }
 
-const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  note,
+const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  post,
   markdown,
   backlinks,
 }) => (
   <>
     <NextSeo
-      title={note.title}
-      description={note.oneliner}
+      title={post.title}
+      description={post.oneliner}
       openGraph={{
-        title: note.title,
-        description: note.oneliner,
+        title: post.title,
+        description: post.oneliner,
         type: 'article',
         article: {
           authors: ['Altay Aydemir'],
-          modifiedTime: note.date,
+          modifiedTime: post.date,
         },
         images: [
           getOpenGraphImage({
             type: 'note',
-            title: note.title,
-            oneliner: note.oneliner,
+            title: post.title,
+            oneliner: post.oneliner,
           }),
         ],
       }}
     />
 
-    <ArtificialBackButton href="/notes" label="Notes" />
+    <ArtificialBackButton href="/posts" label="Writing" />
 
     <Box m={[3, 4]} />
 
-    <Heading sx={{ fontSize: [3, 4] }}>{note.title}</Heading>
+    <Heading sx={{ fontSize: [3, 4] }}>{post.title}</Heading>
 
     <Box m={2} />
 
     <Text color="textTertiary">
-      {formatDate(note.date)}
+      {formatDate(post.date)}
       <Box sx={{ display: 'inline' }} mx={1}>
         ·
       </Box>
-      {note.readingTime}
+      {post.readingTime}
     </Text>
 
     <Box m={3} />
@@ -80,8 +80,8 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box m={5} />
 
-    <Backlinks sourceType="note" sourceURL={note.url} backlinks={backlinks} />
+    <Backlinks sourceType="post" sourceURL={post.url} backlinks={backlinks} />
   </>
 )
 
-export default NotePage
+export default PostPage

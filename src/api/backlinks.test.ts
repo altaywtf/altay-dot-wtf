@@ -1,9 +1,9 @@
 import { getBacklinks } from './backlinks'
-import { getNotesWithMarkdown } from './notes'
+import { getPostsWithMarkdown } from './posts'
 import { getBooksWithMarkdown } from './books'
 
-jest.mock('./notes', () => ({
-  getNotesWithMarkdown: jest.fn(),
+jest.mock('./posts', () => ({
+  getPostsWithMarkdown: jest.fn(),
 }))
 
 jest.mock('./books', () => ({
@@ -12,31 +12,31 @@ jest.mock('./books', () => ({
 
 describe('getBacklinks', () => {
   beforeAll(() => {
-    const mockGetNotesWithMarkdown = getNotesWithMarkdown as jest.MockedFunction<
-      typeof getNotesWithMarkdown
+    const mockGetPostsWithMarkdown = getPostsWithMarkdown as jest.MockedFunction<
+      typeof getPostsWithMarkdown
     >
 
-    mockGetNotesWithMarkdown.mockImplementation(() => [
+    mockGetPostsWithMarkdown.mockImplementation(() => [
       {
-        note: {
+        post: {
           title: 'yes',
           oneliner: 'yes',
           date: '2020-12-21T20:41:04Z',
           featured: true,
           slug: 'yes',
-          url: '/notes/yes',
+          url: '/posts/yes',
           readingTime: '1 min read',
         },
-        markdown: 'hello and [hi](/notes/hi)',
+        markdown: 'hello and [hi](/posts/hi)',
       },
       {
-        note: {
+        post: {
           title: 'no',
           oneliner: 'no',
           date: '2020-12-21T20:41:04Z',
           featured: false,
           slug: 'no',
-          url: '/notes/no',
+          url: '/posts/no',
           readingTime: '1 min read',
         },
         markdown: 'hello and hi',
@@ -79,19 +79,19 @@ describe('getBacklinks', () => {
           slug: 'offline-matters',
           title: 'Offline Matters',
         },
-        markdown: 'hello and [hi](/notes/hi)',
+        markdown: 'hello and [hi](/posts/hi)',
       },
     ])
   })
 
   it('works', () => {
-    const input = `/notes/hi`
+    const input = `/posts/hi`
     expect(getBacklinks(input)).toMatchInlineSnapshot(`
       Array [
         Object {
           "title": "yes",
-          "type": "note",
-          "url": "/notes/yes",
+          "type": "post",
+          "url": "/posts/yes",
         },
         Object {
           "title": "Offline Matters by Jess Henderson",

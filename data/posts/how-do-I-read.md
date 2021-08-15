@@ -16,7 +16,7 @@ I tried to start a new way of doing things when I moved to a new country two yea
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or the opposite.
 
-Their most inherent trait is being uttermost aware of [why they are doing what they are doing](../notes/why). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here.
+Their most inherent trait is being uttermost aware of [why they are doing what they are doing](../posts/why). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here.
 
 ### Why do I read
 
@@ -105,11 +105,11 @@ This approach works better. Still, sometimes I get side-tracked by the rabbit ho
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
-![Sticky notes from User Friendly](/images/notes/how-do-I-read/how-do-I-read-post-it.jpg)
+![Sticky notes from User Friendly](/images/posts/how-do-I-read/how-do-I-read-post-it.jpg)
 
 Besides that, I started tagging the highlights based on their topic. It's helpful while taking action, which is a learning from another book: _How to Take Smart Notes_.
 
-![Tags](/images/notes/how-do-I-read/how-do-I-read-tags.jpg)
+![Tags](/images/posts/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 

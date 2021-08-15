@@ -15,11 +15,11 @@ _Those who contributed tremendously to my life during the past few years._
 _My journey so far._
 
 - **2021, Apr:** moved into a [more-permanent flat](https://twitter.com/altaywtf/status/1387446623303778307) after living in a furnished studio for 2.5 years.
-- **2021, Jan:** switched to _Consumer Deals_ team in Klarna to work closer to the product after [an engineering-heavy year.](./notes/2020)
+- **2021, Jan:** switched to _Consumer Deals_ team in Klarna to work closer to the product after [an engineering-heavy year.](./posts/2020)
 - **2020, Oct:** built this website. Inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), [julie.design](https://julie.design), and [andymatuschak.org](https://notes.andymatuschak.org)
 - **2020, Jan:** switched to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
 - **2019, May:** got a promising offer from [**Klarna**](https://klarna.com/) and joined _Marketing Touchpoint Infrastructure_ team. Worked on CRM integrations and a bunch of MVPs for the Consumer Growth and Loyalty domain.
-- **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io). Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](./notes/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
+- **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io). Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](./posts/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
 - **2018, June:** had a month-long London trip with colleagues, my first time abroad. Turkey had another non-promising general election that gave a hint of what will keep happening in the country.
 - **2017:** joined [**put.io**](https://put.io/), the company changed my life. Took over the web app and built more apps for iOS, tvOS, Roku, and Smart TVs.
 

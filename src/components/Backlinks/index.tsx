@@ -14,7 +14,7 @@ const BacklinkItem: React.FC<{ sourceURL: string; backlink: Backlink }> = ({
 )
 
 const Backlinks: React.FC<{
-  sourceType: 'book' | 'note'
+  sourceType: 'book' | 'post'
   sourceURL: string
   backlinks: Backlink[]
 }> = ({ sourceType, sourceURL, backlinks }) => {

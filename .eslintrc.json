@@ -6,5 +6,8 @@
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
-  "parser": "@typescript-eslint/parser"
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
 }

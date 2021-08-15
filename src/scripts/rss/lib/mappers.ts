@@ -1,6 +1,6 @@
 import type { Author, Item } from 'feed'
 import type { Book } from 'api/books'
-import type { Note } from 'api/notes'
+import type { Post } from 'api/posts'
 import { SITE_URL } from 'config'
 import { convertMarkdownToHTML } from 'utils/md'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -12,21 +12,21 @@ const author: Author = {
   link: 'https://twitter.com/altaywtf',
 }
 
-export const mapNoteToRssFeedItem = (note: Note, markdown: string): Item => ({
-  date: new Date(note.date),
-  title: note.title,
-  description: note.oneliner,
+export const mapPostToRssFeedItem = (post: Post, markdown: string): Item => ({
+  date: new Date(post.date),
+  title: post.title,
+  description: post.oneliner,
   author: [author],
-  link: `${SITE_URL}/notes/${note.slug}`,
+  link: `${SITE_URL}/writing/${post.slug}`,
   content: convertMarkdownToHTML(markdown),
   image: {
     // length: 0, @TODO: this is required
-    title: note.title,
+    title: post.title,
     url: sanitizeHtml(
       getOpenGraphImage({
         type: 'note',
-        title: note.title,
-        oneliner: note.oneliner,
+        title: post.title,
+        oneliner: post.oneliner,
       }).url,
     ),
   },

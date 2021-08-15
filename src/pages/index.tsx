@@ -3,22 +3,21 @@ import { homeCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
+import { getFeaturedPosts, Post } from 'api/posts'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link, ThemeUIStyleObject } from 'theme-ui'
 import { VscMail } from '@react-icons/all-files/vsc/VscMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 
-import { getFeaturedNotes, Note } from 'api/notes'
-
 export const getStaticProps: GetStaticProps<{
   description: string
-  notes: Note[]
+  posts: Post[]
   contactLinks: ContactLink[]
 }> = async () => ({
   props: {
     description: readMarkdownFile('home.md'),
-    notes: getFeaturedNotes(),
+    posts: getFeaturedPosts(),
     contactLinks: getContactLinks(),
   },
 })
@@ -60,7 +59,7 @@ const getBrandLinkStyle = (brand: 'putio' | 'amie' | 'klarna' | 'lisk'): ThemeUI
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   description,
-  notes,
+  posts,
   contactLinks,
 }) => (
   <Box
@@ -83,10 +82,10 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Text color="textTertiary">Featured writing</Text>
       <Box m={1} />
       <>
-        {notes.map((note) => (
-          <Box key={note.slug} my={1}>
-            <NextLink href={note.url} passHref>
-              <Link>{note.title}</Link>
+        {posts.map((post) => (
+          <Box key={post.slug} my={1}>
+            <NextLink href={post.url} passHref>
+              <Link>{post.title}</Link>
             </NextLink>
           </Box>
         ))}

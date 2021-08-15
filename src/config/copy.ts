@@ -3,11 +3,10 @@ export const homeCopy = {
   description: '',
 } as const
 
-export const notesCopy = {
+export const postsCopy = {
   icon: '📝',
-  title: `Notes`,
-  description:
-    'This is a [digital garden](https://github.com/MaggieAppleton/digital-gardeners) to practice learning, thinking, and building in public.',
+  title: `Writing`,
+  description: 'Random thoughts and references.',
 } as const
 
 export const bookmarksCopy = {

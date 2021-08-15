@@ -2,7 +2,7 @@
 
 ### Find a Scenius
 
-[Scenius](../notes/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
+[Scenius](../posts/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
 
 Start asking what you can do for the others instead of the opposing one-way question.
 
@@ -130,7 +130,7 @@ A Derek Sivers quote:
 After doing something, take a moment and think about how it felt.
 Did you get energized and motivated or exhausted and drained?
 
-That is [the vampire test](../notes/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
+That is [the vampire test](../posts/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
 
 ### Find Your fellow <X>'ers
 

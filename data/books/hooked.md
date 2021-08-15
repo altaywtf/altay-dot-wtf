@@ -80,7 +80,7 @@ The search for intrinsic rewards of mastery, competence, and completion.
 
 ## What are you going to do with this?
 
-[The Manipulation Matrix](https://designli.co/blog/using-the-manipulation-matrix-for-ethical-behavioral-design/)
+[The Manipulation Matrix](https://designli.co/posts/using-the-manipulation-matrix-for-ethical-behavioral-design/)
 
 > Build the change they want to see in the world.
 > &mdash; Mahatma Gandhi

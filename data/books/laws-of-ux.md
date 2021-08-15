@@ -4,7 +4,7 @@ This book is a great reference for the complex psychological concepts behind the
 
 ## Jakob's Law
 
-[_Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know._](../notes/jakobs-law)
+[_Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know._](../posts/jakobs-law)
 
 **Key Takeaways**
 

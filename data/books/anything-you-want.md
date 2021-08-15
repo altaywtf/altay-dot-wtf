@@ -3,7 +3,7 @@
 Business is not about money. It's about making dreams come true for others and yourself.
 
 Starting a company is a great way to improve something and learn while doing.
-[Your company is your little utopia; run it as you're in charge of your ideal world.](../notes/my-utopia)
+[Your company is your little utopia; run it as you're in charge of your ideal world.](../posts/my-utopia)
 
 A business is a reflection of the creator. Pay attention to what excites you or what drains you.
 Make your company and role **anything you want**.
@@ -22,7 +22,7 @@ CD Baby just followed the idea of charging 4\$ per copy for albums, which was th
 
 ## Hell Yeah Or No
 
-[Persistence is undoubtedly essential, but don't persistently do the wrong thing.](../notes/why) Success comes from persistently improving and innovating.
+[Persistence is undoubtedly essential, but don't persistently do the wrong thing.](../posts/why) Success comes from persistently improving and innovating.
 
 We are all busy. Saying **"hell yeah, or no"** helps choose what to do with enjoyment.
 

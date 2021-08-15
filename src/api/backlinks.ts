@@ -1,20 +1,20 @@
 import { hasLink } from 'utils/md'
-import { getNotesWithMarkdown } from './notes'
+import { getPostsWithMarkdown } from './posts'
 import { getBooksWithMarkdown } from './books'
 
 export type Backlink = {
-  type: 'note' | 'book'
+  type: 'post' | 'book'
   title: string
   url: string
 }
 
 export const getBacklinks = (url: string): Backlink[] => {
-  const notes: Backlink[] = getNotesWithMarkdown()
+  const posts: Backlink[] = getPostsWithMarkdown()
     .filter(({ markdown }) => hasLink(markdown, url))
-    .map(({ note }) => ({
-      type: 'note',
-      title: note.title,
-      url: note.url,
+    .map(({ post }) => ({
+      type: 'post',
+      title: post.title,
+      url: post.url,
     }))
 
   const books: Backlink[] = getBooksWithMarkdown()
@@ -25,5 +25,5 @@ export const getBacklinks = (url: string): Backlink[] => {
       url: book.notes.url,
     }))
 
-  return [...notes, ...books]
+  return [...posts, ...books]
 }

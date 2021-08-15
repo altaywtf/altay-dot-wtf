@@ -13,37 +13,17 @@ module.exports = withBundleAnalyzer({
       },
       {
         source: '/articles',
-        destination: '/notes',
+        destination: '/posts',
         permanent: true,
       },
       {
         source: '/articles/:path*',
-        destination: '/notes/:path*',
-        permanent: true,
-      },
-      {
-        source: '/blog',
-        destination: '/notes',
-        permanent: true,
-      },
-      {
-        source: '/blog/:path*',
-        destination: '/notes/:path*',
-        permanent: true,
-      },
-      {
-        source: '/posts/:path*',
-        destination: '/notes/:path*',
+        destination: '/posts/:path*',
         permanent: true,
       },
       {
         source: '/images/articles/:path*',
-        destination: '/images/notes/:path*',
-        permanent: true,
-      },
-      {
-        source: '/images/blog/:path*',
-        destination: '/images/notes/:path*',
+        destination: '/images/posts/:path*',
         permanent: true,
       },
       {

@@ -1,15 +1,15 @@
 import '../env'
 import { SITE_DESCRIPTION, SITE_TITLE } from 'config'
 import { booksCopy } from 'config/copy'
-import { getNotes, getNote } from 'api/notes'
+import { getPosts, getPost } from 'api/posts'
 import { getBooks, getBook } from 'api/books'
-import { mapBookToRssFeedItem, mapNoteToRssFeedItem } from './lib/mappers'
+import { mapBookToRssFeedItem, mapPostToRssFeedItem } from './lib/mappers'
 import { createAndSaveFeed } from './lib/feed'
 
 const main = async () => {
   await createAndSaveFeed({
-    path: 'notes',
-    items: getNotes().map((note) => mapNoteToRssFeedItem(note, getNote(note.slug).markdown)),
+    path: 'posts',
+    items: getPosts().map((note) => mapPostToRssFeedItem(note, getPost(note.slug).markdown)),
     options: {
       title: SITE_TITLE,
       description: SITE_DESCRIPTION,

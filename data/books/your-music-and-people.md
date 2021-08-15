@@ -97,7 +97,7 @@ Second one makes use of the industry to build a good team, pursue deals and find
 
 Prepare for either path, you will win any case.
 
-**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](../notes/why)
+**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](../posts/why)
 
 Every depressing situation may arise an opportunity. Hungry guy from music industry comes to Derek's university for a seminar. Derek orders a pizza to the classroom. They became friends after.
 
@@ -141,7 +141,7 @@ You are lifted by the people around you.
 
 ## Money
 
-[Pour your personality and philosophy into the way you do business.](../notes/my-utopia)
+[Pour your personality and philosophy into the way you do business.](../posts/my-utopia)
 
 Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
 
