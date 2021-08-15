@@ -17,7 +17,7 @@ export const mapPostToRssFeedItem = (post: Post, markdown: string): Item => ({
   title: post.title,
   description: post.oneliner,
   author: [author],
-  link: `${SITE_URL}/writing/${post.slug}`,
+  link: `${SITE_URL}/posts/${post.slug}`,
   content: convertMarkdownToHTML(markdown),
   image: {
     // length: 0, @TODO: this is required
