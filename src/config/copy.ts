@@ -6,7 +6,7 @@ export const homeCopy = {
 export const postsCopy = {
   icon: '📝',
   title: `Writing`,
-  description: 'Random thoughts and references.',
+  description: '',
 } as const
 
 export const bookmarksCopy = {
@@ -31,5 +31,5 @@ export const nowCopy = {
 export const projectsCopy = {
   icon: '👨‍💻',
   title: 'Projects',
-  description: 'I usually do these things when not working.',
+  description: '',
 }
