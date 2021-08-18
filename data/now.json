@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2021-08-12T11:28:54.087Z",
+  "updatedAt": "2021-08-18T02:33:48.764Z",
   "sections": [
     {
       "_id": "life",
@@ -38,6 +38,12 @@
       "title": "🎧 Listening",
       "data": [
         {
+          "title": "Pressure Machine",
+          "creator": "The Killers",
+          "url": "https://music.apple.com/de/album/pressure-machine/1576945214",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/fc/68/f0/fc68f060-fce3-8211-bd9f-b0af82d0236c/21UMGIM63724.rgb.jpg/1200x1200bb.jpeg"
+        },
+        {
           "title": "Loving In Stereo",
           "creator": "Jungle",
           "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008",
@@ -66,12 +72,6 @@
           "creator": "Parra for Cuva",
           "url": "https://music.apple.com/de/album/juno/1554130750",
           "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1200bb.jpeg"
-        },
-        {
-          "title": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-          "creator": "Billie Eilish",
-          "url": "https://music.apple.com/de/album/when-we-all-fall-asleep-where-do-we-go/1450695723",
-          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/1200x1200bb.jpeg"
         }
       ]
     },

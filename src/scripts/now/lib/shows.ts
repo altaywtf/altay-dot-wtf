@@ -3,18 +3,6 @@ import uniqBy from 'lodash.uniqby'
 import axios from 'axios'
 import { NowJSONShow } from './types'
 
-type TvMazeShow = {
-  name: string
-  url: string
-  image: {
-    original: string
-  }
-}
-
-const fetchShow = (serieId: string) => {
-  return axios.get<TvMazeShow>(`https://api.tvmaze.com/shows/${serieId}`)
-}
-
 type ShowRssFeed = {
   title: string
 }
@@ -24,6 +12,14 @@ type ShowRssFeedItem = {
   isoDate: string
   'tv:external_id': string
   'tv:show_name': string
+}
+
+type TvMazeShow = {
+  name: string
+  url: string
+  image: {
+    original: string
+  }
 }
 
 export const fetchShows = async (): Promise<NowJSONShow[]> => {
@@ -41,7 +37,9 @@ export const fetchShows = async (): Promise<NowJSONShow[]> => {
 
   const series = await Promise.all(
     uniqueItems.map(async (item) => {
-      const { data } = await fetchShow(item['tv:external_id'])
+      const { data } = await axios.get<TvMazeShow>(
+        `https://api.tvmaze.com/shows/${item['tv:external_id']}`,
+      )
 
       return {
         title: data.name,
@@ -51,5 +49,5 @@ export const fetchShows = async (): Promise<NowJSONShow[]> => {
     }),
   )
 
-  return series
+  return series.sort((a, b) => a.title.localeCompare(b.title))
 }
