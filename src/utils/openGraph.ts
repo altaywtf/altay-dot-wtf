@@ -2,8 +2,8 @@ import type { OpenGraphImages } from 'next-seo/lib/types'
 
 const OG_IMAGE_SERVICE_BASE_URL = `https://og-image.altay.wtf/api`
 
-type OGImageParamsNote = {
-  type: 'note'
+type OGImageParamsPost = {
+  type: 'post'
   title: string
   oneliner: string
 }
@@ -20,7 +20,7 @@ type OGImageParamsPage = {
   title: string
 }
 
-type OGImageParams = OGImageParamsNote | OGImageParamsBook | OGImageParamsPage
+type OGImageParams = OGImageParamsPost | OGImageParamsBook | OGImageParamsPage
 
 export const getOpenGraphImage = (params: OGImageParams): OpenGraphImages => {
   const searchParams = Object.entries(params).reduce((acc, [key, value]) => {

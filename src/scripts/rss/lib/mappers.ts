@@ -24,7 +24,7 @@ export const mapPostToRssFeedItem = (post: Post, markdown: string): Item => ({
     title: post.title,
     url: sanitizeHtml(
       getOpenGraphImage({
-        type: 'note',
+        type: 'post',
         title: post.title,
         oneliner: post.oneliner,
       }).url,

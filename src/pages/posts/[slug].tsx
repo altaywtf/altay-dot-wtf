@@ -50,7 +50,7 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         },
         images: [
           getOpenGraphImage({
-            type: 'note',
+            type: 'post',
             title: post.title,
             oneliner: post.oneliner,
           }),
