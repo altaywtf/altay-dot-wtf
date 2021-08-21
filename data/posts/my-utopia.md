@@ -1,6 +1,6 @@
 ---
 title: Transparent business
-oneliner: I want my own utopia.
+oneliner: How I imagine my utopia.
 date: '2020-11-08T15:37:20Z'
 ---
 

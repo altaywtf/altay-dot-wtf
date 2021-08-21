@@ -85,7 +85,7 @@ Being virtuous requires paying "attention." It's about intercepting the reaction
 
 Living with arete is it's own reward. The positive feelings, and material outcomes are just added bonuses.
 
-Similar to [Kant's ethics](../posts/formula-of-humanity), we do the right thing just because it's the right thing to do.
+Similar to [Kant's ethics](./everything-is-fucked), we do the right thing just because it's the right thing to do.
 
 The goal is to be useful, to help others, and take care of ourselves and everybody else.
 

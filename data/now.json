@@ -1,100 +1,106 @@
 {
-  "updatedAt": "2021-08-18T02:33:48.764Z",
   "sections": [
     {
       "_id": "life",
-      "title": "⏳ Life Updates",
-      "data": ""
+      "data": "",
+      "title": "⏳ Life Updates"
     },
     {
       "_id": "books",
-      "title": "📚 Reading",
       "data": [
         {
-          "url": "https://oku.club/book/android-apprentice-by-namrata-bandekar-hncHq",
-          "title": "Android Apprentice (Fourth Edition)",
-          "subtitle": "Beginning Android Development with Kotlin",
           "author": "Namrata Bandekar, Darryl Bayliss, Fuad Kamal",
-          "imageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "imageURL": "https://books.google.com/books/content?id=orBqzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "subtitle": "Beginning Android Development with Kotlin",
+          "title": "Android Apprentice (Fourth Edition)",
+          "url": "https://oku.club/book/android-apprentice-by-namrata-bandekar-hncHq"
         },
         {
-          "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM",
-          "title": "So You Want to Talk About Race",
-          "subtitle": "",
           "author": "Ijeoma Oluo",
-          "imageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "imageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "subtitle": "",
+          "title": "So You Want to Talk About Race",
+          "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM"
         },
         {
-          "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo",
-          "title": "User Friendly",
-          "subtitle": "How the Hidden Rules of Design are Changing the Way We Live, Work & Play",
           "author": "Cliff Kuang, Robert Fabricant",
-          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg"
+          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg",
+          "subtitle": "How the Hidden Rules of Design are Changing the Way We Live, Work & Play",
+          "title": "User Friendly",
+          "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo"
         }
-      ]
+      ],
+      "title": "📚 Reading"
     },
     {
       "_id": "music",
-      "title": "🎧 Listening",
       "data": [
         {
-          "title": "Pressure Machine",
+          "creator": "AM & Shawn Lee",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/38/6c/5e/386c5e63-9259-7bc8-13cc-df0e2bdea71f/889326220046_Cover.jpg/1200x1200bb.jpeg",
+          "title": "Outlines",
+          "url": "https://music.apple.com/de/album/outlines/990199694"
+        },
+        {
           "creator": "The Killers",
-          "url": "https://music.apple.com/de/album/pressure-machine/1576945214",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/fc/68/f0/fc68f060-fce3-8211-bd9f-b0af82d0236c/21UMGIM63724.rgb.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/fc/68/f0/fc68f060-fce3-8211-bd9f-b0af82d0236c/21UMGIM63724.rgb.jpg/1200x1200bb.jpeg",
+          "title": "Pressure Machine",
+          "url": "https://music.apple.com/de/album/pressure-machine/1576945214"
         },
         {
-          "title": "Loving In Stereo",
           "creator": "Jungle",
-          "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg",
+          "title": "Loving In Stereo",
+          "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008"
         },
         {
-          "title": "Gamma",
           "creator": "Fewjar",
-          "url": "https://music.apple.com/de/album/gamma/1372843558",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/1200x1200bb.jpeg",
+          "title": "Gamma",
+          "url": "https://music.apple.com/de/album/gamma/1372843558"
         },
         {
-          "title": "Nautiqua",
           "creator": "Wun Two & Boora",
-          "url": "https://music.apple.com/de/album/nautiqua/1563043167",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/50/78/82/50788263-63fd-6997-a72b-110cb7033a5e/4018939459505_3000.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/50/78/82/50788263-63fd-6997-a72b-110cb7033a5e/4018939459505_3000.jpg/1200x1200bb.jpeg",
+          "title": "Nautiqua",
+          "url": "https://music.apple.com/de/album/nautiqua/1563043167"
         },
         {
-          "title": "Sun Transmission",
           "creator": "Inner Wave",
-          "url": "https://music.apple.com/de/album/sun-transmission/1441533537",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1200bb.jpeg",
+          "title": "Sun Transmission",
+          "url": "https://music.apple.com/de/album/sun-transmission/1441533537"
         },
         {
-          "title": "Juno",
           "creator": "Parra for Cuva",
-          "url": "https://music.apple.com/de/album/juno/1554130750",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1200bb.jpeg"
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/4d/96/1e/4d961e0a-6f08-75ad-966d-cdda31f10a85/195497541270.jpg/1200x1200bb.jpeg",
+          "title": "Juno",
+          "url": "https://music.apple.com/de/album/juno/1554130750"
         }
-      ]
+      ],
+      "title": "🎧 Listening"
     },
     {
       "_id": "shows",
-      "title": "📺 Watching",
       "data": [
         {
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg",
           "title": "DAVE",
-          "url": "https://www.tvmaze.com/shows/45563/dave",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg"
+          "url": "https://www.tvmaze.com/shows/45563/dave"
         },
         {
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg",
           "title": "Rick and Morty",
-          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
+          "url": "https://www.tvmaze.com/shows/216/rick-and-morty"
         },
         {
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg",
           "title": "Ted Lasso",
-          "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
+          "url": "https://www.tvmaze.com/shows/44458/ted-lasso"
         }
-      ]
+      ],
+      "title": "📺 Watching"
     }
-  ]
+  ],
+  "updatedAt": "2021-08-21T14:56:36.689Z"
 }
