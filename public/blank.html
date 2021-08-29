@@ -1,0 +1,19 @@
+<html>
+
+<body>
+  <div style="text-align: center">
+    <p>
+      This is a blank webpage.
+    </p>
+
+    <input id="color" type="color" style="border: 1px solid #ddd; border-radius: 6px; background: transparent;" />
+  </div>
+
+  <script>
+    document
+      .getElementById("color")
+      .addEventListener("change", (e) => { document.body.style.backgroundColor = e.target.value })
+  </script>
+</body>
+
+</html>

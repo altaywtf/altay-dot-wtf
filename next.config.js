@@ -61,6 +61,11 @@ module.exports = withBundleAnalyzer({
         destination: '/analytics.html',
         permanent: true,
       },
+      {
+        source: '/blank',
+        destination: '/blank.html',
+        permanent: true,
+      },
     ]
   },
 })
