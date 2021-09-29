@@ -1,6 +1,6 @@
 I'm a software engineer mostly focused on the user-facing side of digital products.
 
-I'm currently living in Berlin, taking a break from full-time work and spending time on some [passion projects](/projects).
+I'm currently living in Berlin, taking a break from work and playing FIFA 22 all day.
 
 During the past several years, I worked at [Klarna](https://klarna.com)'s consumer app ecosystem and a blockchain startup called [Lisk.](https://lisk.io)
 
