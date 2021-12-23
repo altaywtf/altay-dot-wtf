@@ -66,16 +66,7 @@ export const createNowJSON = ({
     {
       _id: 'books',
       title: '📚 Reading',
-      data: [
-        {
-          author: 'Ryan Singer',
-          imageURL: '/images/books/shape-up/cover.png',
-          subtitle: 'Stop Running in Circles and Ship Work that Matters',
-          title: 'Shape Up',
-          url: 'https://basecamp.com/shapeup',
-        },
-        ...books,
-      ],
+      data: books,
     },
     {
       _id: 'music',

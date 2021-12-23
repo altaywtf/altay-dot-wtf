@@ -13,13 +13,8 @@ type OkuCollectionResponse = {
 }
 
 export const fetchBooks = async (): Promise<NowJSONBook[]> => {
-  const OKU_COLLECTION_URL = 'https://oku.club/api/collections/user/altay/reading'
-
-  const response = await axios.get<OkuCollectionResponse>(OKU_COLLECTION_URL, {
-    headers: {
-      authorization: `Token ${process.env.OKU_USER_TOKEN}`,
-    },
-  })
+  const OKU_COLLECTION_URL = 'https://oku.club/api/collections/user/altay/reading?format=json'
+  const response = await axios.get<OkuCollectionResponse>(OKU_COLLECTION_URL)
 
   return response.data.books.map((okuBook) => ({
     url: `https://oku.club/book/${okuBook.slug}`,

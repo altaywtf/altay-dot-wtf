@@ -8,9 +8,16 @@ import { fetchShows } from './lib/shows'
 
 const main = async () => {
   const life = readMarkdownFile('now.md')
+
   const books = await fetchBooks()
+  console.log('✅ fetch books: done!')
+
   const music = await fetchMusic()
+  console.log('✅ fetch music: done!')
+
   const shows = await fetchShows()
+  console.log('✅ fetch shows: done!')
+
   writeNowJSON(createNowJSON({ life, books, music, shows }))
 }
 

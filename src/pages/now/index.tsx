@@ -186,7 +186,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       <Box m={6} />
 
-      <Text color="textTertiary">Last updated on {formatDate(now.updatedAt)}</Text>
+      <Text color="textTertiary">Last compiled on {formatDate(now.updatedAt)}</Text>
     </>
   )
 }

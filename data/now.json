@@ -1,124 +1,117 @@
 {
+  "updatedAt": "2021-12-23T13:52:07.455Z",
   "sections": [
     {
       "_id": "life",
-      "data": "",
-      "title": "⏳ Life Updates"
+      "title": "⏳ Life Updates",
+      "data": ""
     },
     {
       "_id": "books",
+      "title": "📚 Reading",
       "data": [
         {
-          "author": "Ryan Singer",
-          "imageURL": "/images/books/shape-up/cover.png",
-          "subtitle": "Stop Running in Circles and Ship Work that Matters",
-          "title": "Shape Up",
-          "url": "https://basecamp.com/shapeup"
+          "url": "https://oku.club/book/software-design-for-flexibility-by-gerald-jay-sussman-DstBH",
+          "title": "Software Design for Flexibility",
+          "subtitle": "How to Avoid Programming Yourself into a Corner",
+          "author": "Gerald Jay Sussman, Chris Hanson",
+          "imageURL": "https://books.google.com/books/content?id=iM_tDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "author": "Ijeoma Oluo",
-          "imageURL": "https://books.google.com/books/content?id=f3mRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "url": "https://oku.club/book/the-fountainhead-by-ayn-rand-zzDQW",
+          "title": "The Fountainhead",
           "subtitle": "",
-          "title": "So You Want to Talk About Race",
-          "url": "https://oku.club/book/so-you-want-to-talk-about-race-by-ijeoma-oluo-WmLCM"
-        },
-        {
-          "author": "Cliff Kuang, Robert Fabricant",
-          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597965013l/30815777._SY475_.jpg",
-          "subtitle": "How the Hidden Rules of Design are Changing the Way We Live, Work & Play",
-          "title": "User Friendly",
-          "url": "https://oku.club/book/user-friendly-by-cliff-kuang-YfRTo"
+          "author": "Ayn Rand",
+          "imageURL": "https://books.google.com/books/content?id=TdDiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         }
-      ],
-      "title": "📚 Reading"
+      ]
     },
     {
       "_id": "music",
+      "title": "🎧 Listening",
       "data": [
         {
-          "creator": "Transplants",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/43/ef/31/43ef3166-a922-6bb2-792c-33e7dbfc2963/191773693329.jpg/1200x1200bb.jpeg",
-          "title": "Take Cover",
-          "url": "https://music.apple.com/de/album/take-cover/1280197547"
+          "title": "War Room Stories (Deluxe Edition)",
+          "creator": "Breton",
+          "url": "https://music.apple.com/tr/album/war-room-stories-deluxe-edition/929723404",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/c7/9b/45/c79b4592-0a8d-5510-807d-7ad31a1a7f50/cover.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Transplants",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/38/8a/e2388ad4-728d-57a3-ed80-9b8769e4ac90/0045778726301.png/1200x1200bb.jpeg",
-          "title": "In a Warzone",
-          "url": "https://music.apple.com/de/album/in-a-warzone/1485057752"
+          "title": "Lifeforms",
+          "creator": "Angels & Airwaves",
+          "url": "https://music.apple.com/tr/album/lifeforms/1570547185",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Transplants",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ef/7a/d8/ef7ad884-633e-707f-ebd8-2f87dd930f7a/0045778044863.png/1200x1200bb.jpeg",
           "title": "Transplants",
-          "url": "https://music.apple.com/de/album/transplants/1485054588"
+          "creator": "Transplants",
+          "url": "https://music.apple.com/tr/album/transplants/1485054588",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ef/7a/d8/ef7ad884-633e-707f-ebd8-2f87dd930f7a/0045778044863.png/1200x1200bb.jpg"
         },
         {
-          "creator": "Second",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/7e/1e/99/7e1e99eb-9f78-894d-b833-505ab568e292/artwork.jpg/1200x1200bb.jpeg",
-          "title": "Aklımda Bi Kördüğüm - Single",
-          "url": "https://music.apple.com/de/album/akl%C4%B1mda-bi-k%C3%B6rd%C3%BC%C4%9F%C3%BCm-single/1546394734"
+          "title": "Hata Payı",
+          "creator": "Jakuzi",
+          "url": "https://music.apple.com/tr/album/hata-pay%C4%B1/1445919939",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/f1/a9/01/f1a901d7-5075-1945-861e-466a222017aa/4250506832537_3000.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "AM & Shawn Lee",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/38/6c/5e/386c5e63-9259-7bc8-13cc-df0e2bdea71f/889326220046_Cover.jpg/1200x1200bb.jpeg",
-          "title": "Outlines",
-          "url": "https://music.apple.com/de/album/outlines/990199694"
+          "title": "Full Circle",
+          "creator": "Hælos",
+          "url": "https://music.apple.com/tr/album/full-circle/1589172754",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/46/0d/cf/460dcf92-a2cf-e25c-6b77-e56e18d51193/744861108467.png/1200x1200bb.jpg"
         },
         {
-          "creator": "The Killers",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/fc/68/f0/fc68f060-fce3-8211-bd9f-b0af82d0236c/21UMGIM63724.rgb.jpg/1200x1200bb.jpeg",
-          "title": "Pressure Machine",
-          "url": "https://music.apple.com/de/album/pressure-machine/1576945214"
+          "title": "Alone and Unreal: The Best of the Clientele (Deluxe)",
+          "creator": "The Clientele",
+          "url": "https://music.apple.com/tr/album/alone-and-unreal-the-best-of-the-clientele-deluxe/1009889447",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music5/v4/e3/23/ab/e323ab64-4ed3-a206-8632-878784fb1b88/889326283218_Cover.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Jungle",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/ef/f5/1aeff531-e697-3c07-7eaf-d209563888ad/5056167160984_1.jpg/1200x1200bb.jpeg",
-          "title": "Loving In Stereo",
-          "url": "https://music.apple.com/de/album/loving-in-stereo/1555318008"
+          "title": "Kiasmos",
+          "creator": "Kiasmos",
+          "url": "https://music.apple.com/tr/album/kiasmos/1451077320",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/8e/6d/24/8e6d24af-e34d-d8fb-64f3-3ec9fd6e2f0b/4050486109618_cover.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Fewjar",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/f2/be/29/f2be2983-913d-1ca3-bc0b-652a397211ae/cover.jpg/1200x1200bb.jpeg",
-          "title": "Gamma",
-          "url": "https://music.apple.com/de/album/gamma/1372843558"
+          "title": "Redux: The First 10 Years",
+          "creator": "Silverstein",
+          "url": "https://music.apple.com/tr/album/redux-the-first-10-years/1455270117",
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/a4/70/ae/a470ae12-e180-6587-7cc8-42dc2e6f5ab3/859731256145_cover.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Wun Two & Boora",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/50/78/82/50788263-63fd-6997-a72b-110cb7033a5e/4018939459505_3000.jpg/1200x1200bb.jpeg",
-          "title": "Nautiqua",
-          "url": "https://music.apple.com/de/album/nautiqua/1563043167"
+          "title": "Fantezi Müzik",
+          "creator": "Jakuzi",
+          "url": "https://music.apple.com/tr/album/fantezi-m%C3%BCzik/1276710837",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/60/ba/b9/60bab9cb-7c16-6e34-ea04-59634cf296da/4250506826413_1448.jpg/1200x1200bb.jpg"
         },
         {
-          "creator": "Inner Wave",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/0b/de/d1/0bded103-ce25-06e0-f9c3-3d404fc529f9/5054526166981_1.jpg/1200x1200bb.jpeg",
-          "title": "Sun Transmission",
-          "url": "https://music.apple.com/de/album/sun-transmission/1441533537"
+          "title": "Artik Güçler Dengede",
+          "creator": "Kül",
+          "url": "https://music.apple.com/tr/album/artik-g%C3%BC%C3%A7ler-dengede/1072420999",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/ad/86/16/ad861684-7166-e7ed-6df3-1619f0c443b8/cover.jpg/1200x1200bb.jpg"
         }
-      ],
-      "title": "🎧 Listening"
+      ]
     },
     {
       "_id": "shows",
+      "title": "📺 Watching",
       "data": [
         {
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/320/801177.jpg",
-          "title": "DAVE",
-          "url": "https://www.tvmaze.com/shows/45563/dave"
+          "title": "South Park",
+          "url": "https://www.tvmaze.com/shows/112/south-park",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg"
         },
         {
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg",
-          "title": "Rick and Morty",
-          "url": "https://www.tvmaze.com/shows/216/rick-and-morty"
+          "title": "Succession",
+          "url": "https://www.tvmaze.com/shows/23470/succession",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/357/892608.jpg"
         },
         {
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg",
           "title": "Ted Lasso",
-          "url": "https://www.tvmaze.com/shows/44458/ted-lasso"
+          "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
         }
-      ],
-      "title": "📺 Watching"
+      ]
     }
-  ],
-  "updatedAt": "2021-08-29T13:41:00.101Z"
+  ]
 }
