@@ -7,6 +7,8 @@ import { getFeaturedPosts, Post } from 'api/posts'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link, ThemeUIStyleObject } from 'theme-ui'
 import { VscMail } from '@react-icons/all-files/vsc/VscMail'
+import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
+import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 
 export const getStaticProps: GetStaticProps<{
   description: string
@@ -24,6 +26,12 @@ const getContactLinkIcon = (title: ContactLink['title']) => {
   switch (title) {
     case 'Email':
       return <VscMail />
+
+    case 'Twitter':
+      return <VscTwitter />
+
+    case 'Github':
+      return <VscGithubInverted />
   }
 }
 
@@ -31,6 +39,12 @@ const getContactLinkColor = (title: ContactLink['title']): string => {
   switch (title) {
     case 'Email':
       return 'linkPrimary'
+
+    case 'Twitter':
+      return '#1DA1F2'
+
+    case 'Github':
+      return 'text'
   }
 }
 

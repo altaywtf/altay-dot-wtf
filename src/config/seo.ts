@@ -5,6 +5,10 @@ export const SEO: NextSeoProps = {
   title: SITE_TITLE,
   titleTemplate: `${SITE_TITLE} | %s`,
   description: SITE_DESCRIPTION,
+  twitter: {
+    handle: '@altaywtf',
+    cardType: 'summary_large_image',
+  },
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,

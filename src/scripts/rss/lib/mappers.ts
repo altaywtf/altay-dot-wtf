@@ -9,6 +9,7 @@ import { sanitizeHtml } from 'utils/sanitize'
 const author: Author = {
   name: 'Altay',
   email: 'altay@aydemir.io',
+  link: 'https://twitter.com/altaywtf',
 }
 
 export const mapPostToRssFeedItem = (post: Post, markdown: string): Item => ({
