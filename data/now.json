@@ -1,117 +1,106 @@
 {
-  "updatedAt": "2021-12-25T03:47:06.988Z",
   "sections": [
     {
       "_id": "life",
-      "title": "⏳ Life Updates",
-      "data": ""
+      "data": "",
+      "title": "⏳ Life Updates"
     },
     {
       "_id": "books",
-      "title": "📚 Reading",
       "data": [
         {
-          "url": "https://oku.club/book/software-design-for-flexibility-by-gerald-jay-sussman-DstBH",
-          "title": "Software Design for Flexibility",
-          "subtitle": "How to Avoid Programming Yourself into a Corner",
-          "author": "Gerald Jay Sussman, Chris Hanson",
-          "imageURL": "https://books.google.com/books/content?id=iM_tDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "author": "Daniel Kahneman",
+          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420793752l/12955489._SY160_.jpg",
+          "subtitle": "",
+          "title": "Thinking, Fast and Slow",
+          "url": "https://oku.club/book/thinking-fast-and-slow-by-daniel-kahneman-sBxUK"
         },
         {
-          "url": "https://oku.club/book/the-fountainhead-by-ayn-rand-zzDQW",
-          "title": "The Fountainhead",
-          "subtitle": "",
           "author": "Ayn Rand",
-          "imageURL": "https://books.google.com/books/content?id=TdDiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          "imageURL": "https://books.google.com/books/content?id=TdDiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "subtitle": "",
+          "title": "The Fountainhead",
+          "url": "https://oku.club/book/the-fountainhead-by-ayn-rand-zzDQW"
         }
-      ]
+      ],
+      "title": "📚 Reading"
     },
     {
       "_id": "music",
-      "title": "🎧 Listening",
       "data": [
         {
-          "title": "War Room Stories (Deluxe Edition)",
+          "creator": "Jan Blomqvist",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/82/fb/08/82fb0856-35be-023f-b225-18efef397ac3/jan_blomqvist-2.jpg/1200x1200bb.jpg",
+          "title": "Cercle: Jan Blomqvist at Tossa de Mar, Spain (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-jan-blomqvist-at-tossa-de-mar-spain-live/1604673855"
+        },
+        {
+          "creator": "HVOB",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/90/f1/38/90f138bd-2b2a-83b2-0591-f301996da586/cover_hvob_apple_music_4.jpg/1200x1200bb.jpg",
+          "title": "Cercle: HVOB at Copa del Sol in Careyes, Mexico (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-hvob-at-copa-del-sol-in-careyes-mexico-live/1604256467"
+        },
+        {
+          "creator": "WhoMadeWho",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/f4/6b/a9/f46ba999-c102-ea24-7efa-a8e48b43bebd/mza_4437830076440205700.jpg/1200x1200bb.jpg",
+          "title": "Cercle: WhoMadeWho in Abu Simbel, Egypt (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-whomadewho-in-abu-simbel-egypt-live/1585737974"
+        },
+        {
+          "creator": "The Blaze",
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music126/v4/b6/06/11/b6061106-c5d7-2529-41a7-ee12fc7bbb4e/cover_applemusic_theblaze3.jpg/1200x1200bb.jpg",
+          "title": "Cercle: The Blaze at Aiguille du Midi in Chamonix, France (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-the-blaze-at-aiguille-du-midi-in-chamonix-france-live/1594659733"
+        },
+        {
+          "creator": "Parra for Cuva",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/10/50/90/105090de-90fa-22ef-67cb-f9269c25e4fb/cover_applemusic_parraforcuva.jpg/1200x1200bb.jpg",
+          "title": "Cercle: Parra for Cuva in Cañon del Sumidero, Mexico (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-parra-for-cuva-in-ca%C3%B1on-del-sumidero-mexico-live/1588940400"
+        },
+        {
+          "creator": "Bob Moses",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/4c/d0/2a4cd0c9-653e-5074-57fd-fea2c8c9bd05/cover_applemusic_bobmoses5.jpg/1200x1200bb.jpg",
+          "title": "Cercle: Bob Moses at Griffith Observatory, Los Angeles (Live)",
+          "url": "https://music.apple.com/tr/album/cercle-bob-moses-at-griffith-observatory-los-angeles-live/1588412004"
+        },
+        {
           "creator": "Breton",
-          "url": "https://music.apple.com/tr/album/war-room-stories-deluxe-edition/929723404",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/c7/9b/45/c79b4592-0a8d-5510-807d-7ad31a1a7f50/cover.jpg/1200x1200bb.jpg"
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/c7/9b/45/c79b4592-0a8d-5510-807d-7ad31a1a7f50/cover.jpg/1200x1200bb.jpg",
+          "title": "War Room Stories (Deluxe Edition)",
+          "url": "https://music.apple.com/tr/album/war-room-stories-deluxe-edition/929723404"
         },
         {
-          "title": "Lifeforms",
           "creator": "Angels & Airwaves",
-          "url": "https://music.apple.com/tr/album/lifeforms/1570547185",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/1200x1200bb.jpg"
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/1200x1200bb.jpg",
+          "title": "Lifeforms",
+          "url": "https://music.apple.com/tr/album/lifeforms/1570547185"
         },
         {
-          "title": "Transplants",
           "creator": "Transplants",
-          "url": "https://music.apple.com/tr/album/transplants/1485054588",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ef/7a/d8/ef7ad884-633e-707f-ebd8-2f87dd930f7a/0045778044863.png/1200x1200bb.jpg"
-        },
-        {
-          "title": "Hata Payı",
-          "creator": "Jakuzi",
-          "url": "https://music.apple.com/tr/album/hata-pay%C4%B1/1445919939",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/f1/a9/01/f1a901d7-5075-1945-861e-466a222017aa/4250506832537_3000.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Full Circle",
-          "creator": "Hælos",
-          "url": "https://music.apple.com/tr/album/full-circle/1589172754",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/46/0d/cf/460dcf92-a2cf-e25c-6b77-e56e18d51193/744861108467.png/1200x1200bb.jpg"
-        },
-        {
-          "title": "Alone and Unreal: The Best of the Clientele (Deluxe)",
-          "creator": "The Clientele",
-          "url": "https://music.apple.com/tr/album/alone-and-unreal-the-best-of-the-clientele-deluxe/1009889447",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music5/v4/e3/23/ab/e323ab64-4ed3-a206-8632-878784fb1b88/889326283218_Cover.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Kiasmos",
-          "creator": "Kiasmos",
-          "url": "https://music.apple.com/tr/album/kiasmos/1451077320",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/8e/6d/24/8e6d24af-e34d-d8fb-64f3-3ec9fd6e2f0b/4050486109618_cover.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Redux: The First 10 Years",
-          "creator": "Silverstein",
-          "url": "https://music.apple.com/tr/album/redux-the-first-10-years/1455270117",
-          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/a4/70/ae/a470ae12-e180-6587-7cc8-42dc2e6f5ab3/859731256145_cover.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Fantezi Müzik",
-          "creator": "Jakuzi",
-          "url": "https://music.apple.com/tr/album/fantezi-m%C3%BCzik/1276710837",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/60/ba/b9/60bab9cb-7c16-6e34-ea04-59634cf296da/4250506826413_1448.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Artik Güçler Dengede",
-          "creator": "Kül",
-          "url": "https://music.apple.com/tr/album/artik-g%C3%BC%C3%A7ler-dengede/1072420999",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/ad/86/16/ad861684-7166-e7ed-6df3-1619f0c443b8/cover.jpg/1200x1200bb.jpg"
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ef/7a/d8/ef7ad884-633e-707f-ebd8-2f87dd930f7a/0045778044863.png/1200x1200bb.jpg",
+          "title": "Transplants",
+          "url": "https://music.apple.com/tr/album/transplants/1485054588"
         }
-      ]
+      ],
+      "title": "🎧 Listening"
     },
     {
       "_id": "shows",
-      "title": "📺 Watching",
       "data": [
         {
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/388/972426.jpg",
+          "title": "Ozark",
+          "url": "https://www.tvmaze.com/shows/13417/ozark"
+        },
+        {
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg",
           "title": "South Park",
-          "url": "https://www.tvmaze.com/shows/112/south-park",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg"
-        },
-        {
-          "title": "Succession",
-          "url": "https://www.tvmaze.com/shows/23470/succession",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/357/892608.jpg"
-        },
-        {
-          "title": "Ted Lasso",
-          "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/332/830232.jpg"
+          "url": "https://www.tvmaze.com/shows/112/south-park"
         }
-      ]
+      ],
+      "title": "📺 Watching"
     }
-  ]
+  ],
+  "updatedAt": "2022-02-11T14:51:38.715Z"
 }
