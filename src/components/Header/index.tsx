@@ -44,7 +44,6 @@ const Header: React.FC = () => {
           <Link
             title="That's my head, also a link to home page. Please press gently."
             sx={{
-              cursor: 'pointer',
               position: 'relative',
               overflow: 'hidden',
               width: 32,
@@ -54,8 +53,10 @@ const Header: React.FC = () => {
               borderRadius: 'circle',
               borderColor: 'backgroundSecondary',
               backgroundColor: 'black',
-              '&:hover': {
-                borderColor: 'linkPrimary',
+              '@media (hover)': {
+                '&:hover': {
+                  borderColor: 'linkPrimary',
+                },
               },
             }}
           >

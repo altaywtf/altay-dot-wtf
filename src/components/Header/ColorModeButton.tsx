@@ -1,8 +1,7 @@
 import { useCallback } from 'react'
-import { useColorMode } from 'theme-ui'
+import { useColorMode, Button } from 'theme-ui'
 import { CgSun } from '@react-icons/all-files/cg/CgSun'
 import { CgMoon } from '@react-icons/all-files/cg/CgMoon'
-import { Button } from 'theme-ui'
 
 const ColorModeButton: React.FC = () => {
   const [colorMode, setColorMode] = useColorMode()
@@ -15,7 +14,6 @@ const ColorModeButton: React.FC = () => {
       title="That's a button to switch between dark and light themes."
       onClick={handleClick}
       sx={{
-        cursor: 'pointer',
         backgroundColor: 'background',
         color: 'textSecondary',
         fontSize: 0,
@@ -27,9 +25,11 @@ const ColorModeButton: React.FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        '&:hover': {
-          backgroundColor: 'backgroundSecondary',
-          color: 'text',
+        '@media (hover)': {
+          '&:hover': {
+            backgroundColor: 'backgroundSecondary',
+            color: 'text',
+          },
         },
       }}
     >

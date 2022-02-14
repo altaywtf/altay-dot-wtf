@@ -27,17 +27,18 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   target="_blank"
                   rel="noreferrer noopener"
                   sx={{
-                    cursor: 'pointer',
                     display: 'block',
                     textDecoration: 'none',
                     border: '2px solid',
                     borderColor: 'borderPrimary',
                     borderRadius: 4,
                     transition: 'transform .2s',
-                    '&:hover': {
-                      backgroundColor: 'linkHoverBackground',
-                      borderColor: 'backgroundSecondary',
-                      transform: 'scale(1.025)',
+                    '@media (hover)': {
+                      '&:hover': {
+                        backgroundColor: 'linkHoverBackground',
+                        borderColor: 'backgroundSecondary',
+                        transform: 'scale(1.025)',
+                      },
                     },
                   }}
                 >

@@ -52,8 +52,10 @@ const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObje
   fontWeight: 'bold',
   borderColor: 'transparent',
   color: brand,
-  '&:hover': {
-    borderColor: brand,
+  '@media (hover)': {
+    '&:hover': {
+      borderColor: brand,
+    },
   },
 })
 

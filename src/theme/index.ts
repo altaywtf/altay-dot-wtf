@@ -40,14 +40,17 @@ export const theme = makeTheme({
   },
   links: {
     silent: {
-      cursor: 'pointer',
+      cursor: 'default',
       color: 'textTertiary',
       textDecoration: 'none',
-      '&:hover': {
-        color: 'linkHover',
+      '@media (hover)': {
+        '&:hover': {
+          color: 'linkHover',
+        },
       },
     },
     title: {
+      cursor: 'default',
       textDecoration: 'none',
       color: 'linkPrimary',
       fontWeight: 'bold',
@@ -55,21 +58,25 @@ export const theme = makeTheme({
       borderBottomWidth: 1,
       borderBottomStyle: 'solid',
       borderBottomColor: 'transparent',
-      '&:hover': {
-        borderBottomColor: 'linkPrimary',
+      '@media (hover)': {
+        '&:hover': {
+          borderBottomColor: 'linkPrimary',
+        },
       },
     },
     scale: {
+      cursor: 'default',
       display: 'block',
-      cursor: 'pointer',
       textDecoration: 'none',
       transition: 'transform .2s',
-      '&:hover': {
-        transform: 'scale(1.05)',
+      '@media (hover)': {
+        '&:hover': {
+          transform: 'scale(1.05)',
+        },
       },
     },
     button: {
-      cursor: 'pointer',
+      cursor: 'default',
       textDecoration: 'none',
       display: 'inline-block',
       paddingY: 2,
@@ -81,8 +88,10 @@ export const theme = makeTheme({
       border: '2px solid',
       borderColor: 'transparent',
       borderRadius: 'default',
-      '&:hover': {
-        borderColor: 'buttonBorderHover',
+      '@media (hover)': {
+        '&:hover': {
+          borderColor: 'buttonBorderHover',
+        },
       },
     },
   },
@@ -101,14 +110,20 @@ export const theme = makeTheme({
       margin: 0,
       overflowY: 'scroll',
     },
+    button: {
+      cursor: 'default',
+    },
     a: {
+      cursor: 'default',
       color: 'inherit',
       textDecoration: 'none',
       borderBottomWidth: 1,
       borderBottomStyle: 'solid',
       borderBottomColor: 'buttonBorderHover',
-      '&:hover': {
-        borderBottomColor: 'textTertiary',
+      '@media (hover)': {
+        '&:hover': {
+          borderBottomColor: 'textTertiary',
+        },
       },
     },
     h1: {
