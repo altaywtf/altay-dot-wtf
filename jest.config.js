@@ -1,7 +1,7 @@
 /** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
 
 /* eslint-disable */
-const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { pathsToModuleNameMapper } = require('ts-jest')
 const { compilerOptions } = require('./tsconfig.json')
 /* eslint-enable */
 
