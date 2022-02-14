@@ -1,4 +1,4 @@
-import type { OpenGraphImages } from 'next-seo/lib/types'
+import type { OpenGraphMedia } from 'next-seo/lib/types'
 
 const OG_IMAGE_SERVICE_BASE_URL = `https://og-image.altay.wtf/api`
 
@@ -22,7 +22,7 @@ type OGImageParamsPage = {
 
 type OGImageParams = OGImageParamsPost | OGImageParamsBook | OGImageParamsPage
 
-export const getOpenGraphImage = (params: OGImageParams): OpenGraphImages => {
+export const getOpenGraphImage = (params: OGImageParams): OpenGraphMedia => {
   const searchParams = Object.entries(params).reduce((acc, [key, value]) => {
     acc.append(key, value)
     return acc
