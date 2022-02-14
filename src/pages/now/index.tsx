@@ -35,7 +35,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     transition: 'transform .2s',
                     '@media (hover)': {
                       '&:hover': {
-                        backgroundColor: 'linkHoverBackground',
+                        backgroundColor: 'backgroundSecondary',
                         borderColor: 'backgroundSecondary',
                         transform: 'scale(1.025)',
                       },

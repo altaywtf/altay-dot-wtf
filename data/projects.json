@@ -6,12 +6,12 @@
   },
   {
     "description": "Building the user-facing parts since 2017.",
-    "title": "Put.io",
+    "title": "put.io",
     "url": "https://put.io"
   },
   {
-    "description": "Maintaining an open-source payment gateway for NANO cryptocurrency.",
-    "title": "Accept Nano",
+    "description": "Maintaining the front-end of an open-source payment gateway for NANO.",
+    "title": "@accept-nano/client",
     "url": "https://github.com/accept-nano/accept-nano-client"
   },
   {
