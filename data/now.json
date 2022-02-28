@@ -1,11 +1,6 @@
 {
-  "updatedAt": "2022-02-14T07:42:49.208Z",
+  "updatedAt": "2022-02-28T07:40:07.640Z",
   "sections": [
-    {
-      "_id": "life",
-      "title": "⏳ Life Updates",
-      "data": ""
-    },
     {
       "_id": "books",
       "title": "📚 Reading",
@@ -16,13 +11,6 @@
           "subtitle": "",
           "author": "Daniel Kahneman",
           "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420793752l/12955489._SY160_.jpg"
-        },
-        {
-          "url": "https://oku.club/book/the-fountainhead-by-ayn-rand-zzDQW",
-          "title": "The Fountainhead",
-          "subtitle": "",
-          "author": "Ayn Rand",
-          "imageURL": "https://books.google.com/books/content?id=TdDiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         }
       ]
     },
@@ -30,6 +18,12 @@
       "_id": "music",
       "title": "🎧 Listening",
       "data": [
+        {
+          "title": "Ölüler Hariç",
+          "creator": "Kana Kana",
+          "url": "https://music.apple.com/tr/album/%C3%B6l%C3%BCler-hari%C3%A7/1599528407",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/ea/f5/26/eaf52607-e882-ac46-055c-8e7027afe435/cover.jpg/1200x1200bb.jpg"
+        },
         {
           "title": "Cercle: Jan Blomqvist at Tossa de Mar, Spain (Live)",
           "creator": "Jan Blomqvist",
@@ -77,12 +71,6 @@
           "creator": "Angels & Airwaves",
           "url": "https://music.apple.com/tr/album/lifeforms/1570547185",
           "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Transplants",
-          "creator": "Transplants",
-          "url": "https://music.apple.com/tr/album/transplants/1485054588",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ef/7a/d8/ef7ad884-633e-707f-ebd8-2f87dd930f7a/0045778044863.png/1200x1200bb.jpg"
         }
       ]
     },
@@ -91,9 +79,9 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "Ozark",
-          "url": "https://www.tvmaze.com/shows/13417/ozark",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/388/972426.jpg"
+          "title": "Killing Eve",
+          "url": "https://www.tvmaze.com/shows/22904/killing-eve",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/397/994197.jpg"
         },
         {
           "title": "South Park",

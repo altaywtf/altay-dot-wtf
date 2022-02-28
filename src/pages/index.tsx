@@ -81,7 +81,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box>
       <Text color="textTertiary">Featured writing</Text>
+
       <Box m={1} />
+
       <>
         {posts.map((post) => (
           <Box key={post.slug} my={1}>
@@ -97,7 +99,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box>
       <Text color="textTertiary">Me on the internets</Text>
+
       <Box m={1} />
+
       <Flex mx={-1}>
         {contactLinks.map(({ title, url }) => (
           <Box key={title} mx={1}>

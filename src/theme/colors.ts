@@ -1,7 +1,7 @@
 import { lighten, darken } from 'polished'
 
 const BRAND_COLORS = {
-  putio: '#F7C744',
+  putio: '#fdce45',
   klarna: 'rgb(255, 179, 199)',
   lisk: '#4070F4',
 }
@@ -23,7 +23,7 @@ export const COLORS_LIGHT = {
   borderMenu: '#F1F5FC',
   borderPrimary: 'rgba(241, 245, 252)',
   imageZoomBackground: 'rgba(255, 255, 255, 0.75)',
-  yellow: '#F7C744',
+  yellow: '#fdce45',
   red: '#ff3b30',
   green: '#78B756',
   ...BRAND_COLORS,
@@ -40,15 +40,15 @@ export const COLORS_DARK: Colors = {
   textTertiary: '#98989D',
   textInlineCode: '#DEDFE5',
   textWhite: '#FBFBFB',
-  linkPrimary: '#F7C744',
-  linkHover: lighten(0.15, '#F7C744'),
-  linkBackground: darken(0.54, '#F7C744'),
+  linkPrimary: '#fdce45',
+  linkHover: lighten(0.15, '#fdce45'),
+  linkBackground: darken(0.54, '#fdce45'),
   buttonBackground: '#222',
   buttonBorderHover: lighten(0.15, '#222'),
   borderMenu: 'rgba(130, 130, 130, 0.01)',
   borderPrimary: 'rgba(130, 130, 130, 0.1)',
   imageZoomBackground: 'rgba(0, 0, 0, 0.75)',
-  yellow: '#F7C744',
+  yellow: '#fdce45',
   red: '#ff3b30',
   green: '#78B756',
   ...BRAND_COLORS,

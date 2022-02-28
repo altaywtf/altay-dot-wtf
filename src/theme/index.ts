@@ -40,7 +40,6 @@ export const theme = makeTheme({
   },
   links: {
     silent: {
-      cursor: 'default',
       color: 'textTertiary',
       textDecoration: 'none',
       '@media (hover)': {
@@ -50,7 +49,6 @@ export const theme = makeTheme({
       },
     },
     title: {
-      cursor: 'default',
       textDecoration: 'none',
       color: 'linkPrimary',
       fontWeight: 'bold',
@@ -65,7 +63,6 @@ export const theme = makeTheme({
       },
     },
     scale: {
-      cursor: 'default',
       display: 'block',
       textDecoration: 'none',
       transition: 'transform .2s',
@@ -76,7 +73,6 @@ export const theme = makeTheme({
       },
     },
     button: {
-      cursor: 'default',
       textDecoration: 'none',
       display: 'inline-block',
       paddingY: 2,
@@ -110,11 +106,7 @@ export const theme = makeTheme({
       margin: 0,
       overflowY: 'scroll',
     },
-    button: {
-      cursor: 'default',
-    },
     a: {
-      cursor: 'default',
       color: 'inherit',
       textDecoration: 'none',
       borderBottomWidth: 1,

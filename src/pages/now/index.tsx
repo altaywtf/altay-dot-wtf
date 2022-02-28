@@ -4,7 +4,6 @@ import { Flex, Box, Heading, Link, Text, Image } from 'theme-ui'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
-import Markdown from 'components/Markdown'
 import { formatDate } from 'utils/date'
 
 export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
@@ -14,9 +13,6 @@ export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
 const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now }) => {
   const renderSectionContent = useCallback((section: NowJSON['sections'][number]) => {
     switch (section._id) {
-      case 'life':
-        return <Markdown>{section.data}</Markdown>
-
       case 'books':
         return (
           <Box>
