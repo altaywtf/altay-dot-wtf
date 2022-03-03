@@ -1,5 +1,5 @@
 ---
-title: Why we are doing what we are doing
+title: Why are we doing what we are doing?
 oneliner: 'Seriously, wtf?'
 date: '2020-11-05T14:24:56Z'
 ---

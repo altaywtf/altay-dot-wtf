@@ -1,9 +1,9 @@
-I'm a software engineer who likes to build user-interfaces.
+I'm a software developer who likes to design and build user-interfaces.
 
-I've recently moved to Bodrum and got back working full-time on [putio](https://put.io).
+I'm currently living in Bodrum and building cloud storage + media streaming apps for [putio](https://put.io).
 
-Before Bodrum, I lived in Berlin for three years and worked at [Klarna](https://klarna.com)'s consumer app ecosystem, also a blockchain platform called [Lisk](https://lisk.io).
+Before Bodrum, I lived in Berlin for three years and worked on the frontend architecture of [Klarna](https://klarna.com)'s consumer app, and the mobile crypto wallet of [Lisk](https://lisk.io).
 
-Before Berlin, I lived in Istanbul and built cross-platform media streaming apps for [putio](https://put.io).
+Before Berlin, I lived in Istanbul where I studied university, done several internships, and eventually joined [putio](https://put.io).
 
 Thanks for visiting my website!

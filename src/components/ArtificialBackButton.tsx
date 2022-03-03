@@ -1,8 +1,8 @@
 import NextLink from 'next/link'
 import { Box, Text, Link, Flex } from 'theme-ui'
 import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
-import { usePathHistory } from 'hooks/usePathHistory'
 import { useRouter } from 'next/router'
+import { usePathHistory } from 'hooks/usePathHistory'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
   const router = useRouter()
@@ -16,7 +16,7 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
   )
 
   return (
-    <Box>
+    <Box sx={{ display: 'inline-block' }}>
       {prevPath === href ? (
         <Link variant="links.silent" onClick={() => router.back()}>
           {content}

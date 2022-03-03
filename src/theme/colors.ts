@@ -4,6 +4,7 @@ const BRAND_COLORS = {
   putio: '#fdce45',
   klarna: 'rgb(255, 179, 199)',
   lisk: '#4070F4',
+  bilgi: '#f01223',
 }
 
 export const COLORS_LIGHT = {

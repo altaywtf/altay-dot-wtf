@@ -35,20 +35,7 @@ const getContactLinkIcon = (title: ContactLink['title']) => {
   }
 }
 
-const getContactLinkColor = (title: ContactLink['title']): string => {
-  switch (title) {
-    case 'Email':
-      return 'linkPrimary'
-
-    case 'Twitter':
-      return '#1DA1F2'
-
-    case 'Github':
-      return 'text'
-  }
-}
-
-const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
+const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk' | 'bilgi'): ThemeUIStyleObject => ({
   fontWeight: 'bold',
   borderColor: 'transparent',
   color: brand,
@@ -77,7 +64,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       descriptionStyle={{ color: 'textSecondary' }}
     />
 
-    <Box m={4} />
+    <Box m={5} />
 
     <Box>
       <Text color="textTertiary">Featured writing</Text>
@@ -95,7 +82,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       </>
     </Box>
 
-    <Box m={4} />
+    <Box m={5} />
 
     <Box>
       <Text color="textTertiary">Me on the internets</Text>
@@ -105,19 +92,15 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Flex mx={-1}>
         {contactLinks.map(({ title, url }) => (
           <Box key={title} mx={1}>
-            <Link
-              href={url}
-              rel="noreferrer noopener"
-              target="_blank"
-              variant="links.button"
-              color={getContactLinkColor(title)}
-            >
+            <Link href={url} rel="noreferrer noopener" target="_blank" variant="links.button">
               <Flex sx={{ alignItems: 'center' }}>
-                <Text sx={{ display: 'inline-flex', fontSize: 2 }}>
+                <Text sx={{ display: 'inline-flex', fontSize: [1, 2] }}>
                   {getContactLinkIcon(title)}
                 </Text>
-                <Box m={1} />
-                <Text>{title}</Text>
+
+                <Box mx={1} />
+
+                <Text sx={{ fontSize: [0, 1] }}>{title}</Text>
               </Flex>
             </Link>
           </Box>
