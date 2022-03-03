@@ -30,7 +30,7 @@ export const theme = makeTheme({
   },
   radii: {
     default: 4,
-    circle: '50%',
+    circle: 999999,
   },
   text: {
     heading: {
@@ -44,6 +44,7 @@ export const theme = makeTheme({
       textDecoration: 'none',
       '@media (hover)': {
         '&:hover': {
+          cursor: 'pointer',
           color: 'linkHover',
         },
       },
@@ -58,6 +59,7 @@ export const theme = makeTheme({
       borderBottomColor: 'transparent',
       '@media (hover)': {
         '&:hover': {
+          cursor: 'pointer',
           borderBottomColor: 'linkPrimary',
         },
       },
@@ -68,6 +70,7 @@ export const theme = makeTheme({
       transition: 'transform .2s',
       '@media (hover)': {
         '&:hover': {
+          cursor: 'pointer',
           transform: 'scale(1.05)',
         },
       },
@@ -81,11 +84,13 @@ export const theme = makeTheme({
       color: 'text',
       fontWeight: 'bold',
       lineHeight: 1,
-      border: '2px solid',
+      borderWidth: 1,
+      borderStyle: 'solid',
       borderColor: 'transparent',
       borderRadius: 'default',
       '@media (hover)': {
         '&:hover': {
+          cursor: 'pointer',
           borderColor: 'buttonBorderHover',
         },
       },
