@@ -106,7 +106,7 @@ export const theme = makeTheme({
       wordSpacing: '0.001em',
       WebkitFontSmoothing: 'antialiased',
       WebkitTextSizeAdjust: 'none',
-      MozOsxFontSmoothing: 'greyscale',
+      MozOsxFontSmoothing: 'grayscale',
       padding: 0,
       margin: 0,
       overflowY: 'scroll',
