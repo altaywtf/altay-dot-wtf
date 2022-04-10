@@ -25,15 +25,14 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   sx={{
                     display: 'block',
                     textDecoration: 'none',
-                    border: '2px solid',
+                    border: '1px solid',
                     borderColor: 'border',
-                    borderRadius: 4,
+                    borderRadius: 'default',
                     transition: 'transform .2s',
-                    '@media (hover)': {
+                    '@media (hover: hover)': {
                       '&:hover': {
-                        backgroundColor: 'backgroundSecondary',
-                        borderColor: 'backgroundSecondary',
                         transform: 'scale(1.025)',
+                        borderColor: 'border',
                       },
                     },
                   }}
@@ -62,25 +61,23 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     <Box m={[2, 3]} />
 
                     <Box p={2} sx={{ width: '100%' }}>
-                      <Text sx={{ fontWeight: 'bold', color: 'text' }}>{item.title}</Text>
+                      <Text sx={{ fontWeight: 'bold' }}>{item.title}</Text>
 
                       <Box m={2} />
 
-                      <Box sx={{ lineHeight: 1.2 }}>
-                        <Text
-                          sx={{
-                            display: ['none', 'initial'],
-                            color: 'textTertiary',
-                            fontStyle: 'italic',
-                          }}
-                        >
-                          {item.subtitle}
-                        </Text>
-                      </Box>
+                      <Text
+                        sx={{
+                          display: ['none', 'initial'],
+                          color: 'textSecondary',
+                          fontStyle: 'italic',
+                        }}
+                      >
+                        {item.subtitle}
+                      </Text>
 
                       <Box m={2} />
 
-                      <Text sx={{ color: 'textTertiary' }}>by {item.author}</Text>
+                      <Text sx={{ color: 'textSecondary' }}>by {item.author}</Text>
                     </Box>
                   </Flex>
                 </Link>
@@ -113,12 +110,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                     <Box m={1} />
 
-                    <Box sx={{ fontSize: 0, lineHeight: 1.4 }}>
-                      <Text as="p" color="textSecondary">
-                        {item.title}
-                      </Text>
+                    <Box sx={{ fontSize: 0 }}>
+                      <Text as="p">{item.title}</Text>
 
-                      <Text as="p" color="textTertiary">
+                      <Text as="p" color="textSecondary">
                         {item.creator}
                       </Text>
                     </Box>
@@ -147,7 +142,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       sx={{ height: [160, 240], borderRadius: 'default' }}
                     />
 
-                    <Text color="textSecondary">{item.title}</Text>
+                    <Text color="text">{item.title}</Text>
                   </Flex>
                 </Link>
 
@@ -183,7 +178,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
       <Box m={6} />
 
-      <Text color="textTertiary">Last compiled on {formatDate(now.updatedAt)}</Text>
+      <Text color="textSecondary">Last updated on {formatDate(now.updatedAt)}</Text>
     </>
   )
 }

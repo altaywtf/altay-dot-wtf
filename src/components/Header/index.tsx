@@ -2,7 +2,7 @@ import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Flex, Box, Link } from 'theme-ui'
+import { Flex, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
 import avatar from '../../../public/images/avatar.png'
@@ -15,17 +15,15 @@ const Header: React.FC = () => {
       as="header"
       sx={{
         justifyContent: 'center',
-        position: 'fixed',
+        position: 'sticky',
         zIndex: 1,
         width: '100%',
         left: 0,
         top: 0,
-        paddingX: [3, 2, 2],
+        paddingX: ['12px', '12px', 0],
         paddingY: 2,
-        borderBottom: '1px solid',
-        borderColor: 'border',
-        backgroundColor: 'backgroundHeader',
-        backdropFilter: 'saturate(200%) blur(20px)',
+        backgroundColor: 'backgroundAlpha',
+        backdropFilter: 'saturate(180%) blur(20px)',
         '& > *': {
           lineHeight: 1,
         },
@@ -34,7 +32,7 @@ const Header: React.FC = () => {
       <Flex
         sx={{
           flex: 1,
-          maxWidth: LAYOUT_WIDTH,
+          maxWidth: `calc(${LAYOUT_WIDTH}px + 8px)`,
           alignItems: 'center',
           justifyContent: 'space-between',
         }}
@@ -50,11 +48,11 @@ const Header: React.FC = () => {
               borderWidth: 2,
               borderStyle: 'solid',
               borderRadius: 'circle',
-              borderColor: 'backgroundSecondary',
+              borderColor: 'border',
               backgroundColor: 'black',
-              '@media (hover)': {
+              '@media (hover: hover)': {
                 '&:hover': {
-                  borderColor: 'linkPrimary',
+                  borderColor: 'link',
                 },
               },
             }}
@@ -63,14 +61,10 @@ const Header: React.FC = () => {
           </Link>
         </NextLink>
 
-        <Flex sx={{ alignItems: 'center' }}>
-          <Flex>
-            {HEADER.map(({ label, href }) => (
-              <Box key={href} mx={1}>
-                <NavLink href={href} label={label} active={pathname.startsWith(href)} />
-              </Box>
-            ))}
-          </Flex>
+        <Flex sx={{ alignItems: 'center', gap: 2 }}>
+          {HEADER.map(({ label, href }) => (
+            <NavLink key={href} href={href} label={label} active={pathname.startsWith(href)} />
+          ))}
         </Flex>
       </Flex>
     </Flex>

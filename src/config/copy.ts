@@ -4,32 +4,26 @@ export const homeCopy = {
 } as const
 
 export const postsCopy = {
-  icon: '📝',
   title: `Writing`,
   description: '',
 } as const
 
 export const bookmarksCopy = {
-  icon: '📑',
   title: 'Bookmarks',
   description: 'Cool things all over the internet.',
-}
+} as const
 
 export const booksCopy = {
-  icon: '📚',
   title: 'Books',
   description: `Notes from the books I read.`,
-}
+} as const
 
 export const nowCopy = {
-  icon: '⏱',
   title: "What I'm doing now",
-  description:
-    "This is a [now page](https://nownownow.com/about) inspired by [Derek Sivers.](https://sivers.org) It's generated via several APIs and [the source code is here.](https://github.com/altaywtf/altay-dot-wtf/blob/main/src/scripts/now)",
-}
+  description: `This is a [now page](https://nownownow.com/about) inspired by [Derek Sivers.](https://sivers.org) It's generated [semi-automatically](https://github.com/altaywtf/altay-dot-wtf/blob/main/src/scripts/now) via Apple Music, oku.club, showRSS, and TVMaze APIs.`,
+} as const
 
 export const projectsCopy = {
-  icon: '👨‍💻',
   title: 'Projects',
   description: '',
-}
+} as const

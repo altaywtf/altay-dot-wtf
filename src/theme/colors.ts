@@ -7,22 +7,21 @@ const BRAND_COLORS = {
 }
 
 export const COLORS = {
-  background: 'rgba(17, 17, 17, 1)',
-  backgroundSecondary: 'rgba(255, 255, 255, 0.1)',
-  backgroundHeader: 'rgba(10, 10, 10, 1)',
+  background: '#101010',
+  backgroundAlpha: '#10101099',
+  backgroundSecondary: '#151515',
+  border: '#151515',
 
-  text: '#FBFBFB',
-  textSecondary: '#DEDFE5',
-  textTertiary: '#98989D',
-  textInlineCode: '#DEDFE5',
+  text: '#d4d4d4',
+  textSecondary: '#a3a3a3',
 
-  linkPrimary: '#fdce45',
+  link: '#fdce45',
   linkHover: lighten(0.15, '#fdce45'),
   linkBackground: darken(0.55, '#fdce45'),
 
-  buttonBackground: '#222222',
-  buttonBorderHover: lighten(0.15, '#222'),
-  border: 'rgba(130, 130, 130, 0.1)',
+  buttonBackground: '#202020',
+  buttonBackgroundHover: lighten(0.05, '#202020'),
+  buttonBorder: lighten(0.05, '#202020'),
 
   ...BRAND_COLORS,
 }

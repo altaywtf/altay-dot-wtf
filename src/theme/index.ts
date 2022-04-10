@@ -19,10 +19,9 @@ export const theme = makeTheme({
   },
   lineHeights: {
     body: 1.6,
-    heading: 1.6,
   },
   space: [0, 4, 8, 16, 32, 48, 64, 80, 128, 256, 512],
-  fontSizes: [14, 16, 18, 24, 32],
+  fontSizes: [14, 16, 18, 24],
   breakpoints: ['480px', '640px', '960px'],
   colors: COLORS,
   radii: {
@@ -37,9 +36,9 @@ export const theme = makeTheme({
   },
   links: {
     silent: {
-      color: 'textTertiary',
+      color: 'textSecondary',
       textDecoration: 'none',
-      '@media (hover)': {
+      '@media (hover: hover)': {
         '&:hover': {
           cursor: 'pointer',
           color: 'linkHover',
@@ -48,27 +47,25 @@ export const theme = makeTheme({
     },
     title: {
       textDecoration: 'none',
-      color: 'linkPrimary',
+      color: 'link',
       fontWeight: 'bold',
-      fontSize: [1, 2],
-      borderBottomWidth: 1,
-      borderBottomStyle: 'solid',
-      borderBottomColor: 'transparent',
-      '@media (hover)': {
+      fontSize: 1,
+      '@media (hover: hover)': {
         '&:hover': {
           cursor: 'pointer',
-          borderBottomColor: 'linkPrimary',
+          color: 'linkHover',
         },
       },
     },
     scale: {
+      color: 'text',
       display: 'block',
       textDecoration: 'none',
       transition: 'transform .2s',
-      '@media (hover)': {
+      '@media (hover: hover)': {
         '&:hover': {
           cursor: 'pointer',
-          transform: 'scale(1.05)',
+          transform: 'scale(1.025)',
         },
       },
     },
@@ -80,15 +77,16 @@ export const theme = makeTheme({
       backgroundColor: 'buttonBackground',
       color: 'text',
       fontWeight: 'bold',
+      fontSize: 0,
       lineHeight: 1,
       borderWidth: 1,
       borderStyle: 'solid',
-      borderColor: 'transparent',
+      borderColor: 'buttonBorder',
       borderRadius: 'default',
-      '@media (hover)': {
+      '@media (hover: hover)': {
         '&:hover': {
           cursor: 'pointer',
-          borderColor: 'buttonBorderHover',
+          backgroundColor: 'buttonBackgroundHover',
         },
       },
     },
@@ -113,10 +111,11 @@ export const theme = makeTheme({
       textDecoration: 'none',
       borderBottomWidth: 1,
       borderBottomStyle: 'solid',
-      borderBottomColor: 'buttonBorderHover',
-      '@media (hover)': {
+      borderBottomColor: 'text',
+      '@media (hover: hover)': {
         '&:hover': {
-          borderBottomColor: 'textTertiary',
+          color: 'white',
+          borderBottomColor: 'white',
         },
       },
     },

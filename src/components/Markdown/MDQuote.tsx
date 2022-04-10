@@ -5,12 +5,12 @@ const MDQuote: React.FC = ({ children }) => (
     sx={{
       backgroundColor: 'backgroundSecondary',
       borderLeftWidth: 2,
-      borderLeftColor: 'textTertiary',
+      borderLeftColor: 'textSecondary',
       borderLeftStyle: 'solid',
       paddingY: 2,
       paddingX: 4,
     }}
-    marginY={[1, 3]}
+    marginY={[1, 2, 3]}
   >
     <Text>{children}</Text>
   </Box>

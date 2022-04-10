@@ -9,7 +9,7 @@ const BacklinkItem: React.FC<{ sourceURL: string; backlink: Backlink }> = ({
   backlink,
 }) => (
   <NextLink href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`} passHref>
-    <Link sx={{ color: 'textSecondary' }}>{backlink.title}</Link>
+    <Link sx={{ color: 'text' }}>{backlink.title}</Link>
   </NextLink>
 )
 

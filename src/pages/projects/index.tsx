@@ -29,7 +29,7 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
         </Link>
       </Box>
 
-      <Text sx={{ fontSize: [1, 2], height: [18, 20] }} color="linkPrimary">
+      <Text sx={{ fontSize: [1, 2], height: [18, 20] }} color="link">
         <CgArrowTopRight />
       </Text>
     </Flex>

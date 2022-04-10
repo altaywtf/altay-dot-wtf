@@ -28,13 +28,13 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
 
           <Box m={1} />
 
-          <Text as="blockquote" sx={{ fontSize: 0, color: 'textSecondary' }}>
+          <Text as="blockquote" sx={{ fontSize: 0 }}>
             {bookmark.description}
           </Text>
 
           <Box m={1} />
 
-          <Text sx={{ fontSize: 0, color: 'textTertiary' }}>{bookmark.host}</Text>
+          <Text sx={{ fontSize: 0, color: 'textSecondary' }}>{bookmark.host}</Text>
 
           <Box m={4} />
         </Box>

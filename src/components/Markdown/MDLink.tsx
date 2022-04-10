@@ -10,12 +10,12 @@ const MDInternalLink: React.FC<Props> = ({ href, children }) => (
       sx={{
         display: 'inline',
         '&.scrolled-source-link': {
-          backgroundColor: 'linkPrimary',
+          backgroundColor: 'link',
           color: 'background',
           paddingX: 1,
           borderRadius: 4,
         },
-        '@media (hover)': {
+        '@media (hover: hover)': {
           '&.scrolled-source-link:hover': {
             color: 'background',
           },

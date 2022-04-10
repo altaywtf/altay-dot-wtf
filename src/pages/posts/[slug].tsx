@@ -62,11 +62,11 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box m={[3, 4]} />
 
-    <Heading sx={{ fontSize: [3, 4] }}>{post.title}</Heading>
+    <Heading sx={{ fontSize: 3 }}>{post.title}</Heading>
 
     <Box m={2} />
 
-    <Text color="textTertiary">
+    <Text color="textSecondary">
       {formatDate(post.date)}
       <Box sx={{ display: 'inline' }} mx={1}>
         ·

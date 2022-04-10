@@ -29,11 +29,11 @@ const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
 
           <Box m={1} />
 
-          <Text color="textSecondary">{post.oneliner}</Text>
+          <Text>{post.oneliner}</Text>
 
           <Box m={1} />
 
-          <Text color="textTertiary">
+          <Text color="textSecondary">
             {formatDate(post.date)}
 
             <Box sx={{ display: 'inline' }} mx={1}>

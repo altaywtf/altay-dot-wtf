@@ -71,7 +71,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <Box m={2} />
 
         <Box>
-          <Heading as="h1" sx={{ fontSize: [2, 3] }}>
+          <Heading as="h1" sx={{ fontSize: 2 }}>
             {pageTitle}
           </Heading>
 
@@ -79,7 +79,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <BookInfo book={book} />
           <Box m={1} />
 
-          <Text sx={{ fontStyle: 'italic', color: 'textTertiary' }}>&quot;{book.quote}&quot;</Text>
+          <Text sx={{ fontStyle: 'italic', color: 'textSecondary' }}>&quot;{book.quote}&quot;</Text>
         </Box>
       </Flex>
 
