@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Flex, Box, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
-import ColorModeButton from './ColorModeButton'
 import avatar from '../../../public/images/avatar.png'
 
 const Header: React.FC = () => {
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
         paddingX: [3, 2, 2],
         paddingY: 2,
         borderBottom: '1px solid',
-        borderColor: 'borderMenu',
+        borderColor: 'border',
         backgroundColor: 'backgroundHeader',
         backdropFilter: 'saturate(200%) blur(20px)',
         '& > *': {
@@ -72,12 +71,6 @@ const Header: React.FC = () => {
               </Box>
             ))}
           </Flex>
-
-          <Box ml={1} />
-
-          <Box>
-            <ColorModeButton />
-          </Box>
         </Flex>
       </Flex>
     </Flex>

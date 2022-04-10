@@ -6,21 +6,14 @@ import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'theme-ui'
 import PlausibleProvider from 'next-plausible'
 import { theme } from 'theme'
-import { useMounted } from 'hooks/useMounted'
 import { usePathHistoryListener } from 'hooks/usePathHistory'
 import Layout from 'components/Layout'
 
-const Providers: React.FC = ({ children }) => {
-  const mounted = useMounted()
-
-  const renderBody = () => (
-    <PlausibleProvider domain={HOSTNAME}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </PlausibleProvider>
-  )
-
-  return mounted ? renderBody() : <div style={{ visibility: 'hidden' }}>{renderBody()}</div>
-}
+const Providers: React.FC = ({ children }) => (
+  <PlausibleProvider domain={HOSTNAME}>
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  </PlausibleProvider>
+)
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   usePathHistoryListener()

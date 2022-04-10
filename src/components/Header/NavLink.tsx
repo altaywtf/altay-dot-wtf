@@ -19,11 +19,11 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
         fontWeight: 'bold',
         borderRadius: 'default',
         color: active ? 'linkPrimary' : 'text',
-        backgroundColor: active ? 'linkBackground' : 'background',
+        backgroundColor: active ? 'linkBackground' : 'transparent',
         border: 'none',
         '@media (hover)': {
           '&:hover': {
-            backgroundColor: 'backgroundSecondary',
+            backgroundColor: active ? 'linkBackground' : 'buttonBackground',
           },
         },
       }}

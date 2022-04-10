@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2022-02-28T07:40:07.640Z",
+  "updatedAt": "2022-04-10T16:28:42.692Z",
   "sections": [
     {
       "_id": "books",
@@ -18,6 +18,18 @@
       "_id": "music",
       "title": "🎧 Listening",
       "data": [
+        {
+          "title": "Cercle: Adriatique at Signal 2108 Alpe d'Huez in the Alps, France (DJ Mix)",
+          "creator": "Adriatique",
+          "url": "https://music.apple.com/tr/album/cercle-adriatique-at-signal-2108-alpe-dhuez-in-the/1558552034",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/98/a1/2b/98a12b1f-061a-2bc3-4576-c0f13ebbf968/mza_7938812346213746870.jpg/1200x1200bb.jpg"
+        },
+        {
+          "title": "Cercle: Ben Böhmer above Cappadocia, Turkey (Live)",
+          "creator": "Ben Böhmer",
+          "url": "https://music.apple.com/tr/album/cercle-ben-b%C3%B6hmer-above-cappadocia-turkey-live/1586904306",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/0b/e8/480be86c-6e75-b093-af8b-23fef22d2f06/cover_applemusic_ben_bohmer.jpg/1200x1200bb.jpg"
+        },
         {
           "title": "Ölüler Hariç",
           "creator": "Kana Kana",
@@ -59,18 +71,6 @@
           "creator": "Bob Moses",
           "url": "https://music.apple.com/tr/album/cercle-bob-moses-at-griffith-observatory-los-angeles-live/1588412004",
           "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/4c/d0/2a4cd0c9-653e-5074-57fd-fea2c8c9bd05/cover_applemusic_bobmoses5.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "War Room Stories (Deluxe Edition)",
-          "creator": "Breton",
-          "url": "https://music.apple.com/tr/album/war-room-stories-deluxe-edition/929723404",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/c7/9b/45/c79b4592-0a8d-5510-807d-7ad31a1a7f50/cover.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Lifeforms",
-          "creator": "Angels & Airwaves",
-          "url": "https://music.apple.com/tr/album/lifeforms/1570547185",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/1200x1200bb.jpg"
         }
       ]
     },
@@ -82,11 +82,6 @@
           "title": "Killing Eve",
           "url": "https://www.tvmaze.com/shows/22904/killing-eve",
           "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/397/994197.jpg"
-        },
-        {
-          "title": "South Park",
-          "url": "https://www.tvmaze.com/shows/112/south-park",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg"
         }
       ]
     }

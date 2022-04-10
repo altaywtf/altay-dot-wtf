@@ -26,7 +26,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     display: 'block',
                     textDecoration: 'none',
                     border: '2px solid',
-                    borderColor: 'borderPrimary',
+                    borderColor: 'border',
                     borderRadius: 4,
                     transition: 'transform .2s',
                     '@media (hover)': {
@@ -45,7 +45,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       borderRadius: 'default',
                     }}
                   >
-                    <Box sx={{ backgroundColor: 'borderPrimary', width: ['50%', '33%'] }} p={3}>
+                    <Box sx={{ backgroundColor: 'border', width: ['50%', '33%'] }} p={3}>
                       <Image
                         alt={`Cover of book ${item.title}`}
                         src={item.imageURL}
