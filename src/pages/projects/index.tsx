@@ -22,16 +22,12 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   }
 
   return (
-    <Flex sx={{ alignItems: 'center' }}>
-      <Box>
-        <Link href={project.url} variant="links.title" target="_blank" rel="noreferrer noopener">
-          {project.title}
-        </Link>
-      </Box>
+    <Flex sx={{ alignItems: 'center', color: 'link', gap: 1 }}>
+      <Link variant="links.title" href={project.url} target="_blank" rel="noreferrer noopener">
+        {project.title}
+      </Link>
 
-      <Text sx={{ fontSize: [1, 2], height: [18, 20] }} color="link">
-        <CgArrowTopRight />
-      </Text>
+      <CgArrowTopRight />
     </Flex>
   )
 }

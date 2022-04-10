@@ -24,9 +24,7 @@ const PageHeader: React.FC<Props> = ({ title, description }) => (
       }}
     />
 
-    <Heading as="h1" sx={{ fontSize: 3 }}>
-      {title}
-    </Heading>
+    <Heading as="h2">{title}</Heading>
 
     {description ? (
       <Text sx={{ '*': { color: 'textSecondary' } }}>

@@ -19,9 +19,10 @@ export const theme = makeTheme({
   },
   lineHeights: {
     body: 1.6,
+    heading: 1.6,
   },
   space: [0, 4, 8, 16, 32, 48, 64, 80, 128, 256, 512],
-  fontSizes: [14, 16, 18, 24],
+  fontSizes: [14, 16, 18],
   breakpoints: ['480px', '640px', '960px'],
   colors: COLORS,
   radii: {

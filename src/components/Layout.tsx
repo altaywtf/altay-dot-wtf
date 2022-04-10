@@ -14,11 +14,7 @@ const Layout: React.FC = ({ children }) => (
         paddingX: [3, 3, 0],
       }}
     >
-      <Box m={6} />
-
-      {children}
-
-      <Box m={6} />
+      <Box my={[3, 4, 5]}>{children}</Box>
     </Box>
   </>
 )

@@ -99,7 +99,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   target="_blank"
                   variant="links.scale"
                 >
-                  <Flex sx={{ flexDirection: 'column' }}>
+                  <Flex sx={{ flexDirection: 'column', gap: 1 }}>
                     <Box sx={{ width: '100%' }}>
                       <Image
                         alt={`Cover of music album ${item.title}`}
@@ -108,14 +108,9 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       />
                     </Box>
 
-                    <Box m={1} />
-
                     <Box sx={{ fontSize: 0 }}>
-                      <Text as="p">{item.title}</Text>
-
-                      <Text as="p" color="textSecondary">
-                        {item.creator}
-                      </Text>
+                      <Box>{item.title}</Box>
+                      <Box color="textSecondary">{item.creator}</Box>
                     </Box>
                   </Flex>
                 </Link>
@@ -128,7 +123,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
         return (
           <Flex sx={{ flexWrap: 'wrap' }} m={-2}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} sx={{ width: 'auto' }}>
+              <Box key={item.title} p={2} sx={{ width: 'auto' }} mb={3}>
                 <Link
                   href={item.url}
                   target="_blank"
@@ -145,8 +140,6 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     <Text color="text">{item.title}</Text>
                   </Flex>
                 </Link>
-
-                <Box my={3} />
               </Box>
             ))}
           </Flex>
@@ -158,25 +151,19 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
     <>
       <PageHeader {...nowCopy} />
 
-      <Box m={5} />
+      <Box my={5}>
+        {now.sections
+          .filter((section) => section.data && section.data.length > 0)
+          .map((section) => (
+            <Box key={section._id}>
+              <Heading as="h3">{section.title}</Heading>
 
-      {now.sections
-        .filter((section) => section.data && section.data.length > 0)
-        .map((section) => (
-          <Box key={section._id}>
-            <Heading as="h3" sx={{ fontSize: 2 }}>
-              {section.title}
-            </Heading>
-
-            <Box m={3} />
-
-            <Box>{renderSectionContent(section)}</Box>
-
-            <Box m={5} />
-          </Box>
-        ))}
-
-      <Box m={6} />
+              <Box mt={3} mb={5}>
+                {renderSectionContent(section)}
+              </Box>
+            </Box>
+          ))}
+      </Box>
 
       <Text color="textSecondary">Last updated on {formatDate(now.updatedAt)}</Text>
     </>

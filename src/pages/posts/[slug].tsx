@@ -62,7 +62,7 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <Box m={[3, 4]} />
 
-    <Heading sx={{ fontSize: 3 }}>{post.title}</Heading>
+    <Heading as="h2">{post.title}</Heading>
 
     <Box m={2} />
 

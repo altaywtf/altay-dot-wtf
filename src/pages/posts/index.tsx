@@ -18,32 +18,30 @@ const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
 
     <Box m={4} />
 
-    <Box>
+    <>
       {posts.map((post) => (
         <Box key={post.slug} mb={4}>
-          <NextLink href={post.url} passHref>
-            <Link variant="links.title" title={post.title}>
-              {post.title}
-            </Link>
-          </NextLink>
+          <Box>
+            <NextLink href={post.url} passHref>
+              <Link variant="links.title" title={post.title}>
+                {post.title}
+              </Link>
+            </NextLink>
+          </Box>
 
-          <Box m={1} />
+          <Box my={1}>{post.oneliner}</Box>
 
-          <Text>{post.oneliner}</Text>
-
-          <Box m={1} />
-
-          <Text color="textSecondary">
+          <Box sx={{ fontSize: 0, color: 'textSecondary' }}>
             {formatDate(post.date)}
 
             <Box sx={{ display: 'inline' }} mx={1}>
               ·
             </Box>
             {post.readingTime}
-          </Text>
+          </Box>
         </Box>
       ))}
-    </Box>
+    </>
   </>
 )
 
