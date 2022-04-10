@@ -12,8 +12,8 @@ export const COLORS = {
   backgroundSecondary: '#151515',
   border: '#151515',
 
-  text: '#d4d4d4',
-  textSecondary: '#a3a3a3',
+  text: 'rgba(255, 255, 255, 0.9)',
+  textSecondary: 'rgba(255, 255, 255, 0.65)',
 
   link: '#fdce45',
   linkHover: lighten(0.15, '#fdce45'),

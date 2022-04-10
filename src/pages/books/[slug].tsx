@@ -63,12 +63,10 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Box m={[3, 4]} />
 
-      <Flex>
+      <Flex sx={{ gap: 3 }}>
         <Box sx={{ minWidth: [120, 140] }}>
           <BookCover book={book} />
         </Box>
-
-        <Box m={2} />
 
         <Box>
           <Heading as="h3">{pageTitle}</Heading>

@@ -17,7 +17,7 @@ const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 type Props = { children: string }
 
 const Markdown: React.FC<Props> = ({ children }) => (
-  <Box>
+  <Box sx={{ color: 'textSecondary' }}>
     <ReactMarkdown
       plugins={[slug, gfm]}
       escapeHtml={true}

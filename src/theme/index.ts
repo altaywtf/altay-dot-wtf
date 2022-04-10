@@ -33,6 +33,7 @@ export const theme = makeTheme({
     heading: {
       margin: 0,
       padding: 0,
+      color: 'text',
     },
   },
   links: {
@@ -137,6 +138,9 @@ export const theme = makeTheme({
     },
     h6: {
       variant: 'text.heading',
+    },
+    p: {
+      color: 'textSecondary',
     },
   },
 })

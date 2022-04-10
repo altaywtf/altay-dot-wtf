@@ -22,7 +22,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
     <Box>
       {books.map((book) => (
         <Box key={book.slug}>
-          <Flex>
+          <Flex sx={{ gap: 3 }}>
             <Box sx={{ minWidth: [100, 130] }}>
               <NextLink href={book.notes.url} passHref>
                 <a title={book.title}>
@@ -30,8 +30,6 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
                 </a>
               </NextLink>
             </Box>
-
-            <Box m={2} />
 
             <Box>
               <NextLink href={book.notes.url} passHref>
@@ -44,7 +42,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
               <BookInfo book={book} />
               <Box m={1} />
 
-              <Text sx={{ fontStyle: 'italic', color: 'textSecondary' }}>
+              <Text sx={{ fontStyle: 'italic', color: 'textSecondary', fontSize: 0 }}>
                 &quot;{book.quote}&quot;
               </Text>
             </Box>
