@@ -11,18 +11,17 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
   <NextLink href={href} passHref>
     <Link
       sx={{
-        textDecoration: 'none',
         fontSize: 0,
-        paddingY: '6px',
+        paddingY: '.4rem',
         paddingX: 2,
         lineHeight: 1,
         fontWeight: 600,
         borderRadius: 'default',
         color: 'text',
         backgroundColor: active ? 'buttonBackground' : 'transparent',
-        border: 'none',
         '@media (hover: hover)': {
           ':hover': {
+            backgroundColor: 'buttonBackground',
             color: 'text',
           },
         },

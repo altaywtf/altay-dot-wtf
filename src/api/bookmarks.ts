@@ -29,8 +29,13 @@ const mapRaindropBookmarkToBookmark = (raindropBookmark: RaindropBookmark): Book
 export const fetchBookmarks = async () => {
   try {
     const response = await axios.get<RaindropResponse>(
-      'https://api.raindrop.io/rest/v1/raindrops/0?search=[{"key": "tag", "val": "altay-dot-wtf"}]',
+      'https://api.raindrop.io/rest/v1/raindrops/0',
       {
+        params: {
+          search: '#altay-dot-wtf',
+          perpage: 50,
+          sort: '-created',
+        },
         headers: {
           authorization: `Bearer ${process.env.RAINDROP_API_KEY}`,
         },

@@ -4,7 +4,7 @@ import Page from 'components/Page'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
 import { getFeaturedPosts, Post } from 'api/posts'
-import { Flex, Text, Link } from 'theme-ui'
+import { Flex, Link } from 'theme-ui'
 import { VscMail } from '@react-icons/all-files/vsc/VscMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
@@ -39,11 +39,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   contactLinks,
 }) => (
   <Page header={{ title: homeCopy.title, description }}>
-    <Text color="textSecondary" sx={{ fontSize: 0 }}>
-      Me on the internets
-    </Text>
-
-    <Flex sx={{ mt: 1, gap: 2 }}>
+    <Flex sx={{ mt: -2, gap: 2 }}>
       {contactLinks.map(({ title, url }) => (
         <Link
           key={title}
@@ -53,8 +49,8 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           variant="links.button"
         >
           <Flex sx={{ alignItems: 'center', gap: 1 }}>
-            <Text sx={{ display: 'inline-flex' }}>{getContactLinkIcon(title)}</Text>
-            <Text>{title}</Text>
+            {getContactLinkIcon(title)}
+            {title}
           </Flex>
         </Link>
       ))}

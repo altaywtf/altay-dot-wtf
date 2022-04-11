@@ -48,6 +48,11 @@ const Header: React.FC = () => {
               borderRadius: 'circle',
               borderColor: pathname === '/' ? 'border' : 'transparent',
               backgroundColor: 'black',
+              '@media (hover: hover)': {
+                ':hover': {
+                  borderColor: 'border',
+                },
+              },
             }}
           >
             <Image src={avatar} alt="That's head" />

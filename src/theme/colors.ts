@@ -8,7 +8,7 @@ const BRAND_COLORS = {
 
 export const COLORS = {
   background: '#101010',
-  backgroundAlpha: '#10101099',
+  backgroundAlpha: 'rgba(0, 0, 0, 0.75)',
   backgroundSecondary: '#151515',
   border: '#202020',
 

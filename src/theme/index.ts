@@ -14,7 +14,6 @@ const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObje
   '@media (hover: hover)': {
     '&:hover': {
       color: lighten(brand, 0.15),
-      cursor: 'default',
     },
   },
 })
@@ -33,7 +32,6 @@ const styles: Theme['styles'] = {
     padding: 0,
     margin: 0,
     overflowY: 'scroll',
-    cursor: 'default',
     'a[href="https://put.io"]': getBrandLinkStyle('putio'),
     'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
     'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),

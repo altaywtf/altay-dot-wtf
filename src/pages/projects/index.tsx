@@ -25,7 +25,9 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
         {project.title}
       </Link>
 
-      <CgArrowTopRight />
+      <Text sx={{ flexShrink: 0, lineHeight: 1 }}>
+        <CgArrowTopRight />
+      </Text>
     </Flex>
   )
 }

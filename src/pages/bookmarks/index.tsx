@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { bookmarksCopy } from 'config/copy'
 import { fetchBookmarks, Bookmark } from 'api/bookmarks'
-import { Flex, Box, Link } from 'theme-ui'
+import { Flex, Box, Link, Text } from 'theme-ui'
 import Page from 'components/Page'
 import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
 
@@ -18,7 +18,10 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
           <Link variant="links.title" href={bookmark.url} target="_blank" rel="noopener noreferrer">
             <Flex sx={{ alignItems: 'center', gap: 1 }}>
               {bookmark.title}
-              <CgArrowTopRight />
+
+              <Text sx={{ flexShrink: 0, lineHeight: 1 }}>
+                <CgArrowTopRight />
+              </Text>
             </Flex>
           </Link>
         </Box>
