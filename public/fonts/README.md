@@ -6,6 +6,6 @@ There is a [free trial version](https://www.grillitype.com/free-trial-fonts) ava
 
 If you're going to use it in production, please purchase a license from [the amazing people who crafted it](https://www.grillitype.com).
 
-So they can keep creating amazing typefaces.
+So they can keep doing what they are doing.
 
 Thank you.

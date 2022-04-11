@@ -8,7 +8,6 @@ const MDInternalLink: React.FC<Props> = ({ href, children }) => (
     <Link
       href={href}
       sx={{
-        display: 'inline',
         '&.scrolled-source-link': {
           backgroundColor: 'link',
           color: 'background',
@@ -28,7 +27,7 @@ const MDInternalLink: React.FC<Props> = ({ href, children }) => (
 )
 
 const MDExternalLink: React.FC<Props> = ({ href, children }) => (
-  <Link href={href} target="_blank" rel="noreferrer noopener" sx={{ display: 'inline' }}>
+  <Link href={href} target="_blank" rel="noreferrer noopener">
     {children}
   </Link>
 )

@@ -1,15 +1,13 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
-import PageHeader from 'components/PageHeader'
+import Page from 'components/Page'
 import { Flex, Box, Link, Text } from 'theme-ui'
 import NextLink from 'next/link'
 import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
 
 export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
-  props: {
-    projects: getProjects(),
-  },
+  props: { projects: getProjects() },
 })
 
 const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
@@ -33,20 +31,16 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
 }
 
 const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ projects }) => (
-  <>
-    <PageHeader {...projectsCopy} />
-
-    <Box m={4} />
-
+  <Page header={projectsCopy}>
     {projects.map((p) => (
       <Box key={p.title}>
         <ProjectLink project={p} />
-        <Box m={1} />
+        <Box my={1} />
         <Text>{p.description}</Text>
-        <Box m={4} />
+        <Box my={4} />
       </Box>
     ))}
-  </>
+  </Page>
 )
 
 export default ProjectsPage

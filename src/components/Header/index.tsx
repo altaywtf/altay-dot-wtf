@@ -24,9 +24,6 @@ const Header: React.FC = () => {
         paddingY: 2,
         backgroundColor: 'backgroundAlpha',
         backdropFilter: 'saturate(180%) blur(20px)',
-        '& > *': {
-          lineHeight: 1,
-        },
       }}
     >
       <Flex
@@ -45,7 +42,7 @@ const Header: React.FC = () => {
               overflow: 'hidden',
               width: 32,
               height: 32,
-              borderWidth: 2,
+              borderWidth: 1,
               borderStyle: 'solid',
               borderRadius: 'circle',
               borderColor: 'border',

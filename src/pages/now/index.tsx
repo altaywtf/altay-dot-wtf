@@ -3,7 +3,7 @@ import { useCallback } from 'react'
 import { Flex, Box, Heading, Link, Text, Image } from 'theme-ui'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
-import PageHeader from 'components/PageHeader'
+import Page from 'components/Page'
 import { formatDate } from 'utils/date'
 
 export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
@@ -22,19 +22,13 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                   href={item.url}
                   target="_blank"
                   rel="noreferrer noopener"
+                  variant="links.scale"
                   sx={{
                     display: 'block',
-                    textDecoration: 'none',
-                    border: '1px solid',
+                    borderWidth: 1,
+                    borderStyle: 'solid',
                     borderColor: 'border',
                     borderRadius: 'default',
-                    transition: 'transform .2s',
-                    '@media (hover: hover)': {
-                      '&:hover': {
-                        transform: 'scale(1.025)',
-                        borderColor: 'border',
-                      },
-                    },
                   }}
                 >
                   <Flex
@@ -148,25 +142,23 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
   }, [])
 
   return (
-    <>
-      <PageHeader {...nowCopy} />
-
-      <Box my={5}>
+    <Page header={nowCopy}>
+      <>
         {now.sections
           .filter((section) => section.data && section.data.length > 0)
           .map((section) => (
             <Box key={section._id}>
               <Heading as="h3">{section.title}</Heading>
 
-              <Box mt={3} mb={5}>
+              <Box mt={2} mb={4}>
                 {renderSectionContent(section)}
               </Box>
             </Box>
           ))}
-      </Box>
+      </>
 
       <Text color="textSecondary">Last updated on {formatDate(now.updatedAt)}</Text>
-    </>
+    </Page>
   )
 }
 

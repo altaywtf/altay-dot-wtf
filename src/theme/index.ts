@@ -1,4 +1,4 @@
-import { Theme } from 'theme-ui'
+import { Theme, merge, ThemeUIStyleObject } from 'theme-ui'
 import { COLORS } from './colors'
 
 export const LAYOUT_WIDTH = 640
@@ -6,6 +6,65 @@ export const LAYOUT_WIDTH = 640
 const fontFamily = `please-dont-download-these-fonts-buy-a-license-instead, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
 
 const makeTheme = <T extends Theme>(t: T) => t
+
+const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
+  fontWeight: 'bold',
+  color: brand,
+})
+
+const styles: Theme['styles'] = {
+  root: {
+    fontFamily: 'body',
+    fontWeight: 'body',
+    lineHeight: 'body',
+    fontSize: 1,
+    letterSpacing: '0.015em',
+    wordSpacing: '0.001em',
+    WebkitFontSmoothing: 'antialiased',
+    WebkitTextSizeAdjust: 'none',
+    MozOsxFontSmoothing: 'grayscale',
+    padding: 0,
+    margin: 0,
+    overflowY: 'scroll',
+    cursor: 'default',
+    'a[href="https://put.io"]': getBrandLinkStyle('putio'),
+    'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
+    'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),
+  },
+
+  a: {
+    color: 'link',
+    textDecoration: 'none',
+    '@media (hover: hover)': {
+      '&:hover': {
+        color: 'linkHover',
+        cursor: 'default',
+      },
+    },
+  },
+
+  h1: {
+    variant: 'text.heading',
+  },
+  h2: {
+    variant: 'text.heading',
+  },
+  h3: {
+    variant: 'text.heading',
+  },
+  h4: {
+    variant: 'text.heading',
+  },
+  h5: {
+    variant: 'text.heading',
+  },
+  h6: {
+    variant: 'text.heading',
+  },
+  p: {
+    color: 'textSecondary',
+  },
+}
 
 export const theme = makeTheme({
   fonts: {
@@ -29,6 +88,9 @@ export const theme = makeTheme({
     default: 4,
     circle: 999999,
   },
+
+  styles,
+
   text: {
     heading: {
       margin: 0,
@@ -36,43 +98,30 @@ export const theme = makeTheme({
       color: 'text',
     },
   },
+
   links: {
-    silent: {
+    silent: merge.all(styles.a, {
       color: 'textSecondary',
-      textDecoration: 'none',
-      '@media (hover: hover)': {
-        '&:hover': {
-          cursor: 'pointer',
-          color: 'linkHover',
-        },
-      },
-    },
-    title: {
-      textDecoration: 'none',
-      color: 'link',
+    }),
+
+    title: merge.all(styles.a, {
+      display: 'block',
       fontWeight: 'bold',
-      fontSize: 1,
-      '@media (hover: hover)': {
-        '&:hover': {
-          cursor: 'pointer',
-          color: 'linkHover',
-        },
-      },
-    },
-    scale: {
+    }),
+
+    scale: merge.all(styles.a, {
       color: 'text',
       display: 'block',
-      textDecoration: 'none',
       transition: 'transform .2s',
       '@media (hover: hover)': {
         '&:hover': {
-          cursor: 'pointer',
+          color: 'text',
           transform: 'scale(1.025)',
         },
       },
-    },
-    button: {
-      textDecoration: 'none',
+    }),
+
+    button: merge.all(styles.a, {
       display: 'inline-block',
       paddingY: 2,
       paddingX: 3,
@@ -81,66 +130,13 @@ export const theme = makeTheme({
       fontWeight: 'bold',
       fontSize: 0,
       lineHeight: 1,
-      borderWidth: 1,
-      borderStyle: 'solid',
-      borderColor: 'buttonBorder',
       borderRadius: 'default',
       '@media (hover: hover)': {
         '&:hover': {
-          cursor: 'pointer',
+          color: 'text',
           backgroundColor: 'buttonBackgroundHover',
         },
       },
-    },
-  },
-  styles: {
-    root: {
-      fontFamily: 'body',
-      fontWeight: 'body',
-      lineHeight: 'body',
-      fontSize: 1,
-      letterSpacing: '0.015em',
-      wordSpacing: '0.001em',
-      WebkitFontSmoothing: 'antialiased',
-      WebkitTextSizeAdjust: 'none',
-      MozOsxFontSmoothing: 'grayscale',
-      padding: 0,
-      margin: 0,
-      overflowY: 'scroll',
-    },
-    a: {
-      color: 'inherit',
-      textDecoration: 'none',
-      borderBottomWidth: 1,
-      borderBottomStyle: 'solid',
-      borderBottomColor: 'text',
-      '@media (hover: hover)': {
-        '&:hover': {
-          color: 'white',
-          borderBottomColor: 'white',
-        },
-      },
-    },
-    h1: {
-      variant: 'text.heading',
-    },
-    h2: {
-      variant: 'text.heading',
-    },
-    h3: {
-      variant: 'text.heading',
-    },
-    h4: {
-      variant: 'text.heading',
-    },
-    h5: {
-      variant: 'text.heading',
-    },
-    h6: {
-      variant: 'text.heading',
-    },
-    p: {
-      color: 'textSecondary',
-    },
+    }),
   },
 })
