@@ -14,13 +14,13 @@ const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
   <Page header={postsCopy}>
     {posts.map((post) => (
       <Box key={post.slug} mb={4}>
-        <NextLink href={post.url} passHref>
-          <Link variant="links.title" title={post.title}>
-            {post.title}
-          </Link>
-        </NextLink>
+        <Box>
+          <NextLink href={post.url} passHref>
+            <Link variant="links.title">{post.title}</Link>
+          </NextLink>
+        </Box>
 
-        <Box my={1}>{post.oneliner}</Box>
+        <Box>{post.oneliner}</Box>
 
         <Box sx={{ fontSize: 0, color: 'textSecondary' }}>
           {formatDate(post.date)}

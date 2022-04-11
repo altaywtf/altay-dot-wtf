@@ -52,12 +52,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       />
                     </Box>
 
-                    <Box m={[2, 3]} />
+                    <Box m={3} />
 
                     <Box p={2} sx={{ width: '100%' }}>
-                      <Text sx={{ fontWeight: 'bold' }}>{item.title}</Text>
-
-                      <Box m={2} />
+                      <Box sx={{ fontWeight: 600 }}>{item.title}</Box>
 
                       <Text
                         sx={{
@@ -68,8 +66,6 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       >
                         {item.subtitle}
                       </Text>
-
-                      <Box m={2} />
 
                       <Text sx={{ color: 'textSecondary' }}>by {item.author}</Text>
                     </Box>
@@ -103,7 +99,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     </Box>
 
                     <Box sx={{ fontSize: 0 }}>
-                      <Box>{item.title}</Box>
+                      <Box sx={{ lineHeight: 1.2 }}>{item.title}</Box>
                       <Box color="textSecondary">{item.creator}</Box>
                     </Box>
                   </Flex>
@@ -148,7 +144,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           .filter((section) => section.data && section.data.length > 0)
           .map((section) => (
             <Box key={section._id}>
-              <Heading as="h3">{section.title}</Heading>
+              <Heading as="h4">{section.title}</Heading>
 
               <Box mt={2} mb={4}>
                 {renderSectionContent(section)}

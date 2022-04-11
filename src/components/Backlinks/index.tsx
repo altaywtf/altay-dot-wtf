@@ -1,5 +1,5 @@
 import type { Backlink } from 'api/backlinks'
-import { Box, Flex, Text, Link } from 'theme-ui'
+import { Box, Flex, Heading, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
@@ -26,7 +26,7 @@ const Backlinks: React.FC<{
 
   return (
     <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 'default' }}>
-      <Text sx={{ fontWeight: 'bold' }}>Links to this {sourceType}</Text>
+      <Heading as="h4">Links to this {sourceType}</Heading>
 
       <Box m={2} />
 

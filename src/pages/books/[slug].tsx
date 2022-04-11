@@ -61,7 +61,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <ArtificialBackButton href="/books" label="Books" />
 
-      <Box m={[3, 4]} />
+      <Box m={4} />
 
       <Flex sx={{ gap: 3 }}>
         <Box sx={{ minWidth: [120, 140] }}>

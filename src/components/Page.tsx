@@ -1,4 +1,4 @@
-import { Heading, Text, Box } from 'theme-ui'
+import { Heading, Box } from 'theme-ui'
 import { NextSeo } from 'next-seo'
 import { getOpenGraphImage } from 'utils/openGraph'
 import Markdown from './Markdown'
@@ -27,13 +27,9 @@ const Page: React.FC<Props> = ({ header, children }) => (
         }}
       />
 
-      <Heading as="h2">{header.title}</Heading>
+      <Heading as="h3">{header.title}</Heading>
 
-      {header.description ? (
-        <Text sx={{ '*': { color: 'textSecondary' } }}>
-          <Markdown>{header.description}</Markdown>
-        </Text>
-      ) : null}
+      {header.description ? <Markdown>{header.description}</Markdown> : null}
     </Box>
     {children}
   </>

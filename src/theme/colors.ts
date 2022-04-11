@@ -1,7 +1,7 @@
-import { lighten, darken } from 'polished'
+import { lighten } from 'polished'
 
 const BRAND_COLORS = {
-  putio: '#fdce45',
+  putio: '#FDCE45',
   klarna: 'rgb(255, 179, 199)',
   lisk: '#4070F4',
 }
@@ -17,10 +17,9 @@ export const COLORS = {
 
   link: BRAND_COLORS.putio,
   linkHover: lighten(0.15, BRAND_COLORS.putio),
-  linkBackground: darken(0.55, BRAND_COLORS.putio),
 
   buttonBackground: '#202020',
-  buttonBackgroundHover: lighten(0.05, '#202020'),
+  buttonHoverBackground: lighten(0.05, '#202020'),
 
   ...BRAND_COLORS,
 }

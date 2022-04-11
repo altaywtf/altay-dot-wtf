@@ -8,9 +8,7 @@ import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 
 export const getStaticProps: GetStaticProps<{ books: Book[] }> = () => ({
-  props: {
-    books: getBooks(),
-  },
+  props: { books: getBooks() },
 })
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
@@ -20,22 +18,22 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
         <Flex sx={{ gap: 3 }}>
           <Box sx={{ minWidth: [100, 130] }}>
             <NextLink href={book.notes.url} passHref>
-              <a title={book.title}>
+              <Link>
                 <BookCover book={book} />
-              </a>
+              </Link>
             </NextLink>
           </Box>
 
           <Box>
-            <NextLink href={book.notes.url} passHref>
-              <Link variant="links.title" title={book.title}>
-                {book.title} by {book.authors.join(', ')}
-              </Link>
-            </NextLink>
+            <Box>
+              <NextLink href={book.notes.url} passHref>
+                <Link variant="links.title">
+                  {book.title} by {book.authors.join(', ')}
+                </Link>
+              </NextLink>
+            </Box>
 
-            <Box m={1} />
             <BookInfo book={book} />
-            <Box m={1} />
 
             <Text sx={{ fontStyle: 'italic', color: 'textSecondary', fontSize: 0 }}>
               &quot;{book.quote}&quot;

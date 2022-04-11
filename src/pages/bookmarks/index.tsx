@@ -14,16 +14,16 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
   <Page header={bookmarksCopy}>
     {data.map((bookmark) => (
       <Box key={bookmark.url} mb={4}>
-        <Link variant="links.title" href={bookmark.url} target="_blank" rel="noopener noreferrer">
-          <Flex sx={{ alignItems: 'center', gap: 1 }}>
-            {bookmark.title}
-            <CgArrowTopRight />
-          </Flex>
-        </Link>
-
-        <Box as="blockquote" my={1}>
-          {bookmark.description}
+        <Box>
+          <Link variant="links.title" href={bookmark.url} target="_blank" rel="noopener noreferrer">
+            <Flex sx={{ alignItems: 'center', gap: 1 }}>
+              {bookmark.title}
+              <CgArrowTopRight />
+            </Flex>
+          </Link>
         </Box>
+
+        <Box as="blockquote">{bookmark.description}</Box>
 
         <Box sx={{ fontSize: 0, color: 'textSecondary' }}>{bookmark.host}</Box>
       </Box>

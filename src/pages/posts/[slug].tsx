@@ -60,7 +60,7 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
     <ArtificialBackButton href="/posts" label="Writing" />
 
-    <Box m={[3, 4]} />
+    <Box m={4} />
 
     <Heading as="h2">{post.title}</Heading>
 

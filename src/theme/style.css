@@ -17,6 +17,24 @@
 }
 
 @font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Medium.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Medium-Italic.woff2')
+    format('woff2');
+  font-family: 'please-dont-download-these-fonts-buy-a-license-instead';
+  font-display: optional;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
   src: url('/fonts/please-dont-download-these-fonts-buy-a-license-instead-Bold.woff2')
     format('woff2');
   font-family: 'please-dont-download-these-fonts-buy-a-license-instead';

@@ -1,4 +1,5 @@
 import { Theme, merge, ThemeUIStyleObject } from 'theme-ui'
+import { lighten } from '@theme-ui/color'
 import { COLORS } from './colors'
 
 export const LAYOUT_WIDTH = 640
@@ -8,8 +9,14 @@ const fontFamily = `please-dont-download-these-fonts-buy-a-license-instead, -app
 const makeTheme = <T extends Theme>(t: T) => t
 
 const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
-  fontWeight: 'bold',
+  fontWeight: 600,
   color: brand,
+  '@media (hover: hover)': {
+    '&:hover': {
+      color: lighten(brand, 0.15),
+      cursor: 'default',
+    },
+  },
 })
 
 const styles: Theme['styles'] = {
@@ -17,7 +24,7 @@ const styles: Theme['styles'] = {
     fontFamily: 'body',
     fontWeight: 'body',
     lineHeight: 'body',
-    fontSize: 1,
+    fontSize: ['14px', '16px'],
     letterSpacing: '0.015em',
     wordSpacing: '0.001em',
     WebkitFontSmoothing: 'antialiased',
@@ -71,19 +78,25 @@ export const theme = makeTheme({
     body: fontFamily,
     heading: fontFamily,
   },
+
   fontWeights: {
     body: 400,
     heading: 600,
-    bold: 600,
   },
+
   lineHeights: {
-    body: 1.6,
-    heading: 1.6,
+    body: 1.5,
+    heading: 1.5,
   },
-  space: [0, 4, 8, 16, 32, 48, 64, 80, 128, 256, 512],
-  fontSizes: [14, 16, 18],
+
+  space: [0, '0.25rem', '0.5rem', '1rem', '2rem', '3rem', '4rem'],
+
+  fontSizes: ['0.875rem', '1rem', '1.25rem'],
+
   breakpoints: ['480px', '640px', '960px'],
+
   colors: COLORS,
+
   radii: {
     default: 4,
     circle: 999999,
@@ -105,8 +118,7 @@ export const theme = makeTheme({
     }),
 
     title: merge.all(styles.a, {
-      display: 'block',
-      fontWeight: 'bold',
+      fontWeight: 500,
     }),
 
     scale: merge.all(styles.a, {
@@ -127,14 +139,14 @@ export const theme = makeTheme({
       paddingX: 3,
       backgroundColor: 'buttonBackground',
       color: 'text',
-      fontWeight: 'bold',
+      fontWeight: 500,
       fontSize: 0,
       lineHeight: 1,
       borderRadius: 'default',
       '@media (hover: hover)': {
         '&:hover': {
           color: 'text',
-          backgroundColor: 'buttonBackgroundHover',
+          backgroundColor: 'buttonHoverBackground',
         },
       },
     }),

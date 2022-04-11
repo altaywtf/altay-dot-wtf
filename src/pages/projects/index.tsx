@@ -33,11 +33,12 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
 const ProjectsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ projects }) => (
   <Page header={projectsCopy}>
     {projects.map((p) => (
-      <Box key={p.title}>
-        <ProjectLink project={p} />
-        <Box my={1} />
+      <Box key={p.title} mb={4}>
+        <Box>
+          <ProjectLink project={p} />
+        </Box>
+
         <Text>{p.description}</Text>
-        <Box my={4} />
       </Box>
     ))}
   </Page>

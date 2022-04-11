@@ -39,7 +39,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   contactLinks,
 }) => (
   <Page header={{ title: homeCopy.title, description }}>
-    <Text color="textSecondary">Me on the internets</Text>
+    <Text color="textSecondary" sx={{ fontSize: 0 }}>
+      Me on the internets
+    </Text>
 
     <Flex sx={{ mt: 1, gap: 2 }}>
       {contactLinks.map(({ title, url }) => (
@@ -50,7 +52,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           target="_blank"
           variant="links.button"
         >
-          <Flex sx={{ alignItems: 'center', gap: 2 }}>
+          <Flex sx={{ alignItems: 'center', gap: 1 }}>
             <Text sx={{ display: 'inline-flex' }}>{getContactLinkIcon(title)}</Text>
             <Text>{title}</Text>
           </Flex>

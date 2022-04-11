@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         width: '100%',
         left: 0,
         top: 0,
-        paddingX: ['12px', '12px', 0],
+        paddingX: [3, 3, 0],
         paddingY: 2,
         backgroundColor: 'backgroundAlpha',
         backdropFilter: 'saturate(180%) blur(20px)',
@@ -32,6 +32,7 @@ const Header: React.FC = () => {
           maxWidth: `calc(${LAYOUT_WIDTH}px + 8px)`,
           alignItems: 'center',
           justifyContent: 'space-between',
+          marginX: [-1, -1, 0],
         }}
       >
         <NextLink href="/" passHref>
@@ -42,23 +43,18 @@ const Header: React.FC = () => {
               overflow: 'hidden',
               width: 32,
               height: 32,
-              borderWidth: 1,
+              borderWidth: 2,
               borderStyle: 'solid',
               borderRadius: 'circle',
-              borderColor: 'border',
+              borderColor: pathname === '/' ? 'border' : 'transparent',
               backgroundColor: 'black',
-              '@media (hover: hover)': {
-                '&:hover': {
-                  borderColor: 'link',
-                },
-              },
             }}
           >
             <Image src={avatar} alt="That's head" />
           </Link>
         </NextLink>
 
-        <Flex sx={{ alignItems: 'center', gap: 2 }}>
+        <Flex sx={{ alignItems: 'center', gap: 1 }}>
           {HEADER.map(({ label, href }) => (
             <NavLink key={href} href={href} label={label} active={pathname.startsWith(href)} />
           ))}

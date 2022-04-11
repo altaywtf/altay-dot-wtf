@@ -1,21 +1,17 @@
 export const homeCopy = {
   title: "Hi, I'm Altay",
-  description: '',
 } as const
 
 export const postsCopy = {
   title: `Writing`,
-  description: '',
 } as const
 
 export const bookmarksCopy = {
   title: 'Bookmarks',
-  description: 'Cool things all over the internet.',
 } as const
 
 export const booksCopy = {
-  title: 'Books',
-  description: `Notes from the books I read.`,
+  title: 'Book notes',
 } as const
 
 export const nowCopy = {
@@ -25,5 +21,4 @@ export const nowCopy = {
 
 export const projectsCopy = {
   title: 'Projects',
-  description: '',
 } as const
