@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2022-04-10T16:28:42.692Z",
+  "updatedAt": "2022-04-12T11:35:25.458Z",
   "sections": [
     {
       "_id": "books",
@@ -53,24 +53,6 @@
           "creator": "WhoMadeWho",
           "url": "https://music.apple.com/tr/album/cercle-whomadewho-in-abu-simbel-egypt-live/1585737974",
           "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/f4/6b/a9/f46ba999-c102-ea24-7efa-a8e48b43bebd/mza_4437830076440205700.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Cercle: The Blaze at Aiguille du Midi in Chamonix, France (Live)",
-          "creator": "The Blaze",
-          "url": "https://music.apple.com/tr/album/cercle-the-blaze-at-aiguille-du-midi-in-chamonix-france-live/1594659733",
-          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music126/v4/b6/06/11/b6061106-c5d7-2529-41a7-ee12fc7bbb4e/cover_applemusic_theblaze3.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Cercle: Parra for Cuva in Cañon del Sumidero, Mexico (Live)",
-          "creator": "Parra for Cuva",
-          "url": "https://music.apple.com/tr/album/cercle-parra-for-cuva-in-ca%C3%B1on-del-sumidero-mexico-live/1588940400",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/10/50/90/105090de-90fa-22ef-67cb-f9269c25e4fb/cover_applemusic_parraforcuva.jpg/1200x1200bb.jpg"
-        },
-        {
-          "title": "Cercle: Bob Moses at Griffith Observatory, Los Angeles (Live)",
-          "creator": "Bob Moses",
-          "url": "https://music.apple.com/tr/album/cercle-bob-moses-at-griffith-observatory-los-angeles-live/1588412004",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/4c/d0/2a4cd0c9-653e-5074-57fd-fea2c8c9bd05/cover_applemusic_bobmoses5.jpg/1200x1200bb.jpg"
         }
       ]
     },

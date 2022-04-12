@@ -116,6 +116,7 @@ export const theme = makeTheme({
     }),
 
     title: merge.all(styles.a, {
+      display: 'inline-block',
       fontWeight: 500,
     }),
 

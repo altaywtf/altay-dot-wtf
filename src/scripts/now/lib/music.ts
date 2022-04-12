@@ -52,6 +52,7 @@ export const fetchMusic = async (): Promise<NowJSONMusic[]> => {
   const albums = response.data.data
     .filter((resource) => resource.type == 'library-albums')
     .filter((resource) => !!resource.attributes?.artwork?.url)
+    .slice(0, 6)
 
   return await Promise.all(
     albums.map(async (album) => ({

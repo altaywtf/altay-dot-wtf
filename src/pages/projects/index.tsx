@@ -2,9 +2,10 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { getProjects, Project } from 'api/projects'
 import { projectsCopy } from 'config/copy'
 import Page from 'components/Page'
-import { Flex, Box, Link, Text } from 'theme-ui'
+import { Box, Link, Text } from 'theme-ui'
 import NextLink from 'next/link'
 import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
+import IconBaseline from 'components/IconBaseline'
 
 export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
   props: { projects: getProjects() },
@@ -20,15 +21,13 @@ const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   }
 
   return (
-    <Flex sx={{ alignItems: 'center', color: 'link', gap: 1 }}>
-      <Link variant="links.title" href={project.url} target="_blank" rel="noreferrer noopener">
-        {project.title}
-      </Link>
+    <Link variant="links.title" href={project.url} target="_blank" rel="noreferrer noopener">
+      {project.title}
 
-      <Text sx={{ flexShrink: 0, lineHeight: 1 }}>
+      <IconBaseline>
         <CgArrowTopRight />
-      </Text>
-    </Flex>
+      </IconBaseline>
+    </Link>
   )
 }
 

@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { useCallback } from 'react'
-import { Flex, Box, Heading, Link, Text, Image } from 'theme-ui'
+import { Flex, Box, Heading, Link, Image } from 'theme-ui'
 import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import Page from 'components/Page'
@@ -56,18 +56,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
 
                     <Box p={2} sx={{ width: '100%' }}>
                       <Box sx={{ fontWeight: 600 }}>{item.title}</Box>
-
-                      <Text
-                        sx={{
-                          display: ['none', 'initial'],
-                          color: 'textSecondary',
-                          fontStyle: 'italic',
-                        }}
-                      >
-                        {item.subtitle}
-                      </Text>
-
-                      <Text sx={{ color: 'textSecondary' }}>by {item.author}</Text>
+                      <Box sx={{ color: 'textSecondary' }}>by {item.author}</Box>
                     </Box>
                   </Flex>
                 </Link>
@@ -82,7 +71,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
         return (
           <Flex m={-2} sx={{ flexWrap: 'wrap' }}>
             {section.data.map((item) => (
-              <Box key={item.title} p={2} sx={{ width: ['50%', '33%'] }}>
+              <Box key={item.title} p={2} sx={{ width: '33%' }}>
                 <Link
                   href={item.url}
                   rel="noreferrer noopener"
@@ -98,10 +87,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                       />
                     </Box>
 
-                    <Box sx={{ fontSize: 0 }}>
-                      <Box sx={{ lineHeight: 1.2 }}>{item.title}</Box>
-                      <Box color="textSecondary">{item.creator}</Box>
-                    </Box>
+                    <Box color="textSecondary">{item.creator}</Box>
                   </Flex>
                 </Link>
               </Box>
@@ -124,10 +110,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     <Image
                       alt={`Poster of TV show ${item.title}`}
                       src={item.imageURL}
-                      sx={{ height: [160, 240], borderRadius: 'default' }}
+                      sx={{ height: 240, borderRadius: 'default' }}
                     />
 
-                    <Text color="text">{item.title}</Text>
+                    <Box color="textSecondary">{item.title}</Box>
                   </Flex>
                 </Link>
               </Box>
@@ -153,7 +139,9 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
           ))}
       </>
 
-      <Text color="textSecondary">Last updated on {formatDate(now.updatedAt)}</Text>
+      <Box color="textSecondary" sx={{ fontSize: 0 }}>
+        Last updated on {formatDate(now.updatedAt)}
+      </Box>
     </Page>
   )
 }

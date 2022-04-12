@@ -1,8 +1,9 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { bookmarksCopy } from 'config/copy'
 import { fetchBookmarks, Bookmark } from 'api/bookmarks'
-import { Flex, Box, Link, Text } from 'theme-ui'
+import { Box, Link } from 'theme-ui'
 import Page from 'components/Page'
+import IconBaseline from 'components/IconBaseline'
 import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
 
 export const getStaticProps: GetStaticProps<{ data: Bookmark[] }> = async () => ({
@@ -14,17 +15,13 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
   <Page header={bookmarksCopy}>
     {data.map((bookmark) => (
       <Box key={bookmark.url} mb={4}>
-        <Box>
-          <Link variant="links.title" href={bookmark.url} target="_blank" rel="noopener noreferrer">
-            <Flex sx={{ alignItems: 'center', gap: 1 }}>
-              {bookmark.title}
+        <Link variant="links.title" href={bookmark.url} target="_blank" rel="noopener noreferrer">
+          {bookmark.title}
 
-              <Text sx={{ flexShrink: 0, lineHeight: 1 }}>
-                <CgArrowTopRight />
-              </Text>
-            </Flex>
-          </Link>
-        </Box>
+          <IconBaseline>
+            <CgArrowTopRight />
+          </IconBaseline>
+        </Link>
 
         <Box as="blockquote">{bookmark.description}</Box>
 
