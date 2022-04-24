@@ -9,7 +9,7 @@ const fontFamily = `please-dont-download-these-fonts-buy-a-license-instead, -app
 const makeTheme = <T extends Theme>(t: T) => t
 
 const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
-  fontWeight: 600,
+  fontWeight: 'heading',
   color: brand,
   '@media (hover: hover)': {
     '&:hover': {
@@ -20,6 +20,7 @@ const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObje
 
 const styles: Theme['styles'] = {
   root: {
+    bg: 'background',
     fontFamily: 'body',
     fontWeight: 'body',
     lineHeight: 'body',
@@ -43,7 +44,7 @@ const styles: Theme['styles'] = {
     '@media (hover: hover)': {
       '&:hover': {
         color: 'linkHover',
-        cursor: 'default',
+        cursor: 'pointer',
       },
     },
   },
@@ -79,6 +80,7 @@ export const theme = makeTheme({
 
   fontWeights: {
     body: 400,
+    subheading: 500,
     heading: 600,
   },
 
@@ -117,7 +119,7 @@ export const theme = makeTheme({
 
     title: merge.all(styles.a, {
       display: 'inline-block',
-      fontWeight: 500,
+      fontWeight: 'subheading',
     }),
 
     scale: merge.all(styles.a, {
@@ -138,7 +140,7 @@ export const theme = makeTheme({
       paddingX: 3,
       backgroundColor: 'buttonBackground',
       color: 'text',
-      fontWeight: 500,
+      fontWeight: 'subheading',
       fontSize: 0,
       lineHeight: 1,
       borderRadius: 'default',

@@ -55,7 +55,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now
                     <Box m={3} />
 
                     <Box p={2} sx={{ width: '100%' }}>
-                      <Box sx={{ fontWeight: 600 }}>{item.title}</Box>
+                      <Box sx={{ fontWeight: 'subheading' }}>{item.title}</Box>
                       <Box sx={{ color: 'textSecondary' }}>by {item.author}</Box>
                     </Box>
                   </Flex>
