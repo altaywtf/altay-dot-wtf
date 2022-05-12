@@ -1,4 +1,4 @@
-I'm a software engineer building apps for web, mobile, and media streaming devices.
+I'm a software engineer building apps for web, mobile, and streaming devices.
 
 I'm currently living in Bodrum and working on [putio](https://put.io)'s user-facing parts.
 

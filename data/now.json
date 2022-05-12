@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2022-04-12T11:35:25.458Z",
+  "updatedAt": "2022-05-12T07:27:18.772Z",
   "sections": [
     {
       "_id": "books",
@@ -61,9 +61,9 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "Killing Eve",
-          "url": "https://www.tvmaze.com/shows/22904/killing-eve",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/397/994197.jpg"
+          "title": "Ozark",
+          "url": "https://www.tvmaze.com/shows/13417/ozark",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/398/996611.jpg"
         }
       ]
     }
