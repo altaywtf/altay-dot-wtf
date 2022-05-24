@@ -7,7 +7,7 @@ module.exports = withBundleAnalyzer({
   async rewrites() {
     return [
       {
-        source: '/',
+        source: '/:path*',
         has: [
           {
             type: 'host',
