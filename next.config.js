@@ -4,23 +4,19 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: '*',
+        source: '/',
         has: [
           {
             type: 'host',
             value: 'www.zebrastik.com',
           },
         ],
-        destination: '/zebrastik',
+        destination: '/z',
+        permanent: true,
       },
-    ]
-  },
-
-  async redirects() {
-    return [
       {
         source: '/about',
         destination: '/',
