@@ -6,7 +6,6 @@ import Markdown from './Markdown'
 type Props = {
   header: {
     title: string
-    icon?: string
     description?: string
   }
 }

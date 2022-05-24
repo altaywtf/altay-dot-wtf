@@ -7,6 +7,17 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'zebrastik.com',
+          },
+        ],
+        destination: '/zebrastik',
+        permanent: true,
+      },
+      {
         source: '/about',
         destination: '/',
         permanent: true,

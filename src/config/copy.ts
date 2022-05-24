@@ -22,3 +22,9 @@ export const nowCopy = {
 export const projectsCopy = {
   title: 'Projects',
 } as const
+
+export const zebrastikCopy = {
+  title: 'hi, we are zebrastik',
+  description:
+    'we provide software development services for digital product companies at any scale. our expertise covers many platforms such as web, iOS, Android, and smart TVs.',
+}
