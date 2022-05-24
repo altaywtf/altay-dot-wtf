@@ -4,7 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: '/',
@@ -14,9 +14,13 @@ module.exports = withBundleAnalyzer({
             value: 'www.zebrastik.com',
           },
         ],
-        destination: '/z',
-        permanent: false,
+        destination: '/zebrastik',
       },
+    ]
+  },
+
+  async redirects() {
+    return [
       {
         source: '/about',
         destination: '/',

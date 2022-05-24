@@ -1,22 +1,44 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { zebrastikCopy } from 'config/copy'
 import { Box, Heading, Link, Text } from 'theme-ui'
-import zebraJPG from '../../public/images/zebra.jpg'
-import { useEffect } from 'react'
+import zebraJPG from '../../../public/images/zebra.jpg'
+import { NextSeo } from 'next-seo'
 
 const Zebrastik = () => {
+  const [isMounted, setIsMounted] = useState(false)
+
   useEffect(() => {
     const header = document.getElementsByTagName('header')[0]
 
     if (header) {
       header.style.display = 'none'
     }
+
+    setIsMounted(true)
   }, [])
 
-  return (
-    <Box>
-      <Box sx={{ width: 100, height: 100, borderRadius: '8px', overflow: 'hidden' }}>
-        <Image src={zebraJPG} alt="zebrastik" />
+  return isMounted ? (
+    <>
+      <NextSeo
+        title="zebrastik"
+        titleTemplate="%s"
+        description={zebrastikCopy.description}
+        openGraph={{
+          title: 'zebrastik',
+          description: zebrastikCopy.description,
+        }}
+      />
+
+      <Box
+        sx={{
+          width: 100,
+          height: 100,
+          borderRadius: '8px',
+          overflow: 'hidden',
+        }}
+      >
+        <Image src={zebraJPG} alt="zebrastik logo" />
       </Box>
 
       <Box my={3} />
@@ -50,8 +72,8 @@ const Zebrastik = () => {
           <Text color="textSecondary">Sheridan, WY 82801</Text>
         </Box>
       </Box>
-    </Box>
-  )
+    </>
+  ) : null
 }
 
 export default Zebrastik
