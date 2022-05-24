@@ -1,5 +1,3 @@
-import { Global } from '@emotion/react'
-import Page from 'components/Page'
 import Image from 'next/image'
 import { zebrastikCopy } from 'config/copy'
 import { Box, Heading, Link, Text } from 'theme-ui'

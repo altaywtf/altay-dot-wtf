@@ -11,10 +11,10 @@ module.exports = withBundleAnalyzer({
         has: [
           {
             type: 'host',
-            value: 'zebrastik.com',
+            value: 'www.zebrastik.com',
           },
         ],
-        destination: '/zebrastik',
+        destination: '/z',
         permanent: false,
       },
       {
