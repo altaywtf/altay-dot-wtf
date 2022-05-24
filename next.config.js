@@ -15,7 +15,7 @@ module.exports = withBundleAnalyzer({
           },
         ],
         destination: '/zebrastik',
-        permanent: true,
+        permanent: false,
       },
       {
         source: '/about',
