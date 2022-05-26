@@ -1,5 +1,5 @@
-- **2022, Jan:** I've re-started working full-time at [put.io](https://put.io), which I’ve been a part of since 2017 and kept working on the side when I had other full-time jobs in Berlin.
-- **2021, Nov:** after three years in Berlin, I took a _sabbatical_ from work and moved to a warm seaside district (Bodrum) in Turkey to lighten the psychological side-effects of the pandemic.
+- **2022, Jan:** I've re-started working full-time on [put.io](https://put.io), which I’ve been a part of since 2017 and kept working on the side when I had other full-time jobs in Berlin.
+- **2021, Nov:** after three years in Berlin, I took a _sabbatical_ from work and ended up moving to a Bodrum (a warm seaside district in Turkey's west-coast) to lighten the psychological side-effects of the pandemic.
 
 ---
 
