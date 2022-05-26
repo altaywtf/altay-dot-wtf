@@ -72,6 +72,11 @@ module.exports = withBundleAnalyzer({
         destination: '/blank.html',
         permanent: true,
       },
+      {
+        source: '/cv',
+        destination: '/cv.pdf',
+        permanent: true,
+      },
     ]
   },
 })
