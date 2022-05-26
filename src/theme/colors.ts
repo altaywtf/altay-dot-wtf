@@ -13,7 +13,8 @@ export const COLORS = {
   border: '#202020',
 
   text: 'rgba(255, 255, 255, 0.9)',
-  textSecondary: 'rgba(255, 255, 255, 0.65)',
+  textSecondary: 'rgba(255, 255, 255, 0.75)',
+  textTertiary: 'rgba(255, 255, 255, 0.6)',
 
   link: BRAND_COLORS.putio,
   linkHover: lighten(0.15, BRAND_COLORS.putio),

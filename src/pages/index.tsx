@@ -3,7 +3,6 @@ import { homeCopy } from 'config/copy'
 import Page from 'components/Page'
 import { readMarkdownFile } from 'utils/md'
 import { getContactLinks, ContactLink } from 'api/contact'
-import { getFeaturedPosts, Post } from 'api/posts'
 import { Flex, Link } from 'theme-ui'
 import { VscMail } from '@react-icons/all-files/vsc/VscMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
@@ -11,12 +10,10 @@ import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 
 export const getStaticProps: GetStaticProps<{
   description: string
-  posts: Post[]
   contactLinks: ContactLink[]
 }> = async () => ({
   props: {
     description: readMarkdownFile('home.md'),
-    posts: getFeaturedPosts(),
     contactLinks: getContactLinks(),
   },
 })

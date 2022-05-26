@@ -113,6 +113,13 @@ export const theme = makeTheme({
   },
 
   links: {
+    underline: merge.all(styles.a, {
+      color: 'textSecondary',
+      textDecoration: 'underline',
+      textDecorationThickness: 'from-font',
+      textUnderlineOffset: '0.125rem',
+    }),
+
     silent: merge.all(styles.a, {
       color: 'textSecondary',
     }),

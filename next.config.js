@@ -18,11 +18,6 @@ module.exports = withBundleAnalyzer({
         permanent: true,
       },
       {
-        source: '/about',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/articles',
         destination: '/posts',
         permanent: true,

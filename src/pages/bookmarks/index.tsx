@@ -25,7 +25,7 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
 
         <Box as="blockquote">{bookmark.description}</Box>
 
-        <Box sx={{ fontSize: 0, color: 'textSecondary' }}>{bookmark.host}</Box>
+        <Box sx={{ fontSize: 0, color: 'textTertiary' }}>{bookmark.host}</Box>
       </Box>
     ))}
   </Page>
