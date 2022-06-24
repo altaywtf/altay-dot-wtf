@@ -54,8 +54,8 @@ const Zebrastik = () => {
       </Box>
 
       <Box>
-        <Link color="white" href="mailto:hey@zebrastik.com">
-          hey@zebrastik.com
+        <Link color="white" href="mailto:altay@zebrastik.com">
+          altay@zebrastik.com
         </Link>
       </Box>
 
