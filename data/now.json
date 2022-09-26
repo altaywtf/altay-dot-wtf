@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2022-05-12T07:27:18.772Z",
+  "updatedAt": "2022-09-26T10:15:12.034Z",
   "sections": [
     {
       "_id": "books",
@@ -10,7 +10,7 @@
           "title": "Thinking, Fast and Slow",
           "subtitle": "",
           "author": "Daniel Kahneman",
-          "imageURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420793752l/12955489._SY160_.jpg"
+          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/9977d8a5d87aabdf2aa968192b8ce5d2.jpg"
         }
       ]
     },
@@ -61,9 +61,9 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "Ozark",
-          "url": "https://www.tvmaze.com/shows/13417/ozark",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/398/996611.jpg"
+          "title": "Rick and Morty",
+          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
         }
       ]
     }
