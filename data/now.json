@@ -1,16 +1,23 @@
 {
-  "updatedAt": "2022-09-26T10:15:12.034Z",
+  "updatedAt": "2022-10-17T07:46:45.915Z",
   "sections": [
     {
       "_id": "books",
       "title": "📚 Reading",
       "data": [
         {
-          "url": "https://oku.club/book/thinking-fast-and-slow-by-daniel-kahneman-sBxUK",
-          "title": "Thinking, Fast and Slow",
+          "url": "https://oku.club/book/the-millionaire-fastlane-by-mj-demarco-g7gwL",
+          "title": "The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime!",
           "subtitle": "",
-          "author": "Daniel Kahneman",
-          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/9977d8a5d87aabdf2aa968192b8ce5d2.jpg"
+          "author": "M.J. DeMarco",
+          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/34d3c800a5d40f8ad000a4f9e081cd15.jpg"
+        },
+        {
+          "url": "https://oku.club/book/awaken-the-giant-within-by-tony-robbins-g193B",
+          "title": "Awaken The Giant Within",
+          "subtitle": "",
+          "author": "Tony Robbins",
+          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/ec2a8635579920df1aba9e515105f977.jpg"
         }
       ]
     },
@@ -63,7 +70,7 @@
         {
           "title": "Rick and Morty",
           "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/1/3603.jpg"
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/423/1059147.jpg"
         }
       ]
     }

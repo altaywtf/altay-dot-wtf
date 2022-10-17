@@ -2,7 +2,7 @@ import fs from 'fs'
 import { DATA_FOLDER_PATH } from 'utils/fs'
 
 export type ContactLink = {
-  title: 'Email' | 'Twitter' | 'Github'
+  title: 'Email' | 'Twitter' | 'Github' | 'LinkedIn'
   url: string
 }
 
