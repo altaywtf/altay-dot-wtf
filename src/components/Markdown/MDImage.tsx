@@ -1,5 +1,5 @@
 import { Box } from 'theme-ui'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 

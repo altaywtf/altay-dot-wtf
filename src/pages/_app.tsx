@@ -1,25 +1,19 @@
 import '../theme/style.css'
 import type { AppProps } from 'next/app'
-import { SEO, HOSTNAME } from 'config'
+import { SEO } from 'config'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'theme-ui'
-import PlausibleProvider from 'next-plausible'
 import { theme } from 'theme'
 import { usePathHistoryListener } from 'hooks/usePathHistory'
 import Layout from 'components/Layout'
-
-const Providers: React.FC = ({ children }) => (
-  <PlausibleProvider domain={HOSTNAME}>
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>
-  </PlausibleProvider>
-)
+import { Analytics } from '@vercel/analytics/react'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   usePathHistoryListener()
 
   return (
-    <Providers>
+    <ThemeProvider theme={theme}>
       <Head>
         <meta name="theme-color" content="#101010" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/favicon-57x57.png" />
@@ -48,7 +42,9 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Providers>
+
+      <Analytics />
+    </ThemeProvider>
   )
 }
 

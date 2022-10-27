@@ -1,7 +1,7 @@
 import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Flex, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           marginX: [-1, -1, 0],
         }}
       >
-        <NextLink href="/" passHref>
+        <NextLink href="/" passHref legacyBehavior>
           <Link
             title="That's my head, also a link to home page. Please press gently."
             sx={{

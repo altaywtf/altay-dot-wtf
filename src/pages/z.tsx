@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { zebrastikCopy } from 'config/copy'
 import { Box, Heading, Link, Text } from 'theme-ui'
 import zebraJPG from '../../public/images/zebra.jpg'

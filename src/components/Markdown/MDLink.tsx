@@ -4,7 +4,7 @@ import { Link } from 'theme-ui'
 type Props = { href: string }
 
 const MDInternalLink: React.FC<Props> = ({ href, children }) => (
-  <NextLink href={href} passHref>
+  <NextLink href={href} passHref legacyBehavior>
     <Link
       href={href}
       sx={{

@@ -15,7 +15,7 @@ const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
     {posts.map((post) => (
       <Box key={post.slug} mb={4}>
         <Box>
-          <NextLink href={post.url} passHref>
+          <NextLink href={post.url} passHref legacyBehavior>
             <Link variant="links.title">{post.title}</Link>
           </NextLink>
         </Box>

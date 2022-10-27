@@ -1,5 +1,5 @@
 import type { Book } from 'api/books'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Box } from 'theme-ui'
 
 type Props = {

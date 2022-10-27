@@ -1,7 +1,7 @@
 import { Text } from 'theme-ui'
 
 const Paragraph: React.FC = ({ children }) => (
-  <Text as="p" marginY={3} marginX={0}>
+  <Text as="p" marginTop={1} marginBottom={3} marginX={0}>
     {children}
   </Text>
 )

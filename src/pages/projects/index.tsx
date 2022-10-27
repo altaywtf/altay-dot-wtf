@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<{ projects: Project[] }> = () => ({
 const ProjectLink: React.FC<{ project: Project }> = ({ project }) => {
   if (project.url.startsWith('/')) {
     return (
-      <NextLink href={project.url} passHref>
+      <NextLink href={project.url} passHref legacyBehavior>
         <Link variant="links.title">{project.title}</Link>
       </NextLink>
     )

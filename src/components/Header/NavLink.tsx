@@ -8,7 +8,7 @@ type Props = {
 }
 
 const NavLink: React.FC<Props> = ({ href, label, active }) => (
-  <NextLink href={href} passHref>
+  <NextLink href={href} passHref legacyBehavior>
     <Link
       sx={{
         fontSize: 0,

@@ -17,7 +17,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
       <Box key={book.slug}>
         <Flex sx={{ gap: 3 }}>
           <Box sx={{ minWidth: [100, 130] }}>
-            <NextLink href={book.notes.url} passHref>
+            <NextLink href={book.notes.url} passHref legacyBehavior>
               <Link>
                 <BookCover book={book} />
               </Link>
@@ -26,7 +26,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
 
           <Box>
             <Box>
-              <NextLink href={book.notes.url} passHref>
+              <NextLink href={book.notes.url} passHref legacyBehavior>
                 <Link variant="links.title">
                   {book.title} by {book.authors.join(', ')}
                 </Link>
