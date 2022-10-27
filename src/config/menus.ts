@@ -10,7 +10,7 @@ export const HEADER = [
   },
 
   {
-    label: 'Projects',
-    href: '/projects',
+    label: 'Books',
+    href: '/books',
   },
 ] as const

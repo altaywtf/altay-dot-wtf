@@ -2,8 +2,8 @@ import '../env'
 import { createNowJSON } from './lib/types'
 import { fetchBooks } from './lib/books'
 import { fetchMusic } from './lib/music'
-import { writeNowJSON } from './lib/nowJSON'
 import { fetchShows } from './lib/shows'
+import { writeNowJSON } from './lib/nowJSON'
 
 const main = async () => {
   const books = await fetchBooks()

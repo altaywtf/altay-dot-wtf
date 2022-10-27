@@ -28,7 +28,11 @@ const Page: React.FC<Props> = ({ header, children }) => (
 
       <Heading as="h3">{header.title}</Heading>
 
-      {header.description ? <Markdown>{header.description}</Markdown> : null}
+      {header.description ? (
+        <Box mt={3}>
+          <Markdown>{header.description}</Markdown>
+        </Box>
+      ) : null}
     </Box>
     {children}
   </>

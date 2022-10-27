@@ -10,6 +10,7 @@ import Markdown from 'components/Markdown'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 import { Backlink, getBacklinks } from 'api/backlinks'
 import Backlinks from 'components/Backlinks'
+import { booksCopy } from 'config/copy'
 
 export const getStaticPaths: GetStaticPaths = () => ({
   paths: getBooks().map((book) => ({ params: { slug: book.slug } })),
@@ -59,7 +60,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         }}
       />
 
-      <ArtificialBackButton href="/books" label="Books" />
+      <ArtificialBackButton href="/books" label={booksCopy.title} />
 
       <Box m={4} />
 

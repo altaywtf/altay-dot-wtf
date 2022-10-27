@@ -8,6 +8,7 @@ import { formatDate } from 'utils/date'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 import Markdown from 'components/Markdown'
 import Backlinks from 'components/Backlinks'
+import { postsCopy } from 'config/copy'
 
 export const getStaticPaths: GetStaticPaths = () => ({
   paths: getPosts().map((post) => ({ params: { slug: post.slug } })),
@@ -58,7 +59,7 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       }}
     />
 
-    <ArtificialBackButton href="/posts" label="Writing" />
+    <ArtificialBackButton href="/posts" label={postsCopy.title} />
 
     <Box m={4} />
 
