@@ -15,6 +15,7 @@ const NavLink: React.FC<Props> = ({ href, label, active }) => (
         paddingY: '.4rem',
         paddingX: 2,
         lineHeight: 1,
+        fontFamily: 'heading',
         fontWeight: 'heading',
         borderRadius: 'default',
         color: 'text',

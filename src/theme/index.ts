@@ -1,10 +1,9 @@
 import { Theme, merge, ThemeUIStyleObject } from 'theme-ui'
 import { lighten } from '@theme-ui/color'
 import { COLORS } from './colors'
+import { fonts } from './fonts'
 
 export const LAYOUT_WIDTH = 640
-
-const fontFamily = `please-dont-download-these-fonts-buy-a-license-instead, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
 
 const makeTheme = <T extends Theme>(t: T) => t
 
@@ -25,8 +24,7 @@ const styles: Theme['styles'] = {
     fontWeight: 'body',
     lineHeight: 'body',
     fontSize: ['14px', '16px'],
-    letterSpacing: '0.015em',
-    wordSpacing: '0.001em',
+    letterSpacing: '0.0125em',
     WebkitFontSmoothing: 'antialiased',
     WebkitTextSizeAdjust: 'none',
     MozOsxFontSmoothing: 'grayscale',
@@ -74,8 +72,9 @@ const styles: Theme['styles'] = {
 
 export const theme = makeTheme({
   fonts: {
-    body: fontFamily,
-    heading: fontFamily,
+    body: fonts.regular.style.fontFamily,
+    subheading: fonts.medium.style.fontFamily,
+    heading: fonts.bold.style.fontFamily,
   },
 
   fontWeights: {
@@ -110,6 +109,10 @@ export const theme = makeTheme({
       padding: 0,
       color: 'text',
     },
+    subheading: {
+      fontFamily: 'subheading',
+      fontWeight: 'subheading',
+    },
   },
 
   links: {
@@ -126,6 +129,7 @@ export const theme = makeTheme({
 
     title: merge.all(styles.a, {
       display: 'inline-block',
+      fontFamily: 'subheading',
       fontWeight: 'subheading',
     }),
 
@@ -147,6 +151,7 @@ export const theme = makeTheme({
       paddingX: 3,
       backgroundColor: 'buttonBackground',
       color: 'text',
+      fontFamily: 'subheading',
       fontWeight: 'subheading',
       fontSize: 0,
       lineHeight: 1,
