@@ -4,6 +4,11 @@ import qs from 'query-string'
 import { OpenGraphImage } from './_lib/OpenGraphImage'
 import type { ParsedQuery, Post, Book, Page } from './_lib/types'
 
+const loadFont = () => {
+  const url = new URL('../../../theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url) as any
+  return fetch(url).then((res) => res.arrayBuffer())
+}
+
 const parseRequest = (req: NextRequest): ParsedQuery => {
   const { query } = qs.parseUrl(req.url)
   const { type } = query as unknown as ParsedQuery
@@ -22,10 +27,7 @@ const parseRequest = (req: NextRequest): ParsedQuery => {
 
 const handler = async (req: NextRequest) => {
   const query = parseRequest(req)
-
-  const fontData = await fetch(
-    new URL('../../../theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url),
-  ).then((res) => res.arrayBuffer())
+  const fontData = await loadFont()
 
   return new ImageResponse(<OpenGraphImage query={query} />, {
     width: 1200,
