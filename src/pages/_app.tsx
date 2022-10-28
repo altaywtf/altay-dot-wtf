@@ -43,7 +43,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </Layout>
 
-      <Analytics />
+      <Analytics
+        beforeSend={(event) => {
+          if (localStorage.getItem('va-disable')) {
+            return null
+          }
+
+          return event
+        }}
+      />
     </ThemeProvider>
   )
 }
