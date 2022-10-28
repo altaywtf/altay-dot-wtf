@@ -1,6 +1,7 @@
 import type { OpenGraphMedia } from 'next-seo/lib/types'
+import { SITE_URL } from 'config'
 
-const OG_IMAGE_SERVICE_BASE_URL = `https://og-image.altay.wtf/api`
+const OG_IMAGE_SERVICE_BASE_URL = `${SITE_URL}/api/og`
 
 type OGImageParamsPost = {
   type: 'post'
