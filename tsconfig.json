@@ -17,7 +17,6 @@
     "jsxImportSource": "theme-ui",
     "baseUrl": ".",
     "paths": {
-      "api/*": ["src/api/*"],
       "components/*": ["src/components/*"],
       "config": ["src/config"],
       "config/*": ["src/config/*"],

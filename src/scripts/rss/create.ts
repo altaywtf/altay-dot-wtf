@@ -1,7 +1,7 @@
 import '../env'
 import { SITE_DESCRIPTION, SITE_TITLE } from 'config'
-import { getPosts, getPost } from 'api/posts'
-import { getBooks, getBook } from 'api/books'
+import { getPosts, getPost } from '../../pages/api/posts/_lib'
+import { getBooks, getBook } from '../../pages/api/books/_lib'
 import { mapBookToRssFeedItem, mapPostToRssFeedItem } from './lib/mappers'
 import { createAndSaveFeed } from './lib/feed'
 

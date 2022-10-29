@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import { zebrastikCopy } from 'config/copy'
 import { Box, Heading, Link, Text } from 'theme-ui'
 import zebraJPG from '../../public/images/zebra.jpg'
@@ -36,9 +36,10 @@ const Zebrastik = () => {
           height: 100,
           borderRadius: '8px',
           overflow: 'hidden',
+          position: 'relative',
         }}
       >
-        <Image src={zebraJPG} alt="zebrastik logo" />
+        <Image src={zebraJPG} alt="zebrastik logo" fill />
       </Box>
 
       <Box my={3} />

@@ -1,7 +1,7 @@
-import type { Book } from 'api/books'
 import { Box, Text } from 'theme-ui'
 import StarRatingComponent from 'react-star-rating-component'
 import { format } from 'date-fns'
+import type { Book } from '../pages/api/books/_lib'
 
 type Props = {
   book: Book

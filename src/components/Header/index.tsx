@@ -1,7 +1,7 @@
 import { HEADER } from 'config'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import { Flex, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               },
             }}
           >
-            <Image src={avatar} alt="That's head" />
+            <Image src={avatar} alt="That's head" fill />
           </Link>
         </NextLink>
 

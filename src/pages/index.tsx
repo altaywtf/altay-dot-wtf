@@ -1,4 +1,4 @@
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import type { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import { API_URL } from 'config'
 import { homeCopy } from 'config/copy'
 import Page from 'components/Page'
@@ -10,13 +10,13 @@ import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { ContactLink } from './api/contact/links'
 
-export const getStaticProps: GetStaticProps<{
-  description: string
+export const getServerSideProps: GetServerSideProps<{
   contactLinks: ContactLink[]
+  description: string
 }> = async () => ({
   props: {
-    description: readMarkdownFile('home.md'),
     contactLinks: (await fetch(`${API_URL}/contact/links`).then((res) => res.json())).links,
+    description: readMarkdownFile('home.md'),
   },
 })
 
@@ -36,7 +36,7 @@ const getContactLinkIcon = (title: ContactLink['title']) => {
   }
 }
 
-const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+const Home: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   description,
   contactLinks,
 }) => (
