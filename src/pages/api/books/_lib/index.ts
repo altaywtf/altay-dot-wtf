@@ -1,6 +1,5 @@
 import { readBooksJSON } from 'scripts/books/lib/booksJSON'
 import { readMarkdownFile } from 'utils/md'
-
 export type { Book } from 'scripts/books/lib/types'
 
 export const getBooks = () => readBooksJSON().books

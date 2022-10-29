@@ -1,4 +1,4 @@
-import { NextSeoProps } from 'next-seo'
+import type { NextSeoProps } from 'next-seo'
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from './meta'
 
 export const SEO: NextSeoProps = {

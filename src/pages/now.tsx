@@ -1,16 +1,18 @@
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { useCallback } from 'react'
 import { Flex, Box, Heading, Link, Image } from 'theme-ui'
-import { NowJSON, getNow } from 'api/now'
 import { nowCopy } from 'config/copy'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
+import { NowJSON } from './api/now'
+import { API_URL } from 'config'
 
-export const getStaticProps: GetStaticProps<{ now: NowJSON }> = () => ({
-  props: { now: getNow() },
-})
+export const getServerSideProps: GetServerSideProps<{ now: NowJSON }> = async () => {
+  const { now } = await fetch(`${API_URL}/now`).then((res) => res.json())
+  return { props: { now } }
+}
 
-const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ now }) => {
+const NowPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ now }) => {
   const renderSectionContent = useCallback((section: NowJSON['sections'][number]) => {
     switch (section._id) {
       case 'books':

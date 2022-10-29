@@ -1,7 +1,7 @@
 import type { OpenGraphMedia } from 'next-seo/lib/types'
-import { SITE_URL } from 'config'
+import { API_URL } from 'config'
 
-const OG_IMAGE_SERVICE_BASE_URL = `${SITE_URL}/api/og`
+const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`
 
 type OGImageParamsPost = {
   type: 'post'

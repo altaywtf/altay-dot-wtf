@@ -6,10 +6,6 @@ export const postsCopy = {
   title: `Blog`,
 } as const
 
-export const bookmarksCopy = {
-  title: 'Bookmarks',
-} as const
-
 export const booksCopy = {
   title: 'Book notes',
   description: 'Somewhat detailed notes from books I read.',

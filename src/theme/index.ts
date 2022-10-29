@@ -8,6 +8,7 @@ export const LAYOUT_WIDTH = 640
 const makeTheme = <T extends Theme>(t: T) => t
 
 const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
+  fontFamily: 'heading',
   fontWeight: 'heading',
   color: brand,
   '@media (hover: hover)': {

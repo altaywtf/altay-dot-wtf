@@ -1,13 +1,14 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { API_URL } from 'config'
 import { homeCopy } from 'config/copy'
 import Page from 'components/Page'
 import { readMarkdownFile } from 'utils/md'
-import { getContactLinks, ContactLink } from 'api/contact'
 import { Flex, Link } from 'theme-ui'
 import { GrMail } from '@react-icons/all-files/gr/GrMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { ContactLink } from './api/contact/links'
 
 export const getStaticProps: GetStaticProps<{
   description: string
@@ -15,7 +16,7 @@ export const getStaticProps: GetStaticProps<{
 }> = async () => ({
   props: {
     description: readMarkdownFile('home.md'),
-    contactLinks: getContactLinks(),
+    contactLinks: (await fetch(`${API_URL}/contact/links`).then((res) => res.json())).links,
   },
 })
 

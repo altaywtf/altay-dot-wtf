@@ -1,5 +1,4 @@
-import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
-import { Book, getBooks, getBook } from 'api/books'
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading, Text } from 'theme-ui'
@@ -8,33 +7,31 @@ import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 import Markdown from 'components/Markdown'
 import ArtificialBackButton from 'components/ArtificialBackButton'
-import { Backlink, getBacklinks } from 'api/backlinks'
 import Backlinks from 'components/Backlinks'
 import { booksCopy } from 'config/copy'
+import { API_URL } from 'config'
+import type { Book } from '../api/books/_lib'
+import type { Backlink } from '../api/backlinks/_lib'
 
-export const getStaticPaths: GetStaticPaths = () => ({
-  paths: getBooks().map((book) => ({ params: { slug: book.slug } })),
-  fallback: false,
-})
-
-export const getStaticProps: GetStaticProps<{
+type ServerSideProps = {
   book: Book
   markdown: string
   backlinks: Backlink[]
-}> = ({ params }) => {
-  const { book, markdown } = getBook(params?.slug as string)
-  const backlinks = getBacklinks(book.notes.url)
-
-  return {
-    props: {
-      book,
-      markdown,
-      backlinks,
-    },
-  }
 }
 
-const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+export const getServerSideProps: GetServerSideProps<ServerSideProps> = async (context) => {
+  const { book, markdown } = await fetch(`${API_URL}/books/${context.query.slug}`).then((res) =>
+    res.json(),
+  )
+
+  const { backlinks } = await fetch(
+    `${API_URL}/backlinks?type=books&slug=${context.query.slug}`,
+  ).then((res) => res.json())
+
+  return { props: { book, markdown, backlinks } }
+}
+
+const BookPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   book,
   markdown,
   backlinks,

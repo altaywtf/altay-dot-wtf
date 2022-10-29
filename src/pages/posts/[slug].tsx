@@ -1,38 +1,35 @@
-import type { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'theme-ui'
-import { getPost, getPosts, Post } from 'api/posts'
-import { Backlink, getBacklinks } from 'api/backlinks'
 import { getOpenGraphImage } from 'utils/openGraph'
 import { formatDate } from 'utils/date'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 import Markdown from 'components/Markdown'
 import Backlinks from 'components/Backlinks'
 import { postsCopy } from 'config/copy'
+import { API_URL } from 'config'
+import type { Post } from '../api/posts/_lib'
+import type { Backlink } from '../api/backlinks/_lib'
 
-export const getStaticPaths: GetStaticPaths = () => ({
-  paths: getPosts().map((post) => ({ params: { slug: post.slug } })),
-  fallback: false,
-})
-
-export const getStaticProps: GetStaticProps<{
+type ServerSideProps = {
   post: Post
   markdown: string
   backlinks: Backlink[]
-}> = ({ params }) => {
-  const { post, markdown } = getPost(params?.slug as string)
-  const backlinks = getBacklinks(post.url)
-
-  return {
-    props: {
-      post,
-      markdown,
-      backlinks,
-    },
-  }
 }
 
-const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+export const getServerSideProps: GetServerSideProps<ServerSideProps> = async (context) => {
+  const { post, markdown } = await fetch(`${API_URL}/posts/${context.query.slug}`).then((res) =>
+    res.json(),
+  )
+
+  const { backlinks } = await fetch(
+    `${API_URL}/backlinks?type=posts&slug=${context.query.slug}`,
+  ).then((res) => res.json())
+
+  return { props: { post, markdown, backlinks } }
+}
+
+const PostPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   post,
   markdown,
   backlinks,

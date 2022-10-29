@@ -1,17 +1,19 @@
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-import { getBooks, Book } from 'api/books'
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+import { API_URL } from 'config'
 import { booksCopy } from 'config/copy'
 import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import Page from 'components/Page'
 import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
+import type { Book } from '../api/books/_lib'
 
-export const getStaticProps: GetStaticProps<{ books: Book[] }> = () => ({
-  props: { books: getBooks() },
-})
+export const getServerSideProps: GetServerSideProps<{ books: Book[] }> = async () => {
+  const { books } = await fetch(`${API_URL}/books`).then((res) => res.json())
+  return { props: { books } }
+}
 
-const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
+const BooksPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ books }) => (
   <Page header={booksCopy}>
     {books.map((book) => (
       <Box key={book.slug}>

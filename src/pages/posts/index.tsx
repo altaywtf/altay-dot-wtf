@@ -1,16 +1,18 @@
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-import { getPosts, Post } from 'api/posts'
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { postsCopy } from 'config/copy'
 import NextLink from 'next/link'
 import { Box, Link } from 'theme-ui'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
+import { API_URL } from 'config'
+import type { Post } from '../api/posts/_lib'
 
-export const getStaticProps: GetStaticProps<{ posts: Post[] }> = () => ({
-  props: { posts: getPosts() },
-})
+export const getServerSideProps: GetServerSideProps<{ posts: Post[] }> = async () => {
+  const { posts } = await fetch(`${API_URL}/posts`).then((res) => res.json())
+  return { props: { posts } }
+}
 
-const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ posts }) => (
+const PostsPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ posts }) => (
   <Page header={postsCopy}>
     {posts.map((post) => (
       <Box key={post.slug} mb={4}>
