@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { zebrastikCopy } from 'config/copy'
+import { zebrastikCopy } from 'config'
 import { Box, Heading, Link, Text } from 'theme-ui'
-import zebraJPG from '../../public/images/zebra.jpg'
 import { NextSeo } from 'next-seo'
 
 const Zebrastik = () => {
@@ -39,7 +38,7 @@ const Zebrastik = () => {
           position: 'relative',
         }}
       >
-        <Image src={zebraJPG} alt="zebrastik logo" fill />
+        <Image src="/images/zebra.png" alt="zebrastik logo" fill />
       </Box>
 
       <Box my={3} />

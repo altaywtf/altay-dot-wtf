@@ -1,6 +1,5 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
-import { API_URL } from 'config'
-import { booksCopy } from 'config/copy'
+import { API_URL, booksCopy } from 'config'
 import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import Page from 'components/Page'

@@ -1,6 +1,5 @@
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-import { API_URL } from 'config'
-import { homeCopy } from 'config/copy'
+import { API_URL, homeCopy } from 'config'
 import Page from 'components/Page'
 import { readMarkdownFile } from 'utils/md'
 import { Flex, Link } from 'theme-ui'

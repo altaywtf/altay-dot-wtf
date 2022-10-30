@@ -1,10 +1,9 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
-import { postsCopy } from 'config/copy'
 import NextLink from 'next/link'
 import { Box, Link } from 'theme-ui'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
-import { API_URL } from 'config'
+import { API_URL, postsCopy } from 'config'
 import type { Post } from 'api/posts'
 
 export const getServerSideProps: GetServerSideProps<{ posts: Post[] }> = async () => {

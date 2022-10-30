@@ -20,7 +20,6 @@
       "api/*": ["src/api/*"],
       "components/*": ["src/components/*"],
       "config": ["src/config"],
-      "config/*": ["src/config/*"],
       "hooks/*": ["src/hooks/*"],
       "scripts/*": ["src/scripts/*"],
       "theme": ["src/theme"],

@@ -1,11 +1,10 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { useCallback } from 'react'
 import { Flex, Box, Heading, Link, Image } from 'theme-ui'
-import { nowCopy } from 'config/copy'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
 import { NowJSON } from './api/now'
-import { API_URL } from 'config'
+import { API_URL, nowCopy } from 'config'
 
 export const getServerSideProps: GetServerSideProps<{ now: NowJSON }> = async () => {
   const { now } = await fetch(`${API_URL}/now`).then((res) => res.json())
