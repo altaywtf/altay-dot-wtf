@@ -11,8 +11,4 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 }
 
-export const config = {
-  unstable_excludeFiles: ['public/**/*'],
-}
-
 export default handler

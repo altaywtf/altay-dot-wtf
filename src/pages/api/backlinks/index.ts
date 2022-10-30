@@ -7,8 +7,4 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({ backlinks: getBacklinks(`/${type}/${slug}`) })
 }
 
-export const config = {
-  unstable_excludeFiles: ['public/**/*'],
-}
-
 export default handler

@@ -5,8 +5,4 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({ books: getBooks() })
 }
 
-export const config = {
-  unstable_excludeFiles: ['public/**/*'],
-}
-
 export default handler
