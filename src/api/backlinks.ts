@@ -1,6 +1,6 @@
 import { hasLink } from 'utils/md'
-import { getPostsWithMarkdown } from '../../posts/_lib'
-import { getBooksWithMarkdown } from '../../books/_lib'
+import { getPostsWithMarkdown } from 'api/posts'
+import { getBooksWithMarkdown } from 'api/books'
 
 export type Backlink = {
   type: 'post' | 'book'

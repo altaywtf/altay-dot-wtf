@@ -3,8 +3,8 @@ import { SITE_URL } from 'config'
 import { convertMarkdownToHTML } from 'utils/md'
 import { getOpenGraphImage } from 'utils/openGraph'
 import { sanitizeHtml } from 'utils/sanitize'
-import type { Book } from '../../../pages/api/books/_lib'
-import type { Post } from '../../../pages/api/posts/_lib'
+import type { Book } from 'api/books'
+import type { Post } from 'api/posts'
 
 const author: Author = {
   name: 'Altay',

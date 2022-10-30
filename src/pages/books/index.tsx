@@ -6,7 +6,7 @@ import NextLink from 'next/link'
 import Page from 'components/Page'
 import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
-import type { Book } from '../api/books/_lib'
+import type { Book } from 'api/books'
 
 export const getServerSideProps: GetServerSideProps<{ books: Book[] }> = async () => {
   const { books } = await fetch(`${API_URL}/books`).then((res) => res.json())

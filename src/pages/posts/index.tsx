@@ -5,7 +5,7 @@ import { Box, Link } from 'theme-ui'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
 import { API_URL } from 'config'
-import type { Post } from '../api/posts/_lib'
+import type { Post } from 'api/posts'
 
 export const getServerSideProps: GetServerSideProps<{ posts: Post[] }> = async () => {
   const { posts } = await fetch(`${API_URL}/posts`).then((res) => res.json())

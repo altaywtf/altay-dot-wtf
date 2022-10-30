@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getPost } from './_lib'
+import { getPost } from 'api/posts'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = req.query.slug as string
@@ -9,6 +9,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   } catch {
     res.status(404).json({ message: 'Post not found.' })
   }
+}
+
+export const config = {
+  unstable_excludeFiles: ['public/**/*'],
 }
 
 export default handler

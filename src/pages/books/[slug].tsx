@@ -10,8 +10,8 @@ import ArtificialBackButton from 'components/ArtificialBackButton'
 import Backlinks from 'components/Backlinks'
 import { booksCopy } from 'config/copy'
 import { API_URL } from 'config'
-import type { Book } from '../api/books/_lib'
-import type { Backlink } from '../api/backlinks/_lib'
+import type { Book } from 'api/books'
+import type { Backlink } from 'api/backlinks'
 
 type ServerSideProps = {
   book: Book

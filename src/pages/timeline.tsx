@@ -33,4 +33,8 @@ const TimelinePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
   </Page>
 )
 
+export const config = {
+  unstable_excludeFiles: ['public/**/*'],
+}
+
 export default TimelinePage

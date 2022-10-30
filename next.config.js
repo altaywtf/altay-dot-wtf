@@ -4,8 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
-  unstable_excludeFiles: ['public/**/*'],
-
   async redirects() {
     return [
       {

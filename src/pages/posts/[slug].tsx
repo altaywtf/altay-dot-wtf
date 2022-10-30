@@ -8,8 +8,8 @@ import Markdown from 'components/Markdown'
 import Backlinks from 'components/Backlinks'
 import { postsCopy } from 'config/copy'
 import { API_URL } from 'config'
-import type { Post } from '../api/posts/_lib'
-import type { Backlink } from '../api/backlinks/_lib'
+import type { Post } from 'api/posts'
+import type { Backlink } from 'api/backlinks'
 
 type ServerSideProps = {
   post: Post

@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Link } from 'theme-ui'
 import NextLink from 'next/link'
-import type { Backlink } from '../../pages/api/backlinks/_lib'
+import type { Backlink } from 'api/backlinks'
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
 

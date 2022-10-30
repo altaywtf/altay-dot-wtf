@@ -60,4 +60,8 @@ const Home: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = (
   </Page>
 )
 
+export const config = {
+  unstable_excludeFiles: ['public/**/*'],
+}
+
 export default Home
