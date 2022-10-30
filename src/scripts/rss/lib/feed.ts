@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { SITE_URL } from 'config'
 import { Feed, Item, FeedOptions } from 'feed'
-import { PUBLIC_FOLDER_PATH } from 'utils/fs'
+import { PUBLIC_FOLDER_PATH } from '../../constants'
 
 const createFeed = async ({
   path,

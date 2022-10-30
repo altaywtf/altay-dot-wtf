@@ -38,7 +38,7 @@ const Zebrastik = () => {
           position: 'relative',
         }}
       >
-        <Image src="/images/zebra.png" alt="zebrastik logo" fill />
+        <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
       </Box>
 
       <Box my={3} />

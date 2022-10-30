@@ -2,7 +2,7 @@ import fs from 'fs'
 import axios from 'axios'
 import sharp from 'sharp'
 import { getImageData } from 'utils/image'
-import { PUBLIC_FOLDER_PATH } from 'utils/fs'
+import { PUBLIC_FOLDER_PATH } from '../../constants'
 import type { BaseBookWithMeta, Book } from './types'
 
 const fetchRemoteImage = async (url: string): Promise<Buffer> => {

@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Flex, Link } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
-import avatar from '../../../public/images/avatar.png'
 
 const Header: React.FC = () => {
   const { pathname } = useRouter()
@@ -55,7 +54,7 @@ const Header: React.FC = () => {
               },
             }}
           >
-            <Image src={avatar} alt="That's head" fill />
+            <Image src="/images/avatar.png" alt="That's head" fill />
           </Link>
         </NextLink>
 
