@@ -1,17 +1,13 @@
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+'use client'
+
 import { useCallback } from 'react'
 import { Flex, Box, Heading, Link, Image } from 'theme-ui'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
-import { NowJSON } from './api/now'
-import { API_URL, nowCopy } from 'config'
+import { nowCopy } from 'config'
+import type { NowJSON } from '../../../pages/api/now'
 
-export const getServerSideProps: GetServerSideProps<{ now: NowJSON }> = async () => {
-  const { now } = await fetch(`${API_URL}/now`).then((res) => res.json())
-  return { props: { now } }
-}
-
-const NowPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ now }) => {
+const NowPage: React.FC<{ data: NowJSON }> = ({ data }) => {
   const renderSectionContent = useCallback((section: NowJSON['sections'][number]) => {
     switch (section._id) {
       case 'books':
@@ -127,7 +123,7 @@ const NowPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> 
   return (
     <Page header={nowCopy}>
       <>
-        {now.sections
+        {data.sections
           .filter((section) => section.data && section.data.length > 0)
           .map((section) => (
             <Box key={section._id}>
@@ -141,7 +137,7 @@ const NowPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> 
       </>
 
       <Box color="textTertiary" sx={{ fontSize: 0 }}>
-        Last updated on {formatDate(now.updatedAt)}
+        Last updated on {formatDate(data.updatedAt)}
       </Box>
     </Page>
   )

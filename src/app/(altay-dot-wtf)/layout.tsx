@@ -1,15 +1,15 @@
 'use client'
 
-import { ThemeProvider, Box } from 'theme-ui'
-import { theme, LAYOUT_WIDTH } from 'theme'
+import { Box } from 'theme-ui'
+import { LAYOUT_WIDTH } from 'theme'
 import { usePathHistoryListener } from 'hooks/usePathHistory'
-import Header from './Header'
+import Header from 'components/Header'
 
 const Layout: React.FC = ({ children }) => {
   usePathHistoryListener()
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Header />
 
       <Box
@@ -22,7 +22,7 @@ const Layout: React.FC = ({ children }) => {
       >
         <Box my={[3, 3, 4]}>{children}</Box>
       </Box>
-    </ThemeProvider>
+    </>
   )
 }
 

@@ -1,3 +1,5 @@
+'use client'
+
 import { Box } from 'theme-ui'
 import Image from 'next/image'
 import Zoom from 'react-medium-image-zoom'
