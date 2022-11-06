@@ -1,5 +1,6 @@
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
-import { API_URL, booksCopy } from 'config'
+'use client'
+
+import { booksCopy } from 'config'
 import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import Page from 'components/Page'
@@ -7,14 +8,15 @@ import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 import type { Book } from 'api/books'
 
-export const getServerSideProps: GetServerSideProps<{ books: Book[] }> = async () => {
-  const { books } = await fetch(`${API_URL}/books`).then((res) => res.json())
-  return { props: { books } }
+export type BooksPageProps = {
+  data: {
+    books: Book[]
+  }
 }
 
-const BooksPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ books }) => (
+const BooksPage: React.FC<BooksPageProps> = ({ data }) => (
   <Page header={booksCopy}>
-    {books.map((book) => (
+    {data.books.map((book) => (
       <Box key={book.slug}>
         <Flex sx={{ gap: 3 }}>
           <Box sx={{ minWidth: [100, 130] }}>

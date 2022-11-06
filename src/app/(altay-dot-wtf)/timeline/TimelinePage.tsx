@@ -1,18 +1,10 @@
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+'use client'
+
 import Page from 'components/Page'
-import { readMarkdownFile } from 'utils/md'
 import Markdown from 'components/Markdown'
 import { Box } from 'theme-ui'
 
-export const getStaticProps: GetStaticProps<{
-  content: string
-}> = async () => ({
-  props: {
-    content: readMarkdownFile('timeline.md'),
-  },
-})
-
-const TimelinePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ content }) => (
+const TimelinePage: React.FC<{ data: string }> = ({ data }) => (
   <Page header={{ title: 'Timeline' }}>
     <Box
       sx={{
@@ -28,13 +20,9 @@ const TimelinePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
         a: { variant: 'links.underline' },
       }}
     >
-      <Markdown>{content}</Markdown>
+      <Markdown>{data}</Markdown>
     </Box>
   </Page>
 )
-
-export const config = {
-  unstable_excludeFiles: ['public/**/*'],
-}
 
 export default TimelinePage

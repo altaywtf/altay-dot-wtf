@@ -22,7 +22,7 @@ module.exports = withBundleAnalyzer({
             value: 'www.zebrastik.com',
           },
         ],
-        destination: '/z',
+        destination: '/zebrastik',
         permanent: true,
       },
       {

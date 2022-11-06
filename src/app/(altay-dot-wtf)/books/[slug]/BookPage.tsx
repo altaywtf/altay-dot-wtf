@@ -1,5 +1,6 @@
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
-import { booksCopy, API_URL, SITE_URL } from 'config'
+'use client'
+
+import { booksCopy, SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading, Text } from 'theme-ui'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -11,29 +12,15 @@ import Backlinks from 'components/Backlinks'
 import type { Book } from 'api/books'
 import type { Backlink } from 'api/backlinks'
 
-type ServerSideProps = {
-  book: Book
-  markdown: string
-  backlinks: Backlink[]
+export type BookPageProps = {
+  data: {
+    book: Book
+    markdown: string
+    backlinks: Backlink[]
+  }
 }
 
-export const getServerSideProps: GetServerSideProps<ServerSideProps> = async (context) => {
-  const { book, markdown } = await fetch(`${API_URL}/books/${context.query.slug}`).then((res) =>
-    res.json(),
-  )
-
-  const { backlinks } = await fetch(
-    `${API_URL}/backlinks?type=books&slug=${context.query.slug}`,
-  ).then((res) => res.json())
-
-  return { props: { book, markdown, backlinks } }
-}
-
-const BookPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
-  book,
-  markdown,
-  backlinks,
-}) => {
+const BookPage: React.FC<BookPageProps> = ({ data: { book, markdown, backlinks } }) => {
   const pageTitle = `${book.title} by ${book.authors.join(', ')}`
 
   return (
