@@ -1,4 +1,5 @@
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+'use client'
+
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'theme-ui'
 import { getOpenGraphImage } from 'utils/openGraph'
@@ -6,33 +7,19 @@ import { formatDate } from 'utils/date'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 import Markdown from 'components/Markdown'
 import Backlinks from 'components/Backlinks'
-import { API_URL, postsCopy } from 'config'
+import { postsCopy } from 'config'
 import type { Post } from 'api/posts'
 import type { Backlink } from 'api/backlinks'
 
-type ServerSideProps = {
-  post: Post
-  markdown: string
-  backlinks: Backlink[]
+export type PostPageProps = {
+  data: {
+    post: Post
+    markdown: string
+    backlinks: Backlink[]
+  }
 }
 
-export const getServerSideProps: GetServerSideProps<ServerSideProps> = async (context) => {
-  const { post, markdown } = await fetch(`${API_URL}/posts/${context.query.slug}`).then((res) =>
-    res.json(),
-  )
-
-  const { backlinks } = await fetch(
-    `${API_URL}/backlinks?type=posts&slug=${context.query.slug}`,
-  ).then((res) => res.json())
-
-  return { props: { post, markdown, backlinks } }
-}
-
-const PostPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
-  post,
-  markdown,
-  backlinks,
-}) => (
+const PostPage: React.FC<PostPageProps> = ({ data: { post, markdown, backlinks } }) => (
   <>
     <NextSeo
       title={post.title}

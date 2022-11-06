@@ -1,3 +1,6 @@
+import { NextSeo } from 'next-seo'
+import { SEO } from 'config'
+
 const Head: React.FC = () => (
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +24,8 @@ const Head: React.FC = () => (
     <meta name="msapplication-TileColor" content="#101010" />
     <meta name="msapplication-TileImage" content="/favicon-144x144.png" />
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+
+    <NextSeo useAppDir {...SEO} />
   </head>
 )
 
