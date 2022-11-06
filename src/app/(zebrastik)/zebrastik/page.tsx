@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { zebrastikCopy } from 'config'
 import { Box, Heading, Link, Text } from 'theme-ui'
-import { NextSeo } from 'next-seo'
 
 const Zebrastik = () => {
   const [isMounted, setIsMounted] = useState(false)
@@ -21,16 +20,6 @@ const Zebrastik = () => {
 
   return isMounted ? (
     <>
-      <NextSeo
-        title="zebrastik"
-        titleTemplate="%s"
-        description={zebrastikCopy.description}
-        openGraph={{
-          title: 'zebrastik',
-          description: zebrastikCopy.description,
-        }}
-      />
-
       <Box
         sx={{
           width: 100,

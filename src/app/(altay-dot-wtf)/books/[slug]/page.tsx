@@ -1,7 +1,7 @@
 import { API_URL } from 'config'
 import BookPage, { BookPageProps } from './BookPage'
 
-const fetchData = async (slug: string): Promise<BookPageProps['data']> => {
+export const fetchData = async (slug: string): Promise<BookPageProps['data']> => {
   const { book, markdown } = await fetch(`${API_URL}/books/${slug}`).then((res) => res.json())
 
   const { backlinks } = await fetch(`${API_URL}/backlinks?type=books&slug=${slug}`).then((res) =>

@@ -2,8 +2,9 @@ import { NextSeo } from 'next-seo'
 import { SEO } from 'config'
 
 const Head: React.FC = () => (
-  <head>
+  <>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="theme-color" content="#101010" />
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/favicon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60x60.png" />
@@ -26,7 +27,7 @@ const Head: React.FC = () => (
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
 
     <NextSeo useAppDir {...SEO} />
-  </head>
+  </>
 )
 
 export default Head

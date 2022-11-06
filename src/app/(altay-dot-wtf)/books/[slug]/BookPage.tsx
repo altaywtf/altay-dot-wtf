@@ -1,9 +1,7 @@
 'use client'
 
-import { booksCopy, SITE_URL } from 'config'
-import { NextSeo } from 'next-seo'
+import { booksCopy } from 'config'
 import { Flex, Box, Heading, Text } from 'theme-ui'
-import { getOpenGraphImage } from 'utils/openGraph'
 import BookCover from 'components/BookCover'
 import BookInfo from 'components/BookInfo'
 import Markdown from 'components/Markdown'
@@ -20,57 +18,36 @@ export type BookPageProps = {
   }
 }
 
-const BookPage: React.FC<BookPageProps> = ({ data: { book, markdown, backlinks } }) => {
-  const pageTitle = `${book.title} by ${book.authors.join(', ')}`
+const BookPage: React.FC<BookPageProps> = ({ data: { book, markdown, backlinks } }) => (
+  <>
+    <ArtificialBackButton href="/books" label={booksCopy.title} />
 
-  return (
-    <>
-      <NextSeo
-        title={pageTitle}
-        description={book.quote}
-        openGraph={{
-          title: pageTitle,
-          description: book.quote,
-          images: [
-            getOpenGraphImage({
-              type: 'book',
-              title: book.title,
-              author: book.authors.join(', '),
-              coverImageURL: SITE_URL + book.coverImage.url,
-            }),
-          ],
-        }}
-      />
+    <Box m={4} />
 
-      <ArtificialBackButton href="/books" label={booksCopy.title} />
+    <Flex sx={{ gap: 3 }}>
+      <Box sx={{ minWidth: [120, 140] }}>
+        <BookCover book={book} />
+      </Box>
 
-      <Box m={4} />
+      <Box>
+        <Heading as="h3">{`${book.title} by ${book.authors.join(', ')}`}</Heading>
 
-      <Flex sx={{ gap: 3 }}>
-        <Box sx={{ minWidth: [120, 140] }}>
-          <BookCover book={book} />
-        </Box>
+        <Box m={2} />
+        <BookInfo book={book} />
+        <Box m={1} />
 
-        <Box>
-          <Heading as="h3">{pageTitle}</Heading>
+        <Text sx={{ fontStyle: 'italic', color: 'textTertiary' }}>&quot;{book.quote}&quot;</Text>
+      </Box>
+    </Flex>
 
-          <Box m={2} />
-          <BookInfo book={book} />
-          <Box m={1} />
+    <Box m={4} />
 
-          <Text sx={{ fontStyle: 'italic', color: 'textTertiary' }}>&quot;{book.quote}&quot;</Text>
-        </Box>
-      </Flex>
+    <Markdown>{markdown}</Markdown>
 
-      <Box m={4} />
+    <Box m={6} />
 
-      <Markdown>{markdown}</Markdown>
-
-      <Box m={6} />
-
-      <Backlinks sourceType="book" sourceURL={book.notes.url} backlinks={backlinks} />
-    </>
-  )
-}
+    <Backlinks sourceType="book" sourceURL={book.notes.url} backlinks={backlinks} />
+  </>
+)
 
 export default BookPage

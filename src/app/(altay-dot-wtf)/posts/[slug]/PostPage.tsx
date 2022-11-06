@@ -1,8 +1,6 @@
 'use client'
 
-import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'theme-ui'
-import { getOpenGraphImage } from 'utils/openGraph'
 import { formatDate } from 'utils/date'
 import ArtificialBackButton from 'components/ArtificialBackButton'
 import Markdown from 'components/Markdown'
@@ -21,27 +19,6 @@ export type PostPageProps = {
 
 const PostPage: React.FC<PostPageProps> = ({ data: { post, markdown, backlinks } }) => (
   <>
-    <NextSeo
-      title={post.title}
-      description={post.oneliner}
-      openGraph={{
-        title: post.title,
-        description: post.oneliner,
-        type: 'article',
-        article: {
-          authors: ['Altay Aydemir'],
-          modifiedTime: post.date,
-        },
-        images: [
-          getOpenGraphImage({
-            type: 'post',
-            title: post.title,
-            oneliner: post.oneliner,
-          }),
-        ],
-      }}
-    />
-
     <ArtificialBackButton href="/posts" label={postsCopy.title} />
 
     <Box m={4} />
