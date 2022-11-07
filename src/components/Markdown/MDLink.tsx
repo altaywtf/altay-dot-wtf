@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { Link } from 'theme-ui'
 
-type Props = { href: string }
+type Props = { href: string; children: React.ReactNode }
 
 const MDInternalLink: React.FC<Props> = ({ href, children }) => (
   <Link

@@ -2,6 +2,7 @@ import { Heading, Box } from 'theme-ui'
 import Markdown from './Markdown'
 
 type Props = {
+  children: React.ReactNode
   header: {
     title: string
     description?: string

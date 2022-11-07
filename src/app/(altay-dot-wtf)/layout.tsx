@@ -5,7 +5,7 @@ import { LAYOUT_WIDTH } from 'theme'
 import { usePathHistoryListener } from 'hooks/usePathHistory'
 import Header from 'components/Header'
 
-const Layout: React.FC = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   usePathHistoryListener()
 
   return (

@@ -3,7 +3,7 @@
 import { Box } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'theme'
 
-const Layout: React.FC = ({ children }) => (
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <Box
     sx={{
       width: LAYOUT_WIDTH,

@@ -1,6 +1,7 @@
 import { Heading } from 'theme-ui'
 
 type Props = {
+  children: React.ReactNode
   level: number
   node: {
     type: 'heading'

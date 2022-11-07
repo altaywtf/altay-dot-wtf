@@ -9,11 +9,13 @@ PrismLight.registerLanguage('tsx', tsx)
 
 type Props = { language: string; value: string }
 
+const PrislmLightAny = PrismLight as any // @todo: react 18
+
 const MDCodeBlock: React.FC<Props> = ({ language, value }) => (
   <Box my={3}>
-    <PrismLight style={dark} language={language} customStyle={{ borderRadius: '4px' }}>
+    <PrislmLightAny style={dark} language={language} customStyle={{ borderRadius: '4px' }}>
       {value}
-    </PrismLight>
+    </PrislmLightAny>
   </Box>
 )
 

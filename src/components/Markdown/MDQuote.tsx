@@ -1,6 +1,6 @@
 import { Box, Text } from 'theme-ui'
 
-const MDQuote: React.FC = ({ children }) => (
+const MDQuote: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <Box
     sx={{
       backgroundColor: 'backgroundSecondary',
