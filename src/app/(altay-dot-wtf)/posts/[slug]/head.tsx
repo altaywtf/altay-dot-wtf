@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo'
 import { getOpenGraphImage } from 'utils/openGraph'
-import { fetchData } from './page'
+import { fetchData } from './fetchData'
 
 const Head = async ({ params }: { params: { slug: string } }) => {
   const { post } = await fetchData(params.slug)

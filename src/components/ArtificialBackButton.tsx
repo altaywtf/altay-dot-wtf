@@ -22,9 +22,9 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
           {content}
         </Link>
       ) : (
-        <NextLink href={href} passHref legacyBehavior>
-          <Link variant="links.silent">{content}</Link>
-        </NextLink>
+        <Link as={NextLink} href={href} variant="links.silent">
+          {content}
+        </Link>
       )}
     </Box>
   )

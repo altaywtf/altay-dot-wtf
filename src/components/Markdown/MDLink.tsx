@@ -4,26 +4,25 @@ import { Link } from 'theme-ui'
 type Props = { href: string }
 
 const MDInternalLink: React.FC<Props> = ({ href, children }) => (
-  <NextLink href={href} passHref legacyBehavior>
-    <Link
-      href={href}
-      sx={{
-        '&.scrolled-source-link': {
-          backgroundColor: 'link',
+  <Link
+    as={NextLink}
+    href={href}
+    sx={{
+      '&.scrolled-source-link': {
+        backgroundColor: 'link',
+        color: 'background',
+        paddingX: 1,
+        borderRadius: 4,
+      },
+      '@media (hover: hover)': {
+        '&.scrolled-source-link:hover': {
           color: 'background',
-          paddingX: 1,
-          borderRadius: 4,
         },
-        '@media (hover: hover)': {
-          '&.scrolled-source-link:hover': {
-            color: 'background',
-          },
-        },
-      }}
-    >
-      {children}
-    </Link>
-  </NextLink>
+      },
+    }}
+  >
+    {children}
+  </Link>
 )
 
 const MDExternalLink: React.FC<Props> = ({ href, children }) => (

@@ -1,5 +1,5 @@
-import AnalyticsWrapper from 'components/Analytics'
 import '../theme/style.css'
+import AnalyticsWrapper from 'components/Analytics'
 import RootStyleRegistry from './emotion'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (

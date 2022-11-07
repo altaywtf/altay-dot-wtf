@@ -20,20 +20,16 @@ const BooksPage: React.FC<BooksPageProps> = ({ data }) => (
       <Box key={book.slug}>
         <Flex sx={{ gap: 3 }}>
           <Box sx={{ minWidth: [100, 130] }}>
-            <NextLink href={book.notes.url} passHref legacyBehavior>
-              <Link>
-                <BookCover book={book} />
-              </Link>
-            </NextLink>
+            <Link as={NextLink} href={book.notes.url}>
+              <BookCover book={book} />
+            </Link>
           </Box>
 
           <Box>
             <Box>
-              <NextLink href={book.notes.url} passHref legacyBehavior>
-                <Link variant="links.title">
-                  {book.title} by {book.authors.join(', ')}
-                </Link>
-              </NextLink>
+              <Link as={NextLink} href={book.notes.url} variant="links.title">
+                {book.title} by {book.authors.join(', ')}
+              </Link>
             </Box>
 
             <BookInfo book={book} />

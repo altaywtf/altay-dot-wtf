@@ -18,9 +18,9 @@ const PostsPage: React.FC<PostsPageProps> = ({ data }) => (
     {data.posts.map((post) => (
       <Box key={post.slug} mb={4}>
         <Box>
-          <NextLink href={post.url} passHref legacyBehavior>
-            <Link variant="links.title">{post.title}</Link>
-          </NextLink>
+          <Link as={NextLink} href={post.url} variant="links.title">
+            {post.title}
+          </Link>
         </Box>
 
         <Box>{post.oneliner}</Box>
