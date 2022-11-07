@@ -1,12 +1,15 @@
 import '../theme/style.css'
-import AnalyticsWrapper from 'components/Analytics'
 import RootStyleRegistry from './emotion'
+import AnalyticsWrapper from 'components/AnalyticsWrapper'
+import ThemeProvider from 'components/ThemeProvider'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <html lang="en">
     <body>
-      <RootStyleRegistry>{children}</RootStyleRegistry>
-      <AnalyticsWrapper />
+      <RootStyleRegistry>
+        <ThemeProvider>{children}</ThemeProvider>
+        <AnalyticsWrapper />
+      </RootStyleRegistry>
     </body>
   </html>
 )

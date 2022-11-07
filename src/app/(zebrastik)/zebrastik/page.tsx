@@ -1,70 +1,55 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { zebrastikCopy } from 'config'
 import { Box, Heading, Link, Text } from 'theme-ui'
 
-const Zebrastik = () => {
-  const [isMounted, setIsMounted] = useState(false)
+const Zebrastik = () => (
+  <>
+    <Box
+      sx={{
+        width: 100,
+        height: 100,
+        borderRadius: '8px',
+        overflow: 'hidden',
+        position: 'relative',
+      }}
+    >
+      <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
+    </Box>
 
-  useEffect(() => {
-    const header = document.getElementsByTagName('header')[0]
+    <Box my={3} />
 
-    if (header) {
-      header.style.display = 'none'
-    }
+    <Heading>{zebrastikCopy.title}</Heading>
 
-    setIsMounted(true)
-  }, [])
+    <Box my={2} />
 
-  return isMounted ? (
-    <>
-      <Box
-        sx={{
-          width: 100,
-          height: 100,
-          borderRadius: '8px',
-          overflow: 'hidden',
-          position: 'relative',
-        }}
-      >
-        <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
-      </Box>
+    <Text color="textSecondary">{zebrastikCopy.description}</Text>
 
-      <Box my={3} />
+    <Box my={4}>
+      <hr />
+    </Box>
 
-      <Heading>{zebrastikCopy.title}</Heading>
+    <Box>
+      <Link color="white" href="mailto:altay@zebrastik.com">
+        altay@zebrastik.com
+      </Link>
+    </Box>
 
-      <Box my={2} />
-
-      <Text color="textSecondary">{zebrastikCopy.description}</Text>
-
-      <Box my={4}>
-        <hr />
+    <Box mt={3}>
+      <Box>
+        <Text color="textSecondary">zebrastik, LLC.</Text>
       </Box>
 
       <Box>
-        <Link color="white" href="mailto:altay@zebrastik.com">
-          altay@zebrastik.com
-        </Link>
+        <Text color="textSecondary">30 N Gould St, STE 4000</Text>
       </Box>
 
-      <Box mt={3}>
-        <Box>
-          <Text color="textSecondary">zebrastik, LLC.</Text>
-        </Box>
-
-        <Box>
-          <Text color="textSecondary">30 N Gould St, STE 4000</Text>
-        </Box>
-
-        <Box>
-          <Text color="textSecondary">Sheridan, WY 82801</Text>
-        </Box>
+      <Box>
+        <Text color="textSecondary">Sheridan, WY 82801</Text>
       </Box>
-    </>
-  ) : null
-}
+    </Box>
+  </>
+)
 
 export default Zebrastik
