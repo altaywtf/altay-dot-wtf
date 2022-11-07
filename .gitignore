@@ -38,3 +38,5 @@ yarn-error.log*
 
 # rss
 /public/rss/*
+
+.tsbuildinfo
