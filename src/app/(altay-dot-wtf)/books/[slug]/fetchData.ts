@@ -1,10 +1,12 @@
-import { getBook } from 'api/books'
-import { getBacklinks } from 'api/backlinks'
-import type { BookPageProps } from './BookPage'
+import { API_URL } from 'config'
+import { BookPageProps } from './BookPage'
 
 export const fetchData = async (slug: string): Promise<BookPageProps['data']> => {
-  const { book, markdown } = getBook(slug)
-  const backlinks = getBacklinks({ type: 'book', slug })
+  const { book, markdown } = await fetch(`${API_URL}/books/${slug}`).then((res) => res.json())
+
+  const { backlinks } = await fetch(`${API_URL}/backlinks?type=books&slug=${slug}`).then((res) =>
+    res.json(),
+  )
 
   return {
     book,
