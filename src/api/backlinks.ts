@@ -8,7 +8,14 @@ export type Backlink = {
   url: string
 }
 
-export const getBacklinks = (url: string): Backlink[] => {
+type Params = {
+  type: Backlink['type']
+  slug: string
+}
+
+export const getBacklinks = (params: Params): Backlink[] => {
+  const url = params.type === 'post' ? `/posts/${params.slug}` : `/books/${params.slug}`
+
   const posts: Backlink[] = getPostsWithMarkdown()
     .filter(({ markdown }) => hasLink(markdown, url))
     .map(({ post }) => ({

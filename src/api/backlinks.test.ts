@@ -85,8 +85,7 @@ describe('getBacklinks', () => {
   })
 
   it('works', () => {
-    const input = `/posts/hi`
-    expect(getBacklinks(input)).toMatchInlineSnapshot(`
+    expect(getBacklinks({ type: 'post', slug: 'hi' })).toMatchInlineSnapshot(`
       Array [
         Object {
           "title": "yes",

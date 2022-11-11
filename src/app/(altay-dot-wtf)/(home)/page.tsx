@@ -1,16 +1,11 @@
-import { API_URL } from 'config'
+import { getContactLinks } from 'api/contact'
 import { readMarkdownFile } from 'utils/md'
-import HomePage, { HomePageProps } from './HomePage'
-
-const fetchData = async (): Promise<HomePageProps['data']> => {
-  const description = readMarkdownFile('home.md')
-  const contactLinks = (await fetch(`${API_URL}/contact/links`).then((res) => res.json())).links
-  return { description, contactLinks }
-}
+import HomePage from './HomePage'
 
 const Page = async () => {
-  const data = await fetchData()
-  return <HomePage data={data} />
+  const description = readMarkdownFile('home.md')
+  const contactLinks = getContactLinks()
+  return <HomePage data={{ description, contactLinks }} />
 }
 
 export default Page

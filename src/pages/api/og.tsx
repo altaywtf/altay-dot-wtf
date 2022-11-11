@@ -4,9 +4,10 @@ import qs from 'query-string'
 import { OpenGraphImage } from 'api/og/OpenGraphImage'
 import type { ParsedQuery, Post, Book, Page } from 'api/og/types'
 
-const loadFont = () => {
-  const url = new URL('../../../theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url) as any
-  return fetch(url).then((res) => res.arrayBuffer())
+const loadFont = async () => {
+  const url = new URL('../../theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
+  const res = await fetch(url)
+  return await res.arrayBuffer()
 }
 
 const parseRequest = (req: NextRequest): ParsedQuery => {

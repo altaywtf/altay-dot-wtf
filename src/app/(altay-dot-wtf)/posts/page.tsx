@@ -1,12 +1,9 @@
-import { API_URL } from 'config'
-import PostsPage, { PostsPageProps } from './PostsPage'
-
-const fetchData = async (): Promise<PostsPageProps['data']> =>
-  await fetch(`${API_URL}/posts`).then((res) => res.json())
+import { getPosts } from 'api/posts'
+import PostsPage from './PostsPage'
 
 const Page = async () => {
-  const data = await fetchData()
-  return <PostsPage data={data} />
+  const posts = getPosts()
+  return <PostsPage data={{ posts }} />
 }
 
 export default Page
