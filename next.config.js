@@ -9,12 +9,7 @@ const nextConfig = {
 
   rewrites: async () => [
     {
-      source: '/',
-      destination: '/zebrastik',
-      has: [{ type: 'host', value: 'zebrastik.com' }],
-    },
-    {
-      source: '/',
+      source: '/:path*',
       destination: '/zebrastik',
       has: [{ type: 'host', value: 'www.zebrastik.com' }],
     },
