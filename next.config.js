@@ -24,7 +24,7 @@ const nextConfig = {
     {
       source: '/:path*',
       destination: '/zebrastik',
-      has: [{ type: 'header', value: 'x-rewrite-zebrastik' }],
+      has: [{ type: 'header', key: 'x-rewrite-zebrastik', value: 'true' }],
     },
   ],
 
