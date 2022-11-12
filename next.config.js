@@ -7,66 +7,66 @@ const nextConfig = {
     appDir: true,
   },
 
-  async redirects() {
-    return [
-      {
-        source: '/',
-        has: [
-          {
-            type: 'host',
-            value: 'www.zebrastik.com',
-          },
-        ],
-        destination: '/zebrastik',
-        permanent: true,
-      },
-      {
-        source: '/articles',
-        destination: '/posts',
-        permanent: true,
-      },
-      {
-        source: '/articles/:path*',
-        destination: '/posts/:path*',
-        permanent: true,
-      },
-      {
-        source: '/images/articles/:path*',
-        destination: '/images/posts/:path*',
-        permanent: true,
-      },
-      {
-        source: '/notes',
-        destination: '/posts',
-        permanent: true,
-      },
-      {
-        source: '/notes/:path*',
-        destination: '/posts/:path*',
-        permanent: true,
-      },
-      {
-        source: '/images/notes/:path*',
-        destination: '/images/posts/:path*',
-        permanent: true,
-      },
-      {
-        source: '/blog',
-        destination: '/posts',
-        permanent: true,
-      },
-      {
-        source: '/blog/:path*',
-        destination: '/posts/:path*',
-        permanent: true,
-      },
-      {
-        source: '/images/blog/:path*',
-        destination: '/images/posts/:path*',
-        permanent: true,
-      },
-    ]
-  },
+  rewrites: async () => [
+    {
+      source: '/',
+      destination: '/zebrastik',
+      has: [{ type: 'host', value: 'zebrastik.com' }],
+    },
+    {
+      source: '/',
+      destination: '/zebrastik',
+      has: [{ type: 'host', value: 'www.zebrastik.com' }],
+    },
+  ],
+
+  redirects: async () => [
+    {
+      source: '/articles',
+      destination: '/posts',
+      permanent: true,
+    },
+    {
+      source: '/articles/:path*',
+      destination: '/posts/:path*',
+      permanent: true,
+    },
+    {
+      source: '/images/articles/:path*',
+      destination: '/images/posts/:path*',
+      permanent: true,
+    },
+    {
+      source: '/notes',
+      destination: '/posts',
+      permanent: true,
+    },
+    {
+      source: '/notes/:path*',
+      destination: '/posts/:path*',
+      permanent: true,
+    },
+    {
+      source: '/images/notes/:path*',
+      destination: '/images/posts/:path*',
+      permanent: true,
+    },
+    {
+      source: '/blog',
+      destination: '/posts',
+      permanent: true,
+    },
+    {
+      source: '/blog/:path*',
+      destination: '/posts/:path*',
+      permanent: true,
+    },
+    {
+      source: '/images/blog/:path*',
+      destination: '/images/posts/:path*',
+      permanent: true,
+    },
+  ],
 }
 
 module.exports = nextConfig
