@@ -8,9 +8,9 @@ const nextConfig = {
   },
 
   rewrites: async () => ({
-    beforeFiles: [
+    afterFiles: [
       {
-        source: '/:path*',
+        source: '/',
         destination: '/zebrastik',
         has: [{ type: 'host', value: 'www.zebrastik.com' }],
       },
@@ -18,6 +18,10 @@ const nextConfig = {
   }),
 
   redirects: async () => [
+    {
+      source: '/zebrastik',
+      destination: '/',
+    },
     {
       source: '/articles',
       destination: '/posts',
