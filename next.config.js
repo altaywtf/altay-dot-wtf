@@ -7,34 +7,40 @@ const nextConfig = {
     appDir: true,
   },
 
-  headers: async () => [
-    {
-      source: '/:path*',
-      has: [{ type: 'host', value: 'www.zebrastik.com' }],
-      headers: [
-        {
-          key: 'x-rewrite-zebrastik',
-          value: 'true',
-        },
-      ],
-    },
-  ],
+  // headers: async () => [
+  //   {
+  //     source: '/:path*',
+  //     has: [{ type: 'host', value: 'www.zebrastik.com' }],
+  //     headers: [
+  //       {
+  //         key: 'x-rewrite-zebrastik',
+  //         value: 'true',
+  //       },
+  //     ],
+  //   },
+  // ],
 
-  rewrites: async () => [
-    {
-      source: '/:path*',
-      destination: '/zebrastik',
-      has: [
-        {
-          type: 'header',
-          key: 'x-rewrite-zebrastik',
-          value: 'true',
-        },
-      ],
-    },
-  ],
+  // rewrites: async () => [
+  //   {
+  //     source: '/:path*',
+  //     destination: '/zebrastik',
+  //     has: [
+  //       {
+  //         type: 'header',
+  //         key: 'x-rewrite-zebrastik',
+  //         value: 'true',
+  //       },
+  //     ],
+  //   },
+  // ],
 
   redirects: async () => [
+    {
+      source: '/',
+      destination: '/zebrastik',
+      permanent: true,
+      has: [{ type: 'host', value: 'www.zebrastik.com' }],
+    },
     {
       source: '/articles',
       destination: '/posts',
