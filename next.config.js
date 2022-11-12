@@ -7,13 +7,15 @@ const nextConfig = {
     appDir: true,
   },
 
-  rewrites: async () => [
-    {
-      source: '/:path*',
-      destination: '/zebrastik',
-      has: [{ type: 'host', value: 'www.zebrastik.com' }],
-    },
-  ],
+  rewrites: async () => ({
+    beforeFiles: [
+      {
+        source: '/:path*',
+        destination: '/zebrastik',
+        has: [{ type: 'host', value: 'www.zebrastik.com' }],
+      },
+    ],
+  }),
 
   redirects: async () => [
     {
