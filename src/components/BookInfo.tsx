@@ -3,6 +3,8 @@ import StarRatingComponent from 'react-star-rating-component'
 import { format } from 'date-fns'
 import type { Book } from 'api/books'
 
+const StarRatingComponentAny = StarRatingComponent as any // @todo: react 18
+
 type Props = {
   book: Book
 }
@@ -19,7 +21,7 @@ const BookInfo: React.FC<Props> = ({ book }) => {
       key: 'rating',
       component: (
         <Box marginBottom={-1}>
-          <StarRatingComponent
+          <StarRatingComponentAny
             name={`rating-${book.slug}`}
             value={book.rating}
             starCount={5}

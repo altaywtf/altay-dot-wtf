@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { Box, Text, Link, Flex } from 'theme-ui'
 import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { usePathHistory } from 'hooks/usePathHistory'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
@@ -22,9 +22,9 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
           {content}
         </Link>
       ) : (
-        <NextLink href={href} passHref legacyBehavior>
-          <Link variant="links.silent">{content}</Link>
-        </NextLink>
+        <Link as={NextLink} href={href} variant="links.silent">
+          {content}
+        </Link>
       )}
     </Box>
   )

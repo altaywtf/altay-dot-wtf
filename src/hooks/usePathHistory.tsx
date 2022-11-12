@@ -1,14 +1,14 @@
 import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export const usePathHistoryListener = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const storage = globalThis?.sessionStorage
-    if (!storage) return
-    storage.setItem('PATH_HISTORY', router.asPath)
-  }, [router.asPath])
+    if (!pathname || !storage) return
+    storage.setItem('PATH_HISTORY', pathname)
+  }, [pathname])
 }
 
 export const usePathHistory = () => {

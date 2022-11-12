@@ -1,5 +1,5 @@
 import { HEADER } from 'config'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { Flex, Link } from 'theme-ui'
@@ -7,7 +7,7 @@ import { LAYOUT_WIDTH } from 'theme'
 import NavLink from './NavLink'
 
 const Header: React.FC = () => {
-  const { pathname } = useRouter()
+  const pathname = usePathname() || ''
 
   return (
     <Flex
@@ -34,29 +34,29 @@ const Header: React.FC = () => {
           marginX: [-1, -1, 0],
         }}
       >
-        <NextLink href="/" passHref legacyBehavior>
-          <Link
-            title="That's my head, also a link to home page. Please press gently."
-            sx={{
-              position: 'relative',
-              overflow: 'hidden',
-              width: 32,
-              height: 32,
-              borderWidth: 2,
-              borderStyle: 'solid',
-              borderRadius: 'circle',
-              borderColor: pathname === '/' ? 'border' : 'transparent',
-              backgroundColor: 'black',
-              '@media (hover: hover)': {
-                ':hover': {
-                  borderColor: 'border',
-                },
+        <Link
+          href="/"
+          as={NextLink}
+          title="That's my head, also a link to home page. Please press gently."
+          sx={{
+            position: 'relative',
+            overflow: 'hidden',
+            width: 32,
+            height: 32,
+            borderWidth: 2,
+            borderStyle: 'solid',
+            borderRadius: 'circle',
+            borderColor: pathname === '/' ? 'border' : 'transparent',
+            backgroundColor: 'black',
+            '@media (hover: hover)': {
+              ':hover': {
+                borderColor: 'border',
               },
-            }}
-          >
-            <Image src="/images/avatar.png" alt="That's head" fill />
-          </Link>
-        </NextLink>
+            },
+          }}
+        >
+          <Image src="/images/avatar.png" alt="That's head" fill />
+        </Link>
 
         <Flex sx={{ alignItems: 'center', gap: 1 }}>
           {HEADER.map(({ label, href }) => (

@@ -1,9 +1,12 @@
-// eslint-disable-next-line
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+/** @type {import("next").NextConfig} */
 
-module.exports = withBundleAnalyzer({
+const nextConfig = {
+  reactStrictMode: true,
+
+  experimental: {
+    appDir: true,
+  },
+
   async redirects() {
     return [
       {
@@ -14,7 +17,7 @@ module.exports = withBundleAnalyzer({
             value: 'www.zebrastik.com',
           },
         ],
-        destination: '/z',
+        destination: '/zebrastik',
         permanent: true,
       },
       {
@@ -64,4 +67,6 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
-})
+}
+
+module.exports = nextConfig

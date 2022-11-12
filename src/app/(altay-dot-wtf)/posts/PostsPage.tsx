@@ -1,24 +1,26 @@
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+'use client'
+
 import NextLink from 'next/link'
 import { Box, Link } from 'theme-ui'
 import Page from 'components/Page'
 import { formatDate } from 'utils/date'
-import { API_URL, postsCopy } from 'config'
+import { postsCopy } from 'config'
 import type { Post } from 'api/posts'
 
-export const getServerSideProps: GetServerSideProps<{ posts: Post[] }> = async () => {
-  const { posts } = await fetch(`${API_URL}/posts`).then((res) => res.json())
-  return { props: { posts } }
+export type PostsPageProps = {
+  data: {
+    posts: Post[]
+  }
 }
 
-const PostsPage: React.FC<InferGetServerSidePropsType<typeof getServerSideProps>> = ({ posts }) => (
+const PostsPage: React.FC<PostsPageProps> = ({ data }) => (
   <Page header={postsCopy}>
-    {posts.map((post) => (
+    {data.posts.map((post) => (
       <Box key={post.slug} mb={4}>
         <Box>
-          <NextLink href={post.url} passHref legacyBehavior>
-            <Link variant="links.title">{post.title}</Link>
-          </NextLink>
+          <Link as={NextLink} href={post.url} variant="links.title">
+            {post.title}
+          </Link>
         </Box>
 
         <Box>{post.oneliner}</Box>

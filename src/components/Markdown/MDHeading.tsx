@@ -1,20 +1,8 @@
 import { Heading } from 'theme-ui'
+import { HeadingProps } from 'react-markdown/lib/ast-to-react'
 
-type Props = {
-  level: number
-  node: {
-    type: 'heading'
-    depth: number
-    data: {
-      id: string
-    }
-  }
-}
-
-const MDHeading: React.FC<Props> = ({ node, level, children }) => (
-  <Heading id={node.data.id} as={`h${level}` as React.ElementType}>
-    {children}
-  </Heading>
+const MDHeading: React.FC<HeadingProps> = ({ level, children }) => (
+  <Heading as={`h${level}` as React.ElementType}>{children}</Heading>
 )
 
 export default MDHeading

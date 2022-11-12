@@ -14,7 +14,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "jsxImportSource": "theme-ui",
     "baseUrl": ".",
     "paths": {
       "api/*": ["src/api/*"],
@@ -25,8 +24,13 @@
       "theme": ["src/theme"],
       "theme/*": ["src/theme/*"],
       "utils/*": ["src/utils/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

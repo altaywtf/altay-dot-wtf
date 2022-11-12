@@ -8,29 +8,29 @@ type Props = {
 }
 
 const NavLink: React.FC<Props> = ({ href, label, active }) => (
-  <NextLink href={href} passHref legacyBehavior>
-    <Link
-      sx={{
-        fontSize: 0,
-        paddingY: '.4rem',
-        paddingX: 2,
-        lineHeight: 1,
-        fontFamily: 'heading',
-        fontWeight: 'heading',
-        borderRadius: 'default',
-        color: 'text',
-        backgroundColor: active ? 'buttonBackground' : 'transparent',
-        '@media (hover: hover)': {
-          ':hover': {
-            backgroundColor: 'buttonBackground',
-            color: 'text',
-          },
+  <Link
+    as={NextLink}
+    href={href}
+    sx={{
+      fontSize: 0,
+      paddingY: '.4rem',
+      paddingX: 2,
+      lineHeight: 1,
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      borderRadius: 'default',
+      color: 'text',
+      backgroundColor: active ? 'buttonBackground' : 'transparent',
+      '@media (hover: hover)': {
+        ':hover': {
+          backgroundColor: 'buttonBackground',
+          color: 'text',
         },
-      }}
-    >
-      {label}
-    </Link>
-  </NextLink>
+      },
+    }}
+  >
+    {label}
+  </Link>
 )
 
 export default NavLink
