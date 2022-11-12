@@ -24,15 +24,17 @@ const nextConfig = {
     {
       source: '/:path*',
       destination: '/zebrastik',
-      has: [{ type: 'header', key: 'x-rewrite-zebrastik', value: 'true' }],
+      has: [
+        {
+          type: 'header',
+          key: 'x-rewrite-zebrastik',
+          value: 'true',
+        },
+      ],
     },
   ],
 
   redirects: async () => [
-    {
-      source: '/zebrastik',
-      destination: '/',
-    },
     {
       source: '/articles',
       destination: '/posts',
