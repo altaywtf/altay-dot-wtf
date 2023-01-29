@@ -38,7 +38,7 @@ const Zebrastik = () => (
 
     <Box mt={3}>
       <Box>
-        <Text color="textSecondary">zebrastik, LLC.</Text>
+        <Text color="textSecondary">zebrastik, LLC</Text>
       </Box>
 
       <Box>
