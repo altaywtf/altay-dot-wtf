@@ -19,5 +19,5 @@ export const nowCopy = {
 export const zebrastikCopy = {
   title: 'hi, we are zebrastik',
   description:
-    'we provide software development services for digital product companies at any scale. our expertise covers many platforms such as web, mobile, and smart TVs.',
+    'we provide software development services for digital product companies at any scale. our expertise covers many platforms such as web, mobile, and streaming devices.',
 }
