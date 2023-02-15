@@ -1,23 +1,16 @@
 {
-  "updatedAt": "2022-10-17T07:46:45.915Z",
+  "updatedAt": "2023-02-15T14:30:03.490Z",
   "sections": [
     {
       "_id": "books",
       "title": "📚 Reading",
       "data": [
         {
-          "url": "https://oku.club/book/the-millionaire-fastlane-by-mj-demarco-g7gwL",
-          "title": "The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime!",
+          "url": "https://oku.club/book/principles-by-ray-dalio-ycqMD",
+          "title": "Principles",
           "subtitle": "",
-          "author": "M.J. DeMarco",
-          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/34d3c800a5d40f8ad000a4f9e081cd15.jpg"
-        },
-        {
-          "url": "https://oku.club/book/awaken-the-giant-within-by-tony-robbins-g193B",
-          "title": "Awaken The Giant Within",
-          "subtitle": "",
-          "author": "Tony Robbins",
-          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/ec2a8635579920df1aba9e515105f977.jpg"
+          "author": "Ray Dalio",
+          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/07/92b7218dfc53bccd0d5a5509275dd498.jpg"
         }
       ]
     },
@@ -26,40 +19,40 @@
       "title": "🎧 Listening",
       "data": [
         {
-          "title": "Cercle: Adriatique at Signal 2108 Alpe d'Huez in the Alps, France (DJ Mix)",
-          "creator": "Adriatique",
-          "url": "https://music.apple.com/tr/album/cercle-adriatique-at-signal-2108-alpe-dhuez-in-the/1558552034",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/98/a1/2b/98a12b1f-061a-2bc3-4576-c0f13ebbf968/mza_7938812346213746870.jpg/1200x1200bb.jpg"
+          "title": "Unknown Pleasures (2019 Master)",
+          "creator": "Joy Division",
+          "url": "https://music.apple.com/us/album/unknown-pleasures-2019-master/1476702180",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/13/90/c0/1390c072-4249-3739-7b3d-fd73ee4a5698/825646562831.jpg/1200x1200bb.jpg"
         },
         {
-          "title": "Cercle: Ben Böhmer above Cappadocia, Turkey (Live)",
-          "creator": "Ben Böhmer",
-          "url": "https://music.apple.com/tr/album/cercle-ben-b%C3%B6hmer-above-cappadocia-turkey-live/1586904306",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/0b/e8/480be86c-6e75-b093-af8b-23fef22d2f06/cover_applemusic_ben_bohmer.jpg/1200x1200bb.jpg"
+          "title": "Enema of the State",
+          "creator": "blink-182",
+          "url": "https://music.apple.com/us/album/enema-of-the-state/1440839912",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/c2/f2/78/c2f2783f-8e65-0b2b-80ac-b52c4cfece2d/16UMGIM35657.rgb.jpg/1200x1200bb.jpg"
         },
         {
-          "title": "Ölüler Hariç",
-          "creator": "Kana Kana",
-          "url": "https://music.apple.com/tr/album/%C3%B6l%C3%BCler-hari%C3%A7/1599528407",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/ea/f5/26/eaf52607-e882-ac46-055c-8e7027afe435/cover.jpg/1200x1200bb.jpg"
+          "title": "Egolove",
+          "creator": "CUT_",
+          "url": "https://music.apple.com/us/album/egolove/1637637793",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music112/v4/c6/1e/77/c61e770c-a016-63c1-6bd6-c72aea3a5e77/5400863074470_cover.jpg/1200x1200bb.jpg"
         },
         {
-          "title": "Cercle: Jan Blomqvist at Tossa de Mar, Spain (Live)",
-          "creator": "Jan Blomqvist",
-          "url": "https://music.apple.com/tr/album/cercle-jan-blomqvist-at-tossa-de-mar-spain-live/1604673855",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/82/fb/08/82fb0856-35be-023f-b225-18efef397ac3/jan_blomqvist-2.jpg/1200x1200bb.jpg"
+          "title": "Cleanse",
+          "creator": "Joywave",
+          "url": "https://music.apple.com/us/album/cleanse/1590945405",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/6c/a9/f1/6ca9f19a-1a65-2e14-0cbc-23e47db5e32d/21UM1IM27859.rgb.jpg/1200x1200bb.jpg"
         },
         {
-          "title": "Cercle: HVOB at Copa del Sol in Careyes, Mexico (Live)",
+          "title": "TOO",
           "creator": "HVOB",
-          "url": "https://music.apple.com/tr/album/cercle-hvob-at-copa-del-sol-in-careyes-mexico-live/1604256467",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/90/f1/38/90f138bd-2b2a-83b2-0591-f301996da586/cover_hvob_apple_music_4.jpg/1200x1200bb.jpg"
+          "url": "https://music.apple.com/us/album/too/1604898348",
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ee/84/5b/ee845b63-348c-13f3-d1c9-027c98d10c31/5400863075644_cover.jpg/1200x1200bb.jpg"
         },
         {
-          "title": "Cercle: WhoMadeWho in Abu Simbel, Egypt (Live)",
-          "creator": "WhoMadeWho",
-          "url": "https://music.apple.com/tr/album/cercle-whomadewho-in-abu-simbel-egypt-live/1585737974",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/f4/6b/a9/f46ba999-c102-ea24-7efa-a8e48b43bebd/mza_4437830076440205700.jpg/1200x1200bb.jpg"
+          "title": "Time Isn't Real",
+          "creator": "Grabbitz",
+          "url": "https://music.apple.com/us/album/time-isnt-real/1619000612",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/00/bb/6f/00bb6f5d-e93e-e5ca-96f1-187d7226ec3f/1420.jpg/1200x1200bb.jpg"
         }
       ]
     },
@@ -68,9 +61,14 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "Rick and Morty",
-          "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/423/1059147.jpg"
+          "title": "South Park",
+          "url": "https://www.tvmaze.com/shows/112/south-park",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg"
+        },
+        {
+          "title": "You",
+          "url": "https://www.tvmaze.com/shows/26856/you",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/432/1080371.jpg"
         }
       ]
     }
