@@ -8,7 +8,7 @@ import type { Post } from 'api/posts'
 
 const author: Author = {
   name: 'Altay',
-  email: 'altay@aydemir.io',
+  email: 'altay@zebrastik.com',
   link: 'https://twitter.com/altaywtf',
 }
 
