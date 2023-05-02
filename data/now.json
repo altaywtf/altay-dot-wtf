@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2023-02-18T09:56:18.330Z",
+  "updatedAt": "2023-05-02T08:36:53.220Z",
   "sections": [
     {
       "_id": "books",
       "title": "📚 Reading",
       "data": [
+        {
+          "url": "https://oku.club/book/cant-hurt-me-by-david-goggins-CHrPL",
+          "title": "Can't Hurt Me",
+          "subtitle": "Master Your Mind and Defy the Odds - Clean Edition",
+          "author": "David Goggins",
+          "imageURL": "https://oku.ams3.cdn.digitaloceanspaces.com/covers/2022/06/7cb126e73e9caa8ddda9a3a1c62436f7.jpg"
+        },
         {
           "url": "https://oku.club/book/principles-by-ray-dalio-ycqMD",
           "title": "Principles",
@@ -19,40 +26,34 @@
       "title": "🎧 Listening",
       "data": [
         {
-          "title": "Run The Jewels & Similar Artists Station",
-          "creator": "Run The Jewels & Similar Artists Station",
-          "url": "https://music.apple.com/us/station/run-the-jewels-similar-artists-station/ra.732932144",
-          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/4f/ec/e4/4fece4f5-f48b-cec7-957a-82cd439910d2/pr_source.png/2336x2336AM.RSMA01.jpg?imgLeft=Music116%2Fv4%2F25%2F13%2F84%2F25138442-d5a0-9645-b1a5-93f397cdedf1%2Fpr_source.png&imgRight=Music126%2Fv4%2F00%2F48%2Fe1%2F0048e184-225d-5e81-86ae-49474f1ab5d1%2Fpr_source.png"
+          "title": "Cercle: Solomun at Cercle Festival in Chambord, France (DJ Mix)",
+          "creator": "Solomun",
+          "url": "https://music.apple.com/us/album/cercle-solomun-at-cercle-festival-in-chambord-france-dj-mix/1569681689",
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music116/v4/38/4f/c0/384fc01a-5bb0-9b52-834f-3f9a6c05c304/dj.ajyqbkri.jpg/1440x1440bb.jpg"
         },
         {
-          "title": "Transplants & Similar Artists Station",
-          "creator": "Transplants & Similar Artists Station",
-          "url": "https://music.apple.com/us/station/transplants-similar-artists-station/ra.36007479",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/7c/1b/96/7c1b9609-0d2c-8fb4-982e-b5ce3d426527/mzl.sedzgkkn.jpg/2400x2400AM.RSMA01.jpg?imgLeft=Features115%2Fv4%2Fbf%2F90%2F49%2Fbf904944-6554-b9d4-2ed9-8b0e3f62cf10%2Fmzl.qvuzbthg.jpg&imgRight=Features114%2Fv4%2Fba%2F4f%2Fd7%2Fba4fd7b2-84d4-d992-c0c7-18fca9b8245d%2Fpr_source.png"
+          "title": "The New Abnormal",
+          "creator": "The Strokes",
+          "url": "https://music.apple.com/us/album/the-new-abnormal/1498121188",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/62/a6/ff/62a6ff2a-95c9-5302-31f4-2dcca9e40323/886448281085.jpg/3000x3000bb.jpg"
         },
         {
-          "title": "Run the Jewels",
-          "creator": "Run The Jewels",
-          "url": "https://music.apple.com/us/album/run-the-jewels/1598945321",
-          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/ca/b2/8d/cab28d83-5c5f-8427-f8aa-8f6e1b5f3ce7/853895007148.png/3000x3000bb.jpg"
+          "title": "Angles",
+          "creator": "The Strokes",
+          "url": "https://music.apple.com/us/album/angles/581797918",
+          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/8a/90/df/8a90dff0-73c6-c483-ab79-6810308414a2/884977195552.jpg/1426x1416bb.jpg"
         },
         {
-          "title": "We Good (From The TV Show \"DAVE\") - Single",
-          "creator": "Lil Dicky & GaTa",
-          "url": "https://music.apple.com/us/album/we-good-from-the-tv-show-dave-single/1600573407",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music116/v4/3c/c1/69/3cc1693b-ef05-a4db-fe44-e61227cdc0b9/4050538771602.jpg/1500x1500bb.jpg"
+          "title": "Arnalds: A Sunrise Session (Visual EP)",
+          "creator": "Ólafur Arnalds",
+          "url": "https://music.apple.com/us/album/arnalds-a-sunrise-session-visual-ep/1555036055",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/d4/cb/e9/d4cbe98a-f339-e360-9ded-13eea719774c/21UMGIM02238.rgb.jpg/3000x3000bb.jpg"
         },
         {
-          "title": "Monolink & Similar Artists Station",
-          "creator": "Monolink & Similar Artists Station",
-          "url": "https://music.apple.com/us/station/monolink-similar-artists-station/ra.871821018",
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/b5/1d/07/b51d07bc-472e-ac69-9666-d58657161dc7/mzl.fvsvvbun.jpg/2662x2662AM.RSMA01.jpg?imgLeft=AMCArtistImages122%2Fv4%2F18%2Fc5%2Fdf%2F18c5dfea-36fa-3bda-0bb6-a740ef2b741a%2Fa2c503c1-9bb1-4045-bcbd-f1149e2ba15a_ami-identity-14e5a128aef9efd2dc5e1705d5accda4-2022-11-16T14-26-25.843Z_cropped.png&imgRight=AMCArtistImages112%2Fv4%2F36%2Fdd%2F0e%2F36dd0e2d-e537-35a9-7bb9-c151c59fa4f3%2F1b0352b5-b2ec-4ca0-9967-8599e7b48c78_ami-identity-07c109e8ec22ccc5cb5e1c4dca73e934-2022-11-25T08-32-15.883Z_cropped.png"
-        },
-        {
-          "title": "Lifeforms",
-          "creator": "Angels & Airwaves",
-          "url": "https://music.apple.com/us/album/lifeforms/1570547185",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/33/5e/ad/335ead46-a74e-db04-9479-37eae81ec907/4050538700398.jpg/3733x3733bb.jpg"
+          "title": "Triangle",
+          "creator": "Slow Magic",
+          "url": "https://music.apple.com/us/album/triangle/518532898",
+          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/fe/ee/41/feee4186-ab6f-3d19-9c6f-013a4c6cb3d9/5050580570528.jpg/800x800bb.jpg"
         }
       ]
     },
@@ -61,14 +62,19 @@
       "title": "📺 Watching",
       "data": [
         {
-          "title": "South Park",
-          "url": "https://www.tvmaze.com/shows/112/south-park",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/0/935.jpg"
+          "title": "DAVE",
+          "url": "https://www.tvmaze.com/shows/45563/dave",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/455/1138591.jpg"
         },
         {
-          "title": "You",
-          "url": "https://www.tvmaze.com/shows/26856/you",
-          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/432/1080371.jpg"
+          "title": "Succession",
+          "url": "https://www.tvmaze.com/shows/23470/succession",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/453/1134275.jpg"
+        },
+        {
+          "title": "Ted Lasso",
+          "url": "https://www.tvmaze.com/shows/44458/ted-lasso",
+          "imageURL": "https://static.tvmaze.com/uploads/images/original_untouched/457/1142533.jpg"
         }
       ]
     }
