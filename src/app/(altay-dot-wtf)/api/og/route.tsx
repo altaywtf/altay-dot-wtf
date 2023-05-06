@@ -29,7 +29,7 @@ const parseRequest = (req: NextRequest): ParsedQuery => {
   }
 }
 
-const handler = async (req: NextRequest) => {
+export const GET = async (req: NextRequest) => {
   const query = parseRequest(req)
   const fontData = await loadFont()
 
@@ -49,5 +49,3 @@ const handler = async (req: NextRequest) => {
 export const config = {
   runtime: 'experimental-edge',
 }
-
-export default handler

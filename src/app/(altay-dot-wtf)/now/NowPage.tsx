@@ -5,7 +5,7 @@ import { Flex, Box, Heading, Link, Image } from 'theme-ui'
 import Page from 'ui/Page'
 import { formatDate } from 'lib/utils/date'
 import { nowCopy } from 'config'
-import type { NowJSON } from '../../../pages/api/now'
+import type { NowJSON } from 'scripts/now/lib/types'
 
 const NowPage: React.FC<{ data: NowJSON }> = ({ data }) => {
   const renderSectionContent = useCallback((section: NowJSON['sections'][number]) => {

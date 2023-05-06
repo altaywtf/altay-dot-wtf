@@ -7,6 +7,15 @@ const Head = async ({ params }: { params: { slug: string } }) => {
   const { book } = await fetchData(params.slug)
   const pageTitle = `${book.title} by ${book.authors.join(', ')}`
 
+  const a = getOpenGraphImage({
+    type: 'book',
+    title: book.title,
+    author: book.authors.join(', '),
+    coverImageURL: SITE_URL + book.coverImage.url,
+  })
+
+  console.log(a)
+
   return (
     <NextSeo
       useAppDir

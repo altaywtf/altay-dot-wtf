@@ -7,7 +7,7 @@ import { GrMail } from '@react-icons/all-files/gr/GrMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { ContactLink } from '../../../pages/api/contact/links'
+import type { ContactLink } from 'lib/contact'
 
 const getContactLinkIcon = (title: ContactLink['title']) => {
   switch (title) {
