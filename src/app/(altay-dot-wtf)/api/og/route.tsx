@@ -4,13 +4,15 @@ import qs from 'query-string'
 import { OpenGraphImage } from 'lib/og/OpenGraphImage'
 import type { ParsedQuery, Post, Book, Page } from 'lib/og/types'
 
-const loadFont = () => {
-  const url = new URL(
-    '../../../ui/theme/fonts/GT-America-Standard-Bold.ttf',
-    import.meta.url,
-  ) as any
+export const runtime = 'edge'
+export const contentType = 'image/png'
 
-  return fetch(url).then((res) => res.arrayBuffer())
+const loadFont = async () => {
+  const url = new URL('../../../../ui/theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
+  console.log(url)
+  const res = await fetch(url)
+  const fontData = await res.arrayBuffer()
+  return fontData
 }
 
 const parseRequest = (req: NextRequest): ParsedQuery => {
@@ -44,8 +46,4 @@ export const GET = async (req: NextRequest) => {
       },
     ],
   })
-}
-
-export const config = {
-  runtime: 'experimental-edge',
 }

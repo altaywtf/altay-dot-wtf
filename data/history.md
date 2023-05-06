@@ -6,7 +6,7 @@
 
 - **2021, Apr:** moved into [my own flat](https://twitter.com/altaywtf/status/1387446623303778307) after living in a furnished studio for 2.5 years.
 - **2021, Jan:** wanted to work closer to the product and switched to _Consumer Deals_ team that grew from one of the MVPs I've built in [Klarna](https://klarna.com).
-- **2020, Oct:** built this website. Inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), [julie.design](https://julie.design), and [andymatuschak.org](https://notes.andymatuschak.org)
+- **2020, Oct:** built this website. Inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), and [andymatuschak.org](https://notes.andymatuschak.org)
 - **2020, Jan:** switched to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna](https://klarna.com)'s [consumer app](https://klarna.comus/klarna-app/). Mostly worked on the localization, feature isolation infrastructure, and onboarding new teams to the ecosystem.
 - **2019, May:** got a promising offer from [**Klarna**](https://klarna.com) and joined the _Consumer Growth and Loyalty_ domain. Worked on CRM integrations and a bunch of MVPs that grew into their own teams in the following years.
 - **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io). Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](/posts/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)

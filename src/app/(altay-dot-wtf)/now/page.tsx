@@ -1,4 +1,6 @@
-import { API_URL } from 'config'
+import { Metadata } from 'next'
+import { API_URL, nowCopy } from 'config'
+import { getOpenGraphImage } from 'lib/utils/openGraph'
 import NowPage from './NowPage'
 
 const fetchData = async () => {
@@ -10,6 +12,17 @@ const fetchData = async () => {
   const { now } = await res.json()
   return now
 }
+
+export const generateMetadata = async (): Promise<Metadata> => ({
+  title: nowCopy.title,
+  openGraph: {
+    title: nowCopy.title,
+    images: getOpenGraphImage({
+      type: 'page',
+      title: nowCopy.title,
+    }),
+  },
+})
 
 const Page = async () => {
   const now = await fetchData()

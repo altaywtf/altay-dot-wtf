@@ -1,4 +1,3 @@
-import type { OpenGraphMedia } from 'next-seo/lib/types'
 import { API_URL } from 'config'
 
 const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`
@@ -23,7 +22,7 @@ type OGImageParamsPage = {
 
 type OGImageParams = OGImageParamsPost | OGImageParamsBook | OGImageParamsPage
 
-export const getOpenGraphImage = (params: OGImageParams): OpenGraphMedia => {
+export const getOpenGraphImage = (params: OGImageParams) => {
   const searchParams = Object.entries(params).reduce((acc, [key, value]) => {
     acc.append(key, value)
     return acc

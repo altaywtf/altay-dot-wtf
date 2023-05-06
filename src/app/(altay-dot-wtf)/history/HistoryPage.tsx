@@ -3,9 +3,10 @@
 import Page from 'ui/Page'
 import Markdown from 'ui/Markdown'
 import { Box } from 'theme-ui'
+import { historyCopy } from 'config'
 
-const TimelinePage: React.FC<{ data: string }> = ({ data }) => (
-  <Page header={{ title: 'Timeline' }}>
+const HistoryPage: React.FC<{ data: string }> = ({ data }) => (
+  <Page header={historyCopy}>
     <Box
       sx={{
         ul: { marginLeft: 0 },
@@ -25,4 +26,4 @@ const TimelinePage: React.FC<{ data: string }> = ({ data }) => (
   </Page>
 )
 
-export default TimelinePage
+export default HistoryPage

@@ -1,12 +1,12 @@
-import { getBacklinks } from './backlinks'
 import { getPostsWithMarkdown } from 'lib/posts'
 import { getBooksWithMarkdown } from 'lib/books'
+import { getBacklinks } from './backlinks'
 
-jest.mock('api/posts', () => ({
+jest.mock('lib/posts', () => ({
   getPostsWithMarkdown: jest.fn(),
 }))
 
-jest.mock('api/books', () => ({
+jest.mock('lib/books', () => ({
   getBooksWithMarkdown: jest.fn(() => []),
 }))
 
