@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { Flex, Link } from 'theme-ui'
-import { LAYOUT_WIDTH } from 'theme'
+import { LAYOUT_WIDTH } from 'ui/theme'
 import NavLink from './NavLink'
 
 const Header: React.FC = () => {

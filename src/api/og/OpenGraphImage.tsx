@@ -1,4 +1,4 @@
-import { COLORS } from 'theme/colors'
+import { COLORS } from 'ui/theme/colors'
 import type { ParsedQuery, Post, Book, Page } from './types'
 
 const renderPost = (post: Post) => (

@@ -1,7 +1,7 @@
 'use client'
 
 import { Box } from 'theme-ui'
-import { LAYOUT_WIDTH } from 'theme'
+import { LAYOUT_WIDTH } from 'ui/theme'
 import { usePathHistoryListener } from 'hooks/usePathHistory'
 import Header from 'components/Header'
 

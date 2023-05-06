@@ -1,4 +1,4 @@
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 const regular = localFont({
   src: './GT-America-Standard-Regular.woff2',

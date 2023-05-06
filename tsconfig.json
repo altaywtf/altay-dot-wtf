@@ -21,9 +21,9 @@
       "config": ["src/config"],
       "hooks/*": ["src/hooks/*"],
       "scripts/*": ["src/scripts/*"],
-      "theme": ["src/theme"],
-      "theme/*": ["src/theme/*"],
-      "utils/*": ["src/utils/*"]
+      "utils/*": ["src/utils/*"],
+      "ui": ["src/ui"],
+      "ui/*": ["src/ui/*"]
     },
     "plugins": [
       {

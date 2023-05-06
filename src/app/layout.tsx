@@ -1,8 +1,8 @@
 import AnalyticsWrapper from 'components/AnalyticsWrapper'
 import ThemeProvider from 'components/ThemeProvider'
-import RootStyleRegistry from './emotion'
 import ForceClient from 'components/ForceClient'
-import '../theme/style.css'
+import 'ui/theme/style.css'
+import RootStyleRegistry from './emotion'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <html lang="en">
