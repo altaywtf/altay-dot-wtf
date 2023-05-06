@@ -6,7 +6,7 @@ import NextLink from 'next/link'
 import Page from 'ui/Page'
 import BookCover from 'ui/BookCover'
 import BookInfo from 'ui/BookInfo'
-import type { Book } from 'api/books'
+import type { Book } from 'lib/books'
 
 export type BooksPageProps = {
   data: {

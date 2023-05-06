@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getBacklinks } from 'api/backlinks'
+import { getBacklinks } from 'lib/backlinks'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const type = req.query.type as string

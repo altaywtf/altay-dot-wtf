@@ -16,12 +16,10 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "api/*": ["src/api/*"],
       "config": ["src/config"],
       "lib/*": ["src/lib/*"],
       "scripts/*": ["src/scripts/*"],
-      "ui/*": ["src/ui/*"],
-      "utils/*": ["src/lib/utils/*"]
+      "ui/*": ["src/ui/*"]
     },
     "plugins": [
       {

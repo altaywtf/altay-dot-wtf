@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getBook } from 'api/books'
+import { getBook } from 'lib/books'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = req.query.slug as string

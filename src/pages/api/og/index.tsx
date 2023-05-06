@@ -1,8 +1,8 @@
 import type { NextRequest } from 'next/server'
 import { ImageResponse } from '@vercel/og'
 import qs from 'query-string'
-import { OpenGraphImage } from 'api/og/OpenGraphImage'
-import type { ParsedQuery, Post, Book, Page } from 'api/og/types'
+import { OpenGraphImage } from 'lib/og/OpenGraphImage'
+import type { ParsedQuery, Post, Book, Page } from 'lib/og/types'
 
 const loadFont = () => {
   const url = new URL(

@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image'
 import { Box } from 'theme-ui'
-import type { Book } from 'api/books'
+import type { Book } from 'lib/books'
 
 type Props = {
   book: Book

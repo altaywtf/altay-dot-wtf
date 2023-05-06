@@ -5,7 +5,7 @@ import { Box, Link } from 'theme-ui'
 import Page from 'ui/Page'
 import { formatDate } from 'lib/utils/date'
 import { postsCopy } from 'config'
-import type { Post } from 'api/posts'
+import type { Post } from 'lib/posts'
 
 export type PostsPageProps = {
   data: {

@@ -1,6 +1,6 @@
 import { getBacklinks } from './backlinks'
-import { getPostsWithMarkdown } from 'api/posts'
-import { getBooksWithMarkdown } from 'api/books'
+import { getPostsWithMarkdown } from 'lib/posts'
+import { getBooksWithMarkdown } from 'lib/books'
 
 jest.mock('api/posts', () => ({
   getPostsWithMarkdown: jest.fn(),

@@ -6,8 +6,8 @@ import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Markdown from 'ui/Markdown'
 import Backlinks from 'ui/Backlinks'
 import { postsCopy } from 'config'
-import type { Post } from 'api/posts'
-import type { Backlink } from 'api/backlinks'
+import type { Post } from 'lib/posts'
+import type { Backlink } from 'lib/backlinks'
 
 export type PostPageProps = {
   data: {

@@ -7,8 +7,8 @@ import BookInfo from 'ui/BookInfo'
 import Markdown from 'ui/Markdown'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Backlinks from 'ui/Backlinks'
-import type { Book } from 'api/books'
-import type { Backlink } from 'api/backlinks'
+import type { Book } from 'lib/books'
+import type { Backlink } from 'lib/backlinks'
 
 export type BookPageProps = {
   data: {
