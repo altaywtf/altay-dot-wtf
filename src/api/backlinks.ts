@@ -1,4 +1,4 @@
-import { hasLink } from 'utils/md'
+import { hasLink } from 'lib/utils/md'
 import { getPostsWithMarkdown } from 'api/posts'
 import { getBooksWithMarkdown } from 'api/books'
 

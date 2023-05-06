@@ -18,10 +18,10 @@
     "paths": {
       "api/*": ["src/api/*"],
       "config": ["src/config"],
-      "hooks/*": ["src/hooks/*"],
+      "lib/*": ["src/lib/*"],
       "scripts/*": ["src/scripts/*"],
-      "utils/*": ["src/utils/*"],
-      "ui/*": ["src/ui/*"]
+      "ui/*": ["src/ui/*"],
+      "utils/*": ["src/lib/utils/*"]
     },
     "plugins": [
       {

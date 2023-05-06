@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DATA_FOLDER_PATH } from 'utils/fs'
+import { DATA_FOLDER_PATH } from 'lib/utils/fs'
 import type { BaseBookWithMeta, Book } from './types'
 
 export const createBookNotes = (baseBookWithMeta: BaseBookWithMeta): Book['notes'] => {

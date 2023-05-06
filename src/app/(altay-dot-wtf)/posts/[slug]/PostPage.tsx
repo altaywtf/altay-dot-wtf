@@ -1,7 +1,7 @@
 'use client'
 
 import { Heading, Text, Box } from 'theme-ui'
-import { formatDate } from 'utils/date'
+import { formatDate } from 'lib/utils/date'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Markdown from 'ui/Markdown'
 import Backlinks from 'ui/Backlinks'

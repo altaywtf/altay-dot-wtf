@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo'
-import { getOpenGraphImage } from 'utils/openGraph'
+import { getOpenGraphImage } from 'lib/utils/openGraph'
 import { booksCopy } from 'config'
 
 const Head = () => (

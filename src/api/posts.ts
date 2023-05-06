@@ -1,8 +1,8 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
-import { DATA_FOLDER_PATH } from 'utils/fs'
-import { readMarkdownFile } from 'utils/md'
+import { DATA_FOLDER_PATH } from 'lib/utils/fs'
+import { readMarkdownFile } from 'lib/utils/md'
 
 type PostFrontMatter = {
   title: string

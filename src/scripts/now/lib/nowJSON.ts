@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DATA_FOLDER_PATH } from 'utils/fs'
+import { DATA_FOLDER_PATH } from 'lib/utils/fs'
 import { NowJSON } from './types'
 
 const NOW_JSON_PATH = `${DATA_FOLDER_PATH}/now.json`

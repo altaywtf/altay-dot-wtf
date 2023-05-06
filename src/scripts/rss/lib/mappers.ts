@@ -1,8 +1,8 @@
 import type { Author, Item } from 'feed'
 import { SITE_URL } from 'config'
-import { convertMarkdownToHTML } from 'utils/md'
-import { getOpenGraphImage } from 'utils/openGraph'
-import { sanitizeHtml } from 'utils/sanitize'
+import { convertMarkdownToHTML } from 'lib/utils/md'
+import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { sanitizeHtml } from 'lib/utils/sanitize'
 import type { Book } from 'api/books'
 import type { Post } from 'api/posts'
 

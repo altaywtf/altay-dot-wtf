@@ -1,5 +1,5 @@
 import { API_URL } from 'config'
-import { readMarkdownFile } from 'utils/md'
+import { readMarkdownFile } from 'lib/utils/md'
 import HomePage, { HomePageProps } from './HomePage'
 
 const fetchData = async (): Promise<HomePageProps['data']> => {

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs'
-import { DATA_FOLDER_PATH } from 'utils/fs'
+import { DATA_FOLDER_PATH } from 'lib/utils/fs'
 
 export type ContactLink = {
   title: 'Email' | 'Twitter' | 'Github' | 'LinkedIn'
