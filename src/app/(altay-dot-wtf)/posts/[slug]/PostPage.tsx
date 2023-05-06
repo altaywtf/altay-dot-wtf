@@ -2,9 +2,9 @@
 
 import { Heading, Text, Box } from 'theme-ui'
 import { formatDate } from 'utils/date'
-import ArtificialBackButton from 'components/ArtificialBackButton'
-import Markdown from 'components/Markdown'
-import Backlinks from 'components/Backlinks'
+import ArtificialBackButton from 'ui/ArtificialBackButton'
+import Markdown from 'ui/Markdown'
+import Backlinks from 'ui/Backlinks'
 import { postsCopy } from 'config'
 import type { Post } from 'api/posts'
 import type { Backlink } from 'api/backlinks'

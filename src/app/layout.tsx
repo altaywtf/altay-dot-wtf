@@ -1,6 +1,6 @@
-import AnalyticsWrapper from 'components/AnalyticsWrapper'
-import ThemeProvider from 'components/ThemeProvider'
-import ForceClient from 'components/ForceClient'
+import AnalyticsWrapper from 'ui/AnalyticsWrapper'
+import ThemeProvider from 'ui/ThemeProvider'
+import ForceClient from 'ui/ForceClient'
 import 'ui/theme/style.css'
 import RootStyleRegistry from './emotion'
 

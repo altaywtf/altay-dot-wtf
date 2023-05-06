@@ -17,12 +17,10 @@
     "baseUrl": ".",
     "paths": {
       "api/*": ["src/api/*"],
-      "components/*": ["src/components/*"],
       "config": ["src/config"],
       "hooks/*": ["src/hooks/*"],
       "scripts/*": ["src/scripts/*"],
       "utils/*": ["src/utils/*"],
-      "ui": ["src/ui"],
       "ui/*": ["src/ui/*"]
     },
     "plugins": [

@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { Box, Text, Link, Flex } from 'theme-ui'
 import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
 import { useRouter } from 'next/navigation'
-import { usePathHistory } from 'hooks/usePathHistory'
+import { usePathHistory } from 'ui/usePathHistory'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
   const router = useRouter()

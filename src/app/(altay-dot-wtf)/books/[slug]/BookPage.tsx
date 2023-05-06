@@ -2,11 +2,11 @@
 
 import { booksCopy } from 'config'
 import { Flex, Box, Heading, Text } from 'theme-ui'
-import BookCover from 'components/BookCover'
-import BookInfo from 'components/BookInfo'
-import Markdown from 'components/Markdown'
-import ArtificialBackButton from 'components/ArtificialBackButton'
-import Backlinks from 'components/Backlinks'
+import BookCover from 'ui/BookCover'
+import BookInfo from 'ui/BookInfo'
+import Markdown from 'ui/Markdown'
+import ArtificialBackButton from 'ui/ArtificialBackButton'
+import Backlinks from 'ui/Backlinks'
 import type { Book } from 'api/books'
 import type { Backlink } from 'api/backlinks'
 

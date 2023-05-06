@@ -2,8 +2,8 @@
 
 import { Box } from 'theme-ui'
 import { LAYOUT_WIDTH } from 'ui/theme'
-import { usePathHistoryListener } from 'hooks/usePathHistory'
-import Header from 'components/Header'
+import Header from 'ui/Header'
+import { usePathHistoryListener } from 'ui/usePathHistory'
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   usePathHistoryListener()

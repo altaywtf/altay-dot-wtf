@@ -1,7 +1,7 @@
 'use client'
 
 import { homeCopy } from 'config'
-import Page from 'components/Page'
+import Page from 'ui/Page'
 import { Flex, Link } from 'theme-ui'
 import { GrMail } from '@react-icons/all-files/gr/GrMail'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'

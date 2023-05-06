@@ -3,9 +3,9 @@
 import { booksCopy } from 'config'
 import { Box, Flex, Text, Link } from 'theme-ui'
 import NextLink from 'next/link'
-import Page from 'components/Page'
-import BookCover from 'components/BookCover'
-import BookInfo from 'components/BookInfo'
+import Page from 'ui/Page'
+import BookCover from 'ui/BookCover'
+import BookInfo from 'ui/BookInfo'
 import type { Book } from 'api/books'
 
 export type BooksPageProps = {

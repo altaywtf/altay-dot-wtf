@@ -2,7 +2,7 @@
 
 import NextLink from 'next/link'
 import { Box, Link } from 'theme-ui'
-import Page from 'components/Page'
+import Page from 'ui/Page'
 import { formatDate } from 'utils/date'
 import { postsCopy } from 'config'
 import type { Post } from 'api/posts'

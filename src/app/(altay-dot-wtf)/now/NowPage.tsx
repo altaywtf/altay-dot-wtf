@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import { Flex, Box, Heading, Link, Image } from 'theme-ui'
-import Page from 'components/Page'
+import Page from 'ui/Page'
 import { formatDate } from 'utils/date'
 import { nowCopy } from 'config'
 import type { NowJSON } from '../../../pages/api/now'

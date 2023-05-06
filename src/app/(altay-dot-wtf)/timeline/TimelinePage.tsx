@@ -1,7 +1,7 @@
 'use client'
 
-import Page from 'components/Page'
-import Markdown from 'components/Markdown'
+import Page from 'ui/Page'
+import Markdown from 'ui/Markdown'
 import { Box } from 'theme-ui'
 
 const TimelinePage: React.FC<{ data: string }> = ({ data }) => (
