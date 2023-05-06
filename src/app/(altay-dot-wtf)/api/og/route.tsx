@@ -5,7 +5,6 @@ import { OpenGraphImage } from 'lib/og/OpenGraphImage'
 import type { ParsedQuery, Post, Book, Page } from 'lib/og/types'
 
 export const runtime = 'edge'
-export const contentType = 'image/png'
 
 const loadFont = async () => {
   const url = new URL('../../../../ui/theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
