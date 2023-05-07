@@ -1,3 +1,5 @@
+'use client'
+
 import NextLink from 'next/link'
 import { Box, Text, Link, Flex } from 'theme-ui'
 import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'

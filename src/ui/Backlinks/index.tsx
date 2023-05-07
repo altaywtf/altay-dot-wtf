@@ -1,3 +1,5 @@
+'use client'
+
 import { Box, Flex, Heading, Link } from 'theme-ui'
 import NextLink from 'next/link'
 import type { Backlink } from 'lib/backlinks'

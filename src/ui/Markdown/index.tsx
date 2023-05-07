@@ -14,12 +14,12 @@ const Markdown: React.FC<Props> = ({ children }) => (
     remarkPlugins={[slug, gfm]}
     className="text-zinc-300"
     components={{
-      h1: (props) => <h1 className="my-3 text-3xl font-bold" {...props} />,
-      h2: (props) => <h2 className="my-3 text-2xl font-bold" {...props} />,
-      h3: (props) => <h3 className="my-3 text-xl font-bold" {...props} />,
-      h4: (props) => <h4 className="my-3 text-lg font-bold" {...props} />,
-      h5: (props) => <h5 className="my-3 text-base font-bold" {...props} />,
-      h6: (props) => <h6 className="my-3 text-sm font-bold" {...props} />,
+      h1: (props) => <h1 className="my-3 text-3xl" {...props} />,
+      h2: (props) => <h2 className="my-3 text-2xl" {...props} />,
+      h3: (props) => <h3 className="my-3 text-xl" {...props} />,
+      h4: (props) => <h4 className="my-3 text-lg" {...props} />,
+      h5: (props) => <h5 className="my-3 text-base" {...props} />,
+      h6: (props) => <h6 className="my-3 text-sm" {...props} />,
       a: (props) => <MDLink {...props} href={props.href || ''} />,
       code: (props) =>
         props.inline ? <span className="font-mono" {...props} /> : <MDCodeBlock {...props} />,
