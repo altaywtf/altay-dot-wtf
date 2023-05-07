@@ -1,4 +1,4 @@
-import { COLORS } from 'ui/theme/colors'
+import colors from 'tailwindcss/colors'
 import type { ParsedQuery, Post, Book, Page } from './types'
 
 const renderPost = (post: Post) => (
@@ -7,7 +7,7 @@ const renderPost = (post: Post) => (
   >
     <h1 style={{ fontSize: 96, padding: 0, margin: 0 }}>{post.title}</h1>
 
-    <h4 style={{ fontSize: 48, padding: 0, margin: 0, color: COLORS.textTertiary, marginTop: 36 }}>
+    <h4 style={{ fontSize: 48, padding: 0, margin: 0, color: colors.neutral[400], marginTop: 36 }}>
       {post.oneliner}
     </h4>
   </div>
@@ -41,7 +41,7 @@ const renderBook = (book: Book) => (
       </h2>
 
       <h3
-        style={{ fontSize: 56, color: COLORS.textTertiary, margin: 0, padding: 0, marginTop: 36 }}
+        style={{ fontSize: 56, color: colors.neutral[400], margin: 0, padding: 0, marginTop: 36 }}
       >
         by {book.author}
       </h3>
@@ -55,7 +55,7 @@ const renderBook = (book: Book) => (
           borderRadius: '4px',
           borderWidth: '4px',
           borderStyle: 'solid',
-          borderColor: COLORS.border,
+          borderColor: colors.neutral[700],
         }}
       />
     </div>
@@ -97,7 +97,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
         WebkitTextSizeAdjust: 'none',
         letterSpacing: '0.015em',
         wordSpacing: '0.001em',
-        color: COLORS.text,
+        color: colors.neutral[200],
         position: 'relative',
       }}
     >
@@ -136,7 +136,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
               width: 100,
               height: 100,
               borderRadius: 100,
-              border: `4px solid ${COLORS.border}`,
+              border: `4px solid ${colors.neutral[600]}`,
             }}
           />
 

@@ -9,6 +9,23 @@ const nextConfig = {
     typedRoutes: true,
   },
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'oku.ams3.cdn.digitaloceanspaces.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.mzstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.tvmaze.com',
+      },
+    ],
+  },
+
   // headers: async () => [
   //   {
   //     source: '/:path*',

@@ -1,10 +1,13 @@
 import { Metadata } from 'next'
 import { API_URL, postsCopy } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import PostsPage, { PostsPageProps } from './PostsPage'
+import type { Post } from 'lib/posts'
+import Link from 'next/link'
+import Page from 'ui/Page'
+import { PostDateAndReadingTime } from './components/PostDateAndReadingTime'
 
-const fetchData = async (): Promise<PostsPageProps['data']> =>
-  await fetch(`${API_URL}/posts`).then((res) => res.json())
+const fetchData = (): Promise<{ posts: Post[] }> =>
+  fetch(`${API_URL}/posts`).then((res) => res.json())
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   title: postsCopy.title,
@@ -17,9 +20,33 @@ export const generateMetadata = async (): Promise<Metadata> => ({
   },
 })
 
-const Page = async () => {
-  const data = await fetchData()
-  return <PostsPage data={data} />
+const PostsPage = async () => {
+  const { posts } = await fetchData()
+
+  return (
+    <Page header={postsCopy}>
+      <div className="flex flex-col gap-6">
+        {posts.map((post) => (
+          <div key={post.slug} className="flex flex-col gap-1">
+            <div>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="font-medium text-amber-400 hover:text-amber-200"
+              >
+                {post.title}
+              </Link>
+            </div>
+
+            <p>{post.oneliner}</p>
+
+            <div className="text-sm">
+              <PostDateAndReadingTime post={post} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </Page>
+  )
 }
 
-export default Page
+export default PostsPage

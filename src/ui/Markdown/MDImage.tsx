@@ -1,4 +1,3 @@
-import { Box } from 'theme-ui'
 import Image from 'next/image'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -9,21 +8,13 @@ type Props = {
 }
 
 const MDImage: React.FC<Props> = ({ src, alt }) => (
-  <Box as="span" my={3} sx={{ display: 'block' }}>
+  <div>
     <Zoom wrapElement="span">
-      <Box
-        as="span"
-        sx={{
-          display: 'block',
-          position: 'relative',
-          width: [320, 480, 640],
-          height: [200, 300, 400],
-        }}
-      >
+      <div>
         <Image alt={alt} src={src} fill style={{ objectFit: 'contain' }} />
-      </Box>
+      </div>
     </Zoom>
-  </Box>
+  </div>
 )
 
 export default MDImage

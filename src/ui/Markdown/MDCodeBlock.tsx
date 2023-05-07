@@ -1,4 +1,3 @@
-import { Box } from 'theme-ui'
 import { PrismLight } from 'react-syntax-highlighter'
 import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
 import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
@@ -14,11 +13,11 @@ const MDCodeBlock: React.FC<CodeProps> = (props) => {
   const language = props.className?.replace(/language-/, '') || 'tsx'
 
   return (
-    <Box my={3}>
+    <div className="my-3">
       <PrislmLightAny style={dark} language={language} customStyle={{ borderRadius: '4px' }}>
         {props.children}
       </PrislmLightAny>
-    </Box>
+    </div>
   )
 }
 

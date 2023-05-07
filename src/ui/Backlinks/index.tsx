@@ -1,21 +1,9 @@
-import { Box, Flex, Heading, Link } from 'theme-ui'
-import NextLink from 'next/link'
+'use client'
+
+import Link from 'next/link'
 import type { Backlink } from 'lib/backlinks'
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
-
-const BacklinkItem: React.FC<{ sourceURL: string; backlink: Backlink }> = ({
-  sourceURL,
-  backlink,
-}) => (
-  <Link
-    as={NextLink}
-    href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`}
-    sx={{ color: 'text' }}
-  >
-    {backlink.title}
-  </Link>
-)
 
 const Backlinks: React.FC<{
   sourceType: 'book' | 'post'
@@ -29,19 +17,22 @@ const Backlinks: React.FC<{
   }
 
   return (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 'default' }}>
-      <Heading as="h4">Links to this {sourceType}</Heading>
+    <div className="flex flex-col gap-2 rounded bg-neutral-900 p-4">
+      <h4>Links to this {sourceType}</h4>
 
-      <Box m={2} />
-
-      <Flex sx={{ alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <ul className="list-inside list-disc">
         {backlinks.map((backlink) => (
-          <Box key={backlink.url} my={1} sx={{ width: ['100%', '100%', '50%'] }}>
-            <BacklinkItem sourceURL={sourceURL} backlink={backlink} />
-          </Box>
+          <li key={backlink.url}>
+            <Link
+              href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}` as any}
+              className="hover:underline"
+            >
+              {backlink.title}
+            </Link>
+          </li>
         ))}
-      </Flex>
-    </Box>
+      </ul>
+    </div>
   )
 }
 

@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import { zebrastikCopy } from 'config'
-import ClientLayout from './ClientLayout'
 
 export const metadata: Metadata = {
   title: 'zebrastik',
@@ -11,8 +10,6 @@ export const metadata: Metadata = {
   },
 }
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <ClientLayout>{children}</ClientLayout>
-)
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => <main>{children}</main>
 
 export default Layout

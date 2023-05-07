@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2023-05-02T08:36:53.220Z",
+  "updatedAt": "2023-05-07T20:16:25.010Z",
   "sections": [
     {
       "_id": "books",
@@ -26,34 +26,29 @@
       "title": "🎧 Listening",
       "data": [
         {
+          "title": "Envy (feat. Mogli) - Single",
+          "creator": "Christian Löffler",
+          "url": "https://music.apple.com/us/album/envy-feat-mogli-single/1681071244",
+          "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music126/v4/77/41/2a/77412ab3-ef78-e60c-31a6-e019ca3b972a/197188617615.jpg/3000x3000bb.jpg"
+        },
+        {
+          "title": "Arrived Anxious, Left Bored",
+          "creator": "Flume",
+          "url": "https://music.apple.com/us/album/arrived-anxious-left-bored/1680417485",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Music116/v4/65/ae/41/65ae41db-e28a-0b29-bdf6-77cdc471854c/196922428852_Cover.jpg/1400x1400bb.jpg"
+        },
+
+        {
+          "title": "Ólafur Arnalds & Similar Artists Station",
+          "creator": "Ólafur Arnalds & Similar Artists Station",
+          "url": "https://music.apple.com/us/station/%C3%B3lafur-arnalds-similar-artists-station/ra.265425550",
+          "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/a7/ee/3d/a7ee3d8d-9da3-915f-6c4f-27492b754663/mzl.bneuzttp.jpg/1500x1500AM.RSMA01.jpg?imgLeft=Features116%2Fv4%2F1d%2F71%2F0d%2F1d710d12-b283-6567-8d64-9b914c341c03%2Fmzl.acqcfnsf.jpg&imgRight=Music126%2Fv4%2Fa1%2Fa0%2F47%2Fa1a0470a-0227-0ac6-7a76-0a0f0693d6b5%2Fpr_source.png"
+        },
+        {
           "title": "Cercle: Solomun at Cercle Festival in Chambord, France (DJ Mix)",
           "creator": "Solomun",
           "url": "https://music.apple.com/us/album/cercle-solomun-at-cercle-festival-in-chambord-france-dj-mix/1569681689",
           "imageURL": "https://is3-ssl.mzstatic.com/image/thumb/Music116/v4/38/4f/c0/384fc01a-5bb0-9b52-834f-3f9a6c05c304/dj.ajyqbkri.jpg/1440x1440bb.jpg"
-        },
-        {
-          "title": "The New Abnormal",
-          "creator": "The Strokes",
-          "url": "https://music.apple.com/us/album/the-new-abnormal/1498121188",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/62/a6/ff/62a6ff2a-95c9-5302-31f4-2dcca9e40323/886448281085.jpg/3000x3000bb.jpg"
-        },
-        {
-          "title": "Angles",
-          "creator": "The Strokes",
-          "url": "https://music.apple.com/us/album/angles/581797918",
-          "imageURL": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/8a/90/df/8a90dff0-73c6-c483-ab79-6810308414a2/884977195552.jpg/1426x1416bb.jpg"
-        },
-        {
-          "title": "Arnalds: A Sunrise Session (Visual EP)",
-          "creator": "Ólafur Arnalds",
-          "url": "https://music.apple.com/us/album/arnalds-a-sunrise-session-visual-ep/1555036055",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/d4/cb/e9/d4cbe98a-f339-e360-9ded-13eea719774c/21UMGIM02238.rgb.jpg/3000x3000bb.jpg"
-        },
-        {
-          "title": "Triangle",
-          "creator": "Slow Magic",
-          "url": "https://music.apple.com/us/album/triangle/518532898",
-          "imageURL": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/fe/ee/41/feee4186-ab6f-3d19-9c6f-013a4c6cb3d9/5050580570528.jpg/800x800bb.jpg"
         }
       ]
     },

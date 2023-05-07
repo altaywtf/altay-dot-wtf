@@ -1,32 +1,26 @@
-import NextLink from 'next/link'
-import { Box, Text, Link, Flex } from 'theme-ui'
+'use client'
+
+import Link from 'next/link'
 import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
 import { useRouter } from 'next/navigation'
 import { usePathHistory } from 'ui/usePathHistory'
 
-const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
+const ArtificialBackButton: React.FC<{ href: any; label: string }> = ({ href, label }) => {
   const router = useRouter()
   const prevPath = usePathHistory()
   const content = (
-    <Flex sx={{ alignItems: 'center' }}>
+    <span className="flex items-center gap-1 text-neutral-400 hover:text-neutral-300">
       <CgArrowLeft />
-      <Box mx={1} />
-      <Text>{label}</Text>
-    </Flex>
+      {label}
+    </span>
   )
 
-  return (
-    <Box sx={{ display: 'inline-block' }}>
-      {prevPath === href ? (
-        <Link variant="links.silent" onClick={() => router.back()}>
-          {content}
-        </Link>
-      ) : (
-        <Link as={NextLink} href={href} variant="links.silent">
-          {content}
-        </Link>
-      )}
-    </Box>
+  return prevPath === href ? (
+    <a onClick={() => router.back()} className="cursor-pointer">
+      {content}
+    </a>
+  ) : (
+    <Link href={href}>{content}</Link>
   )
 }
 

@@ -1,36 +1,21 @@
-import NextLink from 'next/link'
-import { Link } from 'theme-ui'
+'use client'
 
-type Props = {
-  href: string
-  label: string
-  active: boolean
+import Link, { LinkProps } from 'next/link'
+import { usePathname } from 'next/navigation'
+
+type Props = LinkProps<any> & {
+  activeClassName: string
 }
 
-const NavLink: React.FC<Props> = ({ href, label, active }) => (
-  <Link
-    as={NextLink}
-    href={href}
-    sx={{
-      fontSize: 0,
-      paddingY: '.4rem',
-      paddingX: 2,
-      lineHeight: 1,
-      fontFamily: 'heading',
-      fontWeight: 'heading',
-      borderRadius: 'default',
-      color: 'text',
-      backgroundColor: active ? 'buttonBackground' : 'transparent',
-      '@media (hover: hover)': {
-        ':hover': {
-          backgroundColor: 'buttonBackground',
-          color: 'text',
-        },
-      },
-    }}
-  >
-    {label}
-  </Link>
-)
+const NavLink: React.FC<Props> = ({ href, children, className, activeClassName }) => {
+  const pathname = usePathname()
+  const isActive = href === '/' ? pathname === '/' : pathname.startsWith(href)
+
+  return (
+    <Link href={href} className={`${className} ${isActive ? activeClassName : ''}`}>
+      {children}
+    </Link>
+  )
+}
 
 export default NavLink

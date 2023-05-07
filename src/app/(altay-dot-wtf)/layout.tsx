@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from 'config'
-import ClientLayout from './ClientLayout'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
+import Header from 'ui/Header'
+import { PathHistoryListener } from 'ui/PathHistoryListener'
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +22,11 @@ export const metadata: Metadata = {
 } as const
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <ClientLayout>{children}</ClientLayout>
+  <>
+    <Header />
+    <main>{children}</main>
+    <PathHistoryListener />
+  </>
 )
 
 export default Layout

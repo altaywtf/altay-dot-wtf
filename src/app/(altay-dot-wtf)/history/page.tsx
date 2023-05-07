@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
+import { historyCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import HistoryPage from './HistoryPage'
-import { historyCopy } from 'config'
+import Page from 'ui/Page'
+import Markdown from 'ui/Markdown'
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   ...historyCopy,
@@ -15,6 +16,10 @@ export const generateMetadata = async (): Promise<Metadata> => ({
   },
 })
 
-const Page = () => <HistoryPage data={readMarkdownFile('history.md')} />
+const HistoryPage = () => (
+  <Page header={historyCopy}>
+    <Markdown>{readMarkdownFile('history.md')}</Markdown>
+  </Page>
+)
 
-export default Page
+export default HistoryPage
