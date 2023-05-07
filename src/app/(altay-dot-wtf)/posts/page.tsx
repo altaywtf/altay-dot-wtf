@@ -25,22 +25,26 @@ const PostsPage = async () => {
 
   return (
     <Page header={postsCopy}>
-      {posts.map((post) => (
-        <div key={post.slug} className="my-6 flex flex-col gap-1">
-          <Link
-            href={`/blog/${post.slug}`}
-            className="font-medium text-amber-400 hover:text-amber-200"
-          >
-            {post.title}
-          </Link>
+      <div className="flex flex-col gap-6">
+        {posts.map((post) => (
+          <div key={post.slug} className="flex flex-col gap-1">
+            <div>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="font-medium text-amber-400 hover:text-amber-200"
+              >
+                {post.title}
+              </Link>
+            </div>
 
-          <p>{post.oneliner}</p>
+            <p>{post.oneliner}</p>
 
-          <div className="text-sm">
-            <PostDateAndReadingTime post={post} />
+            <div className="text-sm">
+              <PostDateAndReadingTime post={post} />
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </Page>
   )
 }

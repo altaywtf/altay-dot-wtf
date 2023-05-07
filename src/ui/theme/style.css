@@ -10,6 +10,11 @@
     --app-width: 640px;
   }
 
+  html,
+  body {
+    @apply bg-neutral-950;
+  }
+
   main {
     @apply mx-auto;
     @apply my-4;
@@ -17,6 +22,7 @@
     @apply w-[var(--app-width)];
     @apply px-4;
     @apply md:px-0;
+    @apply pb-8;
   }
 
   h1,
