@@ -1,5 +1,4 @@
-import { Theme, merge, ThemeUIStyleObject } from 'theme-ui'
-import { lighten } from '@theme-ui/color'
+import { Theme, merge } from 'theme-ui'
 import { COLORS } from './colors'
 import { fonts } from './fonts'
 
@@ -7,34 +6,23 @@ export const LAYOUT_WIDTH = 640
 
 const makeTheme = <T extends Theme>(t: T) => t
 
-const getBrandLinkStyle = (brand: 'putio' | 'klarna' | 'lisk'): ThemeUIStyleObject => ({
-  fontFamily: 'heading',
-  fontWeight: 'heading',
-  color: brand,
-  '@media (hover: hover)': {
-    '&:hover': {
-      color: lighten(brand, 0.15),
-    },
-  },
-})
-
 const styles: Theme['styles'] = {
   root: {
-    bg: 'background',
-    fontFamily: 'body',
-    fontWeight: 'body',
-    lineHeight: 'body',
-    fontSize: ['14px', '16px'],
-    letterSpacing: '0.0125em',
-    WebkitFontSmoothing: 'antialiased',
-    WebkitTextSizeAdjust: 'none',
-    MozOsxFontSmoothing: 'grayscale',
-    padding: 0,
-    margin: 0,
-    overflowY: 'scroll',
-    'a[href="https://put.io"]': getBrandLinkStyle('putio'),
-    'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
-    'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),
+    // bg: 'background',
+    // // fontFamily: 'body',
+    // fontWeight: 'body',
+    // lineHeight: 'body',
+    // fontSize: ['14px', '16px'],
+    // letterSpacing: '0.0125em',
+    // WebkitFontSmoothing: 'antialiased',
+    // WebkitTextSizeAdjust: 'none',
+    // MozOsxFontSmoothing: 'grayscale',
+    // padding: 0,
+    // margin: 0,
+    // overflowY: 'scroll',
+    // 'a[href="https://put.io"]': getBrandLinkStyle('putio'),
+    // 'a[href="https://klarna.com"]': getBrandLinkStyle('klarna'),
+    // 'a[href="https://lisk.io"]': getBrandLinkStyle('lisk'),
   },
 
   a: {

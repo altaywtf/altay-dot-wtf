@@ -2,6 +2,9 @@ import { Metadata } from 'next'
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from 'config'
 import ClientLayout from './ClientLayout'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
+import RootStyleRegistry from '../emotion'
+import ThemeProvider from 'ui/ThemeProvider'
+import ForceClient from 'ui/ForceClient'
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +24,13 @@ export const metadata: Metadata = {
 } as const
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <ClientLayout>{children}</ClientLayout>
+  <RootStyleRegistry>
+    <ThemeProvider>
+      <ForceClient>
+        <ClientLayout>{children}</ClientLayout>
+      </ForceClient>
+    </ThemeProvider>
+  </RootStyleRegistry>
 )
 
 export default Layout

@@ -1,54 +1,26 @@
-'use client'
-
 import Image from 'next/image'
 import { zebrastikCopy } from 'config'
-import { Box, Heading, Link, Text } from 'theme-ui'
 
 const Zebrastik = () => (
   <>
-    <Box
-      sx={{
-        width: 100,
-        height: 100,
-        borderRadius: '8px',
-        overflow: 'hidden',
-        position: 'relative',
-      }}
-    >
+    <div className="relative h-28 w-28 overflow-hidden rounded-lg">
       <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
-    </Box>
+    </div>
 
-    <Box my={3} />
+    <div className="mt-4 flex flex-col gap-2">
+      <h1>{zebrastikCopy.title}</h1>
+      <p className="text-gray-400">{zebrastikCopy.description}</p>
+    </div>
 
-    <Heading>{zebrastikCopy.title}</Heading>
+    <hr className="my-8" />
 
-    <Box my={2} />
+    <a href="mailto:altay@zebrastik.com">altay@zebrastik.com</a>
 
-    <Text color="textSecondary">{zebrastikCopy.description}</Text>
-
-    <Box my={4}>
-      <hr />
-    </Box>
-
-    <Box>
-      <Link color="white" href="mailto:altay@zebrastik.com">
-        altay@zebrastik.com
-      </Link>
-    </Box>
-
-    <Box mt={3}>
-      <Box>
-        <Text color="textSecondary">zebrastik, LLC</Text>
-      </Box>
-
-      <Box>
-        <Text color="textSecondary">30 N Gould St, STE 4000</Text>
-      </Box>
-
-      <Box>
-        <Text color="textSecondary">Sheridan, WY 82801</Text>
-      </Box>
-    </Box>
+    <div className="mt-4 text-gray-400">
+      <p>zebrastik, LLC</p>
+      <p>30 N Gould St, STE 4000</p>
+      <p>Sheridan, WY 82801</p>
+    </div>
   </>
 )
 

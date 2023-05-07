@@ -1,11 +1,9 @@
 import AnalyticsWrapper from 'ui/AnalyticsWrapper'
-import ThemeProvider from 'ui/ThemeProvider'
-import ForceClient from 'ui/ForceClient'
 import 'ui/theme/style.css'
-import RootStyleRegistry from './emotion'
+import { gtAmerica } from 'ui/theme/fonts'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <html lang="en">
+  <html lang="en" className={gtAmerica.variable}>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="theme-color" content="#101010" />
@@ -13,12 +11,8 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     </head>
 
     <body>
-      <RootStyleRegistry>
-        <ThemeProvider>
-          <ForceClient>{children}</ForceClient>
-        </ThemeProvider>
-        <AnalyticsWrapper />
-      </RootStyleRegistry>
+      {children}
+      <AnalyticsWrapper />
     </body>
   </html>
 )
