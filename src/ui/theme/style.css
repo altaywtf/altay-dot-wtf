@@ -17,9 +17,9 @@
     @apply mx-auto;
     @apply my-4;
     @apply max-w-full;
+    @apply w-[var(--app-width)];
     @apply px-4;
     @apply md:px-0;
-    width: var(--app-width);
   }
 
   h1 {
