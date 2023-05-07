@@ -1,9 +1,6 @@
 import { Metadata } from 'next'
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import RootStyleRegistry from '../emotion'
-import ThemeProvider from 'ui/ThemeProvider'
-import ForceClient from 'ui/ForceClient'
 import Header from 'ui/Header'
 import { PathHistoryListener } from 'ui/PathHistoryListener'
 
@@ -25,15 +22,11 @@ export const metadata: Metadata = {
 } as const
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <RootStyleRegistry>
-    <ThemeProvider>
-      <ForceClient>
-        <Header />
-        <main>{children}</main>
-        <PathHistoryListener />
-      </ForceClient>
-    </ThemeProvider>
-  </RootStyleRegistry>
+  <>
+    <Header />
+    <main>{children}</main>
+    <PathHistoryListener />
+  </>
 )
 
 export default Layout

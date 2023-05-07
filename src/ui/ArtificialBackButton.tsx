@@ -16,7 +16,7 @@ const ArtificialBackButton: React.FC<{ href: any; label: string }> = ({ href, la
   )
 
   return prevPath === href ? (
-    <a href="#" onClick={() => router.back()}>
+    <a onClick={() => router.back()} className="cursor-pointer">
       {content}
     </a>
   ) : (

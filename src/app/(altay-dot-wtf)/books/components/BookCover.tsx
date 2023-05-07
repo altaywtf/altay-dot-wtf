@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image'
-import { Box } from 'theme-ui'
 import type { Book } from 'lib/books'
 
 type Props = {
@@ -7,8 +6,8 @@ type Props = {
   width?: number
 }
 
-const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
-  <Box sx={{ borderRadius: 'default', overflow: 'hidden' }}>
+export const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
+  <div className="overflow-hidden rounded">
     <Image
       alt={book.title}
       src={book.coverImage.url}
@@ -18,7 +17,5 @@ const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
       placeholder="blur"
       blurDataURL={book.coverImage.blurhash}
     />
-  </Box>
+  </div>
 )
-
-export default BookCover
