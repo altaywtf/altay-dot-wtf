@@ -1,4 +1,4 @@
-export const HEADER = [
+export const HEADER_NAV_LINKS = [
   {
     label: 'Now',
     href: '/now',

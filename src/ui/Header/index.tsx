@@ -1,4 +1,6 @@
-import { HEADER } from 'config'
+'use client'
+
+import { HEADER_NAV_LINKS } from 'config'
 import { usePathname } from 'next/navigation'
 import NextLink from 'next/link'
 import Image from 'next/image'
@@ -10,20 +12,9 @@ const Header: React.FC = () => {
   const pathname = usePathname() || ''
 
   return (
-    <Flex
-      as="header"
-      sx={{
-        justifyContent: 'center',
-        position: 'sticky',
-        zIndex: 1,
-        width: '100%',
-        left: 0,
-        top: 0,
-        paddingX: [3, 3, 0],
-        paddingY: 2,
-        backgroundColor: 'backgroundAlpha',
-        backdropFilter: 'saturate(180%) blur(20px)',
-      }}
+    <header
+      className="bg-[rgba(0, 0, 0, 0.75)] sticky left-0 top-0 z-10 flex w-full justify-center px-0 py-2 sm:px-3"
+      style={{ backdropFilter: 'saturate(180%) blur(20px)' }}
     >
       <Flex
         sx={{
@@ -59,12 +50,12 @@ const Header: React.FC = () => {
         </Link>
 
         <Flex sx={{ alignItems: 'center', gap: 1 }}>
-          {HEADER.map(({ label, href }) => (
+          {HEADER_NAV_LINKS.map(({ label, href }) => (
             <NavLink key={href} href={href} label={label} active={pathname.startsWith(href)} />
           ))}
         </Flex>
       </Flex>
-    </Flex>
+    </header>
   )
 }
 
