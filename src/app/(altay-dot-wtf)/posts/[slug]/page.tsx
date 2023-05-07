@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 import { API_URL, postsCopy } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import { formatDate } from 'lib/utils/date'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Backlinks from 'ui/Backlinks'
 import Markdown from 'ui/Markdown'
+import { PostDateAndReadingTime } from '../components/PostDateAndReadingTime'
 
 type Props = {
   params: { slug: string }
@@ -45,28 +45,21 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 }
 
 const Page = async ({ params }: Props) => {
-  const data = await fetchData(params.slug)
+  const { post, markdown, backlinks } = await fetchData(params.slug)
 
   return (
-    <>
-      <div className="flex flex-col gap-4">
-        <ArtificialBackButton href="/posts" label={postsCopy.title} />
+    <div className="flex flex-col gap-6">
+      <ArtificialBackButton href="/posts" label={postsCopy.title} />
 
-        <div>
-          <h1>{data.post.title}</h1>
-
-          <div className="flex flex-row gap-1 text-zinc-400">
-            {formatDate(data.post.date)}
-            <span>·</span>
-            {data.post.readingTime}
-          </div>
-        </div>
+      <div className="flex flex-col gap-2">
+        <h1>{post.title}</h1>
+        <PostDateAndReadingTime post={post} />
       </div>
 
-      <Markdown>{data.markdown}</Markdown>
+      <Markdown>{markdown}</Markdown>
 
-      <Backlinks sourceType="post" sourceURL={data.post.url} backlinks={data.backlinks} />
-    </>
+      <Backlinks sourceType="post" sourceURL={post.url} backlinks={backlinks} />
+    </div>
   )
 }
 

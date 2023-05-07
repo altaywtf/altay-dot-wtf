@@ -8,6 +8,7 @@ import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithubInverted } from '@react-icons/all-files/vsc/VscGithubInverted'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import type { ContactLink } from 'lib/contact'
+import Markdown from 'ui/Markdown'
 
 const getContactLinkIcon = (title: ContactLink['title']) => {
   switch (title) {
@@ -33,7 +34,9 @@ export type HomePageProps = {
 }
 
 const HomePage: React.FC<HomePageProps> = ({ data }) => (
-  <Page header={{ title: homeCopy.title, description: data.description }}>
+  <Page header={{ title: homeCopy.title }}>
+    <Markdown>{data.description}</Markdown>
+
     <Flex sx={{ mt: -2, gap: 2 }}>
       {data.contactLinks.map(({ title, url }) => (
         <Link

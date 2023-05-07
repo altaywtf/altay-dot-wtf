@@ -3,7 +3,6 @@
 import Link, { LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
-// zort
 type Props = LinkProps<any> & {
   activeClassName: string
 }

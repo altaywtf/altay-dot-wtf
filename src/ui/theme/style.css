@@ -5,10 +5,9 @@
 @layer base {
   :root {
     @apply antialiased;
-    @apply text-white;
+    @apply text-neutral-200;
+    @apply bg-neutral-950;
     --app-width: 640px;
-    --app-bg: #101010;
-    background-color: var(--app-bg);
   }
 
   main {
@@ -35,7 +34,7 @@
   }
 
   hr {
-    @apply bg-zinc-800;
+    @apply bg-neutral-800;
     @apply h-px;
     @apply border-0;
   }
