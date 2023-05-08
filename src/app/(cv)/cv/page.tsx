@@ -14,9 +14,9 @@ export const generateMetadata = async (): Promise<Metadata> => ({
 })
 
 const CV = () => (
-  <main className="px-4 py-8 print:invert sm:px-0">
+  <section className="app-width px-4 py-8 print:invert sm:px-0">
     <Markdown>{readMarkdownFile('cv.md')}</Markdown>
-  </main>
+  </section>
 )
 
 export default CV

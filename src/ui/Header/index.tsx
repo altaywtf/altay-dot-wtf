@@ -3,8 +3,8 @@ import Image from 'next/image'
 import NavLink from './NavLink'
 
 const Header: React.FC = () => (
-  <header className="sticky left-0 top-0 z-10 flex w-full justify-center px-2 py-2 backdrop-blur-lg sm:px-0">
-    <nav className="flex w-full items-center justify-between">
+  <header className="sticky left-0 top-0 z-10 flex justify-center px-2 py-2 backdrop-blur-lg sm:px-0">
+    <nav className="app-width flex items-center justify-between">
       <NavLink
         href="/"
         title="That's my head, also a link to home page. Please press gently."
