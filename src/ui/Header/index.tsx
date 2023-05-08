@@ -4,7 +4,7 @@ import NavLink from './NavLink'
 
 const Header: React.FC = () => (
   <header className="sticky left-0 top-0 z-10 flex w-full justify-center px-3 py-2 backdrop-blur-lg">
-    <div className="flex w-[var(--app-width)] items-center justify-between">
+    <nav className="flex w-[var(--app-width)] items-center justify-between">
       <NavLink
         href="/"
         title="That's my head, also a link to home page. Please press gently."
@@ -26,7 +26,7 @@ const Header: React.FC = () => (
           </NavLink>
         ))}
       </div>
-    </div>
+    </nav>
   </header>
 )
 
