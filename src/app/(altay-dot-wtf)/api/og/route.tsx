@@ -8,14 +8,13 @@ export const runtime = 'edge'
 
 const loadFont = async () => {
   const url = new URL('../../../../ui/theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
-  console.log(url)
   const res = await fetch(url)
   const fontData = await res.arrayBuffer()
   return fontData
 }
 
-const parseRequest = (req: NextRequest): ParsedQuery => {
-  const { query } = qs.parseUrl(req.url)
+const parseRequest = (request: NextRequest): ParsedQuery => {
+  const { query } = qs.parseUrl(request.url)
   const { type } = query as unknown as ParsedQuery
 
   switch (type) {

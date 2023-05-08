@@ -5623,11 +5623,6 @@ react-markdown@^8.0.3:
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-react-medium-image-zoom@^5.1.2:
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.1.5.tgz#550145e04f2635449c7abddd57ddf374f01c1d33"
-  integrity sha512-dxqunC1xsaQZV48FM95I7QX+2wuMgOloYAHVw9034S09UGJ66JQgohG9bgkrfKU0cl3b34HCJeswy4RDIOcSiw==
-
 react-star-rating-component@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/react-star-rating-component/-/react-star-rating-component-1.4.1.tgz#74dc1c73493f088013331c234190b8cccad31f6b"

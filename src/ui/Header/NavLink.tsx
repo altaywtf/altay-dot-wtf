@@ -4,10 +4,10 @@ import Link, { LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
 type Props = LinkProps<any> & {
-  activeClassName: string
+  activeClassName?: string
 }
 
-const NavLink: React.FC<Props> = ({ href, children, className, activeClassName }) => {
+const NavLink: React.FC<Props> = ({ href, children, className, activeClassName = '' }) => {
   const pathname = usePathname()
   const isActive = href === '/' ? pathname === '/' : pathname.startsWith(href)
 

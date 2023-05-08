@@ -60,7 +60,7 @@ const BookPage = async ({ params }: Props) => {
       <ArtificialBackButton href="/books" label={booksCopy.title} />
 
       <div key={book.slug} className="flex flex-row gap-4">
-        <div className="min-w-[160px]">
+        <div className="min-w-[96px] sm:min-w-[128px] md:min-w-[160px]">
           <BookCover book={book} />
         </div>
 
