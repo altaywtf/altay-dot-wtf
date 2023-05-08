@@ -1,13 +1,36 @@
+/* eslint-disable @next/next/no-img-element */
+
 import colors from 'tailwindcss/colors'
 import type { ParsedQuery, Post, Book, Page } from './types'
 
 const renderPost = (post: Post) => (
   <div
-    style={{ width: '100%', display: 'flex', alignItems: 'flex-start', flexDirection: 'column' }}
+    style={{
+      width: '100%',
+      display: 'flex',
+      alignItems: 'flex-start',
+      flexDirection: 'column',
+    }}
   >
-    <h1 style={{ fontSize: 96, padding: 0, margin: 0 }}>{post.title}</h1>
+    <h1
+      style={{
+        fontSize: 96,
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      {post.title}
+    </h1>
 
-    <h4 style={{ fontSize: 48, padding: 0, margin: 0, color: colors.neutral[400], marginTop: 36 }}>
+    <h4
+      style={{
+        fontSize: 48,
+        padding: 0,
+        margin: 0,
+        color: colors.neutral[400],
+        marginTop: 36,
+      }}
+    >
       {post.oneliner}
     </h4>
   </div>
@@ -41,15 +64,28 @@ const renderBook = (book: Book) => (
       </h2>
 
       <h3
-        style={{ fontSize: 56, color: colors.neutral[400], margin: 0, padding: 0, marginTop: 36 }}
+        style={{
+          fontSize: 56,
+          color: colors.neutral[400],
+          margin: 0,
+          padding: 0,
+          marginTop: 36,
+        }}
       >
         by {book.author}
       </h3>
     </div>
 
-    <div style={{ display: 'flex', height: 360, width: 'auto' }}>
+    <div
+      style={{
+        display: 'flex',
+        height: 360,
+        width: 'auto',
+      }}
+    >
       <img
         src={book.coverImageURL}
+        alt="cover-image"
         style={{
           height: '100%',
           borderRadius: '4px',
@@ -63,8 +99,21 @@ const renderBook = (book: Book) => (
 )
 
 const renderPage = (page: Page) => (
-  <div style={{ display: 'flex', width: '100%' }}>
-    <h1 style={{ fontSize: 96, padding: 0, margin: 0 }}>{page.title}</h1>
+  <div
+    style={{
+      display: 'flex',
+      width: '100%',
+    }}
+  >
+    <h1
+      style={{
+        fontSize: 96,
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      {page.title}
+    </h1>
   </div>
 )
 
@@ -103,6 +152,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
     >
       <img
         src="https://altay.wtf/images/meta-bg.png"
+        alt="meta-bg"
         style={{
           position: 'absolute',
           zIndex: -1,
@@ -132,6 +182,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
         >
           <img
             src="https://altay.wtf/images/avatar.png"
+            alt="avatar"
             style={{
               width: 100,
               height: 100,
@@ -150,7 +201,13 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
           </span>
         </header>
 
-        <section style={{ width: '100%' }}>{renderContent(query)}</section>
+        <section
+          style={{
+            width: '100%',
+          }}
+        >
+          {renderContent(query)}
+        </section>
       </section>
     </main>
   )
