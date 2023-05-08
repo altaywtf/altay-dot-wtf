@@ -6,23 +6,28 @@ import Page from 'ui/Page'
 import { formatDate } from 'lib/utils/date'
 import type { NowJSON } from 'scripts/now/lib/types'
 
+export const generateMetadata = async (): Promise<Metadata> => ({
+  ...nowCopy,
+  openGraph: {
+    ...nowCopy,
+    images: getOpenGraphImage({
+      type: 'page',
+      title: nowCopy.title,
+    }),
+  },
+})
+
 const fetchData = async () => {
   const res = await fetch(`${API_URL}/now`, { cache: 'no-cache' })
   const { now } = await res.json()
   return now as NowJSON
 }
 
-const NowSectionContainer = ({ children }: { children: React.ReactNode }) => (
+const NowSectionContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="flex flex-row flex-wrap gap-4">{children}</div>
 )
 
-const NowSectionItem = ({
-  alt,
-  title,
-  description,
-  url,
-  image,
-}: {
+const NowSectionItem: React.FC<{
   alt: string
   title: string
   description?: string
@@ -32,7 +37,7 @@ const NowSectionItem = ({
     alt: string
     src: string
   }
-}) => (
+}> = ({ alt, title, description, url, image }) => (
   <a
     key={url}
     href={url}

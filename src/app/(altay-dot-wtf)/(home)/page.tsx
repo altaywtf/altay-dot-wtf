@@ -15,7 +15,7 @@ const fetchData = async () => {
   return { description, contactLinks }
 }
 
-const getContactLinkIcon = (title: ContactLink['title']) => {
+const renderContactLinkIcon = (title: ContactLink['title']) => {
   switch (title) {
     case 'Email':
       return <GrMail />
@@ -47,7 +47,7 @@ const HomePage = async () => {
             target="_blank"
             className="flex flex-row items-center gap-2 rounded bg-neutral-800 px-3 py-1 text-sm font-medium hover:bg-neutral-700"
           >
-            {getContactLinkIcon(title)}
+            {renderContactLinkIcon(title)}
             {title}
           </a>
         ))}

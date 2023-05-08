@@ -10,7 +10,6 @@ const Header: React.FC = () => (
         title="That's my head, also a link to home page. Please press gently."
         className={`relative h-[32px] w-[32px] overflow-hidden rounded-full border-2 border-transparent
            hover:border-neutral-900`}
-        activeClassName="border-neutral-800"
       >
         <Image src="/images/avatar.png" alt="That's my head" fill sizes="100%" />
       </NavLink>

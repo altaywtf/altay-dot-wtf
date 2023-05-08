@@ -30,7 +30,7 @@ const BooksPage = async () => {
       <div className="flex flex-col gap-10">
         {data.books.map((book) => (
           <div key={book.slug} className="flex flex-row gap-4">
-            <NextLink href={`/books/${book.slug}`} className="min-w-[120px]">
+            <NextLink href={`/books/${book.slug}`} className="min-w-[96px] sm:min-w-[120px]">
               <BookCover book={book} />
             </NextLink>
 
