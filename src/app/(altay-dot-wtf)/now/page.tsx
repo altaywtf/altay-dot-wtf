@@ -27,7 +27,11 @@ const NowSectionItem = ({
   title: string
   description?: string
   url: string
-  image: React.ReactNode
+  image: {
+    type: 'vertical' | 'square'
+    alt: string
+    src: string
+  }
 }) => (
   <a
     key={url}
@@ -35,10 +39,20 @@ const NowSectionItem = ({
     title={alt}
     target="_blank"
     rel="noreferrer noopener"
-    className="max-w-[196px] transition duration-300 ease-in-out hover:scale-105"
+    className="max-w-[160px] transition duration-300 ease-in-out hover:scale-105 sm:max-w-[196px]"
   >
     <div className="flex flex-col gap-2">
-      <div className="overflow-hidden rounded bg-neutral-900">{image}</div>
+      <div className="overflow-hidden rounded bg-neutral-900">
+        <div
+          className={`relative ${
+            image.type === 'vertical'
+              ? 'h-[168px] w-[120px] sm:h-[196px] sm:w-[140px]'
+              : ' h-[160px] w-[160px] sm:h-[196px] sm:w-[196px]'
+          }`}
+        >
+          <Image alt={image.alt} src={image.src} fill className=" object-cover" />
+        </div>
+      </div>
 
       <div className="flex flex-col">
         <p>{title}</p>
@@ -63,16 +77,11 @@ const NowPage = async () => {
                 url={item.url}
                 description={`by ${item.author}`}
                 alt={`${item.title} by ${item.author}`}
-                image={
-                  <div className="relative h-[196px] w-[140px]">
-                    <Image
-                      alt={`Cover of book ${item.title}`}
-                      src={item.imageURL}
-                      fill
-                      className="rounded border border-neutral-800 object-cover"
-                    />
-                  </div>
-                }
+                image={{
+                  type: 'vertical',
+                  alt: `Cover of book ${item.title}`,
+                  src: item.imageURL,
+                }}
               />
             ))}
           </NowSectionContainer>
@@ -87,16 +96,11 @@ const NowPage = async () => {
                 title={item.creator}
                 url={item.url}
                 alt={item.title}
-                image={
-                  <div className="relative h-[196px] w-[196px]">
-                    <Image
-                      alt={`Cover of album ${item.title}`}
-                      src={item.imageURL}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                }
+                image={{
+                  alt: `Cover of album ${item.title}`,
+                  src: item.imageURL,
+                  type: 'square',
+                }}
               />
             ))}
           </NowSectionContainer>
@@ -111,16 +115,11 @@ const NowPage = async () => {
                 title={item.title}
                 url={item.url}
                 alt={item.title}
-                image={
-                  <div className="relative h-[196px] w-[140px]">
-                    <Image
-                      alt={`Poster of TV show ${item.title}`}
-                      src={item.imageURL}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                }
+                image={{
+                  alt: `Poster of TV show ${item.title}`,
+                  src: item.imageURL,
+                  type: 'vertical',
+                }}
               />
             ))}
           </NowSectionContainer>
