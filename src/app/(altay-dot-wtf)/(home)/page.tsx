@@ -1,6 +1,6 @@
-import { API_URL, homeCopy } from 'config'
+import { homeCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
-import type { ContactLink } from 'lib/contact'
+import { ContactLink, getContactLinks } from 'lib/contact'
 import Page from 'ui/Page'
 import Markdown from 'ui/Markdown'
 import { GrMail } from '@react-icons/all-files/gr/GrMail'
@@ -10,8 +10,7 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 
 const fetchData = async () => {
   const description = readMarkdownFile('home.md')
-  const contactLinks = (await fetch(`${API_URL}/contact/links`).then((res) => res.json()))
-    .links as ContactLink[]
+  const contactLinks = getContactLinks()
   return { description, contactLinks }
 }
 

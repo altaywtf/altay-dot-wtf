@@ -1,7 +1,7 @@
 import RssParser from 'rss-parser'
 import uniqBy from 'lodash.uniqby'
-import axios from 'axios'
-import { NowJSONShow } from './types'
+import { REVALIDATE_NOWJSON_IN_SECONDS } from './constants'
+import type { NowJSONShow } from './types'
 
 type ShowRssFeed = {
   title: string
@@ -37,9 +37,11 @@ export const fetchShows = async (): Promise<NowJSONShow[]> => {
 
   const series = await Promise.all(
     uniqueItems.map(async (item) => {
-      const { data } = await axios.get<TvMazeShow>(
-        `https://api.tvmaze.com/shows/${item['tv:external_id']}`,
-      )
+      const response = await fetch(`https://api.tvmaze.com/shows/${item['tv:external_id']}`, {
+        next: { revalidate: REVALIDATE_NOWJSON_IN_SECONDS },
+      })
+
+      const data = (await response.json()) as TvMazeShow
 
       return {
         title: data.name,

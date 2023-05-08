@@ -1,26 +1,37 @@
 import { Metadata } from 'next'
-import { API_URL, nowCopy } from 'config'
+import { nowCopy } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
 import Image from 'next/image'
 import Page from 'ui/Page'
-import { formatDate } from 'lib/utils/date'
-import type { NowJSON } from 'scripts/now/lib/types'
+import type { NowJSON } from './lib/types'
+import { fetchBooks } from './lib/books'
+import { fetchMusic } from './lib/music'
+import { fetchShows } from './lib/shows'
 
-export const generateMetadata = async (): Promise<Metadata> => ({
-  ...nowCopy,
-  openGraph: {
-    ...nowCopy,
-    images: getOpenGraphImage({
-      type: 'page',
-      title: nowCopy.title,
-    }),
-  },
-})
+const fetchData = async (): Promise<NowJSON> => {
+  const books = await fetchBooks()
+  const music = await fetchMusic()
+  const shows = await fetchShows()
 
-const fetchData = async () => {
-  const res = await fetch(`${API_URL}/now`, { cache: 'no-cache' })
-  const { now } = await res.json()
-  return now as NowJSON
+  return {
+    sections: [
+      {
+        _id: 'books',
+        title: '📚 Reading',
+        data: books,
+      },
+      {
+        _id: 'music',
+        title: '🎧 Listening',
+        data: music,
+      },
+      {
+        _id: 'shows',
+        title: '📺 Watching',
+        data: shows,
+      },
+    ],
+  }
 }
 
 const NowSectionContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -144,10 +155,19 @@ const NowPage = async () => {
             </div>
           ))}
       </div>
-
-      <p className="mt-4 text-sm text-neutral-400">Last updated on {formatDate(data.updatedAt)}</p>
     </Page>
   )
 }
+
+export const generateMetadata = async (): Promise<Metadata> => ({
+  ...nowCopy,
+  openGraph: {
+    ...nowCopy,
+    images: getOpenGraphImage({
+      type: 'page',
+      title: nowCopy.title,
+    }),
+  },
+})
 
 export default NowPage

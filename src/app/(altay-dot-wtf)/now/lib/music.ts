@@ -1,5 +1,5 @@
-import axios from 'axios'
 import type { NowJSONMusic } from './types'
+import { REVALIDATE_NOWJSON_IN_SECONDS } from './constants'
 
 type AppleMusicResource = {
   id: string
@@ -23,14 +23,19 @@ type AppleMusicRecentlyPlayedResourcesResponse = {
 export const fetchMusic = async (): Promise<NowJSONMusic[]> => {
   const URL = 'https://api.music.apple.com/v1/me/recent/played'
 
-  const response = await axios.get<AppleMusicRecentlyPlayedResourcesResponse>(URL, {
+  const response = await fetch(URL, {
     headers: {
       Authorization: process.env.APPLE_MUSIC_DEV_TOKEN as string,
       'Music-User-Token': process.env.APPLE_MUSIC_USER_TOKEN as string,
     },
+    next: {
+      revalidate: REVALIDATE_NOWJSON_IN_SECONDS,
+    },
   })
 
-  const albums = response.data.data
+  const { data } = (await response.json()) as AppleMusicRecentlyPlayedResourcesResponse
+
+  const albums = data
     .filter((resource) => resource.type == 'albums' || resource.type == 'stations')
     .filter((resource) => !resource.attributes.name.includes('Altay'))
     .filter((resource) => !!resource.attributes?.artwork?.url)

@@ -1,5 +1,5 @@
-import axios from 'axios'
 import type { NowJSONBook } from './types'
+import { REVALIDATE_NOWJSON_IN_SECONDS } from './constants'
 
 type OkuCollectionResponse = {
   books: {
@@ -14,9 +14,14 @@ type OkuCollectionResponse = {
 
 export const fetchBooks = async (): Promise<NowJSONBook[]> => {
   const OKU_COLLECTION_URL = 'https://oku.club/api/collections/user/altay/reading?format=json'
-  const response = await axios.get<OkuCollectionResponse>(OKU_COLLECTION_URL)
 
-  return response.data.books.map((okuBook) => ({
+  const response = await fetch(OKU_COLLECTION_URL, {
+    next: { revalidate: REVALIDATE_NOWJSON_IN_SECONDS },
+  })
+
+  const data = (await response.json()) as OkuCollectionResponse
+
+  return data.books.map((okuBook) => ({
     url: `https://oku.club/book/${okuBook.slug}`,
     title: okuBook.title,
     subtitle: okuBook.subtitle,

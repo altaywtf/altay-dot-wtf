@@ -20,7 +20,6 @@ export type NowJSONShow = {
 }
 
 export type NowJSON = {
-  updatedAt: string
   sections: [
     {
       _id: 'books'
@@ -39,32 +38,3 @@ export type NowJSON = {
     },
   ]
 }
-
-export const createNowJSON = ({
-  books,
-  music,
-  shows,
-}: {
-  books: NowJSONBook[]
-  music: NowJSONMusic[]
-  shows: NowJSONShow[]
-}): NowJSON => ({
-  updatedAt: new Date().toISOString(),
-  sections: [
-    {
-      _id: 'books',
-      title: '📚 Reading',
-      data: books,
-    },
-    {
-      _id: 'music',
-      title: '🎧 Listening',
-      data: music,
-    },
-    {
-      _id: 'shows',
-      title: '📺 Watching',
-      data: shows,
-    },
-  ],
-})
