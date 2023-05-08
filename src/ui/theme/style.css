@@ -68,4 +68,11 @@
     @apply no-underline;
     @apply hover:underline;
   }
+
+  a.scrolled-source-link {
+    @apply bg-amber-400;
+    @apply text-black;
+    @apply px-1;
+    @apply rounded;
+  }
 }
