@@ -36,7 +36,4 @@ yarn-error.log*
 # tmp
 /tmp/
 
-# rss
-/public/rss/*
-
 .tsbuildinfo
