@@ -10,7 +10,7 @@ type Props = {
 
 const Page: React.FC<Props> = ({ header, children }) => (
   <div className="flex flex-col gap-6">
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <h1>{header.title}</h1>
       {header.description ? <Markdown>{header.description}</Markdown> : null}
     </div>

@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   },
 }
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => <main>{children}</main>
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <main className="p-4 sm:px-0">{children}</main>
+)
 
 export default Layout

@@ -17,12 +17,8 @@
 
   main {
     @apply mx-auto;
-    @apply my-4;
     @apply max-w-full;
     @apply w-[var(--app-width)];
-    @apply px-4;
-    @apply md:px-0;
-    @apply pb-8;
   }
 
   h1,
@@ -74,5 +70,9 @@
     @apply text-black;
     @apply px-1;
     @apply rounded;
+  }
+
+  .dark {
+    color-scheme: dark;
   }
 }
