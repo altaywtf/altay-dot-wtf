@@ -1,10 +1,5 @@
 export const HEADER_NAV_LINKS = [
   {
-    label: 'Now',
-    href: '/now',
-  },
-
-  {
     label: 'Blog',
     href: '/posts',
   },
@@ -12,5 +7,10 @@ export const HEADER_NAV_LINKS = [
   {
     label: 'Books',
     href: '/books',
+  },
+
+  {
+    label: 'Now',
+    href: '/now',
   },
 ] as const

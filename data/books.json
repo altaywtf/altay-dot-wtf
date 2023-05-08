@@ -3,9 +3,7 @@
   "books": [
     {
       "title": "The Almanack of Naval Ravikant",
-      "authors": [
-        "Eric Jorgenson"
-      ],
+      "authors": ["Eric Jorgenson"],
       "identifiers": [
         {
           "type": "ISBN_10",
@@ -33,9 +31,7 @@
       }
     },
     {
-      "authors": [
-        "Jess Henderson"
-      ],
+      "authors": ["Jess Henderson"],
       "coverImage": {
         "url": "/images/books/offline-matters/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABAwQDAAAAAAAAAAAAAAADAAECBAUGEQdTY//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8As3jjpg1rDjlmVO0Qi1urH1x80RFB/9k=",
@@ -64,9 +60,7 @@
       "title": "Offline Matters"
     },
     {
-      "authors": [
-        "David McRaney"
-      ],
+      "authors": ["David McRaney"],
       "coverImage": {
         "url": "/images/books/you-are-not-so-smart/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABBAMAAwAAAAAAAAAAAAABAAIEEQMFEgYHIf/EABQBAQAAAAAAAAAAAAAAAAAAAAb/xAAbEQACAQUAAAAAAAAAAAAAAAABAgADESExQf/aAAwDAQACEQMRAD8Av+uJeLYeFauVM12ufIyMcXvbHGPo9uF8toWas0PpsoiIHUYhznsYF2vuf//Z",
@@ -95,9 +89,7 @@
       "title": "You Are Not So Smart"
     },
     {
-      "authors": [
-        "Jonas Salzgeber"
-      ],
+      "authors": ["Jonas Salzgeber"],
       "coverImage": {
         "url": "/images/books/the-little-book-of-stoicism/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAACAgICAwAAAAAAAAAAAAABAwACERIFQQQTMv/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwC0catPHePdFU0eC5rt3k2sPYy19c5+RtgDoADqIiSntf/Z",
@@ -126,9 +118,7 @@
       "title": "The Little Book of Stoicism"
     },
     {
-      "authors": [
-        "Leonard Mlodinow"
-      ],
+      "authors": ["Leonard Mlodinow"],
       "coverImage": {
         "url": "/images/books/subliminal/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAAABQIHAAAAAAAAAAAAAAAAAQIDBDFBBQYHERMyUf/EABUBAQEAAAAAAAAAAAAAAAAAAAUH/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwCAZ1ImxkcLGA5bQ22ZpSlMDa9e1bmfoAAMULI//9k=",
@@ -157,9 +147,7 @@
       "title": "Subliminal"
     },
     {
-      "authors": [
-        "Austin Kleon"
-      ],
+      "authors": ["Austin Kleon"],
       "coverImage": {
         "url": "/images/books/keep-going/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABR0AAAUdAG5O1bwAAAAP0lEQVQI1wE0AMv/AABmsVay/wBRgz92VQAAc79jvv9btPIGZnMAAGqyc8r/tP//AESXAAAvcQA4eAA9fAAGRz9+FGr2R+6sAAAAAElFTkSuQmCC",
@@ -188,9 +176,7 @@
       "title": "Keep Going"
     },
     {
-      "authors": [
-        "Joel Bakan"
-      ],
+      "authors": ["Joel Bakan"],
       "coverImage": {
         "url": "/images/books/the-new-corporation/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAeEAACAgICAwAAAAAAAAAAAAABAwACBQYEEhEhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAHBEAAQQDAQAAAAAAAAAAAAAAAQADEZECBCIy/9oADAMBAAIRAxEAPwCTP6LrKcs9bMTTkXr1Ba57bXt8j2T3HkxEQ+XnJ9G1Q8dRiBwKC//Z",
@@ -219,9 +205,7 @@
       "title": "The New Corporation"
     },
     {
-      "authors": [
-        "Anne Lamott"
-      ],
+      "authors": ["Anne Lamott"],
       "coverImage": {
         "url": "/images/books/bird-by-bird/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAcEAACAgMBAQAAAAAAAAAAAAABAgMEABEhBRX/xAAVAQEBAAAAAAAAAAAAAAAAAAADBf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKfyvLtM9mzRZ5pnaVyt2zGNsSTpVlCqO8AAAHBjGMnlf//Z",
@@ -250,9 +234,7 @@
       "title": "Bird by Bird"
     },
     {
-      "authors": [
-        "Seth Godin"
-      ],
+      "authors": ["Seth Godin"],
       "coverImage": {
         "url": "/images/books/the-practice/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAViAAAFYgGsYVycAAAAM0lEQVQI1wEoANf/AABzsgANNwCHzAA4uvUAodEdqukAbeX/lP//WtP/AABWkwAmUwBcmUyWESwgXSPqAAAAAElFTkSuQmCC",
@@ -281,9 +263,7 @@
       "title": "The Practice"
     },
     {
-      "authors": [
-        "Mark Manson"
-      ],
+      "authors": ["Mark Manson"],
       "coverImage": {
         "url": "/images/books/everything-is-fucked/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAACAgIDAQAAAAAAAAAAAAABAgAEAwUREiEx/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AKxqNDT1FBKNE51r4mfqHys7esWPLNyT6T9MREfpaqut/9k=",
@@ -312,9 +292,7 @@
       "title": "Everything Is F*cked"
     },
     {
-      "authors": [
-        "George Orwell"
-      ],
+      "authors": ["George Orwell"],
       "coverImage": {
         "url": "/images/books/animal-farm/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAIDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAACAgAHAAAAAAAAAAAAAAAAAQMEAgUGERYz0//EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAIRElH/2gAMAwEAAhEDEQA/AKiK7qRxYHy7OFuk+qp4AALgp6Lh/9k=",
@@ -343,9 +321,7 @@
       "title": "Animal Farm"
     },
     {
-      "authors": [
-        "Kelly Small"
-      ],
+      "authors": ["Kelly Small"],
       "coverImage": {
         "url": "/images/books/the-conscious-creative/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAfEAABBAAHAAAAAAAAAAAAAAADAAECBAUGBxESFDH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABsRAAICAwEAAAAAAAAAAAAAAAEDAJEREzJS/9oADAMBAAIRAxEAPwCv0wtghkunEGH1gCY1lojHMvGLdgnm80RFJ3M9G4kpXnkVP//Z",
@@ -374,9 +350,7 @@
       "title": "The Conscious Creative"
     },
     {
-      "authors": [
-        "William Zinsser"
-      ],
+      "authors": ["William Zinsser"],
       "coverImage": {
         "url": "/images/books/on-writing-well/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAABCcAAAQnAEmzTo0AAAAJUlEQVQI12PwyC1rmreU4cSxPf//vmVonjpl2aplDAz8MgxqxgDH5wxKt89e8gAAAABJRU5ErkJggg==",
@@ -405,9 +379,7 @@
       "title": "On Writing Well"
     },
     {
-      "authors": [
-        "Seth Godin"
-      ],
+      "authors": ["Seth Godin"],
       "coverImage": {
         "url": "/images/books/this-is-marketing/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAfEAABBAEFAQAAAAAAAAAAAAABAAIEBQMGByEjMYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAG/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACETH/2gAMAwEAAhEDEQA/AICw3S1HR2ljW15r2Ro8zO1gMPGSe1xJPHpJJ+oiIyUqnI0Q2f/Z",
@@ -436,9 +408,7 @@
       "title": "This Is Marketing"
     },
     {
-      "authors": [
-        "Golden Krishna"
-      ],
+      "authors": ["Golden Krishna"],
       "coverImage": {
         "url": "/images/books/the-best-interface-is-no-interface/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAIElEQVQI12P4//9/eXk5kGTYuXOnDRgwlIMBgsXAwAAAqIoRO4MKa5EAAAAASUVORK5CYII=",
@@ -467,9 +437,7 @@
       "title": "The Best Interface Is No Interface"
     },
     {
-      "authors": [
-        "Derek Sivers"
-      ],
+      "authors": ["Derek Sivers"],
       "coverImage": {
         "url": "/images/books/your-music-and-people/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALklEQVQI12O4P+/D/5f/99VdYPATTopVLPTij2dQZjBTYDAEkgzJamXF5m1AMQBdqA21SUiEUQAAAABJRU5ErkJggg==",
@@ -494,9 +462,7 @@
       "title": "Your Music and People"
     },
     {
-      "authors": [
-        "Rutger Bregman"
-      ],
+      "authors": ["Rutger Bregman"],
       "coverImage": {
         "url": "/images/books/utopia-for-realists/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAcEAACAwADAQAAAAAAAAAAAAACAwABBAUREoH/xAAVAQEBAAAAAAAAAAAAAAAAAAAFBv/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAORUv/aAAwDAQACEQMRAD8AjM46ORSGvRsKmtr0VLzoAfg0vqoiIEKa+RkuGtcMQGOz/9k=",
@@ -525,9 +491,7 @@
       "title": "Utopia for Realists"
     },
     {
-      "authors": [
-        "Derek Sivers"
-      ],
+      "authors": ["Derek Sivers"],
       "coverImage": {
         "url": "/images/books/anything-you-want/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAgEAACAQQBBQAAAAAAAAAAAAABAgADBAURBgchMVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQISMVH/2gAMAwEAAhEDEQA/AJWC6ocix2OFrbvbiklWqVAVkA3UY60rADz6+7PeIiVwngldNbP/2Q==",
@@ -556,9 +520,7 @@
       "title": "Anything You Want"
     },
     {
-      "authors": [
-        "Austin Kleon"
-      ],
+      "authors": ["Austin Kleon"],
       "coverImage": {
         "url": "/images/books/show-your-work/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAcEAACAgMBAQAAAAAAAAAAAAACAwEFAAQRBqH/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EABsRAAEEAwAAAAAAAAAAAAAAAAEAAgMRElGR/9oADAMBAAIRAxEAPwCj1flNXbZYbDrG9FjdthlCLV6AiZnvIFZiPzGMZI3Tyg0HHqQYjS//2Q==",
@@ -587,10 +549,7 @@
       "title": "Show Your Work!"
     },
     {
-      "authors": [
-        "Jake Knapp",
-        "John Zeratsky"
-      ],
+      "authors": ["Jake Knapp", "John Zeratsky"],
       "coverImage": {
         "url": "/images/books/make-time/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAABBAIDAQAAAAAAAAAAAAABAAIDBAUREzNBgf/EABUBAQEAAAAAAAAAAAAAAAAAAAUH/8QAGxEAAgEFAAAAAAAAAAAAAAAAAQIAAxETIUH/2gAMAwEAAhEDEQA/AKvGw450VhzcRUZu1YJDJJgN8z9ns9Oz9REUxrscjb6YooFhP//Z",
@@ -619,9 +578,7 @@
       "title": "Make Time"
     },
     {
-      "authors": [
-        "Jeremy Fairbank"
-      ],
+      "authors": ["Jeremy Fairbank"],
       "coverImage": {
         "url": "/images/books/programming-elm/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAcEAABBAMBAAAAAAAAAAAAAAABAAIDBAUGESH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAwDAQACEQMRAD8AgG3bLcz2zZLJ2oq8U1iZznRwMLI288AaOng4AiIiIbKOX//Z",
@@ -650,9 +607,7 @@
       "title": "Programming Elm"
     },
     {
-      "authors": [
-        "Rob Walling"
-      ],
+      "authors": ["Rob Walling"],
       "coverImage": {
         "url": "/images/books/start-small-stay-small/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAA51AAAOdQG5Y1EyAAAAG0lEQVQI12MQBAOGS5cu/f//nwHIFBcXZ4AAAG1CBlJEAytHAAAAAElFTkSuQmCC",
@@ -681,9 +636,7 @@
       "title": "Start Small, Stay Small"
     },
     {
-      "authors": [
-        "Jon Yablonski"
-      ],
+      "authors": ["Jon Yablonski"],
       "coverImage": {
         "url": "/images/books/laws-of-ux/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAdEAABBAIDAAAAAAAAAAAAAAAAAQIDBgVhBBET/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABoRAQADAAMAAAAAAAAAAAAAAAEAAgMSMVH/2gAMAwEAAhEDEQA/AJuu2yzxYXisjsuWa1Gr0nvtdAABxPIDTS5dBe5//9k=",
@@ -712,9 +665,7 @@
       "title": "Laws of UX"
     },
     {
-      "authors": [
-        "Seth Godin"
-      ],
+      "authors": ["Seth Godin"],
       "coverImage": {
         "url": "/images/books/the-dip/cover.png",
         "blurhash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQI12M4fOhQTW3tms3bGJ69fvP//3fDxukMDOpBrDXTGMSdGBjEHRkEbYAkAJ8JD7S2poZWAAAAAElFTkSuQmCC",
@@ -743,10 +694,7 @@
       "title": "The Dip"
     },
     {
-      "authors": [
-        "David Hurst Thomas",
-        "Andrew Hunt"
-      ],
+      "authors": ["David Hurst Thomas", "Andrew Hunt"],
       "coverImage": {
         "url": "/images/books/the-pragmatic-programmer/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAgEAACAQQBBQAAAAAAAAAAAAABAwACBQYRBBIUIUFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AIxl+e3PkX1ju0tqixKKjQpHTTspo2QN+z5+mIiUhOt//9k=",
@@ -775,9 +723,7 @@
       "title": "The Pragmatic Programmer"
     },
     {
-      "authors": [
-        "Toshi Omigari"
-      ],
+      "authors": ["Toshi Omigari"],
       "coverImage": {
         "url": "/images/books/arcade-game-typography/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAACAgIDAQAAAAAAAAAAAAABAgAEAwUHEUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQIRITH/2gAMAwEAAhEDEQA/AIjf5P3tm02R8OtUgKgCVQB0qhR78EREFE44XS0f/9k=",
@@ -806,9 +752,7 @@
       "title": "Arcade Game Typography"
     },
     {
-      "authors": [
-        "Scott H. Young"
-      ],
+      "authors": ["Scott H. Young"],
       "coverImage": {
         "url": "/images/books/ultralearning/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAfEAABAwQDAQAAAAAAAAAAAAABAAIhAwQFERIxQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAjH/2gAMAwEAAhEDEQA/AIHcZ6q6oN2GKHFrWDVlTEAAfO4k+mUREytPmMpy/9k=",
@@ -837,9 +781,7 @@
       "title": "Ultralearning"
     },
     {
-      "authors": [
-        "James Altucher"
-      ],
+      "authors": ["James Altucher"],
       "coverImage": {
         "url": "/images/books/reinvent-yourself/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAgEAABAwIHAAAAAAAAAAAAAAADAAECBAYFESElQVJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKsMvm4ogLuDPnUnlrTi5LN+vqIiZP/Z",
@@ -868,9 +810,7 @@
       "title": "Reinvent Yourself"
     },
     {
-      "authors": [
-        "R. Laing"
-      ],
+      "authors": ["R. Laing"],
       "coverImage": {
         "url": "/images/books/the-divided-self/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAABBQADAQAAAAAAAAAAAAABAAIDBREEByEx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgb/xAAbEQABBAMAAAAAAAAAAAAAAAABAAMEkRNSU//aAAwDAQACEQMRAD8AqlR1hUDiPyxvRs8zsbYPaNMrj8HiIilxMkdDZRwNail//9k=",
@@ -899,9 +839,7 @@
       "title": "The Divided Self"
     },
     {
-      "authors": [
-        "Paul Jarvis"
-      ],
+      "authors": ["Paul Jarvis"],
       "coverImage": {
         "url": "/images/books/company-of-one/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgADBAUGBxESEyIxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAIF/8QAHxEAAQMDBQAAAAAAAAAAAAAAAQIDBAAFMUFCUWFx/9oADAMBAAIRAxEAPwCNym/OsMRfPZU1xdwtMKe5WtvNiyhjz0sB7PwRESBJt0MPLAaTk7Rz5RjurLSSVHA16r//2Q==",
@@ -930,9 +868,7 @@
       "title": "Company of One"
     },
     {
-      "authors": [
-        "James Clear"
-      ],
+      "authors": ["James Clear"],
       "coverImage": {
         "url": "/images/books/atomic-habits/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAgEAACAAYCAwAAAAAAAAAAAAABAgADBAUGERIhBxMU/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AJzJvLuSY9lN9s9s+WXR0NxqqeXv28mCznHNtP2zEFmPWySYQhE5XZIX/9k=",
@@ -961,9 +897,7 @@
       "title": "Atomic Habits"
     },
     {
-      "authors": [
-        "Nassim Nicholas Taleb"
-      ],
+      "authors": ["Nassim Nicholas Taleb"],
       "coverImage": {
         "url": "/images/books/skin-in-the-game/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAABBAMAAwAAAAAAAAAAAAABAgMEEQAFBiEiQf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQACAwAAAAAAAAAAAAAAAAAAARESUf/aAAwDAQACEQMRAD8Ahna9PumOonRm9lKS1GUmM2EuFPo2kITdUCaSLP02T5OMYwhDZ6f/2Q==",
@@ -992,9 +926,7 @@
       "title": "Skin in the Game"
     },
     {
-      "authors": [
-        "Chad Orzel"
-      ],
+      "authors": ["Chad Orzel"],
       "coverImage": {
         "url": "/images/books/quantodog/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAdEAACAgMAAwAAAAAAAAAAAAABAgMEAAUGERIh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAbEQACAQUAAAAAAAAAAAAAAAABAgADERIhQf/aAAwDAQACEQMRAD8AgRdBW2ge7sua521cnd3lnmpl3dvY/SS3knGMYXFmMpTY4DfJ/9k=",
@@ -1023,9 +955,7 @@
       "title": "How to Teach Quantum Physics to Your Dog"
     },
     {
-      "authors": [
-        "Nir Eyal"
-      ],
+      "authors": ["Nir Eyal"],
       "coverImage": {
         "url": "/images/books/hooked/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAfEAACAQQCAwAAAAAAAAAAAAABAgQAAwUhBhESE0H/xAAVAQEBAAAAAAAAAAAAAAAAAAADB//EABoRAQABBQAAAAAAAAAAAAAAAAEAAgMRIVH/2gAMAwEAAhEDEQA/ALxuFWMmL8tMxmoKvIvAR40hfWgFxl15qzfO9k7NKUqfW3NAvI67n//Z",
@@ -1054,9 +984,7 @@
       "title": "Hooked"
     },
     {
-      "authors": [
-        "Richard P. Feynman"
-      ],
+      "authors": ["Richard P. Feynman"],
       "coverImage": {
         "url": "/images/books/six-easy-pieces/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAeEAACAgICAwAAAAAAAAAAAAABAgMEABEFMRIhIv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ao7g+Kip0GirzWFQ2J5CC/l9PK7MdkHtmJ10OhoesYxhH/9k=",
@@ -1081,9 +1009,7 @@
       "title": "Six Easy Pieces"
     },
     {
-      "authors": [
-        "James Altucher"
-      ],
+      "authors": ["James Altucher"],
       "coverImage": {
         "url": "/images/books/choose-yourself/cover.png",
         "blurhash": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAAABgMBAAAAAAAAAAAAAAAAAQMEBRECBhJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgX/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAIhA//aAAwDAQACEQMRAD8AsqGht41MmjGe2VJsnfGBSWZ82d1Z2foAAn26WLOxoOs//9k=",

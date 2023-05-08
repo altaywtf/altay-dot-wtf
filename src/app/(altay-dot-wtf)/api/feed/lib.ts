@@ -1,5 +1,5 @@
-import type { Author, Item } from 'feed'
 import { SITE_URL } from 'config'
+import { Feed, Item, FeedOptions, Author } from 'feed'
 import { convertMarkdownToHTML } from 'lib/utils/md'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
 import { sanitizeHtml } from 'lib/utils/sanitize'
@@ -52,3 +52,30 @@ export const mapBookToRssFeedItem = (book: Book, markdown: string): Item => ({
     ),
   },
 })
+
+export const createFeed = ({
+  path,
+  items,
+  options,
+}: {
+  path: string
+  items: Item[]
+  options: Omit<FeedOptions, 'id' | 'copyright'>
+}) => {
+  const feed = new Feed({
+    id: `${SITE_URL}/${path}`,
+    copyright: SITE_URL,
+    link: `${SITE_URL}/${path}`,
+    language: 'en',
+    feedLinks: {
+      rss2: `${SITE_URL}/api/feed/${path}/rss`,
+      json: `${SITE_URL}/api/feed/${path}/json`,
+      atom: `${SITE_URL}/api/feed/${path}/atom`,
+    },
+    ...options,
+  })
+
+  items.forEach(feed.addItem)
+
+  return feed
+}

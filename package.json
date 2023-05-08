@@ -5,14 +5,12 @@
   "scripts": {
     "prebuild": "yarn test",
     "build": "next build",
-    "postbuild": "yarn create:rss",
     "start": "next start",
     "dev": "next dev -p 1994",
     "test": "jest",
     "lint": "next lint",
     "create:book": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/create.ts",
     "create:now": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/now/create.ts",
-    "create:rss": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/rss/create.ts",
     "update:book-images": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/update-images.ts"
   },
   "dependencies": {

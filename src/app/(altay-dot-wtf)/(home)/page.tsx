@@ -38,7 +38,7 @@ const HomePage = async () => {
     <Page header={{ title: homeCopy.title }}>
       <Markdown>{data.description}</Markdown>
 
-      <div className="mt-3 flex flex-row flex-wrap gap-3">
+      <div className="mt-2 flex flex-row flex-wrap gap-2">
         {data.contactLinks.map(({ title, url }) => (
           <a
             key={title}
