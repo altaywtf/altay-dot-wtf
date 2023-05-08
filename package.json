@@ -10,7 +10,6 @@
     "test": "jest",
     "lint": "next lint",
     "create:book": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/create.ts",
-    "create:now": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/now/create.ts",
     "update:book-images": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/update-images.ts"
   },
   "dependencies": {
