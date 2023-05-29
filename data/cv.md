@@ -1,79 +1,70 @@
-# Altay Aydemir
+## Altay Aydemir
 
-I'm a software engineer with 6+ years of experience, mostly focused on
-the user-facing side of the digital products. I enjoy transforming an
-idea into something tangible if it's solving a problem I empathize with.
+I'm a software engineer mostly focused on the user-facing side of the digital products. I enjoy transforming an idea into something tangible if it's solving a problem I empathize with.
 
 ---
 
-## Technical Background
+### Technical Background
 
-- **Industries:** Media Streaming, Cloud Storage, Blockchain, FinTech
-- **Interests:** Functional Programming, Domain-Driven Design, Humane
-  Product Design
-- **Languages:** JavaScript, TypeScript, Swift
-- **Platforms:** NodeJS, web, iOS, tvOS, Android, LG webOS,
-  Samsung Tizen, Roku, Chromecast
-- **Technologies:** React, React Native, NextJS, CSS-in-JS, Tailwind, Design Systems, Storybook, Visual Testing, Jest, Webpack, Fastlane, Kafka, Supabase
+**Industries:** Media Streaming, Cloud Storage, Blockchain, FinTech\
+**Interests:** Functional Programming, Domain-Driven Design, Humane
+Product Design\
+**Platforms:** web, iOS, tvOS, Android, LG webOS,
+Samsung Tizen, Roku, Chromecast\
+**Technologies:** React, React Native, NextJS, CSS-in-JS, Tailwind, Design Systems, Storybook, Visual Testing, Jest, Webpack, Fastlane, Kafka, Supabase
 
 ---
 
-## Work Experience
+### Work Experience
 
-### put.io \(Jan 2022 - Now\)
+#### put.io \(Jan 2022 - Now\)
 
 - After three years in Berlin, I took a break from work and moved to a
   warm seaside district (Bodrum) in Turkey to lighten the psychological
   effects of the pandemic.
 - I've also re-started working full-time at put.io, which I've been a part
-  of since 2017 and kept working as a consultant when I moved to Berlin in 2018.
+  of since 2017 and kept working on the side when I moved to Berlin in 2018.
 - Nowadays I'm working on our web, iOS, tvOS and Android TV applications.
 
-### Klarna \(May 2019 - August 2021\)
+#### Klarna \(May 2019 - Aug 2021\)
 
-#### Senior Engineer at Consumer Deals (01.2020 - 08.2021)
+#### _Senior Engineer at Consumer Deals (Jan 2020 - Aug 2021)_
 
 - Switched to a product team focusing on Shopping Growth that I built the
   MVP back in 2019.
 - On-boarded new hires, led the front-end feature development and
   cross-team integrations.
 
-#### Senior Engineer at App Client Core (01.2020 - 01.2021)
+#### _Senior Engineer at App Client Core (Jan 2020 - Jan 2021)_
 
-- Got promoted to Senior Engineer and switched to a distributed team
+- Got a promotion and switched to a distributed team
   (Stockholm, Berlin, Amsterdam) that is responsible for the integrity,
   performance, security and the release cycle of the consumer application,
-  which is live in 14 countries with average  6M daily active users.
+  which was live in 14 countries with average 6M daily active users at the time.
 - Restructured the localization architecture of the app to support 10+
   languages with different dialects.
-- Worked on a package based feature isolation project in the monorepo to
-  allow product teams to develop their features in a safe and standardized
-  way.
-- Maintained a dashboard for managing the killswitch behavior and monitoring
+- Worked on a package based feature isolation project in the monorepo to allow product teams to develop their features in a safe and standardized way.
+- Maintained a service for managing the killswitch behavior and monitoring
   releases of the consumer apps.
 - Helped new joiners to on-board Klarna App ecosystem, reviewed 300+
-  pull-requests from 50+ teams.
-- Did code reviews and interviews for JavaScript hiring pipeline.
+  pull-requests from 50+ teams, did code reviews and interviews for JavaScript hiring pipeline.
 
-#### Engineer at Consumer Growth and Loyalty - Marketing Touchpoint Infrastructure (06.2019 - 01.2020)
+#### _Engineer at Consumer Growth and Loyalty - Marketing Touchpoint Infrastructure (May 2019 - Jan 2020)_
 
 - Integrated native SDKs of the 3rd party analytics and marketing
   platforms to the consumer facing app.
-- Developed several loyalty related campaign infrastructures by using
-  Kafka, NodeJS and React.
+- Developed several loyalty related campaign infrastructures.
 - On-boarded new members to the ecosystem by organising workshops and
   tutorials.
 
-### Lightcurve GmbH \(Nov 2018 - May 2019\)
+#### Lightcurve GmbH \(Nov 2018 - May 2019\)
 
 - Worked on the cross-platform Lisk Mobile app, built with React Native.
 - Implemented Bitcoin support according to BIP49 standard.
 - Developed native modules by using Swift.
 
-### put.io \(Jan 2017 - Nov 2018\)
+#### put.io \(Jan 2017 - Nov 2018\)
 
-- Worked in a small team consisting of three engineers (2 backend + 1
-  frontend).
 - Took full responsibility on the client-facing applications of the
   product.
 - Maintained and implemented new features to the existing web app.
@@ -85,25 +76,21 @@ idea into something tangible if it's solving a problem I empathize with.
   AndroidTV and Amazon FireTV platforms.
 - Developed a Roku application with BrightScript.
 - Built cross-browser extensions with WebExtensions API.
-- Automated build and deployment processes by using Fastlane, Jenkins and
-  TravisCI.
 
-### Vispera \(Sep 2016 - Mar 2017\)
+#### Vispera \(Sep 2016 - Mar 2017\)
 
-- Re-designed and structured the front-end layer of the core Rails
-  application.
-- Built single-page apps for complex data entry and management purposes
-  with React.
+- Re-designed and structured the front-end layer of the core Rails application.
+- Built single-page apps for complex data entry and management purposes with React.
 
-### Peergust \(Mar 2016 - Sep 2016\)
+#### Peergust \(Mar 2016 - Sep 2016\)
 
 - Built demo apps and content management panel for testing and marketing
   purposes of the P2P content delivery network by using React.
-- Built and maintained an open source server-side rendering boilerplate called [Vortigern](https://github.com/barbar/vortigern).
+- Built and maintained an open source server-side rendering boilerplate, [Vortigern](https://github.com/barbar/vortigern).
 
 ---
 
-## Education
+### Education
 
 #### BSc. Mechanical Engineering, Istanbul Bilgi University (2012 - 2016)
 
@@ -113,7 +100,7 @@ idea into something tangible if it's solving a problem I empathize with.
 
 ---
 
-## Links
+### Links
 
 - [altay.wtf](https://altay.wtf)
 - [altay@zebrastik.com](mailto:altay@zebrastik.com)
