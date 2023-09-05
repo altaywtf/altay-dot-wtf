@@ -25,27 +25,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
     <Header />
 
-    <section className="app-width min-h-screen px-3 py-4 sm:px-0">{children}</section>
-
-    <footer className="app-width mb-3 mt-3 flex justify-between px-3 py-3 font-mono text-xs text-neutral-400 sm:px-0">
-      <a
-        href="https://twitter.com/altaywtf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline"
-      >
-        @altaywtf
-      </a>
-
-      <a
-        href="https://github.com/altaywtf/altay-dot-wtf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline"
-      >
-        Source
-      </a>
-    </footer>
+    <section className="app-width px-3 py-4 sm:px-0">{children}</section>
 
     <PathHistoryListener />
   </>
