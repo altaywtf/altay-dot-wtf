@@ -12,7 +12,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
     <body>
       <main className="p-safe">{children}</main>
-
       <AnalyticsWrapper />
     </body>
   </html>

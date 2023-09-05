@@ -24,9 +24,7 @@ export const metadata: Metadata = {
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
     <Header />
-
     <section className="app-width px-3 py-4 sm:px-0">{children}</section>
-
     <PathHistoryListener />
   </>
 )
