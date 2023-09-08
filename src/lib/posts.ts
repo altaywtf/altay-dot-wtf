@@ -8,7 +8,6 @@ type PostFrontMatter = {
   title: string
   oneliner: string
   date: string
-  featured: boolean
 }
 
 export type Post = PostFrontMatter & {
@@ -25,7 +24,6 @@ export const getPost = (slug: string) => {
 
   const post = {
     ...frontMatter,
-    featured: frontMatter.featured || false,
     slug,
     url: `/posts/${slug}`,
     readingTime:
@@ -49,7 +47,5 @@ export const getPosts = () => {
     .map((n) => n.post)
     .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1))
 }
-
-export const getFeaturedPosts = () => getPosts().filter((post) => post.featured)
 
 export const getPostsWithMarkdown = () => getPosts().map((post) => getPost(post.slug))
