@@ -11,11 +11,6 @@ export const booksCopy = {
   description: 'Somewhat detailed notes from books I read.',
 } as const
 
-export const nowCopy = {
-  title: "What I'm doing now",
-  description: `This is a [now page](https://nownownow.com/about) that is auto-generated via Apple Music, oku.club, showRSS, and TVMaze APIs.`,
-} as const
-
 export const historyCopy = {
   title: `History`,
 } as const
