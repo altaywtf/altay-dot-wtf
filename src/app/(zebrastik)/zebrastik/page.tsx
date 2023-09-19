@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Zebrastik = () => (
   <section className="app-width p-4 sm:px-0">
-    <div className="relative h-28 w-28 overflow-hidden rounded">
+    <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
       <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
     </div>
 

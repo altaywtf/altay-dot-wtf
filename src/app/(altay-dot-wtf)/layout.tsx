@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import Header from 'ui/Header'
 import { PathHistoryListener } from 'ui/PathHistoryListener'
 
 export const metadata: Metadata = {
@@ -23,8 +22,7 @@ export const metadata: Metadata = {
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
-    <Header />
-    <section className="app-width px-3 py-4 sm:px-0">{children}</section>
+    <section className="app-width px-3 py-8 sm:px-0">{children}</section>
     <PathHistoryListener />
   </>
 )

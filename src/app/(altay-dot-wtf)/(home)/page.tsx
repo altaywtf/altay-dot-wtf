@@ -1,8 +1,11 @@
 import { homeCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
-import Page from 'ui/Page'
 import Markdown from 'ui/Markdown'
 import Link from 'next/link'
+import Image from 'next/image'
+import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
+import { VscGithub } from '@react-icons/all-files/vsc/VscGithub'
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 
 type Project = {
   title: string
@@ -28,43 +31,96 @@ const PROJECTS: Project[] = [
   },
 ]
 
-const HomePage = async () => {
-  return (
-    <Page header={{ title: homeCopy.title }}>
-      <Markdown>{readMarkdownFile('home.md')}</Markdown>
+type Link = {
+  title: string
+  url: string
+  icon: React.ReactNode
+}
 
-      <hr />
+const LINKS: Link[] = [
+  {
+    title: 'GitHub',
+    url: 'https://github.com/altaywtf',
+    icon: <VscGithub />,
+  },
+  {
+    title: 'Twitter',
+    url: 'https://twitter.com/altaywtf',
+    icon: <VscTwitter />,
+  },
+  {
+    title: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/altaywtf/',
+    icon: <FaLinkedin />,
+  },
+]
 
-      <h2>Recent projects</h2>
+const HomePage = async () => (
+  <>
+    <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
+      <Image src="/images/avatar.png" alt="That's my head" fill sizes="100%" />
+    </div>
 
-      <div className="flex flex-col gap-6">
-        {PROJECTS.map((project) => (
-          <div key={project.title} className="flex flex-col gap-1">
-            <div>
-              {project.url.startsWith('/') ? (
-                <Link
-                  href={project.url as any}
-                  className="font-medium text-amber-400 hover:text-amber-200"
-                >
-                  {project.title}
-                </Link>
-              ) : (
-                <a
-                  href={project.url}
-                  target="_blank"
-                  className="font-medium text-amber-400 hover:text-amber-200"
-                >
-                  {project.title}
-                </a>
-              )}
-            </div>
+    <div className="my-4 flex flex-col gap-4">
+      <h1>{homeCopy.title}</h1>
 
-            <p>{project.description}</p>
-          </div>
+      <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
+        <Markdown>{readMarkdownFile('home.md')}</Markdown>
+      </div>
+
+      <div className="flex flex-row gap-1.5">
+        {LINKS.map((link) => (
+          <a
+            key={link.url}
+            href={link.url}
+            target="_blank"
+            className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
+          >
+            <span>{link.icon}</span>
+            <span>{link.title}</span>
+          </a>
         ))}
       </div>
-    </Page>
-  )
-}
+    </div>
+
+    <hr className="my-8" />
+
+    <h2>Recent projects</h2>
+
+    <div className="mt-4 flex flex-col gap-6">
+      {PROJECTS.map((project) => (
+        <div key={project.title} className="flex flex-col gap-1">
+          <div>
+            {project.url.startsWith('/') ? (
+              <Link
+                href={project.url as any}
+                className="font-medium text-amber-400 hover:text-amber-200"
+                target="_blank"
+              >
+                {project.title}
+              </Link>
+            ) : (
+              <a
+                href={project.url}
+                target="_blank"
+                className="font-medium text-amber-400 hover:text-amber-200"
+              >
+                {project.title}
+              </a>
+            )}
+          </div>
+
+          <p>{project.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <hr className="my-8" />
+
+    <a className="text-neutral-400 hover:text-neutral-300" href="mailto:altay@zebrastik.com">
+      altay@zebrastik.com
+    </a>
+  </>
+)
 
 export default HomePage

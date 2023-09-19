@@ -11,10 +11,6 @@ export const booksCopy = {
   description: 'Somewhat detailed notes from books I read.',
 } as const
 
-export const historyCopy = {
-  title: `History`,
-} as const
-
 export const zebrastikCopy = {
   title: 'hi, we are zebrastik',
   description:
