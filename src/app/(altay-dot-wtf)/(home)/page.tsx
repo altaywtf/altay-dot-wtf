@@ -1,4 +1,4 @@
-import { homeCopy } from 'config'
+import { homeCopy, booksCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
 import Markdown from 'ui/Markdown'
 import Link from 'next/link'
@@ -22,8 +22,8 @@ const PROJECTS: Project[] = [
     icon_url: '/images/projects/raycast.png',
   },
   {
-    title: 'Book notes',
-    description: 'Somewhat detailed notes from books I read.',
+    title: booksCopy.title,
+    description: booksCopy.description,
     url: '/books',
     icon_url: '/images/books/navalmanack/cover.png',
   },
