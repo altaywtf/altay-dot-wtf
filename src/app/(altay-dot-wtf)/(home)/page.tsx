@@ -17,7 +17,7 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     title: 'put.io Raycast',
-    description: 'A Raycast extension for put.io.',
+    description: 'A Raycast extension for putio.',
     url: 'https://github.com/putdotio/putio-raycast',
     icon_url: '/images/projects/raycast.png',
   },
@@ -71,20 +71,20 @@ const HomePage = async () => (
       <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
         <Markdown>{readMarkdownFile('home.md')}</Markdown>
       </div>
+    </div>
 
-      <div className="flex flex-row gap-1.5">
-        {LINKS.map((link) => (
-          <a
-            key={link.url}
-            href={link.url}
-            target="_blank"
-            className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
-          >
-            <span>{link.icon}</span>
-            <span>{link.title}</span>
-          </a>
-        ))}
-      </div>
+    <div className="mt-4 flex flex-row gap-2">
+      {LINKS.map((link) => (
+        <a
+          key={link.url}
+          href={link.url}
+          target="_blank"
+          className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
+        >
+          <span>{link.icon}</span>
+          <span>{link.title}</span>
+        </a>
+      ))}
     </div>
 
     <hr className="my-8" />
@@ -103,9 +103,8 @@ const HomePage = async () => (
               <div>
                 {project.url.startsWith('/') ? (
                   <Link
-                    href={project.url as any}
+                    href={project.url}
                     className="font-medium text-amber-400 hover:text-amber-200"
-                    target="_blank"
                   >
                     {project.title}
                   </Link>

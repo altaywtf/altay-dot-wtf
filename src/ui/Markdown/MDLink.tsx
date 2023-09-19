@@ -5,9 +5,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const MDInternalLink: React.FC<Props> = ({ href, children }) => (
-  <Link href={href as any}>{children}</Link>
-)
+const MDInternalLink: React.FC<Props> = ({ href, children }) => <Link href={href}>{children}</Link>
 
 const MDExternalLink: React.FC<Props> = ({ href, children }) => (
   <a href={href} target="_blank" rel="noreferrer noopener">

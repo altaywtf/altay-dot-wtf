@@ -24,7 +24,7 @@ const Backlinks: React.FC<{
         {backlinks.map((backlink) => (
           <li key={backlink.url}>
             <Link
-              href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}` as any}
+              href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`}
               className="hover:underline"
             >
               {backlink.title}

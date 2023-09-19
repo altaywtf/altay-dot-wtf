@@ -8,7 +8,7 @@ export const postsCopy = {
 
 export const booksCopy = {
   title: 'Book notes',
-  description: 'Somewhat detailed notes from books I read.',
+  description: 'Somewhat detailed notes from the books that I read.',
 } as const
 
 export const zebrastikCopy = {

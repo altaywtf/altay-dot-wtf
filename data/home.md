@@ -1,7 +1,7 @@
-I'm a software engineer building apps for web, mobile, and streaming devices.
+I'm a software engineer building user interfaces for web, mobile, and streaming devices.
 
-I'm currently living in Bodrum and working on [putio](https://put.io)'s user-facing parts.
+I'm currently based in Bodrum and working at [putio](https://put.io), which I've been a part of since 2017.
 
-Before moving to Bodrum, I was in Berlin for three years and worked on [Klarna](https://klarna.com)'s consumer app, and the mobile wallet of [Lisk](https://lisk.io).
+Before moving to Bodrum, I spent 3 years in Berlin to work on [Klarna](https://klarna.com)'s consumer app and [Lisk](https://lisk.io)'s mobile cryptocurrency wallet.
 
-Even before, I studied Mechanical Engineering at Istanbul Bilgi University, cut my teeth at several gigs and eventually joined [putio](https://put.io).
+Before Berlin, I lived in Istanbul where I studied Mechanical Engineering at Istanbul Bilgi University, cut my teeth at several gigs, and eventually joined [putio](https://put.io).
