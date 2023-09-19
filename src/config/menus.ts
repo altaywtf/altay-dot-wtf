@@ -8,9 +8,4 @@ export const HEADER_NAV_LINKS = [
     label: 'Books',
     href: '/books',
   },
-
-  {
-    label: 'Now',
-    href: '/now',
-  },
 ] as const

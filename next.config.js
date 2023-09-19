@@ -26,33 +26,6 @@ const nextConfig = {
     ],
   },
 
-  // headers: async () => [
-  //   {
-  //     source: '/:path*',
-  //     has: [{ type: 'host', value: 'www.zebrastik.com' }],
-  //     headers: [
-  //       {
-  //         key: 'x-rewrite-zebrastik',
-  //         value: 'true',
-  //       },
-  //     ],
-  //   },
-  // ],
-
-  // rewrites: async () => [
-  //   {
-  //     source: '/:path*',
-  //     destination: '/zebrastik',
-  //     has: [
-  //       {
-  //         type: 'header',
-  //         key: 'x-rewrite-zebrastik',
-  //         value: 'true',
-  //       },
-  //     ],
-  //   },
-  // ],
-
   redirects: async () => [
     {
       source: '/',
@@ -60,9 +33,16 @@ const nextConfig = {
       permanent: true,
       has: [{ type: 'host', value: 'www.zebrastik.com' }],
     },
+
+    {
+      source: '/now',
+      destination: '/',
+      permanent: true,
+    },
+
     {
       source: '/articles',
-      destination: '/posts',
+      destination: '/#writing',
       permanent: true,
     },
     {
@@ -75,9 +55,10 @@ const nextConfig = {
       destination: '/images/posts/:path*',
       permanent: true,
     },
+
     {
       source: '/notes',
-      destination: '/posts',
+      destination: '/#writing',
       permanent: true,
     },
     {
@@ -90,9 +71,10 @@ const nextConfig = {
       destination: '/images/posts/:path*',
       permanent: true,
     },
+
     {
       source: '/blog',
-      destination: '/posts',
+      destination: '/#writing',
       permanent: true,
     },
     {
