@@ -8,9 +8,9 @@ Do you remember the first-ever email address you've signed up for?
 
 Mine was `djaty2@hotmail.com`. I was ten years old. I inherited the nickname from a close friend (`djazy2`) that lived in the same neighborhood. I don't know why `"dj"`, though. We were chatting on MSN Messenger and playing Counter-Strike the whole day.
 
-I used that address for several years. Then Facebook came out, and MSN Messenger lost its popularity. Gmail grew as well. I was smart enough –still surprised by that– to get `altay.surname@gmail.com` when I was twelve. Still, I kept using weird addresses such as `klozetkapagi@punkerland.com` (toilet seat cover) during my teenage period.
+I used that address for several years. Then Facebook came out, and MSN Messenger lost its popularity. Gmail grew as well. I was smart enough –still surprised by that– to get `name.surname@gmail.com` when I was twelve. Still, I kept using weird addresses such as `klozetkapagi@punkerland.com` (toilet seat cover) during my teenage period.
 
-When my digital presence reached to a level of maturity to use a proper email address, I already forgot the password of `altay.surname`. I suffered from this shame under the name of `altay.surname0` and `surname.altay`. It's still vague, but I managed to remember the password around 2013. I regained my identity as `altay.surname` and kept it till recently.
+When my digital presence reached to a level of maturity to use a proper email address, I already forgot the password of `name.surname`. I suffered from this shame under the name of `name.surname0` and `surname.name`. It's still vague, but I managed to remember the password around 2013. I regained my identity as `name.surname` and kept it till recently.
 
 Over the years, email became something more useful than just mindlessly handing out to random services. It helped me connect with people, get job offers, learn stuff, and follow what's going on around the globe.
 
@@ -52,7 +52,7 @@ Unfortunately, Tutanota doesn't have an import feature. It actually made me go t
 
 Setting up the redirection is straightforward since it's mostly on Gmail's side. I've created a dedicated folder for redirected emails for the sake of categorization.
 
-Tutanota includes the catch-all feature in the premium plan. It gives us the opportunity of creating arbitrary addresses like there's no tomorrow. I'm used to leveraging the alias pattern (`altay.surname+twitter`) from Gmail. I did the same here and used addresses like `a+twitter@surname.io` (`twitter@surname.io` is also possible with `catch-all`).
+Tutanota includes the catch-all feature in the premium plan. It gives us the opportunity of creating arbitrary addresses like there's no tomorrow. I'm used to leveraging the alias pattern (`name.surname+twitter`) from Gmail. I did the same here and used addresses like `a+twitter@surname.io` (`twitter@surname.io` is also possible with `catch-all`).
 
 We can create incoming email filters in Tutanota, yet they are disappointingly inadequate. There's no room for basic acrobatics like `mark as read`. We can only move them to specific folders. I contacted customer support to ask about `mark as read` to not get push notifications for every incoming mail. They recommended marking them as spam. I live by the fact that workarounds are the anchors of software development, but this hurts my brain.
 
