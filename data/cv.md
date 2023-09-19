@@ -1,4 +1,4 @@
-## Altay Aydemir
+## Altay A.
 
 I'm a software engineer mostly focused on the user-facing side of the digital products. I enjoy transforming an idea into something tangible if it's solving a problem I empathize with.
 

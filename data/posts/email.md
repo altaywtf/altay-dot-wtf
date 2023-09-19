@@ -8,9 +8,9 @@ Do you remember the first-ever email address you've signed up for?
 
 Mine was `djaty2@hotmail.com`. I was ten years old. I inherited the nickname from a close friend (`djazy2`) that lived in the same neighborhood. I don't know why `"dj"`, though. We were chatting on MSN Messenger and playing Counter-Strike the whole day.
 
-I used that address for several years. Then Facebook came out, and MSN Messenger lost its popularity. Gmail grew as well. I was smart enough –still surprised by that– to get `altay.aydemir@gmail.com` when I was twelve. Still, I kept using weird addresses such as `klozetkapagi@punkerland.com` (toilet seat cover) during my teenage period.
+I used that address for several years. Then Facebook came out, and MSN Messenger lost its popularity. Gmail grew as well. I was smart enough –still surprised by that– to get `altay.surname@gmail.com` when I was twelve. Still, I kept using weird addresses such as `klozetkapagi@punkerland.com` (toilet seat cover) during my teenage period.
 
-When my digital presence reached to a level of maturity to use a proper email address, I already forgot the password of `altay.aydemir`. I suffered from this shame under the name of `altay.aydemir0` and `aydemir.altay`. It's still vague, but I managed to remember the password around 2013. I regained my identity as `altay.aydemir` and kept it till recently.
+When my digital presence reached to a level of maturity to use a proper email address, I already forgot the password of `altay.surname`. I suffered from this shame under the name of `altay.surname0` and `surname.altay`. It's still vague, but I managed to remember the password around 2013. I regained my identity as `altay.surname` and kept it till recently.
 
 Over the years, email became something more useful than just mindlessly handing out to random services. It helped me connect with people, get job offers, learn stuff, and follow what's going on around the globe.
 
@@ -36,7 +36,7 @@ Based on the thoughts above, I was looking for three fundamental features:
 
 And several nice-to-have items:
 
-- **Catch-all or alias.** I want to create arbitrary addresses (such as `a+twitter@aydemir.io`) for specific use-cases. It helps to differentiate our fellas and foes in the digital realm. If I get an automated email looking for a Java developer to work at the North-Pole, I'll have a chance to guess where they bought my email address from.
+- **Catch-all or alias.** I want to create arbitrary addresses (such as `a+twitter@surname.io`) for specific use-cases. It helps to differentiate our fellas and foes in the digital realm. If I get an automated email looking for a Java developer to work at the North-Pole, I'll have a chance to guess where they bought my email address from.
 - **Filters for incoming emails.** I want to mark non-crucial messages as read and group them within a folder to reduce noise. I value maintaining an inbox-zero. Facing a dozen unread newsletters every Monday doesn't help.
 - **SMTP support on desktop.** I use Apple Mail on desktop. I try not to use an email app on my phone and tablet unless I can shield myself from the notification bombardment.
 
@@ -52,7 +52,7 @@ Unfortunately, Tutanota doesn't have an import feature. It actually made me go t
 
 Setting up the redirection is straightforward since it's mostly on Gmail's side. I've created a dedicated folder for redirected emails for the sake of categorization.
 
-Tutanota includes the catch-all feature in the premium plan. It gives us the opportunity of creating arbitrary addresses like there's no tomorrow. I'm used to leveraging the alias pattern (`altay.aydemir+twitter`) from Gmail. I did the same here and used addresses like `a+twitter@aydemir.io` (`twitter@aydemir.io` is also possible with `catch-all`).
+Tutanota includes the catch-all feature in the premium plan. It gives us the opportunity of creating arbitrary addresses like there's no tomorrow. I'm used to leveraging the alias pattern (`altay.surname+twitter`) from Gmail. I did the same here and used addresses like `a+twitter@surname.io` (`twitter@surname.io` is also possible with `catch-all`).
 
 We can create incoming email filters in Tutanota, yet they are disappointingly inadequate. There's no room for basic acrobatics like `mark as read`. We can only move them to specific folders. I contacted customer support to ask about `mark as read` to not get push notifications for every incoming mail. They recommended marking them as spam. I live by the fact that workarounds are the anchors of software development, but this hurts my brain.
 
