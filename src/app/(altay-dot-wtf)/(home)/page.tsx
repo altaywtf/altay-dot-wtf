@@ -79,6 +79,7 @@ const HomePage = async () => (
           key={link.url}
           href={link.url}
           target="_blank"
+          rel="noopener noreferrer"
           className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
         >
           <span>{link.icon}</span>
@@ -113,6 +114,7 @@ const HomePage = async () => (
                     href={project.url}
                     target="_blank"
                     className="font-medium text-amber-400 hover:text-amber-200"
+                    rel="noopener noreferrer"
                   >
                     {project.title}
                   </a>
