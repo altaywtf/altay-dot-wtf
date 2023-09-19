@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 }
 
 const Zebrastik = () => (
-  <section className="app-width p-4 sm:px-0">
+  <section className="app-width px-4 py-8 sm:px-0">
     <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
       <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
     </div>
 
-    <div className="mt-4 flex flex-col gap-2">
+    <div className="mt-8 flex flex-col gap-2">
       <h1>{zebrastikCopy.title}</h1>
       <p className="text-neutral-400">{zebrastikCopy.description}</p>
     </div>

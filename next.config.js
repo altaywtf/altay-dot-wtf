@@ -6,24 +6,6 @@ const nextConfig = {
 
   experimental: {
     appDir: true,
-    typedRoutes: true,
-  },
-
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'oku.ams3.cdn.digitaloceanspaces.com',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.mzstatic.com',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.tvmaze.com',
-      },
-    ],
   },
 
   redirects: async () => [
@@ -42,7 +24,7 @@ const nextConfig = {
 
     {
       source: '/articles',
-      destination: '/#writing',
+      destination: '/blog',
       permanent: true,
     },
     {
@@ -58,7 +40,7 @@ const nextConfig = {
 
     {
       source: '/notes',
-      destination: '/#writing',
+      destination: '/blog',
       permanent: true,
     },
     {
@@ -74,7 +56,7 @@ const nextConfig = {
 
     {
       source: '/blog',
-      destination: '/#writing',
+      destination: '/posts',
       permanent: true,
     },
     {

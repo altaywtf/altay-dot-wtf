@@ -11,6 +11,7 @@ type Project = {
   title: string
   description: string
   url: string
+  icon_url: string
 }
 
 const PROJECTS: Project[] = [
@@ -18,16 +19,19 @@ const PROJECTS: Project[] = [
     title: 'put.io Raycast',
     description: 'A Raycast extension for put.io.',
     url: 'https://github.com/putdotio/putio-raycast',
+    icon_url: '/images/projects/raycast.png',
   },
   {
     title: 'Book notes',
     description: 'Somewhat detailed notes from books I read.',
     url: '/books',
+    icon_url: '/images/books/navalmanack/cover.png',
   },
   {
     title: 'Accept Nano',
     description: 'JavaScript client for Accept NANO payment gateway.',
     url: 'https://github.com/accept-nano/accept-nano-client',
+    icon_url: '/images/projects/accept-nano.png',
   },
 ]
 
@@ -61,7 +65,7 @@ const HomePage = async () => (
       <Image src="/images/avatar.png" alt="That's my head" fill sizes="100%" />
     </div>
 
-    <div className="my-4 flex flex-col gap-4">
+    <div className="mt-8 flex flex-col gap-4">
       <h1>{homeCopy.title}</h1>
 
       <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
@@ -89,28 +93,36 @@ const HomePage = async () => (
 
     <div className="mt-4 flex flex-col gap-6">
       {PROJECTS.map((project) => (
-        <div key={project.title} className="flex flex-col gap-1">
-          <div>
-            {project.url.startsWith('/') ? (
-              <Link
-                href={project.url as any}
-                className="font-medium text-amber-400 hover:text-amber-200"
-                target="_blank"
-              >
-                {project.title}
-              </Link>
-            ) : (
-              <a
-                href={project.url}
-                target="_blank"
-                className="font-medium text-amber-400 hover:text-amber-200"
-              >
-                {project.title}
-              </a>
-            )}
-          </div>
+        <div key={project.title}>
+          <div className="flex flex-row items-center gap-3">
+            <div className="relative h-10 w-10 overflow-hidden rounded">
+              <Image src={project.icon_url} alt={project.title} fill sizes="100%" />
+            </div>
 
-          <p>{project.description}</p>
+            <div className="flex flex-col">
+              <div>
+                {project.url.startsWith('/') ? (
+                  <Link
+                    href={project.url as any}
+                    className="font-medium text-amber-400 hover:text-amber-200"
+                    target="_blank"
+                  >
+                    {project.title}
+                  </Link>
+                ) : (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    className="font-medium text-amber-400 hover:text-amber-200"
+                  >
+                    {project.title}
+                  </a>
+                )}
+              </div>
+
+              <p>{project.description}</p>
+            </div>
+          </div>
         </div>
       ))}
     </div>

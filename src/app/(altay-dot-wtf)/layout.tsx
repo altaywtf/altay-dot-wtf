@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
-    <section className="app-width px-3 py-8 sm:px-0">{children}</section>
+    <section className="app-width px-4 py-8 sm:px-0">{children}</section>
     <PathHistoryListener />
   </>
 )
