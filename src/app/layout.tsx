@@ -1,9 +1,9 @@
 import AnalyticsWrapper from 'ui/AnalyticsWrapper'
 import 'ui/theme/style.css'
-import { gtAmerica } from 'ui/theme/fonts'
+import { gtAmerica, gtAmericaMono } from 'ui/theme/fonts'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <html lang="en" className={`${gtAmerica.variable} dark`}>
+  <html lang="en" className={`${gtAmerica.variable} ${gtAmericaMono.variable} dark`}>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       <meta name="theme-color" content="rgb(10, 10, 10)" />

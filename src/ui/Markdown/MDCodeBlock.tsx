@@ -10,7 +10,13 @@ export const MDCodeBlock: React.FC<CodeProps> = (props) => {
   const children = String(props.children).replace(/\n$/, '')
 
   return (
-    <SyntaxHighlighter style={dark} language={language}>
+    <SyntaxHighlighter
+      style={dark}
+      language={language}
+      customStyle={{
+        fontFamily: 'var(--font-gt-america-mono)',
+      }}
+    >
       {children}
     </SyntaxHighlighter>
   )

@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-gt-america)'],
+        mono: ['var(--font-gt-america-mono)'],
       },
     },
   },

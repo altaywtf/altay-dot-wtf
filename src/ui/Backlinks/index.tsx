@@ -20,7 +20,7 @@ const Backlinks: React.FC<{
     <div className="flex flex-col gap-2 rounded bg-neutral-900 p-4">
       <h4>Links to this {sourceType}</h4>
 
-      <ul className="list-inside list-disc">
+      <ul className="list-outside list-disc pl-4">
         {backlinks.map((backlink) => (
           <li key={backlink.url}>
             <Link

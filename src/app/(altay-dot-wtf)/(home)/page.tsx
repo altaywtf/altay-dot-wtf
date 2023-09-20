@@ -100,7 +100,7 @@ const HomePage = async () => (
               <Image src={project.icon_url} alt={project.title} fill sizes="100%" />
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-1 flex-col">
               <div>
                 {project.url.startsWith('/') ? (
                   <Link
@@ -130,7 +130,10 @@ const HomePage = async () => (
 
     <hr className="my-8" />
 
-    <a className="text-neutral-400 hover:text-neutral-300" href="mailto:altay@zebrastik.com">
+    <a
+      className="font-mono text-sm text-neutral-400 hover:text-neutral-300"
+      href="mailto:altay@zebrastik.com"
+    >
       altay@zebrastik.com
     </a>
   </>

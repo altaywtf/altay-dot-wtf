@@ -3,7 +3,7 @@ export const homeCopy = {
 } as const
 
 export const postsCopy = {
-  title: `Blog`,
+  title: `Writing`,
 } as const
 
 export const booksCopy = {
