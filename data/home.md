@@ -4,4 +4,4 @@ I'm currently based in Bodrum and working at [putio](https://put.io), which I've
 
 Before moving to Bodrum, I spent three years in Berlin to work on [Klarna](https://klarna.com)'s consumer app and [Lisk](https://lisk.io)'s mobile cryptocurrency wallet.
 
-Before Berlin, I lived in Istanbul where I studied Mechanical Engineering at Istanbul Bilgi University, cut my teeth at several gigs, and eventually joined [putio](https://put.io).
+Prior to Berlin, I lived in Istanbul where I studied Mechanical Engineering at Istanbul Bilgi University, cut my teeth at several gigs, and eventually joined [putio](https://put.io).
