@@ -13,15 +13,19 @@ const nextConfig = {
       source: '/',
       destination: '/zebrastik',
       permanent: true,
-      has: [{ type: 'host', value: 'www.zebrastik.com' }],
+      has: [{ type: 'host', value: 'zebrastik.com' }],
     },
-
+    {
+      source: '/',
+      destination: '/zebrastik',
+      permanent: true,
+      has: [{ type: 'host', value: 'zbrstk.com' }],
+    },
     {
       source: '/now',
       destination: '/',
       permanent: true,
     },
-
     {
       source: '/articles',
       destination: '/blog',
