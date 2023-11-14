@@ -6,12 +6,11 @@ I'm a software engineer mostly focused on the user-facing side of the digital pr
 
 ### Technical Background
 
-**Industries:** Media Streaming, Cloud Storage, Blockchain, FinTech\
-**Interests:** Functional Programming, Domain-Driven Design, Humane
-Product Design\
-**Platforms:** web, iOS, tvOS, Android, LG webOS,
+**Industries:** Media streaming, Cloud Storage, FinTech\
+**Interests:** Functional Programming, Developer Experience, Domain-Driven Design\
+**Runtimes:** Node, web, iOS, tvOS, Android, LG webOS,
 Samsung Tizen, Roku, Chromecast\
-**Technologies:** React, React Native, NextJS, CSS-in-JS, Tailwind, Design Systems, Storybook, Visual Testing, Jest, Webpack, Fastlane, Kafka, Supabase
+**Technologies:** React, React Native, NextJS, CSS-in-JS, Tailwind, Design Systems, Storybook, Visual Testing, Jest, Webpack, Fastlane, Kafka, Supabase\
 
 ---
 
@@ -24,7 +23,8 @@ Samsung Tizen, Roku, Chromecast\
   effects of the pandemic.
 - I've also re-started working full-time at put.io, which I've been a part
   of since 2017 and kept working on the side when I moved to Berlin in 2018.
-- Nowadays I'm working on our web, iOS, tvOS and Android TV applications.
+- Managing the frontend monorepo that produces apps for web, iOS, Apple TV, Android TV, Chromecast, Roku, and various smart TV platforms.
+- Building open-source utilities such as JavaScript / Swift SDKs, browser and Raycast extensions.
 
 #### Klarna \(May 2019 - Aug 2021\)
 
