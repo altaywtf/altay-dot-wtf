@@ -1,8 +1,7 @@
-/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
-
 const { pathsToModuleNameMapper } = require('ts-jest')
 const { compilerOptions } = require('./tsconfig.json')
 
+/** @type {import('ts-jest').InitialOptionsTsJest} */
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',

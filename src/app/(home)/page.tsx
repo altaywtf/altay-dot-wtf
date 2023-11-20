@@ -1,11 +1,11 @@
 import { homeCopy, booksCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
 import Markdown from 'ui/Markdown'
-import Link from 'next/link'
 import Image from 'next/image'
 import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
 import { VscGithub } from '@react-icons/all-files/vsc/VscGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
 
 type Project = {
   title: string
@@ -35,26 +35,20 @@ const PROJECTS: Project[] = [
   },
 ]
 
-type Link = {
-  title: string
-  url: string
-  icon: React.ReactNode
-}
-
-const LINKS: Link[] = [
+const LINKS = [
   {
-    title: 'GitHub',
+    label: 'GitHub',
     url: 'https://github.com/altaywtf',
     icon: <VscGithub />,
   },
   {
-    title: 'Twitter',
+    label: 'Twitter',
     url: 'https://twitter.com/altaywtf',
     icon: <VscTwitter />,
   },
   {
-    title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/altaywtf/',
+    label: 'LinkedIn',
+    url: 'https://linkedin.com/in/altaywtf/',
     icon: <FaLinkedin />,
   },
 ]
@@ -83,14 +77,14 @@ const HomePage = async () => (
           className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
         >
           <span>{link.icon}</span>
-          <span>{link.title}</span>
+          <span>{link.label}</span>
         </a>
       ))}
     </div>
 
     <hr className="my-8" />
 
-    <h2>Recent projects</h2>
+    <h2>Open-source projects</h2>
 
     <div className="mt-4 flex flex-col gap-6">
       {PROJECTS.map((project) => (
@@ -101,24 +95,14 @@ const HomePage = async () => (
             </div>
 
             <div className="flex flex-1 flex-col">
-              <div>
-                {project.url.startsWith('/') ? (
-                  <Link
-                    href={project.url}
-                    className="font-medium text-amber-400 hover:text-amber-200"
-                  >
-                    {project.title}
-                  </Link>
-                ) : (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    className="font-medium text-amber-400 hover:text-amber-200"
-                    rel="noopener noreferrer"
-                  >
-                    {project.title}
-                  </a>
-                )}
+              <div className="flex flex-row items-center gap-0.5 font-medium text-amber-400 hover:text-amber-200">
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  {project.title}
+                </a>
+
+                <span className="text-sm">
+                  <CgArrowTopRight />
+                </span>
               </div>
 
               <p>{project.description}</p>
@@ -130,12 +114,17 @@ const HomePage = async () => (
 
     <hr className="my-8" />
 
-    <a
-      className="font-mono text-sm text-neutral-400 hover:text-neutral-300"
-      href="mailto:altay@zebrastik.com"
-    >
-      altay@zebrastik.com
-    </a>
+    <div className=" text-neutral-400">
+      <a className="hover:text-neutral-300" href="mailto:altay@zebrastik.com">
+        altay@zebrastik.com
+      </a>
+
+      <div className="mt-4">
+        <p>zebrastik, LLC</p>
+        <p>30 N Gould St, STE 4000</p>
+        <p>Sheridan, WY 82801</p>
+      </div>
+    </div>
   </>
 )
 

@@ -1,16 +1,18 @@
 ## Altay A.
 
-I'm a software engineer mostly focused on the user-facing side of the digital products. I enjoy transforming an idea into something tangible if it's solving a problem I empathize with.
+I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React, React Native, DX, and monorepos.
 
 ---
 
 ### Technical Background
 
-**Industries:** Media streaming, Cloud Storage, FinTech\
-**Interests:** Functional Programming, Developer Experience, Domain-Driven Design\
-**Runtimes:** Node, web, iOS, tvOS, Android, LG webOS,
-Samsung Tizen, Roku, Chromecast\
-**Technologies:** React, React Native, NextJS, CSS-in-JS, Tailwind, Design Systems, Storybook, Visual Testing, Jest, Webpack, Fastlane, Kafka, Supabase\
+- **Industries:** Media streaming, Cloud Storage, FinTech
+- **Interests:** Functional Programming, Domain-Driven Design, Developer Experience, Design Systems
+- **Libraries:** React, React Native, NextJS, Styled Components, Radix UI, Tailwind
+- **Tools:** TypeScript, Babel, ESLint, Prettier, Storybook, Jest, Webpack, yarn, pnpm, Turborepo
+- **Runtimes:** Node, web, iOS, tvOS, Android, Android TV, LG webOS, Samsung Tizen, Roku, Chromecast
+- **CI/CD:** GitHub Actions, Fastlane
+- **Platforms:** Vercel, Supabase, AWS
 
 ---
 
@@ -40,7 +42,7 @@ Samsung Tizen, Roku, Chromecast\
 - Got a promotion and switched to a distributed team
   (Stockholm, Berlin, Amsterdam) that is responsible for the integrity,
   performance, security and the release cycle of the consumer application,
-  which was live in 14 countries with average 6M daily active users at the time.
+  which was live in 14 countries with average 6M daily active users at the time.
 - Restructured the localization architecture of the app to support 10+
   languages with different dialects.
 - Worked on a package based feature isolation project in the monorepo to allow product teams to develop their features in a safe and standardized way.
@@ -100,10 +102,10 @@ Samsung Tizen, Roku, Chromecast\
 
 ---
 
-### Links
+### Contact
 
 - [altay.wtf](https://altay.wtf)
-- [altay@zebrastik.com](mailto:altay@zebrastik.com)
 - [twitter.com/altaywtf](https://twitter.com/altaywtf)
 - [github.com/altaywtf](https://github.com/altaywtf)
 - [linkedin.com/in/altaywtf](https://linkedin.com/in/altaywtf)
+- [altay@zebrastik.com](mailto:altay@zebrastik.com)

@@ -9,23 +9,19 @@ const nextConfig = {
   },
 
   redirects: async () => [
-    {
-      source: '/',
-      destination: '/zebrastik',
-      permanent: true,
-      has: [{ type: 'host', value: 'zebrastik.com' }],
-    },
-    {
-      source: '/',
-      destination: '/zebrastik',
-      permanent: true,
-      has: [{ type: 'host', value: 'zbrstk.com' }],
-    },
+    // deleted pages
     {
       source: '/now',
       destination: '/',
       permanent: true,
     },
+    {
+      source: '/zebrastik',
+      destination: '/',
+      permanent: true,
+    },
+
+    // `articles`, `notes`, and `blog` to `posts`
     {
       source: '/articles',
       destination: '/blog',
@@ -41,7 +37,6 @@ const nextConfig = {
       destination: '/images/posts/:path*',
       permanent: true,
     },
-
     {
       source: '/notes',
       destination: '/blog',
@@ -57,7 +52,6 @@ const nextConfig = {
       destination: '/images/posts/:path*',
       permanent: true,
     },
-
     {
       source: '/blog',
       destination: '/posts',
