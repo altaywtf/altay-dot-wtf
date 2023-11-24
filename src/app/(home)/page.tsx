@@ -16,6 +16,12 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
+    title: 'browsercare',
+    description: 'A tool for making data-driven decisions to adjust your supported web browsers.',
+    url: 'https://github.com/altaywtf/browsercare',
+    icon_url: '/images/projects/browsercare.png',
+  },
+  {
     title: 'put.io Raycast',
     description: 'A Raycast extension for putio.',
     url: 'https://github.com/putdotio/putio-raycast',
