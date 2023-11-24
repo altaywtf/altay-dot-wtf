@@ -1,4 +1,4 @@
-I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React, React Native, DX, and monorepos.
+I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, developer experience, and monorepos.
 
 I'm currently based in Bodrum and mostly working on [putio](https://put.io), a cloud storage service that helps you to download and stream files, also a couple of passion projects on the side.
 

@@ -1,13 +1,13 @@
 ## Altay A.
 
-I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React, React Native, DX, and monorepos.
+I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, developer experience, and monorepos.
 
 ---
 
 ### Technical Background
 
-- **Industries:** Media streaming, Cloud Storage, FinTech
-- **Interests:** Functional Programming, Domain-Driven Design, Developer Experience, Design Systems
+- **Industries:** Media streaming, Cloud storage, FinTech
+- **Interests:** Functional programming, Domain-driven design, State machines
 - **Libraries:** React, React Native, NextJS, Styled Components, Radix UI, Tailwind
 - **Tools:** TypeScript, Babel, ESLint, Prettier, Storybook, Jest, Webpack, yarn, pnpm, Turborepo
 - **Runtimes:** Node, web, iOS, tvOS, Android, Android TV, LG webOS, Samsung Tizen, Roku, Chromecast
@@ -20,17 +20,14 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 
 #### put.io \(Jan 2022 - Now\)
 
-- After three years in Berlin, I took a break from work and moved to a
-  warm seaside district (Bodrum) in Turkey to lighten the psychological
-  effects of the pandemic.
-- I've also re-started working full-time at put.io, which I've been a part
-  of since 2017 and kept working on the side when I moved to Berlin in 2018.
+- After three years in Berlin, I took a break from work and moved to a warm seaside district (Bodrum) in Turkey to lighten the psychological effects of the pandemic.
+- I've started focusing full-time on put.io, which I've been a part of since 2017 and kept working on the side when I moved to Berlin in 2018.
 - Managing the frontend monorepo that produces apps for web, iOS, Apple TV, Android TV, Chromecast, Roku, and various smart TV platforms.
 - Building open-source utilities such as JavaScript / Swift SDKs, browser and Raycast extensions.
 
 #### Klarna \(May 2019 - Aug 2021\)
 
-#### _Senior Engineer at Consumer Deals (Jan 2020 - Aug 2021)_
+#### _Senior Engineer at Consumer Deals (Jan 2021 - Aug 2021)_
 
 - Switched to a product team focusing on Shopping Growth that I built the
   MVP back in 2019.
@@ -46,8 +43,7 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 - Restructured the localization architecture of the app to support 10+
   languages with different dialects.
 - Worked on a package based feature isolation project in the monorepo to allow product teams to develop their features in a safe and standardized way.
-- Maintained a service for managing the killswitch behavior and monitoring
-  releases of the consumer apps.
+- Maintained a service for managing the killswitch behavior and monitoring releases of the consumer apps.
 - Helped new joiners to on-board Klarna App ecosystem, reviewed 300+
   pull-requests from 50+ teams, did code reviews and interviews for JavaScript hiring pipeline.
 

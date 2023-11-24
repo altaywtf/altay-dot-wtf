@@ -17,7 +17,8 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     title: 'browsercare',
-    description: 'A tool for making data-driven decisions to adjust your supported web browsers.',
+    description:
+      'A tool for making data-driven decisions to adjust browser coverage of web projects.',
     url: 'https://github.com/altaywtf/browsercare',
     icon_url: '/images/projects/browsercare.png',
   },
@@ -96,7 +97,7 @@ const HomePage = async () => (
       {PROJECTS.map((project) => (
         <div key={project.title}>
           <div className="flex flex-row items-center gap-3">
-            <div className="relative h-10 w-10 overflow-hidden rounded">
+            <div className="relative h-10 w-10 overflow-hidden rounded border border-solid border-neutral-900">
               <Image src={project.icon_url} alt={project.title} fill sizes="100%" />
             </div>
 

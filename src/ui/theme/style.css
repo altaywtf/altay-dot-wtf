@@ -7,7 +7,7 @@
     @apply antialiased;
     @apply text-neutral-200;
     @apply bg-neutral-950;
-    --app-width: 640px;
+    --app-width: 720px;
   }
 
   html {
