@@ -4,6 +4,7 @@ export const homeCopy = {
 
 export const postsCopy = {
   title: `Writing`,
+  description: 'My thoughts on stuff that bugs me.',
 } as const
 
 export const booksCopy = {
