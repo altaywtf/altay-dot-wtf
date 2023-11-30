@@ -39,7 +39,7 @@ const PROJECTS: Project[] = [
       'A tool for making data-driven decisions to adjust browser coverage of web projects.',
     icon_url: '/images/projects/browsercare.png',
     title: 'browsercare',
-    url: 'https://github.com/experiment-station/browsercare',
+    url: 'https://github.com/altaywtf/browsercare',
   },
   {
     description: 'A Raycast extension for putio.',
