@@ -7,7 +7,7 @@ import type { ParsedQuery, Post, Book, Page } from 'lib/og/types'
 export const runtime = 'edge'
 
 const loadFont = async () => {
-  const url = new URL('../../../ui/theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
+  const url = new URL('../../../../ui/theme/fonts/GT-America-Standard-Bold.ttf', import.meta.url)
   const res = await fetch(url)
   const fontData = await res.arrayBuffer()
   return fontData

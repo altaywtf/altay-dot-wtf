@@ -2,11 +2,10 @@ import { homeCopy, booksCopy, postsCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
 import Markdown from 'ui/Markdown'
 import Image from 'next/image'
-import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
-import { VscGithub } from '@react-icons/all-files/vsc/VscGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
-import { CgArrowRight } from '@react-icons/all-files/cg/CgArrowRight'
+import { VscGithub } from 'react-icons/vsc'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import { CgArrowTopRight } from 'react-icons/cg'
 import Link from 'next/link'
 
 type Project = {
@@ -24,8 +23,8 @@ const EXTERNAL_LINKS = [
   },
   {
     label: 'X.com',
-    url: 'https://twitter.com/altaywtf',
-    icon: <VscTwitter />,
+    url: 'https://x.com/altaywtf',
+    icon: <FaXTwitter />,
   },
   {
     label: 'LinkedIn',
@@ -111,15 +110,18 @@ const HomePage = async () => (
             </div>
 
             <div className="flex flex-1 flex-col">
-              <div className="flex flex-row items-center gap-0.5 font-medium text-amber-400 hover:text-amber-200">
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  {item.title}
-                </a>
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-0.5 self-start font-medium text-amber-400 hover:text-amber-200"
+              >
+                <span>{item.title}</span>
 
                 <span className="text-sm">
                   <CgArrowTopRight />
                 </span>
-              </div>
+              </a>
 
               <p>{item.description}</p>
             </div>
@@ -135,7 +137,10 @@ const HomePage = async () => (
         <div key={item.title}>
           <div className="flex flex-row items-center gap-3">
             <div className="flex flex-1 flex-col">
-              <Link href={item.url} className="font-medium text-amber-400 hover:text-amber-200">
+              <Link
+                href={item.url}
+                className="self-start font-medium text-amber-400 hover:text-amber-200"
+              >
                 {item.title}
               </Link>
 
@@ -152,12 +157,6 @@ const HomePage = async () => (
       <a className="hover:text-neutral-300" href="mailto:altay@zebrastik.com">
         altay@zebrastik.com
       </a>
-
-      <div className="mt-4">
-        <p>zebrastik, LLC</p>
-        <p>30 N Gould St, STE 4000</p>
-        <p>Sheridan, WY 82801</p>
-      </div>
     </div>
   </>
 )

@@ -1,29 +1,9 @@
+import { PropsWithChildren } from 'react'
 import AnalyticsWrapper from 'ui/AnalyticsWrapper'
-import 'ui/theme/style.css'
 import { gtAmerica, gtAmericaMono } from 'ui/theme/fonts'
-import { Metadata } from 'next'
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from 'config'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
-import { PathHistoryListener } from 'ui/PathHistoryListener'
+import 'ui/theme/style.css'
 
-export const metadata: Metadata = {
-  title: {
-    default: SITE_TITLE,
-    template: `%s | ${SITE_TITLE}`,
-  },
-  description: SITE_DESCRIPTION,
-  openGraph: {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    url: SITE_URL,
-    images: getOpenGraphImage({
-      type: 'page',
-      title: SITE_DESCRIPTION,
-    }),
-  },
-} as const
-
-const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const Layout: React.FC<PropsWithChildren> = ({ children }) => (
   <html lang="en" className={`${gtAmerica.variable} ${gtAmericaMono.variable} dark`}>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -35,10 +15,10 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
       <main className="p-safe">
         <section className="app-width px-4 py-8 sm:px-0">{children}</section>
       </main>
-      <PathHistoryListener />
+
       <AnalyticsWrapper />
     </body>
   </html>
 )
 
-export default RootLayout
+export default Layout
