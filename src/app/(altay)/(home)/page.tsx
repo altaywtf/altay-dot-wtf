@@ -57,14 +57,14 @@ const PROJECTS: Project[] = [
 
 const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
   {
-    description: postsCopy.description,
-    title: postsCopy.title,
-    url: '/posts',
-  },
-  {
     description: booksCopy.description,
     title: booksCopy.title,
     url: '/books',
+  },
+  {
+    description: postsCopy.description,
+    title: postsCopy.title,
+    url: '/posts',
   },
 ]
 

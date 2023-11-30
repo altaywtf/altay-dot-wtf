@@ -14,22 +14,6 @@ const loadFont = async () => {
   return (await fetch(url)).arrayBuffer()
 }
 
-const loadAvatarImage = async () => {
-  const url = new URL(
-    '../../../../../public/images/avatar.png',
-    import.meta.url,
-  )
-  return (await fetch(url)).arrayBuffer()
-}
-
-const loadBackgroundImage = async () => {
-  const url = new URL(
-    '../../../../../public/images/meta-bg.png',
-    import.meta.url,
-  )
-  return (await fetch(url)).arrayBuffer()
-}
-
 const parseRequest = (request: NextRequest): ParsedQuery => {
   const { searchParams } = new URL(request.url)
   const type = searchParams.get('type') as ParsedQuery['type']
@@ -63,27 +47,16 @@ const parseRequest = (request: NextRequest): ParsedQuery => {
 export const GET = async (req: NextRequest) => {
   const query = parseRequest(req)
   const fontData = await loadFont()
-  const avatarImage = await loadAvatarImage()
-  const backgroundImage = await loadBackgroundImage()
 
-  return new ImageResponse(
-    (
-      <OpenGraphImage
-        avatarImage={avatarImage}
-        backgroundImage={backgroundImage}
-        query={query}
-      />
-    ),
-    {
-      fonts: [
-        {
-          data: fontData,
-          name: 'GT-America-Standard-Bold',
-          style: 'normal',
-        },
-      ],
-      height: 686,
-      width: 1200,
-    },
-  )
+  return new ImageResponse(<OpenGraphImage query={query} />, {
+    fonts: [
+      {
+        data: fontData,
+        name: 'GT-America-Standard-Bold',
+        style: 'normal',
+      },
+    ],
+    height: 686,
+    width: 1200,
+  })
 }

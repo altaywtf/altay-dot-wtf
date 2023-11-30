@@ -1,9 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { SITE_URL } from 'config'
+import { APP_URL } from 'config/constants'
 import colors from 'tailwindcss/colors'
 
 import type { Book, Page, ParsedQuery, Post } from './types'
+
+const H1 = (props: React.ComponentProps<'h1'>) => (
+  <h1
+    style={{
+      fontSize: '5rem',
+      margin: 0,
+      padding: 0,
+    }}
+    {...props}
+  />
+)
+
+const H2 = (props: React.ComponentProps<'h2'>) => (
+  <h2
+    style={{
+      color: colors.neutral[400],
+      fontSize: '4rem',
+      margin: 0,
+      padding: 0,
+    }}
+    {...props}
+  />
+)
 
 const renderPost = (post: Post) => (
   <div
@@ -11,30 +34,12 @@ const renderPost = (post: Post) => (
       alignItems: 'flex-start',
       display: 'flex',
       flexDirection: 'column',
+      gap: '2.5rem',
       width: '100%',
     }}
   >
-    <h1
-      style={{
-        fontSize: 96,
-        margin: 0,
-        padding: 0,
-      }}
-    >
-      {post.title}
-    </h1>
-
-    <h4
-      style={{
-        color: colors.neutral[400],
-        fontSize: 48,
-        margin: 0,
-        marginTop: 36,
-        padding: 0,
-      }}
-    >
-      {post.oneliner}
-    </h4>
+    <H1>{post.title}</H1>
+    <H2>{post.oneliner}</H2>
   </div>
 )
 
@@ -43,6 +48,7 @@ const renderBook = (book: Book) => (
     style={{
       alignItems: 'flex-end',
       display: 'flex',
+      gap: '2.5rem',
       justifyContent: 'space-between',
       width: '100%',
     }}
@@ -53,41 +59,23 @@ const renderBook = (book: Book) => (
         display: 'flex',
         flex: 1,
         flexDirection: 'column',
+        gap: '2.5rem',
       }}
     >
-      <h2
-        style={{
-          fontSize: 72,
-          margin: 0,
-          padding: 0,
-        }}
-      >
-        {book.title}
-      </h2>
-
-      <h3
-        style={{
-          color: colors.neutral[400],
-          fontSize: 56,
-          margin: 0,
-          marginTop: 36,
-          padding: 0,
-        }}
-      >
-        by {book.author}
-      </h3>
+      <H1>{book.title}</H1>
+      <H2>by {book.author}</H2>
     </div>
 
     <div
       style={{
         display: 'flex',
-        height: 360,
+        height: '25rem',
         width: 'auto',
       }}
     >
       <img
         alt="cover-image"
-        src={SITE_URL + book.coverImagePath}
+        src={APP_URL + book.coverImagePath}
         style={{
           borderColor: colors.neutral[700],
           borderRadius: '4px',
@@ -107,23 +95,13 @@ const renderPage = (page: Page) => (
       width: '100%',
     }}
   >
-    <h1
-      style={{
-        fontSize: 96,
-        margin: 0,
-        padding: 0,
-      }}
-    >
-      {page.title}
-    </h1>
+    <H1>{page.title}</H1>
   </div>
 )
 
 export const OpenGraphImage: React.FC<{
-  avatarImage: any
-  backgroundImage: any
   query: ParsedQuery
-}> = ({ avatarImage, backgroundImage, query }) => {
+}> = ({ query }) => {
   const renderContent = (query: ParsedQuery) => {
     switch (query.type) {
       case 'post':
@@ -149,7 +127,7 @@ export const OpenGraphImage: React.FC<{
         fontSize: 16,
         fontWeight: 'bold',
         height: '100%',
-        letterSpacing: '0.015em',
+        letterSpacing: '0.012em',
         lineHeight: 1,
         position: 'relative',
         width: '100%',
@@ -158,7 +136,7 @@ export const OpenGraphImage: React.FC<{
     >
       <img
         alt="meta-bg"
-        src={backgroundImage}
+        src={APP_URL + '/images/meta-bg.png'}
         style={{
           height: '100%',
           position: 'absolute',
@@ -174,21 +152,22 @@ export const OpenGraphImage: React.FC<{
           flexDirection: 'column',
           height: '100%',
           justifyContent: 'space-between',
-          paddingBottom: 36,
-          paddingLeft: 48,
-          paddingRight: 48,
-          paddingTop: 36,
+          paddingBottom: '2.5rem',
+          paddingLeft: '3rem',
+          paddingRight: '3rem',
+          paddingTop: '2.5rem',
         }}
       >
         <header
           style={{
             alignItems: 'center',
             display: 'flex',
+            gap: '1.5rem',
           }}
         >
           <img
             alt="avatar"
-            src={avatarImage}
+            src={APP_URL + '/images/avatar.png'}
             style={{
               border: `4px solid ${colors.neutral[600]}`,
               borderRadius: 100,
@@ -199,8 +178,8 @@ export const OpenGraphImage: React.FC<{
 
           <span
             style={{
-              fontSize: 48,
-              marginLeft: 24,
+              fontSize: '4rem',
+              marginBottom: '1rem',
             }}
           >
             altay.wtf
