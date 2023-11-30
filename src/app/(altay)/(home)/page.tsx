@@ -1,11 +1,12 @@
-import { homeCopy, booksCopy } from 'config'
+import { homeCopy, booksCopy, postsCopy } from 'config'
 import { readMarkdownFile } from 'lib/utils/md'
 import Markdown from 'ui/Markdown'
 import Image from 'next/image'
-import { VscTwitter } from '@react-icons/all-files/vsc/VscTwitter'
-import { VscGithub } from '@react-icons/all-files/vsc/VscGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { CgArrowTopRight } from '@react-icons/all-files/cg/CgArrowTopRight'
+import { VscGithub } from 'react-icons/vsc'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import { CgArrowTopRight } from 'react-icons/cg'
+import Link from 'next/link'
 
 type Project = {
   title: string
@@ -13,6 +14,24 @@ type Project = {
   url: string
   icon_url: string
 }
+
+const EXTERNAL_LINKS = [
+  {
+    label: 'GitHub',
+    url: 'https://github.com/altaywtf',
+    icon: <VscGithub />,
+  },
+  {
+    label: 'X.com',
+    url: 'https://x.com/altaywtf',
+    icon: <FaXTwitter />,
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://linkedin.com/in/altaywtf/',
+    icon: <FaLinkedin />,
+  },
+]
 
 const PROJECTS: Project[] = [
   {
@@ -29,12 +48,6 @@ const PROJECTS: Project[] = [
     icon_url: '/images/projects/raycast.png',
   },
   {
-    title: booksCopy.title,
-    description: booksCopy.description,
-    url: '/books',
-    icon_url: '/images/books/navalmanack/cover.png',
-  },
-  {
     title: 'Accept Nano',
     description: 'JavaScript client for Accept NANO payment gateway.',
     url: 'https://github.com/accept-nano/accept-nano-client',
@@ -42,21 +55,16 @@ const PROJECTS: Project[] = [
   },
 ]
 
-const LINKS = [
+const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
   {
-    label: 'GitHub',
-    url: 'https://github.com/altaywtf',
-    icon: <VscGithub />,
+    title: postsCopy.title,
+    description: postsCopy.description,
+    url: '/posts',
   },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/altaywtf',
-    icon: <VscTwitter />,
-  },
-  {
-    label: 'LinkedIn',
-    url: 'https://linkedin.com/in/altaywtf/',
-    icon: <FaLinkedin />,
+    title: booksCopy.title,
+    description: booksCopy.description,
+    url: '/books',
   },
 ]
 
@@ -75,16 +83,16 @@ const HomePage = async () => (
     </div>
 
     <div className="mt-4 flex flex-row gap-2">
-      {LINKS.map((link) => (
+      {EXTERNAL_LINKS.map((item) => (
         <a
-          key={link.url}
-          href={link.url}
+          key={item.url}
+          href={item.url}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
         >
-          <span>{link.icon}</span>
-          <span>{link.label}</span>
+          <span>{item.icon}</span>
+          <span>{item.label}</span>
         </a>
       ))}
     </div>
@@ -94,25 +102,49 @@ const HomePage = async () => (
     <h2>Open-source projects</h2>
 
     <div className="mt-4 flex flex-col gap-6">
-      {PROJECTS.map((project) => (
-        <div key={project.title}>
+      {PROJECTS.map((item) => (
+        <div key={item.title}>
           <div className="flex flex-row items-center gap-3">
-            <div className="relative h-10 w-10 overflow-hidden rounded border border-solid border-neutral-900">
-              <Image src={project.icon_url} alt={project.title} fill sizes="100%" />
+            <div className="relative h-12 w-12 overflow-hidden rounded border border-solid border-neutral-900">
+              <Image src={item.icon_url} alt={item.title} fill sizes="100%" />
             </div>
 
             <div className="flex flex-1 flex-col">
-              <div className="flex flex-row items-center gap-0.5 font-medium text-amber-400 hover:text-amber-200">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  {project.title}
-                </a>
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-0.5 self-start font-medium text-amber-400 hover:text-amber-200"
+              >
+                <span>{item.title}</span>
 
                 <span className="text-sm">
                   <CgArrowTopRight />
                 </span>
-              </div>
+              </a>
 
-              <p>{project.description}</p>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <hr className="my-8" />
+
+    <div className="mt-4 flex flex-col gap-6">
+      {COLLECTIONS.map((item) => (
+        <div key={item.title}>
+          <div className="flex flex-row items-center gap-3">
+            <div className="flex flex-1 flex-col">
+              <Link
+                href={item.url}
+                className="self-start font-medium text-amber-400 hover:text-amber-200"
+              >
+                {item.title}
+              </Link>
+
+              <p>{item.description}</p>
             </div>
           </div>
         </div>
@@ -125,12 +157,6 @@ const HomePage = async () => (
       <a className="hover:text-neutral-300" href="mailto:altay@zebrastik.com">
         altay@zebrastik.com
       </a>
-
-      <div className="mt-4">
-        <p>zebrastik, LLC</p>
-        <p>30 N Gould St, STE 4000</p>
-        <p>Sheridan, WY 82801</p>
-      </div>
     </div>
   </>
 )

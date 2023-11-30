@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { CgArrowLeft } from '@react-icons/all-files/cg/CgArrowLeft'
+import { CgArrowLeft } from 'react-icons/cg'
 import { useRouter } from 'next/navigation'
 import { usePathHistory } from 'ui/usePathHistory'
 

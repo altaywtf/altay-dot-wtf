@@ -9,14 +9,23 @@ const nextConfig = {
   },
 
   redirects: async () => [
+    // `zebrastik.com` to `zebrastik`
+    {
+      source: '/',
+      destination: '/zebrastik',
+      permanent: true,
+      has: [{ type: 'host', value: 'zebrastik.com' }],
+    },
+    {
+      source: '/',
+      destination: '/zebrastik',
+      permanent: true,
+      has: [{ type: 'host', value: 'zbrstk.com' }],
+    },
+
     // deleted pages
     {
       source: '/now',
-      destination: '/',
-      permanent: true,
-    },
-    {
-      source: '/zebrastik',
       destination: '/',
       permanent: true,
     },
