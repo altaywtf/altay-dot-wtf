@@ -3,24 +3,24 @@ import { API_URL } from 'config'
 const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`
 
 type OGImageParamsPost = {
-  type: 'post'
-  title: string
   oneliner: string
+  title: string
+  type: 'post'
 }
 
 type OGImageParamsBook = {
-  type: 'book'
-  title: string
   author: string
   coverImageURL: string
+  title: string
+  type: 'book'
 }
 
 type OGImageParamsPage = {
-  type: 'page'
   title: string
+  type: 'page'
 }
 
-type OGImageParams = OGImageParamsPost | OGImageParamsBook | OGImageParamsPage
+type OGImageParams = OGImageParamsBook | OGImageParamsPage | OGImageParamsPost
 
 export const getOpenGraphImage = (params: OGImageParams) => {
   const searchParams = Object.entries(params).reduce((acc, [key, value]) => {

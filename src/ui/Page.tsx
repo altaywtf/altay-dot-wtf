@@ -3,12 +3,12 @@ import Markdown from './Markdown'
 type Props = {
   children: React.ReactNode
   header: {
-    title: string
     description?: string
+    title: string
   }
 }
 
-const Page: React.FC<Props> = ({ header, children }) => (
+const Page: React.FC<Props> = ({ children, header }) => (
   <div className="flex flex-col gap-6">
     <div className="flex flex-col gap-2">
       <h1>{header.title}</h1>

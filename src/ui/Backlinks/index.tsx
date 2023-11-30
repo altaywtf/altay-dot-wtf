@@ -1,15 +1,17 @@
 'use client'
 
-import Link from 'next/link'
 import type { Backlink } from 'lib/backlinks'
+
+import Link from 'next/link'
+
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
 
 const Backlinks: React.FC<{
+  backlinks: Backlink[]
   sourceType: 'book' | 'post'
   sourceURL: string
-  backlinks: Backlink[]
-}> = ({ sourceType, sourceURL, backlinks }) => {
+}> = ({ backlinks, sourceType, sourceURL }) => {
   useScrollToBacklinkSource()
 
   if (backlinks.length === 0) {
@@ -24,8 +26,8 @@ const Backlinks: React.FC<{
         {backlinks.map((backlink) => (
           <li key={backlink.url}>
             <Link
-              href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`}
               className="hover:underline"
+              href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`}
             >
               {backlink.title}
             </Link>

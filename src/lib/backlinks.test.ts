@@ -1,5 +1,6 @@
-import { getPostsWithMarkdown } from 'lib/posts'
 import { getBooksWithMarkdown } from 'lib/books'
+import { getPostsWithMarkdown } from 'lib/posts'
+
 import { getBacklinks } from './backlinks'
 
 jest.mock('lib/posts', () => ({
@@ -18,26 +19,26 @@ describe('getBacklinks', () => {
 
     mockGetPostsWithMarkdown.mockImplementation(() => [
       {
-        post: {
-          title: 'yes',
-          oneliner: 'yes',
-          date: '2020-12-21T20:41:04Z',
-          slug: 'yes',
-          url: '/posts/yes',
-          readingTime: '1 min read',
-        },
         markdown: 'hello and [hi](/posts/hi)',
+        post: {
+          date: '2020-12-21T20:41:04Z',
+          oneliner: 'yes',
+          readingTime: '1 min read',
+          slug: 'yes',
+          title: 'yes',
+          url: '/posts/yes',
+        },
       },
       {
-        post: {
-          title: 'no',
-          oneliner: 'no',
-          date: '2020-12-21T20:41:04Z',
-          slug: 'no',
-          url: '/posts/no',
-          readingTime: '1 min read',
-        },
         markdown: 'hello and hi',
+        post: {
+          date: '2020-12-21T20:41:04Z',
+          oneliner: 'no',
+          readingTime: '1 min read',
+          slug: 'no',
+          title: 'no',
+          url: '/posts/no',
+        },
       },
     ])
 
@@ -50,10 +51,10 @@ describe('getBacklinks', () => {
         book: {
           authors: ['Jess Henderson'],
           coverImage: {
-            url: '/images/books/offline-matters/cover.png',
+            aspectRatio: 0.8067226890756303,
             blurhash:
               'data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABAwQDAAAAAAAAAAAAAAADAAECBAUGEQdTY//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8As3jjpg1rDjlmVO0Qi1urH1x80RFB/9k=',
-            aspectRatio: 0.8067226890756303,
+            url: '/images/books/offline-matters/cover.png',
           },
           dateRead: '2021-07-16',
           identifiers: [

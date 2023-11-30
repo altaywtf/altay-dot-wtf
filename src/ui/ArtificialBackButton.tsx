@@ -1,8 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { CgArrowLeft } from 'react-icons/cg'
 import { useRouter } from 'next/navigation'
+import { CgArrowLeft } from 'react-icons/cg'
 import { usePathHistory } from 'ui/usePathHistory'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
@@ -16,7 +16,7 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href,
   )
 
   return prevPath === href ? (
-    <a onClick={router.back} className="cursor-pointer">
+    <a className="cursor-pointer" onClick={router.back}>
       {content}
     </a>
   ) : (

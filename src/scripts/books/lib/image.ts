@@ -1,9 +1,11 @@
-import fs from 'fs'
 import axios from 'axios'
-import sharp from 'sharp'
+import fs from 'fs'
 import { getImageData } from 'lib/utils/image'
-import { PUBLIC_FOLDER_PATH } from '../../constants'
+import sharp from 'sharp'
+
 import type { BaseBookWithMeta, Book } from './types'
+
+import { PUBLIC_FOLDER_PATH } from '../../constants'
 
 const fetchRemoteImage = async (url: string): Promise<Buffer> => {
   const response = await axios.get(url, { responseType: 'arraybuffer' })
@@ -31,8 +33,8 @@ export const createBookCoverImage = async (
   const bookImagePath = saveBookCoverImage(baseBookWithMeta.slug, resizedImage)
 
   return {
-    url: bookImagePath,
-    blurhash,
     aspectRatio: ratio,
+    blurhash,
+    url: bookImagePath,
   }
 }

@@ -3,17 +3,17 @@ export const homeCopy = {
 } as const
 
 export const postsCopy = {
-  title: `Writing`,
   description: 'My thoughts on stuff that bugs me.',
+  title: `Writing`,
 } as const
 
 export const booksCopy = {
-  title: 'Book notes',
   description: 'Somewhat detailed notes from the books that I read.',
+  title: 'Book notes',
 } as const
 
 export const zebrastikCopy = {
-  title: 'hi, we are zebrastik',
   description:
     'we provide software development services for digital product companies at any scale. our expertise covers many platforms such as web, mobile, and streaming devices.',
+  title: 'hi, we are zebrastik',
 }

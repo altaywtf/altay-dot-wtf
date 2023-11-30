@@ -1,6 +1,7 @@
+import { SITE_URL } from 'config'
 import fs from 'fs'
 import marked from 'marked'
-import { SITE_URL } from 'config'
+
 import { DATA_FOLDER_PATH } from './fs'
 
 const REGEX_MD_LINKS = /\[([^[]+)?\](\(.[^)]*\))/gm
@@ -71,8 +72,8 @@ export const readMarkdownFile = (pathInDataFolder: string) => {
 export const convertMarkdownToHTML = (markdown: string) => {
   const html = marked(markdown, {
     baseUrl: SITE_URL,
-    gfm: true,
     breaks: true,
+    gfm: true,
   })
 
   return html

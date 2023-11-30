@@ -1,7 +1,7 @@
 import {
-  transformRelativeMarkdownLinks,
-  getAbsoluteMarkdownLinks,
   extractUrlFromMarkdownLink,
+  getAbsoluteMarkdownLinks,
+  transformRelativeMarkdownLinks,
 } from './md'
 
 describe('utils/md', () => {

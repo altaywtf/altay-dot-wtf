@@ -4,11 +4,11 @@ import { gtAmerica, gtAmericaMono } from 'ui/theme/fonts'
 import 'ui/theme/style.css'
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
-  <html lang="en" className={`${gtAmerica.variable} ${gtAmericaMono.variable} dark`}>
+  <html className={`${gtAmerica.variable} ${gtAmericaMono.variable} dark`} lang="en">
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-      <meta name="theme-color" content="rgb(10, 10, 10)" />
-      <meta name="msapplication-TileColor" content="rgb(10, 10, 10)" />
+      <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+      <meta content="rgb(10, 10, 10)" name="theme-color" />
+      <meta content="rgb(10, 10, 10)" name="msapplication-TileColor" />
     </head>
 
     <body>

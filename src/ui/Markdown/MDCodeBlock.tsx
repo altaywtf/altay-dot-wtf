@@ -1,4 +1,5 @@
 import type { CodeProps } from 'react-markdown/lib/ast-to-react'
+
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx'
 import dark from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus'
@@ -11,11 +12,11 @@ export const MDCodeBlock: React.FC<CodeProps> = (props) => {
 
   return (
     <SyntaxHighlighter
-      style={dark}
-      language={language}
       customStyle={{
         fontFamily: 'var(--font-gt-america-mono)',
       }}
+      language={language}
+      style={dark}
     >
       {children}
     </SyntaxHighlighter>

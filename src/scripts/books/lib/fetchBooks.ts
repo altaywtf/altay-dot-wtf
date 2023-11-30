@@ -1,27 +1,28 @@
 import axios from 'axios'
+
 import { mapQueryBookToBaseBook } from './mappers'
 
 const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY as string
 
 export type GoogleBooksIndustryIdentifier =
-  | { type: 'OTHER'; identifier: string }
-  | { type: 'ISBN_13'; identifier: string }
-  | { type: 'ISBN_10'; identifier: string }
+  | { identifier: string; type: 'ISBN_10' }
+  | { identifier: string; type: 'ISBN_13' }
+  | { identifier: string; type: 'OTHER' }
 
 type GoogleBooksVolume = {
   volumeInfo: {
-    title: string
     authors: string[]
     imageLinks: {
       thumbnail: string
     }
     industryIdentifiers: GoogleBooksIndustryIdentifier[]
+    title: string
   }
 }
 
 type GoogleBooksVolumeQueryResult = {
-  totalItems: number
   items: GoogleBooksVolume[]
+  totalItems: number
 }
 
 export type QueryBook = GoogleBooksVolume
@@ -32,9 +33,9 @@ export const fetchBooksByQuery = async (query: string) => {
     'https://www.googleapis.com/books/v1/volumes',
     {
       params: {
-        q: query,
-        maxResults: 40, // literally max
         key: GOOGLE_BOOKS_API_KEY,
+        maxResults: 40, // literally max
+        q: query,
       },
     },
   )

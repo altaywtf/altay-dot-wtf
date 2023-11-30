@@ -1,7 +1,7 @@
 /** @type {import('prettier').Options} */
 module.exports = {
   bracketSpacing: true,
-  printWidth: 100,
+  printWidth: 80,
   semi: false,
   singleQuote: true,
   trailingComma: 'all',

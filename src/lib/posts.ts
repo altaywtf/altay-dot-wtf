@@ -1,19 +1,19 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import readingTime from 'reading-time'
 import { DATA_FOLDER_PATH } from 'lib/utils/fs'
 import { readMarkdownFile } from 'lib/utils/md'
+import readingTime from 'reading-time'
 
 type PostFrontMatter = {
-  title: string
-  oneliner: string
   date: string
+  oneliner: string
+  title: string
 }
 
 export type Post = PostFrontMatter & {
+  readingTime: string
   slug: string
   url: string
-  readingTime: string
 }
 
 export const getPost = (slug: string) => {
@@ -24,13 +24,13 @@ export const getPost = (slug: string) => {
 
   const post = {
     ...frontMatter,
-    slug,
-    url: `/posts/${slug}`,
     readingTime:
       readingTimeInMins <= 1 ? '1 min read' : `${Math.floor(readingTimeInMins)} mins read`,
+    slug,
+    url: `/posts/${slug}`,
   } as Post
 
-  return { post, markdown }
+  return { markdown, post }
 }
 
 export const getPosts = () => {

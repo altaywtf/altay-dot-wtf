@@ -4,10 +4,6 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  experimental: {
-    appDir: true,
-  },
-
   redirects: async () => [
     // `zebrastik.com` to `zebrastik`
     {

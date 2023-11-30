@@ -1,19 +1,19 @@
 import Link from 'next/link'
 
 type Props = {
-  href: string
   children: React.ReactNode
+  href: string
 }
 
-const MDInternalLink: React.FC<Props> = ({ href, children }) => <Link href={href}>{children}</Link>
+const MDInternalLink: React.FC<Props> = ({ children, href }) => <Link href={href}>{children}</Link>
 
-const MDExternalLink: React.FC<Props> = ({ href, children }) => (
-  <a href={href} target="_blank" rel="noreferrer noopener">
+const MDExternalLink: React.FC<Props> = ({ children, href }) => (
+  <a href={href} rel="noreferrer noopener" target="_blank">
     {children}
   </a>
 )
 
-export const MDLink: React.FC<Props> = ({ href, children }) => {
+export const MDLink: React.FC<Props> = ({ children, href }) => {
   if (href.startsWith('/')) {
     return <MDInternalLink href={href}>{children}</MDInternalLink>
   }

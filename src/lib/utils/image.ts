@@ -1,16 +1,16 @@
-import sharp from 'sharp'
 import { getPlaiceholder } from 'plaiceholder'
+import sharp from 'sharp'
 
 type ImageData = {
+  blurhash: string
   buffer: Buffer
+  height: number
   ratio: number
   width: number
-  height: number
-  blurhash: string
 }
 
 export const getImageData = async (buffer: Buffer): Promise<ImageData> => {
-  const { width, height } = await sharp(buffer).metadata()
+  const { height, width } = await sharp(buffer).metadata()
 
   if (!width || !height) {
     throw new Error('Could not get image data')
@@ -19,10 +19,10 @@ export const getImageData = async (buffer: Buffer): Promise<ImageData> => {
   const { base64 } = await getPlaiceholder(buffer)
 
   return {
+    blurhash: base64,
     buffer,
+    height,
     ratio: width / height,
     width,
-    height,
-    blurhash: base64,
   }
 }

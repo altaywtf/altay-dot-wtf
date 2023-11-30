@@ -1,9 +1,10 @@
-import { Metadata } from 'next'
 import { API_URL, postsCopy } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { Metadata } from 'next'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Backlinks from 'ui/Backlinks'
 import Markdown from 'ui/Markdown'
+
 import { PostDateAndReadingTime } from '../components/PostDateAndReadingTime'
 
 type Props = {
@@ -11,15 +12,15 @@ type Props = {
 }
 
 const fetchData = async (slug: string) => {
-  const { post, markdown } = await fetch(`${API_URL}/posts/${slug}`).then((res) => res.json())
+  const { markdown, post } = await fetch(`${API_URL}/posts/${slug}`).then((res) => res.json())
   const { backlinks } = await fetch(`${API_URL}/backlinks?type=posts&slug=${slug}`).then((res) =>
     res.json(),
   )
 
   return {
-    post,
-    markdown,
     backlinks,
+    markdown,
+    post,
   }
 }
 
@@ -27,25 +28,25 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
   const { post } = await fetchData(params.slug)
 
   return {
-    title: post.title,
     description: post.oneliner,
     openGraph: {
-      title: post.title,
-      description: post.oneliner,
-      type: 'article',
       authors: ['altaywtf'],
-      modifiedTime: post.date,
+      description: post.oneliner,
       images: getOpenGraphImage({
-        type: 'post',
-        title: post.title,
         oneliner: post.oneliner,
+        title: post.title,
+        type: 'post',
       }),
+      modifiedTime: post.date,
+      title: post.title,
+      type: 'article',
     },
+    title: post.title,
   }
 }
 
 const Page = async ({ params }: Props) => {
-  const { post, markdown, backlinks } = await fetchData(params.slug)
+  const { backlinks, markdown, post } = await fetchData(params.slug)
 
   return (
     <div className="flex flex-col gap-6">
@@ -58,7 +59,7 @@ const Page = async ({ params }: Props) => {
 
       <Markdown>{markdown}</Markdown>
 
-      <Backlinks sourceType="post" sourceURL={post.url} backlinks={backlinks} />
+      <Backlinks backlinks={backlinks} sourceType="post" sourceURL={post.url} />
     </div>
   )
 }

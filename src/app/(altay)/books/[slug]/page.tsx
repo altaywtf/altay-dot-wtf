@@ -1,11 +1,13 @@
+import type { Backlink } from 'lib/backlinks'
+import type { Book } from 'lib/books'
+
 import { API_URL, SITE_URL, booksCopy } from 'config'
-import { Metadata } from 'next'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
-import Markdown from 'ui/Markdown'
+import { Metadata } from 'next'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
 import Backlinks from 'ui/Backlinks'
-import type { Book } from 'lib/books'
-import type { Backlink } from 'lib/backlinks'
+import Markdown from 'ui/Markdown'
+
 import { BookCover } from '../components/BookCover'
 import { BookReadDateAndRating } from '../components/BookReadDateAndRating'
 
@@ -16,9 +18,9 @@ type Props = {
 const fetchData = async (
   slug: string,
 ): Promise<{
+  backlinks: Backlink[]
   book: Book
   markdown: string
-  backlinks: Backlink[]
 }> => {
   const { book, markdown } = await fetch(`${API_URL}/books/${slug}`).then((res) => res.json())
   const { backlinks } = await fetch(`${API_URL}/backlinks?type=books&slug=${slug}`).then((res) =>
@@ -26,9 +28,9 @@ const fetchData = async (
   )
 
   return {
+    backlinks,
     book,
     markdown,
-    backlinks,
   }
 }
 
@@ -37,29 +39,29 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
   const title = `${book.title} by ${book.authors.join(', ')}`
 
   return {
-    title,
     description: book.quote,
     openGraph: {
-      title,
       description: book.quote,
       images: getOpenGraphImage({
-        type: 'book',
-        title: book.title,
         author: book.authors.join(', '),
         coverImageURL: SITE_URL + book.coverImage.url,
+        title: book.title,
+        type: 'book',
       }),
+      title,
     },
+    title,
   }
 }
 
 const BookPage = async ({ params }: Props) => {
-  const { book, markdown, backlinks } = await fetchData(params.slug)
+  const { backlinks, book, markdown } = await fetchData(params.slug)
 
   return (
     <div className="flex flex-col gap-6">
       <ArtificialBackButton href="/books" label={booksCopy.title} />
 
-      <div key={book.slug} className="flex flex-row gap-4">
+      <div className="flex flex-row gap-4" key={book.slug}>
         <div className="min-w-[96px] sm:min-w-[128px] md:min-w-[160px]">
           <BookCover book={book} />
         </div>
@@ -77,7 +79,7 @@ const BookPage = async ({ params }: Props) => {
 
       <Markdown>{markdown}</Markdown>
 
-      <Backlinks sourceType="book" sourceURL={book.notes.url} backlinks={backlinks} />
+      <Backlinks backlinks={backlinks} sourceType="book" sourceURL={book.notes.url} />
     </div>
   )
 }

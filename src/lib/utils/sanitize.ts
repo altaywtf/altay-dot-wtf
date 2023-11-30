@@ -1,10 +1,10 @@
 const entityMap: { [key: string]: string } = {
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
   '"': '&quot;',
+  '&': '&amp;',
   "'": '&#39;',
   '/': '&#x2F;',
+  '<': '&lt;',
+  '>': '&gt;',
 }
 
 export const sanitizeHtml = (html: string) =>

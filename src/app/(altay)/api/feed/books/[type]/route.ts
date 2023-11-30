@@ -1,15 +1,16 @@
 import { SITE_TITLE } from 'config'
+import { getBook, getBooks } from 'lib/books'
 import { NextRequest } from 'next/server'
-import { getBooks, getBook } from 'lib/books'
+
 import { createFeed, mapBookToRssFeedItem } from '../../lib'
 
 export const GET = async (request: NextRequest, { params }: { params: { type: string } }) => {
   const feed = createFeed({
-    path: 'books',
     items: getBooks().map((book) => mapBookToRssFeedItem(book, getBook(book.slug).markdown)),
     options: {
       title: `${SITE_TITLE} - book notes`,
     },
+    path: 'books',
   })
 
   switch (params.type) {

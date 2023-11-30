@@ -1,21 +1,21 @@
-import Image from 'next/image'
 import { zebrastikCopy } from 'config'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'zebrastik',
   description: zebrastikCopy.description,
   openGraph: {
-    title: 'zebrastik',
     description: zebrastikCopy.description,
+    title: 'zebrastik',
   },
+  title: 'zebrastik',
 }
 
 export default function Page() {
   return (
     <section className="app-width px-4 py-8 sm:px-0">
       <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
-        <Image src="/images/zebra.jpg" alt="zebrastik logo" fill />
+        <Image alt="zebrastik logo" fill src="/images/zebra.jpg" />
       </div>
 
       <div className="mt-8 flex flex-col gap-2">
@@ -25,7 +25,7 @@ export default function Page() {
 
       <hr className="my-8" />
 
-      <a href="mailto:altay@zebrastik.com" className="text-neutral-400 hover:text-neutral-300">
+      <a className="text-neutral-400 hover:text-neutral-300" href="mailto:altay@zebrastik.com">
         altay@zebrastik.com
       </a>
 

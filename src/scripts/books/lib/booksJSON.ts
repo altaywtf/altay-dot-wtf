@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { DATA_FOLDER_PATH } from 'lib/utils/fs'
+
 import { Book, BooksJSON, createBooksJSON } from './types'
 
 const BOOKS_JSON_PATH = `${DATA_FOLDER_PATH}/books.json`

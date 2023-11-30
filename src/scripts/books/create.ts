@@ -1,17 +1,19 @@
-import '../env'
 import inquirer from 'inquirer'
 import slugify from 'slugify'
+
 import type { BaseBook, BaseBookWithMeta, Book } from './lib/types'
-import { fetchBooksByQuery } from './lib/fetchBooks'
-import { createBookNotes } from './lib/notes'
-import { createBookCoverImage } from './lib/image'
+
+import '../env'
 import { addBookToBooksJSON } from './lib/booksJSON'
+import { fetchBooksByQuery } from './lib/fetchBooks'
+import { createBookCoverImage } from './lib/image'
+import { createBookNotes } from './lib/notes'
 
 const runAskBookQueryStep = async (): Promise<string> => {
   const { query } = await inquirer.prompt<{ query: string }>([
     {
-      type: 'input',
       name: 'query',
+      type: 'input',
     },
   ])
 
@@ -23,19 +25,19 @@ const runSearchAndChooseStep = async (query: string) => {
 
   const { bookIndex } = await inquirer.prompt<{ bookIndex: number }>([
     {
-      type: 'list',
-      name: 'bookIndex',
       choices: data
         .map((item, index) => [
           {
-            value: index,
             name: `${index}. ${item.title} by ${item.authors.join(', ')} \n [${
               item.remoteCoverImage.url
             }]`,
+            value: index,
           },
           new inquirer.Separator(),
         ])
         .flat(),
+      name: 'bookIndex',
+      type: 'list',
     },
   ])
 
@@ -43,46 +45,46 @@ const runSearchAndChooseStep = async (query: string) => {
 }
 
 const runGetBaseBookMetaStep = async (baseBook: BaseBook): Promise<BaseBookWithMeta> => {
-  const { title, slug, rating, quote, dateRead, remoteCoverImageURL } = await inquirer.prompt<
+  const { dateRead, quote, rating, remoteCoverImageURL, slug, title } = await inquirer.prompt<
     BaseBookWithMeta & { remoteCoverImageURL: string }
   >([
     {
-      type: 'input',
-      name: 'title',
       default: baseBook.title,
+      name: 'title',
+      type: 'input',
     },
     {
-      type: 'input',
-      name: 'slug',
       default: slugify(baseBook.title, { lower: true }),
+      name: 'slug',
+      type: 'input',
     },
     {
-      type: 'input',
-      name: 'remoteCoverImageURL',
       default: baseBook.remoteCoverImage.url,
+      name: 'remoteCoverImageURL',
+      type: 'input',
     },
     {
-      type: 'number',
       name: 'rating',
+      type: 'number',
     },
     {
-      type: 'input',
       name: 'quote',
+      type: 'input',
     },
     {
-      type: 'input',
       name: 'dateRead',
+      type: 'input',
     },
   ])
 
   return {
     ...baseBook,
-    title,
-    slug,
-    remoteCoverImage: { url: remoteCoverImageURL },
-    rating,
-    quote,
     dateRead,
+    quote,
+    rating,
+    remoteCoverImage: { url: remoteCoverImageURL },
+    slug,
+    title,
   }
 }
 
@@ -91,8 +93,8 @@ const runCreateBookFromBaseBookWithMetaStep = async (
 ): Promise<Book> => {
   return {
     ...baseBookWithMeta,
-    notes: createBookNotes(baseBookWithMeta),
     coverImage: await createBookCoverImage(baseBookWithMeta),
+    notes: createBookNotes(baseBookWithMeta),
   }
 }
 

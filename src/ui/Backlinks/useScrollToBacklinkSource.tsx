@@ -1,5 +1,6 @@
 import { useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
+
 import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
 
 export const useScrollToBacklinkSource: VoidFunction = () => {

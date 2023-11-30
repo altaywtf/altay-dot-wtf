@@ -1,22 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 
 import colors from 'tailwindcss/colors'
-import type { ParsedQuery, Post, Book, Page } from './types'
+
+import type { Book, Page, ParsedQuery, Post } from './types'
 
 const renderPost = (post: Post) => (
   <div
     style={{
-      width: '100%',
-      display: 'flex',
       alignItems: 'flex-start',
+      display: 'flex',
       flexDirection: 'column',
+      width: '100%',
     }}
   >
     <h1
       style={{
         fontSize: 96,
-        padding: 0,
         margin: 0,
+        padding: 0,
       }}
     >
       {post.title}
@@ -24,11 +25,11 @@ const renderPost = (post: Post) => (
 
     <h4
       style={{
-        fontSize: 48,
-        padding: 0,
-        margin: 0,
         color: colors.neutral[400],
+        fontSize: 48,
+        margin: 0,
         marginTop: 36,
+        padding: 0,
       }}
     >
       {post.oneliner}
@@ -39,17 +40,17 @@ const renderPost = (post: Post) => (
 const renderBook = (book: Book) => (
   <div
     style={{
-      width: '100%',
-      display: 'flex',
       alignItems: 'flex-end',
+      display: 'flex',
       justifyContent: 'space-between',
+      width: '100%',
     }}
   >
     <div
       style={{
-        flex: 1,
-        display: 'flex',
         alignItems: 'flex-start',
+        display: 'flex',
+        flex: 1,
         flexDirection: 'column',
       }}
     >
@@ -65,11 +66,11 @@ const renderBook = (book: Book) => (
 
       <h3
         style={{
-          fontSize: 56,
           color: colors.neutral[400],
+          fontSize: 56,
           margin: 0,
-          padding: 0,
           marginTop: 36,
+          padding: 0,
         }}
       >
         by {book.author}
@@ -84,14 +85,14 @@ const renderBook = (book: Book) => (
       }}
     >
       <img
-        src={book.coverImageURL}
         alt="cover-image"
+        src={book.coverImageURL}
         style={{
-          height: '100%',
-          borderRadius: '4px',
-          borderWidth: '4px',
-          borderStyle: 'solid',
           borderColor: colors.neutral[700],
+          borderRadius: '4px',
+          borderStyle: 'solid',
+          borderWidth: '4px',
+          height: '100%',
         }}
       />
     </div>
@@ -108,8 +109,8 @@ const renderPage = (page: Page) => (
     <h1
       style={{
         fontSize: 96,
-        padding: 0,
         margin: 0,
+        padding: 0,
       }}
     >
       {page.title}
@@ -134,60 +135,60 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
   return (
     <main
       style={{
-        height: '100%',
-        width: '100%',
-        display: 'flex',
-        fontSize: 16,
-        fontFamily: 'GT-America-Standard-Bold',
-        fontWeight: 'bold',
-        lineHeight: 1,
-        WebkitFontSmoothing: 'antialiased',
         MozOsxFontSmoothing: 'grayscale',
+        WebkitFontSmoothing: 'antialiased',
         WebkitTextSizeAdjust: 'none',
-        letterSpacing: '0.015em',
-        wordSpacing: '0.001em',
         color: colors.neutral[200],
+        display: 'flex',
+        fontFamily: 'GT-America-Standard-Bold',
+        fontSize: 16,
+        fontWeight: 'bold',
+        height: '100%',
+        letterSpacing: '0.015em',
+        lineHeight: 1,
         position: 'relative',
+        width: '100%',
+        wordSpacing: '0.001em',
       }}
     >
       <img
-        src="https://altay.wtf/images/meta-bg.png"
         alt="meta-bg"
+        src="https://altay.wtf/images/meta-bg.png"
         style={{
-          position: 'absolute',
-          zIndex: -1,
-          width: '100%',
           height: '100%',
+          position: 'absolute',
+          width: '100%',
+          zIndex: -1,
         }}
       />
 
       <section
         style={{
-          display: 'flex',
           alignItems: 'flex-start',
-          justifyContent: 'space-between',
+          display: 'flex',
           flexDirection: 'column',
           height: '100%',
-          paddingTop: 36,
+          justifyContent: 'space-between',
           paddingBottom: 36,
           paddingLeft: 48,
           paddingRight: 48,
+          paddingTop: 36,
         }}
       >
         <header
           style={{
-            display: 'flex',
             alignItems: 'center',
+            display: 'flex',
           }}
         >
           <img
-            src="https://altay.wtf/images/avatar.png"
             alt="avatar"
+            src="https://altay.wtf/images/avatar.png"
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 100,
               border: `4px solid ${colors.neutral[600]}`,
+              borderRadius: 100,
+              height: 100,
+              width: 100,
             }}
           />
 

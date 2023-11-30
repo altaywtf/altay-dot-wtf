@@ -1,19 +1,19 @@
 export type Post = {
-  type: 'post'
-  title: string
   oneliner: string
+  title: string
+  type: 'post'
 }
 
 export type Book = {
-  type: 'book'
-  title: string
   author: string
   coverImageURL: string
+  title: string
+  type: 'book'
 }
 
 export type Page = {
-  type: 'page'
   title: string
+  type: 'page'
 }
 
-export type ParsedQuery = Post | Book | Page
+export type ParsedQuery = Book | Page | Post

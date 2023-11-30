@@ -1,8 +1,9 @@
+import type { Book, Page, ParsedQuery, Post } from 'lib/og/types'
 import type { NextRequest } from 'next/server'
+
 import { ImageResponse } from '@vercel/og'
-import qs from 'query-string'
 import { OpenGraphImage } from 'lib/og/OpenGraphImage'
-import type { ParsedQuery, Post, Book, Page } from 'lib/og/types'
+import qs from 'query-string'
 
 export const runtime = 'edge'
 
@@ -34,14 +35,14 @@ export const GET = async (req: NextRequest) => {
   const fontData = await loadFont()
 
   return new ImageResponse(<OpenGraphImage query={query} />, {
-    width: 1200,
-    height: 686,
     fonts: [
       {
-        name: 'GT-America-Standard-Bold',
         data: fontData,
+        name: 'GT-America-Standard-Bold',
         style: 'normal',
       },
     ],
+    height: 686,
+    width: 1200,
   })
 }
