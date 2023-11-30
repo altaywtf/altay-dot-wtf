@@ -19,7 +19,7 @@ const PROJECTS: Project[] = [
     title: 'browsercare',
     description:
       'A tool for making data-driven decisions to adjust browser coverage of web projects.',
-    url: 'https://github.com/altaywtf/browsercare',
+    url: 'https://github.com/experiment-station/browsercare',
     icon_url: '/images/projects/browsercare.png',
   },
   {
