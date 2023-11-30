@@ -101,8 +101,8 @@ devDependencies:
     specifier: ^18.2.39
     version: 18.2.39
   '@types/react-star-rating-component':
-    specifier: ^1.4.1
-    version: 1.4.1
+    specifier: ^1.4.4
+    version: 1.4.4
   '@types/react-syntax-highlighter':
     specifier: ^15.5.6
     version: 15.5.6
@@ -1313,8 +1313,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: false
 
-  /@types/react-star-rating-component@1.4.1:
-    resolution: {integrity: sha512-f4rKKGvS9//wr2mjsT2Ol3N7tgV3DPmu4RZRp2dabEvYukHDx5tIjXecnEZGxpdU6HszKkvbpcy4kPq5VrAqew==}
+  /@types/react-star-rating-component@1.4.4:
+    resolution: {integrity: sha512-sRzK4a18SqXqpR8+U4fq5nXfcHrtULxDSz6QgP+MB6NolWvEDrcqn2v+w2RjmH8s4nwUzi7tfDFMjd4hZHxqTA==}
     dependencies:
       '@types/react': 18.2.39
     dev: true
