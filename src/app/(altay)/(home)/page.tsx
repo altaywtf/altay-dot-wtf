@@ -153,7 +153,7 @@ const HomePage = async () => (
 
     <hr className="my-8" />
 
-    <div className=" text-neutral-400">
+    <div className="text-neutral-400">
       <a className="hover:text-neutral-300" href="mailto:altay@zebrastik.com">
         altay@zebrastik.com
       </a>

@@ -25,7 +25,9 @@ export default function Page() {
 
       <hr className="my-8" />
 
-      <a href="mailto:altay@zebrastik.com">altay@zebrastik.com</a>
+      <a href="mailto:altay@zebrastik.com" className="text-neutral-400 hover:text-neutral-300">
+        altay@zebrastik.com
+      </a>
 
       <div className="mt-4 text-neutral-400">
         <p>zebrastik, LLC</p>
