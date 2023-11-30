@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { SITE_URL } from 'config'
 import colors from 'tailwindcss/colors'
 
 import type { Book, Page, ParsedQuery, Post } from './types'
@@ -86,7 +87,7 @@ const renderBook = (book: Book) => (
     >
       <img
         alt="cover-image"
-        src={book.coverImageURL}
+        src={SITE_URL + book.coverImagePath}
         style={{
           borderColor: colors.neutral[700],
           borderRadius: '4px',
@@ -118,7 +119,11 @@ const renderPage = (page: Page) => (
   </div>
 )
 
-export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
+export const OpenGraphImage: React.FC<{
+  avatarImage: any
+  backgroundImage: any
+  query: ParsedQuery
+}> = ({ avatarImage, backgroundImage, query }) => {
   const renderContent = (query: ParsedQuery) => {
     switch (query.type) {
       case 'post':
@@ -153,7 +158,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
     >
       <img
         alt="meta-bg"
-        src="https://altay.wtf/images/meta-bg.png"
+        src={backgroundImage}
         style={{
           height: '100%',
           position: 'absolute',
@@ -183,7 +188,7 @@ export const OpenGraphImage: React.FC<{ query: ParsedQuery }> = ({ query }) => {
         >
           <img
             alt="avatar"
-            src="https://altay.wtf/images/avatar.png"
+            src={avatarImage}
             style={{
               border: `4px solid ${colors.neutral[600]}`,
               borderRadius: 100,

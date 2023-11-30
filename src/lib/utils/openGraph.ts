@@ -10,7 +10,7 @@ type OGImageParamsPost = {
 
 type OGImageParamsBook = {
   author: string
-  coverImageURL: string
+  coverImagePath: string
   title: string
   type: 'book'
 }

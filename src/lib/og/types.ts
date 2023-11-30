@@ -6,7 +6,7 @@ export type Post = {
 
 export type Book = {
   author: string
-  coverImageURL: string
+  coverImagePath: string
   title: string
   type: 'book'
 }

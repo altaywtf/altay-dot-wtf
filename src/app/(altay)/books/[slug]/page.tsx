@@ -1,7 +1,7 @@
 import type { Backlink } from 'lib/backlinks'
 import type { Book } from 'lib/books'
 
-import { API_URL, SITE_URL, booksCopy } from 'config'
+import { API_URL, booksCopy } from 'config'
 import { getOpenGraphImage } from 'lib/utils/openGraph'
 import { Metadata } from 'next'
 import ArtificialBackButton from 'ui/ArtificialBackButton'
@@ -22,10 +22,12 @@ const fetchData = async (
   book: Book
   markdown: string
 }> => {
-  const { book, markdown } = await fetch(`${API_URL}/books/${slug}`).then((res) => res.json())
-  const { backlinks } = await fetch(`${API_URL}/backlinks?type=books&slug=${slug}`).then((res) =>
-    res.json(),
+  const { book, markdown } = await fetch(`${API_URL}/books/${slug}`).then(
+    (res) => res.json(),
   )
+  const { backlinks } = await fetch(
+    `${API_URL}/backlinks?type=books&slug=${slug}`,
+  ).then((res) => res.json())
 
   return {
     backlinks,
@@ -34,7 +36,9 @@ const fetchData = async (
   }
 }
 
-export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
   const { book } = await fetchData(params.slug)
   const title = `${book.title} by ${book.authors.join(', ')}`
 
@@ -44,7 +48,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
       description: book.quote,
       images: getOpenGraphImage({
         author: book.authors.join(', '),
-        coverImageURL: SITE_URL + book.coverImage.url,
+        coverImagePath: book.coverImage.url,
         title: book.title,
         type: 'book',
       }),
@@ -79,7 +83,11 @@ const BookPage = async ({ params }: Props) => {
 
       <Markdown>{markdown}</Markdown>
 
-      <Backlinks backlinks={backlinks} sourceType="book" sourceURL={book.notes.url} />
+      <Backlinks
+        backlinks={backlinks}
+        sourceType="book"
+        sourceURL={book.notes.url}
+      />
     </div>
   )
 }

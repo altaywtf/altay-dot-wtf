@@ -10,7 +10,7 @@ export const generateMetadata = async (): Promise<Metadata> => ({
       type: 'page',
     }),
   },
-  title: `Altay's CV`,
+  title: "Altay's CV",
 })
 
 const CV = () => (
