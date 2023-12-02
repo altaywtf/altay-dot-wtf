@@ -38,7 +38,10 @@ const BooksPage = async () => {
         <div className="flex flex-col gap-10">
           {data.books.map((book) => (
             <div className="flex flex-row gap-4" key={book.slug}>
-              <NextLink className="min-w-[96px] sm:min-w-[120px]" href={`/books/${book.slug}`}>
+              <NextLink
+                className="min-w-[96px] sm:min-w-[120px]"
+                href={`/books/${book.slug}`}
+              >
                 <BookCover book={book} />
               </NextLink>
 
@@ -54,7 +57,9 @@ const BooksPage = async () => {
 
                 <BookReadDateAndRating book={book} />
 
-                <p className="italic text-neutral-400">&quot;{book.quote}&quot;</p>
+                <p className="italic text-neutral-400">
+                  &quot;{book.quote}&quot;
+                </p>
               </div>
             </div>
           ))}

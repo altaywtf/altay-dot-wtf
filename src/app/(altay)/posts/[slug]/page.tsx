@@ -12,10 +12,12 @@ type Props = {
 }
 
 const fetchData = async (slug: string) => {
-  const { markdown, post } = await fetch(`${API_URL}/posts/${slug}`).then((res) => res.json())
-  const { backlinks } = await fetch(`${API_URL}/backlinks?type=posts&slug=${slug}`).then((res) =>
-    res.json(),
+  const { markdown, post } = await fetch(`${API_URL}/posts/${slug}`).then(
+    (res) => res.json(),
   )
+  const { backlinks } = await fetch(
+    `${API_URL}/backlinks?type=posts&slug=${slug}`,
+  ).then((res) => res.json())
 
   return {
     backlinks,
@@ -24,7 +26,9 @@ const fetchData = async (slug: string) => {
   }
 }
 
-export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
   const { post } = await fetchData(params.slug)
 
   return {

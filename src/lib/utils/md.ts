@@ -7,7 +7,8 @@ import { DATA_FOLDER_PATH } from './fs'
 const REGEX_MD_LINKS = /\[([^[]+)?\](\(.[^)]*\))/gm
 const REGEX_MD_LINK_URL = /(\(.*\))/gm
 
-const getMarkdownLinks = (markdown: string) => markdown.match(REGEX_MD_LINKS) || []
+const getMarkdownLinks = (markdown: string) =>
+  markdown.match(REGEX_MD_LINKS) || []
 
 export const getRelativeMarkdownLinks = (markdown: string) =>
   getMarkdownLinks(markdown).filter((mdLink) => {
@@ -31,7 +32,10 @@ export const hasLink = (markdown: string, to: string) =>
     .map(extractUrlFromMarkdownLink)
     .some((url) => url.startsWith(to))
 
-export const transformRelativeMarkdownLinks = (pathInDataFolder: string, markdown: string) => {
+export const transformRelativeMarkdownLinks = (
+  pathInDataFolder: string,
+  markdown: string,
+) => {
   getRelativeMarkdownLinks(markdown).forEach((mdLink) => {
     const extractedURL = extractUrlFromMarkdownLink(mdLink)
     let transformedURL = extractedURL

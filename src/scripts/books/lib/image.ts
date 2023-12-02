@@ -27,8 +27,12 @@ const saveBookCoverImage = (slug: string, buffer: Buffer): string => {
 export const createBookCoverImage = async (
   baseBookWithMeta: BaseBookWithMeta,
 ): Promise<Book['coverImage']> => {
-  const remoteImage = await fetchRemoteImage(baseBookWithMeta.remoteCoverImage.url)
-  const resizedImage = await sharp(remoteImage).resize({ width: 480 }).toBuffer()
+  const remoteImage = await fetchRemoteImage(
+    baseBookWithMeta.remoteCoverImage.url,
+  )
+  const resizedImage = await sharp(remoteImage)
+    .resize({ width: 480 })
+    .toBuffer()
   const { blurhash, ratio } = await getImageData(resizedImage)
   const bookImagePath = saveBookCoverImage(baseBookWithMeta.slug, resizedImage)
 

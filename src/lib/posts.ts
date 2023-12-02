@@ -25,7 +25,9 @@ export const getPost = (slug: string) => {
   const post = {
     ...frontMatter,
     readingTime:
-      readingTimeInMins <= 1 ? '1 min read' : `${Math.floor(readingTimeInMins)} mins read`,
+      readingTimeInMins <= 1
+        ? '1 min read'
+        : `${Math.floor(readingTimeInMins)} mins read`,
     slug,
     url: `/posts/${slug}`,
   } as Post
@@ -48,4 +50,5 @@ export const getPosts = () => {
     .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1))
 }
 
-export const getPostsWithMarkdown = () => getPosts().map((post) => getPost(post.slug))
+export const getPostsWithMarkdown = () =>
+  getPosts().map((post) => getPost(post.slug))

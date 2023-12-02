@@ -5,7 +5,10 @@ import { useRouter } from 'next/navigation'
 import { CgArrowLeft } from 'react-icons/cg'
 import { usePathHistory } from 'ui/usePathHistory'
 
-const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({ href, label }) => {
+const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({
+  href,
+  label,
+}) => {
   const router = useRouter()
   const prevPath = usePathHistory()
   const content = (

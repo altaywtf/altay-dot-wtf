@@ -13,9 +13,8 @@ jest.mock('lib/books', () => ({
 
 describe('getBacklinks', () => {
   beforeAll(() => {
-    const mockGetPostsWithMarkdown = getPostsWithMarkdown as jest.MockedFunction<
-      typeof getPostsWithMarkdown
-    >
+    const mockGetPostsWithMarkdown =
+      getPostsWithMarkdown as jest.MockedFunction<typeof getPostsWithMarkdown>
 
     mockGetPostsWithMarkdown.mockImplementation(() => [
       {
@@ -42,9 +41,8 @@ describe('getBacklinks', () => {
       },
     ])
 
-    const mockGetBooksWithMarkdown = getBooksWithMarkdown as jest.MockedFunction<
-      typeof getBooksWithMarkdown
-    >
+    const mockGetBooksWithMarkdown =
+      getBooksWithMarkdown as jest.MockedFunction<typeof getBooksWithMarkdown>
 
     mockGetBooksWithMarkdown.mockImplementation(() => [
       {
@@ -70,7 +68,8 @@ describe('getBacklinks', () => {
           notes: {
             url: '/books/offline-matters',
           },
-          quote: 'We are all bored and everything is boring. Occupied 24/7, doing nothing at all.',
+          quote:
+            'We are all bored and everything is boring. Occupied 24/7, doing nothing at all.',
           rating: 4,
           remoteCoverImage: {
             url: 'https://cdn.webshopapp.com/shops/71491/files/331301478/jess-henderson-offline-matters.jpg',

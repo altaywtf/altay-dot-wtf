@@ -13,7 +13,9 @@ export const BookReadDateAndRating: React.FC<Props> = ({ book }) => {
   const info = [
     {
       component: (
-        <p className="text-neutral-400">Read in {format(new Date(book.dateRead), 'MMMM yyyy')}</p>
+        <p className="text-neutral-400">
+          Read in {format(new Date(book.dateRead), 'MMMM yyyy')}
+        </p>
       ),
       key: 'date',
     },

@@ -44,38 +44,39 @@ const runSearchAndChooseStep = async (query: string) => {
   return data[bookIndex]
 }
 
-const runGetBaseBookMetaStep = async (baseBook: BaseBook): Promise<BaseBookWithMeta> => {
-  const { dateRead, quote, rating, remoteCoverImageURL, slug, title } = await inquirer.prompt<
-    BaseBookWithMeta & { remoteCoverImageURL: string }
-  >([
-    {
-      default: baseBook.title,
-      name: 'title',
-      type: 'input',
-    },
-    {
-      default: slugify(baseBook.title, { lower: true }),
-      name: 'slug',
-      type: 'input',
-    },
-    {
-      default: baseBook.remoteCoverImage.url,
-      name: 'remoteCoverImageURL',
-      type: 'input',
-    },
-    {
-      name: 'rating',
-      type: 'number',
-    },
-    {
-      name: 'quote',
-      type: 'input',
-    },
-    {
-      name: 'dateRead',
-      type: 'input',
-    },
-  ])
+const runGetBaseBookMetaStep = async (
+  baseBook: BaseBook,
+): Promise<BaseBookWithMeta> => {
+  const { dateRead, quote, rating, remoteCoverImageURL, slug, title } =
+    await inquirer.prompt<BaseBookWithMeta & { remoteCoverImageURL: string }>([
+      {
+        default: baseBook.title,
+        name: 'title',
+        type: 'input',
+      },
+      {
+        default: slugify(baseBook.title, { lower: true }),
+        name: 'slug',
+        type: 'input',
+      },
+      {
+        default: baseBook.remoteCoverImage.url,
+        name: 'remoteCoverImageURL',
+        type: 'input',
+      },
+      {
+        name: 'rating',
+        type: 'number',
+      },
+      {
+        name: 'quote',
+        type: 'input',
+      },
+      {
+        name: 'dateRead',
+        type: 'input',
+      },
+    ])
 
   return {
     ...baseBook,
@@ -104,7 +105,9 @@ const main = async () => {
   const baseBookWithMeta = await runGetBaseBookMetaStep(baseBook)
   const book = await runCreateBookFromBaseBookWithMetaStep(baseBookWithMeta)
   const booksJSON = addBookToBooksJSON(book)
-  console.log(`${book.title} has been added, we have ${booksJSON.books.length} books(s) now.`)
+  console.log(
+    `${book.title} has been added, we have ${booksJSON.books.length} books(s) now.`,
+  )
 }
 
 main()

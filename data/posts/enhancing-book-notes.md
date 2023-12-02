@@ -168,7 +168,13 @@ const generateMetaImageForBook = (book: BookData) => {
   }
 
   const { canvas, context } = createCanvasForMetaImage()
-  context.drawImage(image, coordinates.x, coordinates.y, imageData.width, imageData.height)
+  context.drawImage(
+    image,
+    coordinates.x,
+    coordinates.y,
+    imageData.width,
+    imageData.height,
+  )
 
   fs.writeFileSync(imagePath, canvas.toBuffer('image/png'))
   return imagePath
