@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^1.4.4
     version: 1.4.4
   '@types/react-syntax-highlighter':
-    specifier: ^15.5.6
-    version: 15.5.6
+    specifier: ^15.5.10
+    version: 15.5.10
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
@@ -1306,8 +1306,8 @@ packages:
       '@types/react': 18.2.39
     dev: true
 
-  /@types/react-syntax-highlighter@15.5.6:
-    resolution: {integrity: sha512-i7wFuLbIAFlabTeD2I1cLjEOrG/xdMa/rpx2zwzAoGHuXJDhSqp9BSfDlMHSh9JSuNfxHk9eEmMX6D55GiyjGg==}
+  /@types/react-syntax-highlighter@15.5.10:
+    resolution: {integrity: sha512-Vf8nNkGHnjwK37b2wDs92zJSAWS2Mb57NcYHgajCNssHeTNEixvjINnXJkKdY0V0/eLrYkPP1xDKvNmYIr4HIg==}
     dependencies:
       '@types/react': 18.2.39
     dev: true
