@@ -7,70 +7,70 @@ const nextConfig = {
   redirects: async () => [
     // `zebrastik.com` to `zebrastik`
     {
-      source: '/',
       destination: '/zebrastik',
-      permanent: true,
       has: [{ type: 'host', value: 'zebrastik.com' }],
+      permanent: true,
+      source: '/',
     },
     {
-      source: '/',
       destination: '/zebrastik',
-      permanent: true,
       has: [{ type: 'host', value: 'zbrstk.com' }],
+      permanent: true,
+      source: '/',
     },
 
     // deleted pages
     {
-      source: '/now',
       destination: '/',
       permanent: true,
+      source: '/now',
     },
 
     // `articles`, `notes`, and `blog` to `posts`
     {
+      destination: '/blog',
+      permanent: true,
       source: '/articles',
-      destination: '/blog',
-      permanent: true,
     },
     {
+      destination: '/posts/:path*',
+      permanent: true,
       source: '/articles/:path*',
-      destination: '/posts/:path*',
-      permanent: true,
     },
     {
-      source: '/images/articles/:path*',
       destination: '/images/posts/:path*',
       permanent: true,
+      source: '/images/articles/:path*',
     },
     {
-      source: '/notes',
       destination: '/blog',
       permanent: true,
+      source: '/notes',
     },
     {
-      source: '/notes/:path*',
       destination: '/posts/:path*',
       permanent: true,
+      source: '/notes/:path*',
     },
     {
-      source: '/images/notes/:path*',
       destination: '/images/posts/:path*',
       permanent: true,
+      source: '/images/notes/:path*',
     },
     {
-      source: '/blog',
       destination: '/posts',
       permanent: true,
+      source: '/blog',
     },
     {
-      source: '/blog/:path*',
       destination: '/posts/:path*',
       permanent: true,
+      source: '/blog/:path*',
     },
     {
-      source: '/images/blog/:path*',
       destination: '/images/posts/:path*',
       permanent: true,
+      source: '/images/blog/:path*',
     },
   ],
 }

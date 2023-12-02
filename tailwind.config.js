@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  darkMode: 'class',
+  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-gt-america)'],
         mono: ['var(--font-gt-america-mono)'],
+        sans: ['var(--font-gt-america)'],
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
 }
