@@ -49,7 +49,7 @@ dependencies:
     version: 4.12.0(react@18.2.0)
   react-markdown:
     specifier: ^8.0.7
-    version: 8.0.7(@types/react@18.2.39)(react@18.2.0)
+    version: 8.0.7(@types/react@18.2.41)(react@18.2.0)
   react-star-rating-component:
     specifier: ^1.4.1
     version: 1.4.1(react@18.2.0)
@@ -92,8 +92,8 @@ devDependencies:
     specifier: ^20.10.2
     version: 20.10.2
   '@types/react':
-    specifier: ^18.2.39
-    version: 18.2.39
+    specifier: ^18.2.41
+    version: 18.2.41
   '@types/react-star-rating-component':
     specifier: ^1.4.4
     version: 1.4.4
@@ -1303,17 +1303,17 @@ packages:
   /@types/react-star-rating-component@1.4.4:
     resolution: {integrity: sha512-sRzK4a18SqXqpR8+U4fq5nXfcHrtULxDSz6QgP+MB6NolWvEDrcqn2v+w2RjmH8s4nwUzi7tfDFMjd4hZHxqTA==}
     dependencies:
-      '@types/react': 18.2.39
+      '@types/react': 18.2.41
     dev: true
 
   /@types/react-syntax-highlighter@15.5.10:
     resolution: {integrity: sha512-Vf8nNkGHnjwK37b2wDs92zJSAWS2Mb57NcYHgajCNssHeTNEixvjINnXJkKdY0V0/eLrYkPP1xDKvNmYIr4HIg==}
     dependencies:
-      '@types/react': 18.2.39
+      '@types/react': 18.2.41
     dev: true
 
-  /@types/react@18.2.39:
-    resolution: {integrity: sha512-Oiw+ppED6IremMInLV4HXGbfbG6GyziY3kqAwJYOR0PNbkYDmLWQA3a95EhdSmamsvbkJN96ZNN+YD+fGjzSBA==}
+  /@types/react@18.2.41:
+    resolution: {integrity: sha512-CwOGr/PiLiNBxEBqpJ7fO3kocP/2SSuC9fpH5K7tusrg4xPSRT/193rzolYwQnTN02We/ATXKnb6GqA5w4fRxw==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -5260,7 +5260,7 @@ packages:
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-markdown@8.0.7(@types/react@18.2.39)(react@18.2.0):
+  /react-markdown@8.0.7(@types/react@18.2.41)(react@18.2.0):
     resolution: {integrity: sha512-bvWbzG4MtOU62XqBx3Xx+zB2raaFFsq4mYiAzfjXJMEz2sixgeAfraA3tvzULF02ZdOMUOKTBFFaZJDDrq+BJQ==}
     peerDependencies:
       '@types/react': '>=16'
@@ -5268,7 +5268,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/prop-types': 15.7.5
-      '@types/react': 18.2.39
+      '@types/react': 18.2.41
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.3
       hast-util-whitespace: 2.0.1
