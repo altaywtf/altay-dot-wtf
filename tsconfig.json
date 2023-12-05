@@ -16,11 +16,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "config": ["src/config"],
-      "config/*": ["src/config/*"],
-      "lib/*": ["src/lib/*"],
-      "scripts/*": ["src/scripts/*"],
-      "ui/*": ["src/ui/*"]
+      "@/*": ["src/*"]
     },
     "plugins": [
       {

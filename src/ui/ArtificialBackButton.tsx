@@ -1,9 +1,9 @@
 'use client'
 
+import { usePathHistory } from '@/ui/usePathHistory'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { CgArrowLeft } from 'react-icons/cg'
-import { usePathHistory } from 'ui/usePathHistory'
 
 const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({
   href,

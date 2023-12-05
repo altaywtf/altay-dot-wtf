@@ -1,4 +1,4 @@
-import type { Book } from 'lib/books'
+import type { Book } from '@/lib/books'
 
 import Image from 'next/legacy/image'
 

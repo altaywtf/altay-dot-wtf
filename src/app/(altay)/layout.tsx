@@ -1,9 +1,9 @@
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from 'config'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/config'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
+import { PathHistoryListener } from '@/ui/PathHistoryListener'
+import '@/ui/theme/style.css'
 import { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
-import { PathHistoryListener } from 'ui/PathHistoryListener'
-import 'ui/theme/style.css'
 
 export const metadata: Metadata = {
   description: SITE_DESCRIPTION,

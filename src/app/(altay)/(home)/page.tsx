@@ -1,12 +1,12 @@
-import { booksCopy, homeCopy, postsCopy } from 'config'
-import { readMarkdownFile } from 'lib/utils/md'
+import { booksCopy, homeCopy, postsCopy } from '@/config'
+import { readMarkdownFile } from '@/lib/utils/md'
+import Markdown from '@/ui/Markdown'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CgArrowTopRight } from 'react-icons/cg'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { VscGithub } from 'react-icons/vsc'
-import Markdown from 'ui/Markdown'
 
 type Project = {
   description: string

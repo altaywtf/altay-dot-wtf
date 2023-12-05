@@ -1,7 +1,7 @@
-import type { Book, Page, ParsedQuery, Post } from 'lib/og/types'
+import type { Book, Page, ParsedQuery, Post } from '@/lib/og/types'
 import type { NextRequest } from 'next/server'
 
-import { OpenGraphImage } from 'lib/og/OpenGraphImage'
+import { OpenGraphImage } from '@/lib/og/OpenGraphImage'
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'

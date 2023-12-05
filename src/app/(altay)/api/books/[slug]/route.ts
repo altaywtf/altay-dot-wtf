@@ -1,4 +1,4 @@
-import { getBook } from 'lib/books'
+import { getBook } from '@/lib/books'
 import { NextResponse } from 'next/server'
 
 export async function GET(

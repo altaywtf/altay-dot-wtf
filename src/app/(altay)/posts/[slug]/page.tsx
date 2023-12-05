@@ -1,9 +1,9 @@
-import { API_URL, postsCopy } from 'config'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { API_URL, postsCopy } from '@/config'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
+import ArtificialBackButton from '@/ui/ArtificialBackButton'
+import Backlinks from '@/ui/Backlinks'
+import Markdown from '@/ui/Markdown'
 import { Metadata } from 'next'
-import ArtificialBackButton from 'ui/ArtificialBackButton'
-import Backlinks from 'ui/Backlinks'
-import Markdown from 'ui/Markdown'
 
 import { PostDateAndReadingTime } from '../components/PostDateAndReadingTime'
 

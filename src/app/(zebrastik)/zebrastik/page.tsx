@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { zebrastikCopy } from 'config'
+import { zebrastikCopy } from '@/config'
 import Image from 'next/image'
 
 export const metadata: Metadata = {

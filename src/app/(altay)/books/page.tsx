@@ -1,11 +1,11 @@
-import type { Book } from 'lib/books'
+import type { Book } from '@/lib/books'
 
-import { API_URL, booksCopy } from 'config'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { API_URL, booksCopy } from '@/config'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
+import ArtificialBackButton from '@/ui/ArtificialBackButton'
+import Page from '@/ui/Page'
 import { Metadata } from 'next'
 import NextLink from 'next/link'
-import ArtificialBackButton from 'ui/ArtificialBackButton'
-import Page from 'ui/Page'
 
 import { BookCover } from './components/BookCover'
 import { BookReadDateAndRating } from './components/BookReadDateAndRating'

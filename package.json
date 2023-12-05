@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "start": "next start",
-    "dev": "next dev -p 1994",
-    "test": "jest",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "typecheck": "tsc --noEmit",
     "create:book": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/create.ts",
+    "dev": "next dev -p 1994",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "start": "next start",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
     "update:book-images": "ts-node --project tsconfig.scripts.json -r tsconfig-paths/register src/scripts/books/update-images.ts"
   },
   "dependencies": {
@@ -47,6 +47,7 @@
     "@types/react": "^18.2.42",
     "@types/react-star-rating-component": "^1.4.4",
     "@types/react-syntax-highlighter": "^15.5.11",
+    "@vercel/style-guide": "^5.1.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
     "eslint-config-next": "14.0.3",

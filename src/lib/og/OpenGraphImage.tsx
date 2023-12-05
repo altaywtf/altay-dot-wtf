@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { APP_URL } from 'config/constants'
+import { APP_URL } from '@/config/constants'
 import colors from 'tailwindcss/colors'
 
 import type { Book, Page, ParsedQuery, Post } from './types'

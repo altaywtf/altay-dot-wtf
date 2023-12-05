@@ -1,6 +1,6 @@
 'use client'
 
-import type { Backlink } from 'lib/backlinks'
+import type { Backlink } from '@/lib/backlinks'
 
 import Link from 'next/link'
 

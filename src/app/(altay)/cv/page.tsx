@@ -1,7 +1,7 @@
-import { readMarkdownFile } from 'lib/utils/md'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { readMarkdownFile } from '@/lib/utils/md'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
+import Markdown from '@/ui/Markdown'
 import { Metadata } from 'next'
-import Markdown from 'ui/Markdown'
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {

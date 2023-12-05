@@ -1,7 +1,7 @@
+import AnalyticsWrapper from '@/ui/AnalyticsWrapper'
+import { gtAmerica, gtAmericaMono } from '@/ui/theme/fonts'
+import '@/ui/theme/style.css'
 import { PropsWithChildren } from 'react'
-import AnalyticsWrapper from 'ui/AnalyticsWrapper'
-import { gtAmerica, gtAmericaMono } from 'ui/theme/fonts'
-import 'ui/theme/style.css'
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
   <html

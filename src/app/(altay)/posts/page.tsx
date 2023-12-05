@@ -1,11 +1,11 @@
-import type { Post } from 'lib/posts'
+import type { Post } from '@/lib/posts'
 
-import { API_URL, postsCopy } from 'config'
-import { getOpenGraphImage } from 'lib/utils/openGraph'
+import { API_URL, postsCopy } from '@/config'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
+import ArtificialBackButton from '@/ui/ArtificialBackButton'
+import Page from '@/ui/Page'
 import { Metadata } from 'next'
 import Link from 'next/link'
-import ArtificialBackButton from 'ui/ArtificialBackButton'
-import Page from 'ui/Page'
 
 import { PostDateAndReadingTime } from './components/PostDateAndReadingTime'
 

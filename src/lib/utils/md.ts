@@ -1,4 +1,4 @@
-import { SITE_URL } from 'config'
+import { SITE_URL } from '@/config'
 import fs from 'fs'
 import marked from 'marked'
 

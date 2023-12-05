@@ -1,6 +1,6 @@
-import { getBooksWithMarkdown } from 'lib/books'
-import { getPostsWithMarkdown } from 'lib/posts'
-import { hasLink } from 'lib/utils/md'
+import { getBooksWithMarkdown } from '@/lib/books'
+import { getPostsWithMarkdown } from '@/lib/posts'
+import { hasLink } from '@/lib/utils/md'
 
 export type Backlink = {
   title: string

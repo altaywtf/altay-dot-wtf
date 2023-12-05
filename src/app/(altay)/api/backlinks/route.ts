@@ -1,4 +1,4 @@
-import { getBacklinks } from 'lib/backlinks'
+import { getBacklinks } from '@/lib/backlinks'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {

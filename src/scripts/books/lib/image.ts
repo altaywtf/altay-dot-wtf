@@ -1,6 +1,6 @@
 import axios from 'axios'
 import fs from 'fs'
-import { getImageData } from 'lib/utils/image'
+import { getImageData } from '@/lib/utils/image'
 import sharp from 'sharp'
 
 import type { BaseBookWithMeta, Book } from './types'

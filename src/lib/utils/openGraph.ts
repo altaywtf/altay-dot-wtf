@@ -1,4 +1,4 @@
-import { API_URL } from 'config'
+import { API_URL } from '@/config'
 
 const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`
 

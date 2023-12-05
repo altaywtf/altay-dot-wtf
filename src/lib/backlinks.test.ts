@@ -1,13 +1,13 @@
-import { getBooksWithMarkdown } from 'lib/books'
-import { getPostsWithMarkdown } from 'lib/posts'
+import { getBooksWithMarkdown } from '@/lib/books'
+import { getPostsWithMarkdown } from '@/lib/posts'
 
 import { getBacklinks } from './backlinks'
 
-jest.mock('lib/posts', () => ({
+jest.mock('@/lib/posts', () => ({
   getPostsWithMarkdown: jest.fn(),
 }))
 
-jest.mock('lib/books', () => ({
+jest.mock('@/lib/books', () => ({
   getBooksWithMarkdown: jest.fn(() => []),
 }))
 
@@ -84,19 +84,6 @@ describe('getBacklinks', () => {
 
   it('works', () => {
     const input = `/posts/hi`
-    expect(getBacklinks(input)).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "title": "yes",
-          "type": "post",
-          "url": "/posts/yes",
-        },
-        Object {
-          "title": "Offline Matters by Jess Henderson",
-          "type": "book",
-          "url": "/books/offline-matters",
-        },
-      ]
-    `)
+    expect(getBacklinks(input)).toMatchSnapshot()
   })
 })

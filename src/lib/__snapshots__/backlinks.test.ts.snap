@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getBacklinks works 1`] = `
+[
+  {
+    "title": "yes",
+    "type": "post",
+    "url": "/posts/yes",
+  },
+  {
+    "title": "Offline Matters by Jess Henderson",
+    "type": "book",
+    "url": "/books/offline-matters",
+  },
+]
+`;

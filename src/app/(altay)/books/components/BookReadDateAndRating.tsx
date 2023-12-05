@@ -1,6 +1,6 @@
 'use client'
 
-import type { Book } from 'lib/books'
+import type { Book } from '@/lib/books'
 
 import { format } from 'date-fns'
 import StarRating from 'react-star-rating-component'
