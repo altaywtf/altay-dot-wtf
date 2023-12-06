@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
     url: 'https://github.com/putdotio/putio-raycast',
   },
   {
-    description: 'JavaScript client for Accept NANO payment gateway.',
+    description: 'Web client for Accept NANO payment gateway.',
     icon_url: '/images/projects/accept-nano.png',
     title: 'Accept Nano',
     url: 'https://github.com/accept-nano/accept-nano-client',
@@ -68,7 +68,7 @@ const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
   },
 ]
 
-const HomePage = async () => (
+const HomePage = () => (
   <>
     <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
       <Image alt="That's my head" fill sizes="100%" src="/images/avatar.png" />
