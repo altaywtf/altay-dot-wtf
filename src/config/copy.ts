@@ -3,7 +3,7 @@ export const homeCopy = {
 } as const
 
 export const postsCopy = {
-  description: 'My thoughts on stuff that bugs me.',
+  description: 'Thoughts on stuff that bugs me.',
   title: `Writing`,
 } as const
 
