@@ -5,8 +5,6 @@
 @layer base {
   :root {
     @apply antialiased;
-    @apply text-neutral-200;
-    @apply bg-neutral-950;
     --app-width: 720px;
   }
 
@@ -14,8 +12,9 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  html,
   body {
+    @apply text-neutral-200;
+    @apply min-h-screen;
     @apply bg-neutral-950;
   }
 
@@ -34,7 +33,7 @@
   }
 
   hr {
-    @apply bg-neutral-800;
+    @apply bg-neutral-900;
     @apply h-px;
     @apply border-0;
   }

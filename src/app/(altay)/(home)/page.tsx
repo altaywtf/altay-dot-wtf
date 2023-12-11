@@ -36,14 +36,14 @@ const EXTERNAL_LINKS = [
 const PROJECTS: Project[] = [
   {
     description:
-      'A tool for making data-driven decisions to adjust browser coverage of web projects.',
+      'Privacy-centric, data-driven browser coverage tool for your web projects.',
     icon_url: '/images/projects/browsercare.png',
-    title: 'browsercare',
-    url: 'https://github.com/altaywtf/browsercare',
+    title: 'Browsercare',
+    url: 'https://github.com/experiment-station/browsercare',
   },
   {
-    description: 'A Raycast extension for putio.',
-    icon_url: '/images/projects/raycast.png',
+    description: 'Raycast extension for putio.',
+    icon_url: '/images/projects/putio.png',
     title: 'put.io Raycast',
     url: 'https://github.com/putdotio/putio-raycast',
   },
