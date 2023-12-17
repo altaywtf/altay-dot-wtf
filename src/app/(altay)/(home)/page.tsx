@@ -35,10 +35,16 @@ const EXTERNAL_LINKS = [
 
 const PROJECTS: Project[] = [
   {
+    description: 'Your hard-working AI podcast companion.',
+    icon_url: '/images/projects/beecast.png',
+    title: 'beecast',
+    url: 'https://github.com/experiment-station/beecast',
+  },
+  {
     description:
       'Privacy-centric, data-driven browser coverage tool for your web projects.',
     icon_url: '/images/projects/browsercare.png',
-    title: 'Browsercare',
+    title: 'browsercare',
     url: 'https://github.com/experiment-station/browsercare',
   },
   {
@@ -153,8 +159,11 @@ const HomePage = () => (
 
     <hr className="my-8" />
 
-    <div className="text-neutral-400">
-      <a className="hover:text-neutral-300" href="mailto:altay@zebrastik.com">
+    <div className="text-sm text-neutral-400">
+      <a
+        className="hover:text-neutral-300 hover:underline"
+        href="mailto:altay@zebrastik.com"
+      >
         altay@zebrastik.com
       </a>
     </div>

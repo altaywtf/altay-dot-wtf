@@ -1,4 +1,4 @@
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/config'
+import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/config'
 import { getOpenGraphImage } from '@/lib/utils/openGraph'
 import { PathHistoryListener } from '@/ui/PathHistoryListener'
 import '@/ui/theme/style.css'
@@ -7,6 +7,7 @@ import { PropsWithChildren } from 'react'
 
 export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
+  metadataBase: new URL(APP_URL),
   openGraph: {
     description: SITE_DESCRIPTION,
     images: getOpenGraphImage({
