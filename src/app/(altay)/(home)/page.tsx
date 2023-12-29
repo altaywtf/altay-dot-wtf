@@ -1,9 +1,9 @@
 import { booksCopy, homeCopy, postsCopy } from '@/config'
 import { readMarkdownFile } from '@/lib/utils/md'
 import Markdown from '@/ui/Markdown'
+import { Github, MoveUpRight, Twitter } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Github, Twitter, MoveUpRight } from 'lucide-react'
 
 type Project = {
   description: string
