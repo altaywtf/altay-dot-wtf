@@ -1,13 +1,26 @@
-'use client'
-
 import type { Book } from '@/lib/books'
 
 import { format } from 'date-fns'
-import StarRating from 'react-star-rating-component'
+import { Star } from 'lucide-react'
 
 type Props = {
   book: Book
 }
+
+const StarRating = (props: { max: number; rating: number }) => (
+  <div>
+    {Array.from({ length: props.max }).map((_, i) => (
+      <Star
+        className={`inline-block ${
+          i < props.rating ? 'fill-amber-400' : 'fill-neutral-700'
+        }`}
+        key={i}
+        size={16}
+        strokeWidth={0}
+      />
+    ))}
+  </div>
+)
 
 export const BookReadDateAndRating: React.FC<Props> = ({ book }) => {
   const info = [
@@ -20,15 +33,7 @@ export const BookReadDateAndRating: React.FC<Props> = ({ book }) => {
       key: 'date',
     },
     {
-      component: (
-        <StarRating
-          editing={false}
-          name={`rating-${book.slug}`}
-          starColor="#F7C744"
-          starCount={5}
-          value={book.rating}
-        />
-      ),
+      component: <StarRating max={5} rating={book.rating} />,
       key: 'rating',
     },
   ]

@@ -28,9 +28,9 @@ export default function Page() {
 
       <a
         className="text-neutral-400 hover:text-neutral-300"
-        href="mailto:hey@zebrastik.com"
+        href="mailto:altay@zebrastik.com"
       >
-        hey@zebrastik.com
+        altay@zebrastik.com
       </a>
 
       <div className="mt-4 text-neutral-400">

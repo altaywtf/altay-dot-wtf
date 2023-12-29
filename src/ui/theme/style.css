@@ -99,3 +99,8 @@
     padding-left: env(safe-area-inset-left);
   }
 }
+
+.lucide {
+  width: 1em;
+  height: 1em;
+}

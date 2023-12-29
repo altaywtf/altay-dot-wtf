@@ -3,10 +3,7 @@ import { readMarkdownFile } from '@/lib/utils/md'
 import Markdown from '@/ui/Markdown'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CgArrowTopRight } from 'react-icons/cg'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
-import { VscGithub } from 'react-icons/vsc'
+import { Github, Twitter, MoveUpRight } from 'lucide-react'
 
 type Project = {
   description: string
@@ -17,19 +14,14 @@ type Project = {
 
 const EXTERNAL_LINKS = [
   {
-    icon: <VscGithub />,
+    icon: <Github />,
     label: 'GitHub',
     url: 'https://github.com/altaywtf',
   },
   {
-    icon: <FaXTwitter />,
-    label: 'X.com',
+    icon: <Twitter />,
+    label: 'Twitter',
     url: 'https://x.com/altaywtf',
-  },
-  {
-    icon: <FaLinkedin />,
-    label: 'LinkedIn',
-    url: 'https://linkedin.com/in/altaywtf/',
   },
 ]
 
@@ -123,10 +115,7 @@ const HomePage = () => (
                 target="_blank"
               >
                 <span>{item.title}</span>
-
-                <span className="text-sm">
-                  <CgArrowTopRight />
-                </span>
+                <MoveUpRight className="text-xs" />
               </a>
 
               <p>{item.description}</p>
