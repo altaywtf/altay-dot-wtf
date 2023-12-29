@@ -41,7 +41,7 @@ const PROJECTS: Project[] = [
   },
   {
     description: 'Raycast extension for putio.',
-    icon_url: '/images/projects/putio.png',
+    icon_url: '/images/projects/raycast.png',
     title: 'put.io Raycast',
     url: 'https://github.com/putdotio/putio-raycast',
   },
