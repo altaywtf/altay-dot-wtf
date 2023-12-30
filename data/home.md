@@ -1,4 +1,4 @@
-I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, state machines, monorepos, and developer experience.
+I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm passionate about TypeScript, React ecosystem, state machines, monorepos, and developer experience.
 
 I'm currently based in Bodrum and mostly working on [putio](https://put.io), a cloud storage service that helps you to download files from various sources and stream from anywhere you want.
 
