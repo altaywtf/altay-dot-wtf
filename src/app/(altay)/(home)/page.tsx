@@ -151,9 +151,9 @@ const HomePage = () => (
     <div className="text-sm text-neutral-400">
       <a
         className="hover:text-neutral-300 hover:underline"
-        href="mailto:altay@zebrastik.com"
+        href="mailto:altay@hey.com"
       >
-        altay@zebrastik.com
+        altay@hey.com
       </a>
     </div>
   </>
