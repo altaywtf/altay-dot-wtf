@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
+      <div className="relative h-20 w-20 overflow-hidden rounded border border-solid border-neutral-900">
         <Image alt="zebrastik logo" fill src="/images/zebra.jpg" />
       </div>
 

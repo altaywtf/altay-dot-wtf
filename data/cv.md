@@ -104,4 +104,4 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 - [twitter.com/altaywtf](https://twitter.com/altaywtf)
 - [github.com/altaywtf](https://github.com/altaywtf)
 - [linkedin.com/in/altaywtf](https://linkedin.com/in/altaywtf)
-- [altay@zebrastik.com](mailto:altay@zebrastik.com)
+- [altay@hey.com](mailto:altay@hey.com)
