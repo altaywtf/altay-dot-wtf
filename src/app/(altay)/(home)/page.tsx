@@ -68,7 +68,7 @@ const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
 
 const HomePage = () => (
   <>
-    <div className="relative h-20 w-20 overflow-hidden rounded border border-solid border-neutral-900">
+    <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-900">
       <Image alt="That's my head" fill sizes="100%" src="/images/avatar.png" />
     </div>
 
