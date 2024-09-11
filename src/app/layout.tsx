@@ -1,7 +1,30 @@
+import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/config'
+import { getOpenGraphImage } from '@/lib/utils/openGraph'
 import AnalyticsWrapper from '@/ui/AnalyticsWrapper'
+import { PathHistoryListener } from '@/ui/PathHistoryListener'
 import { gtAmerica, gtAmericaMono } from '@/ui/theme/fonts'
 import '@/ui/theme/style.css'
+import '@/ui/theme/style.css'
+import { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
+
+export const metadata: Metadata = {
+  description: SITE_DESCRIPTION,
+  metadataBase: new URL(APP_URL),
+  openGraph: {
+    description: SITE_DESCRIPTION,
+    images: getOpenGraphImage({
+      title: SITE_DESCRIPTION,
+      type: 'page',
+    }),
+    title: SITE_TITLE,
+    url: SITE_URL,
+  },
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_TITLE}`,
+  },
+} as const
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
   <html
@@ -23,6 +46,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => (
       </main>
 
       <AnalyticsWrapper />
+      <PathHistoryListener />
     </body>
   </html>
 )

@@ -8,12 +8,6 @@ export const postsCopy = {
 } as const
 
 export const booksCopy = {
-  description: 'Somewhat detailed notes from the books that I read.',
+  description: 'Notes from the books that I read.',
   title: 'Book notes',
 } as const
-
-export const zebrastikCopy = {
-  description:
-    'we provide software development services for digital product companies at any scale. our expertise covers many platforms such as web, mobile, smart TVs, and streaming devices.',
-  title: 'hi, we are zebrastik',
-}

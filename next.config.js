@@ -5,20 +5,6 @@ const nextConfig = {
   reactStrictMode: true,
 
   redirects: async () => [
-    // `zebrastik.com` to `zebrastik`
-    {
-      destination: '/zebrastik',
-      has: [{ type: 'host', value: 'zebrastik.com' }],
-      permanent: true,
-      source: '/',
-    },
-    {
-      destination: '/zebrastik',
-      has: [{ type: 'host', value: 'zbrstk.com' }],
-      permanent: true,
-      source: '/',
-    },
-
     // deleted pages
     {
       destination: '/',
