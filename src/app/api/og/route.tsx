@@ -8,7 +8,7 @@ export const runtime = 'edge'
 
 const loadFont = async () => {
   const url = new URL(
-    '../../../../ui/theme/fonts/GT-America-Standard-Bold.ttf',
+    '../../../ui/theme/fonts/GT-America-Standard-Bold.ttf',
     import.meta.url,
   )
   return (await fetch(url)).arrayBuffer()
