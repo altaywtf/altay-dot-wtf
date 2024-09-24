@@ -24,12 +24,12 @@ After three years in Berlin, I took a sabbatical and moved to a warm seaside dis
 
 #### _Undisclosed FinTech company \(Sep 2024 - now\)_
 
-- Working on the front-end core team that is helping the developers to be more effective and efficient in their daily work.
+- Working at the front-end core team that is helping the developers to be more effective and efficient in their daily work.
 
 #### _put.io (Jan 2022 - now)_
 
-- Managing the frontend monorepo that produces apps for web, iOS, Apple TV, Android TV, Chromecast, Roku, and various smart TV platforms.
-- Building open-source utilities such as JavaScript / Swift SDKs, browser and Raycast extensions.
+- Managing the frontend monorepo that produces apps for web, iOS, tvOS, androidTV, Chromecast, Roku, and various smart TV platforms.
+- Building open-source utilities such as JS/Swift SDKs and extensions for third parties.
 
 ---
 
