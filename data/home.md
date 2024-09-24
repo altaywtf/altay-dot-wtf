@@ -1,6 +1,6 @@
 I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, state machines, monorepos, and developer experience.
 
-I'm currently based in Bodrum and mostly working on [putio](https://put.io), a cloud storage service that helps you to download files from various sources and stream from anywhere you want.
+I'm currently based in Bodrum and providing services as a contractor for various companies.
 
 Before moving to Bodrum, I lived three years in Berlin to work on [Klarna](https://klarna.com)'s consumer app and [Lisk](https://lisk.io)'s open-source mobile cryptocurrency wallet.
 

@@ -18,12 +18,20 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 
 ### Work Experience
 
-#### put.io \(Jan 2022 - Now\)
+#### Independent contractor \(Jan 2022 - now\)
 
-- After three years in Berlin, I took a break from work and moved to a warm seaside district (Bodrum) in Turkey to lighten the psychological effects of the pandemic.
-- I've started focusing full-time on put.io, which I've been a part of since 2017 and kept working on the side when I moved to Berlin in 2018.
+After three years in Berlin, I took a sabbatical and moved to a warm seaside district in Turkey. I've been providing services as a contractor for various companies since then.
+
+#### _Undisclosed FinTech company \(Sep 2024 - now\)_
+
+- Working on the front-end core team that is helping the developers to be more effective and efficient in their daily work.
+
+#### _put.io (Jan 2022 - now)_
+
 - Managing the frontend monorepo that produces apps for web, iOS, Apple TV, Android TV, Chromecast, Roku, and various smart TV platforms.
 - Building open-source utilities such as JavaScript / Swift SDKs, browser and Raycast extensions.
+
+---
 
 #### Klarna \(May 2019 - Aug 2021\)
 
@@ -55,11 +63,15 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 - On-boarded new members to the ecosystem by organising workshops and
   tutorials.
 
+---
+
 #### Lightcurve GmbH \(Nov 2018 - May 2019\)
 
 - Worked on the cross-platform Lisk Mobile app, built with React Native.
 - Implemented Bitcoin support according to BIP49 standard.
 - Developed native modules by using Swift.
+
+---
 
 #### put.io \(Jan 2017 - Nov 2018\)
 
@@ -75,10 +87,14 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 - Developed a Roku application with BrightScript.
 - Built cross-browser extensions with WebExtensions API.
 
+---
+
 #### Vispera \(Sep 2016 - Mar 2017\)
 
 - Re-designed and structured the front-end layer of the core Rails application.
 - Built single-page apps for complex data entry and management purposes with React.
+
+---
 
 #### Peergust \(Mar 2016 - Sep 2016\)
 
