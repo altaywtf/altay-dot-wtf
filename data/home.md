@@ -1,4 +1,4 @@
-I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, state machines, monorepos, and developer experience.
+I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about React ecosystem, monorepos, and developer experience.
 
 I'm currently based in Bodrum and providing services as a contractor for various companies.
 
