@@ -167,7 +167,7 @@ export const OpenGraphImage: React.FC<{
         >
           <img
             alt="avatar"
-            src={APP_URL + '/images/2024-aa-sq.png'}
+            src={APP_URL + '/images/2024-aa.png'}
             style={{
               border: `4px solid ${colors.neutral[600]}`,
               borderRadius: 100,

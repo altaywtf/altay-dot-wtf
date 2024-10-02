@@ -69,12 +69,7 @@ const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
 const HomePage = () => (
   <>
     <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
-      <Image
-        alt="That's my head"
-        fill
-        sizes="100%"
-        src="/images/2024-aa-sq.png"
-      />
+      <Image alt="That's my head" fill sizes="100%" src="/images/2020-aa.png" />
     </div>
 
     <div className="mt-8 flex flex-col gap-4">
