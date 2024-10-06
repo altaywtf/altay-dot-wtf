@@ -20,7 +20,7 @@ I'm a software engineer building user interfaces for web, mobile, and streaming 
 
 #### Independent contractor \(Jan 2022 - now\)
 
-After three years in Berlin, I took a sabbatical and moved to a warm seaside district in Turkey. I've been providing services as a contractor for various companies since then.
+After three years in Berlin, I took a sabbatical and moved to a warm seaside location. I've been providing services as a contractor for various companies since then.
 
 - **_Undisclosed FinTech company \(Sep 2024 - now\)_**\
   Working at the frontend core team that is helping the developers to be more effective and efficient in their daily work.
