@@ -1,6 +1,6 @@
 ## Altay A.
 
-I'm a software engineer building user interfaces for web, mobile, and streaming devices. I'm quite passionate about TypeScript, React ecosystem, developer experience, and monorepos.
+I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about React ecosystem, monorepos, and developer experience.
 
 ---
 
@@ -95,13 +95,3 @@ After three years in Berlin, I took a sabbatical and moved to a warm seaside loc
 - Graduated in the 2nd place of the department with 2.90 GPA.
 - Took classes from Computer Science and Visual Communication Design departments.
 - Built an unofficial shuttle tracking app for [web](https://github.com/altaywtf/bilgi-shuttle-web), [iOS](https://github.com/altaywtf/bilgi-shuttle-ios), and [Android](https://github.com/altaywtf/bilgi-shuttle-android).
-
----
-
-### Contact
-
-- [altay.wtf](https://altay.wtf)
-- [twitter.com/altaywtf](https://twitter.com/altaywtf)
-- [github.com/altaywtf](https://github.com/altaywtf)
-- [linkedin.com/in/altaywtf](https://linkedin.com/in/altaywtf)
-- [altay@hey.com](mailto:altay@hey.com)

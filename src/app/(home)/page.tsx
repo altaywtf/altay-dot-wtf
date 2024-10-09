@@ -1,7 +1,7 @@
 import { booksCopy, homeCopy, postsCopy } from '@/config'
 import { readMarkdownFile } from '@/lib/utils/md'
 import Markdown from '@/ui/Markdown'
-import { Github, MoveUpRight, Twitter } from 'lucide-react'
+import { MoveUpRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -12,20 +12,13 @@ type Project = {
   url: string
 }
 
-const EXTERNAL_LINKS = [
-  {
-    icon: <Github />,
-    label: 'GitHub',
-    url: 'https://github.com/altaywtf',
-  },
-  {
-    icon: <Twitter />,
-    label: 'Twitter',
-    url: 'https://x.com/altaywtf',
-  },
-]
-
 const PROJECTS: Project[] = [
+  {
+    description: 'Raycast extension for putio.',
+    icon_url: '/images/projects/raycast.png',
+    title: 'put.io Raycast',
+    url: 'https://github.com/putdotio/putio-raycast',
+  },
   {
     description: 'Your hard-working AI podcast companion.',
     icon_url: '/images/projects/beecast.png',
@@ -38,12 +31,6 @@ const PROJECTS: Project[] = [
     icon_url: '/images/projects/browsercare.png',
     title: 'browsercare',
     url: 'https://github.com/experiment-station/browsercare',
-  },
-  {
-    description: 'Raycast extension for putio.',
-    icon_url: '/images/projects/raycast.png',
-    title: 'put.io Raycast',
-    url: 'https://github.com/putdotio/putio-raycast',
   },
   {
     description: 'Web client for Accept NANO payment gateway.',
@@ -78,21 +65,6 @@ const HomePage = () => (
       <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
         <Markdown>{readMarkdownFile('home.md')}</Markdown>
       </div>
-    </div>
-
-    <div className="mt-4 flex flex-row gap-2">
-      {EXTERNAL_LINKS.map((item) => (
-        <a
-          className="flex flex-row items-center gap-1.5 rounded border border-solid border-neutral-800 bg-neutral-900 px-3 py-1.5 text-sm hover:bg-neutral-800"
-          href={item.url}
-          key={item.url}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <span>{item.icon}</span>
-          <span>{item.label}</span>
-        </a>
-      ))}
     </div>
 
     <hr className="my-8" />
