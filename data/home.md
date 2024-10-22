@@ -1,6 +1,8 @@
-I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about React ecosystem, monorepos, and developer experience.
+I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices.
 
-I currently provide services as a contractor for various companies remotely.
+I'm passionate about React ecosystem, monorepos, and improving developer experience.
+
+Currently, I provide contracting services for various companies and working remotely.
 
 Before that, I lived three years in Berlin to work on [Klarna](https://klarna.com)'s consumer app and [Lisk](https://lisk.io)'s open-source mobile cryptocurrency wallet.
 
