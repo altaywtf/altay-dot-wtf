@@ -2,17 +2,29 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  headers: async () => {
+    return [
+      {
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
+        ],
+        source: '/:path*',
+      },
+    ]
+  },
+
   reactStrictMode: true,
 
   redirects: async () => [
-    // deleted pages
     {
       destination: '/',
       permanent: true,
       source: '/now',
     },
 
-    // `articles`, `notes`, and `blog` to `posts`
     {
       destination: '/blog',
       permanent: true,
