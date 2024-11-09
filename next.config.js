@@ -72,7 +72,7 @@ const nextConfig = {
     },
     {
       destination:
-        'https://altaywtf.notion.site/Tech-stuff-to-giveaway-139e75710b528092aae6c3b55419cd56?pvs=4',
+        'https://altaywtf.notion.site/Tech-stuff-giveaway-139e75710b528092aae6c3b55419cd56',
       permanent: false,
       source: '/tech-stuff-giveaway',
     },
