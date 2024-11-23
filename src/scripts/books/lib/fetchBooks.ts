@@ -1,36 +1,36 @@
-import axios from 'axios'
+import axios from "axios";
 
-import { mapQueryBookToBaseBook } from './mappers'
+import { mapQueryBookToBaseBook } from "./mappers";
 
-const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY as string
+const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY as string;
 
 export type GoogleBooksIndustryIdentifier =
-  | { identifier: string; type: 'ISBN_10' }
-  | { identifier: string; type: 'ISBN_13' }
-  | { identifier: string; type: 'OTHER' }
+  | { identifier: string; type: "ISBN_10" }
+  | { identifier: string; type: "ISBN_13" }
+  | { identifier: string; type: "OTHER" };
 
 type GoogleBooksVolume = {
   volumeInfo: {
-    authors: string[]
+    authors: string[];
     imageLinks: {
-      thumbnail: string
-    }
-    industryIdentifiers: GoogleBooksIndustryIdentifier[]
-    title: string
-  }
-}
+      thumbnail: string;
+    };
+    industryIdentifiers: GoogleBooksIndustryIdentifier[];
+    title: string;
+  };
+};
 
 type GoogleBooksVolumeQueryResult = {
-  items: GoogleBooksVolume[]
-  totalItems: number
-}
+  items: GoogleBooksVolume[];
+  totalItems: number;
+};
 
-export type QueryBook = GoogleBooksVolume
-export type BooksQueryResult = GoogleBooksVolumeQueryResult
+export type QueryBook = GoogleBooksVolume;
+export type BooksQueryResult = GoogleBooksVolumeQueryResult;
 
 export const fetchBooksByQuery = async (query: string) => {
   const response = await axios.get<BooksQueryResult>(
-    'https://www.googleapis.com/books/v1/volumes',
+    "https://www.googleapis.com/books/v1/volumes",
     {
       params: {
         key: GOOGLE_BOOKS_API_KEY,
@@ -38,7 +38,7 @@ export const fetchBooksByQuery = async (query: string) => {
         q: query,
       },
     },
-  )
+  );
 
   return response.data.items
     .filter((i) => i.volumeInfo.authors && i.volumeInfo.authors.length > 0)
@@ -48,5 +48,5 @@ export const fetchBooksByQuery = async (query: string) => {
         i.volumeInfo.industryIdentifiers.length > 0,
     )
     .filter((i) => !!i.volumeInfo.imageLinks)
-    .map(mapQueryBookToBaseBook)
-}
+    .map(mapQueryBookToBaseBook);
+};

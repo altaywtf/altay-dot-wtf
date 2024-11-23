@@ -1,30 +1,30 @@
-'use client'
+"use client";
 
-import ReactMarkdown from 'react-markdown'
-import gfm from 'remark-gfm'
-import slug from 'remark-slug'
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
+import slug from "remark-slug";
 
-import { MDCodeBlock } from './MDCodeBlock'
-import { MDLink } from './MDLink'
+import { MDCodeBlock } from "./MDCodeBlock";
+import { MDLink } from "./MDLink";
 
 const Markdown: React.FC<{ children: string }> = ({ children }) => (
   <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-pre:m-0 prose-pre:p-0 prose-img:m-auto prose-img:rounded">
     <ReactMarkdown
       components={{
-        a: (props) => <MDLink href={props.href || ''}>{props.children}</MDLink>,
+        a: (props) => <MDLink href={props.href || ""}>{props.children}</MDLink>,
 
         code: (props) => {
-          const { children, className, inline, ...rest } = props
+          const { children, className, inline, ...rest } = props;
 
           if (inline) {
             return (
               <code {...rest} className={className}>
                 {children}
               </code>
-            )
+            );
           }
 
-          return <MDCodeBlock {...props} />
+          return <MDCodeBlock {...props} />;
         },
       }}
       remarkPlugins={[slug, gfm]}
@@ -32,6 +32,6 @@ const Markdown: React.FC<{ children: string }> = ({ children }) => (
       {children}
     </ReactMarkdown>
   </article>
-)
+);
 
-export default Markdown
+export default Markdown;

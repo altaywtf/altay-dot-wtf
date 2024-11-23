@@ -1,32 +1,32 @@
-import type { Book } from '@/lib/books'
+import type { Book } from "@/lib/books";
 
-import { API_URL, booksCopy } from '@/config'
-import { getOpenGraphImage } from '@/lib/utils/openGraph'
-import ArtificialBackButton from '@/ui/ArtificialBackButton'
-import Page from '@/ui/Page'
-import { Metadata } from 'next'
-import NextLink from 'next/link'
+import { API_URL, booksCopy } from "@/config";
+import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import ArtificialBackButton from "@/ui/ArtificialBackButton";
+import Page from "@/ui/Page";
+import type { Metadata } from "next";
+import NextLink from "next/link";
 
-import { BookCover } from './components/BookCover'
-import { BookReadDateAndRating } from './components/BookReadDateAndRating'
+import { BookCover } from "./components/BookCover";
+import { BookReadDateAndRating } from "./components/BookReadDateAndRating";
 
 const fetchData = (): Promise<{ books: Book[] }> =>
-  fetch(`${API_URL}/books`).then((res) => res.json())
+  fetch(`${API_URL}/books`).then((res) => res.json());
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
     description: booksCopy.description,
     images: getOpenGraphImage({
       title: booksCopy.title,
-      type: 'page',
+      type: "page",
     }),
     title: booksCopy.title,
   },
   title: booksCopy.title,
-})
+});
 
 const BooksPage = async () => {
-  const data = await fetchData()
+  const data = await fetchData();
 
   return (
     <>
@@ -51,7 +51,7 @@ const BooksPage = async () => {
                     className="font-medium text-amber-400 hover:text-amber-200"
                     href={`/books/${book.slug}`}
                   >
-                    {book.title} by {book.authors.join(', ')}
+                    {book.title} by {book.authors.join(", ")}
                   </NextLink>
                 </div>
 
@@ -66,7 +66,7 @@ const BooksPage = async () => {
         </div>
       </Page>
     </>
-  )
-}
+  );
+};
 
-export default BooksPage
+export default BooksPage;

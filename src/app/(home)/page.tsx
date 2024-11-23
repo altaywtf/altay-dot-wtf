@@ -1,40 +1,40 @@
-import { booksCopy, homeCopy, postsCopy } from '@/config'
-import { readMarkdownFile } from '@/lib/utils/md'
-import Markdown from '@/ui/Markdown'
-import Image from 'next/image'
-import Link from 'next/link'
+import { booksCopy, homeCopy, postsCopy } from "@/config";
+import { readMarkdownFile } from "@/lib/utils/md";
+import Markdown from "@/ui/Markdown";
+import Image from "next/image";
+import Link from "next/link";
 
 type Project = {
-  description: string
-  icon_url: string
-  title: string
-  url: string
-}
+  description: string;
+  icon_url: string;
+  title: string;
+  url: string;
+};
 
-const COLLECTIONS: Array<Omit<Project, 'icon_url'>> = [
+const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
   {
     description: postsCopy.description,
     title: postsCopy.title,
-    url: '/posts',
+    url: "/posts",
   },
   {
     description: booksCopy.description,
     title: booksCopy.title,
-    url: '/books',
+    url: "/books",
   },
-]
+];
 
 const HomePage = () => (
   <>
     <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
-      <Image alt="That's my head" fill sizes="100%" src="/images/2020-aa.png" />
+      <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
     </div>
 
     <div className="mt-8 flex flex-col gap-4">
       <h1>{homeCopy.title}</h1>
 
       <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
-        <Markdown>{readMarkdownFile('home.md')}</Markdown>
+        <Markdown>{readMarkdownFile("home.md")}</Markdown>
       </div>
     </div>
 
@@ -70,6 +70,6 @@ const HomePage = () => (
       </a>
     </div>
   </>
-)
+);
 
-export default HomePage
+export default HomePage;

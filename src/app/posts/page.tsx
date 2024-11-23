@@ -1,30 +1,30 @@
-import type { Post } from '@/lib/posts'
+import type { Post } from "@/lib/posts";
 
-import { API_URL, postsCopy } from '@/config'
-import { getOpenGraphImage } from '@/lib/utils/openGraph'
-import ArtificialBackButton from '@/ui/ArtificialBackButton'
-import Page from '@/ui/Page'
-import { Metadata } from 'next'
-import Link from 'next/link'
+import { API_URL, postsCopy } from "@/config";
+import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import ArtificialBackButton from "@/ui/ArtificialBackButton";
+import Page from "@/ui/Page";
+import type { Metadata } from "next";
+import Link from "next/link";
 
-import { PostDateAndReadingTime } from './components/PostDateAndReadingTime'
+import { PostDateAndReadingTime } from "./components/PostDateAndReadingTime";
 
 const fetchData = (): Promise<{ posts: Post[] }> =>
-  fetch(`${API_URL}/posts`).then((res) => res.json())
+  fetch(`${API_URL}/posts`).then((res) => res.json());
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
     images: getOpenGraphImage({
       title: postsCopy.title,
-      type: 'page',
+      type: "page",
     }),
     title: postsCopy.title,
   },
   title: postsCopy.title,
-})
+});
 
 const PostsPage = async () => {
-  const { posts } = await fetchData()
+  const { posts } = await fetchData();
 
   return (
     <>
@@ -55,7 +55,7 @@ const PostsPage = async () => {
         </div>
       </Page>
     </>
-  )
-}
+  );
+};
 
-export default PostsPage
+export default PostsPage;

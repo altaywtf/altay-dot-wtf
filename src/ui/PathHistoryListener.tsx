@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { usePathHistoryListener } from './usePathHistory'
+import { usePathHistoryListener } from "./usePathHistory";
 
 export const PathHistoryListener = () => {
-  usePathHistoryListener()
-  return null
-}
+  usePathHistoryListener();
+  return null;
+};

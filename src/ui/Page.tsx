@@ -1,12 +1,12 @@
-import Markdown from './Markdown'
+import Markdown from "./Markdown";
 
 type Props = {
-  children: React.ReactNode
+  children: React.ReactNode;
   header: {
-    description?: string
-    title: string
-  }
-}
+    description?: string;
+    title: string;
+  };
+};
 
 const Page: React.FC<Props> = ({ children, header }) => (
   <div className="flex flex-col gap-6">
@@ -15,8 +15,8 @@ const Page: React.FC<Props> = ({ children, header }) => (
       {header.description ? <Markdown>{header.description}</Markdown> : null}
     </div>
 
-    <>{children}</>
+    {children}
   </div>
-)
+);
 
-export default Page
+export default Page;

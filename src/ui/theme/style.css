@@ -38,22 +38,19 @@
     @apply border-0;
   }
 
-  a[href="https://put.io"]
-  {
+  a[href="https://put.io"] {
     color: #fdce45;
     @apply no-underline;
     @apply hover:underline;
   }
 
-  a[href="https://klarna.com"]
-  {
+  a[href="https://klarna.com"] {
     color: rgb(255, 179, 199);
     @apply no-underline;
     @apply hover:underline;
   }
 
-  a[href="https://lisk.io"]
-  {
+  a[href="https://lisk.io"] {
     @apply text-blue-400;
     @apply no-underline;
     @apply hover:underline;

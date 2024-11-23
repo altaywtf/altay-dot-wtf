@@ -7,76 +7,76 @@ const nextConfig = {
       {
         headers: [
           {
-            key: 'X-Robots-Tag',
-            value: 'noindex',
+            key: "X-Robots-Tag",
+            value: "noindex",
           },
         ],
-        source: '/:path*',
+        source: "/:path*",
       },
-    ]
+    ];
   },
 
   reactStrictMode: true,
 
   redirects: async () => [
     {
-      destination: '/',
+      destination: "/",
       permanent: true,
-      source: '/now',
+      source: "/now",
     },
 
     {
-      destination: '/blog',
+      destination: "/blog",
       permanent: true,
-      source: '/articles',
+      source: "/articles",
     },
     {
-      destination: '/posts/:path*',
+      destination: "/posts/:path*",
       permanent: true,
-      source: '/articles/:path*',
+      source: "/articles/:path*",
     },
     {
-      destination: '/images/posts/:path*',
+      destination: "/images/posts/:path*",
       permanent: true,
-      source: '/images/articles/:path*',
+      source: "/images/articles/:path*",
     },
     {
-      destination: '/blog',
+      destination: "/blog",
       permanent: true,
-      source: '/notes',
+      source: "/notes",
     },
     {
-      destination: '/posts/:path*',
+      destination: "/posts/:path*",
       permanent: true,
-      source: '/notes/:path*',
+      source: "/notes/:path*",
     },
     {
-      destination: '/images/posts/:path*',
+      destination: "/images/posts/:path*",
       permanent: true,
-      source: '/images/notes/:path*',
+      source: "/images/notes/:path*",
     },
     {
-      destination: '/posts',
+      destination: "/posts",
       permanent: true,
-      source: '/blog',
+      source: "/blog",
     },
     {
-      destination: '/posts/:path*',
+      destination: "/posts/:path*",
       permanent: true,
-      source: '/blog/:path*',
+      source: "/blog/:path*",
     },
     {
-      destination: '/images/posts/:path*',
+      destination: "/images/posts/:path*",
       permanent: true,
-      source: '/images/blog/:path*',
+      source: "/images/blog/:path*",
     },
     {
       destination:
-        'https://altaywtf.notion.site/Tech-stuff-giveaway-139e75710b528092aae6c3b55419cd56',
+        "https://altaywtf.notion.site/Tech-stuff-giveaway-139e75710b528092aae6c3b55419cd56",
       permanent: false,
-      source: '/tech-stuff-giveaway',
+      source: "/tech-stuff-giveaway",
     },
   ],
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,6 +1,6 @@
-import type { Post } from '@/lib/posts'
+import type { Post } from "@/lib/posts";
 
-import { formatDate } from '@/lib/utils/date'
+import { formatDate } from "@/lib/utils/date";
 
 export const PostDateAndReadingTime = ({ post }: { post: Post }) => (
   <div className="flex flex-row gap-1 text-neutral-400">
@@ -8,4 +8,4 @@ export const PostDateAndReadingTime = ({ post }: { post: Post }) => (
     <span>·</span>
     {post.readingTime}
   </div>
-)
+);

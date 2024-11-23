@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import type { Backlink } from '@/lib/backlinks'
+import type { Backlink } from "@/lib/backlinks";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import { BACKLINK_SOURCE_QUERY_PARAM } from './constants'
-import { useScrollToBacklinkSource } from './useScrollToBacklinkSource'
+import { BACKLINK_SOURCE_QUERY_PARAM } from "./constants";
+import { useScrollToBacklinkSource } from "./useScrollToBacklinkSource";
 
 const Backlinks: React.FC<{
-  backlinks: Backlink[]
-  sourceType: 'book' | 'post'
-  sourceURL: string
+  backlinks: Backlink[];
+  sourceType: "book" | "post";
+  sourceURL: string;
 }> = ({ backlinks, sourceType, sourceURL }) => {
-  useScrollToBacklinkSource()
+  useScrollToBacklinkSource();
 
   if (backlinks.length === 0) {
-    return null
+    return null;
   }
 
   return (
@@ -35,7 +35,7 @@ const Backlinks: React.FC<{
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Backlinks
+export default Backlinks;

@@ -1,37 +1,36 @@
-import { API_URL } from '@/config'
+import { API_URL } from "@/config";
 
-const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`
+const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`;
 
 type OGImageParamsPost = {
-  oneliner: string
-  title: string
-  type: 'post'
-}
+  oneliner: string;
+  title: string;
+  type: "post";
+};
 
 type OGImageParamsBook = {
-  author: string
-  coverImagePath: string
-  title: string
-  type: 'book'
-}
+  author: string;
+  coverImagePath: string;
+  title: string;
+  type: "book";
+};
 
 type OGImageParamsPage = {
-  title: string
-  type: 'page'
-}
+  title: string;
+  type: "page";
+};
 
-type OGImageParams = OGImageParamsBook | OGImageParamsPage | OGImageParamsPost
+type OGImageParams = OGImageParamsBook | OGImageParamsPage | OGImageParamsPost;
 
 export const getOpenGraphImage = (params: OGImageParams) => {
-  const searchParams = Object.entries(params).reduce((acc, [key, value]) => {
-    acc.append(key, value)
-    return acc
-  }, new URLSearchParams())
+  const url = new URL(OG_IMAGE_SERVICE_BASE_URL);
 
-  const url = new URL(OG_IMAGE_SERVICE_BASE_URL) + `?${searchParams.toString()}`
+  for (const [key, value] of Object.entries(params)) {
+    url.searchParams.set(key, value);
+  }
 
   return {
-    alt: params?.title || '',
+    alt: params?.title || "",
     url,
-  }
-}
+  };
+};

@@ -1,18 +1,18 @@
-import { usePathname } from 'next/navigation'
-import { useEffect } from 'react'
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export const usePathHistoryListener = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   useEffect(() => {
-    const storage = globalThis?.sessionStorage
-    if (!pathname || !storage) return
-    storage.setItem('PATH_HISTORY', pathname)
-  }, [pathname])
-}
+    const storage = globalThis?.sessionStorage;
+    if (!pathname || !storage) return;
+    storage.setItem("PATH_HISTORY", pathname);
+  }, [pathname]);
+};
 
 export const usePathHistory = () => {
-  const storage = globalThis?.sessionStorage
-  if (!storage) return
-  return storage.getItem('PATH_HISTORY')
-}
+  const storage = globalThis?.sessionStorage;
+  if (!storage) return;
+  return storage.getItem("PATH_HISTORY");
+};

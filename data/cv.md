@@ -1,32 +1,30 @@
 ## Altay A.
 
-I'm a software engineer building apps for web, mobile, smart TVs, and streaming devices. I'm quite passionate about React ecosystem, monorepos, and developer experience.
+[altay@hey.com](mailto:altay@hey.com)
+
+I’m a software engineer passionate about the React ecosystem, monorepos, and enhancing developer experience.
 
 ---
 
-### Technical Background
+### Technical Expertise
 
-- **Industries:** Media streaming, Cloud storage, FinTech
-- **Interests:** Functional programming, Domain-driven design, State machines
-- **Libraries:** React, React Native, NextJS, Styled Components, Radix UI, Tailwind
-- **Tools:** TypeScript, Babel, ESLint, Prettier, Storybook, Jest, Webpack, yarn, pnpm, Turborepo
-- **Runtimes:** Node, web, iOS, tvOS, Android, Android TV, LG webOS, Samsung Tizen, Roku, Chromecast
-- **CI/CD:** GitHub Actions, Fastlane
-- **Platforms:** Vercel, Supabase, AWS
+- React, Next.js, Tailwind, Radix UI, Styled Components
+- Node.js, Supabase, REST APIs
+- Webpack, Storybook, Jest, ESLint, Prettier, biome
+- pnpm, yarn, Turborepo
+- GitHub Actions, GitLab CI, Vercel
 
 ---
 
 ### Work Experience
 
-#### Independent contractor \(Jan 2022 - now\)
+#### Independent contractor \(Jan 2022 - present\)
 
-After three years in Berlin, I took a sabbatical and moved to a warm seaside location. I've been providing services as a contractor for various companies since then.
+- **_Fintech company \(Sep 2024 - present\)_**\
+  Working with the frontend core team to improve developer efficiency across multiple teams.
 
-- **_Undisclosed FinTech company \(Sep 2024 - now\)_**\
-  Working at the frontend core team that is helping the developers to be more effective and efficient in their daily work.
-
-- **_put.io (Jan 2022 - now)_**\
-  Managing the frontend monorepo that produces apps for web, iOS, tvOS, androidTV, Chromecast, Roku, and various smart TV platforms.
+- **_put.io (Jan 2022 - present)_**\
+  Managing the frontend monorepo that produces apps for web, iOS, tvOS, Android TV, Chromecast, Roku, and various smart TV platforms.
 
 ---
 
@@ -34,64 +32,51 @@ After three years in Berlin, I took a sabbatical and moved to a warm seaside loc
 
 #### _Senior Engineer at Consumer Deals (Jan 2021 - Aug 2021)_
 
-- Switched to a product team focusing on Shopping Growth that I built the MVP back in 2019.
-- On-boarded new hires, led the frontend feature development and cross-team integrations.
+- Onboarded new hires and contributed to scaling an MVP I've built earlier.
+- Worked on feature development and cross-team integrations.
 
 #### _Senior Engineer at App Client Core (Jan 2020 - Jan 2021)_
 
-- Got a promotion and switched to a distributed team that is responsible for the integrity, performance, security and the release cycle of the consumer application, which was live in 14 countries with average 6M daily active users at the time.
-- Restructured the localization architecture of the app to support 10+ languages with different dialects.
-- Worked on a package based feature isolation project in the monorepo to allow product teams to develop their features in a safe and standardized way.
-- Maintained a service for managing the killswitch behavior and monitoring releases of the consumer apps.
-- Helped new joiners to on-board Klarna App ecosystem, reviewed 300+ pull-requests from 50+ teams, did code reviews and interviews for JavaScript hiring pipeline.
+- Worked on localization and feature isolation in a monorepo used by 50+ teams.
+- Reviewed 300+ pull requests, mentored new joiners, and participated in hiring interviews.
 
 #### _Engineer at Marketing Touchpoint Infrastructure (May 2019 - Jan 2020)_
 
-- Integrated native SDKs of the 3rd party analytics and marketing platforms to the consumer facing app.
-- Developed several loyalty related campaign infrastructures.
-- On-boarded new members to the ecosystem by organising workshops and tutorials.
+- Integrated third-party SDKs for analytics and marketing.
+- Developed loyalty campaign infrastructures.
 
 ---
 
 #### Lightcurve GmbH \(Nov 2018 - May 2019\)
 
-- Worked on the cross-platform Lisk Mobile app, built with React Native.
-- Implemented Bitcoin support according to BIP49 standard.
-- Developed native modules by using Swift.
+- Developed features for the cross-platform Lisk Mobile app built with React Native.
+- Implemented Bitcoin support (BIP49) and native modules for the iMessage bridge.
 
 ---
 
 #### put.io \(Jan 2017 - Oct 2018\)
 
-- Maintained and implemented new features to the existing web app.
-- Built a proof-of-concept iOS app with React Native, then iterated on the v2 with Swift which includes features such as Chromecast and downloading media for offline consumption.
-- Developed an Apple TV application with TVML and TVMLJSKit.
-- Developed web-based Smart TV applications for Samsung Tizen, LG WebOS, AndroidTV and Amazon FireTV platforms.
-- Developed a Roku application with BrightScript.
-- Built cross-browser extensions with WebExtensions API.
-- I left my full-time position to move to Berlin, but I'm still the core maintainer of the frontend repo since then.
+- Built and maintained apps for web, mobile, and TV platforms.
+- Continued as the core maintainer of the frontend after transitioning to contracting.
 
 ---
 
 #### Vispera \(Sep 2016 - Mar 2017\)
 
-- Re-designed and structured the frontend layer of the core Rails application.
-- Built single-page apps for complex data entry and management purposes with React.
+- Re-architected the frontend layer of the core Rails application.
+- Built single-page apps for complex data entry and management tasks.
 
 ---
 
 #### Peergust \(Mar 2016 - August 2016\)
 
-- Built demo apps and content management panel for testing and marketing
-  purposes of the P2P content delivery network by using React.
-- Built and maintained an open source server-side rendering boilerplate, [Vortigern](https://github.com/barbar/vortigern).
+- Built demo apps and dashboards for the P2P content delivery network.
+- Developed [Vortigern](https://github.com/barbar/vortigern), an open-source server-side rendering boilerplate for React.
 
 ---
 
 ### Education
 
 #### BSc. Mechanical Engineering, Istanbul Bilgi University (2012 - 2016)
-
-- Graduated in the 2nd place of the department with 2.90 GPA.
-- Took classes from Computer Science and Visual Communication Design departments.
-- Built an unofficial shuttle tracking app for [web](https://github.com/altaywtf/bilgi-shuttle-web), [iOS](https://github.com/altaywtf/bilgi-shuttle-ios), and [Android](https://github.com/altaywtf/bilgi-shuttle-android).
+- Graduated second in the department with additional coursework in Computer Science and Visual Communication Design.
+- Built a shuttle tracking app for the university.

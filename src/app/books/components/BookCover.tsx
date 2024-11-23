@@ -1,11 +1,11 @@
-import type { Book } from '@/lib/books'
+import type { Book } from "@/lib/books";
 
-import Image from 'next/legacy/image'
+import Image from "next/legacy/image";
 
 type Props = {
-  book: Book
-  width?: number
-}
+  book: Book;
+  width?: number;
+};
 
 export const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
   <div className="overflow-hidden rounded">
@@ -19,4 +19,4 @@ export const BookCover: React.FC<Props> = ({ book, width = 144 }) => (
       width={width}
     />
   </div>
-)
+);

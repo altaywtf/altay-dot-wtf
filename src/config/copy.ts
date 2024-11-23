@@ -1,13 +1,13 @@
 export const homeCopy = {
   title: "Hi, I'm Altay",
-} as const
+} as const;
 
 export const postsCopy = {
-  description: 'Thoughts on stuff that bugs me.',
-  title: `Writing`,
-} as const
+  description: "Thoughts on stuff that bugs me.",
+  title: "Writing",
+} as const;
 
 export const booksCopy = {
-  description: 'Notes from the books that I read.',
-  title: 'Book notes',
-} as const
+  description: "Notes from the books that I read.",
+  title: "Book notes",
+} as const;

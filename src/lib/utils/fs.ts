@@ -1,3 +1,3 @@
-import { join } from 'path'
+import { join } from "node:path";
 
-export const DATA_FOLDER_PATH = join(process.cwd(), 'data')
+export const DATA_FOLDER_PATH = join(process.cwd(), "data");
