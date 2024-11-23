@@ -19,7 +19,10 @@ const saveBookCoverImage = (slug: string, buffer: Buffer): string => {
   }
 
   const bookImagePath = `/images/books/${slug}/cover.png`;
-  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/${bookImagePath}`, buffer);
+  fs.writeFileSync(
+    `${PUBLIC_FOLDER_PATH}/${bookImagePath}`,
+    new Uint8Array(buffer),
+  );
 
   return bookImagePath;
 };
