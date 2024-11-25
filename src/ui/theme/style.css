@@ -3,19 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    @apply antialiased;
-    --app-width: 720px;
-  }
-
   html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
-  body {
-    @apply text-neutral-200;
-    @apply min-h-screen;
-    @apply bg-neutral-950;
   }
 
   h1,
@@ -69,12 +58,6 @@
 }
 
 @layer utilities {
-  .app-width {
-    @apply mx-auto;
-    @apply max-w-full;
-    @apply w-[var(--app-width)];
-  }
-
   .p-safe {
     padding: env(safe-area-inset-top) env(safe-area-inset-right)
       env(safe-area-inset-bottom) env(safe-area-inset-left);

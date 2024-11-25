@@ -1,6 +1,6 @@
-I’m a software engineer passionate about the React ecosystem, monorepos, and enhancing developer experience.
+I'm a software engineer passionate about frontend infrastructure, monorepos, and developer tooling.
 
-Currently, I work remotely as a contractor, mostly on projects that center on these areas.
+I'm currently working remotely as a contractor, mostly on projects that center on these areas.
 
 Before that, I spent three years in Berlin, where I worked on [Klarna](https://klarna.com)'s consumer app and contributed to [Lisk](https://lisk.com)'s open-source mobile cryptocurrency wallet.
 
