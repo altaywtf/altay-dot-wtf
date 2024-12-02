@@ -38,7 +38,7 @@ const PostsPage = async () => {
             <div className="flex flex-col gap-1" key={post.slug}>
               <div>
                 <Link
-                  className="font-medium text-amber-400 hover:text-amber-200"
+                  className="font-medium text-cyan-400 hover:text-cyan-200"
                   href={`/blog/${post.slug}`}
                 >
                   {post.title}

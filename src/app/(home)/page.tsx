@@ -46,7 +46,7 @@ const HomePage = () => (
           <div className="flex flex-row items-center gap-3">
             <div className="flex flex-1 flex-col">
               <Link
-                className="self-start font-medium text-amber-400 hover:text-amber-200"
+                className="self-start font-medium text-cyan-400 hover:text-cyan-200"
                 href={item.url}
               >
                 {item.title}

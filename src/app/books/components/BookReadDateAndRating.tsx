@@ -11,12 +11,12 @@ const StarRating = (props: { max: number; rating: number }) => (
     {Array.from({ length: props.max }).map((_, i) => (
       <Star
         className={`inline-block ${
-          i < props.rating ? "fill-amber-400" : "fill-neutral-700"
+          i < props.rating ? "fill-cyan-400" : "fill-neutral-700"
         }`}
         // biome-ignore lint/suspicious/noArrayIndexKey: <no better way :D>
         key={i}
-        size={16}
         strokeWidth={0}
+        fontSize={14}
       />
     ))}
   </div>
