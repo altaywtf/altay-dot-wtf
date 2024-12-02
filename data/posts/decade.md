@@ -1,7 +1,7 @@
 ---
 title: 'Great software is composed; not written'
 oneliner: A collection of thoughts from the past decade.
-date: '2024-12-02T09:21:52Z'
+date: '2024-12-03T00:00:00Z'
 ---
 
 A collection of principles to weave into a cohesive post, drawing from the [wisdom of wizards](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html), modern practices, and my first decade as a software engineer.
