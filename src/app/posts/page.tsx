@@ -10,7 +10,7 @@ import Link from "next/link";
 import { PostDateAndReadingTime } from "./components/PostDateAndReadingTime";
 
 const fetchData = (): Promise<{ posts: Post[] }> =>
-  fetch(`${API_URL}/posts`, { cache: "no-store" }).then((res) => res.json());
+  fetch(`${API_URL}/posts`).then((res) => res.json());
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
