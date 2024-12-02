@@ -48,7 +48,7 @@ const BooksPage = async () => {
               <div>
                 <div>
                   <NextLink
-                    className="font-medium text-cyan-400 hover:text-cyan-200"
+                    className="font-medium text-amber-400 hover:text-amber-200"
                     href={`/books/${book.slug}`}
                   >
                     {book.title} by {book.authors.join(", ")}

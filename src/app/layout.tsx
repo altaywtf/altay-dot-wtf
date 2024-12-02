@@ -41,7 +41,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => (
 
     <body className="antialiased min-h-screen bg-neutral-950 text-neutral-200">
       <main className="p-safe">
-        <section className="max-w-xl mx-auto px-4 py-8 sm:px-0">
+        <section className="max-w-xl mx-auto px-4 py-8 sm:px-0 mb-8">
           {children}
         </section>
       </main>
