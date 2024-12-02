@@ -8,12 +8,12 @@ A collection of principles to weave into a cohesive post, drawing from the [wisd
 
 ### Composition is the foundation
 - Systems built from composable parts are easier to understand, test, and maintain; also use.
-- Each piece should have a single purpose but work seamlessly with others.
+- Each piece should have a clear purpose and work seamlessly with others.
 - Composition applies to all layers: types, components, hooks, middleware, schemas, APIs.
 
 ### Abstraction is the way
 - Abstraction reduces complexity and enhances maintainability.
-- Clear boundaries between layers or components allow systems to scale without chaos.
+- Clear boundaries between layers allow systems to scale without chaos.
 - Documentation is your best friend for planning, understanding, and using abstractions.
 
 ### Types are the ultimate contract
@@ -28,27 +28,27 @@ A collection of principles to weave into a cohesive post, drawing from the [wisd
 
 ### Simplicity is strength
 - Simplicity makes code readable, maintainable, and robust.
-- Prioritize clarity over cleverness—solutions should feel intuitive and elegant.
+- Prioritize clarity over cleverness; solutions should feel intuitive and elegant.
 - Accidental complexity hides bugs and slows everyone down.
-
+  
 ### Pragmatism over perfection
 - ["Great software today is often preferable to the perfect software tomorrow."](../books/the-pragmatic-programmer.md#5-good-enough-software)
 - Build for today, design for tomorrow.
 - Learn to recognize when to optimize and when to ship.
 
 ### Iteration and validation
-- Nothing is perfect on the first pass - iteration is a given.
+- Nothing is great on the first pass - iteration is a given.
 - Testing is non-negotiable - it validates assumptions and builds confidence.
 - Use what you gonna build, build what you gonna use.
 
 ### Developer experience as a priority
 - Best systems are a joy to work with.
-- Codebase, tooling, documentation, cause should empower, not hinder.
-- Be a boy scout, leave the places you touch better than you found.
+- Codebase, tooling, documentation, and your cause should empower, not hinder.
+- Be a boy scout, leave the place you touch better than you found.
 
 ### People are your best asset (including yourself)
 - Collectives are _usually_ stronger than individuals.
-- They are your tribe, take care of them - grow together.
+- Find your tribe, take care of them - grow together.
 - Praise in public, criticize in private.
 - And please; **be nice first, be right later.**
 
