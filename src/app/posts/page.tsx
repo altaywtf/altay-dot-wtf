@@ -2,7 +2,7 @@ import { ArtificialBackButton } from "@/components/artificial-back-button";
 import { Page } from "@/components/page";
 import { postsCopy } from "@/config";
 import { getPosts } from "@/lib/posts";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PostDateAndReadingTime } from "../../components/post-date-and-reading-time";

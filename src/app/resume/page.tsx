@@ -1,6 +1,6 @@
 import { Markdown } from "@/components/md";
 import { readMarkdownFile } from "@/lib/utils/md";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 
 export const generateMetadata = async (): Promise<Metadata> => ({

@@ -1,4 +1,4 @@
-import { OpenGraphImage } from "@/lib/og/OpenGraphImage";
+import { OpenGraphImage } from "@/lib/og/open-graph-image";
 import type { Book, Page, ParsedQuery, Post } from "@/lib/og/types";
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";

@@ -3,7 +3,7 @@ import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
 import { postsCopy } from "@/config";
 import { getPost } from "@/lib/posts";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 import { PostDateAndReadingTime } from "../../../components/post-date-and-reading-time";
 

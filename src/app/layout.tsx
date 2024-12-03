@@ -3,7 +3,7 @@ import { gtAmerica, gtAmericaMono } from "@/app/fonts";
 import { AnalyticsWrapper } from "@/components/analytics-wrapper";
 import { PathHistoryListener } from "@/components/path-history-listener";
 import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 

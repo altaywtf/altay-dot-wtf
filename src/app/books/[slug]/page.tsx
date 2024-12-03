@@ -3,7 +3,7 @@ import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
 import { booksCopy } from "@/config";
 import { getBook } from "@/lib/books";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 
 import { BookCover } from "../../../components/book-cover";

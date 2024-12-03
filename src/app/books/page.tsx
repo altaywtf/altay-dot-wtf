@@ -2,7 +2,7 @@ import { ArtificialBackButton } from "@/components/artificial-back-button";
 import { Page } from "@/components/page";
 import { booksCopy } from "@/config";
 import { getBooks } from "@/lib/books";
-import { getOpenGraphImage } from "@/lib/utils/openGraph";
+import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 import NextLink from "next/link";
 import { BookCover } from "../../components/book-cover";
