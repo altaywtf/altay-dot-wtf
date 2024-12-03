@@ -20,11 +20,11 @@ const Backlinks: React.FC<{
 
   return (
     <div className="flex flex-col gap-2 rounded bg-neutral-900 p-4">
-      <h4>Links to this {sourceType}</h4>
+      <h4 className="text-sm font-semibold">Links to this {sourceType}</h4>
 
-      <ul className="list-outside list-disc pl-4">
+      <ul className="list-outside list-disc pl-4 space-y-1">
         {backlinks.map((backlink) => (
-          <li key={backlink.url}>
+          <li key={backlink.url} className="text-sm">
             <Link
               className="hover:underline"
               href={`${backlink.url}?${BACKLINK_SOURCE_QUERY_PARAM}=${sourceURL}`}

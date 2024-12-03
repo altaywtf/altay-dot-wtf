@@ -52,12 +52,6 @@ A collection of principles to weave into a cohesive post, drawing from the [wisd
 - Praise in public, criticize in private.
 - And please; **be nice first, be right later.**
 
-&nbsp;
-
-Well, that's it.
-
 I'm grateful for the opportunity to work with amazing people and build stuff that helped amazing people.
 
 Looking forward to many more years of learning, building, and shipping.
-
-Thanks for reading.

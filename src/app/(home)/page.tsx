@@ -25,22 +25,19 @@ const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
 ];
 
 const HomePage = () => (
-  <>
+  <div className="flex flex-col gap-8">
     <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
       <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
     </div>
 
-    <div className="mt-8 flex flex-col gap-4">
-      <h1>{homeCopy.title}</h1>
-
-      <div className="-mb-2 prose-p:mb-3 prose-p:mt-0">
-        <Markdown>{readMarkdownFile("home.md")}</Markdown>
-      </div>
+    <div className="flex flex-col gap-4 -mt-2">
+      <h1 className="text-xl font-semibold">{homeCopy.title}</h1>
+      <Markdown>{readMarkdownFile("home.md")}</Markdown>
     </div>
 
-    <hr className="my-8" />
+    <hr />
 
-    <div className="mt-4 flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
       {COLLECTIONS.map((item) => (
         <div key={item.title}>
           <div className="flex flex-row items-center gap-3">
@@ -59,7 +56,7 @@ const HomePage = () => (
       ))}
     </div>
 
-    <hr className="my-8" />
+    <hr />
 
     <div className="text-sm text-neutral-400">
       <a
@@ -69,7 +66,7 @@ const HomePage = () => (
         altay@hey.com
       </a>
     </div>
-  </>
+  </div>
 );
 
 export default HomePage;

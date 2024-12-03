@@ -71,7 +71,7 @@ const BookPage = async ({ params }: Props) => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h1>
+          <h1 className="text-xl font-semibold">
             {book.title} by {book.authors.join(", ")}
           </h1>
 

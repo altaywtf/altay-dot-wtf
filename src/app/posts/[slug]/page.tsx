@@ -57,7 +57,7 @@ const Page = async ({ params }: Props) => {
       <ArtificialBackButton href="/posts" label={postsCopy.title} />
 
       <div className="flex flex-col gap-2">
-        <h1>{post.title}</h1>
+        <h1 className="text-2xl font-semibold">{post.title}</h1>
         <PostDateAndReadingTime post={post} />
       </div>
 
