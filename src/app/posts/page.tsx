@@ -1,4 +1,4 @@
-import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { BackButton } from "@/components/back-button";
 import { Page } from "@/components/page";
 import { postsCopy } from "@/config";
 import { getPosts } from "@/lib/posts";
@@ -24,7 +24,7 @@ export default async function PostsPage() {
   return (
     <>
       <div className="mb-6">
-        <ArtificialBackButton href="/" label="altay.wtf" />
+        <BackButton href="/" label="altay.wtf" />
       </div>
 
       <Page header={postsCopy}>
@@ -34,7 +34,7 @@ export default async function PostsPage() {
               <div>
                 <Link
                   className="font-medium text-amber-400 hover:text-amber-200"
-                  href={`/blog/${post.slug}`}
+                  href={post.path}
                 >
                   {post.title}
                 </Link>

@@ -5,7 +5,7 @@ import { MoveLeft } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export const ArtificialBackButton: React.FC<{
+export const BackButton: React.FC<{
   href: string;
   label: string;
 }> = ({ href, label }) => {

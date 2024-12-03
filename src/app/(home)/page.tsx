@@ -27,7 +27,7 @@ const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
 export default async function HomePage() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
+      <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-800">
         <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
       </div>
 
@@ -36,7 +36,7 @@ export default async function HomePage() {
         <Markdown>{readMarkdownFile("home.md")}</Markdown>
       </div>
 
-      <hr />
+      <hr className="bg-neutral-900 h-px border-0" />
 
       <div className="flex flex-col gap-6">
         {COLLECTIONS.map((item) => (
@@ -57,7 +57,7 @@ export default async function HomePage() {
         ))}
       </div>
 
-      <hr />
+      <hr className="bg-neutral-900 h-px border-0" />
 
       <div className="text-sm text-neutral-400">
         <a

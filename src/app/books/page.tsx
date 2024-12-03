@@ -1,12 +1,11 @@
-import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { BackButton } from "@/components/back-button";
 import { Page } from "@/components/page";
 import { booksCopy } from "@/config";
 import { getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
-import NextLink from "next/link";
-import { BookCover } from "../../components/book-cover";
-import { BookReadDateAndRating } from "../../components/book-read-date-and-rating";
+import Link from "next/link";
+import { Book } from "../../components/book";
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
@@ -26,35 +25,26 @@ export default async function BooksPage() {
   return (
     <>
       <div className="mb-6">
-        <ArtificialBackButton href="/" label="altay.wtf" />
+        <BackButton href="/" label="altay.wtf" />
       </div>
 
       <Page header={booksCopy}>
         <div className="flex flex-col gap-10">
           {books.map((book) => (
             <div className="flex flex-row gap-4" key={book.slug}>
-              <NextLink
-                className="min-w-[96px] sm:min-w-[120px]"
-                href={book.path}
-              >
-                <BookCover book={book} />
-              </NextLink>
-
+              <Link className="min-w-[96px] sm:min-w-[120px]" href={book.path}>
+                <Book.Cover book={book} />
+              </Link>
               <div>
-                <div>
-                  <NextLink
-                    className="font-medium text-amber-400 hover:text-amber-200"
-                    href={book.path}
-                  >
-                    {book.title} by {book.authors.join(", ")}
-                  </NextLink>
-                </div>
-
-                <BookReadDateAndRating book={book} />
-
-                <p className="italic text-neutral-400">
-                  &quot;{book.quote}&quot;
-                </p>
+                <Link
+                  className="font-medium text-amber-400 hover:text-amber-200"
+                  href={book.path}
+                >
+                  <Book.Title authors={book.authors} title={book.title} />
+                </Link>
+                <Book.DateRead>{book.dateRead}</Book.DateRead>
+                <Book.Rating rating={book.rating} />
+                <Book.Quote>{book.quote}</Book.Quote>
               </div>
             </div>
           ))}

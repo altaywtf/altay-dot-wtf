@@ -1,5 +1,4 @@
 import qs from "query-string";
-
 import type { QueryBook } from "./fetchBooks";
 import type { BaseBook } from "./types";
 

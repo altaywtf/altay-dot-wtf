@@ -1,13 +1,11 @@
+import "dotenv/config";
 import inquirer from "inquirer";
 import slugify from "slugify";
-
-import type { BaseBook, BaseBookWithMeta, Book } from "./lib/types";
-
-import "../env";
 import { addBookToBooksJSON } from "./lib/booksJSON";
 import { fetchBooksByQuery } from "./lib/fetchBooks";
 import { createBookCoverImage } from "./lib/image";
 import { createBookNotes } from "./lib/notes";
+import type { BaseBook, BaseBookWithMeta, Book } from "./lib/types";
 
 const runAskBookQueryStep = async (): Promise<string> => {
   const { query } = await inquirer.prompt<{ query: string }>([

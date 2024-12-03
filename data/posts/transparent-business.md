@@ -19,9 +19,3 @@ Being financially open is another way:
 Doing both is awesome:
 
 - [plausible](https://plausible.io/about)
-
-### How I would imagine my utopia
-
-You will know how much money we need to survive and how much more we need to divide more time to improve. You can make one-time or recurring donations. We appreciate every dime, so everyone will know you are one of the Patreons who make this possible.
-
-Source code, design discussions, roadmap... Everything we do is open to members (or even public). We appreciate every effort. If you're willing to contribute, we will make sure to compensate. You will also get a shiny contributor badge and SWAG.

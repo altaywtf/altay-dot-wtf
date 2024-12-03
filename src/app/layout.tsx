@@ -1,9 +1,10 @@
 import "./style.css";
 import { gtAmerica, gtAmericaMono } from "@/app/fonts";
-import { AnalyticsWrapper } from "@/components/analytics-wrapper";
 import { PathHistoryListener } from "@/components/path-history-listener";
 import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 
@@ -46,7 +47,8 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => (
         </section>
       </main>
 
-      <AnalyticsWrapper />
+      <Analytics />
+      <SpeedInsights />
       <PathHistoryListener />
     </body>
   </html>

@@ -1,13 +1,11 @@
-import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { BackButton } from "@/components/back-button";
 import { Backlinks } from "@/components/backlinks";
+import { Book } from "@/components/book";
 import { Markdown } from "@/components/md";
 import { booksCopy } from "@/config";
 import { getBook } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
-
-import { BookCover } from "../../../components/book-cover";
-import { BookReadDateAndRating } from "../../../components/book-read-date-and-rating";
 
 type Props = {
   params: { slug: string };
@@ -40,21 +38,20 @@ const BookPage = async ({ params }: Props) => {
 
   return (
     <div className="flex flex-col gap-6">
-      <ArtificialBackButton href="/books" label={booksCopy.title} />
+      <BackButton href="/books" label={booksCopy.title} />
 
       <div className="flex flex-row gap-4" key={book.slug}>
         <div className="min-w-[96px] sm:min-w-[128px] md:min-w-[160px]">
-          <BookCover book={book} />
+          <Book.Cover book={book} />
         </div>
 
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-semibold">
-            {book.title} by {book.authors.join(", ")}
+            <Book.Title authors={book.authors} title={book.title} />
           </h1>
-
-          <BookReadDateAndRating book={book} />
-
-          <p className="italic text-neutral-400">&quot;{book.quote}&quot;</p>
+          <Book.DateRead>{book.dateRead}</Book.DateRead>
+          <Book.Rating rating={book.rating} />
+          <Book.Quote>{book.quote}</Book.Quote>
         </div>
       </div>
 

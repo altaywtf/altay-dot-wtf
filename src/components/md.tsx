@@ -8,7 +8,7 @@ import { MDCodeBlock } from "./md-code-block";
 import { MDLink } from "./md-link";
 
 export const Markdown: React.FC<{ children: string }> = ({ children }) => (
-  <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-pre:m-0 prose-pre:p-0 prose-img:m-auto prose-img:rounded">
+  <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-pre:m-0 prose-pre:p-0 prose-img:m-auto prose-img:rounded prose-hr:my-8 prose-hr:bg-neutral-800 prose-hr:h-px prose-hr:border-0">
     <ReactMarkdown
       components={{
         a: (props) => <MDLink href={props.href || ""}>{props.children}</MDLink>,

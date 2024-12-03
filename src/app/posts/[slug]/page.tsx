@@ -1,4 +1,4 @@
-import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { BackButton } from "@/components/back-button";
 import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
 import { postsCopy } from "@/config";
@@ -39,7 +39,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <div className="flex flex-col gap-6">
-      <ArtificialBackButton href="/posts" label={postsCopy.title} />
+      <BackButton href="/posts" label={postsCopy.title} />
 
       <div className="flex flex-col gap-2">
         <h1 className="text-2xl font-semibold">{post.title}</h1>

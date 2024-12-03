@@ -7,12 +7,6 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  hr {
-    @apply bg-neutral-900;
-    @apply h-px;
-    @apply border-0;
-  }
-
   a[href="https://put.io"] {
     color: #fdce45;
     @apply no-underline;

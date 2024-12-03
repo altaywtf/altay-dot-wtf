@@ -1,7 +1,7 @@
 import { APP_URL } from "@/config/constants";
 import colors from "tailwindcss/colors";
 
-import type { Book, Page, ParsedQuery, Post } from "./types";
+import type { Book, Page, ParsedQuery, Post } from "../lib/og/types";
 
 const H1 = (props: React.ComponentProps<"h1">) => (
   <h1

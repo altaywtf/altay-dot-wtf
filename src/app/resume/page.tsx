@@ -15,7 +15,7 @@ export const generateMetadata = async (): Promise<Metadata> => ({
 
 export default function ResumePage() {
   return (
-    <section className="px-4 py-8 print:invert sm:px-0 prose-hr:my-8 prose-hr:opacity-50">
+    <section className="px-4 py-8 print:invert sm:px-0">
       <Markdown>{readMarkdownFile("resume.md")}</Markdown>
     </section>
   );
