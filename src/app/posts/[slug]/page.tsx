@@ -1,35 +1,20 @@
-import { API_URL, postsCopy } from "@/config";
+import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { Backlinks } from "@/components/backlinks";
+import { Markdown } from "@/components/md";
+import { postsCopy } from "@/config";
+import { getPost } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/openGraph";
-import ArtificialBackButton from "@/ui/ArtificialBackButton";
-import Backlinks from "@/ui/Backlinks";
-import Markdown from "@/ui/Markdown";
 import type { Metadata } from "next";
-
-import { PostDateAndReadingTime } from "../components/PostDateAndReadingTime";
+import { PostDateAndReadingTime } from "../../../components/post-date-and-reading-time";
 
 type Props = {
   params: { slug: string };
 };
 
-const fetchData = async (slug: string) => {
-  const { markdown, post } = await fetch(`${API_URL}/posts/${slug}`).then(
-    (res) => res.json(),
-  );
-  const { backlinks } = await fetch(
-    `${API_URL}/backlinks?type=posts&slug=${slug}`,
-  ).then((res) => res.json());
-
-  return {
-    backlinks,
-    markdown,
-    post,
-  };
-};
-
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
-  const { post } = await fetchData(params.slug);
+  const { post } = getPost(params.slug);
 
   return {
     description: post.oneliner,
@@ -49,8 +34,8 @@ export const generateMetadata = async ({
   };
 };
 
-const Page = async ({ params }: Props) => {
-  const { backlinks, markdown, post } = await fetchData(params.slug);
+export default async function Page({ params }: Props) {
+  const { post, markdown } = getPost(params.slug);
 
   return (
     <div className="flex flex-col gap-6">
@@ -63,9 +48,7 @@ const Page = async ({ params }: Props) => {
 
       <Markdown>{markdown}</Markdown>
 
-      <Backlinks backlinks={backlinks} sourceType="post" sourceURL={post.url} />
+      <Backlinks path={post.path} />
     </div>
   );
-};
-
-export default Page;
+}

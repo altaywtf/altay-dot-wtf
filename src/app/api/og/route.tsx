@@ -1,16 +1,16 @@
-import type { Book, Page, ParsedQuery, Post } from "@/lib/og/types";
-import type { NextRequest } from "next/server";
-
 import { OpenGraphImage } from "@/lib/og/OpenGraphImage";
+import type { Book, Page, ParsedQuery, Post } from "@/lib/og/types";
 import { ImageResponse } from "next/og";
+import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
 const loadFont = async () => {
   const url = new URL(
-    "../../../ui/theme/fonts/GT-America-Standard-Bold.ttf",
+    "../../fonts/GT-America-Standard-Bold.ttf",
     import.meta.url,
   );
+
   return (await fetch(url)).arrayBuffer();
 };
 

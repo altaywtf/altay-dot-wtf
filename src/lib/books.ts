@@ -1,9 +1,11 @@
 import { readMarkdownFile } from "@/lib/utils/md";
 import { readBooksJSON } from "@/scripts/books/lib/booksJSON";
 
-export type { Book } from "@/scripts/books/lib/types";
-
-export const getBooks = () => readBooksJSON().books;
+export const getBooks = () =>
+  readBooksJSON().books.map((book) => ({
+    ...book,
+    path: `/books/${book.slug}`,
+  }));
 
 export const getBook = (slug: string) => {
   const book = readBooksJSON().books.find((book) => book.slug === slug);
@@ -13,10 +15,15 @@ export const getBook = (slug: string) => {
   }
 
   return {
-    book,
+    book: {
+      ...book,
+      path: `/books/${book.slug}`,
+    },
     markdown: readMarkdownFile(`${book.notes.url}.md`),
   };
 };
 
 export const getBooksWithMarkdown = () =>
   getBooks().map((book) => getBook(book.slug));
+
+export type Book = ReturnType<typeof getBook>["book"];

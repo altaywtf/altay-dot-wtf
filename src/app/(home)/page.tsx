@@ -1,6 +1,6 @@
+import { Markdown } from "@/components/md";
 import { booksCopy, homeCopy, postsCopy } from "@/config";
 import { readMarkdownFile } from "@/lib/utils/md";
-import Markdown from "@/ui/Markdown";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,49 +24,49 @@ const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
   },
 ];
 
-const HomePage = () => (
-  <div className="flex flex-col gap-8">
-    <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
-      <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
-    </div>
+export default async function HomePage() {
+  return (
+    <div className="flex flex-col gap-8">
+      <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-900">
+        <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
+      </div>
 
-    <div className="flex flex-col gap-4 -mt-2">
-      <h1 className="text-xl font-semibold">{homeCopy.title}</h1>
-      <Markdown>{readMarkdownFile("home.md")}</Markdown>
-    </div>
+      <div className="flex flex-col gap-4 -mt-2">
+        <h1 className="text-xl font-semibold">{homeCopy.title}</h1>
+        <Markdown>{readMarkdownFile("home.md")}</Markdown>
+      </div>
 
-    <hr />
+      <hr />
 
-    <div className="flex flex-col gap-6">
-      {COLLECTIONS.map((item) => (
-        <div key={item.title}>
-          <div className="flex flex-row items-center gap-3">
-            <div className="flex flex-1 flex-col">
-              <Link
-                className="self-start font-medium text-amber-400 hover:text-amber-200"
-                href={item.url}
-              >
-                {item.title}
-              </Link>
+      <div className="flex flex-col gap-6">
+        {COLLECTIONS.map((item) => (
+          <div key={item.title}>
+            <div className="flex flex-row items-center gap-3">
+              <div className="flex flex-1 flex-col">
+                <Link
+                  className="self-start font-medium text-amber-400 hover:text-amber-200"
+                  href={item.url}
+                >
+                  {item.title}
+                </Link>
 
-              <p>{item.description}</p>
+                <p>{item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
+      <hr />
+
+      <div className="text-sm text-neutral-400">
+        <a
+          className="hover:text-neutral-300 hover:underline"
+          href="mailto:altay@hey.com"
+        >
+          altay@hey.com
+        </a>
+      </div>
     </div>
-
-    <hr />
-
-    <div className="text-sm text-neutral-400">
-      <a
-        className="hover:text-neutral-300 hover:underline"
-        href="mailto:altay@hey.com"
-      >
-        altay@hey.com
-      </a>
-    </div>
-  </div>
-);
-
-export default HomePage;
+  );
+}

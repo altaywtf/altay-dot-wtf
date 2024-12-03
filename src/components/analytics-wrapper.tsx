@@ -2,7 +2,7 @@
 
 import { Analytics } from "@vercel/analytics/react";
 
-const AnalyticsWrapper: React.FC = () => (
+export const AnalyticsWrapper: React.FC = () => (
   <Analytics
     beforeSend={(event) => {
       if (localStorage.getItem("va-disable")) {
@@ -13,5 +13,3 @@ const AnalyticsWrapper: React.FC = () => (
     }}
   />
 );
-
-export default AnalyticsWrapper;

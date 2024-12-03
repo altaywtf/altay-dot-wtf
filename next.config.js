@@ -26,6 +26,12 @@ const nextConfig = {
     },
 
     {
+      destination: "/resume",
+      permanent: true,
+      source: "/cv",
+    },
+
+    {
       destination: "/blog",
       permanent: true,
       source: "/articles",

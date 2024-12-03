@@ -13,7 +13,7 @@ type PostFrontMatter = {
 export type Post = PostFrontMatter & {
   readingTime: string;
   slug: string;
-  url: string;
+  path: string;
 };
 
 export const getPost = (slug: string) => {
@@ -29,8 +29,8 @@ export const getPost = (slug: string) => {
         ? "1 min read"
         : `${Math.floor(readingTimeInMins)} mins read`,
     slug,
-    url: `/posts/${slug}`,
-  } as Post;
+    path: `/posts/${slug}`,
+  } satisfies Post;
 
   return { markdown, post };
 };

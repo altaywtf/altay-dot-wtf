@@ -3,14 +3,14 @@
 exports[`getBacklinks works 1`] = `
 [
   {
+    "path": "/posts/yes",
     "title": "yes",
     "type": "post",
-    "url": "/posts/yes",
   },
   {
+    "path": "/books/offline-matters",
     "title": "Offline Matters by Jess Henderson",
     "type": "book",
-    "url": "/books/offline-matters",
   },
 ]
 `;

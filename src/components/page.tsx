@@ -1,4 +1,4 @@
-import Markdown from "./Markdown";
+import { Markdown } from "./md";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-const Page: React.FC<Props> = ({ children, header }) => (
+export const Page: React.FC<Props> = ({ children, header }) => (
   <div className="flex flex-col gap-6">
     <div className="flex flex-col gap-2">
       <h1 className="text-2xl font-semibold">{header.title}</h1>
@@ -18,5 +18,3 @@ const Page: React.FC<Props> = ({ children, header }) => (
     {children}
   </div>
 );
-
-export default Page;

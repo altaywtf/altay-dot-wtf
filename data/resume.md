@@ -2,17 +2,18 @@
 
 [altay@hey.com](mailto:altay@hey.com)
 
-I’m a software engineer passionate about the React ecosystem, monorepos, and enhancing developer experience.
+I'm a software engineer passionate about frontend infrastructure, monorepos, and developer experience.
+
+Please check [this post](https://altay.wtf/posts/decade) to read more about how I approach software in general.
 
 ---
 
-### Technical Expertise
-
-- React, Next.js, Tailwind, Radix UI, Styled Components
-- Node.js, Supabase, REST APIs
-- Webpack, Storybook, Jest, ESLint, Prettier, biome
+### Tech stack
+- React (Next.js, React Native, Expo)
+- TypeScript (tooling, APIs)
+- Tailwind, Radix UI
 - pnpm, yarn, Turborepo
-- GitHub Actions, GitLab CI, Vercel
+- GitHub Actions, Vercel, AWS
 
 ---
 

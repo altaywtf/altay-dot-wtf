@@ -24,7 +24,7 @@ describe("getBacklinks", () => {
           readingTime: "1 min read",
           slug: "yes",
           title: "yes",
-          url: "/posts/yes",
+          path: "/posts/yes",
         },
       },
       {
@@ -35,7 +35,7 @@ describe("getBacklinks", () => {
           readingTime: "1 min read",
           slug: "no",
           title: "no",
-          url: "/posts/no",
+          path: "/posts/no",
         },
       },
     ]);
@@ -75,6 +75,7 @@ describe("getBacklinks", () => {
           },
           slug: "offline-matters",
           title: "Offline Matters",
+          path: "/books/offline-matters",
         },
         markdown: "hello and [hi](/posts/hi)",
       },

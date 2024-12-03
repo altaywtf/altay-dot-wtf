@@ -1,9 +1,9 @@
+import "./style.css";
+import { gtAmerica, gtAmericaMono } from "@/app/fonts";
+import { AnalyticsWrapper } from "@/components/analytics-wrapper";
+import { PathHistoryListener } from "@/components/path-history-listener";
 import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config";
 import { getOpenGraphImage } from "@/lib/utils/openGraph";
-import AnalyticsWrapper from "@/ui/AnalyticsWrapper";
-import { PathHistoryListener } from "@/ui/PathHistoryListener";
-import { gtAmerica, gtAmericaMono } from "@/ui/theme/fonts";
-import "@/ui/theme/style.css";
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 

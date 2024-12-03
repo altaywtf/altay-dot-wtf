@@ -1,17 +1,12 @@
-import type { Book } from "@/lib/books";
-
-import { API_URL, booksCopy } from "@/config";
+import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { Page } from "@/components/page";
+import { booksCopy } from "@/config";
+import { getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/openGraph";
-import ArtificialBackButton from "@/ui/ArtificialBackButton";
-import Page from "@/ui/Page";
 import type { Metadata } from "next";
 import NextLink from "next/link";
-
-import { BookCover } from "./components/BookCover";
-import { BookReadDateAndRating } from "./components/BookReadDateAndRating";
-
-const fetchData = (): Promise<{ books: Book[] }> =>
-  fetch(`${API_URL}/books`).then((res) => res.json());
+import { BookCover } from "../../components/book-cover";
+import { BookReadDateAndRating } from "../../components/book-read-date-and-rating";
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
@@ -25,8 +20,8 @@ export const generateMetadata = async (): Promise<Metadata> => ({
   title: booksCopy.title,
 });
 
-const BooksPage = async () => {
-  const data = await fetchData();
+export default async function BooksPage() {
+  const books = getBooks();
 
   return (
     <>
@@ -36,11 +31,11 @@ const BooksPage = async () => {
 
       <Page header={booksCopy}>
         <div className="flex flex-col gap-10">
-          {data.books.map((book) => (
+          {books.map((book) => (
             <div className="flex flex-row gap-4" key={book.slug}>
               <NextLink
                 className="min-w-[96px] sm:min-w-[120px]"
-                href={`/books/${book.slug}`}
+                href={book.path}
               >
                 <BookCover book={book} />
               </NextLink>
@@ -49,7 +44,7 @@ const BooksPage = async () => {
                 <div>
                   <NextLink
                     className="font-medium text-amber-400 hover:text-amber-200"
-                    href={`/books/${book.slug}`}
+                    href={book.path}
                   >
                     {book.title} by {book.authors.join(", ")}
                   </NextLink>
@@ -67,6 +62,4 @@ const BooksPage = async () => {
       </Page>
     </>
   );
-};
-
-export default BooksPage;
+}

@@ -1,6 +1,6 @@
-import { API_URL } from "@/config";
+import { APP_URL } from "@/config";
 
-const OG_IMAGE_SERVICE_BASE_URL = `${API_URL}/og`;
+const OG_IMAGE_SERVICE_BASE_URL = `${APP_URL}/api/og`;
 
 type OGImageParamsPost = {
   oneliner: string;

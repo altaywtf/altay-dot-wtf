@@ -4,10 +4,10 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import slug from "remark-slug";
 
-import { MDCodeBlock } from "./MDCodeBlock";
-import { MDLink } from "./MDLink";
+import { MDCodeBlock } from "./md-code-block";
+import { MDLink } from "./md-link";
 
-const Markdown: React.FC<{ children: string }> = ({ children }) => (
+export const Markdown: React.FC<{ children: string }> = ({ children }) => (
   <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-pre:m-0 prose-pre:p-0 prose-img:m-auto prose-img:rounded">
     <ReactMarkdown
       components={{
@@ -33,5 +33,3 @@ const Markdown: React.FC<{ children: string }> = ({ children }) => (
     </ReactMarkdown>
   </article>
 );
-
-export default Markdown;

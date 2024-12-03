@@ -1,11 +1,11 @@
+"use client";
+
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 
-import { BACKLINK_SOURCE_QUERY_PARAM } from "./constants";
-
-export const useScrollToBacklinkSource: VoidFunction = () => {
+const useScrollToBacklinkSource = (backlinkSourceQueryParam: string) => {
   const query = useSearchParams();
-  const source = query.get(BACKLINK_SOURCE_QUERY_PARAM);
+  const source = query.get(backlinkSourceQueryParam);
 
   useEffect(() => {
     if (source && typeof source === "string") {
@@ -22,4 +22,11 @@ export const useScrollToBacklinkSource: VoidFunction = () => {
       }
     }
   }, [source]);
+};
+
+export const BacklinkScroller = (props: {
+  backlinkSourceQueryParam: string;
+}) => {
+  useScrollToBacklinkSource(props.backlinkSourceQueryParam);
+  return null;
 };

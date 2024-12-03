@@ -1,14 +1,14 @@
 "use client";
 
-import { usePathHistory } from "@/ui/usePathHistory";
+import { usePathHistory } from "@/hooks/use-path-history";
 import { MoveLeft } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({
-  href,
-  label,
-}) => {
+export const ArtificialBackButton: React.FC<{
+  href: string;
+  label: string;
+}> = ({ href, label }) => {
   const router = useRouter();
   const prevPath = usePathHistory();
   const content = (
@@ -26,5 +26,3 @@ const ArtificialBackButton: React.FC<{ href: string; label: string }> = ({
     <Link href={href}>{content}</Link>
   );
 };
-
-export default ArtificialBackButton;

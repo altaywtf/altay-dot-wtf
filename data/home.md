@@ -1,4 +1,4 @@
-I'm a software engineer passionate about frontend infrastructure, monorepos, and developer tooling.
+I'm a software engineer passionate about frontend infrastructure, monorepos, and developer experience.
 
 I'm currently working remotely as a contractor, mostly on projects that center on these areas.
 

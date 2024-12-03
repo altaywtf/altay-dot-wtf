@@ -1,16 +1,11 @@
-import type { Post } from "@/lib/posts";
-
-import { API_URL, postsCopy } from "@/config";
+import { ArtificialBackButton } from "@/components/artificial-back-button";
+import { Page } from "@/components/page";
+import { postsCopy } from "@/config";
+import { getPosts } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/openGraph";
-import ArtificialBackButton from "@/ui/ArtificialBackButton";
-import Page from "@/ui/Page";
 import type { Metadata } from "next";
 import Link from "next/link";
-
-import { PostDateAndReadingTime } from "./components/PostDateAndReadingTime";
-
-const fetchData = (): Promise<{ posts: Post[] }> =>
-  fetch(`${API_URL}/posts`).then((res) => res.json());
+import { PostDateAndReadingTime } from "../../components/post-date-and-reading-time";
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
@@ -23,8 +18,8 @@ export const generateMetadata = async (): Promise<Metadata> => ({
   title: postsCopy.title,
 });
 
-const PostsPage = async () => {
-  const { posts } = await fetchData();
+export default async function PostsPage() {
+  const posts = getPosts();
 
   return (
     <>
@@ -56,6 +51,4 @@ const PostsPage = async () => {
       </Page>
     </>
   );
-};
-
-export default PostsPage;
+}
