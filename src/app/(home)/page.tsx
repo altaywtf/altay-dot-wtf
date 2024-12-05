@@ -27,8 +27,14 @@ const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
 export default async function HomePage() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="relative h-24 w-24 overflow-hidden rounded border border-solid border-neutral-800">
-        <Image alt="avatar" fill sizes="100%" src="/images/avatar.png" />
+      <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-800">
+        <Image
+          alt="avatar"
+          fill
+          sizes="100%"
+          src="/images/avatar.png"
+          quality={100}
+        />
       </div>
 
       <div className="flex flex-col gap-4 -mt-2">

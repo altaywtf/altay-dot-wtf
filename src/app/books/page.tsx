@@ -1,11 +1,11 @@
 import { BackButton } from "@/components/back-button";
+import { Book } from "@/components/book";
 import { Page } from "@/components/page";
-import { booksCopy } from "@/config";
+import { SITE_TITLE, booksCopy } from "@/config";
 import { getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Book } from "../../components/book";
 
 export const generateMetadata = async (): Promise<Metadata> => ({
   openGraph: {
@@ -25,16 +25,15 @@ export default async function BooksPage() {
   return (
     <>
       <div className="mb-6">
-        <BackButton href="/" label="altay.wtf" />
+        <BackButton href="/" label={SITE_TITLE} />
       </div>
 
       <Page header={booksCopy}>
         <div className="flex flex-col gap-10">
           {books.map((book) => (
             <div className="flex flex-row gap-4" key={book.slug}>
-              <Link className="min-w-[96px] sm:min-w-[120px]" href={book.path}>
-                <Book.Cover book={book} />
-              </Link>
+              <Book.Cover book={book} />
+
               <div>
                 <Link
                   className="font-medium text-amber-400 hover:text-amber-200"

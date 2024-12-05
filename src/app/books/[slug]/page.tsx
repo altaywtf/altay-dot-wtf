@@ -8,12 +8,11 @@ import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
+export const generateMetadata = async (props: Props): Promise<Metadata> => {
+  const params = await props.params;
   const { book } = getBook(params.slug);
   const title = `${book.title} by ${book.authors.join(", ")}`;
 
@@ -33,7 +32,8 @@ export const generateMetadata = async ({
   };
 };
 
-const BookPage = async ({ params }: Props) => {
+const BookPage = async (props: Props) => {
+  const params = await props.params;
   const { book, markdown } = getBook(params.slug);
 
   return (
@@ -41,9 +41,7 @@ const BookPage = async ({ params }: Props) => {
       <BackButton href="/books" label={booksCopy.title} />
 
       <div className="flex flex-row gap-4" key={book.slug}>
-        <div className="min-w-[96px] sm:min-w-[128px] md:min-w-[160px]">
-          <Book.Cover book={book} />
-        </div>
+        <Book.Cover book={book} width={180} variant="on-page" />
 
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-semibold">

@@ -8,12 +8,11 @@ import type { Metadata } from "next";
 import { PostDateAndReadingTime } from "../../../components/post-date-and-reading-time";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
+export const generateMetadata = async (props: Props): Promise<Metadata> => {
+  const params = await props.params;
   const { post } = getPost(params.slug);
 
   return {
@@ -34,7 +33,8 @@ export const generateMetadata = async ({
   };
 };
 
-export default async function Page({ params }: Props) {
+export default async function Page(props: Props) {
+  const params = await props.params;
   const { post, markdown } = getPost(params.slug);
 
   return (

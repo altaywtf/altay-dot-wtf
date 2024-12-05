@@ -1,6 +1,6 @@
 import { BackButton } from "@/components/back-button";
 import { Page } from "@/components/page";
-import { postsCopy } from "@/config";
+import { SITE_TITLE, postsCopy } from "@/config";
 import { getPosts } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
@@ -24,7 +24,7 @@ export default async function PostsPage() {
   return (
     <>
       <div className="mb-6">
-        <BackButton href="/" label="altay.wtf" />
+        <BackButton href="/" label={SITE_TITLE} />
       </div>
 
       <Page header={postsCopy}>

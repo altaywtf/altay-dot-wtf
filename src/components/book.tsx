@@ -1,8 +1,8 @@
 import type { Book as TBook } from "@/lib/books";
 import { format } from "date-fns";
 import { Star } from "lucide-react";
-import Image from "next/legacy/image";
-
+import Image from "next/image";
+import Link from "next/link";
 const Title: React.FC<{
   title: string;
   authors: string[];
@@ -21,19 +21,39 @@ const Quote: React.FC<{
 const Cover: React.FC<{
   book: TBook;
   width?: number;
-}> = ({ book, width = 144 }) => (
-  <div className="overflow-hidden rounded border border-solid border-neutral-800">
-    <Image
-      alt={book.title}
-      blurDataURL={book.coverImage.blurhash}
-      height={width / book.coverImage.aspectRatio}
-      layout="responsive"
-      placeholder="blur"
-      src={book.coverImage.url}
-      width={width}
-    />
-  </div>
-);
+  variant?: "on-list" | "on-page";
+}> = ({ book, width = 120, variant = "on-list" }) => {
+  const height = Math.round(width / book.coverImage.aspectRatio);
+
+  return (
+    <Link
+      href={
+        variant === "on-list"
+          ? book.path
+          : `http://books.google.com/books?vid=${book.identifiers[0].identifier}`
+      }
+      target={variant === "on-list" ? undefined : "_blank"}
+    >
+      <div
+        className="relative rounded border border-solid border-neutral-800 overflow-hidden"
+        style={{ width, height }}
+      >
+        <Image
+          alt={book.title}
+          blurDataURL={book.coverImage.blurhash}
+          placeholder="blur"
+          src={book.coverImage.url}
+          quality={100}
+          fill
+          sizes="100%"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+    </Link>
+  );
+};
 
 const Rating: React.FC<{
   max?: number;
