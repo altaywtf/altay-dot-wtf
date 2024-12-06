@@ -1,8 +1,8 @@
 import "./style.css";
-import { berkeleyMono, gtAmerica } from "@/app/fonts";
 import { PathHistoryListener } from "@/components/path-history-listener";
 import { APP_URL } from "@/config/constants";
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config/meta";
+import { inter, jetBrainsMono } from "@/fonts";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
   <html
-    className={`${gtAmerica.variable} ${berkeleyMono.variable} dark`}
+    className={`${inter.variable} ${jetBrainsMono.variable} dark`}
     lang="en"
   >
     <head>
@@ -43,7 +43,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => (
 
     <body className="antialiased min-h-screen bg-neutral-950 text-neutral-200">
       <main className="p-safe">
-        <section className="max-w-xl mx-auto px-4 py-8 sm:px-0 mb-8">
+        <section className="max-w-2xl mx-auto px-4 py-8 sm:px-0 mb-8">
           {children}
         </section>
       </main>

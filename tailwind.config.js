@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["var(--font-berkeley-mono)"],
-        sans: ["var(--font-gt-america)"],
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-jetbrains-mono)"],
       },
     },
   },

@@ -5,15 +5,6 @@ import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
-const loadFont = async () => {
-  const url = new URL(
-    "../../fonts/GT-America-Standard-Bold.ttf",
-    import.meta.url,
-  );
-
-  return (await fetch(url)).arrayBuffer();
-};
-
 const parseRequest = (request: NextRequest): ParsedQuery => {
   const { searchParams } = new URL(request.url);
   const type = searchParams.get("type") as ParsedQuery["type"];
@@ -46,14 +37,18 @@ const parseRequest = (request: NextRequest): ParsedQuery => {
 
 export const GET = async (req: NextRequest) => {
   const query = parseRequest(req);
-  const fontData = await loadFont();
+
+  const interBold = await fetch(
+    new URL("@/fonts/Inter-Bold.ttf", import.meta.url),
+  ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(<OpenGraphImage query={query} />, {
     fonts: [
       {
-        data: fontData,
-        name: "GT-America-Standard-Bold",
+        data: interBold,
+        name: "Inter-Bold",
         style: "normal",
+        weight: 700,
       },
     ],
     height: 686,
