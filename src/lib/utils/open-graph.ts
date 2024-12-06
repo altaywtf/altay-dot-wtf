@@ -1,4 +1,4 @@
-import { APP_URL } from "@/config";
+import { APP_URL } from "@/config/constants";
 
 const OG_IMAGE_SERVICE_BASE_URL = `${APP_URL}/api/og`;
 

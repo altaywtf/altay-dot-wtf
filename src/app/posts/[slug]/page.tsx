@@ -2,7 +2,7 @@ import { BackButton } from "@/components/back-button";
 import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
 import { PostDateAndReadingTime } from "@/components/post-date-and-reading-time";
-import { postsCopy } from "@/config";
+import { postsCopy } from "@/config/copy";
 import { getPost, getPosts } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";

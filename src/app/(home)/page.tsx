@@ -1,5 +1,5 @@
 import { Markdown } from "@/components/md";
-import { booksCopy, homeCopy, postsCopy } from "@/config";
+import { booksCopy, homeCopy, postsCopy } from "@/config/copy";
 import { readMarkdownFile } from "@/lib/utils/md";
 import Image from "next/image";
 import Link from "next/link";

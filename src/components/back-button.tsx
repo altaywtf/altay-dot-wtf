@@ -1,14 +1,15 @@
 "use client";
 
+import { SITE_TITLE } from "@/config/meta";
 import { usePathHistory } from "@/hooks/use-path-history";
 import { MoveLeft } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export const BackButton: React.FC<{
-  href: string;
-  label: string;
-}> = ({ href, label }) => {
+  href?: string;
+  label?: string;
+}> = ({ href = "/", label = SITE_TITLE }) => {
   const router = useRouter();
   const prevPath = usePathHistory();
   const content = (

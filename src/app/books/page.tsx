@@ -1,7 +1,7 @@
 import { BackButton } from "@/components/back-button";
 import { Book } from "@/components/book";
 import { Page } from "@/components/page";
-import { SITE_TITLE, booksCopy } from "@/config";
+import { booksCopy } from "@/config/copy";
 import { getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
@@ -25,7 +25,7 @@ export default async function BooksPage() {
   return (
     <>
       <div className="mb-6">
-        <BackButton href="/" label={SITE_TITLE} />
+        <BackButton />
       </div>
 
       <Page header={booksCopy}>

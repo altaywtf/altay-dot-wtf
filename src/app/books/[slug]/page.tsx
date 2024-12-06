@@ -2,7 +2,7 @@ import { BackButton } from "@/components/back-button";
 import { Backlinks } from "@/components/backlinks";
 import { Book } from "@/components/book";
 import { Markdown } from "@/components/md";
-import { booksCopy } from "@/config";
+import { booksCopy } from "@/config/copy";
 import { getBook, getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";

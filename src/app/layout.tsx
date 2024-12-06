@@ -1,7 +1,8 @@
 import "./style.css";
 import { berkeleyMono, gtAmerica } from "@/app/fonts";
 import { PathHistoryListener } from "@/components/path-history-listener";
-import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config";
+import { APP_URL } from "@/config/constants";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config/meta";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
