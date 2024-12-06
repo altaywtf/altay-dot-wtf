@@ -34,13 +34,13 @@ First things first! Let’s start by creating a brand new React Native applicati
 
 If you don’t have it installed, you can do it by running
 
-```
+```sh
 $ npm install -g react-native-cli
 ```
 
 Then let’s create a new project called, of course, AwesomeProject!
 
-```
+```sh
 $ react-native init AwesomeProject
 ```
 

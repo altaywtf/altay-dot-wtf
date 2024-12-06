@@ -12,6 +12,7 @@ const runAskBookQueryStep = async (): Promise<string> => {
     {
       name: "query",
       type: "input",
+      message: "Enter search query:",
     },
   ]);
 
@@ -34,6 +35,7 @@ const runSearchAndChooseStep = async (query: string) => {
       ]),
       name: "bookIndex",
       type: "list",
+      message: "Select a book:",
     },
   ]);
 
@@ -49,28 +51,34 @@ const runGetBaseBookMetaStep = async (
         default: baseBook.title,
         name: "title",
         type: "input",
+        message: "Book title:",
       },
       {
         default: slugify(baseBook.title, { lower: true }),
         name: "slug",
         type: "input",
+        message: "Slug:",
       },
       {
         default: baseBook.remoteCoverImage.url,
         name: "remoteCoverImageURL",
         type: "input",
+        message: "Cover image URL:",
       },
       {
         name: "rating",
         type: "number",
+        message: "Rating:",
       },
       {
         name: "quote",
         type: "input",
+        message: "Quote:",
       },
       {
         name: "dateRead",
         type: "input",
+        message: "Date read:",
       },
     ]);
 

@@ -35,6 +35,11 @@
   .dark {
     color-scheme: dark;
   }
+
+  pre,
+  code {
+    font-weight: lighter !important;
+  }
 }
 
 @layer utilities {

@@ -36,23 +36,17 @@ export const gtAmerica = localFont({
   variable: "--font-gt-america",
 });
 
-export const gtAmericaMono = localFont({
+export const berkeleyMono = localFont({
   src: [
     {
-      path: "./GT-America-Mono-Regular.woff2",
+      path: "./berkeley-mono-variable-regular.woff2",
       style: "normal",
-      weight: "400",
     },
     {
-      path: "./GT-America-Mono-Medium.woff2",
-      style: "normal",
-      weight: "500",
-    },
-    {
-      path: "./GT-America-Mono-Bold.woff2",
-      style: "normal",
-      weight: "600",
+      path: "./berkeley-mono-variable-italic.woff2",
+      style: "italic",
     },
   ],
-  variable: "--font-gt-america-mono",
+  display: "swap",
+  variable: "--font-berkeley-mono",
 });

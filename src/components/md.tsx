@@ -1,35 +1,40 @@
-"use client";
+import rehypeShiki from "@shikijs/rehype";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
+import rehypeSlug from "rehype-slug";
+import remarkGfm from "remark-gfm";
 
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
-import slug from "remark-slug";
+export function Markdown({ children }: { children: string }) {
+  return (
+    <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-img:m-auto prose-img:rounded prose-hr:my-8 prose-hr:bg-neutral-800 prose-hr:h-px prose-hr:border-0">
+      <MDXRemote
+        source={children}
+        components={{
+          a: (props) => {
+            const href = props.href;
 
-import { MDCodeBlock } from "./md-code-block";
-import { MDLink } from "./md-link";
+            if (href?.startsWith("/")) {
+              return (
+                <Link href={href} {...props}>
+                  {props.children}
+                </Link>
+              );
+            }
 
-export const Markdown: React.FC<{ children: string }> = ({ children }) => (
-  <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-pre:m-0 prose-pre:p-0 prose-img:m-auto prose-img:rounded prose-hr:my-8 prose-hr:bg-neutral-800 prose-hr:h-px prose-hr:border-0">
-    <ReactMarkdown
-      components={{
-        a: (props) => <MDLink href={props.href || ""}>{props.children}</MDLink>,
+            if (href?.startsWith("#")) {
+              return <a {...props} />;
+            }
 
-        code: (props) => {
-          const { children, className, inline, ...rest } = props;
-
-          if (inline) {
-            return (
-              <code {...rest} className={className}>
-                {children}
-              </code>
-            );
-          }
-
-          return <MDCodeBlock {...props} />;
-        },
-      }}
-      remarkPlugins={[slug, gfm]}
-    >
-      {children}
-    </ReactMarkdown>
-  </article>
-);
+            return <a target="_blank" rel="noopener noreferrer" {...props} />;
+          },
+        }}
+        options={{
+          mdxOptions: {
+            rehypePlugins: [rehypeSlug, [rehypeShiki, { theme: "dark-plus" }]],
+            remarkPlugins: [remarkGfm],
+          },
+        }}
+      />
+    </article>
+  );
+}

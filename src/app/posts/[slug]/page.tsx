@@ -1,11 +1,11 @@
 import { BackButton } from "@/components/back-button";
 import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
+import { PostDateAndReadingTime } from "@/components/post-date-and-reading-time";
 import { postsCopy } from "@/config";
 import { getPost } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
-import { PostDateAndReadingTime } from "../../../components/post-date-and-reading-time";
 
 type Props = {
   params: Promise<{ slug: string }>;

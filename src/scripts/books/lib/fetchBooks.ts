@@ -26,7 +26,7 @@ type GoogleBooksVolumeQueryResult = {
 };
 
 export type QueryBook = GoogleBooksVolume;
-export type BooksQueryResult = GoogleBooksVolumeQueryResult;
+type BooksQueryResult = GoogleBooksVolumeQueryResult;
 
 export const fetchBooksByQuery = async (query: string) => {
   const response = await axios.get<BooksQueryResult>(

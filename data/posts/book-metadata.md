@@ -17,7 +17,7 @@ We need some manual labor to do before we get to the acrobatics.
 
 We can use YAML syntax at the beginning of a Markdown file to define the metadata. There's a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
 
-```
+```md
 ---
 isbn: '0135957052'
 date_read: '2020-08-27'

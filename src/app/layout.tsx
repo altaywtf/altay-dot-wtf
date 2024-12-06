@@ -1,5 +1,5 @@
 import "./style.css";
-import { gtAmerica, gtAmericaMono } from "@/app/fonts";
+import { berkeleyMono, gtAmerica } from "@/app/fonts";
 import { PathHistoryListener } from "@/components/path-history-listener";
 import { APP_URL, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/config";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
   <html
-    className={`${gtAmerica.variable} ${gtAmericaMono.variable} dark`}
+    className={`${gtAmerica.variable} ${berkeleyMono.variable} dark`}
     lang="en"
   >
     <head>

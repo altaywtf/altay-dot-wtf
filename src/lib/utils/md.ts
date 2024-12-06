@@ -1,7 +1,4 @@
 import fs from "node:fs";
-import { SITE_URL } from "@/config";
-import marked from "marked";
-
 import { DATA_FOLDER_PATH } from "./fs";
 
 const REGEX_MD_LINKS = /\[([^[]+)?\](\(.[^)]*\))/gm;
@@ -10,7 +7,7 @@ const REGEX_MD_LINK_URL = /(\(.*\))/gm;
 const getMarkdownLinks = (markdown: string) =>
   markdown.match(REGEX_MD_LINKS) || [];
 
-export const getRelativeMarkdownLinks = (markdown: string) =>
+const getRelativeMarkdownLinks = (markdown: string) =>
   getMarkdownLinks(markdown).filter((mdLink) => {
     const url = mdLink.match(REGEX_MD_LINK_URL);
     return url?.length && url[0].startsWith("(.");
@@ -73,14 +70,4 @@ export const readMarkdownFile = (pathInDataFolder: string) => {
 
   const file = fs.readFileSync(`${DATA_FOLDER_PATH}${normalizedPath}`, "utf-8");
   return transformRelativeMarkdownLinks(pathInDataFolder, file);
-};
-
-export const convertMarkdownToHTML = (markdown: string) => {
-  const html = marked(markdown, {
-    baseUrl: SITE_URL,
-    breaks: true,
-    gfm: true,
-  });
-
-  return html;
 };
