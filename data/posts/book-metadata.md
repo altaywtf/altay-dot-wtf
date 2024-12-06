@@ -8,7 +8,7 @@ If you like to take notes from the books you read and know a little bit of JavaS
 
 I've been using Apple Notes, Notion, sticky notes, and paper for my notes. They were unorganized and hard to index when needed. I moved all to Markdown, and started publishing on this website.
 
-[Taking notes is the hard part](../posts/how-do-I-read).
+[Taking notes is the hard part](../posts/read).
 Once they are in place, making them look pretty is a joyful task to deal with. That's what I did while building the book pages, without spending too much effort on details. It took me half-a-day to make it legit enough to share in this post.
 
 ### Adding front-matter to Markdown
@@ -18,14 +18,9 @@ We need some manual labor to do before we get to the acrobatics.
 We can use YAML syntax at the beginning of a Markdown file to define the metadata. There's a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
 
 ```md
----
 isbn: '0135957052'
 date_read: '2020-08-27'
 oneliner: A dead program normally does a lot less damage than a crippled one.
----
-
-## Chapter 1: A Pragmatic Philosophy
-...
 ```
 
 ```ts
@@ -50,7 +45,7 @@ const readMarkdownFile = (filePath: string) => {
 
 It's easy to retrieve a lot of information and generate specific meta images by using the ISBN. That is the only identifier we need for the rest. Amazon usually uses ISBN-10 as a path parameter for the product pages.
 
-![Amazon Product Page](/images/posts/enhancing-book-notes/amazon-isbn.png)
+![Amazon Product Page](/images/posts/book-metadata/amazon-isbn.png)
 
 ### Using Google Books API for metadata
 
@@ -101,7 +96,7 @@ const fetchBookMetadata = async (isbn: string): Promise<BookData> => {
 
 Now that we have the least relevant information to render a book page, we can take some time to prettify the meta tags. Here's how related services render the meta images related to book pages.
 
-![Amazon and Google Book's meta image](/images/posts/enhancing-book-notes/meta-amazon-google.png)
+![Amazon and Google Book's meta image](/images/posts/book-metadata/meta-amazon-google.png)
 
 Alright, that is doable with what we have.
 
@@ -185,4 +180,4 @@ Since it's a Next.js app, I prefer to save it to the filesystem. An alternative 
 
 After injecting the meta images to the book pages, [metatags.io](https://metatags.io) is a great tool to verify how they look.
 
-![Our generated image](/images/posts/enhancing-book-notes/meta-screenshot.png)
+![Our generated image](/images/posts/book-metadata/meta-screenshot.png)

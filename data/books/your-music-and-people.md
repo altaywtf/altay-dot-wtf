@@ -141,7 +141,7 @@ You are lifted by the people around you.
 
 ## Money
 
-[Pour your personality and philosophy into the way you do business.](../posts/my-utopia)
+[Pour your personality and philosophy into the way you do business.](../posts/transparent-business)
 
 Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
 
