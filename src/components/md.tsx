@@ -1,6 +1,6 @@
-import rehypeShiki from "@shikijs/rehype";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
+import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 
@@ -30,7 +30,10 @@ export function Markdown({ children }: { children: string }) {
         }}
         options={{
           mdxOptions: {
-            rehypePlugins: [rehypeSlug, [rehypeShiki, { theme: "dark-plus" }]],
+            rehypePlugins: [
+              rehypeSlug,
+              [rehypePrettyCode, { theme: "dark-plus" }],
+            ],
             remarkPlugins: [remarkGfm],
           },
         }}
