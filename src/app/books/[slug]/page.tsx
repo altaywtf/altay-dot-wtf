@@ -3,12 +3,16 @@ import { Backlinks } from "@/components/backlinks";
 import { Book } from "@/components/book";
 import { Markdown } from "@/components/md";
 import { booksCopy } from "@/config";
-import { getBook } from "@/lib/books";
+import { getBook, getBooks } from "@/lib/books";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
+};
+
+export const generateStaticParams = async () => {
+  return getBooks().map((book) => ({ slug: book.slug }));
 };
 
 export const generateMetadata = async (props: Props): Promise<Metadata> => {

@@ -1,5 +1,6 @@
 import { getBacklinks } from "@/lib/backlinks";
 import Link from "next/link";
+import { Suspense } from "react";
 import { BacklinkScroller } from "./backlink-scroller";
 
 const BACKLINK_SOURCE_QUERY_PARAM = "backlinkSource";
@@ -11,9 +12,11 @@ export const Backlinks: React.FC<{
 
   return (
     <>
-      <BacklinkScroller
-        backlinkSourceQueryParam={BACKLINK_SOURCE_QUERY_PARAM}
-      />
+      <Suspense fallback={null}>
+        <BacklinkScroller
+          backlinkSourceQueryParam={BACKLINK_SOURCE_QUERY_PARAM}
+        />
+      </Suspense>
 
       {backlinks.length > 0 && (
         <div className="flex flex-col gap-2 rounded bg-neutral-900 p-4">

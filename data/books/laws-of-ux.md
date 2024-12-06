@@ -277,7 +277,7 @@ Again, ambiguous icons without text labels. We still don't have a standardized m
 
 ## Doherty Threshold
 
-_Productivity soars when a computer and its users interact at a pace (<400ms) that ensures that neither has to wait on the other._
+_Productivity soars when a computer and its users interact at a pace (`<400ms`) that ensures that neither has to wait on the other._
 
 **Key Takeaways**
 

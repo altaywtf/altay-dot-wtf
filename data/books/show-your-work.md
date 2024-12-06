@@ -132,7 +132,7 @@ Did you get energized and motivated or exhausted and drained?
 
 That is [the vampire test](../posts/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
 
-### Find Your fellow <X>'ers
+### Find Your fellow X'ers
 
 Find people who share the same values as you in a topic, and show the work to them before anyone else.
 

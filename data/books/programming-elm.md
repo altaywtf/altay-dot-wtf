@@ -135,7 +135,7 @@ case model.photo of
   - `receive` → incoming ports that return a `Sub` → `socket.onMessage = (e) => elmApp.ports.receive.send(e.data)`
 - Added a notification banner to show there are new photos available to be put into the `Feed`, then an `onClick` handler to put it into feed from `streamQueue`.
 
-### Backward Composition (<<) Operator
+### Backward Composition `(<<)` Operator
 
 ```elm
 WebSocket.receive

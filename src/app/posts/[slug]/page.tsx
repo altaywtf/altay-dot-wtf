@@ -3,12 +3,16 @@ import { Backlinks } from "@/components/backlinks";
 import { Markdown } from "@/components/md";
 import { PostDateAndReadingTime } from "@/components/post-date-and-reading-time";
 import { postsCopy } from "@/config";
-import { getPost } from "@/lib/posts";
+import { getPost, getPosts } from "@/lib/posts";
 import { getOpenGraphImage } from "@/lib/utils/open-graph";
 import type { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
+};
+
+export const generateStaticParams = async () => {
+  return getPosts().map((post) => ({ slug: post.slug }));
 };
 
 export const generateMetadata = async (props: Props): Promise<Metadata> => {
