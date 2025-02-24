@@ -19,7 +19,7 @@ A collection of principles to weave into a cohesive post, drawing from the [wisd
 ### Types are the ultimate contract
 - Types are a developer's safety net, a way to communicate intent and enforce correctness.
 - Strongly typed systems provide confidence and improve velocity.
-- There's no better feeling than knowing [why are you doing what you are doing](./why.md)
+- There's no better feeling than knowing [why are you doing what you are doing.](./why.md)
 
 ### Declarative over imperative
 - Declarative systems are easier to reason about and maintain.
