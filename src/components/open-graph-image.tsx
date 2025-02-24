@@ -1,5 +1,4 @@
 import { APP_URL } from "@/config/constants";
-import colors from "tailwindcss/dist/colors";
 
 import type { Book, Page, ParsedQuery, Post } from "../lib/og/types";
 
@@ -17,7 +16,7 @@ const H1 = (props: React.ComponentProps<"h1">) => (
 const H2 = (props: React.ComponentProps<"h2">) => (
   <h2
     style={{
-      color: colors.neutral[400],
+      color: "#a1a1a1",
       fontSize: "4rem",
       margin: 0,
       padding: 0,
@@ -75,7 +74,7 @@ const renderBook = (book: Book) => (
         alt="cover-image"
         src={APP_URL + book.coverImagePath}
         style={{
-          borderColor: colors.neutral[700],
+          borderColor: "#404040",
           borderRadius: "4px",
           borderStyle: "solid",
           borderWidth: "2px",
@@ -119,7 +118,7 @@ export const OpenGraphImage: React.FC<{
         MozOsxFontSmoothing: "grayscale",
         WebkitFontSmoothing: "antialiased",
         WebkitTextSizeAdjust: "none",
-        color: colors.neutral[200],
+        color: "#e5e5e5",
         display: "flex",
         fontFamily: "Inter-Bold",
         height: "100%",
@@ -164,8 +163,10 @@ export const OpenGraphImage: React.FC<{
             alt="avatar"
             src={`${APP_URL}/images/avatar.png`}
             style={{
-              border: `2px solid ${colors.neutral[600]}`,
+              borderColor: "#525252",
               borderRadius: 120,
+              borderStyle: "solid",
+              borderWidth: 2,
               height: 120,
               width: 120,
             }}
