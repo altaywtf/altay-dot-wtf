@@ -35,7 +35,7 @@ const Cover: React.FC<{
       target={variant === "on-list" ? undefined : "_blank"}
     >
       <div
-        className="relative rounded border border-solid border-neutral-800 overflow-hidden"
+        className="relative rounded-sm border border-solid border-neutral-800 overflow-hidden"
         style={{ width, height }}
       >
         <Image

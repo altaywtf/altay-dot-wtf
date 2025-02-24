@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 
 export function Markdown({ children }: { children: string }) {
   return (
-    <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-img:m-auto prose-img:rounded prose-hr:my-8 prose-hr:bg-neutral-800 prose-hr:h-px prose-hr:border-0">
+    <article className="prose prose-neutral leading-normal dark:prose-invert prose-headings:mb-1 prose-img:m-auto prose-img:rounded-sm prose-hr:my-8 prose-hr:bg-neutral-800 prose-hr:h-px prose-hr:border-0">
       <MDXRemote
         source={children}
         components={{

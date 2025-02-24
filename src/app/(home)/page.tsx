@@ -27,7 +27,7 @@ const COLLECTIONS: Array<Omit<Project, "icon_url">> = [
 export default async function HomePage() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="relative h-28 w-28 overflow-hidden rounded border border-solid border-neutral-800">
+      <div className="relative h-28 w-28 overflow-hidden rounded-sm border border-solid border-neutral-800">
         <Image
           alt="avatar"
           fill

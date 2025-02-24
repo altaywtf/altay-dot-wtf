@@ -19,7 +19,7 @@ export const Backlinks: React.FC<{
       </Suspense>
 
       {backlinks.length > 0 && (
-        <div className="flex flex-col gap-2 rounded bg-neutral-900 p-4">
+        <div className="flex flex-col gap-2 rounded-sm bg-neutral-900 p-4">
           <h4 className="text-sm font-semibold">Backlinks</h4>
 
           <ul className="list-outside list-disc pl-4 space-y-1">
