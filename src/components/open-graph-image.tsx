@@ -1,5 +1,5 @@
 import { APP_URL } from "@/config/constants";
-import colors from "tailwindcss/colors";
+import colors from "tailwindcss/dist/colors";
 
 import type { Book, Page, ParsedQuery, Post } from "../lib/og/types";
 
