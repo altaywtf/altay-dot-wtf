@@ -19,13 +19,16 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 
 ### Work Experience
 
-#### Independent contractor \(Jan 2022 - present\)
+#### Confidential Fintech Company \(Sep 2024 - present\)
 
-- **_Fintech company \(Sep 2024 - present\)_**\
-  Working with the frontend core team to improve developer efficiency across multiple teams.
+- Mostly working on the frontend infrastructure and developer experience in an ecosystem that produces a few cross-platform apps.
 
-- **_put.io (Jan 2022 - present)_**\
-  Managing the frontend monorepo that produces apps for web, iOS, tvOS, Android TV, Chromecast, Roku, and various smart TV platforms.
+---
+
+#### put.io \(Jan 2017 - present\)
+
+- Managing the frontend monorepo that produces apps for web, iOS, tvOS, Android TV, Chromecast, Roku, and various smart TV platforms.
+- I've done this full time in 2017-18 and 2021-24, involved as a contractor when I have other commitments.
 
 ---
 
@@ -52,13 +55,6 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 
 - Developed features for the cross-platform Lisk Mobile app built with React Native.
 - Implemented Bitcoin support (BIP49) and native modules for the iMessage bridge.
-
----
-
-#### put.io \(Jan 2017 - Oct 2018\)
-
-- Built and maintained apps for web, mobile, and TV platforms.
-- Continued as the core maintainer of the frontend after transitioning to contracting.
 
 ---
 
