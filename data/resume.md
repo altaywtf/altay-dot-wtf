@@ -19,9 +19,9 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 
 ### Work Experience
 
-#### Confidential Fintech Company \(Sep 2024 - present\)
+#### Undisclosed Fintech Company \(Sep 2024 - present\)
 
-- Mostly working on the frontend infrastructure and developer experience in an ecosystem that produces a few cross-platform apps.
+- Working on the frontend infrastructure and developer experience in an ecosystem that produces a few cross-platform apps.
 
 ---
 
@@ -36,12 +36,12 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 
 #### _Senior Engineer at Consumer Deals (Jan 2021 - Aug 2021)_
 
-- Onboarded new hires and contributed to scaling an MVP I've built earlier.
+- Onboarded new hires to scale an MVP I've built earlier.
 - Worked on feature development and cross-team integrations.
 
 #### _Senior Engineer at App Client Core (Jan 2020 - Jan 2021)_
 
-- Worked on localization and feature isolation in a monorepo used by 50+ teams.
+- Worked on feature isolation infrastructure in a monorepo used by 50+ teams.
 - Reviewed 300+ pull requests, mentored new joiners, and participated in hiring interviews.
 
 #### _Engineer at Marketing Touchpoint Infrastructure (May 2019 - Jan 2020)_
