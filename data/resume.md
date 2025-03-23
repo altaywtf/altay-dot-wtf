@@ -9,11 +9,13 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 ---
 
 ### Tech stack
-- React (Next.js, React Native, Expo)
-- TypeScript (tooling, APIs)
-- Tailwind, Radix UI
-- pnpm, yarn, Turborepo
-- GitHub Actions, Vercel, AWS
+- TypeScript.
+- React (Next.js) & React Native (Expo).
+- Tailwind, Radix, shadcn for UI.
+- React Query, Jotai, XState for state.
+- tRPC, GraphQL, REST APIs.
+- pnpm, yarn, Turborepo for managing monorepos.
+- GitHub/GitLab actions and Vercel for CI/CD.
 
 ---
 
