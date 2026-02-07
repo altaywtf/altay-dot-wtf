@@ -17,8 +17,10 @@ const fontData = fs.readFileSync(fontPath);
 function toDataUrl(filePath: string): string | null {
   try {
     const data = fs.readFileSync(filePath);
-    const ext = filePath.endsWith(".png") ? "png" : "jpeg";
-    return `data:image/${ext};base64,${data.toString("base64")}`;
+    // Detect actual format from magic bytes, not extension
+    const isJpeg = data[0] === 0xff && data[1] === 0xd8;
+    const mime = isJpeg ? "jpeg" : "png";
+    return `data:image/${mime};base64,${data.toString("base64")}`;
   } catch {
     return null;
   }
