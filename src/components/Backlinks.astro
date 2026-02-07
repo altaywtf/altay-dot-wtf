@@ -1,0 +1,46 @@
+---
+import { getBacklinks } from "@/lib/backlinks";
+
+interface Props {
+  path: string;
+}
+
+const { path } = Astro.props;
+const backlinks = getBacklinks(path);
+const BACKLINK_SOURCE_QUERY_PARAM = "backlinkSource";
+---
+
+{backlinks.length > 0 && (
+  <div class="flex flex-col gap-2 rounded-sm bg-neutral-900 p-4">
+    <h4 class="text-sm font-semibold">Backlinks</h4>
+
+    <ul class="list-outside list-disc pl-4 space-y-1">
+      {backlinks.map((backlink) => (
+        <li class="text-sm">
+          <a
+            class="hover:underline"
+            href={`${backlink.path}?${BACKLINK_SOURCE_QUERY_PARAM}=${path}`}
+          >
+            {backlink.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<script>
+  // Backlink scroller - scrolls to the source link when arriving from a backlink
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get("backlinkSource");
+  if (source) {
+    const anchors = document.querySelectorAll("a");
+    for (const anchor of anchors) {
+      if (anchor.href.includes(source)) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+        anchor.classList.add("scrolled-source-link");
+        break;
+      }
+    }
+  }
+</script>

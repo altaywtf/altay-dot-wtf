@@ -1,5 +1,7 @@
 import fs from "node:fs";
-import { DATA_FOLDER_PATH } from "./fs";
+import { join } from "node:path";
+
+const DATA_FOLDER_PATH = join(process.cwd(), "data");
 
 const REGEX_MD_LINKS = /\[([^[]+)?\](\(.[^)]*\))/gm;
 const REGEX_MD_LINK_URL = /(\(.*\))/gm;
@@ -39,7 +41,6 @@ export const transformRelativeMarkdownLinks = (
     const extractedURL = extractUrlFromMarkdownLink(mdLink);
     let transformedURL = extractedURL;
 
-    // in a different folder
     if (transformedURL.startsWith("..")) {
       transformedURL = transformedURL
         .split("..")
@@ -47,13 +48,11 @@ export const transformRelativeMarkdownLinks = (
         .join("");
     }
 
-    // `./`, probably in the same folder
     if (transformedURL.startsWith(".")) {
       const path = pathInDataFolder.split("/")[1];
       transformedURL = transformedURL.replace(".", `/${path}`);
     }
 
-    // just in case
     transformedURL = transformedURL.replace(".md", "");
 
     const newMdLink = mdLink.replace(extractedURL, transformedURL);

@@ -1,8 +1,10 @@
 import fs from "node:fs";
+import { join } from "node:path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
-import { DATA_FOLDER_PATH } from "@/lib/utils/fs";
 import { readMarkdownFile } from "@/lib/utils/md";
+
+const DATA_FOLDER_PATH = join(process.cwd(), "data");
 
 type PostFrontMatter = {
   date: string;
