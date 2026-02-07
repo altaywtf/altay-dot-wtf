@@ -2,7 +2,7 @@ import { MoveLeft } from "lucide-react";
 
 const SITE_TITLE = "altay.wtf";
 
-export const BackButton: React.FC<{
+const BackButton: React.FC<{
   href?: string;
   label?: string;
 }> = ({ href = "/", label = SITE_TITLE }) => {

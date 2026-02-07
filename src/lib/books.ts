@@ -9,7 +9,7 @@ type GoogleBooksIndustryIdentifier = {
   type: string;
 };
 
-export type Book = {
+type Book = {
   title: string;
   authors: string[];
   identifiers: GoogleBooksIndustryIdentifier[];

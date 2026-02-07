@@ -11,7 +11,7 @@ type DictionaryFrontMatter = {
   date: string;
 };
 
-export type DictionaryEntry = DictionaryFrontMatter & {
+type DictionaryEntry = DictionaryFrontMatter & {
   slug: string;
   path: string;
 };

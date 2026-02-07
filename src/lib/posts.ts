@@ -12,7 +12,7 @@ type PostFrontMatter = {
   title: string;
 };
 
-export type Post = PostFrontMatter & {
+type Post = PostFrontMatter & {
   readingTime: string;
   slug: string;
   path: string;
