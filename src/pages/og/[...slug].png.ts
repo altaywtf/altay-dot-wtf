@@ -95,7 +95,7 @@ export const GET: APIRoute = async ({ props }) => {
           },
         ],
       },
-    },
+    } as any,
     {
       width: 1200,
       height: 630,
@@ -116,7 +116,7 @@ export const GET: APIRoute = async ({ props }) => {
   const pngData = resvg.render();
   const pngBuffer = pngData.asPng();
 
-  return new Response(pngBuffer, {
+  return new Response(new Uint8Array(pngBuffer), {
     headers: {
       "Content-Type": "image/png",
       "Cache-Control": "public, max-age=31536000, immutable",
