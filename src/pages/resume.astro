@@ -1,0 +1,15 @@
+---
+import Base from "@/layouts/Base.astro";
+import { readMarkdownFile } from "@/lib/utils/md";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+
+const resumeContent = await renderMarkdown(readMarkdownFile("resume.md"));
+---
+
+<Base title="Resume">
+  <section class="px-4 py-8 print:invert sm:px-0">
+    <div class="prose prose-invert prose-neutral max-w-none">
+      <Fragment set:html={resumeContent} />
+    </div>
+  </section>
+</Base>

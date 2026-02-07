@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://altay.wtf/sitemap-index.xml
