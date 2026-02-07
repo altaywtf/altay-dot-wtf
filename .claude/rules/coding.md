@@ -174,9 +174,13 @@ Review your diff before committing.
 Use rebase for feature branches to maintain clean linear history.
 Reserve merge commits for integrating long-lived branches.
 
-## PR Checklist
-Before marking ready:
+## Merge Requests
+When creating MRs (GitLab) or PRs (GitHub):
+- Assign yourself as the author/implementer
+- Request review from the human maintainer
+- Enable source branch deletion on merge
 - Title follows conventional commit format
 - Lint, type check, tests: all green
 - Diff is small and focused
 - No debug artifacts
+
