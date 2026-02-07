@@ -1,0 +1,37 @@
+---
+import Base from "@/layouts/Base.astro";
+import PostMeta from "@/components/PostMeta.astro";
+import Backlinks from "@/components/Backlinks.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { postsCopy } from "@/config/copy";
+import { getPost, getPosts } from "@/lib/posts";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+
+export function getStaticPaths() {
+  const posts = getPosts();
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const { post, markdown } = getPost(slug);
+const html = await renderMarkdown(markdown);
+---
+
+<Base title={post.title} description={post.oneliner} ogType="article">
+  <div class="flex flex-col gap-6">
+    <BackButton href="/posts" label={postsCopy.title} client:load />
+
+    <div class="flex flex-col gap-2">
+      <h1 class="text-2xl font-semibold">{post.title}</h1>
+      <PostMeta date={post.date} readingTime={post.readingTime} />
+    </div>
+
+    <div class="prose prose-invert prose-neutral max-w-none">
+      <Fragment set:html={html} />
+    </div>
+
+    <Backlinks path={post.path} />
+  </div>
+</Base>

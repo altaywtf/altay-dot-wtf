@@ -1,8 +1,10 @@
 import fs from "node:fs";
+import { join } from "node:path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
-import { DATA_FOLDER_PATH } from "@/lib/utils/fs";
 import { readMarkdownFile } from "@/lib/utils/md";
+
+const DATA_FOLDER_PATH = join(process.cwd(), "data");
 
 type PostFrontMatter = {
   date: string;
@@ -10,7 +12,7 @@ type PostFrontMatter = {
   title: string;
 };
 
-export type Post = PostFrontMatter & {
+type Post = PostFrontMatter & {
   readingTime: string;
   slug: string;
   path: string;
@@ -25,9 +27,7 @@ export const getPost = (slug: string) => {
   const post = {
     ...frontMatter,
     readingTime:
-      readingTimeInMins <= 1
-        ? "1 min read"
-        : `${Math.floor(readingTimeInMins)} mins read`,
+      readingTimeInMins <= 1 ? "1 min read" : `${Math.floor(readingTimeInMins)} mins read`,
     slug,
     path: `/posts/${slug}`,
   } satisfies Post;
@@ -50,5 +50,4 @@ export const getPosts = () => {
     .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1));
 };
 
-export const getPostsWithMarkdown = () =>
-  getPosts().map((post) => getPost(post.slug));
+export const getPostsWithMarkdown = () => getPosts().map((post) => getPost(post.slug));

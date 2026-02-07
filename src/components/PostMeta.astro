@@ -1,0 +1,17 @@
+---
+import { format } from "date-fns";
+
+interface Props {
+  date: string;
+  readingTime: string;
+}
+
+const { date, readingTime } = Astro.props;
+const formattedDate = format(new Date(date), "MMMM d, yyyy");
+---
+
+<div class="flex flex-row gap-1 text-neutral-400">
+  {formattedDate}
+  <span>·</span>
+  {readingTime}
+</div>

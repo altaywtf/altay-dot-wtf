@@ -1,0 +1,94 @@
+---
+import "@/styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+}
+
+const SITE_TITLE = "altay.wtf";
+const SITE_DESCRIPTION = "Hi, I'm Altay and this is my website.";
+const SITE_URL = "https://altay.wtf";
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "";
+const ogSlug = pathname || "/index";
+const defaultOgImage = `${SITE_URL}/og${ogSlug}.png`;
+
+const {
+  title,
+  description = SITE_DESCRIPTION,
+  ogImage = defaultOgImage,
+  ogTitle,
+  ogDescription,
+  ogType = "website",
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+const resolvedOgTitle = ogTitle || title || SITE_TITLE;
+const resolvedOgDescription = ogDescription || description;
+---
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+      name="viewport"
+    />
+    <meta content="rgb(10, 10, 10)" name="theme-color" />
+    <meta content="rgb(10, 10, 10)" name="msapplication-TileColor" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={resolvedOgTitle} />
+    <meta property="og:description" content={resolvedOgDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={Astro.url.href} />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="antialiased min-h-screen bg-neutral-950 text-neutral-200"
+  >
+    <main class="p-safe">
+      <section class="max-w-2xl mx-auto px-4 py-8 sm:px-0 mb-8">
+        <slot />
+      </section>
+    </main>
+
+    <script>
+      // Path history listener - stores current path in sessionStorage
+      const storage = globalThis?.sessionStorage;
+      if (storage) {
+        // Store previous path before updating
+        const currentPath = storage.getItem("PATH_HISTORY_CURRENT");
+        if (currentPath) {
+          storage.setItem("PATH_HISTORY", currentPath);
+        }
+        storage.setItem("PATH_HISTORY_CURRENT", window.location.pathname);
+      }
+    </script>
+  </body>
+</html>

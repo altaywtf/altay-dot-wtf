@@ -1,0 +1,61 @@
+---
+import { format } from "date-fns";
+import Base from "@/layouts/Base.astro";
+import BookCover from "@/components/BookCover.astro";
+import BookRating from "@/components/BookRating.astro";
+import Backlinks from "@/components/Backlinks.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { booksCopy } from "@/config/copy";
+import { getBook, getBooks } from "@/lib/books";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+
+export function getStaticPaths() {
+  const books = getBooks();
+  return books.map((book) => ({
+    params: { slug: book.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const { book, markdown } = getBook(slug);
+const html = await renderMarkdown(markdown);
+const googleBooksUrl = `http://books.google.com/books?vid=${book.identifiers[0].identifier}`;
+---
+
+<Base
+  title={`${book.title} by ${book.authors.join(", ")}`}
+  description={book.quote}
+>
+  <div class="flex flex-col gap-6">
+    <BackButton href="/books" label={booksCopy.title} client:load />
+
+    <div class="flex flex-row gap-4">
+      <BookCover
+        title={book.title}
+        coverUrl={book.coverImage.url}
+        aspectRatio={book.coverImage.aspectRatio}
+        blurhash={book.coverImage.blurhash}
+        href={googleBooksUrl}
+        width={180}
+        target="_blank"
+      />
+
+      <div class="flex flex-col gap-2">
+        <h1 class="text-xl font-semibold">
+          {book.title} by {book.authors.join(", ")}
+        </h1>
+        <p class="text-neutral-400">
+          Read in {format(new Date(book.dateRead), "MMMM yyyy")}
+        </p>
+        <BookRating rating={book.rating} />
+        <p class="italic text-neutral-400">&quot;{book.quote}&quot;</p>
+      </div>
+    </div>
+
+    <div class="prose prose-invert prose-neutral max-w-none">
+      <Fragment set:html={html} />
+    </div>
+
+    <Backlinks path={book.notes.url} />
+  </div>
+</Base>

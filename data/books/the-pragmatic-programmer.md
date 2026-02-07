@@ -254,25 +254,25 @@ There was a ruby code example in the book about this. Refer to page 119-120 or p
 Languages with exceptions, or the way handle them can make resource allocation tricky.
 
 ```jsx
-let resource
+let resource;
 
 try {
-  resource = allocateResource()
-  process(resource)
+  resource = allocateResource();
+  process(resource);
 } finally {
-  deallocateResource(resource)
+  deallocateResource(resource);
 }
 ```
 
 If resource allocation fails and exception is thrown, `finally` cause will try to deallocate a thing that was never allocated.
 
 ```jsx
-const resource = allocateResource()
+const resource = allocateResource();
 
 try {
-  process(resource)
+  process(resource);
 } finally {
-  deallocateResource(resource)
+  deallocateResource(resource);
 }
 ```
 
@@ -307,10 +307,10 @@ Symptoms of coupling:
 
 ```jsx
 function applyDiscount(customer, order_id, discount) {
-  const totals = customer.orders.find(order_id).getTotals()
+  const totals = customer.orders.find(order_id).getTotals();
 
-  totals.grandTotal = totals.grandTotal - discount
-  totals.discount = discount
+  totals.grandTotal = totals.grandTotal - discount;
+  totals.discount = discount;
 }
 ```
 
@@ -332,7 +332,7 @@ function applyDiscount(customer, order_id, discount) {
     // TDA: pls apply the discount, I don't care who manages it
     // .getTotals()
     // .applyDiscount(discount)
-    .applyDiscount(discount)
+    .applyDiscount(discount);
 }
 ```
 

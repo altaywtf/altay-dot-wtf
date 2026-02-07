@@ -1,0 +1,78 @@
+---
+import Base from "@/layouts/Base.astro";
+import { booksCopy, homeCopy, postsCopy } from "@/config/copy";
+import { readMarkdownFile } from "@/lib/utils/md";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+
+const homeContent = await renderMarkdown(readMarkdownFile("home.md"));
+
+const COLLECTIONS = [
+  {
+    description: "What I've been doing",
+    title: "Resume",
+    url: "/resume",
+  },
+  {
+    description: postsCopy.description,
+    title: postsCopy.title,
+    url: "/posts",
+  },
+  {
+    description: booksCopy.description,
+    title: booksCopy.title,
+    url: "/books",
+  },
+];
+---
+
+<Base>
+  <div class="flex flex-col gap-8">
+    <div class="relative h-28 w-28 overflow-hidden rounded-sm border border-solid border-neutral-800">
+      <img
+        alt="avatar"
+        src="/images/avatar.png"
+        width="112"
+        height="112"
+        class="object-cover w-full h-full"
+      />
+    </div>
+
+    <div class="flex flex-col gap-4 -mt-2">
+      <h1 class="text-xl font-semibold">{homeCopy.title}</h1>
+      <div class="prose prose-invert prose-neutral max-w-none">
+        <Fragment set:html={homeContent} />
+      </div>
+    </div>
+
+    <hr class="bg-neutral-900 h-px border-0" />
+
+    <div class="flex flex-col gap-6">
+      {COLLECTIONS.map((item) => (
+        <div>
+          <div class="flex flex-row items-center gap-3">
+            <div class="flex flex-1 flex-col">
+              <a
+                class="self-start font-medium text-amber-400 hover:text-amber-200"
+                href={item.url}
+              >
+                {item.title}
+              </a>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <hr class="bg-neutral-900 h-px border-0" />
+
+    <div class="text-sm text-neutral-400">
+      <a
+        class="hover:text-neutral-300 hover:underline"
+        href="mailto:altay@hey.com"
+      >
+        altay@hey.com
+      </a>
+    </div>
+  </div>
+</Base>

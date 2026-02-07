@@ -1,0 +1,15 @@
+stages:
+  - check
+
+check:
+  stage: check
+  image: oven/bun:latest
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: "$CI_COMMIT_BRANCH"
+  script:
+    - bun install --frozen-lockfile
+    - bun run lint
+    - bun run typecheck
+    - bun run format:check
+    - bun run knip

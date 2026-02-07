@@ -1,7 +1,7 @@
 ---
 title: A private email setup with noise reduction
 oneliner: My justification for paying 3.29 EUR per month for something free.
-date: '2020-12-05T20:24:35Z'
+date: "2020-12-05T20:24:35Z"
 ---
 
 Do you remember the first-ever email address you've signed up for?

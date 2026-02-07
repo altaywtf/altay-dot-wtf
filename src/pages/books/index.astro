@@ -1,0 +1,48 @@
+---
+import { format } from "date-fns";
+import Base from "@/layouts/Base.astro";
+import Page from "@/components/Page.astro";
+import BookCover from "@/components/BookCover.astro";
+import BookRating from "@/components/BookRating.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { booksCopy } from "@/config/copy";
+import { getBooks } from "@/lib/books";
+
+const books = getBooks();
+---
+
+<Base title={booksCopy.title} description={booksCopy.description}>
+  <div class="mb-6">
+    <BackButton client:load />
+  </div>
+
+  <Page title={booksCopy.title} description={booksCopy.description}>
+    <div class="flex flex-col gap-10">
+      {books.map((book) => (
+        <div class="flex flex-row gap-4">
+          <BookCover
+            title={book.title}
+            coverUrl={book.coverImage.url}
+            aspectRatio={book.coverImage.aspectRatio}
+            blurhash={book.coverImage.blurhash}
+            href={book.path}
+          />
+
+          <div>
+            <a
+              class="font-medium text-amber-400 hover:text-amber-200"
+              href={book.path}
+            >
+              {book.title} by {book.authors.join(", ")}
+            </a>
+            <p class="text-neutral-400">
+              Read in {format(new Date(book.dateRead), "MMMM yyyy")}
+            </p>
+            <BookRating rating={book.rating} />
+            <p class="italic text-neutral-400">&quot;{book.quote}&quot;</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Page>
+</Base>

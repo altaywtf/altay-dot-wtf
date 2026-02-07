@@ -1,0 +1,37 @@
+---
+import Base from "@/layouts/Base.astro";
+import Page from "@/components/Page.astro";
+import PostMeta from "@/components/PostMeta.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { postsCopy } from "@/config/copy";
+import { getPosts } from "@/lib/posts";
+
+const posts = getPosts();
+---
+
+<Base title={postsCopy.title}>
+  <div class="mb-6">
+    <BackButton client:load />
+  </div>
+
+  <Page title={postsCopy.title} description={postsCopy.description}>
+    <div class="flex flex-col gap-6">
+      {posts.map((post) => (
+        <div class="flex flex-col gap-1">
+          <div>
+            <a
+              class="font-medium text-amber-400 hover:text-amber-200"
+              href={post.path}
+            >
+              {post.title}
+            </a>
+          </div>
+          <p>{post.oneliner}</p>
+          <div class="text-sm">
+            <PostMeta date={post.date} readingTime={post.readingTime} />
+          </div>
+        </div>
+      ))}
+    </div>
+  </Page>
+</Base>

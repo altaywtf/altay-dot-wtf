@@ -1,7 +1,7 @@
 ---
 title: Release your mentors
 oneliner: Don't be a daydreaming fucktard.
-date: '2020-12-11T18:42:27Z'
+date: "2020-12-11T18:42:27Z"
 ---
 
 I have spent a considerable amount of my life searching for mentors. It has always been hard to find a good match, especially during adolescence. As I grew older and narrowed my interests down, I got closer to people I look up to. Yet, I only experienced the harmonic craftsman–apprentice relationships in stories. My numerous quests to find a mentor as a novice often ended up with huge disappointments. Still, I hoped for the days that would bring me the long-awaited resonance. I searched for someone to help me direct my enthusiasm to something meaningful, someone to help me understand why I am doing what I am doing, someone to give me the courage to create. It took me quite a long time with trial and error to realize how impossible that is. It's the most stupid expectation I ever had. Eventually, I have opened my eyes. There is less hope involved since then. If you can live without hope, nothing will disappoint you.

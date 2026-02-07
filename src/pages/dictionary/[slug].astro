@@ -1,0 +1,35 @@
+---
+import Base from "@/layouts/Base.astro";
+import Backlinks from "@/components/Backlinks.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { getDictionaryEntry, getDictionaryEntries } from "@/lib/dictionary";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+
+export function getStaticPaths() {
+  const entries = getDictionaryEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const { entry, markdown } = getDictionaryEntry(slug);
+const html = await renderMarkdown(markdown);
+---
+
+<Base title={entry.title} description={entry.oneliner}>
+  <div class="flex flex-col gap-6">
+    <BackButton href="/dictionary" label="Dictionary" client:load />
+
+    <div class="flex flex-col gap-2">
+      <h1 class="text-2xl font-semibold">{entry.title}</h1>
+      <p class="text-neutral-400">{entry.oneliner}</p>
+    </div>
+
+    <div class="prose prose-invert prose-neutral max-w-none">
+      <Fragment set:html={html} />
+    </div>
+
+    <Backlinks path={entry.path} />
+  </div>
+</Base>

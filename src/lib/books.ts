@@ -1,29 +1,59 @@
+import fs from "node:fs";
+import { join } from "node:path";
 import { readMarkdownFile } from "@/lib/utils/md";
-import { readBooksJSON } from "@/scripts/books/lib/booksJSON";
 
-export const getBooks = () =>
+const DATA_FOLDER_PATH = join(process.cwd(), "data");
+
+type GoogleBooksIndustryIdentifier = {
+  identifier: string;
+  type: string;
+};
+
+type Book = {
+  title: string;
+  authors: string[];
+  identifiers: GoogleBooksIndustryIdentifier[];
+  remoteCoverImage: { url: string };
+  slug: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  quote: string;
+  dateRead: string;
+  notes: { url: string };
+  coverImage: {
+    aspectRatio: number;
+    blurhash: string;
+    url: string;
+  };
+  path: string;
+};
+
+type BooksJSON = {
+  books: Omit<Book, "path">[];
+  updatedAt: string;
+};
+
+const readBooksJSON = (): BooksJSON => {
+  const file = fs.readFileSync(`${DATA_FOLDER_PATH}/books.json`, "utf-8");
+  return JSON.parse(file) as BooksJSON;
+};
+
+export const getBooks = (): Book[] =>
   readBooksJSON().books.map((book) => ({
     ...book,
     path: `/books/${book.slug}`,
   }));
 
 export const getBook = (slug: string) => {
-  const book = readBooksJSON().books.find((book) => book.slug === slug);
+  const book = getBooks().find((book) => book.slug === slug);
 
   if (!book) {
     throw new Error(`Book not found: ${slug}.`);
   }
 
   return {
-    book: {
-      ...book,
-      path: `/books/${book.slug}`,
-    },
+    book,
     markdown: readMarkdownFile(`${book.notes.url}.md`),
   };
 };
 
-export const getBooksWithMarkdown = () =>
-  getBooks().map((book) => getBook(book.slug));
-
-export type Book = ReturnType<typeof getBook>["book"];
+export const getBooksWithMarkdown = () => getBooks().map((book) => getBook(book.slug));

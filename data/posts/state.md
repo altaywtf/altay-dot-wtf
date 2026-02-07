@@ -1,7 +1,7 @@
 ---
 title: Dear state, please stop lying
 oneliner: A brief revisit of how we represent states while building user-interfaces.
-date: '2020-02-22'
+date: "2020-02-22"
 ---
 
 Is managing the UI state is hard, or we make it hard for ourselves by not paying attention?
@@ -12,22 +12,22 @@ We have this React component fetches the list of something and renders according
 
 ```jsx
 class List extends React.Component {
-  state = { loading: false, data: [], error: null }
+  state = { loading: false, data: [], error: null };
 
   async componentDidMount() {
-    this.setState({ loading: true })
+    this.setState({ loading: true });
 
     try {
-      const { data } = await api.getData()
-      this.setState({ loading: false, data })
+      const { data } = await api.getData();
+      this.setState({ loading: false, data });
     } catch (error) {
-      this.setState({ loading: false, error })
+      this.setState({ loading: false, error });
     }
   }
 
   render() {
     if (this.state.loading) {
-      return <p>Loading...</p>
+      return <p>Loading...</p>;
     }
 
     if (this.state.error) {
@@ -36,7 +36,7 @@ class List extends React.Component {
           Sorry, you broke the app. <br />
           Here's what our server says: {this.state.error.message}
         </p>
-      )
+      );
     }
 
     return (
@@ -45,7 +45,7 @@ class List extends React.Component {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
-    )
+    );
   }
 }
 ```
@@ -72,26 +72,26 @@ Let's take one more step forward for a better UX and add a _retry_ button to the
 
 ```jsx
 class List extends React.Component {
-  state = { loading: true, data: [], error: null }
+  state = { loading: true, data: [], error: null };
 
   componentDidMount() {
-    this.fetchData()
+    this.fetchData();
   }
 
   fetchData = async () => {
-    this.setState({ loading: true, error: null }) // WHY 🤡
+    this.setState({ loading: true, error: null }); // WHY 🤡
 
     try {
-      const { data } = await api.getData()
-      this.setState({ loading: false, data })
+      const { data } = await api.getData();
+      this.setState({ loading: false, data });
     } catch (error) {
-      this.setState({ loading: false, error })
+      this.setState({ loading: false, error });
     }
-  }
+  };
 
   render() {
     if (this.state.loading) {
-      return <p>Loading...</p>
+      return <p>Loading...</p>;
     }
 
     if (this.state.error) {
@@ -106,7 +106,7 @@ class List extends React.Component {
             Try again
           </button>
         </div>
-      )
+      );
     }
 
     return (
@@ -115,7 +115,7 @@ class List extends React.Component {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
-    )
+    );
   }
 }
 ```
@@ -134,12 +134,12 @@ class List extends React.Component {
     // this.setState({ loading: true, error: null }) Gone 👋
 
     try {
-      const { data } = await api.getData()
-      this.setState({ loading: false, data })
+      const { data } = await api.getData();
+      this.setState({ loading: false, data });
     } catch (error) {
-      this.setState({ loading: false, error })
+      this.setState({ loading: false, error });
     }
-  }
+  };
 
   onRetry = () => {
     this.setState(
@@ -148,8 +148,8 @@ class List extends React.Component {
         error: null,
       },
       () => this.fetchData(),
-    )
-  }
+    );
+  };
 
   // ...
 }
@@ -178,15 +178,15 @@ It's time to enter the safe and shiny world of types, where we can stop [_making
 Let's start with a tiny touch and strip the meaningless properties from different types of UI states.
 
 ```ts
-type LoadingState = { type: 'loading' }
-type SuccessState<T> = { type: 'sucess'; data: T }
-type FailureState = { type: 'failure'; error: Error }
+type LoadingState = { type: "loading" };
+type SuccessState<T> = { type: "sucess"; data: T };
+type FailureState = { type: "failure"; error: Error };
 ```
 
 Now we can use the simple but powerful [discriminated (or tagged) unions feature of TypeScript](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions).
 
 ```ts
-type State<T> = LoadingState | SuccessState<T> | FailureState
+type State<T> = LoadingState | SuccessState<T> | FailureState;
 ```
 
 By revisiting our state design, we made all these questions irrelevant.
@@ -200,31 +200,31 @@ How would that affect our component?
 ```tsx
 class List extends React.Component {
   // no more pointless initial values
-  state: State<{ id: number; name: string }[]> = { type: 'loading' }
+  state: State<{ id: number; name: string }[]> = { type: "loading" };
 
   componentDidMount() {
-    this.fetchData()
+    this.fetchData();
   }
 
   async fetchData() {
     try {
-      const { data } = await api.getData()
-      this.setState({ type: 'success', data })
+      const { data } = await api.getData();
+      this.setState({ type: "success", data });
     } catch (error) {
-      this.setState({ type: 'failure', error })
+      this.setState({ type: "failure", error });
     }
   }
 
   // no more nasty clean-ups
-  onRetry = () => this.setState({ type: 'loading' }, this.fetchData)
+  onRetry = () => this.setState({ type: "loading" }, this.fetchData);
 
   // no more top level if statements
   render() {
     switch (this.state.type) {
-      case 'loading':
-        return <p>Loading...</p>
+      case "loading":
+        return <p>Loading...</p>;
 
-      case 'failure':
+      case "failure":
         return (
           <div>
             <p>
@@ -236,16 +236,16 @@ class List extends React.Component {
               Try again
             </button>
           </div>
-        )
+        );
 
-      case 'success':
+      case "success":
         return (
           <ul>
             {this.state.data.map((item) => (
               <li key={item.id}>{item.name}</li>
             ))}
           </ul>
-        )
+        );
     }
   }
 }
