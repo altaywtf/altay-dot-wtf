@@ -1,7 +1,7 @@
 ---
-title: 'Dictionary – phrases'
+title: "Dictionary – phrases"
 oneliner: Interesting phrases I came across while reading.
-date: '2020-12-03T19:12:12Z'
+date: "2020-12-03T19:12:12Z"
 ---
 
 ### lack of everyday exposure to <something>

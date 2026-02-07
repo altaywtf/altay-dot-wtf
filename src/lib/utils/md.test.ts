@@ -16,7 +16,7 @@ describe("utils/md", () => {
 
   describe("getAbsoluteMarkdownLinks", () => {
     it("works", () => {
-      const input = 'hey [hello](/books/hello) ho [world](../books/world)';
+      const input = "hey [hello](/books/hello) ho [world](../books/world)";
       const output = ["[hello](/books/hello)"];
       expect(getAbsoluteMarkdownLinks(input)).toEqual(output);
     });

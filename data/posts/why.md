@@ -1,7 +1,7 @@
 ---
 title: Why are we doing what we are doing?
-oneliner: 'Seriously, wtf?'
-date: '2020-11-05T14:24:56Z'
+oneliner: "Seriously, wtf?"
+date: "2020-11-05T14:24:56Z"
 ---
 
 [Simple questions](../books/choose-yourself) have painful answers, and this one above is a gem. I don't recall where I heard it for the first time. I can see the reflections in almost everything I read. It instills a never-ending skepticism. Suddenly there is an infinite-scrolling to-do list.

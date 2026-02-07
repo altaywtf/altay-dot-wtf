@@ -93,12 +93,13 @@ import hero from '../images/hero.jpg';
 ```typescript
 // src/content/config.ts
 const blog = defineCollection({
-  type: 'content',
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    cover: image(),           // Validates and optimizes
-    coverAlt: z.string(),
-  }),
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      cover: image(), // Validates and optimizes
+      coverAlt: z.string(),
+    }),
 });
 ```
 
@@ -135,10 +136,8 @@ const optimizedBg = await getImage({
 // astro.config.mjs
 export default defineConfig({
   image: {
-    domains: ['cdn.example.com'],
-    remotePatterns: [
-      { protocol: 'https', hostname: '**.unsplash.com' },
-    ],
+    domains: ["cdn.example.com"],
+    remotePatterns: [{ protocol: "https", hostname: "**.unsplash.com" }],
   },
 });
 ```

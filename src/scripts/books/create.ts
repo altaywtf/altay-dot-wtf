@@ -42,45 +42,44 @@ const runSearchAndChooseStep = async (query: string) => {
   return data[bookIndex];
 };
 
-const runGetBaseBookMetaStep = async (
-  baseBook: BaseBook,
-): Promise<BaseBookWithMeta> => {
-  const { dateRead, quote, rating, remoteCoverImageURL, slug, title } =
-    await inquirer.prompt<BaseBookWithMeta & { remoteCoverImageURL: string }>([
-      {
-        default: baseBook.title,
-        name: "title",
-        type: "input",
-        message: "Book title:",
-      },
-      {
-        default: slugify(baseBook.title, { lower: true }),
-        name: "slug",
-        type: "input",
-        message: "Slug:",
-      },
-      {
-        default: baseBook.remoteCoverImage.url,
-        name: "remoteCoverImageURL",
-        type: "input",
-        message: "Cover image URL:",
-      },
-      {
-        name: "rating",
-        type: "number",
-        message: "Rating:",
-      },
-      {
-        name: "quote",
-        type: "input",
-        message: "Quote:",
-      },
-      {
-        name: "dateRead",
-        type: "input",
-        message: "Date read:",
-      },
-    ]);
+const runGetBaseBookMetaStep = async (baseBook: BaseBook): Promise<BaseBookWithMeta> => {
+  const { dateRead, quote, rating, remoteCoverImageURL, slug, title } = await inquirer.prompt<
+    BaseBookWithMeta & { remoteCoverImageURL: string }
+  >([
+    {
+      default: baseBook.title,
+      name: "title",
+      type: "input",
+      message: "Book title:",
+    },
+    {
+      default: slugify(baseBook.title, { lower: true }),
+      name: "slug",
+      type: "input",
+      message: "Slug:",
+    },
+    {
+      default: baseBook.remoteCoverImage.url,
+      name: "remoteCoverImageURL",
+      type: "input",
+      message: "Cover image URL:",
+    },
+    {
+      name: "rating",
+      type: "number",
+      message: "Rating:",
+    },
+    {
+      name: "quote",
+      type: "input",
+      message: "Quote:",
+    },
+    {
+      name: "dateRead",
+      type: "input",
+      message: "Date read:",
+    },
+  ]);
 
   return {
     ...baseBook,
@@ -109,9 +108,7 @@ const main = async () => {
   const baseBookWithMeta = await runGetBaseBookMetaStep(baseBook);
   const book = await runCreateBookFromBaseBookWithMetaStep(baseBookWithMeta);
   const booksJSON = addBookToBooksJSON(book);
-  console.log(
-    `${book.title} has been added, we have ${booksJSON.books.length} books(s) now.`,
-  );
+  console.log(`${book.title} has been added, we have ${booksJSON.books.length} books(s) now.`);
 };
 
 main();

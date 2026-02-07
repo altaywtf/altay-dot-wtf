@@ -1,7 +1,7 @@
 ---
 title: Happier Lighthouse with dynamic imports
 oneliner: Using a 450KB library to render text was not my brightest decision.
-date: '2020-11-01'
+date: "2020-11-01"
 ---
 
 I'm building this website with [Next.js](https://nextjs.org) and charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
@@ -51,10 +51,10 @@ It looked like this before the refactor:
 
 ```jsx
 // Markdown.jsx
-import ReactMarkdown from 'react-markdown'
-import { Prism } from 'react-syntax-highlighter'
+import ReactMarkdown from "react-markdown";
+import { Prism } from "react-syntax-highlighter";
 
-const Code = (props) => <Prism language={props.language}>{props.value}</Prism>
+const Code = (props) => <Prism language={props.language}>{props.value}</Prism>;
 
 const Markdown = ({ children }) => (
   <ReactMarkdown
@@ -64,9 +64,9 @@ const Markdown = ({ children }) => (
   >
     {children}
   </ReactMarkdown>
-)
+);
 
-export default Markdown
+export default Markdown;
 ```
 
 That might be a heavy library to load if I'm not planning to render any code blocks since it contains all the parsing logic with themes and such.
@@ -83,28 +83,28 @@ First, I changed my usage of `react-syntax-higlighter` to load and register pars
 
 ```jsx
 // MarkdownCodeBlock.jsx
-import { PrismLight } from 'react-syntax-highlighter'
-import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
-import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
+import { PrismLight } from "react-syntax-highlighter";
+import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
+import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
 
-PrismLight.registerLanguage('jsx', jsx)
-PrismLight.registerLanguage('tsx', tsx)
+PrismLight.registerLanguage("jsx", jsx);
+PrismLight.registerLanguage("tsx", tsx);
 
 const MarkdownCodeBlock = ({ language, value }) => (
   <PrismLight language={language}>{value}</PrismLight>
-)
+);
 
-export default MarkdownCodeBlock
+export default MarkdownCodeBlock;
 ```
 
 I also changed the strategy of using syntax highlighter to be on demand, so the other pages using markdown (such as [book notes](/books)) won't load `react-markdown` and friends.
 
 ```jsx
 // Markdown.jsx
-import ReactMarkdown from 'react-markdown'
-import dynamic from 'next/dynamic'
+import ReactMarkdown from "react-markdown";
+import dynamic from "next/dynamic";
 
-const MarkdownCodeBlock = dynamic(() => import('./MarkdownCodeBlock'))
+const MarkdownCodeBlock = dynamic(() => import("./MarkdownCodeBlock"));
 
 const Markdown = ({ children }) => (
   <ReactMarkdown
@@ -114,9 +114,9 @@ const Markdown = ({ children }) => (
   >
     {children}
   </ReactMarkdown>
-)
+);
 
-export default Markdown
+export default Markdown;
 ```
 
 ### ...and then, did they live happily after? 🤖👨‍💻

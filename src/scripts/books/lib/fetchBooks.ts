@@ -42,11 +42,7 @@ export const fetchBooksByQuery = async (query: string) => {
 
   return response.data.items
     .filter((i) => i.volumeInfo.authors && i.volumeInfo.authors.length > 0)
-    .filter(
-      (i) =>
-        i.volumeInfo.industryIdentifiers &&
-        i.volumeInfo.industryIdentifiers.length > 0,
-    )
+    .filter((i) => i.volumeInfo.industryIdentifiers && i.volumeInfo.industryIdentifiers.length > 0)
     .filter((i) => !!i.volumeInfo.imageLinks)
     .map(mapQueryBookToBaseBook);
 };

@@ -1,7 +1,7 @@
 ---
 title: We built an iMessage Extension for our React Native app
 oneliner: Now you can too.
-date: '2019-04-14'
+date: "2019-04-14"
 ---
 
 This post was redacted by the lovely marketing people of Lisk, and originally published in [medium](https://medium.com/lisk-blog/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-495beb8e6047), [dev.to](https://dev.to/altay/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-2387) and [dzone](https://dzone.com/posts/imessenger).

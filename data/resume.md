@@ -38,17 +38,14 @@ Please check [this post](https://altay.wtf/posts/decade) to read more about how 
 #### Klarna \(May 2019 - Aug 2021\)
 
 - **Consumer Deals**
-
   - Onboarded new hires to scale an MVP I've built earlier.
   - Worked on feature development and cross-team integrations.
 
 - **App Client Core**
-
   - Worked on feature isolation infrastructure in a monorepo used by 50+ teams.
   - Reviewed 300+ pull requests, mentored new joiners, and participated in hiring interviews.
 
 - **Marketing Touchpoint Infrastructure**
-
   - Integrated third-party SDKs for analytics and marketing.
   - Developed loyalty campaign infrastructures.
 

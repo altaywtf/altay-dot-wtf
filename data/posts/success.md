@@ -1,7 +1,7 @@
 ---
 title: Three definitions of success
 oneliner: How to build your own hedonic treadmill.
-date: '2020-12-21T20:41:04Z'
+date: "2020-12-21T20:41:04Z"
 ---
 
 In his latest book [_The New Corporation_](../books/the-new-corporation), Joel Balkan mentions a concept called _economization_ (of individuals). Today's capital driven system is leaving its' footprint on our personal lives. We're turning into living creatures operating as mini-corporations. Many of our actions carry a purpose to invest in ourselves and attract investors.

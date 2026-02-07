@@ -354,7 +354,7 @@ Create `postcss.config.mjs`:
 export default {
   plugins: {
     autoprefixer: {},
-    'postcss-nesting': {},
+    "postcss-nesting": {},
   },
 };
 ```

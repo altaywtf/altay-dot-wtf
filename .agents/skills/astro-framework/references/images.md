@@ -89,9 +89,9 @@ Output:
 
 ```html
 <picture>
-  <source srcset="..." type="image/avif" sizes="...">
-  <source srcset="..." type="image/webp" sizes="...">
-  <img src="..." alt="Responsive image" loading="lazy" decoding="async">
+  <source srcset="..." type="image/avif" sizes="..." />
+  <source srcset="..." type="image/webp" sizes="..." />
+  <img src="..." alt="Responsive image" loading="lazy" decoding="async" />
 </picture>
 ```
 
@@ -172,15 +172,16 @@ const imagePaths = Object.keys(images);
 
 ```typescript
 // src/content/config.ts
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
 
 const blog = defineCollection({
-  type: 'content',
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    cover: image(),
-    coverAlt: z.string(),
-  }),
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      cover: image(),
+      coverAlt: z.string(),
+    }),
 });
 
 export const collections = { blog };
@@ -214,6 +215,7 @@ const post = await getEntry('blog', 'my-post');
 ## Image Formats
 
 Supported output formats:
+
 - `webp` (default for optimization)
 - `avif` (best compression, slower)
 - `png` (lossless)
@@ -282,20 +284,20 @@ export default defineConfig({
   image: {
     // Sharp is default, or use custom service
     service: {
-      entrypoint: 'astro/assets/services/sharp',
+      entrypoint: "astro/assets/services/sharp",
       config: {
         limitInputPixels: false,
       },
     },
 
     // Allowed remote domains
-    domains: ['example.com', 'cdn.example.com'],
+    domains: ["example.com", "cdn.example.com"],
 
     // Allowed remote patterns
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**.amazonaws.com',
+        protocol: "https",
+        hostname: "**.amazonaws.com",
       },
     ],
   },
@@ -309,9 +311,9 @@ export default defineConfig({
 export default defineConfig({
   image: {
     service: {
-      entrypoint: '@astrojs/cloudinary',
+      entrypoint: "@astrojs/cloudinary",
       config: {
-        cloudName: 'your-cloud-name',
+        cloudName: "your-cloud-name",
       },
     },
   },
@@ -324,6 +326,7 @@ export default defineConfig({
 
 ```markdown
 <!-- src/content/blog/post.md -->
+
 ![Alt text](./images/image.jpg)
 ```
 
@@ -334,8 +337,8 @@ export default defineConfig({
 title: My Post
 ---
 
-import { Image } from 'astro:assets';
-import photo from './images/photo.jpg';
+import { Image } from "astro:assets";
+import photo from "./images/photo.jpg";
 
 # My Post
 

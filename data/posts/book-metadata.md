@@ -1,7 +1,7 @@
 ---
 title: Enhancing book notes with metadata
 oneliner: You can read, you can code. So why not?
-date: '2020-11-09T15:29:40Z'
+date: "2020-11-09T15:29:40Z"
 ---
 
 If you like to take notes from the books you read and know a little bit of JavaScript, this may help you.
@@ -24,23 +24,23 @@ oneliner: A dead program normally does a lot less damage than a crippled one.
 ```
 
 ```ts
-import fs from 'fs'
-import matter from 'gray-matter'
+import fs from "fs";
+import matter from "gray-matter";
 
 type BookNote = {
-  content: string
+  content: string;
   data: {
-    isbn: string
-    date_read: string
-    oneliner: string
-  }
-}
+    isbn: string;
+    date_read: string;
+    oneliner: string;
+  };
+};
 
 const readMarkdownFile = (filePath: string) => {
-  const file = fs.readFileSync(filePath, 'utf-8')
-  const { data, content } = matter(file)
-  return { data, content } as BookNote
-}
+  const file = fs.readFileSync(filePath, "utf-8");
+  const { data, content } = matter(file);
+  return { data, content } as BookNote;
+};
 ```
 
 It's easy to retrieve a lot of information and generate specific meta images by using the ISBN. That is the only identifier we need for the rest. Amazon usually uses ISBN-10 as a path parameter for the product pages.
@@ -56,40 +56,40 @@ Google Books has a pretty simple query endpoint that we can pass the ISBN and AP
 
 ```ts
 type BookData = {
-  isbn: string
-  title: string
-  authors: string[]
-  coverImageURL: string
-}
+  isbn: string;
+  title: string;
+  authors: string[];
+  coverImageURL: string;
+};
 
 type GoogleBooksQueryResult = {
-  totalItems: number
+  totalItems: number;
   items: Array<{
     volumeInfo: {
-      title: string
-      authors: string[]
+      title: string;
+      authors: string[];
       imageLinks: {
-        thumbnail: string
-      }
-    }
-  }>
-}
+        thumbnail: string;
+      };
+    };
+  }>;
+};
 
 const decodeGoogleBooksResponse = (json: GoogleBooksQueryResult): BookData => ({
   isbn,
   title: json.items[0].volumeInfo.title,
   authors: json.items[0].volumeInfo.authors,
   coverImageURL: json.items[0].volumeInfo.imageLinks.thumbnail,
-})
+});
 
-const BASE_URL = `https://www.googleapis.com/books/v1/volumes`
+const BASE_URL = `https://www.googleapis.com/books/v1/volumes`;
 
 const fetchBookMetadata = async (isbn: string): Promise<BookData> => {
-  const url = `${BASE_URL}?q=isbn:${isbn}&key=${GOOGLE_BOOKS_API_KEY}`
-  const response = await fetch(url)
-  const json = await response.json()
-  return decodeGoogleBooksResponse(json)
-}
+  const url = `${BASE_URL}?q=isbn:${isbn}&key=${GOOGLE_BOOKS_API_KEY}`;
+  const response = await fetch(url);
+  const json = await response.json();
+  return decodeGoogleBooksResponse(json);
+};
 ```
 
 ### Creating a meta image for the Book page
@@ -113,67 +113,61 @@ Here's the flow:
 - Return the URL.
 
 ```ts
-import { createCanvas, loadImage } from 'canvas'
-import fetch from 'node-fetch'
-import imageSize from 'image-size'
-import fs from 'fs'
+import { createCanvas, loadImage } from "canvas";
+import fetch from "node-fetch";
+import imageSize from "image-size";
+import fs from "fs";
 
 type ImageData = {
-  buffer: Buffer
-  width: number
-  height: number
-}
+  buffer: Buffer;
+  width: number;
+  height: number;
+};
 
 const getImageDataFromBuffer = (buffer: Buffer): ImageData => {
-  const { width, height } = imageSize(buffer)
+  const { width, height } = imageSize(buffer);
 
   if (!width || !height) {
-    throw new Error('Could not get image data')
+    throw new Error("Could not get image data");
   }
 
-  return { buffer, width, height }
-}
+  return { buffer, width, height };
+};
 
 const getImageData = async (url: string): Promise<ImageData> => {
-  const response = await fetch(url)
-  const buffer = await response.buffer()
-  return getImageDataFromBuffer(buffer)
-}
+  const response = await fetch(url);
+  const buffer = await response.buffer();
+  return getImageDataFromBuffer(buffer);
+};
 
-const META_IMAGE_WIDTH = 1200
-const META_IMAGE_HEIGHT = 628
-const META_IMAGE_BG_FILL_COLOR = '#050505'
+const META_IMAGE_WIDTH = 1200;
+const META_IMAGE_HEIGHT = 628;
+const META_IMAGE_BG_FILL_COLOR = "#050505";
 
 const createCanvasForMetaImage = () => {
-  const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
-  const context = canvas.getContext('2d')
-  context.fillStyle = META_IMAGE_BG_FILL_COLOR
-  context.fillRect(0, 0, META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
-  return { canvas, context }
-}
+  const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT);
+  const context = canvas.getContext("2d");
+  context.fillStyle = META_IMAGE_BG_FILL_COLOR;
+  context.fillRect(0, 0, META_IMAGE_WIDTH, META_IMAGE_HEIGHT);
+  return { canvas, context };
+};
 
 const generateMetaImageForBook = (book: BookData) => {
-  const imagePath = `../public/images/${book.isbn}.png`
-  const imageData = await getImageData(book.coverImageURL)
-  const image = await loadImage(imageData.buffer)
+  const imagePath = `../public/images/${book.isbn}.png`;
+  const imageData = await getImageData(book.coverImageURL);
+  const image = await loadImage(imageData.buffer);
 
   const coordinates = {
     x: (META_IMAGE_WIDTH - imageData.Width) / 2,
     y: (META_IMAGE_HEIGHT - imageData.Height) / 2,
-  }
+  };
 
-  const { canvas, context } = createCanvasForMetaImage()
-  context.drawImage(
-    image,
-    coordinates.x,
-    coordinates.y,
-    imageData.width,
-    imageData.height,
-  )
+  const { canvas, context } = createCanvasForMetaImage();
+  context.drawImage(image, coordinates.x, coordinates.y, imageData.width, imageData.height);
 
-  fs.writeFileSync(imagePath, canvas.toBuffer('image/png'))
-  return imagePath
-}
+  fs.writeFileSync(imagePath, canvas.toBuffer("image/png"));
+  return imagePath;
+};
 ```
 
 Since it's a Next.js app, I prefer to save it to the filesystem. An alternative approach could be uploading to a CDN.

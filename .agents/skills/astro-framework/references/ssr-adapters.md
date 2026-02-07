@@ -9,7 +9,7 @@ Astro supports on-demand server rendering with various deployment adapters.
 ```javascript
 // astro.config.mjs
 export default defineConfig({
-  output: 'static', // Default - all pages prerendered
+  output: "static", // Default - all pages prerendered
 });
 ```
 
@@ -19,12 +19,12 @@ All pages built at build time. No server required.
 
 ```javascript
 // astro.config.mjs
-import node from '@astrojs/node';
+import node from "@astrojs/node";
 
 export default defineConfig({
-  output: 'server', // All pages rendered on-demand
+  output: "server", // All pages rendered on-demand
   adapter: node({
-    mode: 'standalone',
+    mode: "standalone",
   }),
 });
 ```
@@ -35,10 +35,10 @@ All pages rendered per-request. Requires an adapter.
 
 ```javascript
 // astro.config.mjs
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  output: 'hybrid', // Static by default, opt-in to SSR
+  output: "hybrid", // Static by default, opt-in to SSR
   adapter: vercel(),
 });
 ```
@@ -81,12 +81,12 @@ npx astro add node
 
 ```javascript
 // astro.config.mjs
-import node from '@astrojs/node';
+import node from "@astrojs/node";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: node({
-    mode: 'standalone', // or 'middleware'
+    mode: "standalone", // or 'middleware'
   }),
 });
 ```
@@ -99,10 +99,10 @@ npx astro add vercel
 
 ```javascript
 // astro.config.mjs
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: vercel({
     webAnalytics: { enabled: true },
     imageService: true,
@@ -118,10 +118,10 @@ npx astro add netlify
 
 ```javascript
 // astro.config.mjs
-import netlify from '@astrojs/netlify';
+import netlify from "@astrojs/netlify";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: netlify({
     edgeMiddleware: true, // Use Edge Functions
   }),
@@ -136,15 +136,15 @@ npx astro add cloudflare
 
 ```javascript
 // astro.config.mjs
-import cloudflare from '@astrojs/cloudflare';
+import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: cloudflare({
-    mode: 'directory', // or 'advanced'
+    mode: "directory", // or 'advanced'
     routes: {
-      strategy: 'include',
-      include: ['/api/*'],
+      strategy: "include",
+      include: ["/api/*"],
     },
   }),
 });
@@ -158,10 +158,10 @@ npx astro add deno
 
 ```javascript
 // astro.config.mjs
-import deno from '@astrojs/deno';
+import deno from "@astrojs/deno";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: deno(),
 });
 ```
@@ -260,7 +260,7 @@ import UserProfile from '../components/UserProfile.astro';
 
 ```typescript
 // src/pages/api/users/[id].ts
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 export const GET: APIRoute = async ({ params, request }) => {
   const { id } = params;
@@ -271,7 +271,7 @@ export const GET: APIRoute = async ({ params, request }) => {
   }
 
   return new Response(JSON.stringify(user), {
-    headers: { 'Content-Type': 'application/json' },
+    headers: { "Content-Type": "application/json" },
   });
 };
 
@@ -295,7 +295,7 @@ export const DELETE: APIRoute = async ({ params }) => {
 
 ```typescript
 // src/pages/api/stream.ts
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 export const GET: APIRoute = async () => {
   const encoder = new TextEncoder();
@@ -304,7 +304,7 @@ export const GET: APIRoute = async () => {
     async start(controller) {
       for (let i = 0; i < 10; i++) {
         controller.enqueue(encoder.encode(`data: ${i}\n\n`));
-        await new Promise(r => setTimeout(r, 1000));
+        await new Promise((r) => setTimeout(r, 1000));
       }
       controller.close();
     },
@@ -312,8 +312,8 @@ export const GET: APIRoute = async () => {
 
   return new Response(stream, {
     headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
+      "Content-Type": "text/event-stream",
+      "Cache-Control": "no-cache",
     },
   });
 };
@@ -326,7 +326,7 @@ Access shared data across middleware and pages:
 ```typescript
 // src/middleware.ts
 export const onRequest = async ({ locals, request }, next) => {
-  const token = request.headers.get('authorization');
+  const token = request.headers.get("authorization");
   locals.user = await validateToken(token);
   return next();
 };

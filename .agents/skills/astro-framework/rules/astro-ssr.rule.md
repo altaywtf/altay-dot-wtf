@@ -13,9 +13,9 @@ globs:
 ```javascript
 // astro.config.mjs
 export default defineConfig({
-  output: 'static',  // Default - all prerendered
-  output: 'server',  // All server-rendered
-  output: 'hybrid',  // Static default, opt-in SSR
+  output: "static", // Default - all prerendered
+  output: "server", // All server-rendered
+  output: "hybrid", // Static default, opt-in SSR
   adapter: vercel(), // Required for server/hybrid
 });
 ```
@@ -82,14 +82,14 @@ if (!session) {
 
 ```typescript
 // src/middleware.ts
-import { defineMiddleware, sequence } from 'astro:middleware';
+import { defineMiddleware, sequence } from "astro:middleware";
 
 const auth = defineMiddleware(async ({ cookies, locals, redirect }, next) => {
-  const token = cookies.get('token')?.value;
+  const token = cookies.get("token")?.value;
   locals.user = token ? await verifyToken(token) : null;
 
-  if (!locals.user && url.pathname.startsWith('/dashboard')) {
-    return redirect('/login');
+  if (!locals.user && url.pathname.startsWith("/dashboard")) {
+    return redirect("/login");
   }
 
   return next();

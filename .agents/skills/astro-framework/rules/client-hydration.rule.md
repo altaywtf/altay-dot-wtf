@@ -77,6 +77,7 @@ import Chart from './Chart.jsx';            // Browser APIs only
 ## Measuring Impact
 
 Use browser DevTools to verify:
+
 1. Network tab: Check JS bundle sizes
 2. Performance tab: Measure TTI (Time to Interactive)
 3. Lighthouse: Verify Core Web Vitals

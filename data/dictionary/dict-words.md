@@ -1,7 +1,7 @@
 ---
-title: 'Dictionary – words'
+title: "Dictionary – words"
 oneliner: I didn't know the meaning of those words, but now I can remember.
-date: '2020-12-03T19:12:12Z'
+date: "2020-12-03T19:12:12Z"
 ---
 
 ### reconnaissance

@@ -56,5 +56,4 @@ export const getBook = (slug: string) => {
   };
 };
 
-export const getBooksWithMarkdown = () =>
-  getBooks().map((book) => getBook(book.slug));
+export const getBooksWithMarkdown = () => getBooks().map((book) => getBook(book.slug));

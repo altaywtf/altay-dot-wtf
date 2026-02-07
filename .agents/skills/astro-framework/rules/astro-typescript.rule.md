@@ -89,7 +89,7 @@ declare namespace App {
       email: string;
       name: string;
     } | null;
-    theme: 'light' | 'dark';
+    theme: "light" | "dark";
     requestId: string;
   }
 }
@@ -99,13 +99,13 @@ declare namespace App {
 
 ```typescript
 // src/content/config.ts
-import { defineCollection, z, reference } from 'astro:content';
+import { defineCollection, z, reference } from "astro:content";
 
 const blog = defineCollection({
-  type: 'content',
+  type: "content",
   schema: z.object({
     title: z.string(),
-    author: reference('authors'),
+    author: reference("authors"),
   }),
 });
 
@@ -118,13 +118,13 @@ const blog = defineCollection({
 
 ```typescript
 // src/pages/api/example.ts
-import type { APIRoute, APIContext } from 'astro';
+import type { APIRoute, APIContext } from "astro";
 
 export const GET: APIRoute = async (context: APIContext) => {
   const { params, request, cookies, locals, url } = context;
 
   return new Response(JSON.stringify({ ok: true }), {
-    headers: { 'Content-Type': 'application/json' },
+    headers: { "Content-Type": "application/json" },
   });
 };
 ```

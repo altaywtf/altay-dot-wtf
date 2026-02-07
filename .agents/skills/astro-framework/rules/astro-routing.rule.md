@@ -81,14 +81,14 @@ const { path } = Astro.params;
 
 ```typescript
 // src/pages/api/posts.ts
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 export const GET: APIRoute = async ({ params, request }) => {
   const data = await fetchPosts();
 
   return new Response(JSON.stringify(data), {
     status: 200,
-    headers: { 'Content-Type': 'application/json' },
+    headers: { "Content-Type": "application/json" },
   });
 };
 
@@ -96,7 +96,7 @@ export const POST: APIRoute = async ({ request }) => {
   const body = await request.json();
 
   if (!body.title) {
-    return new Response(JSON.stringify({ error: 'Title required' }), {
+    return new Response(JSON.stringify({ error: "Title required" }), {
       status: 400,
     });
   }
@@ -135,8 +135,8 @@ const { page } = Astro.props;
 // astro.config.mjs
 export default defineConfig({
   redirects: {
-    '/old': '/new',
-    '/blog/[...slug]': '/posts/[...slug]',
+    "/old": "/new",
+    "/blog/[...slug]": "/posts/[...slug]",
   },
 });
 ```

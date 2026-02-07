@@ -22,9 +22,7 @@ export const addBookToBooksJSON = (book: Book) => {
     books: (booksJSON.books || [])
       .filter((b) => b.slug !== book.slug)
       .concat(book)
-      .sort((a, b) =>
-        Date.parse(a.dateRead) > Date.parse(b.dateRead) ? -1 : 1,
-      ),
+      .sort((a, b) => (Date.parse(a.dateRead) > Date.parse(b.dateRead) ? -1 : 1)),
   });
 
   writeBooksJSON(newBooksJSON);

@@ -12,21 +12,22 @@ globs:
 Always define schemas in `src/content/config.ts`:
 
 ```typescript
-import { defineCollection, z, reference } from 'astro:content';
+import { defineCollection, z, reference } from "astro:content";
 
 const blog = defineCollection({
-  type: 'content',
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    description: z.string().max(160),
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    draft: z.boolean().default(false),
-    cover: image(),
-    coverAlt: z.string(),
-    author: reference('authors'),
-    tags: z.array(z.string()).default([]),
-  }),
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().max(160),
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      draft: z.boolean().default(false),
+      cover: image(),
+      coverAlt: z.string(),
+      author: reference("authors"),
+      tags: z.array(z.string()).default([]),
+    }),
 });
 
 export const collections = { blog };
@@ -54,13 +55,15 @@ export const collections = { blog };
 
 ```typescript
 // Get all published posts, sorted by date
-const posts = (await getCollection('blog', ({ data }) => {
-  return import.meta.env.PROD ? !data.draft : true;
-})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (
+  await getCollection("blog", ({ data }) => {
+    return import.meta.env.PROD ? !data.draft : true;
+  })
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 // Get single entry
-const post = await getEntry('blog', 'my-post-slug');
-if (!post) return Astro.redirect('/404');
+const post = await getEntry("blog", "my-post-slug");
+if (!post) return Astro.redirect("/404");
 
 // Resolve references
 const author = await getEntry(post.data.author);

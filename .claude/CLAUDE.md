@@ -3,6 +3,7 @@
 Personal website at [altay.wtf](https://altay.wtf). Content site with blog posts, book notes, and resume.
 
 ## Stack
+
 - **Framework**: Astro 5 with React islands (migrating from Next.js 15)
 - **Content**: Astro Content Collections (Markdown/MDX in `src/content/`)
 - **Styling**: Tailwind CSS 4 + `@tailwindcss/typography`
@@ -14,6 +15,7 @@ Personal website at [altay.wtf](https://altay.wtf). Content site with blog posts
 - **Dev port**: 1994
 
 ## Commands
+
 ```sh
 bun run dev          # Start dev server on port 1994
 bun run build        # Production build
@@ -25,6 +27,7 @@ bun run typecheck    # tsc --noEmit
 ```
 
 ## Project Structure
+
 ```
 src/
   content/           # Content Collections (posts, books, pages)
@@ -39,11 +42,13 @@ data/                # Legacy data files (books.json)
 ```
 
 ## Content
+
 - **Posts**: `src/content/posts/*.md` — frontmatter: title, oneliner, date
 - **Books**: `src/content/books/*.md` — metadata from `data/books.json`
 - **Pages**: `src/content/pages/` — home, resume
 
 ## Conventions
+
 - Static components → `.astro` files (no JS shipped)
 - Interactive components → React `.tsx` with `client:load` directive
 - Only ship JS when interactivity is required (Astro islands)
@@ -51,6 +56,7 @@ data/                # Legacy data files (books.json)
 - OG images generated at build time with Satori
 
 ## URLs (Must Preserve)
+
 ```
 /               → home
 /posts          → post list

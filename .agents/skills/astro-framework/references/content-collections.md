@@ -23,10 +23,10 @@ src/
 
 ```typescript
 // src/content/config.ts
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
 
 const blogCollection = defineCollection({
-  type: 'content', // Markdown/MDX files
+  type: "content", // Markdown/MDX files
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -40,16 +40,18 @@ const blogCollection = defineCollection({
 });
 
 const authorsCollection = defineCollection({
-  type: 'data', // JSON/YAML files
+  type: "data", // JSON/YAML files
   schema: z.object({
     name: z.string(),
     email: z.string().email(),
     bio: z.string(),
     avatar: z.string().url(),
-    social: z.object({
-      twitter: z.string().optional(),
-      github: z.string().optional(),
-    }).optional(),
+    social: z
+      .object({
+        twitter: z.string().optional(),
+        github: z.string().optional(),
+      })
+      .optional(),
   }),
 });
 
@@ -96,7 +98,7 @@ For JSON or YAML data files:
 ### Common Field Types
 
 ```typescript
-import { z } from 'astro:content';
+import { z } from "astro:content";
 
 const schema = z.object({
   // Strings
@@ -115,7 +117,7 @@ const schema = z.object({
 
   // Arrays
   tags: z.array(z.string()),
-  categories: z.array(z.enum(['tech', 'life', 'travel'])),
+  categories: z.array(z.enum(["tech", "life", "travel"])),
 
   // Objects
   author: z.object({
@@ -124,7 +126,7 @@ const schema = z.object({
   }),
 
   // Enums
-  status: z.enum(['draft', 'published', 'archived']),
+  status: z.enum(["draft", "published", "archived"]),
 
   // Optional fields
   description: z.string().optional(),
@@ -135,8 +137,8 @@ const schema = z.object({
 
   // Unions
   media: z.union([
-    z.object({ type: z.literal('image'), src: z.string() }),
-    z.object({ type: z.literal('video'), url: z.string() }),
+    z.object({ type: z.literal("image"), src: z.string() }),
+    z.object({ type: z.literal("video"), url: z.string() }),
   ]),
 });
 ```
@@ -144,30 +146,31 @@ const schema = z.object({
 ### Image Schema
 
 ```typescript
-import { defineCollection, z } from 'astro:content';
-import { image } from 'astro:schema';
+import { defineCollection, z } from "astro:content";
+import { image } from "astro:schema";
 
 const blog = defineCollection({
-  type: 'content',
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    cover: image(), // Validates and optimizes images
-    coverAlt: z.string(),
-  }),
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      cover: image(), // Validates and optimizes images
+      coverAlt: z.string(),
+    }),
 });
 ```
 
 ### Reference Other Collections
 
 ```typescript
-import { defineCollection, z, reference } from 'astro:content';
+import { defineCollection, z, reference } from "astro:content";
 
 const blog = defineCollection({
-  type: 'content',
+  type: "content",
   schema: z.object({
     title: z.string(),
-    author: reference('authors'), // References authors collection
-    relatedPosts: z.array(reference('blog')).optional(),
+    author: reference("authors"), // References authors collection
+    relatedPosts: z.array(reference("blog")).optional(),
   }),
 });
 ```
@@ -303,8 +306,8 @@ const { Content } = await post.render();
 
 ```typescript
 // src/content/config.ts
-import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { defineCollection, z } from "astro:content";
+import { glob, file } from "astro/loaders";
 
 // Glob loader for multiple files
 const blog = defineCollection({
@@ -333,7 +336,7 @@ export const collections = { blog, settings };
 // Load from API
 const products = defineCollection({
   loader: async () => {
-    const response = await fetch('https://api.example.com/products');
+    const response = await fetch("https://api.example.com/products");
     const data = await response.json();
     return data.map((product: any) => ({
       id: product.id,
