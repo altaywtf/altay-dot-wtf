@@ -1,4 +1,4 @@
-import { mock, describe, beforeAll, it, expect } from "bun:test";
+import { mock, describe, it, expect } from "bun:test";
 
 mock.module("@/lib/posts", () => ({
   getPostsWithMarkdown: () => [
