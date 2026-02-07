@@ -1,0 +1,41 @@
+---
+import Base from "@/layouts/Base.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { readMarkdownFile } from "@/lib/utils/md";
+import { renderMarkdown } from "@/lib/utils/render-markdown";
+import matter from "gray-matter";
+import fs from "node:fs";
+import { join } from "node:path";
+
+export function getStaticPaths() {
+  const dedicatedPages = new Set(["home", "resume"]);
+  const dataDir = join(process.cwd(), "data");
+  const files = fs
+    .readdirSync(dataDir, "utf-8")
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => f.replace(".md", ""))
+    .filter((slug) => !dedicatedPages.has(slug));
+
+  return files.map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const file = readMarkdownFile(`${slug}.md`);
+const { content: markdown, data } = matter(file);
+const html = await renderMarkdown(markdown);
+const title = (data as Record<string, unknown>).title as string | undefined;
+---
+
+<Base title={title}>
+  <div class="flex flex-col gap-6">
+    <BackButton client:load />
+
+    {title && <h1 class="text-2xl font-semibold">{title}</h1>}
+
+    <div class="prose prose-invert prose-neutral max-w-none">
+      <Fragment set:html={html} />
+    </div>
+  </div>
+</Base>

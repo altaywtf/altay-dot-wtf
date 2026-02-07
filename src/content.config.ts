@@ -16,7 +16,7 @@ const books = defineCollection({
 });
 
 const pages = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./data" }),
+  loader: glob({ pattern: "*.md", base: "./data" }),
   schema: z.object({}).passthrough().optional(),
 });
 
