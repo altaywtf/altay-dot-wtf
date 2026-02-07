@@ -1,0 +1,32 @@
+---
+import Base from "@/layouts/Base.astro";
+import Page from "@/components/Page.astro";
+import BackButton from "@/components/react/BackButton.tsx";
+import { getDictionaryEntries } from "@/lib/dictionary";
+
+const entries = getDictionaryEntries();
+---
+
+<Base title="Dictionary">
+  <div class="mb-6">
+    <BackButton client:load />
+  </div>
+
+  <Page title="Dictionary" description="Words, phrases, and etymology I picked up while reading.">
+    <div class="flex flex-col gap-6">
+      {entries.map((entry) => (
+        <div class="flex flex-col gap-1">
+          <div>
+            <a
+              class="font-medium text-amber-400 hover:text-amber-200"
+              href={entry.path}
+            >
+              {entry.title}
+            </a>
+          </div>
+          <p>{entry.oneliner}</p>
+        </div>
+      ))}
+    </div>
+  </Page>
+</Base>
