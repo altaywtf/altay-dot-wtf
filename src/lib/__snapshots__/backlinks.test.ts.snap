@@ -1,0 +1,16 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`getBacklinks works 1`] = `
+[
+  {
+    "path": "/posts/yes",
+    "title": "yes",
+    "type": "post",
+  },
+  {
+    "path": "/books/offline-matters",
+    "title": "Offline Matters by Jess Henderson",
+    "type": "book",
+  },
+]
+`;
