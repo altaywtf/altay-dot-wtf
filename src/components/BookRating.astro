@@ -14,7 +14,7 @@ const { rating, max = 5 } = Astro.props;
       width="14"
       height="14"
       viewBox="0 0 24 24"
-      fill={i < rating ? "currentColor" : "currentColor"}
+      fill="currentColor"
       class:list={["inline-block", i < rating ? "text-amber-400" : "text-neutral-700"]}
       stroke="none"
     >
