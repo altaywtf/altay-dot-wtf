@@ -1,59 +1,72 @@
 # CLAUDE.md — altay.wtf
 
-Personal website at [altay.wtf](https://altay.wtf). Content site with blog posts, book notes, and resume.
+Personal website at [altay.wtf](https://altay.wtf). Blog posts, book notes, dictionary, and resume.
 
 ## Stack
 
-- **Framework**: Astro 5 with React islands (migrating from Next.js 15)
-- **Content**: Astro Content Collections (Markdown/MDX in `src/content/`)
+- **Framework**: Astro 5 (static output)
+- **Content**: MDX/Markdown in `data/`, loaded via Astro Content Collections (glob loaders)
 - **Styling**: Tailwind CSS 4 + `@tailwindcss/typography`
-- **Linting**: oxlint (not ESLint/Biome)
+- **OG Images**: Build-time generation with Satori + resvg
+- **Linting**: oxlint (`--ignore-pattern '*.astro'` — false positives in .astro frontmatter)
 - **Formatting**: oxfmt
 - **Runtime**: Bun (not Node.js)
 - **Testing**: `bun:test`
-- **Deploy**: Cloudflare Pages (static output)
+- **Deploy**: Cloudflare Workers (static assets)
 - **Dev port**: 1994
 
 ## Commands
 
 ```sh
 bun run dev          # Start dev server on port 1994
-bun run build        # Production build
+bun run build        # Production build (astro build)
 bun run preview      # Preview production build
+bun run lint         # oxlint --ignore-pattern '*.astro'
+bun run format       # oxfmt .
+bun run format:check # oxfmt --check .
+bun run typecheck    # astro check && tsc --noEmit
+bun run knip         # Find unused exports/deps
 bun test             # Run tests
-bun run lint         # oxlint
-bun run format       # oxfmt
-bun run typecheck    # tsc --noEmit
 ```
 
 ## Project Structure
 
 ```
 src/
-  content/           # Content Collections (posts, books, pages)
-  pages/             # File-based routing
+  pages/             # File-based routing (.astro files)
+  content/           # Content Collection definitions
   layouts/           # Base and page layouts
   components/        # Astro + React components
-  lib/               # Utilities
+  lib/               # Utilities (og image generation, etc.)
+  config/            # Site configuration
+  fonts/             # Font files for OG images
+  scripts/           # Helper scripts (book creation, image updates)
   styles/            # Global CSS
+  content.config.ts  # Content Collection schema
+data/
+  posts/             # Blog posts (MDX/Markdown)
+  books/             # Book notes (MDX/Markdown)
+  books.json         # Book metadata (covers, authors, etc.)
+  dictionary/        # Word/phrase definitions
+  home.md            # Homepage content
+  resume.md          # Resume content
 public/              # Static assets (images, fonts)
-data/                # Legacy data files (books.json)
-.agents/docs/        # Agent working memory (plan, assumptions, notes)
 ```
 
 ## Content
 
-- **Posts**: `src/content/posts/*.md` — frontmatter: title, oneliner, date
-- **Books**: `src/content/books/*.md` — metadata from `data/books.json`
-- **Pages**: `src/content/pages/` — home, resume
+- **Posts**: `data/posts/*.md` — frontmatter: title, oneliner, date
+- **Books**: `data/books/*.md` + `data/books.json` — notes with metadata
+- **Dictionary**: `data/dictionary/*.md` — word/phrase definitions
+- **Pages**: `data/home.md`, `data/resume.md` — standalone pages
 
 ## Conventions
 
 - Static components → `.astro` files (no JS shipped)
 - Interactive components → React `.tsx` with `client:load` directive
 - Only ship JS when interactivity is required (Astro islands)
-- All content is Markdown, rendered at build time
-- OG images generated at build time with Satori
+- All content is Markdown/MDX, rendered at build time
+- OG images generated at build time with Satori + resvg
 
 ## URLs (Must Preserve)
 
@@ -63,6 +76,6 @@ data/                # Legacy data files (books.json)
 /posts/[slug]   → individual post
 /books          → book list
 /books/[slug]   → individual book
+/dictionary     → dictionary
 /resume         → resume
-/cv             → 301 redirect to /resume
 ```
