@@ -14,10 +14,14 @@ const SITE_TITLE = "altay.wtf";
 const SITE_DESCRIPTION = "Hi, I'm Altay and this is my website.";
 const SITE_URL = "https://altay.wtf";
 
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "";
+const ogSlug = pathname || "/index";
+const defaultOgImage = `${SITE_URL}/og${ogSlug}.png`;
+
 const {
   title,
   description = SITE_DESCRIPTION,
-  ogImage = `${SITE_URL}/images/meta-bg.png`,
+  ogImage = defaultOgImage,
   ogTitle,
   ogDescription,
   ogType = "website",
