@@ -13,7 +13,8 @@
     "test": "bun test",
     "typecheck": "astro check && tsc --noEmit",
     "update:book-images": "tsx src/scripts/books/update-images.ts",
-    "knip": "knip"
+    "knip": "knip",
+    "check": "bun run lint && bun run typecheck && bun run format:check && bun run knip"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
