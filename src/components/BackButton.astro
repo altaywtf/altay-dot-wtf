@@ -1,0 +1,45 @@
+---
+interface Props {
+  href?: string;
+  label?: string;
+}
+
+const { href = "/", label = "altay.wtf" } = Astro.props;
+---
+
+<button class="cursor-pointer" type="button" data-href={href}>
+  <span class="flex items-center gap-1 text-neutral-400 hover:text-neutral-300">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="mt-0.5"
+    >
+      <path d="M6 8L2 12L6 16"></path>
+      <path d="M2 12H22"></path>
+    </svg>
+    {label}
+  </span>
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>("button[data-href]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const href = btn.dataset.href!;
+      const storage = globalThis?.sessionStorage;
+      const prevPath = storage?.getItem("PATH_HISTORY");
+
+      if (prevPath === href) {
+        window.history.back();
+      } else {
+        window.location.href = href;
+      }
+    });
+  });
+</script>
