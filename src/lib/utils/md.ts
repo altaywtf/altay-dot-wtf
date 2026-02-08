@@ -1,7 +1,5 @@
 import fs from "node:fs";
-import { join } from "node:path";
-
-const DATA_FOLDER_PATH = join(process.cwd(), "data");
+import { DATA_FOLDER_PATH } from "@/lib/utils/fs";
 
 const REGEX_MD_LINKS = /\[([^[]+)?\](\(.[^)]*\))/gm;
 const REGEX_MD_LINK_URL = /(\(.*\))/gm;

@@ -1,8 +1,6 @@
 import fs from "node:fs";
-import { join } from "node:path";
+import { DATA_FOLDER_PATH } from "@/lib/utils/fs";
 import { readMarkdownFile } from "@/lib/utils/md";
-
-const DATA_FOLDER_PATH = join(process.cwd(), "data");
 
 type GoogleBooksIndustryIdentifier = {
   identifier: string;
