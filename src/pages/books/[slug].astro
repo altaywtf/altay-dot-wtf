@@ -19,7 +19,9 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const { book, markdown } = getBook(slug);
 const html = await renderMarkdown(markdown);
-const googleBooksUrl = `http://books.google.com/books?vid=${book.identifiers[0].identifier}`;
+const googleBooksUrl = book.identifiers.length > 0
+  ? `https://books.google.com/books?vid=${book.identifiers[0].identifier}`
+  : `https://books.google.com/books?q=${encodeURIComponent(book.title)}`;
 ---
 
 <Base
