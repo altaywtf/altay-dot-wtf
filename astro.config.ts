@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
@@ -12,7 +11,7 @@ export default defineConfig({
   server: {
     port: 1994,
   },
-  integrations: [react(), mdx(), sitemap()],
+  integrations: [mdx(), sitemap()],
   markdown: {
     syntaxHighlight: false,
     rehypePlugins: [rehypeSlug, [rehypePrettyCode, { theme: "dark-plus" }]],
