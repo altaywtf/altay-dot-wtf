@@ -5,7 +5,7 @@ Personal website at [altay.wtf](https://altay.wtf). Blog posts, book notes, dict
 ## Stack
 
 - **Framework**: Astro 5 (static output)
-- **Content**: MDX/Markdown in `data/`, loaded via Astro Content Collections (glob loaders)
+- **Content**: Markdown in `data/`, loaded directly via `fs` at build time
 - **Styling**: Tailwind CSS 4 + `@tailwindcss/typography`
 - **OG Images**: Build-time generation with Satori + resvg
 - **Linting**: oxlint (`--ignore-pattern '*.astro'` — false positives in .astro frontmatter)
@@ -34,23 +34,21 @@ bun test             # Run tests
 ```
 src/
   pages/             # File-based routing (.astro files)
-  content/           # Content Collection definitions
   layouts/           # Base and page layouts
-  components/        # Astro + React components
+  components/        # Astro components (zero client JS)
   lib/               # Utilities (og image generation, etc.)
   config/            # Site configuration
-  fonts/             # Font files for OG images
+  fonts/             # Font files (OG image generation)
   scripts/           # Helper scripts (book creation, image updates)
   styles/            # Global CSS
-  content.config.ts  # Content Collection schema
 data/
-  posts/             # Blog posts (MDX/Markdown)
-  books/             # Book notes (MDX/Markdown)
+  posts/             # Blog posts (Markdown)
+  books/             # Book notes (Markdown)
   books.json         # Book metadata (covers, authors, etc.)
   dictionary/        # Word/phrase definitions
   home.md            # Homepage content
   resume.md          # Resume content
-public/              # Static assets (images, fonts)
+public/              # Static assets (images, self-hosted fonts)
 ```
 
 ## Content
@@ -62,10 +60,10 @@ public/              # Static assets (images, fonts)
 
 ## Conventions
 
-- Static components → `.astro` files (no JS shipped)
-- Interactive components → React `.tsx` with `client:load` directive
-- Only ship JS when interactivity is required (Astro islands)
-- All content is Markdown/MDX, rendered at build time
+- All components are `.astro` files (zero client-side JS framework)
+- Interactivity via inline `<script>` tags, not framework islands
+- All content is Markdown, rendered at build time via unified pipeline
+- Fonts self-hosted in `public/fonts/` (no Google Fonts CDN)
 - OG images generated at build time with Satori + resvg
 
 ## URLs (Must Preserve)

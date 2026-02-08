@@ -6,7 +6,8 @@ Personal website, [altay.wtf](https://altay.wtf). Blog posts, book notes, dictio
 
 - [Astro](https://astro.build) 5 (static output)
 - [Tailwind CSS](https://tailwindcss.com) 4 + typography plugin
-- [MDX](https://mdxjs.com) for content (posts, books, dictionary, pages)
+- Markdown content in `data/`, loaded via `fs` at build time
+- Self-hosted fonts (Inter, JetBrains Mono)
 - OG images generated at build time with [Satori](https://github.com/vercel/satori) + [resvg](https://github.com/nicolo-ribaudo/resvg-js)
 - Deployed to [Cloudflare Workers](https://workers.cloudflare.com) (static assets)
 
@@ -25,7 +26,7 @@ bun test             # bun:test
 
 ## Content
 
-Markdown files in `data/`, loaded as Astro Content Collections via glob loaders:
+Markdown files in `data/`, loaded directly via `fs` at build time:
 
 - `data/posts/`, blog posts
 - `data/books/` + `data/books.json`, book notes with metadata
