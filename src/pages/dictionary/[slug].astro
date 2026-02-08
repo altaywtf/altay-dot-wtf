@@ -1,7 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
 import Backlinks from "@/components/Backlinks.astro";
-import BackButton from "@/components/react/BackButton.tsx";
+import BackButton from "@/components/BackButton.astro";
 import { getDictionaryEntry, getDictionaryEntries } from "@/lib/dictionary";
 import { renderMarkdown } from "@/lib/utils/render-markdown";
 
@@ -19,7 +19,7 @@ const html = await renderMarkdown(markdown);
 
 <Base title={entry.title} description={entry.oneliner}>
   <div class="flex flex-col gap-6">
-    <BackButton href="/dictionary" label="Dictionary" client:load />
+    <BackButton href="/dictionary" label="Dictionary" />
 
     <div class="flex flex-col gap-2">
       <h1 class="text-2xl font-semibold">{entry.title}</h1>

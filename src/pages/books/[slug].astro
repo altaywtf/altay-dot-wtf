@@ -4,7 +4,7 @@ import Base from "@/layouts/Base.astro";
 import BookCover from "@/components/BookCover.astro";
 import BookRating from "@/components/BookRating.astro";
 import Backlinks from "@/components/Backlinks.astro";
-import BackButton from "@/components/react/BackButton.tsx";
+import BackButton from "@/components/BackButton.astro";
 import { booksCopy } from "@/config/copy";
 import { getBook, getBooks } from "@/lib/books";
 import { renderMarkdown } from "@/lib/utils/render-markdown";
@@ -27,7 +27,7 @@ const googleBooksUrl = `http://books.google.com/books?vid=${book.identifiers[0].
   description={book.quote}
 >
   <div class="flex flex-col gap-6">
-    <BackButton href="/books" label={booksCopy.title} client:load />
+    <BackButton href="/books" label={booksCopy.title} />
 
     <div class="flex flex-row gap-4">
       <BookCover

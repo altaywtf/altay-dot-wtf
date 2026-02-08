@@ -2,7 +2,7 @@
 import Base from "@/layouts/Base.astro";
 import Page from "@/components/Page.astro";
 import PostMeta from "@/components/PostMeta.astro";
-import BackButton from "@/components/react/BackButton.tsx";
+import BackButton from "@/components/BackButton.astro";
 import { postsCopy } from "@/config/copy";
 import { getPosts } from "@/lib/posts";
 
@@ -11,7 +11,7 @@ const posts = getPosts();
 
 <Base title={postsCopy.title}>
   <div class="mb-6">
-    <BackButton client:load />
+    <BackButton />
   </div>
 
   <Page title={postsCopy.title} description={postsCopy.description}>

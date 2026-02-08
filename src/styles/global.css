@@ -34,11 +34,6 @@
   }
 }
 
-.lucide {
-  width: 1em;
-  height: 1em;
-}
-
 a[href="https://put.io"] {
   @apply text-amber-400;
   @apply no-underline;

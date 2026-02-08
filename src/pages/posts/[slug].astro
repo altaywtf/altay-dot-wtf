@@ -2,7 +2,7 @@
 import Base from "@/layouts/Base.astro";
 import PostMeta from "@/components/PostMeta.astro";
 import Backlinks from "@/components/Backlinks.astro";
-import BackButton from "@/components/react/BackButton.tsx";
+import BackButton from "@/components/BackButton.astro";
 import { postsCopy } from "@/config/copy";
 import { getPost, getPosts } from "@/lib/posts";
 import { renderMarkdown } from "@/lib/utils/render-markdown";
@@ -21,7 +21,7 @@ const html = await renderMarkdown(markdown);
 
 <Base title={post.title} description={post.oneliner} ogType="article">
   <div class="flex flex-col gap-6">
-    <BackButton href="/posts" label={postsCopy.title} client:load />
+    <BackButton href="/posts" label={postsCopy.title} />
 
     <div class="flex flex-col gap-2">
       <h1 class="text-2xl font-semibold">{post.title}</h1>

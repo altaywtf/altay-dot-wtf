@@ -1,6 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
-import BackButton from "@/components/react/BackButton.tsx";
+import BackButton from "@/components/BackButton.astro";
 import { readMarkdownFile } from "@/lib/utils/md";
 import { renderMarkdown } from "@/lib/utils/render-markdown";
 import matter from "gray-matter";
@@ -30,7 +30,7 @@ const title = (data as Record<string, unknown>).title as string | undefined;
 
 <Base title={title}>
   <div class="flex flex-col gap-6">
-    <BackButton client:load />
+    <BackButton />
 
     {title && <h1 class="text-2xl font-semibold">{title}</h1>}
 
