@@ -11,7 +11,7 @@ const SITE_TITLE = "altay.wtf";
 const WIDTH = 1200;
 const HEIGHT = 686;
 
-const fontPath = join(process.cwd(), "src/fonts/Inter-Bold.ttf");
+const fontPath = join(process.cwd(), "src/pages/og/Inter-Bold.ttf");
 const fontData = fs.readFileSync(fontPath);
 
 function toDataUrl(filePath: string): string | null {
@@ -47,7 +47,10 @@ export const getStaticPaths: GetStaticPaths = () => {
     { params: { slug: "resume" }, props: { title: "Resume", type: "page" } },
     { params: { slug: "posts" }, props: { title: "Writing", type: "page" } },
     { params: { slug: "books" }, props: { title: "Book notes", type: "page" } },
-    { params: { slug: "dictionary" }, props: { title: "Dictionary", type: "page" } },
+    {
+      params: { slug: "dictionary" },
+      props: { title: "Dictionary", type: "page" },
+    },
     ...posts.map((post) => ({
       params: { slug: `posts/${post.slug}` },
       props: {
